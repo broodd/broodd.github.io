@@ -24,7 +24,7 @@ $(window).scroll(function() {
 	var wScroll = $(this).scrollTop();
 
 	$("#roof").css({
-		"margin-top":wScroll/2 + "px"
+		"margin-top":wScroll/20 + "%"
 	});
 
 	$(".up").css({
