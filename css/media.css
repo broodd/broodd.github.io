@@ -4,23 +4,12 @@
         height: 180px;
     }
     .row_cell i {
-        /*margin-top: 50px;*/
         font-size: 49px;
-        /*margin-bottom: -10px;*/
     }
     .row_cell p {
         font-size: 24px;
         margin-top: -5px;
     }
-    /*.row_cell i {
-        margin-top: 20%;
-        font-size: 45px;
-        margin-bottom: -10px;
-    }
-    .row_cell p {
-        font-size: 20px;
-        margin-top: -5px;
-    }*/
     #skills {
         margin-top: 500px;
     }
