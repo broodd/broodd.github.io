@@ -28,10 +28,10 @@ $(window).scroll(function() {
 	});
 
 	$(".up").css({
-		"width":150 + wScroll/10 + "%",
-		"left":-60-(wScroll/5) + "%",
+		// "width":150 + wScroll/10 + "%",
+		// "left":-60-(wScroll/5) + "%",
 		"opacity":0 + ((wScroll-15)/1500),
-		"transform":"rotate(" + (45 + (wScroll/10)) + "deg)"
+		// "transform":"rotate(" + (45 + (wScroll/10)) + "deg)"
 	});
 	console.log(wScroll);
 });
