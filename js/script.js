@@ -16,17 +16,23 @@ $(document).on("click", "#trian3", function() {
 	$("#trian").css("display", "block");
 });
 
-$(document).on("click", "#sky", function() {
+$(document).on("click", "#sky", function(event) {
 	alert("My Skype: kobris22");
+	// event.preventDefault();
+	return false;
 });
 
 $(window).scroll(function() {
 	var wScroll = $(this).scrollTop();
+	var max_height = screen.height;
 
 	if(screen.width > 890) {
-		$("#roof").css({
-			"margin-top":wScroll/20 + "%"
-		});
+		if(max_height > wScroll)
+		{
+			$("#roof").css({
+				"margin-top":wScroll/20 + "%"
+			});
+		}
 		$(".up").css({
 			"transform":"rotate(" + (45 + (wScroll/20)) + "deg)",
 			"left":-60-(wScroll/5) + "%"
@@ -36,5 +42,4 @@ $(window).scroll(function() {
 	$(".up").css({
 		"opacity":0 + ((wScroll)/1500),
 	});
-	console.log(wScroll);
 });
