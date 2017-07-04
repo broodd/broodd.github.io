@@ -60,10 +60,10 @@ a:hover {
 .up{
 	position: absolute;
 	transform: rotate(45deg);
-	min-width: 160%;
+	min-width: 200%;
 	min-height: 260%;
-	top: -50%;
-	left: -60%;
+	top: -100%;
+	left: -20%;
 	background: #497BB8;
 	opacity: 0;
 }
