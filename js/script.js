@@ -40,6 +40,6 @@ $(window).scroll(function() {
 	}
 
 	$(".up").css({
-		"opacity":0 + ((wScroll)/1500),
+		"opacity": 0 + ((wScroll)/1500),
 	});
 });
