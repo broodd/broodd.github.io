@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	font-family: "Open Sans", Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #5B5A5F;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none !important;
+}
+
+
+
+/* BG_Hot-Dog*/
+.hot_wrap {
+	width: 100%;
+	height: 482px;
+	overflow: hidden;
+}
+.hot_photo {
+	width: 100%;
+	height: 100%;
+	background: url("../img/bg_head.png") repeat;
+	/*background-size: cover;*/
+}
+
+
+
+/* MENU */
+.list {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	background: white;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px -2px 18px 0px rgba(91,90,95,1)
+}
+.content {
+	list-style: none;
+	font-size: 20px;
+	padding: 0 35px;
+	text-transform: uppercase;
+	/*font-weight: 600;*/
+}
+
+
+/* Text */
+.wrap{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+.wrap img {
+	position: relative;
+	display: block;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: 115px;
+	margin-bottom: 35px;
+}
+.wrap p {
+	display: inline-block;
+	width: 80%;
+	padding: 0 20px;
+	font-size: 56px;
+	color: #5B5A5F;
+}
+.wrap .button {
+	display: block;
+	height: 65px;
+	padding-top: 80px;
+	margin-bottom: 115px;
+}
+.button a:hover {
+	background: tomato;
+}
+.button a {
+	padding: 15px 35px;
+	color: white;
+	background: #276782;
+	font-size: 18px;
+	border-radius: 8px;
+	transition: .2s ease-out;
+}
+
+
+/* text hot-dog*/
+table,tr, td img  {
+	width: 100%;
+	border-collapse: collapse;
+}
+td {
+	width: 50%;
+}
+.riv {
+	margin-top: -5px;
+}
+.conteiner {
+	padding: 0 15%;
+}
+.conteiner strong {
+	position: relative;
+	display: block;
+	padding-bottom: 5%;
+	left: -5%;
+	font-size: 30px;
+}
+.conteiner strong:before {
+	content: '';
+	position: relative;
+	display: inline-block;
+	width: 5%;
+	height: 2px;
+	left: -15px;
+	top: -8px;
+	background: #5B5A5F;
+}
+td:hover .conteiner strong:before{
+	animation-name: rotate;
+	border-radius: 2px;
+	animation-duration: 1.4s;
+	animation-delay: 0.2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
+@keyframes rotate {
+	0%{
+		transform: rotate(180deg);
+		
+	}
+	100%{
+		transition: rotate(0deg);
+		background: #337085;
+	}
+}
+
+
+.footer {
+	background: #EFEFEF;
+	margin-top: -5px;
+}
+.footer td {
+	padding: 1% 3%;
+}
+.footer tr td:last-child{
+	text-align: right;
+}

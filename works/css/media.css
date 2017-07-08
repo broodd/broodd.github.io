@@ -1,0 +1,132 @@
+@media only screen and (min-width: 2000px)
+{
+	.conteiner p {
+		font-size: 34px;
+	}
+	.conteiner strong {
+		font-size: 52px;
+	}
+	.conteiner strong:before {
+		content: '';
+		position: relative;
+		display: inline-block;
+		width: 5%;
+		height: 3px;
+		left: -5%;
+		top: -15px;
+		background: #5B5A5F;	
+	}	
+}
+@media only screen and (max-width: 1999px)
+{
+	.conteiner p {
+		font-size: 22px;
+	}
+	.conteiner strong {
+		font-size: 30px;
+	}
+	.conteiner strong:before {
+		content: '';
+		position: relative;
+		display: inline-block;
+		width: 5%;
+		height: 3px;
+		left: -5%;
+		top: -9px;
+		background: #5B5A5F;	
+	}	
+}
+@media only screen and (max-width: 1600px)
+{
+	.conteiner p {
+		font-size: 18px;
+	}
+	.conteiner strong {
+		font-size: 26px;
+	}
+	.conteiner strong:before {
+		content: '';
+		position: relative;
+		display: inline-block;
+		width: 5%;
+		height: 3px;
+		left: -5%;
+		top: -9px;
+		background: #5B5A5F;	
+	}	
+}
+@media only screen and (max-width: 1350px)
+{
+	.wrap p {
+		font-size: 45px;
+	}
+	.conteiner p {
+		font-size: 14px;
+	}
+	.conteiner strong {
+		font-size: 18px;
+	}
+	.conteiner strong:before {
+		content: '';
+		position: relative;
+		display: inline-block;
+		width: 5%;
+		height: 2px;
+		left: -5%;
+		top: -6px;
+		background: #5B5A5F;	
+	}
+}
+@media only screen and (max-width: 730px)
+{
+	.hot_wrap {
+		height: 241px;
+	}
+	.wrap p {
+		font-size: 22px;
+	}
+	.conteiner p {
+		font-size: 13px;
+	}
+	.conteiner strong {
+		font-size: 15px;
+		left: 0;
+	}
+	.conteiner strong:before {
+		display: none;
+	}
+	.footer td {
+		font-size: 11px;
+	}
+	.content {
+		font-size: 18px;
+		padding: 0 20px;
+		text-transform: uppercase;
+		/*font-weight: 600;*/
+	}
+}
+@media only screen and (max-width: 530px)
+{
+	.hot_wrap {
+		height: 241px;
+	}
+	.conteiner p {
+		font-size: 11px;
+	}
+	.conteiner strong {
+		font-size: 13px;
+		left: 0;
+	}
+	.conteiner strong:before {
+		display: none;
+	}
+	.footer td {
+		font-size: 10px;
+	}
+	.content {
+		font-size: 18px;
+		padding: 0 20px;
+		text-transform: uppercase;
+		/*font-weight: 600;*/
+	}
+}
