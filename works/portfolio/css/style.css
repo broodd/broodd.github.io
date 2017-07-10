@@ -268,20 +268,13 @@ h3 {
 	height: 100%;
 	background: #2C3F52;
 	text-align: center;
-	line-height: 227.5px;
+	line-height: 427.5px;
 	opacity: 0;
 	transition: .4s;
+	font-size: 22px;
+	border-top: 5px solid #ED4E6E;
 }
-.work:before {
-	content: '';
-	display: block;
-	width: 100%;
-	height: 3px;
-	background: #ED4E6E;
-	opacity: 0;
-	transition: .3s;
-}
-.work:hover:after,.work:hover:before{
+.work:hover:after{
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   -webkit-animation-name: flipInX;
