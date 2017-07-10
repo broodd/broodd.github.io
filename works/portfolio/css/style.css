@@ -120,7 +120,7 @@ p span{
 .arrow {
 	text-transform: uppercase;
 	margin: 60px 0;
-
+	font-size: 38px;
 }
 .arrow:after {
     content: "";
@@ -262,6 +262,8 @@ h2 {
 	height: 227.5px;*/
 	width: 600px;
 	height: 300px;
+	width: 370px;
+	height: 227.5px;
 	margin: 0 10px;
 	background: url("../img/work-hot.png") center center;
 	background-size: cover;
