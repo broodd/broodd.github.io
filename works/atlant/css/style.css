@@ -57,6 +57,9 @@ p {
 	color: #DD1927;
 }
 
+.num {
+	min-width: 100%;
+}
 #typeNum {
 	background: none;
 	color: #DE1826;
@@ -68,14 +71,14 @@ p {
 input {
 	color: white;
 	margin: 25px 0;
-	width: 260px;
+	/*width: 250px;*/
 	background: none;
 	border: none;
 	border-bottom: 1px solid #DE1826;
 }
 .btn-default {
 	margin-left: 50px;
-	width: 250px;
+	width: 200px;
 	color: white;
 	border: none;
 	border-radius: 0px;
@@ -83,7 +86,7 @@ input {
 	text-align: center;
 }
 p.hidden-xs {
-	max-width: 400px;
+	/*max-width: 400px;*/
 }
 
 .line {
@@ -172,9 +175,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', end
 }
 .logo {
 	height: 250px;
+	width: 400px;
 }
 .header {
-	min-width: 580px;
+	min-width: 400px;
 	max-width: 580px;
 	height: calc(100vh);
 	display: -webkit-flex;
