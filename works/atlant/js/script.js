@@ -18,18 +18,24 @@ function show(state){
 	$('#wrap').css("display", state); 			
 }
 
+$(document).ready( function() {
 
-// setTimeout(function(){ 
-// 	$("._2").css({"display":"block", "animation-name":"down_line_1"});
-// }, 1700);
+	$("._1").css("animation-name", "down_line_1");
+	$("._3").css("animation-name", "down_line_3");
+	$("._5").css("animation-name", "down_line_5");
+	setTimeout(function(){ 
+		$("._2").css({"display":"block", "animation-name":"down_line_1"});
+	}, 1700);
 
-// setTimeout(function(){ 
-// 	$("._4").css({"display":"block", "animation-name":"down_line_3"});
-// }, 2220);
+	setTimeout(function(){ 
+		$("._4").css({"display":"block", "animation-name":"down_line_3"});
+	}, 2220);
 
-// setTimeout(function(){ 
-// 	$("._6").css({"display":"block", "animation-name":"down_line_5"});
-// }, 1855);
+	setTimeout(function(){ 
+		$("._6").css({"display":"block", "animation-name":"down_line_5"});
+	}, 1855);
+});
+
 
 
 window.onload = function () {

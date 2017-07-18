@@ -177,14 +177,6 @@ p.hidden-xs {
 	animation-timing-function: linear;
 	top: -8px;
 }
-.line ._1 {animation-name: down_line_1;}
-.line ._2 {animation-name: down_line_1; animation-delay: 1.7s;}
-
-.line ._3 {animation-name: down_line_3; animation-duration: 5s;}
-.line ._4 {animation-name: down_line_3; animation-duration: 5s; animation-delay: 2.2s;}
-
-.line ._5 {animation-name: down_line_5; animation-duration: 5.5s;}
-.line ._6 {animation-name: down_line_5; animation-duration: 5.5s; animation-delay: 2.1s;}
 
 @keyframes down_line_1 {
 	0% {
