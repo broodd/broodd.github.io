@@ -18,7 +18,7 @@ function show(state){
 	$('#wrap').css("display", state); 			
 }
 
-window.onload = function () {
+$(document).ready(function () {
 
 	$("._1").css("animation-name", "down_line_1");
 	$("._3").css("animation-name", "down_line_3");
@@ -34,7 +34,7 @@ window.onload = function () {
 	setTimeout(function(){ 
 		$("._6").css({"display":"block", "animation-name":"down_line_5"});
 	}, 1855);
-}
+});
 
 
 
