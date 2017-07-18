@@ -102,8 +102,8 @@ p {
 	right: 25px;
 	top: 45px;
 	z-index: 98;
-	cursor: pointer;
 }
+.carousel-control {cursor: pointer;}
 
 .num {min-width: 100%;}
 #typeNum {
@@ -368,6 +368,56 @@ img {
 .item {
 	width: 100%;
 	height: 100vh;
+	z-index: 5;
+}
+#box {overflow: hidden;}
+.l1 {z-index: 6}
+.l2 {z-index: 7}
+.wrap_block {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	top: -100vh;
+}
+.list_block {
+	list-style-type: none;
+	position: relative;
+}
+.block {
+	background: #adadad;
+	position: relative;
+	z-index: 1;
+}
+.block1 {
+	left: calc(100% - 110px);
+	top: 45px;
+	width: 60px; height: 60px;
+}
+.block2 {
+	left: calc(100% - 350px);
+	top: 10px;
+	width: 50px; height: 50px;
+}
+.block3 {
+	left: calc(100% - 230px);
+	top: 15px;
+	width: 150px; height: 150px;
+}
+.block4 {
+	left: calc(100% - 480px);
+	top: 100px;
+	width: 130px; height: 130px;
+}
+.block5 {
+	left: calc(100% - 150px);
+	top: 50px;
+	width: 70px; height: 70px;
+}
+.block6 {
+	left: calc(100% - 550px);
+	top: 50px;
+	width: 50px; height: 50px;
 }
 
 
