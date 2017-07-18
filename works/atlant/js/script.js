@@ -18,7 +18,7 @@ function show(state){
 	$('#wrap').css("display", state); 			
 }
 
-$(document).ready( function() {
+window.onload = function () {
 
 	$("._1").css("animation-name", "down_line_1");
 	$("._3").css("animation-name", "down_line_3");
