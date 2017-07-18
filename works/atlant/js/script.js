@@ -34,7 +34,7 @@ window.onload = function () {
 	setTimeout(function(){ 
 		$("._6").css({"display":"block", "animation-name":"down_line_5"});
 	}, 1855);
-});
+}
 
 
 
