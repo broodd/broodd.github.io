@@ -21,7 +21,7 @@ function show(state){
 $(document).ready( function() {
 
 	$("._1").css("animation-name", "down_line_1");
-	$("._3").css("animation-name", "down_line_3");
+	$("._3").css({"animation-name":"down_line_3", "animation-delay":".45s"});
 	$("._5").css("animation-name", "down_line_5");
 	setTimeout(function(){ 
 		$("._2").css({"display":"block", "animation-name":"down_line_1"});
