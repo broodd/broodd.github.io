@@ -252,6 +252,7 @@ h3 {
 	background: url("../img/work-hot.png") center center;
 	background-size: cover;
 	box-shadow: 1px 3px 4px rgba(0,0,0,.3);
+	overflow: hidden;
 }
 .work.port {
 	background: url("../img/work-port.png") top left;
@@ -259,6 +260,10 @@ h3 {
 }
 .work.atlant {
 	background: url("../img/atlant.jpg") top right;
+	background-size: cover;
+}
+.work.wordpress {
+	background: url("../img/wordpress.jpg") top center;
 	background-size: cover;
 }
 .work:after {
@@ -270,75 +275,42 @@ h3 {
 	text-align: center;
 	line-height: 427.5px;
 	opacity: 0;
-	transition: .4s;
+	transition: .1s;
 	font-size: 22px;
 	border-top: 5px solid #ED4E6E;
 }
+
 .work:hover:after {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  -webkit-animation-name: flipInX;
-  animation-name: flipInX;
+	opacity: 1;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  opacity:1;
   }
-  @-webkit-keyframes flipInX {
+  @-webkit-keyframes fadeInDown {
   0% {
-  -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-  transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
   opacity: 0;
-  }
-  40% {
-  -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-  transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-  }
-  60% {
-  -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-  transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-  opacity: 1;
-  }
-  80% {
-  -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
   }
   100% {
-  -webkit-transform: perspective(400px);
-  transform: perspective(400px);
-  }
-  }
-  @keyframes flipInX {
-  0% {
-  -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-  transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-  opacity: 0;
-  }
-  40% {
-  -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-  transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-  }
-  60% {
-  -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-  transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
   opacity: 1;
+  -webkit-transform: none;
+  transform: none;
   }
-  80% {
-  -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  @keyframes fadeInDown {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
   }
   100% {
-  -webkit-transform: perspective(400px);
-  transform: perspective(400px);
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
   }
   } 
 
