@@ -257,8 +257,8 @@ h3 {
 	background: url("../img/work-port.png") top left;
 	background-size: cover;
 }
-.work.prst {
-	background: url("../img/work-prst.jpg") top left;
+.work.atlant {
+	background: url("../img/atlant.jpg") top right;
 	background-size: cover;
 }
 .work:after {
