@@ -470,7 +470,7 @@ img {
 	border-radius: 50px;
 	margin-top: 10px;
 }
-.nav-2 {bottom: -100vh;}
+.nav-2 {bottom: -100vh; z-index: 9999;}
 .nav-3 {bottom: -200vh;}
 /*.text-center img {
 	position: absolute;
