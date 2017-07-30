@@ -1,0 +1,397 @@
+@font-face
+	font-family: "Adventurec"
+	src: url('../fonts/adventurec.otf')
+
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+$main_color: #6DE0D1
+$phone_color: #604C43
+
+*
+	// font-family: "Raleway", arial, sans-serif
+	color: #81807E
+a,a:hover
+	text-decoration: none !important
+
+
+section
+	margin-top: 100px
+h2,h3,.tyru,.top-menu,.button
+	text-transform: uppercase
+
+.center
+	display: inline-block
+	width: 100%
+	text-align: center
+li a.act_lang
+	color: $phone_color !important
+.bg_c
+	background-color: $main_color
+.c_c,.more
+	color: $main_color
+	text-transform: uppercase
+.more
+	font-size: 18px
+	font-weight: 600
+	i
+		margin-left: 8px
+		color: $main_color
+
+
+.top_l
+	position: absolute
+	left: 3.5%
+	top: 25px
+	max-width: 200px
+	// max-width: 125px
+	background-size: 100% 100%
+	z-index: 100
+.top_t
+	position: absolute
+	left: -5%
+	// top: -5%
+	width: 50%
+	max-width: 880px
+	// max-height: 345px
+	background-size: 100% 100%
+	z-index: 99
+.top_bottom
+	position: absolute
+	bottom: 0
+	width: 100%
+	// height: 30%
+.top_b_i
+	position: relative
+	bottom: -1px
+	width: 100%
+	z-index: 150
+	img
+		width: 100%
+
+
+
+
+
+.s_head
+	h2
+		display: inline-block
+		font-size: 42px
+		font-weight: 500
+	p
+		display: inline-block
+		position: relative
+		top: 40px
+		font-size: 76px
+		letter-spacing: 7px
+		font-family: "Adventurec", arial
+		color: $main_color
+		left: -50px
+.s_text
+	margin-top: 60px
+
+.main_head
+
+	.top-menu
+		position: absolute
+		top: 100px
+		z-index: 120
+		ul,li
+			margin: 0
+			display: inline-block
+			list-style: none
+			li
+				padding: 0 10px
+				color: white
+				font-size: 16px
+				// font-weight: 500
+				font-family: 'Roboto'
+				a,a:hover,i
+					text-decoration: none
+					color: white
+	.phone
+		position: absolute
+		display: block
+		
+		right: 0
+		top: 0
+		z-index: 200
+	.carousel-inner
+		margin-top: -1px
+	.item
+		width: 100%
+		// height: 100%
+		max-height: 880px
+		img
+			width: 100%
+			// height: 100%
+		// .img
+		// 	width: 100%
+		// 	height: 100%
+		// 	max-height: 720px
+		// .img1
+		// 	background: url("../img/bg1.jpg") center no-repeat
+		// 	background-size: cover
+		// .img2
+		// 	background: url("../img/bg1.jpg") center no-repeat
+		// 	background-size: cover
+		// .img3
+		// 	background: url("../img/bg1.jpg") center no-repeat
+		// 	background-size: cover
+		// .img4
+		// 	background: url("../img/bg1.jpg") center no-repeat
+		// 	background-size: cover
+	.caro-2
+		height: 100px
+		width: 500px
+		.carousel-inner
+			height: 100%
+			width: 100%
+			.item
+				display: inline-block
+				height: 100%
+				width: 100%
+				img
+					width: 100%
+					height: auto
+
+
+			
+
+		
+.s_reviews
+	position: relative
+	margin-bottom: 180px
+	.carousel-indicators
+		bottom: -60px
+		li,li.active
+			margin: 0
+			width: 14px
+			height: 14px
+			border: 2px solid $main_color
+			margin: 0 2px
+		li.active
+			background: $phone_color
+	span
+		display: inline-block
+		margin-top: 15px
+		font-size: 16px
+	span:before,span:after
+		content: ''
+		display: inline-block
+		// position: absolute
+		margin: 0 8px
+		width: 35px
+		height: 3px
+		background: $main_color
+		line-height: 16px
+		transform: translateY(-3px)
+	.ananas
+		position: absolute
+		top: 0
+		right: 0
+		img:first-child
+			width: 100%
+			max-height: 500px
+			max-width: 410px
+			z-index: -9999
+		img:last-child
+			position: absolute
+			right: 80px
+			top: 170px
+			max-height: 352px
+			z-index: 9999
+
+
+
+
+
+.s_about
+	position: relative
+	.palma
+		position: absolute
+		top: 0
+		// media
+		// position: relative
+		img:first-child
+			position: relative
+			top: 180px
+			left: 0
+			// float: left
+			height: 75%
+			max-height: 494px
+		img:last-child
+			position: absolute
+			left: 0
+			top: 0
+			max-height: 494px
+			z-index: 9999
+		
+
+.s_photo
+	.p
+		padding: 0
+		overflow: hidden
+	.photo
+		padding: 0
+		.hidd
+			display: none
+		img
+			width: 100%
+			height: auto
+			display: inline-block
+			background-size: cover
+			-webkit-box-shadow: 30px 30px 0px 0px rgba(240,240,240,1)
+			-moz-box-shadow: 30px 30px 0px 0px rgba(240,240,240,1)
+			box-shadow: 30px 30px 0px 0px rgba(240,240,240,1)
+			
+	.content
+		padding: 0
+		// max-height: 620px
+		margin-bottom: 120px
+			
+		.v-center
+			padding: 0
+			display: table
+			height: 100%
+			max-height: 530px
+			// text-align: right
+			.photo-desc
+				display: table-cell
+				vertical-align: middle
+				h3
+					font-size: 34px
+					// font-family: "Raleway";
+					color: rgb(130, 128, 127)
+					font-weight: 690
+					// line-height: 1.1
+				p
+					margin-top: 30px
+				.line
+					content: ''
+					display: block
+					position: absolute
+					margin-bottom: 15px
+					margin-left: -25%
+					width: 120%
+					height: 3px
+					background: $main_color
+				.button
+					width: 95%
+					margin-top: 15px
+					p
+						padding: 10px 0
+						margin: 0
+						color: #fff
+						font-size: 18px
+						font-weight: 600
+
+
+
+.s_footer
+	p
+		color: white
+		letter-spacing: 1px
+	.footer_t
+		margin-bottom: -30px
+		margin-left: -15%
+		// max-width: 1420px
+		// max-height: 260px
+	.footer_l
+		width: 180px
+		margin-bottom: 15px
+	.container
+		padding-bottom: 60px
+	
+		.button
+			background: $phone_color
+			margin: 25px 0
+			padding: 5px 0
+			border-radius: 5px
+			color: white
+			font-size: 18px
+		span
+			display: inline-block
+			// margin-top: 25px
+			margin-bottom: 10px
+			width: 100%
+			height: 2px
+			background-color: #fff
+		i
+			color: white
+			font-size: 26px
+			margin-right: 15px
+		.mail
+			color: #fff
+			font-weight: 700
+			font-size: 16px
+		.tel
+			font-size: 16px
+
+// .ВІДГУКИ__НАШИХ {
+//   font-size: 65px;
+//   font-family: "Raleway";
+//   color: rgb(130, 128, 127);
+//   font-weight: bold;
+//   line-height: 1;
+//   position: absolute;
+//   left: 384.86px;
+//   top: 2292.532px;
+//   z-index: 44;
+// .КЛIЄНТIВ {
+//   font-size: 66.366px;
+//   font-family: "Adventure";
+//   color: rgb(110, 224, 210);
+//   line-height: 0.678;
+//   -moz-transform: matrix( 1.80814889494188,0,0,1.80814889494188,0,0);
+//   -webkit-transform: matrix( 1.80814889494188,0,0,1.80814889494188,0,0);
+//   -ms-transform: matrix( 1.80814889494188,0,0,1.80814889494188,0,0);
+//   position: absolute;
+//   left: 649.177px;
+//   top: 2376.529px;
+//   z-index: 45;
+// }
+// .ПАКЕТНІ_ТУРИ {
+//   font-size: 50px;
+//   font-family: "Raleway";
+//   color: rgb(130, 128, 127);
+//   font-weight: bold;
+//   line-height: 1.1;
+//   position: absolute;
+//   left: 1039.938px;
+//   top: 3270px;
+//   z-index: 64;
+// }
+
+// .БІЛЬШЕ_ {
+//   font-size: 22px;
+//   font-family: "Raleway";
+//   color: rgb(110, 224, 210);
+//   line-height: 1.136;
+//   position: absolute;
+//   left: 1040.938px;
+//   top: 3657.504px;
+//   z-index: 68;
+// }
+
+// .__Тури_вихідного_дня_–_це_шанс_змінити_щось_нав {
+//   font-size: 20px;
+//   font-family: "Raleway";
+//   color: rgb(90, 89, 89);
+//   line-height: 1.25;
+//   position: absolute;
+//   left: 1040.961px;
+//   top: 4125.607px;
+//   z-index: 88;
+// }
+// .ПОШУК_ТУРУ_______ТУРИ________ПІДІБРАТИ_ТУР_____ {
+//   font-size: 20px;
+//   font-family: "Raleway";
+//   color: rgb(255, 255, 255);
+//   font-weight: bold;
+//   line-height: 2.25;
+//   position: absolute;
+//   left: 584.87px;
+//   top: 172.698px;
+//   z-index: 5;
+// }
+
