@@ -72,9 +72,10 @@ h2, h3, .tyru, .top-menu, .button {
 .top_b_i {
   position: relative;
   width: 100%;
-  z-index: 150; }
+  z-index: 150;
+  overflow: hidden;}
   .top_b_i img {
-    width: 100%; }
+    width: 101%; }
 
 .s_head h2 {
   display: inline-block;

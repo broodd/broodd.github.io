@@ -55,12 +55,15 @@
 	.s_about {
 		margin-top: 300px;
 	}
-	/*.s_photo .photo img:last-child {*/
-		/*display: block !important;*/
-	/*}*/
-	/*.s_photo .photo img {*/
-		/*display: none !important;*/
-	/*}*/
+	.s_photo .photo {
+		padding: 0;
+	}
+	/*.s_photo .photo img:last-child {
+		display: block !important;
+	}
+	.s_photo .photo img {
+		display: none !important;
+	}*/
 }
 
 /* Small Devices, Tablets */
