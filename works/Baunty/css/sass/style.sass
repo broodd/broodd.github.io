@@ -23,19 +23,29 @@ h2,h3,.tyru,.top-menu,.button
 	display: inline-block
 	width: 100%
 	text-align: center
-li a.act_lang
+.top-menu li .act_lang
 	color: $phone_color !important
 .bg_c
 	background-color: $main_color
 .c_c,.more
 	color: $main_color
 	text-transform: uppercase
+.p
+	padding: 0 !important
 .more
 	font-size: 18px
 	font-weight: 600
 	i
 		margin-left: 8px
 		color: $main_color
+.v-line
+	padding: 0 !important
+	position: absolute
+	bottom: -3px
+	width: 2px
+	height: 30px
+	background: #fff
+	border-radius: 4px
 
 
 .top_l
@@ -57,18 +67,16 @@ li a.act_lang
 	z-index: 99
 .top_bottom
 	position: absolute
-	bottom: 0
+	bottom: -4px
 	width: 100%
 	// height: 30%
 .top_b_i
 	position: relative
-	bottom: -1px
+	
 	width: 100%
 	z-index: 150
 	img
 		width: 100%
-
-
 
 
 
@@ -111,10 +119,22 @@ li a.act_lang
 	.phone
 		position: absolute
 		display: block
-		
-		right: 0
-		top: 0
+		right: 10%
+		top: -10px
 		z-index: 200
+		a
+			display: inline-block
+			width: 80px
+			height: 80px
+			background: $phone_color
+			line-height: 80px
+			border-radius: 50%
+			text-align: center
+			i
+				font-size: 40px
+				line-height: 80px
+				color: white
+
 	.carousel-inner
 		margin-top: -1px
 	.item
@@ -155,7 +175,80 @@ li a.act_lang
 					height: auto
 
 
-			
+.s_about
+	position: relative
+	.palma
+		position: absolute
+		top: 0
+		// media
+		// position: relative
+		img:first-child
+			position: relative
+			top: 180px
+			left: 0
+			// float: left
+			height: 75%
+			max-height: 494px
+		img:last-child
+			position: absolute
+			left: 0
+			top: 0
+			max-height: 494px
+			z-index: 9999
+
+
+	// .partner
+	// 	position: absolute
+	// 	bottom: 0
+	// 	z-index: 210
+	// 	p
+	// 		font-size: 21px
+	// 		text-transform: uppercase
+	// .slick
+	// 	height: 120px
+	// 	width: 100%
+	// 	.s_table
+	// 		display: table
+	// 		height: 100%
+	// 		div
+	// 			display: table-cell
+	// 			vertical-align: middle
+				
+
+	// 	img
+	// 		margin: 0 auto
+	// 		line-height: 80px
+	// .main_partner
+	// 	position: absolute
+	// 	right: 0
+	// 	img
+	// 		height: 130px
+		
+.partner
+	// position: absolute
+	// bottom: 0
+	z-index: 210
+.part
+	font-size: 21px
+	text-transform: uppercase
+.slick
+	height: 120px
+	width: 100%
+	.s_table
+		display: table
+		height: 100%
+		div
+			display: table-cell
+			vertical-align: middle
+	img
+		// text-align: center
+	
+		// margin: 0 auto
+.main_partner
+	position: absolute
+	right: 0
+	img
+		height: 130px
 
 		
 .s_reviews
@@ -201,31 +294,6 @@ li a.act_lang
 			max-height: 352px
 			z-index: 9999
 
-
-
-
-
-.s_about
-	position: relative
-	.palma
-		position: absolute
-		top: 0
-		// media
-		// position: relative
-		img:first-child
-			position: relative
-			top: 180px
-			left: 0
-			// float: left
-			height: 75%
-			max-height: 494px
-		img:last-child
-			position: absolute
-			left: 0
-			top: 0
-			max-height: 494px
-			z-index: 9999
-		
 
 .s_photo
 	.p

@@ -12,9 +12,17 @@
 		top: 20px;
 		max-width: 130px;
 	}
+	.wrap_partner {
+		bottom: -80px;
+	}
 }
 
 /* Medium Devices, Desktops */
+@media only screen and (min-width : 991px) {
+	.main_partner {
+		position: absolute;
+	}
+}
 @media only screen and (max-width : 992px) {
 	.s_reviews .ananas {
 		position: relative;
@@ -37,12 +45,22 @@
 		position: relative;
 		float: left;
 	}
-	.s_photo .photo img.hidden {
-		display: block !important;
+	.top-menu {
+		position: absolute;
+		right: 0;
 	}
-	.s_photo .photo img.visible {
-		display: none;
+	.wrap_partner {
+		bottom: -230px;
 	}
+	.s_about {
+		margin-top: 200px;
+	}
+	/*.s_photo .photo img:last-child {*/
+		/*display: block !important;*/
+	/*}*/
+	/*.s_photo .photo img {*/
+		/*display: none !important;*/
+	/*}*/
 }
 
 /* Small Devices, Tablets */
