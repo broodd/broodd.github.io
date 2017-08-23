@@ -58,7 +58,7 @@ footer {
   position: relative;
   color: #fff;
   padding: 0 0 40px 0;
-  background: url("../img/shadow.svg") center 15% no-repeat;
+  background: url("../img/shadow.svg") center 15% no-repeat; 
   background-size: cover;
   background-position: center bottom; }
   .shadow-wrap .olive-c {
