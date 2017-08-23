@@ -25,7 +25,7 @@ ul {
 
 header {
   position: relative;
-  background: url("../img/main-img.jpg") bottom no-repeat;
+  background: url("../img/main-img.jpg") center 15% no-repeat;
   background-size: cover;
   overflow: hidden; }
   header .col-xs-6 {
