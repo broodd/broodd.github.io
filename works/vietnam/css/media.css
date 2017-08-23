@@ -1,7 +1,7 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 990px) {
+@media only screen and (min-width : 1200px) {
 	.shadow-wrap {
 	    margin: 0 100px 0 100px;
 	}
@@ -25,9 +25,12 @@
 		background: rgba(0,0,0,.6);
 	}
 }
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 833px) {
 	header .container {
 		padding: 0;
+	}
+	.top-logo {
+		height: 130px;
 	}
 }
 /* Extra Small Devices, Phones */
