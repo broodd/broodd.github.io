@@ -1,11 +1,6 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-	.shadow-wrap {
-	    margin: 0 100px 0 100px;
-	}
-}
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
@@ -20,16 +15,11 @@
 		margin: 0;
 	}
 }
-@media only screen and (max-width : 600px) {
-	.shadow-wrap {
-		background: rgba(0,0,0,.6);
-	}
-}
 @media only screen and (max-width : 833px) {
 	header .container {
 		padding: 0;
 	}
-	.top-logo {
+	.shadow-wrap .top-logo {
 		height: 130px;
 	}
 }

@@ -54,13 +54,9 @@ footer {
   color: #616161; }
 
 .shadow-wrap {
-  margin: 0 30px 0 30px;
   position: relative;
   color: #fff;
-  padding: 0 0 40px 0;
-  background: url("../img/shadow.svg") center 15% no-repeat; 
-  background-size: cover;
-  background-position: center bottom; }
+  padding: 0 0 40px 0;}
   .shadow-wrap .olive-c {
     font-size: 31.607px;
     font-family: "Arkhip"; }
@@ -69,7 +65,8 @@ footer {
     font-size: 38px;
     font-family: "Arkhip"; }
   .shadow-wrap .top-logo {
-    margin: 40px 0; }
+    margin: 40px 0;
+    height: 200px;}
 
 .overflow {
   position: absolute;
