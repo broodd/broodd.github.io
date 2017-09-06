@@ -55,7 +55,11 @@ section {
   overflow: hidden;
   background: white; }
   .navbar-header.act_btn {
+<<<<<<< HEAD
     width: calc(100% - 203px); }
+=======
+    width: calc(100% - 201px); }
+>>>>>>> 18daba35d7cc9e897d03e72c30348bba715c631a
 
 .navbar {
   margin-bottom: 0;
