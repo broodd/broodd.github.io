@@ -45,6 +45,10 @@ section {
   line-height: 90;
   background: #62A0D1;
   color: black; }
+  .navbar-brand img {
+    width: 160px;
+    line-height: 90px;
+    display: inline-block; }
 
 .wrap-menu {
   background: #62A0D1;
