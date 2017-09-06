@@ -82,8 +82,7 @@ body {
     margin-bottom: 0;
     height: 100%;
     background: #62A0D1;
-    overflow: hidden;
-    transition: 0.7s; }
+    overflow: hidden; }
     .navbar .menu li svg, .navbar-inverse .menu li svg {
       height: 25px;
       margin-right: 8px;
