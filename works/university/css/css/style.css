@@ -50,6 +50,9 @@ section {
   background: #62A0D1;
   height: 90px; }
 
+.navbar-inverse .navbar-nav > .open > a {
+  background: none !important; }
+
 .navbar-header {
   padding-left: 15px;
   overflow: hidden;
@@ -78,7 +81,8 @@ section {
     transition: 0.7s; }
     .navbar .menu.act_menu, .navbar-inverse .menu.act_menu {
       width: 0;
-      transition: 0.7s; }
+      transition: 0.7s;
+      display: none; }
     .navbar .menu li svg, .navbar-inverse .menu li svg {
       height: 25px;
       margin-right: 8px;

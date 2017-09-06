@@ -62,7 +62,8 @@ section
 .wrap-menu
 	background: $blue
 	height: 90px
-
+.navbar-inverse .navbar-nav>.open>a
+	background: none !important
 
 .navbar-header
 	padding-left: 15px
@@ -94,6 +95,8 @@ header
 		&.act_menu
 			width: 0
 			transition: .7s
+			display: none
+			
 		li
 			svg
 				height: 25px
