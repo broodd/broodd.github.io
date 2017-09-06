@@ -50,14 +50,15 @@ section {
   background: #62A0D1;
   height: 90px; }
 
+.navbar-inverse .navbar-nav > .open > a {
+  background: none !important; }
+
 .navbar-header {
   padding-left: 15px;
   overflow: hidden;
   background: white; }
-  .navbar-header.act_btn {
-    width: calc(100% - 203px); }
 
-.navbar {
+.navbar, .navbar-inverse {
   margin-bottom: 0;
   min-height: 90px;
   background: none !important;
@@ -65,34 +66,31 @@ section {
   border-radius: 0;
   font-size: 18px;
   font-family: "Lato", Arial, sans-serif; }
-  .navbar ul {
+  .navbar ul, .navbar-inverse ul {
     height: 90px; }
-  .navbar *, .navbar .navbar-nav > li > a {
+  .navbar *, .navbar .navbar-nav > li > a, .navbar-inverse *, .navbar-inverse .navbar-nav > li > a {
     color: white; }
-  .navbar .menu {
+  .navbar .menu, .navbar-inverse .menu {
     margin-top: 0;
     margin-bottom: 0;
     height: 100%;
     background: #62A0D1;
     overflow: hidden;
     transition: 0.7s; }
-    .navbar .menu.act_menu {
-      width: 0;
-      transition: 0.7s; }
-    .navbar .menu li svg {
+    .navbar .menu li svg, .navbar-inverse .menu li svg {
       height: 25px;
       margin-right: 8px;
       margin-bottom: -4px; }
-    .navbar .menu li a {
+    .navbar .menu li a, .navbar-inverse .menu li a {
       padding: 0 15px; }
-    .navbar .menu .sandwich {
+    .navbar .menu .sandwich, .navbar-inverse .menu .sandwich {
       width: 60px;
       height: 60px;
       float: right;
       margin-right: 5px;
       cursor: pointer;
       padding: 21.5px 10px; }
-      .navbar .menu .sandwich .sw-topper {
+      .navbar .menu .sandwich .sw-topper, .navbar-inverse .menu .sandwich .sw-topper {
         position: relative;
         top: 0;
         width: 100%;
@@ -100,7 +98,7 @@ section {
         background: #3d3840;
         border: none;
         transition: transform 0.5s, top 0.2s; }
-      .navbar .menu .sandwich .sw-bottom {
+      .navbar .menu .sandwich .sw-bottom, .navbar-inverse .menu .sandwich .sw-bottom {
         position: relative;
         width: 100%;
         height: 3px;
@@ -109,7 +107,7 @@ section {
         border: none;
         transition: transform 0.5s, top 0.2s;
         transition-delay: 0.2s, 0s; }
-      .navbar .menu .sandwich .sw-footer {
+      .navbar .menu .sandwich .sw-footer, .navbar-inverse .menu .sandwich .sw-footer {
         position: relative;
         width: 100%;
         height: 3px;
@@ -118,23 +116,23 @@ section {
         border: none;
         transition: all 0.5s ease;
         transition-delay: 0.1s; }
-  .navbar .navbar-nav.navbar-right {
+  .navbar .navbar-nav.navbar-right, .navbar-inverse .navbar-nav.navbar-right {
     margin-top: 0;
     margin-bottom: 0;
     height: 90px;
     background: #62A0D1; }
-    .navbar .navbar-nav.navbar-right a {
+    .navbar .navbar-nav.navbar-right a, .navbar-inverse .navbar-nav.navbar-right a {
       position: relative;
       top: 33px;
       line-height: 0; }
-    .navbar .navbar-nav.navbar-right .my-photo {
+    .navbar .navbar-nav.navbar-right .my-photo, .navbar-inverse .navbar-nav.navbar-right .my-photo {
       position: relative;
       top: 20px; }
-    .navbar .navbar-nav.navbar-right svg {
+    .navbar .navbar-nav.navbar-right svg, .navbar-inverse .navbar-nav.navbar-right svg {
       height: 24px; }
-    .navbar .navbar-nav.navbar-right .caret {
+    .navbar .navbar-nav.navbar-right .caret, .navbar-inverse .navbar-nav.navbar-right .caret {
       margin-left: 5px; }
-    .navbar .navbar-nav.navbar-right .notif {
+    .navbar .navbar-nav.navbar-right .notif, .navbar-inverse .navbar-nav.navbar-right .notif {
       display: inline-block;
       top: 22px;
       position: absolute;
@@ -146,14 +144,14 @@ section {
       width: 20px;
       text-align: center;
       font-size: 14px; }
-  .navbar .navbar-nav .my-photo img {
+  .navbar .navbar-nav .my-photo img, .navbar-inverse .navbar-nav .my-photo img {
     width: 50px;
     height: 50px;
     border-radius: 50px; }
-  .navbar .navbar-nav a {
+  .navbar .navbar-nav a, .navbar-inverse .navbar-nav a {
     line-height: 90px;
     padding: 0 15px; }
-  .navbar .navbar-toggle {
+  .navbar .navbar-toggle, .navbar-inverse .navbar-toggle {
     display: block !important;
     margin-top: 29px;
     padding-left: 30px;
@@ -162,11 +160,11 @@ section {
     margin: 0;
     background: #62A0D1;
     border-radius: 0; }
-    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
+    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
       background: #62A0D1; }
-    .navbar .navbar-toggle .icon-bar {
+    .navbar .navbar-toggle .icon-bar, .navbar-inverse .navbar-toggle .icon-bar {
       background: #000; }
-    .navbar .navbar-toggle:before {
+    .navbar .navbar-toggle:before, .navbar-inverse .navbar-toggle:before {
       content: "";
       position: absolute;
       width: 50px;
@@ -175,7 +173,7 @@ section {
       left: -20px;
       top: -80%;
       transform: rotate(35deg); }
-    .navbar .navbar-toggle:after {
+    .navbar .navbar-toggle:after, .navbar-inverse .navbar-toggle:after {
       content: "";
       position: absolute;
       width: 50px;
@@ -184,7 +182,9 @@ section {
       left: -20px;
       top: 30%;
       transform: rotate(-35deg); }
-  .navbar .navbar-brand, .navbar .navbar-brand:hover {
+  .navbar .navbar-toggle.act-btn .icon-bar, .navbar-inverse .navbar-toggle.act-btn .icon-bar {
+    background: white !important; }
+  .navbar .navbar-brand, .navbar .navbar-brand:hover, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover {
     background: white;
     position: relative;
     height: 100%;
@@ -192,7 +192,10 @@ section {
 
 .sidebar {
   width: 26%;
-  display: inline-block; }
+  display: inline-block;
+  position: absolute;
+  background: white;
+  z-index: 9999; }
   .sidebar .client-info {
     background: #F7F7F7;
     padding: 30px 40px; }
@@ -206,8 +209,9 @@ section {
       margin-left: 20px; }
     .sidebar .client-info .caret {
       position: relative;
-      float: right;
-      top: 40px; }
+      margin-left: 20px;
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent; }
   .sidebar .sidebar-menu {
     text-align: center;
     display: inline-block;
@@ -261,7 +265,7 @@ section {
 
 .slider {
   display: inline-block;
-  width: 74%;
+  width: 100%;
   height: calc(100% - 90px);
   float: right; }
   .slider .carousel-indicators {
@@ -363,3 +367,5 @@ section {
 
 .myButton:focus {
   color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

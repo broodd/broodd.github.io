@@ -69,8 +69,8 @@ section
 	padding-left: 15px
 	overflow: hidden
 	background: white
-	&.act_btn
-		width: calc(100% - 203px)
+	// &.act_btn
+	// 	width: calc(100% - 203px)
 header
 	// overflow: hidden
 .navbar,.navbar-inverse
@@ -92,11 +92,6 @@ header
 		background: $blue
 		overflow: hidden
 		transition: .7s
-		&.act_menu
-			width: 0
-			transition: .7s
-			display: none
-			
 		li
 			svg
 				height: 25px
@@ -209,6 +204,9 @@ header
 			left: -20px
 			top: 30%
 			transform: rotate(-35deg)
+	.navbar-toggle.act-btn
+		.icon-bar
+			background: white !important
 	.navbar-brand,.navbar-brand:hover
 		background: white
 		position: relative
@@ -220,6 +218,9 @@ header
 .sidebar
 	width: 26%
 	display: inline-block
+	position: absolute
+	background: white
+	z-index: 9999
 	.client-info
 		background: $light-grey
 		padding: 30px 40px
@@ -233,8 +234,12 @@ header
 			margin-left: 20px
 		.caret
 			position: relative
-			float: right
-			top: 40px
+			// float: right
+			// top: 40px
+			margin-left: 20px
+			border-right: 6px solid transparent
+			border-left: 6px solid transparent
+
 	.sidebar-menu
 		text-align: center
 		display: inline-block
@@ -293,7 +298,7 @@ header
 						color: white
 .slider
 	display: inline-block
-	width: 74%
+	width: 100%
 	height: calc(100% - 90px)
 	float: right
 	.carousel-indicators
