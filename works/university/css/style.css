@@ -55,18 +55,14 @@ section {
   overflow: hidden;
   background: white; }
   .navbar-header.act_btn {
-<<<<<<< HEAD
     width: calc(100% - 203px); }
-=======
-    width: calc(100% - 201px); }
->>>>>>> 18daba35d7cc9e897d03e72c30348bba715c631a
 
 .navbar {
   margin-bottom: 0;
   min-height: 90px;
-  background: none;
-  border: none;
-  border-radius: 0;
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
   font-size: 18px;
   font-family: "Lato", Arial, sans-serif; }
   .navbar ul {
