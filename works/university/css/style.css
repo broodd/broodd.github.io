@@ -64,9 +64,9 @@ section {
 .navbar {
   margin-bottom: 0;
   min-height: 90px;
-  background: none;
-  border: none;
-  border-radius: 0;
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
   font-size: 18px;
   font-family: "Lato", Arial, sans-serif; }
   .navbar ul {
