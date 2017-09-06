@@ -167,7 +167,7 @@ section {
     .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
       background: #62A0D1; }
     .navbar .navbar-toggle .icon-bar, .navbar-inverse .navbar-toggle .icon-bar {
-      background: #000; }
+      background: #fff; }
     .navbar .navbar-toggle:before, .navbar-inverse .navbar-toggle:before {
       content: "";
       position: absolute;
@@ -187,7 +187,7 @@ section {
       top: 30%;
       transform: rotate(-35deg); }
   .navbar .navbar-toggle.act-btn .icon-bar, .navbar-inverse .navbar-toggle.act-btn .icon-bar {
-    background: white !important; }
+    background: #000 !important; }
   .navbar .navbar-brand, .navbar .navbar-brand:hover, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover {
     background: white;
     position: relative;
@@ -199,7 +199,8 @@ section {
   display: inline-block;
   position: absolute;
   background: white;
-  z-index: 9999; }
+  z-index: 9999;
+  display: none; }
   .sidebar .client-info {
     background: #F7F7F7;
     padding: 30px 40px; }
