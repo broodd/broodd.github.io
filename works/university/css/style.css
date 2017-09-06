@@ -210,7 +210,8 @@ section {
     .sidebar .client-info .inline-block {
       height: 100%;
       vertical-align: middle;
-      margin-left: 20px; }
+      margin-left: 20px;
+      max-width: 100px; }
     .sidebar .client-info .caret {
       position: relative;
       margin-left: 20px;
