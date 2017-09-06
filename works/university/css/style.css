@@ -43,7 +43,8 @@ section {
   padding-top: 0;
   padding-bottom: 0;
   line-height: 90;
-  background: #62A0D1; }
+  background: #62A0D1;
+  color: black; }
 
 .wrap-menu {
   background: #62A0D1;
@@ -51,7 +52,10 @@ section {
 
 .navbar-header {
   padding-left: 15px;
-  overflow: hidden; }
+  overflow: hidden;
+  background: white; }
+  .navbar-header.act_btn {
+    width: calc(100% - 165px); }
 
 .navbar {
   margin-bottom: 0;
@@ -67,7 +71,11 @@ section {
     color: white; }
   .navbar .menu {
     height: 100%;
-    background: #62A0D1; }
+    background: #62A0D1;
+    overflow: hidden;
+    transition: 0.7s; }
+    .navbar .menu.act_menu {
+      width: 0; }
     .navbar .menu li svg {
       height: 25px;
       margin-right: 8px;
@@ -145,10 +153,9 @@ section {
     margin-top: 29px;
     padding-left: 30px;
     border: none;
-    height: 100%;
+    height: 90px;
     margin: 0;
     background: #62A0D1;
-    overflow: hidden;
     border-radius: 0; }
     .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
       background: #62A0D1; }
@@ -323,7 +330,6 @@ section {
 .myButton {
   font-size: 13.633px;
   font-family: "Lato", arial, sans-serif;
-  color: #f58320;
   line-height: 1.2;
   -moz-box-shadow: 3px 4px 0px 0px #1564ad;
   -webkit-box-shadow: 3px 4px 0px 0px #1564ad;
@@ -347,4 +353,8 @@ section {
 
 .myButton:active {
   position: relative;
-  top: 1px; }
+  top: 1px;
+  color: white; }
+
+.myButton:focus {
+  color: #fff; }

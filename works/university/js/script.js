@@ -1,5 +1,8 @@
 $(document).ready(function(){
 	$('.navbar-toggle').click(function() {
-		$('.menu').hide();
+		var menu = $('.menu');
+		var width1 = menu.width();
+		menu.toggleClass('act_menu');
+		$('.navbar-header').toggleClass('act_btn');
 	});
 });

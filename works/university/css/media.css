@@ -1,6 +1,21 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1305px) {
+	.navbar .menu li svg, .navbar .navbar-nav.navbar-right svg{
+		height: 21px;
+	}
+}
+@media only screen and (max-width : 1253px) {
+	.navbar {
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width : 1253px) {
+	.navbar .navbar-nav a, .navbar .menu li a {
+		padding: 0 10px;
+	}
+}
 @media only screen and (max-width : 1200px) {
 
 }
