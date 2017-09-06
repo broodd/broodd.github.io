@@ -41,15 +41,16 @@ img,svg
 
 .inline-block
 	display: inline-block
-	
-// ==============
 
-section
-	margin: 80px 0
+body
+	background: #f8f9fb
 
 // ==============
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover
 	background: none
+	color: #000
+	svg
+		fill: #000
 
 .navbar-header,.navbar-nav
 	height: 90px
@@ -75,8 +76,6 @@ section
 	background: white
 	// &.act_btn
 	// 	width: calc(100% - 203px)
-header
-	// overflow: hidden
 .navbar,.navbar-inverse
 	margin-bottom: 0
 	min-height: 90px
@@ -101,41 +100,9 @@ header
 				height: 25px
 				margin-right: 8px
 				margin-bottom: -4px
+				fill: #fff
 			a
 				padding: 0 15px
-		.sandwich
-			width: 60px
-			height: 60px
-			float: right
-			margin-right: 5px
-			cursor: pointer
-			padding: 21.5px 10px
-			.sw-topper
-				position: relative
-				top: 0
-				width: 100%
-				height: 3px
-				background: #3d3840
-				border: none
-				transition: transform 0.5s, top 0.2s
-			.sw-bottom
-				position: relative
-				width: 100%
-				height: 3px
-				margin-top: 4px
-				background: #3d3840
-				border: none
-				transition: transform 0.5s, top 0.2s
-				transition-delay: 0.2s, 0s
-			.sw-footer
-				position: relative
-				width: 100%
-				height: 3px
-				margin-top: 4px
-				background: #3d3840
-				border: none
-				transition: all 0.5s ease
-				transition-delay: 0.1s
 	.navbar-nav.navbar-right
 		margin-top: 0
 		margin-bottom: 0
@@ -152,6 +119,7 @@ header
 			top: 20px
 		svg
 			height: 24px
+			fill: #fff
 		.caret
 			margin-left: 5px
 		.notif
@@ -221,12 +189,13 @@ header
 
 .sidebar
 	width: 26%
+	min-width: 300px
 	display: inline-block
 	position: absolute
 	background: white
 	z-index: 9999
 	display: none
-	
+	box-shadow: 3px 0px 8px 0px rgba(0, 0, 0, 0.04)
 	.client-info
 		background: $light-grey
 		padding: 30px 40px
@@ -258,12 +227,12 @@ header
 			display: inline-flex
 			text-align: left
 			flex-direction: column
-			height: calc(100vh - 370px)
+			height: calc(85vh - 230px)
 			justify-content: space-around
 			margin-bottom: 0
 			li
 				// margin: 15px 0
-				&:hover
+				&:hover,&.active
 					a
 						color: $red
 					svg
@@ -288,8 +257,10 @@ header
 			text-align: center
 			width: 100%
 			margin-bottom: 0
-			height: 140px
+			height: 11vh
 			align-items: center
+			margin-top: 4vh
+			border-top: 1px solid #ddd
 			li
 				margin: 0 10px
 				a
