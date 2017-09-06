@@ -6,7 +6,7 @@
 		height: 21px;
 	}
 }
-@media only screen and (max-width : 1253px) {
+@media only screen and (max-width : 1270px) {
 	.navbar {
 		font-size: 16px;
 	}
@@ -24,7 +24,14 @@
 	    width: calc(1170px - 26%);
 	}
 }
-
+@media only screen and (max-width : 1120px) {
+	.wrap-menu, .menu,.navbar .navbar-nav.navbar-right{
+		height: 100% !important;
+	}
+	.navbar .navbar-nav.navbar-right a {
+		line-height: 90px;
+	}
+}
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 

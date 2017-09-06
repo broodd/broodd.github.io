@@ -69,7 +69,7 @@ section
 	overflow: hidden
 	background: white
 	&.act_btn
-		width: calc(100% - 165px)
+		width: calc(100% - 203px)
 header
 	// overflow: hidden
 .navbar
@@ -85,13 +85,15 @@ header
 	*,.navbar-nav>li>a
 		color: white
 	.menu
-		// margin-left: 100px
+		margin-top: 0
+		margin-bottom: 0
 		height: 100%
 		background: $blue
 		overflow: hidden
 		transition: .7s
 		&.act_menu
 			width: 0
+			transition: .7s
 		li
 			svg
 				height: 25px
@@ -133,7 +135,8 @@ header
 				transition: all 0.5s ease
 				transition-delay: 0.1s
 	.navbar-nav.navbar-right
-		// height: 100%
+		margin-top: 0
+		margin-bottom: 0
 		height: 90px
 		background: $blue
 		a
