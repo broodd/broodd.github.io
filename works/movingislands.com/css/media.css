@@ -1,0 +1,93 @@
+@media only screen and (max-width : 992px) {
+	.navigator,
+	.contact.under-section .col-md-6:first-child{display: none;}
+	
+	.acts.under-section p,
+	.contact-us.under-section p, 
+	.contact.under-section {text-align: center !important;}
+	.contact-us.under-section,
+	.contact.under-section p {font-size: 26px;}
+	.contact-us.under-section,
+	.contact.under-section p a {font-size: 22px;}
+
+	section h3 {text-align: center;}
+	section h3 em {
+		position: relative;
+	    display: block;
+	    width: auto;
+	    margin-top: -30px;
+	}
+	#diagrams h2 {font-size: 30px;}
+
+	#header #menu-wrap {display: none;}
+	#header #sandwich {display: block}
+	#header #menu {
+		position: absolute;
+	    width: 100vw;
+	    left: 0;
+	    top: 0;
+	    background: #9BC605;
+	    color: #fff;
+	    height: 100vh;
+	    flex-direction: column;
+	}
+
+	#report .col-md-6 {
+		padding: 0;
+	}
+
+	.menu-wrap-col {
+		position: static;
+	}
+}
+@media only screen and (max-width : 768px) {
+	#diagrams .diagrama:nth-child(2n) {
+		margin-left: 0;	
+	}
+	#diagrams .diagrama img {
+		width: 60%;
+	}
+	#diagrams .diagrama:first-child {margin-bottom: 120px;}
+
+
+	.acts.under-section p {
+	    width: 70%;
+	    left: 15%;
+	    position: relative;
+	}
+	.acts.under-section p strong {
+		float: left;
+	    margin-left: 10%;
+	    clear: both;
+	}
+	#action .acts p a i {
+		float:right;
+		margin-top: 5px;
+		margin-right: 10%;
+	}
+}
+@media only screen and (max-width : 600px) {
+	#report p {
+		font-size: 23px;
+	}
+}
+@media only screen and (max-width : 560px) {
+	section h3 strong {
+		font-size: 70px;
+	}
+	.sect_img {
+		width: 60%;
+	}
+}
+@media only screen and (max-width : 430px) {
+	#report p {
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width : 420px) {
+	section h3 strong {
+		font-size: 50px;
+	}
+	section h3 em p {
+		font-size: 27px;
+}
