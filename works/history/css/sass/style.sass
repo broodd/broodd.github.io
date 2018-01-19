@@ -1,0 +1,129 @@
+@import 'mixins'
+
+// +font('ROBOTO-REGULAR', 'ROBOTOCONDENSED-REGULAR_0', 'ttf', '../fonts/my-fonts/')
+
+
+// COLORS
+$green: #3A6260
+$grey: #BCBCBC
+$orange: #E19677
+
+$ff-1: "ROBOTO-REGULAR", Arial, sans-serif
+// $ff-2: "RobotoCondensed", Arial, sans-serif
+// $ff-3: "Palatino Linotype", arial, sans-serif
+$ff-4: "AND", arial, sans-serif
+
+// CLASS COLORS
+
+// MAIN
+body
+	background: #fff
+	// font-size: 22px
+	// font-family: $ff-1
+	font-family: Arial
+	overflow: scroll
+
++links(inerhit)
+	text-decoration: none
+
+	
+input,input:hover,input:focus
+	outline: none
+
+ul
+	padding-left: 0
+	list-style: none
+
+img,svg
+	max-width: 100%
+	height: auto
+
+.center
+	text-align: center
+
+.arrow-down
+	+arr(18, 18, $orange, b)
+
+.arrow-top
+	+arr(18, 18, $orange, t)
+
+.slogo
+	float: right
+
+.logo
+	&__text
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 42px
+
+.date
+	&__number
+		color: $green
+		font-size: 80px
+		font-weight: bold
+	&__mounth
+		color: $grey
+		font-size: 36px
+
+.text
+	font-weight: 600
+	&_justify
+		text-align: justify
+
+.wrap
+	padding: 0 120px
+	display: block
+	width: 100%
+	clear: both
+	&__item
+	margin-bottom: 20px
+.headertext
+	text-align: center
+	position: relative
+	margin-bottom: 15px
+	margin-top: 15px
+	&__item
+		display: inline-block
+		min-width: 138px
+	&__header
+		color: $green
+		margin-bottom: 0
+		margin-top: 0
+		&_big
+			font-size: 30px
+			text-transform: uppercase
+		&_small
+			font-size: 18px
+	&__desc
+		text-transform: uppercase
+		color: $grey
+		font-size: 17px
+		+before($grey, 100%, 3px, 50%)
+			z-index: -1
+			+translate(0,-50%)
+		span
+			background: white
+			padding: 0 4px
+	&__icon
+		display: inline-block
+		vertical-align: top
+		font-size: 32px
+		position: absolute
+		margin-left: 10px
+		color: $orange
+		&_arrow
+			right: 15px
+			top: 50%
+			+translate(0,-50%)
+	&_select
+		padding: 20px 30px
+		box-shadow: -3px 3px 20px #ddd
+		min-height: 65px
+.contenttext
+	display: none
+	&__content
+		padding: 25px 40px
+		margin: 0
+
+
+

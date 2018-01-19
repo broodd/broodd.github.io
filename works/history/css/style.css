@@ -1,0 +1,131 @@
+body {
+  background: #fff;
+  font-family: Arial;
+  overflow: scroll; }
+
+a {
+  color: inerhit;
+  text-decoration: none; }
+  a:visited {
+    color: inerhit; }
+  a:hover {
+    color: inerhit; }
+  a:active {
+    color: inerhit; }
+
+input, input:hover, input:focus {
+  outline: none; }
+
+ul {
+  padding-left: 0;
+  list-style: none; }
+
+img, svg {
+  max-width: 100%;
+  height: auto; }
+
+.center {
+  text-align: center; }
+
+.arrow-down {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 18px 9px 0 9px;
+  border-color: #E19677 transparent transparent transparent; }
+
+.arrow-top {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 9px 18px 9px;
+  border-color: transparent transparent #E19677 transparent; }
+
+.slogo {
+  float: right; }
+
+.logo__text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 42px; }
+
+.date__number {
+  color: #3A6260;
+  font-size: 80px;
+  font-weight: bold; }
+.date__mounth {
+  color: #BCBCBC;
+  font-size: 36px; }
+
+.text {
+  font-weight: 600; }
+  .text_justify {
+    text-align: justify; }
+
+.wrap {
+  padding: 0 120px;
+  display: block;
+  width: 100%;
+  clear: both;
+  margin-bottom: 20px; }
+
+.headertext {
+  text-align: center;
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 15px; }
+  .headertext__item {
+    display: inline-block;
+    min-width: 138px; }
+  .headertext__header {
+    color: #3A6260;
+    margin-bottom: 0;
+    margin-top: 0; }
+    .headertext__header_big {
+      font-size: 30px;
+      text-transform: uppercase; }
+    .headertext__header_small {
+      font-size: 18px; }
+  .headertext__desc {
+    text-transform: uppercase;
+    color: #BCBCBC;
+    font-size: 17px;
+    position: relative; }
+    .headertext__desc::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #BCBCBC;
+      z-index: -1;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%); }
+    .headertext__desc span {
+      background: white;
+      padding: 0 4px; }
+  .headertext__icon {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 32px;
+    position: absolute;
+    margin-left: 10px;
+    color: #E19677; }
+    .headertext__icon_arrow {
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%); }
+  .headertext_select {
+    padding: 20px 30px;
+    box-shadow: -3px 3px 20px #ddd;
+    min-height: 65px; }
+
+.contenttext {
+  display: none; }
+  .contenttext__content {
+    padding: 25px 40px;
+    margin: 0; }
