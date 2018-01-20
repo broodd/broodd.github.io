@@ -21,7 +21,7 @@ body
 	// font-size: 22px
 	// font-family: $ff-1
 	font-family: Arial
-	overflow: scroll
+	overflow-y: scroll
 
 +links(inerhit)
 	text-decoration: none
@@ -59,12 +59,15 @@ img,svg
 .date
 	&__number
 		color: $green
-		font-size: 80px
+		font-size: 120px
 		font-weight: bold
+		line-height: 120px
+		letter-spacing: -8px
 	&__mounth
 		color: $grey
-		font-size: 36px
-
+		font-size: 27px
+		line-height: 23px
+		text-transform: uppercase
 .text
 	font-weight: 600
 	&_justify
@@ -76,7 +79,8 @@ img,svg
 	width: 100%
 	clear: both
 	&__item
-	margin-bottom: 20px
+		margin-bottom: 40px
+		margin-top: 40px
 .headertext
 	text-align: center
 	position: relative

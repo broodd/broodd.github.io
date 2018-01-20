@@ -1,0 +1,254 @@
+@import 'mixins'
+
+// COLORS
+$g-color: #011407
+$success: #3dcf7e
+$default: #eee
+$danger: #f5694e
+
+// MAIN
+
+html
+	font-size: 100%
+	overflow-y: scroll
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-modal-wrap: 100%
+
+body
+	font: normal 14px/1 'Montserrat', Arial, Helvetica, sans-serif
+	color: $g-color
+	background-color: #f2f2f2
+
+
+.ic
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	&--alerts
+		background: url('../img/icons-se578c48211.png') 0 0 no-repeat
+		width: 20px
+		height: 20px
+	&--calendar 
+		background: url('../img/icons-se578c48211.png') 0 -30px no-repeat
+		width: 20px
+		height: 20px
+	&--setting 
+		background: url('../img/icons-se578c48211.png') 0 -60px no-repeat
+		width: 20px
+		height: 20px
+
+
+input[type='text'], 
+input[type='number'], 
+input[type='email'], 
+input[type='tel'], 
+input[type='search'], 
+input[type='url'], 
+input[type='file'], 
+input[type='password'], 
+textarea
+	height: 40px
+	margin-bottom: 15px
+	background: #fff
+	color: #8c9c93
+	border: 1px solid #ccc
+	+br(4px)
+	+placeholder
+		color: #8c9c93
+		font-size: 14px
+	+placeholder-color(#8c9c93)
+textarea 
+	height: auto
+	resize: none
+	min-height: 100px
+
+.clr 
+	+clr
+
+.fl 
+	float: left
+.fr
+	float: right
+
+.text-center
+	text-align: center !important
+.text-left
+	text-align: left !important
+.text-right 
+	text-align: right !important
+
+input,input:hover,input:focus
+	outline: none
+
+ul
+	padding-left: 0
+	list-style: none
+
+img,svg
+	max-width: 100%
+	height: auto
+
+.fl 
+	float: left
+.fr
+	float: right
+
+.text-center
+	text-align: center !important
+.text-left
+	text-align: left !important
+.text-right 
+	text-align: right !important
+
+.clr 
+	+clr
+
+.wrapper
+	width: 970px
+	padding: 0 15px
+	margin: 100px auto 
+
+
+.box 
+	padding: 20px
+	margin-bottom: 30px
+	background-color: white
+	+br(4px) 
+	+bs( 0 1px 1px rgba(223, 223, 223, 0.75))
+	&--lg 
+		padding: 20px 40px
+		.nav  
+			padding: 22px 0
+
+.nav 
+	float: left
+	margin: 0 
+	padding: 0
+	list-style-type: none
+	li 
+		display: inline-block
+		& + li 
+			margin-left: 16px
+		a 
+			font-weight: 700
+			+links($g-color,$success)
+
+.status 
+	padding: 14px 0
+	float: right
+	.offline, .online
+		position: relative
+		display: inline-block
+		width: 30px
+		height: 30px
+		border: 2px solid $success 
+		+br(50%)
+		cursor: pointer
+		&.active:after 
+			content: ''
+			display: block
+			position: absolute
+			top: 3px 
+			left: 3px
+			right: 3px
+			bottom: 3px
+			background: $success 
+			+br(50%)
+	.offline
+		border-color: $danger
+		&.active:after 
+			background: $danger
+
+.profile
+	float: left
+	&__img
+		float: left
+		img
+			display: inline-block
+			width: 60px
+			height: 60px
+			border: 5px solid #f2f2f2
+			background-color: #f2f2f2
+			+br(50%)
+	&__info
+		margin-left: 67px
+		padding-top: 13px
+		span
+			color: #4e5f55
+			display: block
+	&__name
+		margin: 5px 0 0 0
+		color: $success
+		font-size: 18px
+		font-weight: bold
+		a
+			+links(inherit)
+
+.nav-icon
+	padding: 20px 0
+	float: right
+	&__item
+		display: inline-block
+		position: relative
+		margin-left: 16px
+		kbd
+			position: absolute
+			top: -10px
+			right: -10px
+			display: inline-block
+			padding: 0 5px
+			height: 18px
+			line-height: 18px
+			font-size: 12px
+			font-weight: bold
+			color: #fff
+			background-color: $success
+			z-index: 1
+			+br(8px)
+
+.navbar
+	padding-top: 13px
+	padding-bottom: 13px
+	.devider
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			right: -34px
+			top: -3px
+			display: block
+			width: 2px
+			height: 40px
+			background-color: #eee
+			
+	&-form
+		position: relative
+		width: 191px
+		float: right
+		margin-right: 10px
+		input[type="text"]
+			height: 34px
+			padding: 0 8px
+			margin-bottom: 0
+		.form-button
+			position: absolute
+			display: block
+			background: transparent
+			border: none
+			width: 16px
+			height: 16px
+	.nav-icon, .profile
+		padding: 7px 0
+	.nav
+		padding: 10px 0
+	.profile
+		&__img
+			img
+				width: 19px
+				height: 19px
+				border: none
+		&__info
+			margin-left: 26px
+			padding-top: 1px
+		&__name
+			margin:  0

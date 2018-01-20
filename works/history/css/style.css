@@ -1,7 +1,7 @@
 body {
   background: #fff;
   font-family: Arial;
-  overflow: scroll; }
+  overflow-y: scroll; }
 
 a {
   color: inerhit;
@@ -51,11 +51,15 @@ img, svg {
 
 .date__number {
   color: #3A6260;
-  font-size: 80px;
-  font-weight: bold; }
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 120px;
+  letter-spacing: -8px; }
 .date__mounth {
   color: #BCBCBC;
-  font-size: 36px; }
+  font-size: 27px;
+  line-height: 23px;
+  text-transform: uppercase; }
 
 .text {
   font-weight: 600; }
@@ -66,8 +70,10 @@ img, svg {
   padding: 0 120px;
   display: block;
   width: 100%;
-  clear: both;
-  margin-bottom: 20px; }
+  clear: both; }
+  .wrap__item {
+    margin-bottom: 40px;
+    margin-top: 40px; }
 
 .headertext {
   text-align: center;
