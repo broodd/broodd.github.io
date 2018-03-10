@@ -1,0 +1,41 @@
+$blue: #458EE3
+$pink: #E960D5
+
+.wrap
+  overflow-x: hidden
+
+.side
+  // min-height: 100vh
+  color: #fff
+.content
+  padding: 30px 15px
+  border: 2px solid #fff
+  height: 100vh
+  text-transform: uppercase
+  font-family: Arial, sans-serif
+.left,
+.right
+  padding: 10px 15px
+  &:before
+    content: ''
+    position: absolute
+    width: 200vw
+    height: 100%
+    top: 0
+    z-index: -1
+.left
+  background-color: $blue
+  &:before
+    right: 0
+    background-color: $blue
+.right 
+  background-color: $pink
+  &:before
+    left: 0
+    background-color: $pink
+  
+@(max-width: 922px)
+  .left, 
+  .right
+    &:before
+      left: -100vw

@@ -1,0 +1,52 @@
+.wrap {
+  overflow-x: hidden;
+}
+
+.side {
+  color: #fff;
+}
+
+.content {
+  padding: 30px 15px;
+  border: 2px solid #fff;
+  height: 100vh;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+}
+
+.left,
+.right {
+  padding: 10px 15px;
+}
+.left:before,
+.right:before {
+  content: "";
+  position: absolute;
+  width: 200vw;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+.left {
+  background-color: #458EE3;
+}
+.left:before {
+  right: 0;
+  background-color: #458EE3;
+}
+
+.right {
+  background-color: #E960D5;
+}
+.right:before {
+  left: 0;
+  background-color: #E960D5;
+}
+
+@media only screen and (max-width: 992px) {
+  .left:before,
+  .right:before {
+    left: -100vw;
+  }
+}
