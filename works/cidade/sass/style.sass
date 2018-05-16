@@ -1,0 +1,88 @@
+@import 'mixins'
+@import 'default'
+
+
+
+.social
+	display: flex
+	li
+		margin-right: 5px
+		a
+			display: inline-block
+			width: 20px
+			height: 20px
+			+br(50%)
+			text-align: center
+			font-size: 12px
+			line-height: 22px
+	&-bg_white
+		li
+			a
+				background-color: $w
+				color: $text
+	&-bg_dark
+		li
+			a
+				background-color: $text
+				color: $w
+
+.menu
+	display: -o-flex
+	display: flex
+	color: $text-s
+	text-transform: uppercase
+	font-family: $ff-2
+	li
+		margin-left: 30px
+
+.border
+	border-width: 5px
+	border-style: solid
+	&-white
+		border-color: $w
+
+html body
+	.btn
+		display: block
+		padding: 5px 10px	
+		text-transform: uppercase
+		&-bg_white
+			background-color: $w
+			color: $text
+
+.main__photo
+	+cover
+	background-position: center
+	color: $w
+	padding-top: 110px
+	padding-bottom: 70px
+	// height: 100vh
+	&-home
+		background-image: url(../img/bg.jpg)
+
+.slogo
+	padding-left: 20px
+	padding-top: 40px
+	&__title
+		font-size: 72px
+		font-family: $ff-2
+		line-height: 0.9
+	&__under
+		font-size: 36px
+		line-height: 0.9
+
+.header
+	&__desc
+		line-height: 1
+
+.footer
+	background-color: $text
+	color: $w
+	padding-top: 65px
+	padding-bottom: 100px
+	&__header
+		min-height: 80px
+	p
+		margin-bottom: 0
+
+
