@@ -41,25 +41,6 @@
 	&-white
 		border-color: $w
 
-html body
-	.btn
-		display: block
-		padding: 5px 10px	
-		text-transform: uppercase
-		&-bg_white
-			background-color: $w
-			color: $text
-
-.main__photo
-	+cover
-	background-position: center
-	color: $w
-	padding-top: 110px
-	padding-bottom: 70px
-	// height: 100vh
-	&-home
-		background-image: url(../img/bg.jpg)
-
 .slogo
 	padding-left: 20px
 	padding-top: 40px
@@ -70,6 +51,61 @@ html body
 	&__under
 		font-size: 36px
 		line-height: 0.9
+
+html body
+	.btn
+		display: block
+		padding: 5px 10px	
+		text-transform: uppercase
+		&-bg_white
+			background-color: $w
+			color: $text
+		&-border
+			border: 3px solid $text-s
+			padding: 5px 30px
+
+
+.section
+	&__photo
+		+cover
+		background-position: center
+		color: $w
+		padding-top: 110px
+		padding-bottom: 70px
+		// height: 100vh
+		&-home
+			background-image: url(../img/bg.jpg)
+
+	&__instagram
+		overflow-y: hidden
+		text-align: center
+		.instagram__left
+			padding-top: 75px
+			padding-bottom: 100px
+		.instagram
+			&__desc
+				background-color: $insta
+				padding: 15px
+				color: $w
+				display: inline-block
+			&__title
+				font-size: 90px
+				font-style: italic
+				color: $insta
+			&__iphone
+				position: absolute
+				width: auto
+				height: 140%
+				left: 50%
+				+translateX(-50%)
+
+	.section__grid-gallery
+		.grid
+			&__column
+				img
+					display: block
+					margin-bottom: 20px
+
 
 .header
 	&__desc

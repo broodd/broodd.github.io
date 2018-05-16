@@ -470,9 +470,9 @@ a {
   color: inherit;
   text-decoration: none; }
   a:visited {
-    color: inherit; }
+    color: #575756; }
   a:hover {
-    color: inherit; }
+    color: #575756; }
   a:active {
     color: inherit; }
 
@@ -499,6 +499,11 @@ ul {
 .color-black {
   color: #575756; }
 
+.bg-dark {
+  background-color: #C0C0AB; }
+.bg-grey {
+  background-color: #ECECEC; }
+
 .fz-11 {
   font-size: 11px; }
 .fz-10 {
@@ -509,6 +514,10 @@ ul {
 .margin-25_0 {
   margin-top: 25px;
   margin-bottom: 25px; }
+
+.padding-25_0 {
+  padding-top: 25px;
+  padding-bottom: 25px; }
 
 .social {
   display: -webkit-box;
@@ -550,24 +559,6 @@ ul {
   .border-white {
     border-color: #fff; }
 
-html body .btn {
-  display: block;
-  padding: 5px 10px;
-  text-transform: uppercase; }
-  html body .btn-bg_white {
-    background-color: #fff;
-    color: #C0C0AB; }
-
-.main__photo {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  padding-top: 110px;
-  padding-bottom: 70px; }
-  .main__photo-home {
-    background-image: url(../img/bg.jpg); }
-
 .slogo {
   padding-left: 20px;
   padding-top: 40px; }
@@ -578,6 +569,53 @@ html body .btn {
   .slogo__under {
     font-size: 36px;
     line-height: 0.9; }
+
+html body .btn {
+  display: block;
+  padding: 5px 10px;
+  text-transform: uppercase; }
+  html body .btn-bg_white {
+    background-color: #fff;
+    color: #C0C0AB; }
+  html body .btn-border {
+    border: 3px solid #575756;
+    padding: 5px 30px; }
+
+.section__photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding-top: 110px;
+  padding-bottom: 70px; }
+  .section__photo-home {
+    background-image: url(../img/bg.jpg); }
+.section__instagram {
+  overflow-y: hidden;
+  text-align: center; }
+  .section__instagram .instagram__left {
+    padding-top: 75px;
+    padding-bottom: 100px; }
+  .section__instagram .instagram__desc {
+    background-color: #99BCBE;
+    padding: 15px;
+    color: #fff;
+    display: inline-block; }
+  .section__instagram .instagram__title {
+    font-size: 90px;
+    font-style: italic;
+    color: #99BCBE; }
+  .section__instagram .instagram__iphone {
+    position: absolute;
+    width: auto;
+    height: 140%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+.section .section__grid-gallery .grid__column img {
+  display: block;
+  margin-bottom: 20px; }
 
 .header__desc {
   line-height: 1; }
