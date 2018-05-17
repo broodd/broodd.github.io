@@ -28,7 +28,7 @@ body
 	text-align: left
 	font-size: 100%
 
-+links(inherit, $text-s, $text-s)
++links(inherit)
 	text-decoration: none
 
 // a.color-black
@@ -46,6 +46,12 @@ ul
 	margin: 0
 	list-style-type: none
 
+small
+	font-family: $ff-2
+
+.text-center
+	text-align: center
+
 .upper
 	text-transform: uppercase
 	
@@ -55,6 +61,8 @@ ul
 .color
 	&-black
 		color: $text-s
+		&:hover
+			color: $text-s
 
 .bg
 	&-dark
@@ -64,18 +72,25 @@ ul
 
 .fz
 	&-11
-		font-size: 11px
+		// font-size: 11px
+		font-size:  0.6875em
 	&-10
-		font-size: 10px
+		// font-size: 10px
+		font-size: 0.625em
 	&-9
-		font-size: 9px
+		// font-size: 9px
+		font-size: 0.5625em
 
 .margin
 	&-25_0
 		margin-top: 25px
 		margin-bottom: 25px
+	&-b65
+		margin-bottom: 65px
 
 .padding
+	&-0
+		padding: 0
 	&-25_0
 		padding-top: 25px	
 		padding-bottom: 25px	
@@ -88,11 +103,13 @@ ul
 // 	vertical-align: middle
 
 
-// .float-right
-// 	float: right
-// .float-left
-// 	float: left
+.float-right
+	float: right
+.float-left
+	float: left
 
+.w100p
+	width: 100%
 
 // .position-absolute
 // 	position: absolute
@@ -112,8 +129,6 @@ ul
 // 		clear: both
 
 
-// .w100p
-// 	width: 100%
 // .w100p-img
 // 	img
 // 		width: 100%

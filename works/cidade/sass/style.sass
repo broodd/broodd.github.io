@@ -45,11 +45,13 @@
 	padding-left: 20px
 	padding-top: 40px
 	&__title
-		font-size: 72px
+		// font-size: 72px
+		font-size: 4.5em
 		font-family: $ff-2
 		line-height: 0.9
 	&__under
-		font-size: 36px
+		// font-size: 36px
+		font-size: 2.25em
 		line-height: 0.9
 
 html body
@@ -62,10 +64,81 @@ html body
 			color: $text
 		&-border
 			border: 3px solid $text-s
+			color: $text-s
 			padding: 5px 30px
+
+	.post
+		&__date
+			display: block
+			margin-bottom: 20px
+		&__title
+			text-transform: uppercase
+			font-size: 18px
+			margin-bottom: 3px
+			color: $text
+		&__under
+			font-size: 12px
+			font-family: $ff-2
+			color: $text-s
+			text-transform: uppercase
+		&__more
+			display: inline-block
+			position: relative
+			padding-right: 15px
+			font-size: 14px
+			text-transform: uppercase
+			color: $text
+			margin-bottom: 5px
+			&:after
+				content: ''
+				position: absolute
+				font-size: 14px
+				right: 0
+				top: 50%
+				+translateY
+				+arr(8, 10,$text, r)
+				border-radius: 2px
+			&-white
+				color: $w
+				&:after
+					+arr(8, 10, $w, r)
+			&-margin_30
+				margin-top: 30px
+			&-margin_20
+				margin-top: 20px
+
+.overline
+	&__title
+		font-size: 36px
+		font-family: $ff-2
+		position: relative
+		padding-top: 30px
+		margin-bottom: 0
+		&:after
+			content: ''
+			position: absolute
+			height: 8px
+			background-color: $text
+			left: 0
+			top: 0
+	&__under
+		// font-size: 18px
+		font-size: 18px
+		letter-spacing: 3px
+	&-big
+		&:after
+			width: 320px
+		
+		
 
 
 .section
+	&-margin_medium
+		margin-top: 85px
+		margin-bottom: 85px
+
+
+
 	&__photo
 		+cover
 		background-position: center
@@ -75,6 +148,18 @@ html body
 		// height: 100vh
 		&-home
 			background-image: url(../img/bg.jpg)
+
+	&__novidades
+		.novidades
+			&__content
+				background-color: $w
+				padding: 5% 10%
+				margin: 0 5%
+				margin-top: 0px
+				margin-top: -20px
+				z-index: 2
+				position: relative
+
 
 	&__instagram
 		overflow-y: hidden
@@ -99,13 +184,19 @@ html body
 				left: 50%
 				+translateX(-50%)
 
-	.section__grid-gallery
+	&__grid-gallery
 		.grid
 			&__column
 				img
 					display: block
 					margin-bottom: 20px
 
+
+
+
+
+.logo
+	height: 60px
 
 .header
 	&__desc

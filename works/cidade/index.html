@@ -17,7 +17,7 @@
 
 	<header class="header">
 		<div class="container">
-			<div class="row justify-content-between margin-25_0">
+			<div class="row d-none d-md-flex justify-content-between margin-25_0">
 				<div class="col-auto header__desc">
 					<div>
 						<small class="upper fz-11">Aberto |</small>
@@ -37,12 +37,21 @@
 			</div>
 
 			<div class="row align-items-center justify-content-between margin-25_0">
-				<div class="col-auto">
-					<img class="logo" src="img/logo.jpg" alt="">
+				<div class="w100p">
+					<div class="col-auto d-md-none float-left">
+						<div id="sandwich">
+							<div class="sw-topper"></div>
+							<div class="sw-bottom"></div>
+							<div class="sw-footer"></div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-auto text-center-sm">
+						<img class="logo" src="img/logo.svg" alt="">
+					</div>
 				</div>
-				<div class="col-auto">
+				<div class="col-12 col-md-auto">
 					<nav>
-						<ul class="menu">
+						<ul class="menu flex-column flex-md-row">
 							<li><a href="#">Shopping</a></li>
 							<li><a href="#">Lojas</a></li>
 							<li><a href="#">Eventos</a></li>
@@ -64,6 +73,80 @@
 					<div class="col-md-7 slogo border border-white">
 						<h1 class="upper slogo__title">shopping cidade do porto</h1>
 						<h2 class="upper slogo__under">O seu shopping <div class="d-md-block"></div>de eleicao</h2>
+						<a href="#" class="post__more post__more-white post__more-margin_30 float-right">ver mains</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-margin_medium section__novidades">
+			<div class="container">
+				<div class="row">
+					<div class="col-auto">
+						<h3 class="upper overline__title overline-big">Novidades</h3>
+						<div class="upper overline__under margin-b65">As novidades mais trendy</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 novidades">
+						<div class="novidades__image">
+							<img src="img/woman.jpg" alt="">
+						</div>
+						<div class="novidades__content">
+							<small class="fz-9 post__date">30.05.2018</small>
+							<h5 class="post__title"><a href="#">Wonen`secret</a></h5>
+							<div class="post__under">O verao esya chegar</div>
+							<a href="#" class="post__more post__more-margin_30">ver mains</a>
+						</div>
+					</div>
+					<div class="col-md-4 novidades">
+						<div class="novidades__image">
+							<img src="img/woman.jpg" alt="">
+						</div>
+						<div class="novidades__content">
+							<small class="fz-9 post__date">30.05.2018</small>
+							<h5 class="post__title"><a href="#">Wonen`secret</a></h5>
+							<div class="post__under">O verao esya chegar</div>
+							<a href="#" class="post__more post__more-margin_30">ver mains</a>
+						</div>
+					</div>
+					<div class="col-md-4 novidades">
+						<div class="novidades__image">
+							<img src="img/woman.jpg" alt="">
+						</div>
+						<div class="novidades__content">
+							<small class="fz-9 post__date">30.05.2018</small>
+							<h5 class="post__title"><a href="#">Wonen`secret</a></h5>
+							<div class="post__under">O verao esya chegar</div>
+							<a href="#" class="post__more post__more-margin_30">ver mains</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section__eventos">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 eventos">
+						<div class="eventos__image">
+							<img src="img/post.jpg" alt="">
+						</div>
+						<div class="eventos__content">
+							<h3 class="upper overline__title overline-big">Veggiefestporto</h3>
+							<div class="upper overline__under margin-b65">o verão está a chegar</div>
+							<a href="#" class="post__more post__more-margin_30">ver mains</a>
+						</div>
+					</div>
+					<div class="col-md-4 eventos">
+						<div class="eventos__image">
+							<img src="img/post-small.jpg" alt="">
+						</div>
+						<div class="eventos__content">
+							<h3 class="upper overline__title overline-big">Veggiefestporto</h3>
+							<div class="upper overline__under margin-b65">o verão está a chegar</div>
+							<a href="#" class="post__more post__more-margin_30">ver mains</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -146,7 +229,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12">
-					<p class="upper footer__header">quer receber novidades do seu shopping de eleicao?</p>
+					<p class="upper footer__header">quer receber eventos do seu shopping de eleicao?</p>
 
 					<a href="#" class="btn btn-bg_white">subscrever newsletter</a>
 

@@ -5,4 +5,13 @@ $(document).ready(function(){
         $(this).remove()
     });
 
+    // sandwich
+		var sandwich = jQuery('#sandwich');
+
+		sandwich.click(function() {
+			sandwich.toggleClass('active-sandwich');
+			jQuery('.header__nav .menu-menu-1-container').slideToggle();
+			jQuery('.header__nav, body').toggleClass('active');
+		});
+
 });
