@@ -8,6 +8,8 @@
 	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
 	<link rel="stylesheet" href="libs/bootstrap-grid.min.css" />
 	<link rel="stylesheet" href="libs/font-awesome.css" />
+	<link rel="stylesheet" href="libs/slick.css">
+	<!-- <link rel="stylesheet" href="libs/slick-theme.css"> -->
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/media.css" />
 	<!-- theme color for android 5.0 -->
@@ -37,8 +39,8 @@
 			</div>
 
 			<div class="row align-items-center justify-content-between margin-25_0">
-				<div class="w100p">
-					<div class="col-auto d-md-none float-left">
+				<div class="w100p-sm position-relative">
+					<div class="col-auto d-md-none float-left sandwich-wrap">
 						<div id="sandwich">
 							<div class="sw-topper"></div>
 							<div class="sw-bottom"></div>
@@ -49,7 +51,7 @@
 						<img class="logo" src="img/logo.svg" alt="">
 					</div>
 				</div>
-				<div class="col-12 col-md-auto">
+				<div class="col-sm-12 col-md-auto">
 					<nav>
 						<ul class="menu flex-column flex-md-row">
 							<li><a href="#">Shopping</a></li>
@@ -83,72 +85,154 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-auto">
-						<h3 class="upper overline__title overline-big">Novidades</h3>
-						<div class="upper overline__under margin-b65">As novidades mais trendy</div>
+						<h3 class="upper section__title overline overline-big">Novidades</h3>
+						<div class="upper section__under margin-b65">As novidades mais trendy</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-4 novidades">
-						<div class="novidades__image">
-							<img src="img/woman.jpg" alt="">
+				<!-- <div class="row"> -->
+				<div class="novidades-wrap slick-slider margin-row">
+						<div class="col-md-4 novidades">
+							<div class="novidades__image">
+								<img src="img/woman.jpg" alt="">
+							</div>
+							<div class="novidades__content">
+								<small class="fz-9 post__date">30.05.2018</small>
+								<h5 class="post__title"><a href="#">Wonen`secret</a></h5>
+								<div class="post__under">O verao esya chegar</div>
+								<a href="#" class="post__more post__more-margin_30">ver mains</a>
+							</div>
 						</div>
-						<div class="novidades__content">
-							<small class="fz-9 post__date">30.05.2018</small>
-							<h5 class="post__title"><a href="#">Wonen`secret</a></h5>
-							<div class="post__under">O verao esya chegar</div>
-							<a href="#" class="post__more post__more-margin_30">ver mains</a>
+						<div class="col-md-4 novidades">
+							<div class="novidades__image">
+								<img src="img/woman.jpg" alt="">
+							</div>
+							<div class="novidades__content">
+								<small class="fz-9 post__date">30.05.2018</small>
+								<h5 class="post__title"><a href="#">Wonen`secret</a></h5>
+								<div class="post__under">O verao esya chegar</div>
+								<a href="#" class="post__more post__more-margin_30">ver mains</a>
+							</div>
+						</div>
+						<div class="col-md-4 novidades">
+							<div class="novidades__image">
+								<img src="img/woman.jpg" alt="">
+							</div>
+							<div class="novidades__content">
+								<small class="fz-9 post__date">30.05.2018</small>
+								<h5 class="post__title"><a href="#">Wonen`secret</a></h5>
+								<div class="post__under">O verao esya chegar</div>
+								<a href="#" class="post__more post__more-margin_30">ver mains</a>
+							</div>
+						</div>
+						<div class="col-md-4 novidades">
+							<div class="novidades__image">
+								<img src="img/woman.jpg" alt="">
+							</div>
+							<div class="novidades__content">
+								<small class="fz-9 post__date">30.05.2018</small>
+								<h5 class="post__title"><a href="#">Wonen`secret</a></h5>
+								<div class="post__under">O verao esya chegar</div>
+								<a href="#" class="post__more post__more-margin_30">ver mains</a>
+							</div>
+						</div>
+						<div class="col-md-4 novidades">
+							<div class="novidades__image">
+								<img src="img/woman.jpg" alt="">
+							</div>
+							<div class="novidades__content">
+								<small class="fz-9 post__date">30.05.2018</small>
+								<h5 class="post__title"><a href="#">Wonen`secret</a></h5>
+								<div class="post__under">O verao esya chegar</div>
+								<a href="#" class="post__more post__more-margin_30">ver mains</a>
+							</div>
+						</div>
+						<div class="col-md-4 novidades">
+							<div class="novidades__image">
+								<img src="img/woman.jpg" alt="">
+							</div>
+							<div class="novidades__content">
+								<small class="fz-9 post__date">30.05.2018</small>
+								<h5 class="post__title"><a href="#">Wonen`secret</a></h5>
+								<div class="post__under">O verao esya chegar</div>
+								<a href="#" class="post__more post__more-margin_30">ver mains</a>
+							</div>
+						</div>
+						<div class="col-md-4 novidades">
+							<div class="novidades__image">
+								<img src="img/woman.jpg" alt="">
+							</div>
+							<div class="novidades__content">
+								<small class="fz-9 post__date">30.05.2018</small>
+								<h5 class="post__title"><a href="#">Wonen`secret</a></h5>
+								<div class="post__under">O verao esya chegar</div>
+								<a href="#" class="post__more post__more-margin_30">ver mains</a>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-4 novidades">
-						<div class="novidades__image">
-							<img src="img/woman.jpg" alt="">
-						</div>
-						<div class="novidades__content">
-							<small class="fz-9 post__date">30.05.2018</small>
-							<h5 class="post__title"><a href="#">Wonen`secret</a></h5>
-							<div class="post__under">O verao esya chegar</div>
-							<a href="#" class="post__more post__more-margin_30">ver mains</a>
-						</div>
-					</div>
-					<div class="col-md-4 novidades">
-						<div class="novidades__image">
-							<img src="img/woman.jpg" alt="">
-						</div>
-						<div class="novidades__content">
-							<small class="fz-9 post__date">30.05.2018</small>
-							<h5 class="post__title"><a href="#">Wonen`secret</a></h5>
-							<div class="post__under">O verao esya chegar</div>
-							<a href="#" class="post__more post__more-margin_30">ver mains</a>
-						</div>
-					</div>
-				</div>
+				<!-- </div> -->
 			</div>
 		</section>
 
-		<section class="section section__eventos">
+		<section class="section section-margin_medium section__eventos">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-8 eventos">
-						<div class="eventos__image">
-							<img src="img/post.jpg" alt="">
-						</div>
-						<div class="eventos__content">
-							<h3 class="upper overline__title overline-big">Veggiefestporto</h3>
-							<div class="upper overline__under margin-b65">o verão está a chegar</div>
-							<a href="#" class="post__more post__more-margin_30">ver mains</a>
-						</div>
+				<div class="row align-items-center justify-content-between margin-25_0 line">
+					<div class="col-auto">
+						<h3 class="upper section__title line__poper">Eventos</h3>
 					</div>
-					<div class="col-md-4 eventos">
-						<div class="eventos__image">
-							<img src="img/post-small.jpg" alt="">
-						</div>
-						<div class="eventos__content">
-							<h3 class="upper overline__title overline-big">Veggiefestporto</h3>
-							<div class="upper overline__under margin-b65">o verão está a chegar</div>
-							<a href="#" class="post__more post__more-margin_30">ver mains</a>
-						</div>
+					<div class="col-auto">
+						<a href="#" class="post__more line__poper">ver mains</a>
 					</div>
 				</div>
+					<div class="eventos_wrap slick-slider__1col">
+						<div class="eventos__place">
+							<div class="row">
+								<div class="col-md-8 eventos">
+									<div class="eventos__image">
+										<img src="img/post.jpg" alt="">
+									</div>
+									<div class="eventos__content margin-t30">
+										<h5 class="post__title overline"><a href="#">Veggie fest porto</a></h5>
+										<div class="post__under">o verão está a chegar</div>
+										<a href="#" class="post__more post__more-margin_30">ver mains</a>
+									</div>
+								</div>
+								<div class="col-md-4 eventos">
+									<div class="eventos__image">
+										<img src="img/post-small.jpg" alt="">
+									</div>
+									<div class="eventos__content margin-t30">
+										<h5 class="post__title overline"><a href="#">Veggie fest porto</a></h5>
+										<div class="post__under">o verão está a chegar</div>
+										<a href="#" class="post__more post__more-margin_30">ver mains</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="eventos__place">
+							<div class="row">
+								<div class="col-md-8 eventos">
+									<div class="eventos__image">
+										<img src="img/post.jpg" alt="">
+									</div>
+									<div class="eventos__content margin-t30">
+										<h5 class="post__title overline"><a href="#">Veggie fest porto</a></h5>
+										<div class="post__under">o verão está a chegar</div>
+										<a href="#" class="post__more post__more-margin_30">ver mains</a>
+									</div>
+								</div>
+								<div class="col-md-4 eventos">
+									<div class="eventos__image">
+										<img src="img/post-small.jpg" alt="">
+									</div>
+									<div class="eventos__content margin-t30">
+										<h5 class="post__title overline"><a href="#">Veggie fest porto</a></h5>
+										<div class="post__under">o verão está a chegar</div>
+										<a href="#" class="post__more post__more-margin_30">ver mains</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 			</div>
 		</section>
 
@@ -179,19 +263,19 @@
 			</div>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col grid__column">
+					<div class="col-sm-6 col-md grid__column">
 						<img src="img/grid-1.jpg" alt="">
 						<img src="img/grid-5.png" alt="">
 					</div>
-					<div class="col grid__column">
+					<div class="col-sm-6 col-md grid__column">
 						<img src="img/grid-2.jpg" alt="">
 						<img src="img/grid-6.jpg" alt="">
 					</div>
-					<div class="col grid__column">
+					<div class="col-sm-6 col-md grid__column">
 						<img src="img/grid-3.jpg" alt="">
 						<img src="img/grid-7.jpg" alt="">
 					</div>
-					<div class="col grid__column">
+					<div class="col-sm-6 col-md grid__column">
 						<img src="img/grid-4.jpg" alt="">
 						<img src="img/grid-8.jpg" alt="">
 					</div>
@@ -248,5 +332,6 @@
 
 	<script src="libs/jquery-2.1.3.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="libs/slick.min.js"></script>
 </body>
 </html>

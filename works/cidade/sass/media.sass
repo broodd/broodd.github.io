@@ -4,7 +4,24 @@
 +w(768)
 	.text-center-sm
 		text-align: center
-	+sandwich($text-s)
+	.w100p-sm
+		width: 100%
+
+
+	+sandwich($text-s, 35px, 100%)
+		z-index: 3
+		position: relative
+	.sandwich-wrap
+		height: 45px
+		
+	.logo
+		height: 45px
+
+	.menu,
+	.search
+		display: none
+
 	.menu
+		padding-top: 30px
 		li
-			margin-left: 0
+			margin: 15px 0

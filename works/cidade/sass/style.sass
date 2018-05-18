@@ -76,6 +76,7 @@ html body
 			font-size: 18px
 			margin-bottom: 3px
 			color: $text
+			letter-spacing: 3px
 		&__under
 			font-size: 12px
 			font-family: $ff-2
@@ -108,28 +109,38 @@ html body
 				margin-top: 20px
 
 .overline
-	&__title
-		font-size: 36px
-		font-family: $ff-2
-		position: relative
-		padding-top: 30px
-		margin-bottom: 0
-		&:after
-			content: ''
-			position: absolute
-			height: 8px
-			background-color: $text
-			left: 0
-			top: 0
-	&__under
-		// font-size: 18px
-		font-size: 18px
-		letter-spacing: 3px
+	position: relative
+	padding-top: 30px
 	&-big
 		&:after
 			width: 320px
+	&:after
+		content: ''
+		position: absolute
+		height: 8px
+		background-color: $text
+		left: 0
+		top: 0
+		width: 280px
 		
-		
+.line
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		width: calc(100% - 30px)
+		height: 3px
+		background: $text
+		z-index: -1
+		left: 15px
+		top: 50%
+		+translateY
+	&__poper
+		background-color: #fff
+		padding-left: 10px
+		padding-right: 10px
+	.post__more
+		margin-bottom: 0
 
 
 .section
@@ -137,7 +148,16 @@ html body
 		margin-top: 85px
 		margin-bottom: 85px
 
-
+	&__title
+		font-size: 36px
+		font-family: $ff-2
+		// position: relative
+		// padding-top: 30px
+		margin-bottom: 0
+	&__under
+		// font-size: 18px
+		font-size: 18px
+		letter-spacing: 3px
 
 	&__photo
 		+cover

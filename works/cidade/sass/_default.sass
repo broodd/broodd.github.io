@@ -87,6 +87,11 @@ small
 		margin-bottom: 25px
 	&-b65
 		margin-bottom: 65px
+	&-t30
+		margin-top: 30px
+	&-row
+		margin-left: -15px
+		margin-right: -15px
 
 .padding
 	&-0
@@ -108,8 +113,15 @@ small
 .float-left
 	float: left
 
+.position-relative
+	position: relative
+
+
 .w100p
 	width: 100%
+
+.h100p
+	height: 100%
 
 // .position-absolute
 // 	position: absolute
@@ -138,3 +150,40 @@ small
 
 // .video-wrapper
 // 	+iframe
+
+
+
+.slick-dots
+	position: absolute
+	// bottom: -100px
+	list-style: none
+	display: block
+	text-align: center
+	padding: 0
+	margin: 0
+	width: 100%
+	li
+		position: relative
+		display: inline-block
+		// height: 20px
+		// width: 20px
+		margin: 0 5px
+		padding: 0
+		cursor: pointer
+		button
+			border: 0
+			background: 0 0
+			display: block
+			height: 10px
+			width: 10px
+			outline: 0
+			line-height: 0
+			font-size: 0
+			background-color: $text
+			padding: 5px
+			cursor: pointer
+			+br(50%)
+		&.slick-active
+			button
+				background-color: $text-s
+			
