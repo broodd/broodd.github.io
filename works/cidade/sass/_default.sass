@@ -6,6 +6,7 @@
 +grid-preloader($red)
 +font('Agora-Regular', 'Agora-Regular', $type:'ttf', $path:'font/')
 +font('Agora-Medium', 'Agora-Medium', $type:'ttf', $path:'font/')
++font('Billabong', 'Billabong', $type:'ttf', $path:'font/')
 
 // reset
 html
@@ -63,6 +64,9 @@ small
 		color: $text-s
 		&:hover
 			color: $text-s
+	&-white
+		color: $w
+
 
 .bg
 	&-dark
@@ -85,8 +89,11 @@ small
 	&-25_0
 		margin-top: 25px
 		margin-bottom: 25px
-	&-b65
-		margin-bottom: 65px
+	&-b
+		&40
+			margin-bottom: 40px
+		&65
+			margin-bottom: 65px
 	&-t30
 		margin-top: 30px
 	&-row
@@ -98,7 +105,10 @@ small
 		padding: 0
 	&-25_0
 		padding-top: 25px	
-		padding-bottom: 25px	
+		padding-bottom: 25px
+
+.border-radius
+	+br(50%)
 
 
 // main
@@ -117,11 +127,13 @@ small
 	position: relative
 
 
-.w100p
-	width: 100%
+.w
+	&100p
+		width: 100%
 
-.h100p
-	height: 100%
+.h
+	&100p
+		height: 100%
 
 // .position-absolute
 // 	position: absolute
@@ -132,13 +144,8 @@ small
 // 	left: 0
 
 
-// .clr
-// 	*
-// 		zoom: 1
-// 	&:after
-// 		content: " "
-// 		display: table
-// 		clear: both
+.clr
+	+clr
 
 
 // .w100p-img
@@ -152,38 +159,41 @@ small
 // 	+iframe
 
 
-
-.slick-dots
-	position: absolute
-	// bottom: -100px
-	list-style: none
-	display: block
-	text-align: center
-	padding: 0
-	margin: 0
-	width: 100%
-	li
-		position: relative
-		display: inline-block
-		// height: 20px
-		// width: 20px
-		margin: 0 5px
+.slick
+	&-slider
+		padding-bottom: 30px
+	&-dots
+		position: absolute
+		// bottom: -100px
+		list-style: none
+		display: block
+		text-align: center
 		padding: 0
-		cursor: pointer
-		button
-			border: 0
-			background: 0 0
-			display: block
-			height: 10px
-			width: 10px
-			outline: 0
-			line-height: 0
-			font-size: 0
-			background-color: $text
-			padding: 5px
+		margin: 0
+		width: 100%
+		margin-top: 30px
+		li
+			position: relative
+			display: inline-block
+			// height: 20px
+			// width: 20px
+			margin: 0 5px
+			padding: 0
 			cursor: pointer
-			+br(50%)
-		&.slick-active
 			button
-				background-color: $text-s
+				border: 0
+				background: 0 0
+				display: block
+				height: 10px
+				width: 10px
+				outline: 0
+				line-height: 0
+				font-size: 0
+				background-color: $text
+				padding: 5px
+				cursor: pointer
+				+br(50%)
+			&.slick-active
+				button
+					background-color: $text-s
 			

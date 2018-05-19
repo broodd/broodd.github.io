@@ -441,6 +441,9 @@ pre code {
 @font-face {
   font-family: "Agora-Medium";
   src: url("font/Agora-Medium.ttf") format("truetype"); }
+@font-face {
+  font-family: "Billabong";
+  src: url("font/Billabong.ttf") format("truetype"); }
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -501,6 +504,8 @@ small {
   color: #575756; }
   .color-black:hover {
     color: #575756; }
+.color-white {
+  color: #fff; }
 
 .bg-dark {
   background-color: #C0C0AB; }
@@ -517,6 +522,8 @@ small {
 .margin-25_0 {
   margin-top: 25px;
   margin-bottom: 25px; }
+.margin-b40 {
+  margin-bottom: 40px; }
 .margin-b65 {
   margin-bottom: 65px; }
 .margin-t30 {
@@ -530,6 +537,9 @@ small {
 .padding-25_0 {
   padding-top: 25px;
   padding-bottom: 25px; }
+
+.border-radius {
+  border-radius: 50%; }
 
 .float-right {
   float: right; }
@@ -546,6 +556,15 @@ small {
 .h100p {
   height: 100%; }
 
+.clr {
+  clear: both; }
+  .clr:after, .clr:before {
+    content: " ";
+    display: table;
+    clear: both; }
+
+.slick-slider {
+  padding-bottom: 30px; }
 .slick-dots {
   position: absolute;
   list-style: none;
@@ -553,7 +572,8 @@ small {
   text-align: center;
   padding: 0;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+  margin-top: 30px; }
   .slick-dots li {
     position: relative;
     display: inline-block;
@@ -607,8 +627,26 @@ small {
   color: #575756;
   text-transform: uppercase;
   font-family: "Agora-Medium", Arial, sans-serif; }
-  .menu li {
+  .menu li:not(:first-child) {
     margin-left: 30px; }
+  .menu li:not(:last-child) {
+    position: relative; }
+    .menu li:not(:last-child):after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -10px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 0;
+      height: 1px;
+      background-color: #575756;
+      -webkit-transition: 300ms cubic-bezier(0.59, 0.04, 0.44, 1.34);
+      transition: 300ms cubic-bezier(0.59, 0.04, 0.44, 1.34);
+      z-index: -1; }
+    .menu li:not(:last-child):hover:after {
+      width: calc(100% + 20px); }
 
 .border {
   border-width: 5px;
@@ -629,7 +667,7 @@ small {
 
 html body .btn {
   display: block;
-  padding: 5px 10px;
+  padding: 10px 15px;
   text-transform: uppercase; }
   html body .btn-bg_white {
     background-color: #fff;
@@ -638,6 +676,9 @@ html body .btn {
     border: 3px solid #575756;
     color: #575756;
     padding: 5px 30px; }
+  html body .btn-disabled {
+    background-color: #F1F1ED;
+    color: #C0C0AB; }
 html body .post__date {
   display: block;
   margin-bottom: 20px; }
@@ -683,6 +724,14 @@ html body .post__more {
       border-style: solid;
       border-width: 5px 0 5px 8px;
       border-color: transparent transparent transparent #fff; }
+  html body .post__more-black {
+    color: #575756; }
+    html body .post__more-black:after {
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 5px 0 5px 8px;
+      border-color: transparent transparent transparent #575756; }
   html body .post__more-margin_30 {
     margin-top: 30px; }
   html body .post__more-margin_20 {
@@ -718,8 +767,23 @@ html body .post__more {
     transform: translateY(-50%); }
   .line__poper {
     background-color: #fff;
-    padding-left: 10px;
-    padding-right: 10px; }
+    box-shadow: 0px 0px 0px 0.5em #ffff; }
+    .line__poper-icon {
+      width: 80px;
+      height: 80px;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      background-color: #C0C0AB; }
   .line .post__more {
     margin-bottom: 0; }
 
@@ -764,7 +828,8 @@ html body .post__more {
   .section__instagram .instagram__title {
     font-size: 90px;
     font-style: italic;
-    color: #99BCBE; }
+    color: #99BCBE;
+    font-family: "Billabong", Arial, sans-serif; }
   .section__instagram .instagram__iphone {
     position: absolute;
     width: auto;
@@ -776,6 +841,20 @@ html body .post__more {
 .section__grid-gallery .grid__column img {
   display: block;
   margin-bottom: 20px; }
+.section__trendy .trendy__content {
+  display: inline-block;
+  width: 50%;
+  border: 5px solid #C0C0AB;
+  border-top: 0;
+  padding-top: 1.25rem;
+  padding-left: 0.938rem;
+  padding-right: 0.625rem; }
+.section__lojas .lojas__hidden {
+  display: none; }
+.section__lojas .lojas:hover .lojas__hidden {
+  display: block; }
+.section__lojas .lojas:hover .lojas__visible {
+  display: none; }
 
 .logo {
   height: 60px; }
