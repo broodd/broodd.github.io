@@ -261,15 +261,64 @@ html body
 
 	&__lojas
 		.lojas
-			&__hidden
-				display: none
-			&:hover
-				.lojas
-					&__hidden
-						display: block
-					&__visible
-						display: none
+			&-wrap
+				display: inline-grid
+				grid-template-columns: repeat(3, 1fr)
+				grid-gap: 30px 0
 
+				.hover
+					&__hidden
+						border: 8px solid $text
+					&__visible
+						border: 8px solid transparent
+						// height: 80%
+						width: 90%
+
+// .border-effect
+// 	position: relative
+// 	display: inline-block
+// 	&:after,
+// 	&:before
+// 		content: ''
+// 		position: absolute
+// 		// background-color: $text
+// 		width: 0
+// 		height: 0
+// 		+tr(400ms linear)
+// 		border: 8px solid transparent
+// 		visibility: hidden
+// 		// t50%
+// 	&:before
+// 		top: 0
+// 		right: 0
+// 		// border-top: none
+// 		// border-right: none
+
+// 	&:after
+// 		bottom: 0
+// 		left: 0
+// 		// border-left: none
+// 		// border-bottom: none
+// 	&:hover
+// 		&:after,
+// 		&:before
+// 			height: 100%
+// 			width: 100%
+// 			border-color: $text
+// 			visibility: visible	
+// 			// height: 100%
+
+.hover
+	text-align: center
+	&__hidden
+		display: none
+	&:hover
+		.hover
+			&__hidden
+				// display: block
+				display: inline-block
+			&__visible
+				display: none
 
 
 
@@ -279,6 +328,32 @@ html body
 .header
 	&__desc
 		line-height: 1
+
+.map
+	width: 100%
+	height: 400px
+	background-color: coral
+	&-wrap
+		margin-right: 20px
+	&__content
+		// background-color: $text
+		// display: inline-block
+		// text-align: left
+		margin-top: -40px
+		.bg-dark
+			padding: 20px 25px 5px
+			*
+				color: $w
+	&__item
+		margin-bottom: 30px
+
+.icon-text
+	line-height: 1.1
+	&__icon
+		font-size: 2.2em
+		margin-right: 0.35em
+	p
+		margin-bottom: 0
 
 .footer
 	background-color: $text

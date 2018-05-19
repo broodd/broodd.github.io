@@ -500,12 +500,14 @@ small {
 .m-top {
   margin-top: 30px; }
 
-.color-black {
-  color: #575756; }
-  .color-black:hover {
+.color {
+  color: #C0C0AB; }
+  .color-black {
     color: #575756; }
-.color-white {
-  color: #fff; }
+    .color-black:hover {
+      color: #575756; }
+  .color-white {
+    color: #fff; }
 
 .bg-dark {
   background-color: #C0C0AB; }
@@ -849,18 +851,53 @@ html body .post__more {
   padding-top: 1.25rem;
   padding-left: 0.938rem;
   padding-right: 0.625rem; }
-.section__lojas .lojas__hidden {
-  display: none; }
-.section__lojas .lojas:hover .lojas__hidden {
-  display: block; }
-.section__lojas .lojas:hover .lojas__visible {
-  display: none; }
+.section__lojas .lojas-wrap {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px 0; }
+  .section__lojas .lojas-wrap .hover__hidden {
+    border: 8px solid #C0C0AB; }
+  .section__lojas .lojas-wrap .hover__visible {
+    border: 8px solid transparent;
+    width: 90%; }
+
+.hover {
+  text-align: center; }
+  .hover__hidden {
+    display: none; }
+  .hover:hover .hover__hidden {
+    display: inline-block; }
+  .hover:hover .hover__visible {
+    display: none; }
 
 .logo {
   height: 60px; }
 
 .header__desc {
   line-height: 1; }
+
+.map {
+  width: 100%;
+  height: 400px;
+  background-color: coral; }
+  .map-wrap {
+    margin-right: 20px; }
+  .map__content {
+    margin-top: -40px; }
+    .map__content .bg-dark {
+      padding: 20px 25px 5px; }
+      .map__content .bg-dark * {
+        color: #fff; }
+  .map__item {
+    margin-bottom: 30px; }
+
+.icon-text {
+  line-height: 1.1; }
+  .icon-text__icon {
+    font-size: 2.2em;
+    margin-right: 0.35em; }
+  .icon-text p {
+    margin-bottom: 0; }
 
 .footer {
   background-color: #C0C0AB;
