@@ -3,7 +3,8 @@
 @import 'reset'
 
 
-+grid-preloader($red)
+// +grid-preloader($red)
+	
 +font('Agora-Regular', 'Agora-Regular', $type:'ttf', $path:'font/')
 +font('Agora-Medium', 'Agora-Medium', $type:'ttf', $path:'font/')
 +font('Billabong', 'Billabong', $type:'ttf', $path:'font/')
@@ -60,20 +61,27 @@ small
 	font-style: italic
 	letter-spacing: 3px
 
+.letter-s
+	letter-spacing: 4px
+
 .text
 	color: $text-s
+
+.mix
+	display: none
 
 .m-top
 	margin-top: 30px
 
-.color
-	color: $text
-	&-black
-		color: $text-s
-		&:hover
+html body
+	.color
+		color: $text
+		&-black
 			color: $text-s
-	&-white
-		color: $w
+			&:hover
+				color: $text-s
+		&-white
+			color: $w
 
 
 .bg
@@ -82,18 +90,22 @@ small
 	&-grey
 		background-color: $grey
 
-.fz
-	&-18
-		font-size: 18px
-	&-11
-		// font-size: 11px
-		font-size:  0.6875em
-	&-10
-		// font-size: 10px
-		font-size: 0.625em
-	&-9
-		// font-size: 9px
-		font-size: 0.5625em
+html body
+	.fz
+		&-24
+			font-size: 1.5em
+		&-18
+			// font-size: 18px
+			font-size: 1.125em
+		&-11
+			// font-size: 11px
+			font-size:  0.6875em
+		&-10
+			// font-size: 10px
+			font-size: 0.625em
+		&-9
+			// font-size: 9px
+			font-size: 0.5625em
 
 .margin
 	&-25_0
@@ -104,6 +116,8 @@ small
 			margin-bottom: 40px
 		&65
 			margin-bottom: 65px
+		&85
+			margin-bottom: 85px
 	&-t30
 		margin-top: 30px
 	&-row

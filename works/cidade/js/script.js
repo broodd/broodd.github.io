@@ -60,6 +60,9 @@ $(document).ready(function(){
 		centerMode: false
 	});
 
+
+	$(".mix-wrap").mixItUp();
+
 });
 
 
