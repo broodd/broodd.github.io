@@ -497,6 +497,13 @@ small {
 .upper {
   text-transform: uppercase; }
 
+.italic {
+  font-style: italic;
+  letter-spacing: 3px; }
+
+.text {
+  color: #575756; }
+
 .m-top {
   margin-top: 30px; }
 
@@ -514,6 +521,8 @@ small {
 .bg-grey {
   background-color: #ECECEC; }
 
+.fz-18 {
+  font-size: 18px; }
 .fz-11 {
   font-size: 0.6875em; }
 .fz-10 {
@@ -680,7 +689,8 @@ html body .btn {
     padding: 5px 30px; }
   html body .btn-disabled {
     background-color: #F1F1ED;
-    color: #C0C0AB; }
+    color: #C0C0AB;
+    cursor: no-drop; }
 html body .post__date {
   display: block;
   margin-bottom: 20px; }
@@ -808,7 +818,7 @@ html body .post__more {
   padding-bottom: 70px; }
   .section__photo-home {
     background-image: url(../img/bg.jpg); }
-.section__novidades .novidades__content {
+.section .novidades__content {
   background-color: #fff;
   padding: 5% 10%;
   margin: 0 5%;
@@ -840,10 +850,10 @@ html body .post__more {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
-.section__grid-gallery .grid__column img {
+.section .grid__column img {
   display: block;
   margin-bottom: 20px; }
-.section__trendy .trendy__content {
+.section .trendy__content {
   display: inline-block;
   width: 50%;
   border: 5px solid #C0C0AB;
@@ -851,15 +861,23 @@ html body .post__more {
   padding-top: 1.25rem;
   padding-left: 0.938rem;
   padding-right: 0.625rem; }
-.section__lojas .lojas-wrap {
+.section .lojas .hover__hidden {
+  border: 8px solid #C0C0AB; }
+.section .lojas .hover__visible {
+  border: 8px solid transparent;
+  width: 90%; }
+.section .service {
+  padding-top: 40px;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out; }
+  .section .service:hover {
+    background-color: #C0C0AB;
+    color: #fff; }
+
+.grid-3 {
   display: inline-grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px 0; }
-  .section__lojas .lojas-wrap .hover__hidden {
-    border: 8px solid #C0C0AB; }
-  .section__lojas .lojas-wrap .hover__visible {
-    border: 8px solid transparent;
-    width: 90%; }
 
 .hover {
   text-align: center; }
@@ -869,6 +887,12 @@ html body .post__more {
     display: inline-block; }
   .hover:hover .hover__visible {
     display: none; }
+
+.tablinks {
+  color: #575756;
+  cursor: pointer; }
+  .tablinks.active, .tablinks:hover {
+    color: #C0C0AB; }
 
 .logo {
   height: 60px; }
@@ -894,10 +918,18 @@ html body .post__more {
 .icon-text {
   line-height: 1.1; }
   .icon-text__icon {
+    min-width: 40px;
     font-size: 2.2em;
     margin-right: 0.35em; }
   .icon-text p {
     margin-bottom: 0; }
+
+.icon-just {
+  line-height: 1.1;
+  text-align: center;
+  padding: 0 9%; }
+  .icon-just__icon {
+    font-size: 4.5em; }
 
 .footer {
   background-color: #C0C0AB;

@@ -61,3 +61,36 @@ $(document).ready(function(){
 	});
 
 });
+
+
+
+function openTab(tabName, th) {
+	// Declare all variables
+	var i, tabcontent, tablinks, cityClass;
+
+	// Get all elements with class="tabcontent" and hide them
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+		tabcontent[i].classList.remove('active');
+	}
+
+	// Get all elements with class="tablinks" and remove the class "active"
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+
+	// Show the current tab, and add an "active" class to the button that opened the tab
+	cityClass = document.getElementsByClassName(tabName);
+	for (i = 0; i < cityClass.length; i++) {
+		cityClass[i].style.display = "block";
+		cityClass[i].classList.add("active");
+	}
+	// evt.currentTarget.className += " active";
+	// jQuery(th).addClass('active');
+	th.classList.add("active");
+}
+
+var l = $('.tablinks').first();
+l.click();

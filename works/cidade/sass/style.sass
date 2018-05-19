@@ -87,6 +87,7 @@ html body
 		&-disabled
 			background-color: $disable
 			color: $text
+			cursor: no-drop
 
 	.post
 		&__date
@@ -202,17 +203,16 @@ html body
 		&-home
 			background-image: url(../img/bg.jpg)
 
-	&__novidades
-		.novidades
-			&__content
-				background-color: $w
-				padding: 5% 10%
-				margin: 0 5%
-				margin-top: 0px
-				margin-top: -20px
-				z-index: 2
-				position: relative
-
+	// &__novidades
+	.novidades
+		&__content
+			background-color: $w
+			padding: 5% 10%
+			margin: 0 5%
+			margin-top: 0px
+			margin-top: -20px
+			z-index: 2
+			position: relative
 
 	&__instagram
 		overflow-y: hidden
@@ -238,42 +238,50 @@ html body
 				left: 50%
 				+translateX(-50%)
 
-	&__grid-gallery
-		.grid
-			&__column
-				img
-					display: block
-					margin-bottom: 20px
+	// &__grid-gallery
+	.grid
+		&__column
+			img
+				display: block
+				margin-bottom: 20px
 
-	&__trendy
-		.trendy
-			&__content
-				display: inline-block
-				width: 50%
-				border: 5px solid $text
-				border-top: 0
-				// padding-top: 20px
-				padding-top: 1.250rem
-				// padding-left: 15px
-				padding-left: 0.938rem
-				// padding-right: 10px
-				padding-right: 0.625rem
+	// &__trendy
+	.trendy
+		&__content
+			display: inline-block
+			width: 50%
+			border: 5px solid $text
+			border-top: 0
+			// padding-top: 20px
+			padding-top: 1.250rem
+			// padding-left: 15px
+			padding-left: 0.938rem
+			// padding-right: 10px
+			padding-right: 0.625rem
 
-	&__lojas
-		.lojas
-			&-wrap
-				display: inline-grid
-				grid-template-columns: repeat(3, 1fr)
-				grid-gap: 30px 0
+	// &__lojas
+	.lojas
+		.hover
+			&__hidden
+				border: 8px solid $text
+			&__visible
+				border: 8px solid transparent
+				// height: 80%
+				width: 90%
 
-				.hover
-					&__hidden
-						border: 8px solid $text
-					&__visible
-						border: 8px solid transparent
-						// height: 80%
-						width: 90%
+	// &__services
+	.service
+		padding-top: 40px
+		+tr(300ms ease-out)
+		&:hover
+			background-color: $text
+			color: $w
 
+.grid-3
+	display: inline-grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-gap: 30px 0
+	
 // .border-effect
 // 	position: relative
 // 	display: inline-block
@@ -320,6 +328,15 @@ html body
 			&__visible
 				display: none
 
+.tab
+	&links
+		color: $text-s
+		// +tr(300ms ease-in-out)
+		cursor: pointer
+		&.active,
+		&:hover
+			color: $text
+
 
 
 .logo
@@ -350,10 +367,20 @@ html body
 .icon-text
 	line-height: 1.1
 	&__icon
+		min-width: 40px
 		font-size: 2.2em
 		margin-right: 0.35em
 	p
 		margin-bottom: 0
+
+.icon-just
+	line-height: 1.1
+	text-align: center
+	padding: 0 9%
+	&__icon
+		font-size: 4.5em
+
+
 
 .footer
 	background-color: $text
