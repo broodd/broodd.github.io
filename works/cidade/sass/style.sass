@@ -206,6 +206,18 @@ html body
 		&-home
 			background-image: url(../img/bg.jpg)
 
+		&-dark_bgi
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: rgba(0,0,0, .3)
+					
+
 	// &__novidades
 	.novidades
 		&__content
@@ -226,11 +238,11 @@ html body
 		.instagram
 			&__desc
 				background-color: $insta
-				padding: 15px
+				padding: 0.9375em
 				color: $w
 				display: inline-block
 			&__title
-				font-size: 90px
+				font-size: 5.625em
 				font-style: italic
 				color: $insta
 				font-family: $ff-3

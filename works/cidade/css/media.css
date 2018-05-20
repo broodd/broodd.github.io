@@ -5,6 +5,10 @@
   .w100p-sm {
     width: 100%; }
 
+  .margin-sm-10_0 {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
   #sandwich.active-sandwich .sw-topper {
     margin-bottom: 8px;
     -webkit-transform: rotate(140deg);
@@ -70,7 +74,14 @@
   .search {
     display: none; }
 
-  .menu {
+  .header .menu {
     padding-top: 30px; }
-    .menu li {
-      margin: 15px 0; } }
+    .header .menu li {
+      margin: 15px 0; }
+
+  .slogo {
+    font-size: 7px;
+    margin: 0 10%; }
+
+  .section__instagram {
+    font-size: 10px; } }
