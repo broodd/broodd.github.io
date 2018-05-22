@@ -70,6 +70,10 @@
   .logo {
     height: 45px; }
 
+  .slogo {
+    font-size: 7px;
+    margin: 0 10%; }
+
   .menu,
   .search {
     display: none; }
@@ -79,9 +83,8 @@
     .header .menu li {
       margin: 15px 0; }
 
-  .slogo {
-    font-size: 7px;
-    margin: 0 10%; }
-
   .section__instagram {
+    font-size: 10px; }
+
+  body {
     font-size: 10px; } }

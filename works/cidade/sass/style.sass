@@ -2,6 +2,10 @@
 @import 'default'
 
 
+.home
+	.footer
+		border-top: 60px solid $w
+
 
 .social
 	display: flex
@@ -186,14 +190,15 @@ html body
 		margin-bottom: 180px
 
 	&__title
-		font-size: 36px
+		// font-size: 36px
+		font-size: 2.25em
 		font-family: $ff-2
 		// position: relative
 		// padding-top: 30px
 		margin-bottom: 0
 	&__under
 		// font-size: 18px
-		font-size: 18px
+		font-size: 1.125em
 		letter-spacing: 3px
 
 	&__photo
@@ -253,7 +258,9 @@ html body
 				left: 50%
 				+translateX(-50%)
 
-	// &__grid-gallery
+	&__grid-gallery
+		.container-fluid
+			max-width: 1700px
 	.grid
 		&__column
 			img
@@ -408,3 +415,17 @@ html body
 		margin-bottom: 0
 
 
+// .d-grid
+// 	display: grid
+// 	grid-template-columns: repeat(4, 1fr)
+// 	grid-template-rows: auto
+// 	grid-template-areas: "grid-1 grid-2 grid-3 grid-4"
+
+// .grid-1
+// 	grid-area: grid-1
+// .grid-2
+// 	grid-area: grid-2
+// .grid-3
+// 	grid-area: grid-3
+// .grid-4
+// 	grid-area: grid-4

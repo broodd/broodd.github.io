@@ -549,6 +549,9 @@ html body .fz-9 {
     .slick-dots li.slick-active button {
       background-color: #575756; }
 
+.home .footer {
+  border-top: 60px solid #fff; }
+
 .social {
   display: -webkit-box;
   display: -webkit-flex;
@@ -748,11 +751,11 @@ html body .post__more {
   margin-top: 180px;
   margin-bottom: 180px; }
 .section__title {
-  font-size: 36px;
+  font-size: 2.25em;
   font-family: "Agora-Medium", Arial, sans-serif;
   margin-bottom: 0; }
 .section__under {
-  font-size: 18px;
+  font-size: 1.125em;
   letter-spacing: 3px; }
 .section__photo {
   background-repeat: no-repeat;
@@ -805,6 +808,8 @@ html body .post__more {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
+.section__grid-gallery .container-fluid {
+  max-width: 1700px; }
 .section .grid__column img {
   display: block;
   margin-bottom: 20px; }
