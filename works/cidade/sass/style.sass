@@ -10,7 +10,7 @@
 .social
 	display: flex
 	li
-		margin-right: 5px
+		// margin-right: 5px
 		a
 			display: inline-block
 			width: 20px
@@ -19,6 +19,8 @@
 			text-align: center
 			font-size: 12px
 			line-height: 22px
+		&:not(:last-child)
+			margin-right: 8px
 	&-bg_white
 		li
 			a
@@ -39,21 +41,23 @@
 	li:not(:first-child)
 		margin-left: 30px
 	li:not(:last-child)
-		position: relative
-		&:after
-			content: ''
-			position: absolute
-			top: 50%
-			left: -10px
-			+translateY
-			width: 0
-			height: 1px
-			background-color: $text-s
-			+tr(300ms cubic-bezier(.59,.04,.44,1.34))
-			z-index: -1
-		&:hover
+		a
+			position: relative
 			&:after
-				width: calc(100% + 20px)
+				content: ''
+				position: absolute
+				top: 50%
+				left: -10px
+				+translateY
+				width: 0
+				height: 1px
+				background-color: $text-s
+				+tr(300ms cubic-bezier(.59,.04,.44,1.34))
+				z-index: -1
+		&:hover
+			a
+				&:after
+					width: calc(100% + 20px)
 				
 
 
@@ -79,7 +83,7 @@
 html body
 	.btn
 		display: block
-		padding: 10px 15px	
+		padding: 0.625em 0.9375em
 		text-transform: uppercase
 		&-bg_white
 			background-color: $w
@@ -96,23 +100,24 @@ html body
 	.post
 		&__date
 			display: block
-			margin-bottom: 20px
+			margin-bottom: 1.25em
+			letter-spacing: 1px
 		&__title
 			text-transform: uppercase
-			font-size: 18px
+			font-size: 1.125em
 			margin-bottom: 3px
 			color: $text
 			letter-spacing: 3px
 		&__under
-			font-size: 12px
+			font-size: 0.75em
 			font-family: $ff-2
 			color: $text-s
 			text-transform: uppercase
 		&__more
 			display: inline-block
 			position: relative
-			padding-right: 15px
-			font-size: 14px
+			padding-right: 0.9375em
+			font-size: 0.875em
 			text-transform: uppercase
 			color: $text
 			margin-bottom: 5px
@@ -352,6 +357,7 @@ html body
 
 .tab
 	&links
+		// display: inline-block
 		color: $text-s
 		// +tr(300ms ease-in-out)
 		cursor: pointer

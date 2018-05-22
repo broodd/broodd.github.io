@@ -51,14 +51,17 @@ $(document).ready(function(){
 		]
 	});
 
-	$('.slick-slider__1col').slick({
-		dots: true,
-		arrows: false,
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		centerMode: false
-	});
+
+	if (window.matchMedia("(min-width: 768px)").matches) {
+		$('.slick-slider__1col').slick({
+			dots: true,
+			arrows: false,
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			centerMode: false
+		});
+	}
 
 
 	$(".mix-wrap").mixItUp();

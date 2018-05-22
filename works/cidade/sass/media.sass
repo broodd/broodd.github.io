@@ -1,6 +1,14 @@
 @import 'mixins'
 @import 'vars'
 
+// col    <   576px
+// col-sm >=  576px
+// col-md >=  768px
+// col-lg >=  922px
+// col-xl >= 1140px
+
+
+
 +w(768)
 	.text-center-sm
 		text-align: center
@@ -23,6 +31,10 @@
 		font-size: 7px
 		margin: 0 10%
 
+	.home
+		.footer
+			border-top: none
+
 	.menu,
 	.search
 		display: none
@@ -41,11 +53,71 @@
 		&__instagram
 			font-size: 10px
 
+		.trendy
+			+clr
+			margin: 10px 0
+			&__image
+				float: left
+				display: inline-block
+				width: 50%
+			&__content
+				border: none
+			.post
+				&__title
+					position: relative
+					&:before
+						content: ''
+						position: absolute
+						width: 50px
+						height: 4px
+						background-color: $text
+						top: -7px		
+
+				&__more
+					display: none
+
+		.novidades
+			padding: 0
+			&__image
+				width: 80%
+			&__content
+				position: absolute
+				bottom: 0
+				right: 0
+			.post
+				&__more
+					display: none
+	
+	.post
+		&__date
+			font-size: 0.6875em
+
+	.footer
+		text-align: center
+		padding: 20px 0 0 0
+		background-color: $w
+		color: $text
+		&__header
+			min-height: auto
+		&-last
+			padding: 0
+		.social
+			justify-content: center
+			padding: 20px 0
+			background: $text
+		// .btn
+		.btn-bg_white
+			display: inline-block
+			margin-top: 10px
+			color: $w
+			background-color: $text
+
 
 
 	// typography
 	body
-		font-size: 10px
+		// font-size: 10px
+		font-size: 11px
 	// &__title
 	// .overline
 	// 	font-size: 1.5em

@@ -74,6 +74,9 @@
     font-size: 7px;
     margin: 0 10%; }
 
+  .home .footer {
+    border-top: none; }
+
   .menu,
   .search {
     display: none; }
@@ -85,6 +88,65 @@
 
   .section__instagram {
     font-size: 10px; }
+  .section .trendy {
+    clear: both;
+    margin: 10px 0; }
+    .section .trendy:after, .section .trendy:before {
+      content: " ";
+      display: table;
+      clear: both; }
+    .section .trendy__image {
+      float: left;
+      display: inline-block;
+      width: 50%; }
+    .section .trendy__content {
+      border: none; }
+    .section .trendy .post__title {
+      position: relative; }
+      .section .trendy .post__title:before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        background-color: #C0C0AB;
+        top: -7px; }
+    .section .trendy .post__more {
+      display: none; }
+  .section .novidades {
+    padding: 0; }
+    .section .novidades__image {
+      width: 80%; }
+    .section .novidades__content {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+    .section .novidades .post__more {
+      display: none; }
+
+  .post__date {
+    font-size: 0.6875em; }
+
+  .footer {
+    text-align: center;
+    padding: 20px 0 0 0;
+    background-color: #fff;
+    color: #C0C0AB; }
+    .footer__header {
+      min-height: auto; }
+    .footer-last {
+      padding: 0; }
+    .footer .social {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 20px 0;
+      background: #C0C0AB; }
+    .footer .btn-bg_white {
+      display: inline-block;
+      margin-top: 10px;
+      color: #fff;
+      background-color: #C0C0AB; }
 
   body {
-    font-size: 10px; } }
+    font-size: 11px; } }
