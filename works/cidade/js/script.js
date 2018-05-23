@@ -66,6 +66,11 @@ $(document).ready(function(){
 
 	$(".mix-wrap").mixItUp();
 
+
+	$('.category__head').click(function(event) {
+		$('.category__list').slideToggle();
+	});
+
 });
 
 

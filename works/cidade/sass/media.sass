@@ -31,6 +31,14 @@
 		font-size: 7px
 		margin: 0 10%
 
+	.overline
+		padding: 0
+		margin: 20px 0
+		&:after
+			display: none
+			
+
+
 	.home
 		.footer
 			border-top: none
@@ -47,8 +55,10 @@
 
 
 	.section
-		// &__under
-		// 	font-size: 0.6em
+		&__head
+			.section__under,
+			.post__more
+				display: none
 
 		&__instagram
 			font-size: 10px
@@ -88,9 +98,10 @@
 				&__more
 					display: none
 	
-	.post
-		&__date
-			font-size: 0.6875em
+	html body
+		.post
+			&__date
+				font-size: 0.6875rem
 
 	.footer
 		text-align: center
@@ -112,6 +123,14 @@
 			color: $w
 			background-color: $text
 
+	.grid-sm
+		&-2
+			display: grid
+			grid-template-columns: 1fr 1fr
+		&-1
+			display: grid
+			grid-template-columns: 1fr
+	
 
 
 	// typography
@@ -121,3 +140,13 @@
 	// &__title
 	// .overline
 	// 	font-size: 1.5em
+
++mw(1600)
+	.section
+		&__trendy
+			.container
+				position: relative
+			.category__row
+				position: absolute
+				right: 0
+				+translateX(100%)

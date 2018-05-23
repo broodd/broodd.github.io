@@ -74,6 +74,12 @@
     font-size: 7px;
     margin: 0 10%; }
 
+  .overline {
+    padding: 0;
+    margin: 20px 0; }
+    .overline:after {
+      display: none; }
+
   .home .footer {
     border-top: none; }
 
@@ -86,6 +92,9 @@
     .header .menu li {
       margin: 15px 0; }
 
+  .section__head .section__under,
+  .section__head .post__more {
+    display: none; }
   .section__instagram {
     font-size: 10px; }
   .section .trendy {
@@ -123,8 +132,8 @@
     .section .novidades .post__more {
       display: none; }
 
-  .post__date {
-    font-size: 0.6875em; }
+  html body .post__date {
+    font-size: 0.6875rem; }
 
   .footer {
     text-align: center;
@@ -148,5 +157,21 @@
       color: #fff;
       background-color: #C0C0AB; }
 
+  .grid-sm-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .grid-sm-1 {
+    display: grid;
+    grid-template-columns: 1fr; }
+
   body {
     font-size: 11px; } }
+@media only screen and (min-width: 1600px) {
+  .section__trendy .container {
+    position: relative; }
+  .section__trendy .category__row {
+    position: absolute;
+    right: 0;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%); } }
