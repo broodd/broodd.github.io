@@ -51,7 +51,6 @@ $(document).ready(function(){
 		]
 	});
 
-
 	if (window.matchMedia("(min-width: 768px)").matches) {
 		$('.slick-slider__1col').slick({
 			dots: true,
@@ -76,31 +75,41 @@ $(document).ready(function(){
 
 
 function openTab(tabName, th) {
-	// Declare all variables
-	var i, tabcontent, tablinks, cityClass;
+	// // Declare all variables
+	// var i, tabcontent, tablinks, cityClass;
 
-	// Get all elements with class="tabcontent" and hide them
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-		tabcontent[i].classList.remove('active');
-	}
+	// // Get all elements with class="tabcontent" and hide them
+	// tabcontent = document.getElementsByClassName("tabcontent");
+	// for (i = 0; i < tabcontent.length; i++) {
+	// 	tabcontent[i].style.display = "none";
+	// 	tabcontent[i].classList.remove('tab-active');
+	// }
 
-	// Get all elements with class="tablinks" and remove the class "active"
-	tablinks = document.getElementsByClassName("tablinks");
-	for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	}
+	// // Get all elements with class="tablinks" and remove the class "active"
+	// tablinks = document.getElementsByClassName("tablinks");
+	// for (i = 0; i < tablinks.length; i++) {
+	// 	tablinks[i].className = tablinks[i].className.replace(" tab-active", "");
+	// }
 
-	// Show the current tab, and add an "active" class to the button that opened the tab
-	cityClass = document.getElementsByClassName(tabName);
-	for (i = 0; i < cityClass.length; i++) {
-		cityClass[i].style.display = "block";
-		cityClass[i].classList.add("active");
-	}
-	// evt.currentTarget.className += " active";
-	// jQuery(th).addClass('active');
-	th.classList.add("active");
+	// // Show the current tab, and add an "active" class to the button that opened the tab
+	// cityClass = document.getElementsByClassName(tabName);
+	// for (i = 0; i < cityClass.length; i++) {
+	// 	cityClass[i].style.display = "block";
+	// 	cityClass[i].classList.add("tab-active");
+	// }
+	// // evt.currentTarget.className += " active";
+	// // jQuery(th).addClass('active');
+	// th.classList.add("tab-active");
+
+	var tabcontent = $('.tabcontent'),
+			tablinks   = $('.tablinks'),
+			currClass  = $('.' + tabName);
+
+	tabcontent.hide().removeClass('tab-active'),
+	tablinks.removeClass('tab-active'),
+	currClass.show().addClass('tab-active'),
+	$(this).addClass('tab-active');
+
 }
 
 var l = $('.tablinks').first();

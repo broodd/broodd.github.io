@@ -72,10 +72,23 @@
 		<section class="section section-margin_big section__lojas">
 			<div class="container">
 				<div class="row">
-					<div class="col-auto">
-						<h3 class="upper section__title overline overline-big">Lojas</h3>
-						<div class="upper section__under margin-b65">O que está à procura</div>
-						<div class="category">
+					<div class="col-12 col-md-auto">
+						<div class="section__head">
+							<h3 class="upper section__title overline overline-big">Lojas</h3>
+							<div class="upper section__under margin-b65">O que está à procura</div>
+						</div>
+
+						<div class="btn btn-border arrow-right margin-25_0 tablinks tabcontent tab-mapa" onclick="openTab('tab-dir', this)">ver diretorio</div>
+						<div class="btn btn-border arrow-right margin-25_0 tablinks tabcontent tab-dir" onclick="openTab('tab-mapa', this)">ver mapa</div>
+
+						<form action="" method="POST">
+							<div class="form-row margin-25_0">
+								<input class="btn-border" placeholder="Pesquisar loja" type="text">
+								<i class="fa fa-search color-black"></i>
+							</div>
+						</form>
+
+						<div class="category tabcontent tab-dir">
 							<div class="upper section__under">
 								<span class="category__head">Сategorias</span>
 							</div>
@@ -87,7 +100,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="lojas-wrap grid-3 grid-sm-1 mix-wrap">
+					<div class="col tabcontent tab-dir mix-wrap lojas-wrap grid-3 grid-sm-1">
 						<div class="hover lojas mix category-1">
 							<div class="border-effect"><img src="img/spon.png" class="hover__hidden" alt=""></div>
 							<div class="border-effect"><img src="img/spon-hidden.png" class="hover__visible" alt=""></div>
@@ -126,44 +139,10 @@
 						</div>
 					</div>
 
-					<!-- <div class="col row">
-						<div class="col-4 hover lojas">
-							<img src="img/spon.png" class="hover__hidden" alt="">
-							<img src="img/spon-hidden.png" class="hover__visible" alt="">
-						</div>
-						<div class="col-4 hover lojas">
-							<img src="img/spon.png" class="hover__hidden" alt="">
-							<img src="img/spon-hidden.png" class="hover__visible" alt="">
-						</div>
-						<div class="col-4 hover lojas">
-							<img src="img/spon.png" class="hover__hidden" alt="">
-							<img src="img/spon-hidden.png" class="hover__visible" alt="">
-						</div>
-						<div class="col-4 hover lojas">
-							<img src="img/spon.png" class="hover__hidden" alt="">
-							<img src="img/spon-hidden.png" class="hover__visible" alt="">
-						</div>
-						<div class="col-4 hover lojas">
-							<img src="img/spon.png" class="hover__hidden" alt="">
-							<img src="img/spon-hidden.png" class="hover__visible" alt="">
-						</div>
-						<div class="col-4 hover lojas">
-							<img src="img/spon.png" class="hover__hidden" alt="">
-							<img src="img/spon-hidden.png" class="hover__visible" alt="">
-						</div>
-						<div class="col-4 hover lojas">
-							<img src="img/spon.png" class="hover__hidden" alt="">
-							<img src="img/spon-hidden.png" class="hover__visible" alt="">
-						</div>
-						<div class="col-4 hover lojas">
-							<img src="img/spon.png" class="hover__hidden" alt="">
-							<img src="img/spon-hidden.png" class="hover__visible" alt="">
-						</div>
-						<div class="col-4 hover lojas">
-							<img src="img/spon.png" class="hover__hidden" alt="">
-							<img src="img/spon-hidden.png" class="hover__visible" alt="">
-						</div>
-					</div> -->
+					<div class="col tabcontent tab-mapa">
+						<img src="img/piso-1.svg" alt="">
+					</div>
+
 				</div>
 			</div>
 		</section>

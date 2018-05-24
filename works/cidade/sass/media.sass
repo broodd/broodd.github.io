@@ -8,6 +8,17 @@
 // col-xl >= 1140px
 
 
+// eventos hide stuff index
+// add input for search
+// add js code for piso
+// tab for button piso
+// window collapse for desc piso
+// add arrow for tab shoping
+// add google maps
+// novidades change css in page
+
+
+
 
 +w(768)
 	.text-center-sm
@@ -36,10 +47,15 @@
 		margin: 20px 0
 		&:after
 			display: none
+
+	.tablinks.italic
+		font-style: normal
 			
 
 
 	.home
+		.header
+			border-bottom: 5px solid $grey
 		.footer
 			border-top: none
 
@@ -48,6 +64,7 @@
 		display: none
 
 	.header
+		border-top: 5px solid $text
 		.menu
 			padding-top: 30px
 			li
@@ -55,6 +72,9 @@
 
 
 	.section
+		&-margin_big
+			margin-top: 20px
+			margin-bottom: 20px
 		&__head
 			.section__under,
 			.post__more
@@ -130,6 +150,10 @@
 		&-1
 			display: grid
 			grid-template-columns: 1fr
+
+	.category
+		text-align: center
+		
 	
 
 
@@ -141,6 +165,11 @@
 	// .overline
 	// 	font-size: 1.5em
 
++mw(768)
+	.arrow-sm-right
+		&:after
+			display: none
+
 +mw(1600)
 	.section
 		&__trendy
@@ -149,4 +178,5 @@
 			.category__row
 				position: absolute
 				right: 0
-				+translateX(100%)
+				+translateX(100%)	
+
