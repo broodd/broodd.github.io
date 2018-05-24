@@ -9,14 +9,14 @@
 
 
 // eventos hide stuff index
-// add input for search
 // add js code for piso
 // tab for button piso
 // window collapse for desc piso
-// add arrow for tab shoping
 // add google maps
 // novidades change css in page
 
+	// add input for search 
+	// add arrow for tab shoping
 
 
 
@@ -29,6 +29,21 @@
 		&-10_0
 			margin-top: 10px
 			margin-bottom: 10px
+
+	.margin
+		// &-25_0
+		// 	margin-top: 25px
+		// 	margin-bottom: 25px
+		&-b
+			&40
+				margin-bottom: 10px
+			// &65
+			// 	margin-bottom: 65px
+			&85
+				margin-bottom: 35px
+		// &-t30
+		// 	margin-top: 30px
+
 
 	+sandwich($text-s, 35px, 100%)
 		z-index: 3
@@ -70,7 +85,7 @@
 			li
 				margin: 15px 0
 
-
+	
 	.section
 		&-margin_big
 			margin-top: 20px
@@ -117,6 +132,31 @@
 			.post
 				&__more
 					display: none
+
+		&__novidades
+			.novidades
+				margin: 20px 0
+				padding: 0 15px
+				+tr(400ms ease-out)
+				&:after
+					top: auto
+					bottom: 0
+					border-left-color: $text
+				&__image
+					width: auto
+				&__content
+					position: relative
+					margin-left: 0
+					margin-right: 20%
+				.post__date
+					display: none
+
+				&:hover
+					.post__title
+						color: $w
+					.novidades__content
+						background-color: $text
+					
 	
 	html body
 		.post
@@ -154,7 +194,8 @@
 	.category
 		text-align: center
 		
-	
+	.map-wrap
+		margin-right: 0
 
 
 	// typography
@@ -166,7 +207,8 @@
 	// 	font-size: 1.5em
 
 +mw(768)
-	.arrow-sm-right
+	.arrow-sm-right,
+	.section__novidades .novidades
 		&:after
 			display: none
 

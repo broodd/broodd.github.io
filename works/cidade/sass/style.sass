@@ -67,7 +67,8 @@
 				height: 3px
 				background-color: $text	
 				+tr(300ms cubic-bezier(.59,.04,.44,1.34))
-		&:hover
+		&:hover,
+		&.current
 			a
 				&:after
 					width: 40px
@@ -338,7 +339,8 @@ html body
 			color: $text-s
 
 .arrow-right,
-.arrow-sm-right
+.arrow-sm-right,
+.section__novidades .novidades
 	position: relative
 	&:after
 		content: ''
