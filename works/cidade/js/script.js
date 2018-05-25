@@ -95,17 +95,7 @@ $(document).ready(function(){
 
 
 
-	// function mapaLinks(tabName, th) {
-	// 	$(this).toggleClass('tab-active');
-	// 	$('.' + tabName).toggle().toggleClass('tab-active');
-	// }
-
 	var maplinks = $('.maplinks');
-
-	// function openMapa(tabName) {
-	// 	var currClass  = $('.' + tabName);
-	// 	currClass.show().addClass('map-active');
-	// }
 
 	maplinks.click(function(event) {
 		var th = $(this);
@@ -113,5 +103,7 @@ $(document).ready(function(){
 		th.toggleClass('tab-active');
 		$('.' + th.attr('data-open')).toggle().toggleClass('map-active');
 	});
+
+	$('.mapcontent').hide();
 
 });

@@ -924,6 +924,15 @@ html body .post__more {
   .tablinks.active, .tablinks:hover {
     color: #C0C0AB; }
 
+html body .maplinks {
+  cursor: pointer;
+  padding: 0; }
+  html body .maplinks:hover img, html body .maplinks.tab-active img {
+    background-color: #fd7e14; }
+  html body .maplinks img {
+    background-color: #C0C0AB;
+    width: 4.2rem; }
+
 .logo {
   height: 60px; }
 
