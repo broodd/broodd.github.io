@@ -112,5 +112,10 @@ function openTab(tabName, th) {
 
 }
 
+function mapaLinks(tabName, th) {
+	$(this).toggleClass('tab-active');
+	$('.' + tabName).toggle().toggleClass('tab-active');
+}
+
 var l = $('.tablinks').first();
 l.click();
