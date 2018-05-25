@@ -78,8 +78,8 @@
 							<div class="upper section__under margin-b65">O que está à procura</div>
 						</div>
 
-						<div class="btn btn-border arrow-right margin-25_0 tablinks tabcontent tab-mapa" onclick="openTab('tab-dir', this)">ver diretorio</div>
-						<div class="btn btn-border arrow-right margin-25_0 tablinks tabcontent tab-dir" onclick="openTab('tab-mapa', this)">ver mapa</div>
+						<div class="btn btn-border arrow-right margin-25_0 tablinks tabcontent tab-mapa" data-open='tab-dir'>ver diretorio</div>
+						<div class="btn btn-border arrow-right margin-25_0 tablinks tabcontent tab-dir" data-open='tab-mapa'>ver mapa</div>
 
 						<form action="" method="POST">
 							<div class="form-row margin-25_0">
@@ -496,7 +496,7 @@
 								</g>
 							</g>
 							<g id="XMLID_199_">
-								<g id="XMLID_292_">
+								<g class="tab-esc" id="XMLID_292_">
 									<g id="XMLID_293_">
 										<g id="XMLID_297_">
 											<path id="XMLID_298_" style="fill:#010202;" d="M324.2,163.2c0-0.1-0.1-0.2-0.1-0.2h0c0,0,0,0,0,0c-0.1-0.1-0.1-0.1-0.2-0.1
@@ -517,7 +517,7 @@
 										</g>
 									</g>
 								</g>
-								<g id="XMLID_285_">
+								<g class="tab-esc" id="XMLID_285_">
 									<g id="XMLID_286_">
 										<g id="XMLID_290_">
 											<path id="XMLID_291_" style="fill:#010202;" d="M518.1,269c0-0.1-0.1-0.2-0.1-0.2h0c0,0,0,0,0,0c-0.1,0-0.1-0.1-0.2-0.1
@@ -538,7 +538,7 @@
 										</g>
 									</g>
 								</g>
-								<g id="XMLID_278_">
+								<g class="tab-esc" id="XMLID_278_">
 									<g id="XMLID_279_">
 										<g id="XMLID_283_">
 											<path id="XMLID_284_" style="fill:#010202;" d="M580.8,215.8c0-0.1-0.1-0.2-0.1-0.2h0c0,0,0,0,0,0c-0.1,0-0.1-0.1-0.2-0.1
@@ -559,7 +559,7 @@
 										</g>
 									</g>
 								</g>
-								<g id="XMLID_264_">
+								<g class="tab-lift" id="XMLID_264_">
 									<path id="XMLID_275_" style="fill:#010202;" d="M293.5,151.1h-12.5c-1.4,0-2.6,1.1-2.6,2.6V169c0,1.4,1.2,2.6,2.6,2.6h12.5
 										c1.4,0,2.6-1.1,2.6-2.6v-15.3C296.1,152.3,294.9,151.1,293.5,151.1z M294,169c0,0.3-0.2,0.5-0.5,0.5h-12.5c-0.3,0-0.5-0.2-0.5-0.5
 										v-15.3c0-0.3,0.2-0.5,0.5-0.5h12.5c0.3,0,0.5,0.2,0.5,0.5V169z"/>
@@ -591,7 +591,7 @@
 											C291.3,140.7,291.2,140.6,291.1,140.6z"/>
 									</g>
 								</g>
-								<g id="XMLID_250_">
+								<g class="tab-lift" id="XMLID_250_">
 									<path id="XMLID_261_" style="fill:#010202;" d="M416.8,285.3h-12.5c-1.4,0-2.6,1.1-2.6,2.6v15.3c0,1.4,1.1,2.6,2.6,2.6h12.5
 										c1.4,0,2.6-1.1,2.6-2.6v-15.3C419.4,286.4,418.2,285.3,416.8,285.3z M417.3,303.2c0,0.3-0.2,0.5-0.5,0.5h-12.5
 										c-0.3,0-0.5-0.2-0.5-0.5v-15.3c0-0.3,0.2-0.5,0.5-0.5h12.5c0.3,0,0.5,0.2,0.5,0.5V303.2z"/>
@@ -624,7 +624,7 @@
 											C414.6,274.8,414.5,274.8,414.4,274.7z"/>
 									</g>
 								</g>
-								<g id="XMLID_236_">
+								<g class="tab-lift" id="XMLID_236_">
 									<path id="XMLID_247_" style="fill:#010202;" d="M551.7,203.2h-12.5c-1.4,0-2.6,1.1-2.6,2.6v15.3c0,1.4,1.1,2.6,2.6,2.6h12.5
 										c1.4,0,2.6-1.1,2.6-2.6v-15.3C554.3,204.3,553.2,203.2,551.7,203.2z M552.3,221.1c0,0.3-0.2,0.5-0.5,0.5h-12.5
 										c-0.3,0-0.5-0.2-0.5-0.5v-15.3c0-0.3,0.2-0.5,0.5-0.5h12.5c0.3,0,0.5,0.2,0.5,0.5V221.1z"/>
@@ -656,7 +656,7 @@
 											C549.5,192.7,549.4,192.7,549.3,192.6z"/>
 									</g>
 								</g>
-								<g id="XMLID_227_">
+								<g class="tab-esc" id="XMLID_227_">
 									<path id="XMLID_233_" style="fill:#010202;" d="M294.5,239.6h-4.3c-2.5,0-4.6-2.1-4.6-4.6c0-2.5,2.1-4.6,4.6-4.6h0.7l11.8-11.7
 										c0.2-0.2,0.4-0.2,0.6-0.2h4.9c2.5,0,4.6,2.1,4.6,4.6c0,2.5-2.1,4.6-4.6,4.6h-1.3l-11.7,11.7C295,239.6,294.8,239.6,294.5,239.6z
 										 M290.3,232.1c-1.6,0-2.9,1.3-2.9,2.9c0,1.6,1.3,2.9,2.9,2.9h3.9l11.7-11.7c0.2-0.2,0.4-0.2,0.6-0.2h1.7c1.6,0,2.9-1.3,2.9-3
@@ -676,7 +676,7 @@
 										</g>
 									</g>
 								</g>
-								<g id="XMLID_218_">
+								<g class="tab-esc" id="XMLID_218_">
 									<path id="XMLID_224_" style="fill:#010202;" d="M306.7,354.7h-4.3c-2.5,0-4.6-2.1-4.6-4.6c0-2.5,2.1-4.6,4.6-4.6h0.7l11.8-11.7
 										c0.2-0.2,0.4-0.2,0.6-0.2h4.9c2.5,0,4.6,2.1,4.6,4.6c0,2.5-2.1,4.6-4.6,4.6H319l-11.7,11.7C307.1,354.6,306.9,354.7,306.7,354.7z
 										 M302.4,347.2c-1.6,0-2.9,1.3-2.9,2.9c0,1.6,1.3,2.9,2.9,2.9h3.9l11.7-11.7c0.2-0.2,0.4-0.2,0.6-0.2h1.7c1.6,0,2.9-1.3,2.9-3
@@ -696,7 +696,7 @@
 										</g>
 									</g>
 								</g>
-								<g id="XMLID_209_">
+								<g class="tab-esc" id="XMLID_209_">
 									<path id="XMLID_215_" style="fill:#010202;" d="M492.6,496.6h-4.3c-2.5,0-4.6-2.1-4.6-4.6c0-2.5,2.1-4.6,4.6-4.6h0.7l11.8-11.7
 										c0.2-0.2,0.4-0.2,0.6-0.2h4.9c2.5,0,4.6,2.1,4.6,4.6c0,2.5-2.1,4.6-4.6,4.6h-1.3l-11.7,11.7C493,496.5,492.8,496.6,492.6,496.6z
 										 M488.3,489.1c-1.6,0-2.9,1.3-2.9,2.9c0,1.6,1.3,2.9,2.9,2.9h3.9l11.7-11.7c0.2-0.2,0.4-0.2,0.6-0.2h1.7c1.6,0,2.9-1.3,2.9-3
@@ -716,7 +716,7 @@
 										</g>
 									</g>
 								</g>
-								<g id="XMLID_200_">
+								<g class="tab-esc" id="XMLID_200_">
 									<path id="XMLID_206_" style="fill:#010202;" d="M515.3,397.5H511c-2.5,0-4.6-2.1-4.6-4.6c0-2.5,2.1-4.6,4.6-4.6h0.7l11.8-11.7
 										c0.2-0.2,0.4-0.2,0.6-0.2h4.9c2.5,0,4.6,2.1,4.6,4.6c0,2.5-2.1,4.6-4.6,4.6h-1.3l-11.7,11.7C515.8,397.4,515.5,397.5,515.3,397.5z
 										 M511,390c-1.6,0-2.9,1.3-2.9,2.9c0,1.6,1.3,2.9,2.9,2.9h3.9l11.7-11.7c0.2-0.2,0.4-0.2,0.6-0.2h1.7c1.6,0,2.9-1.3,2.9-3
@@ -737,7 +737,7 @@
 									</g>
 								</g>
 							</g>
-							<g id="XMLID_196_">
+							<g class="tab-wc" id="XMLID_196_">
 								<circle id="XMLID_198_" style="fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;" cx="525.8" cy="176" r="2.2"/>
 								<path id="XMLID_197_" style="fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;" d="M526.8,193.2c-0.6,0-1-0.4-1-1v-3v-0.1
 									c0-0.6,0.1-0.4-0.3-0.4c-0.4,0-0.3-0.1-0.3,0.4v0.1v3c0,0.6-0.4,1-1,1h-0.3c-0.6,0-1-0.4-1-1v-3.1c0-0.1,0-0.1,0-0.2
@@ -766,10 +766,9 @@
 							</svg>
 
 						<div class="mapa__btn">
-							<div class="tab-wc">awdesefsef sefsef</div>
-							<div class="btn tablinks" onclick="mapaLinks('tab-wc', this)">WC</div>
-							<div class="btn tablinks" onclick="mapaLinks('tab-esc', this)">Esc</div>
-							<div class="btn tablinks" onclick="mapaLinks('tab-lift', this)">Lift</div>
+							<div class="btn maplinks" data-open='tab-wc'>WC</div>
+							<div class="btn maplinks" data-open='tab-esc'>Esc</div>
+							<div class="btn maplinks" data-open='tab-lift'>Lift</div>
 						</div>
 					</div>
 
@@ -783,9 +782,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-sm-12 d-none d-md-block">
-					<p class="upper footer__header">horario</p>
+					<p class="upper footer__header">Horário</p>
 
-					<p>Shoping Cidade do Porto | 10h00 - 23h00</p>
+					<p>Shopping Cidade do Porto | 10h00 - 23h00</p>
 					<p>Parque de Estacionamento | 07h30 - 01h00</p>
 					<p>Supermercado Froiz | 10h00 - 22h00</p>
 				</div>
@@ -793,8 +792,8 @@
 					<p class="upper footer__header">concactos</p>
 
 					<p>Morada</p>
-					<p>End. Postal Praca do Bom Sucesso 61</p>
-					<p>Esc. 501/2 | 4150-146 Prto</p>
+					<p>End. Postal Praça do Bom Sucesso 61</p>
+					<p>Esc. 501/2 | 4150-146 Porto</p>
 
 					<div class="m-top">
 						<p>Telefone</p>
@@ -809,7 +808,7 @@
 				<div class="col-md-4 col-sm-12 footer-last">
 					<p class="upper footer__header">Quer receber novidades<br>Do seu shopping de eleição?</p>
 
-					<a href="#" class="btn btn-bg_white">subscrever newsletter</a>
+					<a href="#" class="btn btn-bg_white">Subscrever newsletter</a>
 
 					<div class="m-top">
 						<p class="d-none d-md-block">Siga-nos</p>

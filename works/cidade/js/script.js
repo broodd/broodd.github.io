@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
 	// preloader
-  $(".preloader-background").delay(200).fadeOut(500, function() {
+  $(".preloader-js").delay(200).fadeOut(500, function() {
       $(this).remove()
   });
+
 
   // sandwich
 	var sandwich = $('#sandwich');
@@ -11,8 +12,8 @@ $(document).ready(function(){
 	sandwich.click(function() {
 		sandwich.toggleClass('active-sandwich');
 		jQuery('.menu').slideToggle();
-		// jQuery('.header__nav, body').toggleClass('active');
 	});
+
 
 	$('.slick-slider').slick({
 		dots: true,
@@ -70,52 +71,47 @@ $(document).ready(function(){
 		$('.category__list').slideToggle();
 	});
 
-});
 
-
-
-function openTab(tabName, th) {
-	// // Declare all variables
-	// var i, tabcontent, tablinks, cityClass;
-
-	// // Get all elements with class="tabcontent" and hide them
-	// tabcontent = document.getElementsByClassName("tabcontent");
-	// for (i = 0; i < tabcontent.length; i++) {
-	// 	tabcontent[i].style.display = "none";
-	// 	tabcontent[i].classList.remove('tab-active');
-	// }
-
-	// // Get all elements with class="tablinks" and remove the class "active"
-	// tablinks = document.getElementsByClassName("tablinks");
-	// for (i = 0; i < tablinks.length; i++) {
-	// 	tablinks[i].className = tablinks[i].className.replace(" tab-active", "");
-	// }
-
-	// // Show the current tab, and add an "active" class to the button that opened the tab
-	// cityClass = document.getElementsByClassName(tabName);
-	// for (i = 0; i < cityClass.length; i++) {
-	// 	cityClass[i].style.display = "block";
-	// 	cityClass[i].classList.add("tab-active");
-	// }
-	// // evt.currentTarget.className += " active";
-	// // jQuery(th).addClass('active');
-	// th.classList.add("tab-active");
 
 	var tabcontent = $('.tabcontent'),
-			tablinks   = $('.tablinks'),
-			currClass  = $('.' + tabName);
+			tablinks   = $('.tablinks');
 
-	tabcontent.hide().removeClass('tab-active'),
-	tablinks.removeClass('tab-active'),
-	currClass.show().addClass('tab-active'),
-	$(this).addClass('tab-active');
+	function openTab(tabName) {
+		var currClass  = $('.' + tabName);
 
-}
+		tabcontent.hide().removeClass('tab-active'),
+		tablinks.removeClass('tab-active'),
+		currClass.show().addClass('tab-active');
+	}
 
-function mapaLinks(tabName, th) {
-	$(this).toggleClass('tab-active');
-	$('.' + tabName).toggle().toggleClass('tab-active');
-}
+	tablinks.click(function(event) {
+		openTab( $(this).attr('data-open') );
+		$(this).addClass('tab-active');
+	});
 
-var l = $('.tablinks').first();
-l.click();
+	var l = $('.tablinks').first();
+	l.click();
+
+
+
+
+	// function mapaLinks(tabName, th) {
+	// 	$(this).toggleClass('tab-active');
+	// 	$('.' + tabName).toggle().toggleClass('tab-active');
+	// }
+
+	var maplinks = $('.maplinks');
+
+	// function openMapa(tabName) {
+	// 	var currClass  = $('.' + tabName);
+	// 	currClass.show().addClass('map-active');
+	// }
+
+	maplinks.click(function(event) {
+		var th = $(this);
+
+		th.toggleClass('tab-active');
+		$('.' + th.attr('data-open')).toggle().toggleClass('map-active');
+	});
+
+});
