@@ -861,15 +861,19 @@ html body .post__more {
 
 .arrow-right,
 .arrow-sm-right,
-.section__novidades .novidades {
+.page-novidades .section__novidades .novidades,
+.page-eventos .section__eventos .eventos,
+.page-trendy .section__trendy .trendy {
   position: relative; }
   .arrow-right:after,
   .arrow-sm-right:after,
-  .section__novidades .novidades:after {
+  .page-novidades .section__novidades .novidades:after,
+  .page-eventos .section__eventos .eventos:after,
+  .page-trendy .section__trendy .trendy:after {
     content: "";
     position: absolute;
     font-size: 14px;
-    right: 10px;
+    right: 15px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);

@@ -13,8 +13,8 @@
 // tab for button piso
 // window collapse for desc piso
 // add google maps
-// novidades change css in page
 
+	// novidades change css in page
 	// add input for search 
 	// add arrow for tab shoping
 
@@ -133,7 +133,10 @@
 				&__more
 					display: none
 
-		&__novidades
+		
+	.page-novidades,
+	.single-novidades,
+		.section__novidades
 			.novidades
 				margin: 20px 0
 				padding: 0 15px
@@ -148,14 +151,88 @@
 					position: relative
 					margin-left: 0
 					margin-right: 20%
+
+	.page-eventos
+		.section__eventos
+			.eventos
+				margin: 10px 0
+				&:after
+					top: auto
+					border-left-color: $text
+					right: 25px
+					bottom: 5px
+				&__content
+					padding: 15px
+				.post__title
+					margin: 0
+				&:hover
+					&:after
+						border-left-color: $w
+					.post__title
+						color: $w
+
+
+
+	.page-novidades
+		.section__novidades
+			.novidades
 				.post__date
 					display: none
-
 				&:hover
 					.post__title
 						color: $w
 					.novidades__content
 						background-color: $text
+
+	.page-trendy
+		.section__trendy
+			.trendy
+				&:after
+					top: auto
+					bottom: 10px
+					border-left-color: $text
+				&__image
+					width: 100%
+					float: none
+				&__content
+					width: 100%
+					border: 5px solid #C0C0AB
+					border-top: 0
+					padding-bottom: 1.25rem
+				.post__title
+					&:before
+						display: none
+						
+
+
+	.single
+		.novidades__content,
+		.eventos__content,
+		.underline
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 12%
+				width: 40px
+				height: 3px
+				background-color: $text			
+		.eventos__content
+			padding-bottom: 10px
+			&:after
+				left: 0
+				bottom: 10px
+
+	.page-eventos
+		.section__eventos
+			.eventos
+				.post__more
+					display: none
+				&:hover
+					.eventos__content
+						background-color: $text
+
 					
 	
 	html body
@@ -208,7 +285,9 @@
 
 +mw(768)
 	.arrow-sm-right,
-	.section__novidades .novidades
+	.page-novidades .section__novidades .novidades,
+	.page-eventos .section__eventos .eventos,
+	.page-trendy .section__trendy .trendy
 		&:after
 			display: none
 
