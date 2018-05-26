@@ -64,7 +64,9 @@ $(document).ready(function(){
 	}
 
 
-	$(".mix-wrap").mixItUp();
+	var mix = $('.mix-wrap');
+	if(mix.length !== 0)
+		$(".mix-wrap").mixItUp();
 
 
 	$('.category__head').click(function(event) {
@@ -105,5 +107,11 @@ $(document).ready(function(){
 	});
 
 	$('.mapcontent').hide();
+
+
+	$('.search').click(function(event) {
+		console.log('awdawd');
+		$('.search__form').slideToggle();
+	});
 
 });
