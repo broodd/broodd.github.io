@@ -955,6 +955,30 @@ html body .maplinks {
   .map__item {
     margin-bottom: 30px; }
 
+.piso-wrap {
+  text-align: right; }
+.piso__text {
+  position: relative;
+  display: inline-block; }
+.piso__next, .piso__prev {
+  content: "";
+  position: absolute;
+  left: -25px; }
+.piso__prev {
+  top: -7px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 10px 11px 10px;
+  border-color: transparent transparent #575756 transparent; }
+.piso__next {
+  bottom: -7px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 11px 10px 0 10px;
+  border-color: #575756 transparent transparent transparent; }
+
 .icon-text {
   line-height: 1.1; }
   .icon-text__icon {

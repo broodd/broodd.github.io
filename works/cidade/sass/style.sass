@@ -469,6 +469,28 @@ html body
 	&__item
 		margin-bottom: 30px
 
+.piso
+	&-wrap
+		text-align: right
+	&__text
+		position: relative
+		display: inline-block
+	&__next,
+	&__prev
+		content: ''
+		position: absolute
+		left: -25px
+	&__prev
+		top: -7px
+		+arr(20, 11,$text-s, t)
+	&__next
+		bottom: -7px
+		+arr(20, 11,$text-s, b)
+
+											
+
+
+
 .icon-text
 	line-height: 1.1
 	&__icon

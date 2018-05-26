@@ -64,9 +64,6 @@ $(document).ready(function(){
 	}
 
 
-	var mix = $('.mix-wrap');
-	if(mix.length !== 0)
-		$(".mix-wrap").mixItUp();
 
 
 	$('.category__head').click(function(event) {
@@ -113,5 +110,60 @@ $(document).ready(function(){
 		console.log('awdawd');
 		$('.search__form').slideToggle();
 	});
+
+
+	var mapa       = $('.mapa-wrap .mapa'),
+			mapaCount  = mapa.length,
+			mapaFirst  = mapa.first(),
+			mapaLast   = mapa.last(),
+			pisoNext   = $('.map__piso .piso__next'),
+			pisoPrev   = $('.map__piso .piso__prev'),
+			pisoNumber = $('.piso__number');
+
+	mapa.hide().first().show().addClass('map-active');
+
+	function mapIndex() {
+		var index = $('.map-active').index();
+		pisoNumber.text(index + 1);
+	}
+
+	pisoNext.click(function(event) {
+		var mapaCurr = $('.map-active'),
+				mapaPrev = mapaCurr.prev();
+
+
+		if( mapaPrev.length == 0 ) {
+			mapaCurr.removeClass('map-active').hide(),
+			mapaLast.addClass('map-active').show();
+		}
+		else {
+			mapaCurr.removeClass('map-active').hide(),
+			mapaPrev.addClass('map-active').show();
+		}
+		mapIndex();
+	});
+
+	pisoPrev.click(function(event) {
+		var mapaCurr = $('.map-active'),
+				mapaNext = mapaCurr.next();
+
+
+		if( mapaNext.length == 0 ) {
+			mapaCurr.removeClass('map-active').hide(),
+			mapaFirst.addClass('map-active').show();
+		}
+		else {
+			mapaCurr.removeClass('map-active').hide(),
+			mapaNext.addClass('map-active').show();
+		}
+		mapIndex();
+	});	
+
+
+
+
+	var mix = $('.mix-wrap');
+	if(mix.length !== 0)
+		$(".mix-wrap").mixItUp();
 
 });
