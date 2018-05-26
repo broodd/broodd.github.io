@@ -330,7 +330,7 @@ html body
 			right: -18px
 			top: 50%
 			+translateY
-			+arr(12, 10,$text, b)
+			+arr(12, 10,$text-s, b)
 			border-radius: 2px
 	&__list
 		display: none
@@ -361,8 +361,13 @@ html body
 			width: 100%
 			padding: 5px 40px 5px 30px
 			text-transform: uppercase
-			+placeholder-color($text-s)
+			+placeholder-color($w)
+			border: none
+			outline: none
+			background-color: $text-l
+			color: $w
 		.fa-search
+			color: $w
 			position: absolute
 			right: 10px
 			top: 50%
