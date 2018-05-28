@@ -44,9 +44,13 @@
 		// &-t30
 		// 	margin-top: 30px
 
-	body:not(.home)
-		footer
-			display: none
+	.padding-sm
+		&-0
+			padding: 0
+
+	body:not(.home) footer,
+	.line:after
+		display: none
 
 
 	+sandwich($text-s, 35px, 100%)
@@ -194,19 +198,29 @@
 				&:after
 					top: auto
 					bottom: 10px
-					border-left-color: $text
+					border-left-color: $text-s
 				&__image
 					width: 100%
 					float: none
 				&__content
 					width: 100%
-					border: 5px solid #C0C0AB
-					border-top: 0
+					border: 5px solid transparent
+					// border-top: 0
 					padding-bottom: 1.25rem
 				.post__title
+					color: $text-s
 					&:before
 						display: none
-						
+
+				&:hover
+					&:after
+						border-left-color: $text
+					.trendy__content
+						border: 5px solid $text
+					.post__title
+						color: $text
+
+
 
 
 	.single

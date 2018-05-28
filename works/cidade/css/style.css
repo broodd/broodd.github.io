@@ -437,7 +437,8 @@ small {
   letter-spacing: 4px; }
 
 .text {
-  color: #575756; }
+  color: #575756;
+  line-height: 1.2; }
 
 .mix,
 .hidden {
@@ -786,6 +787,8 @@ html body .post__more {
   margin-top: -20px;
   z-index: 2;
   position: relative; }
+.section__shopping .tablinks.tab-active {
+  color: #C0C0AB; }
 .section__instagram {
   overflow-y: hidden;
   text-align: center; }
