@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .text-center-sm {
     text-align: center; }
 
@@ -13,6 +13,9 @@
     margin-bottom: 10px; }
   .margin-b85 {
     margin-bottom: 35px; }
+
+  body:not(.home) footer {
+    display: none; }
 
   #sandwich.active-sandwich .sw-topper {
     margin-bottom: 8px;
@@ -285,3 +288,6 @@
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%); } }
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .logo {
+    margin: 25px 0; } }
