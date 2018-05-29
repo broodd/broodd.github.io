@@ -160,6 +160,18 @@ $(document).ready(function(){
 	});	
 
 
+	$('.mapadesc').click(function(event) {
+		var th = $(this);
+
+		$('.' + th.attr('data-open')).fadeIn().addClass('mapa-active'),
+		$('.mapa-wrap').addClass('active');
+	});
+
+	$('.mapa__desc .close').click(function(event) {
+		$('.mapa-wrap').removeClass('active'),
+		$('.mapa-active').removeClass('mapa-active').fadeOut();
+	});
+
 
 
 	var mix = $('.mix-wrap');
