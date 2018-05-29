@@ -291,6 +291,9 @@
   .map-wrap {
     margin-right: 0; }
 
+  html body .mapa__desc {
+    width: 80%; }
+
   body {
     font-size: 11px; } }
 @media only screen and (min-width: 768px) {

@@ -444,6 +444,8 @@ html body
 
 html body
 	.map
+		&a
+			position: relative
 		&a-wrap
 			position: relative
 			&:after
@@ -478,8 +480,15 @@ html body
 				color: $text-s
 				text-transform: uppercase
 				letter-spacing: 2px
+				span
+					margin-left: 6px
+					font-size: 0.95em
+					text-transform: none
+			a
+				text-transform: none
 			.section__under
 				margin-bottom: 20px
+				font-size: 1em
 			.close
 				position: absolute
 				right: 0
@@ -526,7 +535,10 @@ html body
 		// background-color: $text
 		// display: inline-block
 		// text-align: left
+		z-index: 10
 		margin-top: -60px
+		letter-spacing: 1px
+		font-size: 1.07em
 		.bg-dark
 			padding: 20px 25px 5px
 			*
@@ -545,6 +557,7 @@ html body
 		content: ''
 		position: absolute
 		left: -25px
+		z-index: 11
 	&__prev
 		top: -7px
 		+arr(20, 11,$text-s, t)
