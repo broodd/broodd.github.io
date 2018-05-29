@@ -21,6 +21,15 @@
   .line:after {
     display: none; }
 
+  body:not(.home) .section__head .section__title:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 40px;
+    height: 3px;
+    background-color: #C0C0AB; }
+
   #sandwich.active-sandwich .sw-topper {
     margin-bottom: 8px;
     -webkit-transform: rotate(140deg);

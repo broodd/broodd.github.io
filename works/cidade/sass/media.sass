@@ -49,8 +49,21 @@
 			padding: 0
 
 	body:not(.home) footer,
-	.line:after
+	.line:after,
 		display: none
+
+
+	body:not(.home)
+		.section__head
+			.section__title
+				&:before
+					content: ''
+					position: absolute
+					left: 0
+					bottom: -10px
+					width: 40px
+					height: 3px
+					background-color: $text
 
 
 	+sandwich($text-s, 35px, 100%)
@@ -93,7 +106,7 @@
 			li
 				margin: 15px 0
 
-	
+
 	.section
 		&-margin_big
 			margin-top: 20px
