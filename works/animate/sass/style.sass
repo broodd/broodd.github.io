@@ -1,10 +1,114 @@
 @import 'mixins'
 @import 'default'
 
+
+body
+	overflow-x: hidden
+	// position: relative
+
+.prelo
+	.preloader
+		&__progress
+		&__over
+			width: 0
+
+
+%prelo
+	position: absolute
+	bottom: 10%
+	height: 10px
+
+.preloader
+	position: absolute
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	background-color: $w
+	z-index: 999
+
+	&__progress
+		@extend %prelo
+		left: 5%
+		width: 90%
+		background-image: url(../img/main-bg.jpg)
+		background-position: left center
+		background-size: cover
+	&__over
+		@extend %prelo
+		right: 5%
+		width: 90%
+		background-color: $w
+		transition: 1.2s cubic-bezier(.4,.68,.47,.26)
+		// border: 1px solid red
+
+
+		
+
+
+
+.btn
+	text-transform: uppercase
+	background-color: $purple
+	color: $wh
+
+
+.form
+	background-color: $wh
+	// padding: 2.2rem 2rem
+	padding: 35px 30px
+	&--center
+		+translate-center
+
+	input
+		display: block
+		width: 100%
+		margin: 20px 0
+		padding: 10px 20px
+		+placeholder-color($gray)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .bg
 	height: 100vh
 	width: 100vw
 
 	background-image: url(../img/main-bg.jpg)
 	+cover
+
+
+.circle
+	&__left
+		width: 500px
+		height: 500px
+		position: absolute
+		top: 0
+		left: 0
+		background-color: $wh
+		border-radius: 0 0 50% 50%
+
+
+
+	&__right
+		width: 400px
+		height: 400px
+		position: absolute
+		right: 0
+		bottom: 0
+		background-color: tomato
+		border-radius: 50% 45% 50% 0%
+		// transform: rotate(45deg)
 	

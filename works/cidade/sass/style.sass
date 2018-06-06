@@ -43,9 +43,24 @@
 	color: $text-s
 	text-transform: uppercase
 	font-family: $ff-2
-	li:not(:first-child)
+	li
+		position: relative
+		.submenu
+			position: absolute
+			opacity: 0
+			padding-left: 10px
+			padding-top: 10px
+			pointer-events: none
+			+tr(400ms ease-in-out)
+			li
+				margin: 5px 0
+		&:hover
+			> .submenu
+				opacity: 1
+				pointer-events: fill
+	> li:not(:first-child)
 		margin-left: 30px
-	li:not(:last-child)
+	> li:not(:last-child)
 		a
 			position: relative
 			// &:after
