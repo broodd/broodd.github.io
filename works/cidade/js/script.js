@@ -23,15 +23,6 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		slidesToScroll: 3,
 		responsive: [
-		// 	{
-		// 		breakpoint: 1024,
-		// 		settings: {
-		// 			slidesToShow: 2,
-		// 			slidesToScroll: 2,
-		// 			infinite: true,
-		// 			dots: false
-		// 		}
-		// 	},
 			{
 				breakpoint: 768,
 				settings: {
@@ -39,16 +30,6 @@ $(document).ready(function(){
 					slidesToScroll: 1
 				}
 			}
-		// 	{
-		// 		breakpoint: 576,
-		// 		settings: {
-		// 			slidesToShow: 1,
-		// 			slidesToScroll: 1
-		// 		}
-		// 	}
-		// // You can unslick at a given breakpoint now by adding:
-		// // settings: 'unslick"
-		// // instead of a settings object
 		]
 	});
 
@@ -65,13 +46,19 @@ $(document).ready(function(){
 
 
 
-
+	// slide category list
 	$('.category__head').click(function(event) {
 		$('.category__list').slideToggle();
 	});
 
 
+	$('.search').click(function(event) {
+		console.log('awdawd');
+		$('.search__form').slideToggle();
+	});
 
+
+	// show hide tab
 	var tabcontent = $('.tabcontent'),
 			tablinks   = $('.tablinks');
 
@@ -92,8 +79,21 @@ $(document).ready(function(){
 	l.click();
 
 
+	// show tab with hash from window and if hash is change
+	var hash = window.location.hash.substr(1);
+
+	if(hash) {
+		openTab(hash);
+		$('.tablinks[data-open="' +hash+ '"]').addClass('tab-active');
+	}
+	$(window).bind('popstate', function(event){
+		var hash = window.location.hash.substr(1);
+    openTab(hash);
+		$('.tablinks[data-open="' +hash+ '"]').addClass('tab-active');
+	});
 
 
+	// show and hide content in svg map and
 	var maplinks = $('.maplinks');
 
 	maplinks.click(function(event) {
@@ -106,12 +106,9 @@ $(document).ready(function(){
 	$('.mapcontent').hide();
 
 
-	$('.search').click(function(event) {
-		console.log('awdawd');
-		$('.search__form').slideToggle();
-	});
 
 
+	// for change piso(floor)
 	var mapa       = $('.mapa-wrap .mapa'),
 			mapaCount  = mapa.length,
 			mapaFirst  = mapa.first(),

@@ -594,9 +594,10 @@ html body .fz-9 {
     .menu li .submenu {
       position: absolute;
       opacity: 0;
-      padding-left: 10px;
-      padding-top: 10px;
+      background-color: #fff;
+      padding: 10px 10px;
       pointer-events: none;
+      z-index: 10;
       -webkit-transition: 400ms ease-in-out;
       transition: 400ms ease-in-out; }
       .menu li .submenu li {
@@ -619,7 +620,9 @@ html body .fz-9 {
       background-color: #C0C0AB;
       -webkit-transition: 300ms cubic-bezier(0.59, 0.04, 0.44, 1.34);
       transition: 300ms cubic-bezier(0.59, 0.04, 0.44, 1.34); }
-  .menu > li:not(:last-child):hover a:after, .menu > li:not(:last-child).current a:after {
+  .menu > li:not(:last-child):hover > a:after, .menu > li:not(:last-child).current > a:after,
+  .menu > li:not(:last-child) .submenu li:hover > a:after,
+  .menu > li:not(:last-child) .submenu li.current > a:after {
     width: 40px; }
 
 .border {
@@ -855,6 +858,19 @@ html body .post__more {
     background-color: #C0C0AB;
     color: #fff; }
 
+.horarios {
+  text-align: center;
+  letter-spacing: 1px; }
+  .horarios__title {
+    line-height: 1;
+    margin-bottom: 10px; }
+  .horarios__desc {
+    line-height: 1.1; }
+  .horarios__image {
+    margin: 20px 0; }
+    .horarios__image img {
+      width: 90px; }
+
 .category__head {
   position: relative;
   cursor: pointer; }
@@ -1031,8 +1047,7 @@ html body .maplinks {
 
 .map {
   width: 100%;
-  height: 400px;
-  background-color: coral; }
+  height: 400px; }
   .map-wrap {
     margin-right: 20px; }
   .map__content {
