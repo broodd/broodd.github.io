@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script src="jquery-2.1.3.min.js"></script>
+</head>
+<body>
+
+	<div id="some"></div>
+	<input type="text" id="in">
+	
+<style>
+	#rc-connect.rc-unavailable {
+		display: block !important;
+	}
+</style>
+
+
+
+
+ 	
+
+<!-- RedHelper -->
+<script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async" 
+	src="https://web.redhelper.ru/service/main.js?c=loool">
+</script> 
+<!--/Redhelper -->
+
+
+
+<script>
+	setTimeout(function(){
+		jQuery('#some').text('o da');
+		jQuery('#in').val('value');
+		jQuery('.rc-connector-frame.rc-reset').load(function(){
+			jQuery(".rc-connector-frame.rc-reset").contents().find("#rc-phone-input").addClass('davay').text('+3809677805');
+		});
+		// jQuery('.rc-txt.rc-reset').click();
+	}, 10000);
+</script>
+
+
+</body>
+</html>

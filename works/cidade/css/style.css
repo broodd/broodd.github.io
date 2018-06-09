@@ -599,7 +599,8 @@ html body .fz-9 {
       pointer-events: none;
       z-index: 10;
       -webkit-transition: 400ms ease-in-out;
-      transition: 400ms ease-in-out; }
+      transition: 400ms ease-in-out;
+      box-shadow: 3px 3px 6px #ada6a1; }
       .menu li .submenu li {
         margin: 5px 0; }
     .menu li:hover > .submenu {
