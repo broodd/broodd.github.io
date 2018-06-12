@@ -368,11 +368,11 @@ pre code {
   word-break: normal; }
 
 @font-face {
-  font-family: "Agora-Regular";
-  src: url("font/Agora-Regular.ttf") format("truetype"); }
+  font-family: "PFAgora-regular";
+  src: url("font/PFAgora-regular.ttf") format("truetype"); }
 @font-face {
-  font-family: "Agora-Medium";
-  src: url("font/Agora-Medium.ttf") format("truetype"); }
+  font-family: "PFAgora-medium";
+  src: url("font/PFAgora-medium.ttf") format("truetype"); }
 @font-face {
   font-family: "Billabong";
   src: url("font/Billabong.ttf") format("truetype"); }
@@ -387,7 +387,7 @@ html {
 body {
   background-color: #fff;
   color: #C0C0AB;
-  font-family: "Agora-Regular", Arial, sans-serif;
+  font-family: "PFAgora-regular", Arial, sans-serif;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -422,7 +422,7 @@ ul {
   list-style-type: none; }
 
 small {
-  font-family: "Agora-Medium", Arial, sans-serif; }
+  font-family: "PFAgora-medium", Arial, sans-serif; }
 
 .text-center {
   text-align: center; }
@@ -588,7 +588,7 @@ html body .fz-9 {
   display: flex;
   color: #575756;
   text-transform: uppercase;
-  font-family: "Agora-Medium", Arial, sans-serif; }
+  font-family: "PFAgora-medium", Arial, sans-serif; }
   .menu li {
     position: relative; }
     .menu li .submenu {
@@ -637,7 +637,7 @@ html body .fz-9 {
   padding-top: 40px; }
   .slogo__title {
     font-size: 4.5em;
-    font-family: "Agora-Medium", Arial, sans-serif;
+    font-family: "PFAgora-medium", Arial, sans-serif;
     line-height: 0.9; }
   .slogo__under {
     font-size: 2.25em;
@@ -670,7 +670,7 @@ html body .post__title {
   letter-spacing: 3px; }
 html body .post__under {
   font-size: 0.75em;
-  font-family: "Agora-Medium", Arial, sans-serif;
+  font-family: "PFAgora-medium", Arial, sans-serif;
   color: #575756;
   text-transform: uppercase; }
 html body .post__more {
@@ -775,7 +775,7 @@ html body .post__more {
   margin-bottom: 180px; }
 .section__title {
   font-size: 2.25em;
-  font-family: "Agora-Medium", Arial, sans-serif;
+  font-family: "PFAgora-medium", Arial, sans-serif;
   margin-bottom: 0; }
 .section__under {
   font-size: 1.125rem;
