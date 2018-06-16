@@ -434,8 +434,10 @@ img, svg, iframe {
 .nav {
   width: 100%; }
 
-.breadcrumbs .active {
-  color: #28a745; }
+.breadcrumbs {
+  margin-bottom: 20px; }
+  .breadcrumbs .active {
+    color: #28a745; }
 
 .header {
   margin: 20px 0; }
@@ -449,8 +451,15 @@ img, svg, iframe {
   background-color: #ffffff; }
 
 .sidebar {
+  padding: 15px;
   border: 1px solid #e1dbce;
   background-color: #f4f2ec; }
+
+.block {
+  padding-top: 15px; }
+  .block:not(:first-child) {
+    margin-top: 20px;
+    border-top: 1px solid grey; }
 
 .article {
   margin-bottom: 10px; }
@@ -469,7 +478,11 @@ img, svg, iframe {
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.22) 0%, rgba(255, 255, 255, 0.22) 100%);
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.22) 0%, rgba(255, 255, 255, 0.22) 100%); }
   .footer-text {
+    padding: 30px 0 20px;
     background-color: #f4f2ec; }
+    .footer-text p {
+      margin-bottom: 5px;
+      line-height: 1.2; }
 
 .copy {
   margin-top: 20px; }
