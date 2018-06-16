@@ -1,0 +1,224 @@
+@import 'mixins'
+@import 'vars'
+
+// change js to css menu
+// map image
+		// add vertical arrow
+		// product page adapt
+		// scroll
+		// home arrow
+		// home adapt
+		// search page norm
+		// menu adapt
+		// search norm
+		// custom url norm
+		// footer image
+
+
+// col    <   576px
+// col-sm >=  576px
+// col-md >=  768px
+// col-lg >=  922px
+// col-xl >= 1140px
+
++mw(992)
+	.vertical
+		.fw-container
+			position: relative
+			.vertical-line
+				position: absolute
+				left: 50%
+				top: 110px
+				width: 2px
+				height: calc(100% - 110px)
+				background-color: $hr
+				&:before
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 10px
+					height: 10px
+					border: 2px solid $hr
+					transform: translate(-46%,-100%) rotate(45deg)
+				&:after
+					content: ''
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 10px
+					height: 10px
+					border: 2px solid $hr
+					transform: translate(-46%,100%) rotate(45deg)
+
+	.grid-wrap
+		grid-template-columns: repeat(5, 1fr)
+		.item
+			&2
+				grid-row: 2/3
+				grid-column: 1/1
+				.link
+					&:after
+						content: ''
+						position: absolute
+						right: auto
+						left: 0
+						bottom: 0
+						background-image: url(../img/arrow-up.svg)
+						height: 42px
+						width: 107%
+						background-size: 100%
+					.line,
+					&:before
+						display: none
+			&3
+				grid-column: 3/4
+			&4
+				grid-column: 2/3
+				grid-row-start: 1
+			&5
+				grid-column: 5/6
+			&6
+				grid-column: 4/5
+				grid-row-start: 1
++mw(1750)
+	.footer
+		&__image
+			display: block
+			position: absolute
+			left: 0
+			bottom: 0
+			+translateY(20%)
+
+
++w(992)
+	.header
+		&__nav
+			height: 0
+	.nav-mobile
+		.header
+			&__nav
+				height: 100vh
+			&__right
+				color: $b
+		#sandwich
+			background-color: #3D3D3D
+			&:after
+				background-color: #3D3D3D
+			.sw-topper,
+			.sw-bottom,
+			.sw-footer
+				background-color: $w
+
+
+	.grid-wrap
+		margin: 120px 15px
+		.item
+			// @for $i from 1 through 10
+			&-text
+				text-align: center
+				padding: 30px 20px 10px
+			&1
+				grid-column: 2/3
+				grid-row: 1/2
+			&2
+				grid-column: 1/2
+				grid-row: 1/2
+			&3
+				grid-column: 2/3
+				grid-row: 3/4
+			&4
+				grid-column: 1/2
+				grid-row: 3/4
+			&5
+				grid-column: 2/3
+				grid-row: 5/6
+			&6
+				grid-column: 1/2
+				grid-row: 5/6
+			&7
+				grid-column: 1/2
+				grid-row: 2/3
+			&8
+				grid-column: 2/3
+				grid-row: 2/3
+			&9
+				grid-column: 1/2
+				grid-row: 4/5
+			&10
+				grid-column: 2/3
+				grid-row: 4/5
+			&__desc
+				display: none
+	.stuff
+		grid-template-columns: repeat(3, 1fr)
+		.item
+			img
+				max-height: 90px
+
+	.header
+		z-index: 10
+		.widget_polylang
+			display: none
+		.fw-row
+			margin: 0
+
+		&__nav
+			width: 100%
+			left: 0
+			// display: none
+			.menu
+				li
+					margin-bottom: 20px
+			.nav__up
+				height: 60px
+			
+	.product
+		&__icon
+			width: 100%
+			text-align: right
+			img
+				width: 60%
+
+	.slogo
+		font-size: 12.7px
+		line-height: 1.4
+		&__title
+			font-size: 20px
+			padding-bottom: 25px
+		&__desc
+			font-size: 16px
+			line-height: 1.2
+
+	.head
+		&-0
+			font-size: 1.125rem
+			&.tree
+				padding-left: 28px
+				&:before
+					width: 32px
+					height: 38px
+		&-1
+			font-size: 1.2rem
+			&.tree
+				padding-left: 35px
+				&:before
+					width: 42px
+					height: 48px
+
+	.wpcf7-form
+		.form-wrap
+			padding: 0
+
++w(768)
+	.map
+		position: relative
+		height: 400px
+		width: 140vw
+		left: -20vw
+		
+
+	.shadow
+		&:after
+			width: 120vw
+			right: -20vw

@@ -1,0 +1,42 @@
+@import 'mixins'
+@import 'vars'
+@import 'reset'
+
+
+// +grid-preloader($red)
+// +font('Roboto', 'Roboto-Regular', $type:'ttf', $path:'/font/')
+
+// reset
+html
+	font-family: sans-serif
+	line-height: 1.15
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+	-ms-overflow-style: scrollbar
+	-webkit-tap-highlight-color: transparent
+
+body
+	background-color: $wh
+	background-image: url(../img/bg.jpg)
+	color: $text
+	font-family: $ff-1
+	margin: 0
+	padding: 0
+	font-weight: 400
+	line-height: 1.5
+	color: $text
+	text-align: left
+	font-size: 100%
+
++links(inherit)
+	text-decoration: none
+
++inputs()
+
+img, svg, iframe
+	max-width: 100%
+	height: auto
+	// height: inherit
+
+.text-center
+	text-align: center

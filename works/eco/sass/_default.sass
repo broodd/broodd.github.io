@@ -1,0 +1,170 @@
+@import 'mixins'
+@import 'vars'
+@import 'reset'
+
+
++grid-preloader($green)
++font('Lato', 'Lato-Regular', $type:'ttf', $path:'font/')
++font('Lato-Italic', 'Lato-Italic', $type:'ttf', $path:'font/')
++font('Lato-Bold', 'Lato-Bold', $type:'ttf', $path:'font/')
+
+// reset
+html
+	font-family: sans-serif
+	line-height: 1.15
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+	-ms-overflow-style: scrollbar
+	-webkit-tap-highlight-color: transparent
+	margin-top: 0 !important
+
+body
+	background-color: $wh
+	color: $text
+	font-family: $font
+	margin: 0
+	padding: 0
+	font-weight: 400
+	line-height: 1.5
+	color: $text
+	text-align: left
+	font-size: 16px
+	overflow-x: hidden
+	position: relative
+
++links(inherit)
+	text-decoration: none
+
++inputs()
+
+img, svg, iframe
+	max-width: 100%
+	height: auto
+	// height: inherit
+
+
+.site
+	overflow-x: hidden
+
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+// main
+// .dtc
+// 	display: table-cell
+// .vam
+// 	vertical-align: middle
+
+
+// .float-right
+// 	float: right
+// .float-left
+// 	float: left
+
+.p-relative
+	position: relative
+
+
+// .position-absolute
+// 	position: absolute
+
+// .right-0
+// 	right: 0
+// .left-0
+// 	left: 0
+
+
+.clr
+	*
+		zoom: 1
+	&:after
+		content: " "
+		display: table
+		clear: both
+
+
+// .w100p
+// 	width: 100%
+// .w100p-img
+// 	img
+// 		width: 100%
+// .w50p
+// 	width: 50%
+
+.h100
+	min-height: 100vh
+
+.video-wrapper
+	+iframe
+
+.hidden,
+.screen-reader-text
+	display: none
+
+
+.search-everything-highlight-color
+	color: $w
+	padding: 10px 5px
+	display: inline-block
+
+// Typography
+.head
+	&-0
+		font-size: 1.938rem
+		font-weight: 700
+		font-family: $font-b
+	// large, where tree
+	&-1
+		font-size: 1.8125rem
+		font-weight: 700
+		font-family: $font-b
+		text-transform: uppercase
+	// big, upper, without tree {Річна фінансова звітність}
+	&-2
+		font-size: 1.438rem
+		font-weight: 700
+		font-family: $font-b
+		line-height: 1.688rem
+		text-transform: uppercase
+	// contact head text
+	&-3
+		font-size: 1.188rem
+		// font-weight: 700
+		// font-family: $font-b
+		line-height: 1.5rem
+	// Derector
+	&-4
+		font-size: 1.125rem
+		font-weight: 700
+		font-family: $font-b
+
+
+// Text
+.text
+	&-big
+		margin: 30px 0
+		// font-size: 1.313rem //maket
+		font-size: 1.2505em
+		font-weight: 500
+	&-center
+		text-align: center
+		
+.margin
+	&-row-0
+		margin-right: 0
+		margin-left: 0
+	&b-60,
+	&-b-60
+		margin-bottom: 60px
+	&b-40
+		margin-bottom: 40px
+
+.padding
+	&-col
+		padding-right: 15px
+		padding-left: 15px
+	&-uncol
+		padding-left: 0
+		padding-right: 0

@@ -1,0 +1,596 @@
+// 
+// $class-slug: for !default
+
+// @for $i from 1 through 4
+//   .# {$class-slug}-# {$i}
+//     width: 60px + $i
+// 
+
+
+
+//width
+=w($width)
+	// @media only screen and (max-width: $width+'px')
+	@media only screen and (max-width: $width+'px')
+		@content
+=mw($width)
+	// @media only screen and (min-width: $width+'px')
+	@media only screen and (min-width: $width+'px')
+		@content
+
+// height
+=h($height)
+	@media only screen and (max-height: $height+'px')
+		@content
+=mh($height)
+	@media only screen and (min-height: $height+'px')
+		@content
+
+=poss($position:absolute, $top:0, $left:0, $width:0, $height:0)
+	position: $position
+	top: $top
+	left: $left
+	width: $width
+	height: $height
+
+=clr
+	clear: both
+	&:after,
+	&:before
+		content: " "
+		display: table
+		clear: both
+	// *zoom: 1
+
+=iframe
+	position: relative
+	padding-bottom: 56.25%
+	// padding-top: 25px
+	height: 0
+	iframe
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
+// cut text
+=cut-text
+	overflow: hidden
+	-ms-text-overflow: ellipsis
+	text-overflow: ellipsis
+	white-space: nowrap
+
+// psevdo and default value
+=before($bg: null, $width:0, $height:0, $top:0, $left:0, $position:absolute)
+	position: relative
+	&::before
+		content: ''
+		+poss($position, $top, $left, $width, $height)
+		@if $bg != null
+			background: $bg
+		@content
+=after($bg: null, $width:0, $height:0, $top:0, $left:0, $position:absolute)
+	position: relative
+	&::after
+		content: ''
+		+poss($position, $top, $left, $width, $height)
+		@if $bg != null
+			background: $bg
+		@content
+
+=cover($x: null, $y: null, $cover:cover, $repeat:no-repeat)
+	background-repeat: $repeat
+	-webkit-background-size: $cover
+	-moz-background-size: $cover
+	-o-background-size: $cover
+	background-size: $cover
+	@if $x != null && $y != null
+		background-position: $x $y
+
+=bg-size($w:100%, $h:100%)
+	-moz-background-size: $w $h
+	-webkit-background-size: $w $h
+	background-color: $w $h
+
+=translate-center($pos:absolute, $top:50%, $left:50%, $x:-50%, $y:-50%)
+	position: $pos
+	top: $top
+	left: $left
+	+translate($x, $y)
+
+=translate($x:-50%, $y: -50%)
+	-webkit-transform: translate($x,$y)
+	-ms-transform: translate($x,$y)
+	transform: translate($x,$y)
+
+=translateX($x:-50%)
+	-webkit-transform: translateX($x)
+	-ms-transform: translateX($x)
+	transform: translateX($x)
+
+=translateY($x:-50%)
+	-webkit-transform: translateY($x)
+	-ms-transform: translateY($x)
+	transform: translateY($x)
+
+// =g($c1, $c2)
+// 	+background-image(linear-gradient($c1, $c2))
+// =gh($c1, $c2)
+// 	+background-image(linear-gradient(left,$c1, $c2))
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		// text-align-last: justify
+
+=font($alias, $name, $type:'ttf', $path:'../font')
+	@font-face
+		font-family: $alias
+		@if $type == 'eot'
+			src: url($path + $name + '.' + $type)
+			src: url($path + $name + '.eot?#iefix') format('embedded-opentype')
+		@if $type == 'woff2'
+			src: url($path + $name + '.' + $type) format('woff2')
+		@if $type == 'woff'
+			src: url($path + $name + '.' + $type) format("woff")
+		@if $type == 'ttf'
+			src: url($path + $name + '.' + $type) format("truetype")
+		@if $type == 'otf'
+			src: url($path + $name + '.' + $type) format("opentype")
+
+=font-all($alias, $name, $path:'../fonts')
+	@font-face
+		font-family: $alias
+		src: url($path + $name + ".eot")
+		src: url($path + $name + ".eot?#iefix") format("embedded-opentype"), url($path + $name + ".woff2") format("woff2"), url($path + $name + ".woff") format("woff"), url($path + $name + ".ttf") format("truetype")
+
+=tr($what)
+	-moz-transition: $what
+	-o-transition: $what
+	-webkit-transition: $what
+	-ms-transition: $what
+	transition: $what
+
+=center
+	text-align: center
+
+=v-center
+	display: table
+	.v-center__in
+		display: table-cell
+		vertical-align: middle
+		@content
+
+=placeholder-color($color)
+	&:-moz-placeholder,
+	&::-moz-placeholder
+		color: $color
+		opacity: 1
+	&::-webkit-input-placeholder
+		color: $color
+
+=placeholder
+	&:-ms-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&::-webkit-input-placeholder
+		@content
+	&::placeholder
+		@content
+
+=unselectable
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+=selection
+	& ::selection
+		@content
+	& ::-moz-selection
+		@content
+
+//triangle
+=arr($width, $height, $bg, $direction)
+	width: 0px
+	height: 0px
+	border-style: solid
+	@if $direction == t
+		border-width: 0 $width / 2 + px $height + px $width / 2 + px
+		border-color: transparent transparent $bg transparent
+	@if $direction == r
+		border-width: $height / 2 + px 0 $height / 2 + px $width + px
+		border-color: transparent transparent transparent $bg
+	@if $direction == b
+		border-width: $height + px $width / 2 + px 0 $width / 2 + px
+		border-color: $bg transparent transparent transparent
+	@if $direction == l
+		border-width: $height / 2 + px $width + px $height / 2 + px 0
+		border-color: transparent $bg transparent transparent
+	@if $direction == tl
+		border-width: $height + px $width + px 0 0
+		border-color: $bg transparent transparent transparent
+	@if $direction == tr
+		border-width: 0 $width + px $height + px 0
+		border-color: transparent $bg transparent transparent
+	@if $direction == br
+		border-width: 0 0 $height + px $width + px
+		border-color: transparent transparent $bg transparent
+	@if $direction == bl
+		border-width: $height + px 0 0 $width + px
+		border-color: transparent transparent transparent $bg
+// example
+// +arr(500,50, #000, l)
+// +arr(500,50, #000, bl)
+
+=rotate($var)
+	-ms-transform: rotate($var+deg)
+	-webkit-transform: rotate($var+deg)
+	transform: rotate($var+deg)
+
+=blur($var)
+	-webkit-filter: blur($var)
+	filter: blur($var)
+	
+=scale($var)
+	-ms-transform: scale($var)
+	-webkit-transform: scale($var)
+	transform: scale($var)
+
+// counter list
+=counter($var:li)
+	counter-reset: $var
+	> li, > dt
+		&:before
+			content: counter($var)
+			counter-increment: $var
+
+
+=br($radius) 
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius 
+	-ms-border-radius: $radius
+	border-radius: $radius
+	
+=bs($bshadow)
+	-webkit-box-shadow: $bshadow
+	-moz-box-shadow: $bshadow
+	-ms-box-shadow: $bshadow
+	-o-box-shadow: $bshadow
+	box-shadow: $bshadow
+
+=ts($string) 
+	-webkit-text-shadow: $string
+	-moz-text-shadow: $string
+	-ms-text-shadow: $string
+	-o-text-shadow: $string
+	text-shadow: $string
+
+=links($link, $visit:$link, $hover:$link, $active:$link)
+	a
+		color: $link
+		&:visited
+			color: $visit
+		&:hover
+			color: $hover
+		&:active
+			color: $active
+		@content
+
+=inputs()
+	input
+		outline: none
+		&:hover, &:focus, &:active
+			outline: none
+
+=draw($color:#193c6a)
+	.draw
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			width: 0
+			height: 0
+			border: 2px solid transparent
+		&:before
+			content: ""
+			position: absolute
+			width: 0
+			height: 0
+			border: 2px solid transparent
+			top: 0
+			left: 0
+		&:after
+			bottom: 0
+			right: 0
+		&:hover
+			&:before
+				border-top-color: $color
+				border-right-color: $color
+				transition: width .5s ease-out,height .5s ease-out .5s
+				width: 100%
+				height: 100%
+			&:after
+				border-bottom-color: $color
+				border-left-color: $color
+				transition: border-color 0s ease-out 1s,width .5s ease-out 1s,height .5s ease-out 1.5s
+				width: 100%
+				height: 100%
+
+=opacity($trans)
+	-moz-opacity: $trans
+	-khtml-opacity: $trans
+	opacity: $trans
+	filter: alpha(opactiy=($trans * 100))
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#$trans * 100)"
+
+=my-preloader($color:#0084FF, $bg:#f7f7f7, $content: '\2022')
+	@-webkit-keyframes loading_spinner
+		0%
+			-webkit-transform: scale(1) rotate(0deg)
+		50%
+			-webkit-transform: scale(0.8) rotate(360deg)
+		100%
+			-webkit-transform: scale(1) rotate(720deg)
+	@-moz-keyframes loading_spinner
+		0%
+			-moz-transform: scale(1) rotate(0deg)
+		50%
+			-moz-transform: scale(0.8) rotate(360deg)
+		100%
+			-moz-transform: scale(1) rotate(720deg)
+	@-ms-keyframes loading_spinner
+		0%
+			-ms-transform: scale(1) rotate(0deg)
+		50%
+			-ms-transform: scale(0.8) rotate(360deg)
+		100%
+			-ms-transform: scale(1) rotate(720deg)
+	@-o-keyframes loading_spinner
+		0%
+			-o-transform: scale(1) rotate(0deg)
+		50%
+			-o-transform: scale(0.8) rotate(360deg)
+		100%
+			-o-transform: scale(1) rotate(720deg)
+	@keyframes loading_spinner
+		0%
+			transform: scale(1) rotate(0deg)
+		50%
+			transform: scale(0.8) rotate(360deg)
+		100%
+			transform: scale(1) rotate(720deg)
+	.preloader-background
+		position: fixed
+		width: 100%
+		height: 100%
+		background: $bg
+		z-index: 9999
+		.preloader
+			+poss(fixed, 50%, 50%, 200px, 0)
+			margin-left: -100px
+			overflow: visible
+			-webkit-animation: loading_spinner 2.2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+			-webkit-animation: loading_spinner 2.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite
+			-moz-animation: loading_spinner 2.2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+			-ms-animation: loading_spinner 2.2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+			-o-animation: loading_spinner 2.2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+			animation: loading_spinner 2.2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+			span
+				position: absolute
+				width: 200px
+				height: 0
+				font-weight: 800
+				font-style: italic
+				font-size: 43px
+				-webkit-transform-origin: 50% 50%
+				-moz-transform-origin: 50% 50%
+				-ms-transform-origin: 50% 50%
+				-o-transform-origin: 50% 50%
+				transform-origin: 50% 50%
+				color: $color
+				opacity: 1
+				&:nth-child(1)
+					-webkit-transform: rotate(60deg)
+					-moz-transform: rotate(60deg)
+					-ms-transform: rotate(60deg)
+					-o-transform: rotate(60deg)
+					transform: rotate(60deg)
+					opacity: 0.9
+				&:nth-child(2)
+					-webkit-transform: rotate(120deg)
+					-moz-transform: rotate(120deg)
+					-ms-transform: rotate(120deg)
+					-o-transform: rotate(120deg)
+					transform: rotate(120deg)
+					opacity: 0.8
+				&:nth-child(3)
+					-webkit-transform: rotate(180deg)
+					-moz-transform: rotate(180deg)
+					-ms-transform: rotate(180deg)
+					-o-transform: rotate(180deg)
+					transform: rotate(180deg)
+					opacity: 0.7
+				&:nth-child(4)
+					-webkit-transform: rotate(240deg)
+					-moz-transform: rotate(240deg)
+					-ms-transform: rotate(240deg)
+					-o-transform: rotate(240deg)
+					transform: rotate(240deg)
+					opacity: 0.6
+				&:nth-child(5)
+					-webkit-transform: rotate(300deg)
+					-moz-transform: rotate(300deg)
+					-ms-transform: rotate(300deg)
+					-o-transform: rotate(300deg)
+					transform: rotate(300deg)
+					opacity: 0.5
+				&:after
+					content: $content
+
+=cube-preloader($color:#0084FF, $bg:#f7f7f7)
+	@-webkit-keyframes cubemove 
+		25%	
+			-webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) 
+		50%		
+			-webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) 
+		75%		
+			-webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) 
+		100%	
+			-webkit-transform: rotate(-360deg) 
+
+	@keyframes cubemove 
+		25%	
+			transform: translateX(42px) rotate(-90deg) scale(0.5)
+			-webkit-transform: translateX(42px) rotate(-90deg) scale(0.5)
+		50%	
+			transform: translateX(42px) translateY(42px) rotate(-179deg)
+			-webkit-transform: translateX(42px) translateY(42px) rotate(-179deg)
+		50.1%	
+			transform: translateX(42px) translateY(42px) rotate(-180deg)
+			-webkit-transform: translateX(42px) translateY(42px) rotate(-180deg)
+		75%	
+			transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5)
+			-webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5)
+		100%	
+			transform: rotate(-360deg)
+			-webkit-transform: rotate(-360deg)
+	.preloader-background
+		+poss(fixed, 0, 0, 100%, 100%)
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 999
+		background: $bg
+		.spinner
+			+poss(absolute, 50%, 50%, 32px, 32px)
+			margin: -30px 0 0 -30px
+			.cube1, .cube2
+				background-color: $color
+				+poss(absolute, 0, 0, 10px, 10px)
+				width: 10px
+				height: 10px
+				position: absolute
+				top: 0
+				left: 0
+				-webkit-animation: cubemove 1.8s infinite ease-in-out
+				animation: cubemove 1.8s infinite ease-in-out
+			.cube2
+				-webkit-animation-delay: -0.9s
+				animation-delay: -0.9s
+
+
+=sandwich($bg, $w:60px, $h: 70px, $bga: $bg, $all: $bg)
+	#sandwich
+		width: $w
+		height: $h
+		// float: right
+		// margin-right: 5px
+		cursor: pointer
+		// padding: 26.5px 10px
+		// display: none
+		position: relative
+		@if $bg == $all
+			div
+				background-color: $all
+		.sw-topper 
+			position: absolute
+			top: 10px
+			width: 100%
+			height: 3px
+			transition: transform 0.5s, top 0.2s
+			@if $bg != $all
+				background-color: $all
+		.sw-bottom 
+			position: absolute
+			top: 50%
+			+translateY(-75%)
+			width: 100%
+			height: 3px
+			transition: transform 0.5s, top 0.2s
+			transition-delay: 0.2s, 0s
+			@if $bg != $all
+				background-color: $all
+		.sw-footer 
+			position: absolute
+			bottom: 10px
+			width: 100%
+			height: 3px
+			transition: all 0.5s ease
+			transition-delay: 0.1s
+			@if $bg != $all
+				background-color: $all
+		@content
+
+=grid-preloader($color:#0084FF, $bg:#f7f7f7, $use:false)
+	@if use == true
+		.wrap-preloader
+			position: absolute
+			width: 100%
+			height: 100%
+			background: $bg
+			z-index: 999
+	.sk-cube-grid 
+		width: 40px
+		height: 40px
+		+translate-center
+	.sk-cube-grid .sk-cube 
+		width: 33%
+		height: 33%
+		background-color: $color
+		float: left
+		-webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out
+		animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out
+	
+	.sk-cube-grid .sk-cube1 
+		-webkit-animation-delay: 0.2s
+		animation-delay: 0.2s 
+	.sk-cube-grid .sk-cube2 
+		-webkit-animation-delay: 0.3s
+		animation-delay: 0.3s 
+	.sk-cube-grid .sk-cube3 
+		-webkit-animation-delay: 0.4s
+		animation-delay: 0.4s 
+	.sk-cube-grid .sk-cube4 
+		-webkit-animation-delay: 0.1s
+		animation-delay: 0.1s 
+	.sk-cube-grid .sk-cube5 
+		-webkit-animation-delay: 0.2s
+		animation-delay: 0.2s 
+	.sk-cube-grid .sk-cube6 
+		-webkit-animation-delay: 0.3s
+		animation-delay: 0.3s 
+	.sk-cube-grid .sk-cube7 
+		-webkit-animation-delay: 0s
+		animation-delay: 0s 
+	.sk-cube-grid .sk-cube8 
+		-webkit-animation-delay: 0.1s
+		animation-delay: 0.1s 
+	.sk-cube-grid .sk-cube9 
+		-webkit-animation-delay: 0.2s
+		animation-delay: 0.2s 
+
+	
+	@-webkit-keyframes sk-cubeGridScaleDelay 
+		0%, 70%, 100% 
+			-webkit-transform: scale3D(1, 1, 1)
+			transform: scale3D(1, 1, 1)
+		35% 
+			-webkit-transform: scale3D(0, 0, 1)
+			transform: scale3D(0, 0, 1)
+
+	@keyframes sk-cubeGridScaleDelay 
+		0%, 70%, 100% 
+			-webkit-transform: scale3D(1, 1, 1)
+			transform: scale3D(1, 1, 1)
+		35% 
+			-webkit-transform: scale3D(0, 0, 1)
+			transform: scale3D(0, 0, 1)
+		
+	

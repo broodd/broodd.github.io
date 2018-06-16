@@ -1,0 +1,83 @@
+@import 'mixins'
+@import 'default'
+
+.menu
+	list-style-type: none
+	padding-left: 0
+	margin-bottom: 0
+	// display: flex
+	li:not(:first-child)
+		margin-left: 15px
+
+	&-small
+		color: $green
+
+	&-big
+		text-transform: uppercase
+		width: 100%
+		color: $wh
+		padding: 15px
+		box-shadow: inset 2px 2px 0 #81de41
+		border: 1px solid #0c932f
+		background-color: #43ac2d
+		background-image: linear-gradient(to top, #0f941a 0%, #66c13e 100%)
+		li
+			margin-left: 10px
+		
+
+
+.nav
+	width: 100%
+
+
+
+.breadcrumbs
+	.active
+		color: $green
+
+
+
+.header
+	margin: 20px 0
+	&-top
+		margin-bottom: 20px
+
+
+
+.content
+	padding: 15px
+	box-shadow: inset 0 0 0 2px #ffffff
+	border: 1px solid #e1dbce
+	background-color: #ffffff
+
+.sidebar
+	border: 1px solid #e1dbce
+	background-color: #f4f2ec
+
+
+.article
+	margin-bottom: 10px
+	&__img
+		img
+			width: 100%
+
+
+
+.footer
+	margin-top: 20px
+	&__title
+		color: $wh
+		padding: 15px
+		border-top-left-radius: 8px
+		border-top-right-radius: 8px
+		border: 2px solid #635543
+		background-color: #878176
+		background-image: linear-gradient(to top, rgba(0, 0, 0, 0.22) 0%, rgba(255, 255, 255, 0.22) 100%)
+
+	&-text
+		background-color: #f4f2ec
+
+
+
+.copy
+	margin-top: 20px

@@ -1,0 +1,186 @@
+@media only screen and (min-width: 992px) {
+  .vertical .fw-container {
+    position: relative; }
+    .vertical .fw-container .vertical-line {
+      position: absolute;
+      left: 50%;
+      top: 110px;
+      width: 2px;
+      height: calc(100% - 110px);
+      background-color: #a4a5a4; }
+      .vertical .fw-container .vertical-line:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border: 2px solid #a4a5a4;
+        -webkit-transform: translate(-46%, -100%) rotate(45deg);
+            -ms-transform: translate(-46%, -100%) rotate(45deg);
+                transform: translate(-46%, -100%) rotate(45deg); }
+      .vertical .fw-container .vertical-line:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border: 2px solid #a4a5a4;
+        -webkit-transform: translate(-46%, 100%) rotate(45deg);
+            -ms-transform: translate(-46%, 100%) rotate(45deg);
+                transform: translate(-46%, 100%) rotate(45deg); }
+
+  .grid-wrap {
+    grid-template-columns: repeat(5, 1fr); }
+    .grid-wrap .item2 {
+      grid-row: 2/3;
+      grid-column: 1/1; }
+      .grid-wrap .item2 .link:after {
+        content: "";
+        position: absolute;
+        right: auto;
+        left: 0;
+        bottom: 0;
+        background-image: url(../img/arrow-up.svg);
+        height: 42px;
+        width: 107%;
+        background-size: 100%; }
+      .grid-wrap .item2 .link .line, .grid-wrap .item2 .link:before {
+        display: none; }
+    .grid-wrap .item3 {
+      grid-column: 3/4; }
+    .grid-wrap .item4 {
+      grid-column: 2/3;
+      grid-row-start: 1; }
+    .grid-wrap .item5 {
+      grid-column: 5/6; }
+    .grid-wrap .item6 {
+      grid-column: 4/5;
+      grid-row-start: 1; } }
+@media only screen and (min-width: 1750px) {
+  .footer__image {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%); } }
+@media only screen and (max-width: 992px) {
+  .header__nav {
+    height: 0; }
+
+  .nav-mobile .header__nav {
+    height: 100vh; }
+  .nav-mobile .header__right {
+    color: #000; }
+  .nav-mobile #sandwich {
+    background-color: #3D3D3D; }
+    .nav-mobile #sandwich:after {
+      background-color: #3D3D3D; }
+    .nav-mobile #sandwich .sw-topper,
+    .nav-mobile #sandwich .sw-bottom,
+    .nav-mobile #sandwich .sw-footer {
+      background-color: #fff; }
+
+  .grid-wrap {
+    margin: 120px 15px; }
+    .grid-wrap .item-text {
+      text-align: center;
+      padding: 30px 20px 10px; }
+    .grid-wrap .item1 {
+      grid-column: 2/3;
+      grid-row: 1/2; }
+    .grid-wrap .item2 {
+      grid-column: 1/2;
+      grid-row: 1/2; }
+    .grid-wrap .item3 {
+      grid-column: 2/3;
+      grid-row: 3/4; }
+    .grid-wrap .item4 {
+      grid-column: 1/2;
+      grid-row: 3/4; }
+    .grid-wrap .item5 {
+      grid-column: 2/3;
+      grid-row: 5/6; }
+    .grid-wrap .item6 {
+      grid-column: 1/2;
+      grid-row: 5/6; }
+    .grid-wrap .item7 {
+      grid-column: 1/2;
+      grid-row: 2/3; }
+    .grid-wrap .item8 {
+      grid-column: 2/3;
+      grid-row: 2/3; }
+    .grid-wrap .item9 {
+      grid-column: 1/2;
+      grid-row: 4/5; }
+    .grid-wrap .item10 {
+      grid-column: 2/3;
+      grid-row: 4/5; }
+    .grid-wrap .item__desc {
+      display: none; }
+
+  .stuff {
+    grid-template-columns: repeat(3, 1fr); }
+    .stuff .item img {
+      max-height: 90px; }
+
+  .header {
+    z-index: 10; }
+    .header .widget_polylang {
+      display: none; }
+    .header .fw-row {
+      margin: 0; }
+    .header__nav {
+      width: 100%;
+      left: 0; }
+      .header__nav .menu li {
+        margin-bottom: 20px; }
+      .header__nav .nav__up {
+        height: 60px; }
+
+  .product__icon {
+    width: 100%;
+    text-align: right; }
+    .product__icon img {
+      width: 60%; }
+
+  .slogo {
+    font-size: 12.7px;
+    line-height: 1.4; }
+    .slogo__title {
+      font-size: 20px;
+      padding-bottom: 25px; }
+    .slogo__desc {
+      font-size: 16px;
+      line-height: 1.2; }
+
+  .head-0 {
+    font-size: 1.125rem; }
+    .head-0.tree {
+      padding-left: 28px; }
+      .head-0.tree:before {
+        width: 32px;
+        height: 38px; }
+  .head-1 {
+    font-size: 1.2rem; }
+    .head-1.tree {
+      padding-left: 35px; }
+      .head-1.tree:before {
+        width: 42px;
+        height: 48px; }
+
+  .wpcf7-form .form-wrap {
+    padding: 0; } }
+@media only screen and (max-width: 768px) {
+  .map {
+    position: relative;
+    height: 400px;
+    width: 140vw;
+    left: -20vw; }
+
+  .shadow:after {
+    width: 120vw;
+    right: -20vw; } }

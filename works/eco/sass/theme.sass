@@ -1,0 +1,636 @@
+@import 'mixins'
+@import 'default'
+
+// for BODY class
+.nav-active
+	.header
+		&__nav
+			left: 0
+.window,
+.nav-mobile
+	overflow: hidden
+	height: 100vh
+	width: 100%
+	.over-window
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0,0,0, .3)
+		z-index: 5
+.category-products
+	.main_photo
+		background-image: url(../img/products-main.jpg)
+		
+
+.social
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	li
+		margin: 0 1rem
+		font-size: 2rem
+
+.header__search
+	.search-form
+		position: absolute
+		top: 50vh
+		left: 50%
+		background-color: $w
+		+translate
+		padding: 5rem 1.5rem 1.5rem
+		z-index: 10
+		.fa-close
+			position: absolute
+			right: 0
+			top: 0
+			padding: 15px
+			background-color: $tan
+			color: $w
+			+tr(400ms ease-in)
+			cursor: pointer
+			&:hover
+				background-color: tomato
+
+
+.widget_polylang
+	display: inline-block
+	margin-left: 20px
+select
+	// color: $w
+	color: inherit
+	padding-right: 10px
+	-moz-appearance: none
+	-webkit-appearance: none
+	outline: none !important
+	border: none !important
+	background-image: url(../img/arrow.svg)
+	background-color: transparent
+	background-repeat: no-repeat
+	background-position: right center
+	cursor: pointer
+
+.main_photo
+	+cover
+	background-position: center
+	position: relative
+	background-image: url(../img/contact-main.jpg)
+		
+.slogo
+	color: $w
+	// position: absolute
+	// height: 100vh
+	// top: 0
+	// left: 0
+	// width: 100%
+	// color: $w
+	// z-index: 1
+	// &-wrap
+	// 	+translate-center
+
+	&__text
+		font-size: 1.375em
+		font-style: italic
+		// line-height: 1.875rem
+	&__author
+		float: right
+		font-size: 1.5em
+
+	&__title
+		font-size: 2.375rem
+		font-weight: 400
+		line-height: 2rem
+		text-transform: uppercase
+		position: relative
+		padding-bottom: 40px
+		&:after
+			content: ''
+			position: absolute
+			width: 140px
+			height: 2px
+			background: #fff
+			bottom: 18px
+			left: 50%
+			+translate
+	&__desc
+		font-size: 1.5rem
+		font-weight: 500
+		line-height: 1.875rem
+
+.kama_breadcrumbs
+	font-size: 0.875rem
+	padding-top: 30px
+	padding-bottom: 40px
+	span:first-child
+		color: $tan
+
+.tree
+	position: relative
+	padding-left: 40px
+	// padding-top: 20px
+	padding-top: 50px
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		// top: 10px
+		bottom: 0
+		width: 52px
+		height: 58px
+		background-image: url(../img/tree.png)
+		background-size: contain
+
+.d-grid
+	display: grid
+	width: 100%
+
+.stuff
+	padding: 20px 0
+	align-items: center
+	grid-template-columns: repeat(5, 1fr)
+	&-wrap
+		// background-color: rgba(43,43,43, 0.5)
+		background-color: rgba(125,121,115, 0.5)
+	
+
+.grid-wrap
+	margin: 120px 0
+	border: 1px solid $w
+	grid-template-columns: 1fr 1fr
+	grid-auto-rows: 1fr
+	.item
+		background-color: rgba(43,43,43,0.55)
+		border: 1px solid $w
+		&-text
+			padding: 30px 20px
+			.link
+				display: inline-block
+				text-transform: uppercase
+				padding-bottom: 26px
+				// border-bottom: 1px solid $w
+				position: relative
+				.line
+					position: absolute
+					width: calc(100% - 20px)
+					height: 1px
+					left: 10px
+					bottom: 10px
+					background-color: $w
+				&:before
+					content: ''
+					position: absolute
+					width: 10px
+					height: 10px
+					border: 1px solid $w
+					bottom: 10px
+					left: 0
+					transform: translateY(46%) rotate(45deg)
+				&:after
+					content: ""
+					position: absolute
+					width: 10px
+					height: 15px
+					right: 0
+					bottom: 2px
+					background-image: url(../img/some-arrow.png)
+					background-repeat: no-repeat
+					background-position: right 39%
+		&8, &10
+			.link
+				&:before
+					right: 0
+					left: auto
+				&:after
+					left: 0
+					background-image: url(../img/some-arrow-l.png)
+
+		&-img
+			.image
+				width: 100%
+				height: 100%
+				+cover
+				background-position: center
+		&__desc
+			font-size: 0.938rem
+			line-height: 1.125rem
+
+
+	
+
+		// &2
+		// &4
+		// &6
+		// &8
+		// &10
+
+.wpcf7-form
+	padding: 20px 0 50px 0
+	.head-1
+		text-transform: none
+	.form-wrap
+		padding-left: 25px
+		padding-right: 50px
+	.ajax-loader
+		position: absolute
+input
+	padding: 13px 20px
+	font-size: 14px
+	border: 1px solid $text
+	width: 100%
+	margin-bottom: 20px
+	+placeholder-color($b)
+input[type="submit"]
+	font-size: 16px
+	text-transform: uppercase
+	border: 2px solid $tan
+	background-color: transparent
+	cursor: pointer
+	margin-bottom: 0
+	+tr(300ms ease-in-out)
+.submit
+	position: relative
+	padding-right: 50px
+	&:after
+		content: ''
+		position: absolute
+		width: 50px
+		height: 100%
+		top: 0
+		right: 0
+		background-color: $tan
+		background-image: url(../img/submit-arrow.svg)
+		background-repeat: no-repeat
+		background-position: center
+	&:before
+		content: ''
+		position: absolute
+		width: 0
+		height: 100%
+		background: $tan
+		z-index: -1
+		+tr(300ms ease-in-out)
+	&:hover,
+	&:focus,
+		input
+			color: $w
+		&:before
+			width: 100%
+
+.telephone-wrap
+	display: flex
+	justify-content: space-between
+	strong,a
+		margin-right: 60px
+		font-size: 1.313rem
+		font-weight: 500
+		font-family: $font
+	.fa
+		margin-right: 10px
+		margin-top: 7px
+		position: relative
+		top: 2px
+	p
+		margin-bottom: 0
+
+.finans
+	&__icon
+		margin-right: 15px
+	&__exp
+		font-size: 0.875rem
+		// font-weight: 700
+	&__title
+		font-size: 1.125rem
+	&__select
+		color: $w
+		background-color: $tan
+		min-width: 170px
+		background-position: 93% center
+		padding-left: 15px
+
+	&-wrap
+		margin-bottom: 30px
+		padding-left: 15px
+		padding-right: 15px
+
+.category-list
+	li
+		font-size: 0.875rem
+		text-transform: uppercase
+		font-family: $font-b
+		font-weight: 600
+		.link
+			display: flex
+			align-items: center
+			padding: 12px 0
+			padding-left: 12%
+			+tr(400ms ease-in-out)
+			cursor: pointer
+			border: 2px solid #717171
+			&:hover,
+			&:active,
+			&.active
+				background-color: $tan
+				border-color: $tan
+				color: $w
+				svg
+					path
+						fill: $w !important
+		svg
+			// height: 22px
+			width: 22px
+			margin-right: 10px
+			path
+				+tr(400ms ease-in-out)
+		&:not(:last-child)
+			margin-bottom: 18px
+.product
+	&__icon
+		width: 30%
+	.tree
+		padding-top: 30px
+	&-wrap
+		margin-bottom: 60px
+
+hr
+	position: relative
+	clear: both
+	width: 100%
+	// color: $hr
+	&:before, &:after
+		content: ''
+		position: absolute
+		width: 10px
+		height: 10px
+		border: 1px solid $hr
+		bottom: 50%
+	&:before
+		left: 0
+		transform: translate(-118%, 46%) rotate(45deg)
+	&:after
+		right: 0
+		transform: translate(118%, 46%) rotate(45deg)
+
+.map
+	position: absolute
+	left: 0
+	top: 0
+	height: 100%
+	width: 100vw
+	background-color: $grey
+
+
+[class*="menu-main"]
+	width: 100%
+.header
+	position: relative
+	color: $w
+	z-index: 3
+	padding-top: 20px
+	&__right
+		cursor: pointer
+	&__logo
+		max-width: 50%
+	&__nav
+		position: fixed
+		background-color: $w
+		background-image: url(../img/border.png)		
+		background-size: 100%
+		background-repeat: repeat-y
+		width: 300px
+		left: -300px
+		height: 100vh
+		// height: 0
+		overflow: hidden
+		top: 0
+		+tr(400ms cubic-bezier(.65,.05,.36,1))
+		z-index: 6
+		// &.active
+		// 	width: 400px
+		.menu
+			width: 100%
+			font-weight: 700
+			line-height: 1.25rem
+			text-transform: uppercase
+			text-align: center
+			padding: 0 20%
+			li
+				position: relative
+				margin-bottom: 40px
+				border-bottom: 2px solid $header-hr
+				padding-bottom: 10px
+				&:last-child
+					margin-bottom: 0
+				&:before, &:after
+					content: ''
+					position: absolute
+					width: 10px
+					height: 10px
+					border: 1px solid $header-hr
+					bottom: 0
+				&:before
+					left: 0
+					transform: translate(-110%, 60%) rotate(45deg)
+				&:after
+					right: 0
+					transform: translate(110%, 60%) rotate(45deg)
+
+.footer
+	padding: 30px
+	&__nav
+		.menu
+			display: flex
+			li
+				margin: 0 10px
+
+	&-contact
+		position: relative
+		background-color: $footer-c
+		// .wpcf7-form
+		// 	padding: 50px 0
+
+
+.shadow
+	position: relative
+	z-index: 2
+	&:after
+		content: ''
+		position: absolute
+		right: 0
+		top: 0
+		width: 100vw
+		height: 100%
+		z-index: -1
+		box-shadow: 0 0.25rem 0.313rem 0.063rem rgba(0, 0, 0, 0.11)
+
+
+%san
+	position: absolute
+	// bottom: 10px
+	left: 10%
+	height: 3px
+	background-color: $text
+
+#sandwich
+	width: 40px
+	height: 40px
+	cursor: pointer
+	position: relative
+	background-color: $w
+	&:after
+		content: ''
+		position: absolute
+		width: 100%
+		height: 3px
+		background-color: $w
+		bottom: -5px
+	.sw-topper 
+		@extend %san
+		width: 80%
+		top: 10px
+	.sw-bottom 
+		@extend %san
+		width: 50%
+		top: 50%
+		+translateY(-75%)
+	.sw-footer 
+		@extend %san
+		width: 80%
+		bottom: 10px
+
+
+.fw-iconbox
+	display: flex
+	align-items: center
+	margin: 40px 0
+	&-image
+		margin-right: 20px
+	p
+		margin-bottom: 0
+		line-height: 1.25rem
+	strong
+		display: block
+		text-transform: uppercase
+		margin-bottom: .5rem
+		
+
+.scroll__btn
+	display: block
+	// position: absolute
+	left: 0
+	right: 0
+	text-align: center
+	// p 
+	//   margin-left: -55px
+	> * 
+		display: inline-block
+		line-height: 18px
+		font-size: 13px
+		font-weight: normal
+		color: #7f8c8d
+		color: #ffffff
+		font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif
+		letter-spacing: 2px
+	> *:hover,
+	> *:focus,
+	> *.active 
+		color: #ffffff
+	> *:hover,
+	> *:focus,
+	> *:active,
+	> *.active 
+		opacity: 0.8
+		filter: alpha(opacity=80)
+	.mouse 
+		position: relative
+		display: block
+		width: 35px
+		height: 55px
+		margin: 0 auto 20px
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		border: 3px solid white
+		border-radius: 23px
+		> *
+			position: absolute
+			display: block
+			top: 29%
+			left: 50%
+			width: 8px
+			height: 8px
+			margin: -4px 0 0 -4px
+			background: white
+			border-radius: 50%
+			-webkit-animation: ani-mouse 1.8s linear infinite
+			-moz-animation: ani-mouse 1.8s linear infinite
+			animation: ani-mouse 1.8s linear infinite
+
+
+@-webkit-keyframes ani-mouse 
+	0% 
+		opacity: 1
+		top: 29%
+	
+	15% 
+		opacity: 1
+		top: 50%
+	
+	50% 
+		opacity: 0
+		top: 50%
+	
+	100% 
+		opacity: 0
+		top: 29%
+	
+
+@-moz-keyframes ani-mouse 
+	0% 
+		opacity: 1
+		top: 29%
+	
+	15% 
+		opacity: 1
+		top: 50%
+	
+	50% 
+		opacity: 0
+		top: 50%
+	
+	100% 
+		opacity: 0
+		top: 29%
+	
+
+@keyframes ani-mouse 
+	0% 
+		opacity: 1
+		top: 29%
+	
+	15% 
+		opacity: 1
+		top: 50%
+	
+	50% 
+		opacity: 0
+		top: 50%
+	
+	100% 
+		opacity: 0
+		top: 29%
+
+.image-border
+	position: relative
+	display: inline-block
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%	
+		background-image: url(../img/border-white.png)
+		background-size: cover
+
+	
