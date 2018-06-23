@@ -1,0 +1,122 @@
+@import 'mixins'
+@import 'vars'
+@import 'reset'
+
+
++font('Roboto', 'Roboto-Regular', $type:'ttf', $path:'./font/')
++font('CenturyGothic', 'CenturyGothic', $type:'ttf', $path:'./font/')
++font('CenturyGothic-Bold', 'CenturyGothic-Bold', $type:'ttf', $path:'./font/')
+
+// reset
+html
+	font-family: sans-serif
+	line-height: 1.15
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+	-ms-overflow-style: scrollbar
+	-webkit-tap-highlight-color: transparent
+
+body
+	background-color: $wh
+	color: $text
+	font-family: $ff-ro
+	margin: 0
+	padding: 0
+	font-weight: 400
+	line-height: 1.2
+	color: $text
+	text-align: left
+	font-size: 100%
+	box-sizing: border-box
+
++links(inherit)
+	text-decoration: none
+
++inputs()
+
+img, svg, iframe
+	max-width: 100%
+	height: auto
+	// height: inherit
+
+.ul
+	list-style-type: none
+	padding-left: 0
+	margin-bottom: 0
+
+.under
+	text-decoration: underline
+
+.text
+	&-center
+		text-align: center
+
+
+.letter
+	letter-spacing: 0.05em
+
+
+.font
+	font-size: 16px
+	color: $black
+	&-12
+		font-size: 12px
+	&-18
+		font-size: 18px
+		// font-family: $ff-1
+		font-family: $ff-bold
+		// line-height: 29px
+	&-22
+		font-size: 22px
+		font-family: $ff-1
+
+	&-roboto
+		font-family: $ff-ro
+	&-gothic
+		font-family: $ff-1
+
+.bold
+	// font-weight: bold
+	font-family: $ff-bold
+
+
+.margin
+	&-0
+		margin: 0
+		&_5
+			margin: 0 5px
+		&_15
+			margin: 0 15px
+	&-30_a
+		margin-top: 30px
+		margin-bottom: 30px
+	&-a_90
+		margin-top: 90px
+		margin-bottom: 90px
+	&-r
+		&_5
+			margin-right: 5px
+
+	&-b
+		&_30
+			margin-bottom: 30px
+
+
+
+.bg
+	&-dark
+		background-color: $dark
+		color: $white
+
+.color
+	&-blue
+		color: $blue
+	&-black
+		color: $black
+
+
+
+.section
+	&-text
+		p
+			line-height: 24px

@@ -1,0 +1,32 @@
+@import 'mixins'
+@import 'vars'
+
++mw(768) 
+	.fw-container 
+		width: 750px
+
++mw(992) 
+	#sandwich
+		display: none
+
+	.fw-container 
+		width: 970px
+
++mw(1200) 
+	.fw-container 
+		width: 1170px
+
+	.mega-container
+		.sh-column-wrapper
+			width: 555px
+		&.mega-left
+			.sh-column-wrapper
+				float: right
+		&.mega-right
+			.sh-column-wrapper
+				float: left
+
++mw(1550)
+	.fw-container-midd
+		width: 1520px
+

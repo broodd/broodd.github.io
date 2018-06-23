@@ -1,0 +1,79 @@
+@import 'mixins'
+@import 'default'
+
+.dark-bg
+	background-color: #f3f3f3
+
+
+.head
+	&-35
+		font-size: 35px
+		margin-bottom: 40px
+	&-20
+		font-size: 20px
+
+
+.upper
+	text-transform: uppercase
+.thin
+	font-weight: 300
+
+
+.arrow
+	// padding: 15px
+	width: 40px
+	height: 40px
+	display: inline-flex
+	margin: 0 10px
+	align-items: center
+	justify-content: center
+	background-color: $green
+	color: $wh
+	border-radius: 50%
+
+
+.h100
+	height: 100vh
+
+ul
+	list-style-type: none
+	padding-left: 0
+	margin-bottom: 0
+
+
+
+.menu
+	li
+		+tr(400ms ease)
+		border: 1px solid transparent
+		margin-left: 10px
+		&:hover
+			border: 1px solid $wh
+			border-radius: 15px
+
+
+.header
+	color: $wh
+	background-image: url(../img/main.png)
+	.h100
+		padding: 40px 0
+
+
+
+.section
+	padding: 50px 0
+
+
+.contact
+	text-align: center
+	.image
+		position: relative
+		img
+			width: 100%
+		.fa
+			+translate-center
+			color: $wh
+			font-size: 30px
+	.text
+		background-color: $wh
+		padding: 20px

@@ -121,7 +121,7 @@ $(document).ready(function(){
 
 	function mapIndex() {
 		var index = $('.map-active').index();
-		pisoNumber.text(index + 1);
+		pisoNumber.text(index - 1);
 	}
 
 	pisoNext.click(function(event) {
