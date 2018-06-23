@@ -31,6 +31,7 @@ body
 
 +links(inherit)
 	text-decoration: none
+	cursor: pointer
 
 +inputs()
 
@@ -54,6 +55,8 @@ img, svg, iframe
 
 .letter
 	letter-spacing: 0.05em
+	// &-25
+	// 	letter-spacing: 0.25em
 
 
 .font
@@ -81,6 +84,9 @@ img, svg, iframe
 
 
 .margin
+	&-row
+		margin-left: -15px
+		margin-right: -15px
 	&-0
 		margin: 0
 		&_5
@@ -90,9 +96,6 @@ img, svg, iframe
 	&-30_a
 		margin-top: 30px
 		margin-bottom: 30px
-	&-a_90
-		margin-top: 90px
-		margin-bottom: 90px
 	&-r
 		&_5
 			margin-right: 5px
@@ -102,11 +105,22 @@ img, svg, iframe
 			margin-bottom: 30px
 
 
+.padding
+	&-a
+		&_80
+			padding-top: 80px
+			padding-bottom: 80px
+		&_90
+			padding-top: 90px
+			padding-bottom: 90px
+
 
 .bg
 	&-dark
 		background-color: $dark
 		color: $white
+	&-grey
+		background-color: $bg-grey
 
 .color
 	&-blue

@@ -77,10 +77,10 @@
 			left: 0
 		&-purple
 			&:after
-				background: linear-gradient(315.3deg, rgba(48, 74, 211, 0.85) 25.93%, rgba(158, 0, 255, 0.85) 89.41%)
+				background: $lg-purple
 		&-lime
 			&:after
-				background: linear-gradient(305.74deg, rgba(39, 42, 253, 0.85) 0.98%, rgba(0, 244, 179, 0.85) 88.13%)
+				background: $lg-lime
 					
 
 .catblock
@@ -91,6 +91,128 @@
 	// 	padding-bottom: 0
 	img
 		+translateX(-10%)
+
+
+.category_block
+	background: $white-d
+	position: relative
+	height: 100%
+	&.purple
+		background: $lg-purple-category
+	&.lime
+		background: $lg-lime-category
+	&.yellow
+		background: $lg-yellow-category
+	&.orange
+		background: $lg-orange-category
+
+	&, &.color-white
+		.font-22
+			color: $white
+			letter-spacing: 0.25em
+	&.color-grey
+		.font-22
+			color: #DFDFDF
+			// color: rgba(255, 255, 255, 0.5)
+	&.rotate
+		.category_block__text
+			+rotate(-90)
+
+	&:hover
+		box-shadow: $shadow-category
+		img
+			+translateX(3%)
+
+	&__text
+		position: absolute
+		top: 50%
+		left: 40px
+	&, & img
+		+tr(400ms)
+
+
+.product
+	&__image
+		background-color: $white
+		margin-bottom: 20px
+		display: flex
+		justify-content: center
+		align-items: center
+		min-height: 300px
+		position: relative
+		.code
+			position: absolute
+			bottom: 20px
+			font-size: 12px
+			color: $copy
+			+opacity(0)
+			+tr(400ms ease-in-out)
+		&:hover
+			.code
+				+opacity(1)
+
+	&__price
+		display: flex
+		justify-content: space-between
+		align-items: center
+		del
+			text-decoration: none
+			position: relative
+			color: $black
+			margin-right: 25px
+			&:after
+				content: ''
+				position: absolute
+				width: 106%
+				height: 1px
+				background-color: $black
+				left: -3%
+				top: 50%
+		span
+			color: $blue
+			font-size: 18px
+
+.stickers
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: space-around
+	.sticker
+		width: 35px
+		height: 35px
+		box-shadow: $shadow
+		+br(50%)
+		color: $white
+		// +tr(400ms ease-in-out)
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 10px
+		&.yellow
+			background: $lg-yellow
+		&.blue
+			background: $lg-blue-sticker
+		&.star
+			background: $white
+			color: $blue
+			&:hover
+				color: $white
+				background: $lg-star-sticker
+	.left, .right
+		display: inline-block
+		position: absolute
+		top: 25px
+	.left
+		left: 25px
+		font-size: 11px
+	.right
+		right: 25px
+
+
+
 
 
 .favorite
@@ -109,7 +231,7 @@
 		margin-bottom: 40px
 	&__icon
 		margin-bottom: 20px
-		.fa
+		.icon
 			flex-basis: 30px
 	+links(inherit, inherit, $blue, $blue)
 
@@ -123,7 +245,7 @@
 .btn
 	display: inline-block
 	cursor: pointer
-	padding: 13px 30px 10px
+	padding: 10px 30px 10px
 	border-radius: 20px
 	outline: none
 	+tr(400ms ease-in-out)

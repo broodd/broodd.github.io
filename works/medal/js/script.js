@@ -7,9 +7,23 @@ $(document).ready(function(){
 
 
 
-  $('.slick-wrap').slick({
+  // $('.slick-wrap').slick({
+	 //  // slidesToShow: 1,
+	 //  // slidesToScroll: 1
+  // });
+
+  $('.slick__1').slick({
 	  infinite: true,
 	  slidesToShow: 1,
-	  slidesToScroll: 1
+	  slidesToScroll: 1, 	
+	  swipeToSlide: true
   });
+
+  $('.slick__4').slick({
+	  infinite: true,
+	  slidesToShow: 4,
+	  // slidesToScroll: 1,
+	  swipeToSlide: true
+  });
+
 });
