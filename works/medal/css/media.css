@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1225px) {
+  .cart__text {
+    width: 70%; } }
+@media only screen and (max-width: 992px) {
+  body {
+    font-size: 14px; } }
+@media only screen and (max-width: 992px) {
+  .cart__text {
+    left: 5%;
+    bottom: 5%;
+    width: auto;
+    padding-right: 10px; }
+    .cart__text .font-18 {
+      margin-bottom: 5px; } }
+@media only screen and (min-width: 768px) {
+  .cart:last-of-type {
+    margin-bottom: 0; } }

@@ -28,6 +28,7 @@ body
 	text-align: left
 	font-size: 100%
 	box-sizing: border-box
+	overflow-x: hidden
 
 +links(inherit)
 	text-decoration: none
@@ -40,10 +41,17 @@ img, svg, iframe
 	height: auto
 	// height: inherit
 
-.ul
+
+.shadow
+	box-shadow: $shadow
+
+// .ul
+ul
 	list-style-type: none
 	padding-left: 0
 	margin-bottom: 0
+	.submenu
+		padding-left: 20px
 
 .under
 	text-decoration: underline
@@ -62,16 +70,18 @@ img, svg, iframe
 .font
 	font-size: 16px
 	color: $black
-	&-12
+	&-12,
+	small
 		font-size: 12px
 	&-18
-		font-size: 18px
+		// font-size: 18px
+		font-size: 1.125em
 		// font-family: $ff-1
 		font-family: $ff-bold
-		// line-height: 29px
 	&-22
 		font-size: 22px
-		font-family: $ff-1
+		font-family: $ff-bold
+		// font-family: $ff-1
 
 	&-roboto
 		font-family: $ff-ro
@@ -101,8 +111,15 @@ img, svg, iframe
 			margin-right: 5px
 
 	&-b
+		&_40
+			margin-bottom: 40px
+		&_90
+			margin-bottom: 90px
+	&-t
+		&_20
+			margin-top: 20px
 		&_30
-			margin-bottom: 30px
+			margin-top: 30px
 
 
 .padding

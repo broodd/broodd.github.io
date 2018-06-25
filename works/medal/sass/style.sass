@@ -3,18 +3,33 @@
 
 
 
-.menu
-	display: flex
-	li
-		margin-right: 30px
-		&:last-of-type
-			margin-right: 0
+.overlay
+
+.window
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	background-color: $white
+	+opacity(0.7)
+	z-index: 8
+
+.toggle
+	z-index: 10 !important
+	position: relative
+
 
 
 .header-top
 	padding: 15px 0
 	.lang-choice
 		margin-left: 80px
+	.ul
+		li
+			margin-right: 30px
+			&:last-of-type
+				margin-right: 0
 
 
 .select
@@ -53,8 +68,6 @@
 	margin-bottom: 30px
 	img
 		width: 100%
-	&:last-of-type
-		margin-bottom: 0
 
 	&__text
 		position: absolute
@@ -62,12 +75,14 @@
 		bottom: 50px
 		width: 50%
 		z-index: 2
+		.font-18
+			margin-bottom: 1.25em
 
 	&.bg
 		color: $white
 		.font-18
 			color: $white
-			margin-bottom: 20px
+			// margin-bottom: 20px
 		&:after
 			content: ''
 			position: absolute
@@ -117,6 +132,7 @@
 	&.rotate
 		.category_block__text
 			+rotate(-90)
+			transform-origin: 30% 50%
 
 	&:hover
 		box-shadow: $shadow-category
@@ -126,7 +142,8 @@
 	&__text
 		position: absolute
 		top: 50%
-		left: 40px
+		// left: 40px
+		left: 9%
 	&, & img
 		+tr(400ms)
 
@@ -245,7 +262,7 @@
 .btn
 	display: inline-block
 	cursor: pointer
-	padding: 10px 30px 10px
+	padding: 0.625em 1.875em 0.625em
 	border-radius: 20px
 	outline: none
 	+tr(400ms ease-in-out)
@@ -263,50 +280,186 @@
 
 
 .form
+	input,textarea
+		width: 100%
+		+placeholder-color($copy)
+		color: $text
+		padding: 20px 25px
+		font-size: 14px
+		border: none
+		outline: none
+	input[type="submit"]
+		cursor: pointer
+		color: $white
+		background: $lg-blue
+		padding: 15px
+	input[type="checkbox"]
+		width: auto
+		// -moz-appearance: none
+		// -webkit-appearance: none
+		// -o-appearance: none
+		// padding: 0
+		// width: 14px
+		// height: 14px
+		// border: 1px solid #DEDEE2		
 	&-footer
 		height: 40px
 		margin-top: 30px
 		position: relative
 		input
-			width: 100%
 			height: 100%
+			border-radius: 20px
 			border: none
 			outline: none
-			border-radius: 20px
-			+placeholder-color($copy)
 			padding: 12px 135px 12px 20px
 			// &[type="submit"]
 			&.submit
-				cursor: pointer
 				position: absolute
 				right: 0
 				width: 125px
 				padding: 0
-				color: $white
-				background: $lg-blue
+	&-border
+		input, textarea
+			border: 1px solid #DEDEE2
+			padding: 15px 25px
+		input:first-of-type
+			border-top-left-radius: 10px
+			border-top-right-radius: 10px
+		input:last-of-type
+			border-bottom-left-radius: 10px
+			border-bottom-right-radius: 10px
 
+	&-wrap
+		display: flex
+		+translate-center(fixed)
+		z-index: 10
+		background-color: $white
+		width: 755px
+		max-width: 100%
+		&.border-radius
+			border-radius: 20px
+			overflow: hidden
+		.form
+			input[type="submit"]
+				border-radius: 20px				
+			&__image
+				// border-top-left-radius: 20px
+				// border-bottom-left-radius: 20px
+				// overflow: hidden
+				flex-shrink: 0
+				img
+					height: 100%
+			&__title
+				background-color: #F3F3F4
+				padding: 15px 15px 15px 50px
+				color: $black
+			&__other
+				padding: 50px
+
+
+.catalog
+	.sidebar
+		background-color: $bg-grey
+		// padding-left: 30px
+		padding: 0
+		.block
+			padding: 0 15px 0 30px
+			border-bottom: 1px solid #E0E0E4
+			&__title
+				padding: 20px 0
+				cursor: pointer
+			&__under
+				display: none
+				padding-bottom: 15px
+				&.active
+					display: block
+				label
+					display: block
+				.submenu
+					font-family: $ff-1
+					color: $black
+					display: none
+					&.active
+						display: block
+				.has-submenu
+					& > a
+						position: relative
+						&:after
+							content: ''
+							position: absolute
+							width: 5px
+							height: 5px
+							right: -30px
+							top: 50%
+							border-bottom: 1px solid $black
+							border-right: 1px solid $black
+							transform: rotate(45deg) translateX(-50%)
+							transform-origin: left center
+				ul
+					line-height: 30px
+					li
+						&:hover
+							color: $blue
+							& > a:after
+								border-color: $blue
+								transform: rotate(-45deg) translateX(-50%)
+						// &.has-submenu.active
+
+			&.active
+				.plus:after
+					height: 0
+					width: 0
+				// .block__under
+				// 	display: block
+.plus
+	width: 15px
+	height: 15px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 0
+		+translateY
+		width: 100%
+		height: 2px
+		background-color: #C2C3C8
+	&:after
+		content: ''
+		position: absolute
+		height: 100%
+		width: 2px
+		left: 50%
+		top: 0
+		+translateX							
+		background-color: #C2C3C8
+		+tr(400ms ease-in-out)
+					
 
 
 .slick
 	&-arrow
 		position: absolute
-		width: 30px
-		height: 30px
+		width: 50px
+		height: 50px
 		z-index: 2
-		background: $lg-blue
 		font-size: 0
+		background: $white
 		border: none
 		outline: none
 		top: 50%
+		// top: 150px
 		border-radius: 50%
 		cursor: pointer
+		box-shadow: $shadow
+		+translateY
 		&.slick-prev
-			left: 35px
+			left: -15px
 			&:after
 				border-right: none
 				border-top: none
 		&.slick-next
-			right: 35px
+			right: -15px
 			&:after
 				border-left: none
 				border-bottom: none
@@ -317,5 +470,31 @@
 			height: 10px
 			top: 50%
 			left: 50%
-			border: 2px solid $white
+			border: 2px solid $blue
 			transform: translate(-50%,-50%) rotate(45deg)
+
+		&:hover
+			background: $lg-blue
+			&:after
+				border-color: $white	
+
+		&_blue
+			.slick-arrow
+				width: 30px
+				height: 30px
+				box-shadow: none
+				background: $lg-blue
+				&.slick-prev
+					left: 35px
+				&.slick-next
+					right: 35px
+				&:after
+					border-color: $white
+
+.icon
+	&-close
+		cursor: pointer
+		
+
+
+

@@ -980,10 +980,10 @@ html body .mapa-wrap {
     display: none; }
   html body .mapa-wrap.active:after {
     display: block; }
-html body .mapadesc path, html body .mapadesc polygon, html body .mapadesc text {
+html body .mapadesc path, html body .mapadesc polygon, html body .mapadesc text, html body .mapadesc rect{
   -webkit-transition: 400ms ease-in-out;
   transition: 400ms ease-in-out; }
-html body .mapadesc:hover path, html body .mapadesc:hover polygon {
+html body .mapadesc:hover path, html body .mapadesc:hover polygon, html body .mapadesc:hover rect {
   stroke: #343a40 !important;
   stroke-width: 4px !important; }
 html body .mapa__desc {

@@ -1,32 +1,39 @@
 @import 'mixins'
 @import 'vars'
 
-+mw(768) 
-	.fw-container 
-		width: 750px
 
-+mw(992) 
-	#sandwich
-		display: none
+// col    <   576px
+// col-sm >=  576px
+// col-md >=  768px
+// col-lg >=  922px
+// col-xl >= 1200px
 
-	.fw-container 
-		width: 970px
++w(1225)
+	.cart
+		&__text
+			width: 70%
 
-+mw(1200) 
-	.fw-container 
-		width: 1170px
 
-	.mega-container
-		.sh-column-wrapper
-			width: 555px
-		&.mega-left
-			.sh-column-wrapper
-				float: right
-		&.mega-right
-			.sh-column-wrapper
-				float: left
++w(992)
+	body
+		font-size: 14px
 
-+mw(1550)
-	.fw-container-midd
-		width: 1520px
 
++w(992)
+	.cart
+		&__text
+			left: 5%
+			bottom: 5%
+			width: auto
+			padding-right: 10px
+			.font-18
+				margin-bottom: 5px
+
+
+
+
+
++mw(768)
+	.cart
+		&:last-of-type
+			margin-bottom: 0
