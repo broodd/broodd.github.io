@@ -19,6 +19,7 @@ $(document).ready(function(){
 		$( $(this).attr('data-open') ).addClass('active-window').fadeIn();
 		// $('body').addClass('overlay');
 		$('.window').fadeIn();
+		return false;
 	});
 
 	$('.window').click(function(event) {
@@ -28,7 +29,6 @@ $(document).ready(function(){
 
 
 
-	var blocks = $('.sidebar .block');
 	$('.sidebar .block__title').click(function(event) {
 		var parent = $(this).parent();
 		
@@ -38,6 +38,7 @@ $(document).ready(function(){
 
 	$('.sidebar .block .has-submenu a').click(function(event) {
 		$(this).parent('.has-submenu').children('.submenu').slideToggle();
+		return false;
 	});
 
 

@@ -25,11 +25,45 @@
 	padding: 15px 0
 	.lang-choice
 		margin-left: 80px
+
+.header-top,
+.navbar
 	.ul
 		li
 			margin-right: 30px
 			&:last-of-type
 				margin-right: 0
+
+
+.navbar
+	padding: 25px 0
+	+bs(0px 4px 15px rgba(0, 0, 0, 0.08))
+	font-family: $ff-1
+
+.icon-wrap
+	.ic
+		position: relative
+		margin-left: 25px
+		&:first-of-type
+			margin-left: 0
+		.notify
+			position: absolute
+			display: block
+			width: 15px
+			height: 15px
+			background-color: $yellow
+			color: $black
+			font-size: 9px
+			font-family: $ff-bold
+			right: -2px
+			top: -4px
+			text-align: center
+			line-height: 15px
+			border-radius: 50%
+			
+.brand
+	+em(20)
+	font-family: $ff-bold
 
 
 .select
@@ -157,6 +191,7 @@
 		align-items: center
 		min-height: 300px
 		position: relative
+		+tr(400ms ease-in-out)
 		.code
 			position: absolute
 			bottom: 20px
@@ -165,6 +200,7 @@
 			+opacity(0)
 			+tr(400ms ease-in-out)
 		&:hover
+			box-shadow: $shadow
 			.code
 				+opacity(1)
 
@@ -407,7 +443,7 @@
 							transform: rotate(45deg) translateX(-50%)
 							transform-origin: left center
 				ul
-					line-height: 30px
+					line-height: toem(30)
 					li
 						&:hover
 							color: $blue
@@ -509,3 +545,79 @@
 
 
 
+.slider 
+	// width: 100%
+	position: relative
+	height: 2px
+	margin-top: 1.25rem
+	margin-bottom: 2.25rem
+	background-color: #e6e6e6
+	cursor: pointer
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-ms-touch-action: none
+	touch-action: none
+
+.slider-fill 
+	position: absolute
+	top: 0
+	left: 0
+	display: inline-block
+	max-width: 100%
+	height: 100%
+	background-color: $blue
+	transition: all .2s ease-in-out
+
+.slider-fill.is-dragging 
+	transition: all 0s linear
+
+.slider-handle 
+	top: 50%
+	left: 0
+	-webkit-transform: translateY(-50%)
+	transform: translateY(-50%)
+	position: absolute
+	z-index: 1
+	display: inline-block
+	width: 1.4rem
+	height: 1.4rem
+	background-color: $white
+	+bs($shadow)
+	+tr(all .2s ease-in-out)
+	-ms-touch-action: manipulation
+	touch-action: manipulation
+	+br(50%)
+
+[data-whatinput=mouse] .slider-handle 
+	outline: 0
+
+.slider-handle.is-dragging 
+	transition:  all 0s linear
+
+.slider.disabled,.slider[disabled] 
+	opacity: .25
+	cursor:  not-allowed
+
+.slider.vertical 
+	display:  inline-block
+	width:  .5rem
+	height: 12.5rem
+	margin: 0 1.25rem
+	-webkit-transform: scaleY(-1)
+	transform: scaleY(-1)
+
+.slider.vertical .slider-fill 
+	top: 0
+	width: .5rem
+	max-height: 100%
+
+.slider.vertical .slider-handle 
+	position: absolute
+	top: 0
+	left: 50%
+	width: 1.4rem
+	height: 1.4rem
+	-webkit-transform: translateX(-50%)
+	transform: translateX(-50%)

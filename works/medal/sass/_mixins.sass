@@ -1,3 +1,11 @@
+=em($curr:20, $fz:16)
+	font-size: ($curr/$fz) + em
+
+ 	
+
+@function toem($curr:20, $fz:16, $type: em)
+	@return ($curr/$fz) + $type
+
 //width
 =w($width)
 	// @media only screen and (max-width: $width+'px')
