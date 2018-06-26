@@ -19,7 +19,6 @@
 		font-size: 14px
 
 
-// +w(992)
 	.cart
 		&__text
 			left: 5%
@@ -28,6 +27,13 @@
 			padding-right: 10px
 			.font-18
 				margin-bottom: 5px
+
+	.icon-wrap
+		.ic
+			margin-left: 8px
+
+
+	+san($lg-blue,30px,30px)
 
 
 // @media only screen and (min-width: 768px) and (max-width: 992px)
@@ -38,3 +44,14 @@
 	.cart
 		&:last-of-type
 			margin-bottom: 0
+
+
++mw(992)
+	.nav
+		&-main
+			.submenu
+				display: none !important
+	
+	// .hidden-lg
+	// 	display: none !important
+

@@ -484,6 +484,35 @@
 				animation-delay: -0.9s
 
 
+
+=san($bg, $w:40px, $h:40px, $s:$white)
+	%san
+		position: absolute
+		left: 10%
+		height: 3px
+		background: $s
+	#sandwich
+		width: $w
+		height: $h
+		cursor: pointer
+		position: relative
+		background: $bg
+		box-shadow: $shadow
+		.sw-topper 
+			@extend %san
+			width: 80%
+			top: 25%
+		.sw-bottom 
+			@extend %san
+			width: 50%
+			top: 50%
+			+translateY(-75%)
+		.sw-footer 
+			@extend %san
+			width: 80%
+			bottom: 25%
+
+
 =sandwich($bg, $w:60px, $h: 70px, $bga: $bg, $all: $bg)
 	#sandwich.active-sandwich .sw-topper
 		margin-top: 8px

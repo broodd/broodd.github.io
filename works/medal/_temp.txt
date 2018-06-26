@@ -1,2 +1,32 @@
 menu submenu arrow do for all
 input border for all
+
+
+
+open_nav
+	event hover and click
+
+
+
+
+for memu navbar
+
+	.navbar
+		por
+	order-last
+		position: absolute;
+		top: 100%;
+		z-index: 4;
+		background-color: #fff;
+		padding: 15px 0;
+		width: 100vw;
+		left: 0;
+		border: 1px solid red;
+		add > container
+	.has-submenu
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+		align-items start
+		ul
+			p0

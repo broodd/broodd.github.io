@@ -5,6 +5,10 @@ $(document).ready(function(){
 	//     $(this).remove()
 	// });
 
+	$('#sandwich').click(function(event) {
+		$('.nav-main').slideToggle();
+	});
+
 	$('.icon-close').click(function(event) {
 		$(this).parents('.toggle').fadeOut();
 		$('.window').fadeOut();
@@ -36,10 +40,30 @@ $(document).ready(function(){
 		parent.children('.block__under').slideToggle();
 	});
 
-	$('.sidebar .block .has-submenu a').click(function(event) {
+	$('.has-submenu a').click(function(event) {
 		$(this).parent('.has-submenu').children('.submenu').slideToggle();
 		return false;
 	});
+
+
+	// function changeView() {
+	// 	$('.nav-bottom').offset({left:0});
+	// }
+	// changeView();
+	// jQuery(window).resize( changeView());
+
+	// if( window.matchMedia("(max-width: 992px)").matches) {
+	$('.nav-main .menu > li.has-submenu').hover(function() {
+		// $('.nav-bottom').show();
+		$('.nav-bottom').addClass('active');
+	});
+
+	$('.nav-bottom').hover(function() {
+		$('.nav-bottom').addClass('active');
+	}, function() {
+		$('.nav-bottom').removeClass('active');
+	});
+
 
 
 	// $('.slick-wrap').slick({
@@ -78,9 +102,6 @@ $(document).ready(function(){
 					slidesToShow: 1,
 				}
 			}
-		// You can unslick at a given breakpoint now by adding:
-		// settings: "unslick"
-		// instead of a settings object
 		]
 	});
 
