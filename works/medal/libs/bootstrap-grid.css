@@ -28,6 +28,9 @@ html {
   max-width: calc(100% - 60px);
 }
 
+.container-small {
+  max-width: 100%;
+}
 /*@media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -46,8 +49,12 @@ html {
   }
 }*/
 
-/*@media (min-width: 1200px) {*/
-/*max-width: 1140px;*/
+@media (min-width: 1200px) {
+  .container-small {
+    max-width: 1145px;
+  }
+}
+
 @media (min-width: 1440px) {
   .container {
     max-width: 1380px;

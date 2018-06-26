@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
 	<link rel="stylesheet" href="libs/bootstrap-grid.css" />
+	<!-- <link rel="stylesheet" href="libs/font-awesome.css" /> -->
 	<link rel="stylesheet" href="libs/fontello.css">
 	
 	<link rel="stylesheet" href="libs/slick.css">
@@ -14,6 +15,9 @@
 	<link rel="stylesheet" href="css/media.css" />
 	<!-- theme color for android 5.0 -->
 	<meta name="theme-color" content="#fff"/> 
+
+
+
 </head>
 <body>
 	<div class="window d-none"></div>
@@ -81,6 +85,7 @@
 			</div>
 		</div>
 	</div>
+  
 
 
 	<div class="header-top bg-dark">
@@ -90,7 +95,7 @@
 					<ul class="ul d-flex">
 						<li><a href="about.html">О компании</a></li>
 						<li><a href="pay.html">Доставка и оплата</a></li>
-						<li><a href="contact.html">Контакты</a></li>
+						<li><a href="contanct.html">Контакты</a></li>
 					</ul>
 				</div>
 				<div class="col-12 col-md-auto right d-flex">
@@ -108,7 +113,6 @@
 			</div>
 		</div>
 	</div>
-
 
 
 	<div class="navbar color-black">
@@ -151,209 +155,409 @@
 		</div>
 	</div>
 
-
-	<section class="section section-main margin-30_a">
-		<div class="container">
+	<div class="catalog-wrap">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xl-9 col-md-7 col-sm-12">
-					<div class="slick-wrap slick__1 slick-arrow_blue">
-						<img src="img/main_slide_1.jpg" alt="">
-						<img src="img/main_slide_1.jpg" alt="">
-						<img src="img/main_slide_1.jpg" alt="">
-					</div>
+				<div class="col-md-3 sidebar color-black font-gothic">
+					<form action="">
+						<div class="block">
+							<div class="block__title d-flex justify-content-between align-items-center">
+								<div class="font-22">Категории</div>
+								<div class="plus"></div>
+							</div>
+							<div class="block__under">
+								<ul class="bold">
+									<li><a href="#">Кубки</a></li>
+									<li><a href="#">Медали</a></li>
+									<li><a href="#">Статуэтки</a></li>
+									<li><a href="#">Плакетки</a></li>
+									<li><a href="#">Ленты</a></li>
+									<li class="has-submenu">
+										<a href="#">Жетоны</a>
+										<ul class="submenu active">
+											<li><a href="#">Подкатегория 1</a></li>
+											<li class="has-submenu">
+												<a href="#">Подкатегория 2</a>
+												<ul class="submenu">
+													<li><a href="#">Подкатегория 1</a></li>
+													<li><a href="#">Подкатегория 2</a></li>
+													<li><a href="#">Подкатегория 3</a></li>
+													<li><a href="#">Подкатегория 4</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Подкатегория 3</a></li>
+											<li><a href="#">Подкатегория 4</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Грамоты</a></li>
+									<li><a href="#">Шильдики</a></li>
+									<li><a href="#">Стекло</a></li>
+									<li><a href="#">Тарелки</a></li>
+									<li><a href="#">Накладки на плакетки</a></li>
+									<li><a href="#">Коробки под медаль</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="block active">
+							<div class="block__title d-flex justify-content-between align-items-center">
+								<div class="font-22">Цена</div>
+								<div class="plus"></div>
+							</div>
+							<div class="block__under active">
+								<div class="row justify-content-between align-items-center slider-wrap">
+									<div class="col-5">
+										<input type="number" id='sliderOutput1' value="50" class="slider-input">
+									</div>
+									<div class="col-5">
+										<input type="number" id='sliderOutput2' value="67050"  class="slider-input">
+									</div> 
+									<div class="col-2">
+										<span>грн</span>
+									</div>
+								</div>
+								<div>
+									<div class="slider" 
+									data-slider 
+									data-initial-start='50' 
+									data-initial-end='67050'
+									data-options="start: 1; end: 100000;">
+										<span class="slider-handle" data-slider-handle role="slider" tabindex="10" aria-controls='sliderOutput1'></span>
+										<span class="slider-fill" data-slider-fill></span>
+										<span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls='sliderOutput2'></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block__title d-flex justify-content-between align-items-center">
+								<div class="font-22">Высота</div>
+								<div class="plus"></div>
+							</div>
+							<div class="block__under">
+								<div class="row justify-content-between">
+									<div class="col-md-auto col-xl-6">
+										<label>
+											<input type="checkbox" name="" id=""><span>10 -19 см</span>
+										</label>
+										<label>
+											<input type="checkbox" name="" id=""><span>20 29 см</span>
+										</label>
+										<label>
+											<input type="checkbox" name="" id=""><span>30 - 39 см</span>
+										</label>
+									</div>
+									<div class="col-md-auto col-xl-6">
+										<label>
+											<input type="checkbox" name="" id=""><span>10 -19 см</span>
+										</label>
+										<label>
+											<input type="checkbox" name="" id=""><span>20 29 см</span>
+										</label>
+										<label>
+											<input type="checkbox" name="" id=""><span>30 - 39 см</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block__title d-flex justify-content-between align-items-center">
+								<div class="font-22">Основной цвет</div>
+								<div class="plus"></div>
+							</div>
+							<div class="block__under">
+								<div class="row justify-content-between">
+									<div class="col-md-auto col-xl-6">
+										<label>
+											<input type="checkbox" name="" id=""><span>золото</span>
+										</label>
+										<label>
+											<input type="checkbox" name="" id=""><span>серебро</span>
+										</label>
+									</div>
+									<div class="col-md-auto col-xl-6">
+										<label>
+											<input type="checkbox" name="" id=""><span>бронза</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block__title d-flex justify-content-between align-items-center">
+								<div class="font-22">Дополнительный цвет</div>
+								<div class="plus"></div>
+							</div>
+							<div class="block__under">
+								<div class="row justify-content-between">
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>бежевый</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>белый</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>голубой</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>желтый</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>зеленый</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>золото</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>коричневый</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>красный</span>
+										</label>
+									</div>
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>бежевый</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>белый</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>голубой</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>желтый</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>зеленый</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>золото</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>коричневый</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>красный</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block__title d-flex justify-content-between align-items-center">
+								<div class="font-22">Место под жетон</div>
+								<div class="plus"></div>
+							</div>
+							<div class="block__under">
+								<label><input type="checkbox" name="" id=""><span>жетон не требуется</span>
+								</label>
+								<label><input type="checkbox" name="" id=""><span>диаметр 25 мм</span>
+								</label>
+								<label><input type="checkbox" name="" id=""><span>диаметр 39 мм</span>
+								</label>
+								<label><input type="checkbox" name="" id=""><span>диаметр 50 мм</span>
+								</label>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block__title d-flex justify-content-between align-items-center">
+								<div class="font-22">Наличие ручек</div>
+								<div class="plus"></div>
+							</div>
+							<div class="block__under">
+								<div class="row justify-content-between">
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>есть</span>
+										</label>
+									</div>
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>нет</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block__title d-flex justify-content-between align-items-center">
+								<div class="font-22">Наличие крышки</div>
+								<div class="plus"></div>
+							</div>
+							<div class="block__under">
+								<div class="row justify-content-between">
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>есть</span>
+										</label>
+									</div>
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>нет</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block__title d-flex justify-content-between align-items-center">
+								<div class="font-22">Материал крышки</div>
+								<div class="plus"></div>
+							</div>
+							<div class="block__under">
+								<div class="row justify-content-between">
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>металл</span>
+										</label>
+									</div>
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>пластик</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block__title d-flex justify-content-between align-items-center">
+								<div class="font-22">Материал чаши</div>
+								<div class="plus"></div>
+							</div>
+							<div class="block__under">
+								<div class="row justify-content-between">
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>металл</span>
+										</label>
+									</div>
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>стекло</span>
+										</label>
+									</div>
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>пластик</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block__title d-flex justify-content-between align-items-center">
+								<div class="font-22">Материал ножки</div>
+								<div class="plus"></div>
+							</div>
+							<div class="block__under">
+								<div class="row justify-content-between">
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>металл</span>
+										</label>
+									</div>
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>пластик</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block__title d-flex justify-content-between align-items-center">
+								<div class="font-22">Материал основания</div>
+								<div class="plus"></div>
+							</div>
+							<div class="block__under">
+								<label><input type="checkbox" name="" id=""><span>камень (мрамор)</span>
+								</label>
+								<label><input type="checkbox" name="" id=""><span>дерево</span>
+								</label>
+								<label><input type="checkbox" name="" id=""><span>мателл</span>
+								</label>
+								<label><input type="checkbox" name="" id=""><span>пластик</span>
+								</label>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block__title d-flex justify-content-between align-items-center">
+								<div class="font-22">Страна бренда</div>
+								<div class="plus"></div>
+							</div>
+							<div class="block__under">
+								<div class="row justify-content-between">
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>Италия</span></label>
+									</div>
+									<div class="col-md-auto col-xl-6">
+										<label><input type="checkbox" name="" id=""><span>Нидерланды</span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block__title d-flex justify-content-between align-items-center">
+								<div class="row">
+									<div class="col-md-auto col-xl-6">
+										<input type="submit" class="btn btn-white btn-border" value="Сбросить">
+									</div>
+									<div class="col-md-auto col-xl-6">
+										<input type="submit" class="btn btn-blue" value="Применить">
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
 				</div>
-				<div class="col-xl-3 col-md-5 col-sm-12">
+				<div class="col-md-9 catalog">
 					<div class="row">
-						<div class="col-12 catblock d-flex">
-						<img src="img/main_cat_1.png" alt="">
-						<div class="catblock__text">
-							<p class="font bold">Название категории</p>
-							<a href="#" class="under">К покупкам</a>
+						<div class="col-12">
+							<div class="bredcrumbs">
+								<a href="index.html"><span>Главная</span></a>
+								<span class="sep"> / </span>
+								<span class="title">Про компанію</span>
+							</div>
 						</div>
 					</div>
-					<div class="col-12 catblock d-flex">
-						<img src="img/main_cat_2.png" alt="">
-						<div class="catblock__text">
-							<p class="font bold">Название категории</p>
-							<a href="#" class="under">К покупкам</a>
+					<div class="row">
+						<div class="col-12 catalog__image">
+							<img src="img/catalog_photo.png" alt="">
+							<h2 class="font-22 letter">Медали</h2>
 						</div>
 					</div>
-					<div class="col-12 catblock d-flex">
-						<img src="img/main_cat_3.png" alt="">
-						<div class="catblock__text">
-							<p class="font bold">Название категории</p>
-							<a href="#" class="under">К покупкам</a>
+					<div class="row">
+						<div class="product col-sm-6 col-lg-4">
+							<div class="product__image">
+								<img src="img/some_medal_1.png" alt="">
+							</div>
+							<div class="prouct__text text-center">
+								<p class="font"><a href="catalog.html">Медали в сборе</a></p>
+							</div>
 						</div>
-					</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="section section-cart">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 cart-wrap cart-left">
-					<div class="cart bg bg-purple">
-						<img src="img/main_cart_1.jpg" alt="">
-						<div class="cart__text">
-							<h3 class="font-18 letter"><a href="#">Название заголовка баннера</a></h3>
-							<p>Взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
-							<a href="#" class="btn btn-white">К покупкам</a>
+						<div class="product col-sm-6 col-lg-4">
+							<div class="product__image">
+								<img src="img/some_medal_2.png" alt="">
+							</div>
+							<div class="prouct__text text-center">
+								<p class="font"><a href="catalog.html">Медали в сборе</a></p>
+							</div>
 						</div>
-					</div>
-					<div class="cart">
-						<img src="img/main_cart_2.jpg" alt="">
-						<div class="cart__text">
-							<h3 class="font-18 letter"><a href="#">Название заголовка баннера</a></h3>
-							<p>Взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
-							<a href="#" class="btn btn-blue">К покупкам</a>
+						<div class="product col-sm-6 col-lg-4">
+							<div class="product__image">
+								<img src="img/some_medal_3.png" alt="">
+							</div>
+							<div class="prouct__text text-center">
+								<p class="font"><a href="catalog.html">Медали в сборе</a></p>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 cart-wrap cart-right">
-					<div class="cart">
-						<img src="img/main_cart_3.jpg" alt="">
-						<div class="cart__text">
-							<h3 class="font-18 letter"><a href="#">Название заголовка баннера</a></h3>
-							<p>Взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
-							<a href="#" class="btn btn-blue">К покупкам</a>
+						<div class="product col-sm-6 col-lg-4">
+							<div class="product__image">
+								<img src="img/some_medal_4.png" alt="">
+							</div>
+							<div class="prouct__text text-center">
+								<p class="font"><a href="catalog.html">Медали в сборе</a></p>
+							</div>
 						</div>
-					</div>
-					<div class="cart bg bg-lime">
-						<img src="img/main_cart_4.jpg" alt="">
-						<div class="cart__text">
-							<h3 class="font-18 letter"><a href="#">Название заголовка баннера</a></h3>
-							<p>Взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
-							<a href="#" class="btn btn-white">К покупкам</a>
+						<div class="product col-sm-6 col-lg-4">
+							<div class="product__image">
+								<img src="img/some_medal_5.png" alt="">
+							</div>
+							<div class="prouct__text text-center">
+								<p class="font"><a href="catalog.html">Медали в сборе</a></p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-
-
-	<section class="section section-category padding-a_80">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h4 class="font-22 letter text-center margin-b_40">Категории товаров</h4>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block purple d-flex" href="#">
-						<img src="img/main_category_1.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Кубки</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block yellow d-flex" href="#">
-						<img src="img/main_category_2.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Медали</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block color-grey rotate d-flex" href="#">
-						<img src="img/main_category_3.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Статуэтки</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block orange color-grey rotate d-flex" href="#">
-						<img src="img/main_category_4.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Плакетки</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block lime d-flex" href="#">
-						<img src="img/main_category_5_t.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Ленты</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block color-grey rotate d-flex" href="#">
-						<img src="img/main_category_6.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Жетоны</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block lime colorgrey rotate d-flex" href="#">
-						<img src="img/main_category_7.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Грамоты</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block yellow d-flex" href="#">
-						<img src="img/main_category_8.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Шильдики</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block purple color-grey d-flex" href="#">
-						<img src="img/main_category_9.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Стекло</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block yellow rotate d-flex" href="#">
-						<img src="img/main_category_10_t.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Тарелки</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block color-grey rotate d-flex" href="#">
-						<img src="img/main_category_11.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter bold">Накладки<br>на плакетки</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block purple color-grey rotate d-flex" href="#">
-						<img src="img/main_category_12_t.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Коробки<br>под медаль</h4>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+	</div>
 
 
 	<section class="section section-catalog bg-grey padding-a_80">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h4 class="font-22 letter text-center margin-b_40">Самые популярные товары</h4>
+					<h4 class="font-22 letter text-center margin-b_40">Последние поступления</h4>
 				</div>
 			</div>
 			<div class="slick-wrap slick__4 margin-row margin-b_90">
-				<div class="product col-3">
+				<div class="product col-4">
 					<div class="product__image">
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
@@ -377,7 +581,7 @@
 						<a href="#" class="btn btn-blue">В корзину</a>
 					</div>
 				</div>
-				<div class="product col-3">
+				<div class="product col-4">
 					<div class="product__image">
 						<img src="img/just_oskar.png" alt="">
 						<div class="stickers">
@@ -401,7 +605,7 @@
 						<a href="#" class="btn btn-blue">В корзину</a>
 					</div>
 				</div>
-				<div class="product col-3">
+				<div class="product col-4">
 					<div class="product__image">
 						<img src="img/just_stat.png" alt="">
 						<div class="stickers">
@@ -425,7 +629,7 @@
 						<a href="#" class="btn btn-blue">В корзину</a>
 					</div>
 				</div>
-				<div class="product col-3">
+				<div class="product col-4">
 					<div class="product__image">
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
@@ -449,7 +653,7 @@
 						<a href="#" class="btn btn-blue">В корзину</a>
 					</div>
 				</div>
-				<div class="product col-3">
+				<div class="product col-4">
 					<div class="product__image">
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
@@ -476,11 +680,11 @@
 			</div>
 			<div class="row">
 				<div class="col">
-					<h4 class="font-22 letter text-center margin-b_40">Просмотренные товары</h4>
+					<h4 class="font-22 letter text-center margin-b_40 bold">Просмотренные товары</h4>
 				</div>
 			</div>
 			<div class="slick-wrap slick__4 margin-row">
-				<div class="product col-3">
+				<div class="product col-4">
 					<div class="product__image">
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
@@ -500,7 +704,7 @@
 						<a href="#" class="btn btn-blue">В корзину</a>
 					</div>
 				</div>
-				<div class="product col-3">
+				<div class="product col-4">
 					<div class="product__image">
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
@@ -520,7 +724,7 @@
 						<a href="#" class="btn btn-blue">В корзину</a>
 					</div>
 				</div>
-				<div class="product col-3">
+				<div class="product col-4">
 					<div class="product__image">
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
@@ -540,7 +744,7 @@
 						<a href="#" class="btn btn-blue">В корзину</a>
 					</div>
 				</div>
-				<div class="product col-3">
+				<div class="product col-4">
 					<div class="product__image">
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
@@ -560,7 +764,7 @@
 						<a href="#" class="btn btn-blue">В корзину</a>
 					</div>
 				</div>
-				<div class="product col-3">
+				<div class="product col-4">
 					<div class="product__image">
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
@@ -589,7 +793,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h4 class="font-22 letter text-center margin-b_40">Заголовок CEO текста</h4>
+					<h4 class="font-22 letter text-center margin-b_40 bold">Заголовок CEO текста</h4>
 				<!-- </div>
 			</div>
 			<div class="row"></div>
@@ -699,8 +903,19 @@
 		</div>
 	</div>
 
+
 	<script src="libs/jquery-2.1.3.min.js"></script>
 	<script src="libs/slick.min.js"></script>
 	<script src="js/script.js"></script>
+
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script> -->
+	<script src="libs/foundation.min.js"></script>
+
+<script>
+  $(document).foundation();
+</script>
+	
 </body>
 </html>
