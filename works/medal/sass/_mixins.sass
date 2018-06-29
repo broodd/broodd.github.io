@@ -187,9 +187,9 @@
 	user-select: none
 
 =selection
-	& ::selection
+	&::selection
 		@content
-	& ::-moz-selection
+	&::-moz-selection
 		@content
 
 //triangle
@@ -284,6 +284,7 @@
 		outline: none
 		&:hover, &:focus, &:active
 			outline: none
+		@content
 
 =draw($color:#193c6a)
 	.draw
@@ -506,7 +507,7 @@
 			@extend %san
 			width: 50%
 			top: 50%
-			+translateY(-75%)
+			+translateY
 		.sw-footer 
 			@extend %san
 			width: 80%

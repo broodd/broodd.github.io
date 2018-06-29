@@ -1,10 +1,23 @@
+hard конструктор
+карточка
+корзина
+корзина оформлення
+
+
+
+
+
+
+
+
+
+
+
+
+
 menu submenu arrow do for all
 input border for all
 
-
-
-open_nav
-	event hover and click
 
 
 

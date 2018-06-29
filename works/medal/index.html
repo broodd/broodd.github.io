@@ -20,7 +20,7 @@
 
 	<div class="d-none toggle" id="sign-in">
 		<div class="form-wrap border-radius shadow">
-			<div class="form__image">
+			<div class="form__image d-none d-md-block">
 				<img src="img/form_in.jpg" alt="">
 			</div>
 			<div class="form__aside">
@@ -31,8 +31,14 @@
 				<div class="form__other">
 					<form action="" class="form">
 						<div class="form-border">
-							<input type="text" placeholder="Имя">
-							<input type="text" placeholder="E-mail">
+							<div class="input__placeholder">
+								<span>E-mail</span>
+								<input type="text">
+							</div>
+							<div class="input__placeholder">
+								<span>Пароль</span>
+								<input type="text">
+							</div>
 						</div>
 						<div class="d-flex justify-content-between margin-t_20">
 							<div>
@@ -41,7 +47,7 @@
 							</div>
 							<a href="#" class="font-12 under">Забыли пароль?</a>
 						</div>
-						<input type="submit" value="Войти" class="margin_t_30">
+						<input type="submit" value="Войти" class="margin-t_30">
 						<div class="d-flex justify-content-between margin-t_20">
 							<a href="#" class="font-12">У Вас нет аккаунта?</a>
 							<a href="#" class="font-12 under hide-toggle" data-open="#sign-up">Зарегистрируйтесь</a>
@@ -54,7 +60,7 @@
 
 	<div class="d-none toggle" id="sign-up">
 		<div class="form-wrap border-radius shadow">
-			<div class="form__image">
+			<div class="form__image d-none d-md-block">
 				<img src="img/form_up.jpg" alt="">
 			</div>
 			<div class="form__aside">
@@ -65,13 +71,32 @@
 				<div class="form__other">
 					<form action="" class="form">
 						<div class="form-border">
-							<input type="text" placeholder="Имя">
-							<input type="text" placeholder="Компания">
-							<input type="text" placeholder="Телефон">
-							<input type="text" placeholder="E-mail">
-							<input type="text" placeholder="Пароль">
+							<div class="input__placeholder">
+								<span>Имя</span>
+								<input type="text">
+							</div>
+							<div class="input__placeholder">
+								<span>Компания</span>
+								<input type="text">
+							</div>
+							<div class="input__placeholder">
+								<span>Телефон</span>
+								<input type="text">
+							</div>
+							<div class="input__placeholder">
+								<span>E-mail</span>
+								<input type="text">
+							</div>
+							<div class="input__placeholder">
+								<span>Пароль</span>
+								<input type="text">
+							</div>
 						</div>
-						<input type="submit" value="Войти" class="margin_t_30">
+						<div class="d-flex justify-content-center margin-30_a margin-t_20">
+							<a href="#"><i class="icon icon-facebook"></i></a>
+							<a href="#"><i class="icon icon-google"></i></a>
+						</div>
+						<input type="submit" value="Регистрация" class="margin_t_30">
 						<div class="d-flex justify-content-between margin-t_20">
 							<a href="#" class="font-12">Уже есть акаунт?</a>
 							<a href="#" class="font-12 under hide-toggle" data-open="#sign-in">Войти</a>
@@ -86,14 +111,14 @@
 	<div class="header-top bg-dark">
 		<div class="container">
 			<div class="row justify-content-between">
-				<div class="col-12 col-md-auto left">
+				<div class="col-12 col-sm-auto left">
 					<ul class="ul d-flex">
 						<li><a href="about.html">О компании</a></li>
 						<li><a href="pay.html">Доставка и оплата</a></li>
 						<li><a href="contact.html">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="col-12 col-md-auto right d-flex">
+				<div class="col-12 col-sm-auto right d-flex">
 					<div class="tel">
 						<i class="icon icon-phone margin-0_5"></i>
 						<a href="tel:0503425486">050 342 54 86</a>
@@ -124,12 +149,12 @@
 				<div class="col-auto brand-wrap">
 					<h1 class="brand"><a href="index.html">Медаль ТОП</a></h1>
 				</div>
-				<div class="col-12 col-lg-auto menu-wrap order-last order-md-0">
+				<div class="col-12 col-lg-auto menu-wrap order-last order-xl-0">
 					<nav class="nav nav-main d-none d-md-block">
 						<ul class="ul menu d-flex flex-column flex-md-row">
 							<li><a href="constructor.html">Создать свой кубок</a></li>
 							<li class="has-submenu">
-								<a href="catalog.html">Кубки</a>
+								<a href="catalog_subcat.html">Кубки</a>
 								<ul class="ul submenu">
 									<li><a href="catalog.html">Кубки элит</a></li>
 									<li><a href="catalog.html">Кубки МЯЧ</a></li>
@@ -140,7 +165,7 @@
 							</li>
 							<li><a href="catalog.html">Медали</a></li>
 							<li class="has-submenu">
-								<a href="catalog.html">Статуэкти</a>
+								<a href="catalog_subcat.html">Статуэкти</a>
 								<ul class="ul submenu">
 									<li><a href="catalog.html">Кубки элит</a></li>
 									<li><a href="catalog.html">Кубки МЯЧ</a></li>
@@ -152,7 +177,7 @@
 							<li><a href="catalog.html">Плакетки</a></li>
 							<li><a href="catalog.html">Ленты</a></li>
 							<li><a href="catalog.html">Жетоны</a></li>
-							<li class="has-submenu open_nav"><a href="catalog_subcat.html">Больше</a></li>
+							<li class="has-submenu"><a href="catalog_subcat.html">Больше</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -177,44 +202,50 @@
 						<div class="row">
 							<div class="col-lg-4 menu-wrap">
 								<ul class="ul menu">
-									<li class="has-submenu">
-										<a href="catalog.html">Кубки</a>
-										<ul class="ul submenu">
-											<li><a href="catalog.html">Кубки элит</a></li>
-											<li><a href="catalog.html">Кубки МЯЧ</a></li>
-											<li><a href="catalog.html">Кубки престиж 3000</a></li>
-											<li><a href="catalog.html">Кубки стандарт 2000</a></li>
-											<li><a href="catalog.html">Кубки эконом 1000</a></li>
-										</ul>
-									</li>
+									<li data-hover="#cups"><a href="catalog_subcat.html">Кубки</a></li>
 									<li><a href="catalog.html">Медали</a></li>
-									<li class="has-submenu">
-										<a href="catalog.html">Статуэкти</a>
-										<ul class="ul submenu">
-											<li><a href="catalog.html">Кубки элит</a></li>
-											<li><a href="catalog.html">Кубки МЯЧ</a></li>
-											<li><a href="catalog.html">Кубки престиж 3000</a></li>
-											<li><a href="catalog.html">Кубки стандарт 2000</a></li>
-											<li><a href="catalog.html">Кубки эконом 1000</a></li>
-										</ul>
-									</li>
+									<li data-hover="#statues"><a href="catalog_subcat.html">Статуэкти</a></li>
 									<li><a href="catalog.html">Плакетки</a></li>
+								</ul>
+								<!-- sorry but maket and menu so so so bad for OpenCart, Wordpress, I don`t know how do this another -->
+								<ul class="ul submenu" id="cups">
+									<li><a href="catalog.html">Кубки элит</a></li>
+									<li><a href="catalog.html">Кубки МЯЧ</a></li>
+									<li><a href="catalog.html">Кубки престиж 3000</a></li>
+									<li><a href="catalog.html">Кубки эконом 1000</a></li>
+								</ul>
+								<ul class="ul submenu" id="statues">
+									<li><a href="catalog.html">Кубки элит</a></li>
+									<li><a href="catalog.html">Кубки престиж 3000</a></li>
+									<li><a href="catalog.html">Кубки стандарт 2000</a></li>
 								</ul>
 							</div>
 							<div class="col-lg-4 menu-wrap">
 								<ul class="ul menu">
-									<li><a href="catalog.html">Ленты</a></li>
+									<li data-hover="#lents"><a href="catalog.html">Ленты</a></li>
 									<li><a href="catalog.html">Жетоны</a></li>
 									<li><a href="catalog.html">Грамоты</a></li>
 									<li><a href="catalog.html">Шильдики</a></li>
+								</ul>
+								<ul class="ul submenu" id="lents">
+									<li><a href="catalog.html">Кубки элит</a></li>
+									<li><a href="catalog.html">Кубки МЯЧ</a></li>
+									<li><a href="catalog.html">Кубки престиж 3000</a></li>
+									<li><a href="catalog.html">Кубки эконом 1000</a></li>
 								</ul>
 							</div>
 							<div class="col-lg-4 menu-wrap">
 								<ul class="ul menu">
 									<li><a href="catalog.html">Стекло</a></li>
 									<li><a href="catalog.html">Тарелки</a></li>
-									<li><a href="catalog.html">Накладки на плакетки</a></li>
+									<li data-hover="#box"><a href="catalog.html">Накладки на плакетки</a></li>
 									<li><a href="catalog.html">Коробки под медаль</a></li>
+								</ul>
+								<ul class="ul submenu" id="box">
+									<li><a href="catalog.html">Кубки элит</a></li>
+									<li><a href="catalog.html">Кубки МЯЧ</a></li>
+									<li><a href="catalog.html">Кубки престиж 3000</a></li>
+									<li><a href="catalog.html">Кубки эконом 1000</a></li>
 								</ul>
 							</div>
 						</div>
@@ -432,19 +463,19 @@
 						<div class="stickers">
 							<div class="left">
 								<div class="sticker yellow"><span>sale</span></div>
-								<div class="sticker blue"><span>new</span></div>
 							</div>
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
+							<del>79 грн</del>
 							<span>39 грн</span>
 						</div>
 						<a href="#" class="btn btn-blue">В корзину</a>
@@ -455,20 +486,20 @@
 						<img src="img/just_oskar.png" alt="">
 						<div class="stickers">
 							<div class="left">
-								<div class="sticker yellow"><span>sale</span></div>
 								<div class="sticker blue"><span>new</span></div>
 							</div>
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
+							<del>79 грн</del>
 							<span>39 грн</span>
 						</div>
 						<a href="#" class="btn btn-blue">В корзину</a>
@@ -483,13 +514,13 @@
 								<div class="sticker blue"><span>new</span></div>
 							</div>
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
@@ -507,13 +538,13 @@
 								<div class="sticker blue"><span>new</span></div>
 							</div>
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
@@ -531,13 +562,13 @@
 								<div class="sticker blue"><span>new</span></div>
 							</div>
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
@@ -558,13 +589,34 @@
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
+					</div>
+					<div class="product__price">
+						<div class="price">
+							<del>79 грн</del>
+							<span>39 грн</span>
+						</div>
+						<a href="#" class="btn btn-blue">В корзину</a>
+					</div>
+				</div>
+				<div class="product col-3">
+					<div class="product__image">
+						<img src="img/just_medal.png" alt="">
+						<div class="stickers">
+							<div class="right">
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
+							</div>
+						</div>
+						<div class="code"><span>Код товара: 8732</span></div>
+					</div>
+					<div class="prouct__text">
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
@@ -578,13 +630,13 @@
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
@@ -598,13 +650,13 @@
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
@@ -618,33 +670,13 @@
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
-					</div>
-					<div class="product__price">
-						<div class="price">
-							<span>39 грн</span>
-						</div>
-						<a href="#" class="btn btn-blue">В корзину</a>
-					</div>
-				</div>
-				<div class="product col-3">
-					<div class="product__image">
-						<img src="img/just_medal.png" alt="">
-						<div class="stickers">
-							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
-							</div>
-						</div>
-						<div class="code"><span>Код товара: 8732</span></div>
-					</div>
-					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
@@ -717,8 +749,8 @@
 					</div>
 					<div class="d-flex">
 						<p class="margin-r_5">Мы в соц сетях:</p>
-						<i class="icon icon-facebook margin-0_5"></i>
-						<i class="icon icon-twitter margin-0_5"></i>
+						<a href="#"><i class="icon icon-facebook margin-0_5"></i></a>
+						<a href="#"><i class="icon icon-twitter margin-0_5"></i></a>
 					</div>
 				</div>
 				<div class="col-xl-4 order-md-first col-lg-6 col-md-9 order-last col-12">

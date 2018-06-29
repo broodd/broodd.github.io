@@ -23,6 +23,7 @@
 
 .header-top
 	padding: 15px 0
+	font-size: 12px
 	.lang-choice
 		margin-left: 80px
 
@@ -39,17 +40,22 @@
 	position: relative
 	padding: 25px 0
 	+bs(0px 4px 15px rgba(0, 0, 0, 0.08))
-	font-family: $ff-1
+	font-family: $ff-bold
 
 
 .nav
-	// &-main
+	text-transform: uppercase
+	.has-submenu,
+	.menu-arrow
+		& > a
+			&:after
+				border-width: 2px
+				margin-top: -2px
 	.menu
 		li
 			a
 				&:after
 					right: -15px
-
 	&-bottom
 		color: $black
 		position: absolute
@@ -63,20 +69,21 @@
 		line-height: toem(26)
 		&.active
 			display: block
-		.menu-wrap:not(:last-child)
-			border-right: 1px solid #E0E0E4
-			// &:last-child
-			// 	border: none
-		.has-submenu
+		.menu-wrap
 			display: flex
-			justify-content: space-between
+			justify-content: start
 			align-items: start
-			margin: 0
-			// &:hover
-			// 	.submenu
-			// 		display: block
-			.submenu
+			// &:not(:last-child)
+			border-right: 1px solid #E0E0E4
+			&:last-child
+				border: none
+			li
 				margin: 0
+			.submenu
+				text-transform: none
+				&.active
+					display: block
+
 
 .open_nav
 	&:hover
@@ -209,21 +216,32 @@
 
 	&, &.color-white
 		.font-22
-			color: $white
+			// color: $white
+			color: rgba(255, 255, 255, 0.6)
 			letter-spacing: 0.25em
+			+tr(400ms)
 	&.color-grey
 		.font-22
 			color: #DFDFDF
 			// color: rgba(255, 255, 255, 0.5)
+		&:hover
+			.font-22
+				color: #D5D5D5
 	&.rotate
 		.category_block__text
 			+rotate(-90)
-			transform-origin: 30% 50%
+			transform-origin: 26% 66%
 
 	&:hover
 		box-shadow: $shadow-category
+		&.yellow,&.purple,&.orange,&.purple
+			.font-22
+				color: $white
 		img
-			+translateX(3%)
+			margin-right: -5px
+			// right: -5px
+			// +translateX(5px)
+
 
 	&__text
 		position: absolute
@@ -232,6 +250,34 @@
 		left: 9%
 	&, & img
 		+tr(400ms)
+		position: relative
+		right: 0
+
+.col-12
+	&:nth-child(1)
+		.category_block
+			img
+				right: -27px
+	&:nth-child(3)
+		.category_block
+			img
+				height: calc(100% + 13px)
+	&:nth-child(5)
+		.category_block
+			img
+				top: -10px
+	&:nth-child(9)
+		.category_block
+			img
+				margin-top: -10px
+	&:nth-child(10)
+		.category_block
+			img
+				top: 10px
+	&:nth-child(12)
+		.category_block
+			img
+				top: -5px
 
 
 .product
@@ -318,8 +364,6 @@
 
 
 
-
-
 .favorite
 	padding: 30px 0
 	background-color: $white-d
@@ -374,10 +418,10 @@
 .form
 	input,textarea
 		width: 100%
-		+placeholder-color($copy)
+		// +placeholder-color($copy)
 		color: $text
 		padding: 20px 25px
-		font-size: 14px
+		font-size: 12px
 		border: none
 		outline: none
 	input[type="submit"]
@@ -385,6 +429,7 @@
 		color: $white
 		background: $lg-blue
 		padding: 15px
+		font-size: 14px
 	input[type="checkbox"]
 		width: auto
 		// -moz-appearance: none
@@ -415,10 +460,12 @@
 		input, textarea
 			border: 1px solid #DEDEE2
 			padding: 15px 25px
-		input:first-of-type
+		// input:first-of-type,
+		.input__placeholder:first-child input
 			border-top-left-radius: 10px
 			border-top-right-radius: 10px
-		input:last-of-type
+		// input:last-of-type,
+		.input__placeholder:last-child input
 			border-bottom-left-radius: 10px
 			border-bottom-right-radius: 10px
 
@@ -429,12 +476,15 @@
 		background-color: $white
 		width: 755px
 		max-width: 100%
+		max-height: 100%
+		overflow: hidden
 		&.border-radius
 			border-radius: 20px
 			overflow: hidden
 		.form
 			input[type="submit"]
-				border-radius: 20px				
+				border-radius: 20px
+				padding: 10px			
 			&__image
 				// border-top-left-radius: 20px
 				// border-bottom-left-radius: 20px
@@ -442,12 +492,75 @@
 				flex-shrink: 0
 				img
 					height: 100%
+			&__aside
+				flex: 1
 			&__title
 				background-color: #F3F3F4
 				padding: 15px 15px 15px 50px
 				color: $black
 			&__other
 				padding: 50px
+
+.input
+	&__placeholder
+		position: relative
+		span
+			position: absolute
+			left: 25px
+			top: 50%
+			+translateY
+			color: #C2C3C8
+			font-size: 12px
+			+tr(400ms ease-in-out)
+		input
+			padding-bottom: 7px
+			border-radius: 0
+		&.active
+			span
+				top: 10px
+				font-size: 9px
+
+
+.count
+	position: relative
+	width: 120px
+	&__input
+		border-radius: 20px
+		border: 1px solid #E0E0E4
+		color: $black
+		padding: 7px 20px
+		text-align: center
+
+	&__minus,
+	&__plus
+		position: absolute
+		top: 50%
+		+translateY
+		padding: 10px
+		cursor: pointer
+		+selection
+			background: none
+	&__minus
+		left: 10px
+	&__plus
+		right: 10px
+
+	&__close
+		display: inline-block
+		width: 50px
+		height: 50px
+		line-height: 50px
+		text-align: center
+		border: 1px solid #E0E0E4
+		border-radius: 50%
+		cursor: pointer
+		color: $black
+
+
+
+		// flex: 20%
+		// max-width: 20%
+	
 
 
 .bredcrumbs
@@ -521,7 +634,8 @@
 				// .block__under
 				// 	display: block
 
-.menu
+.menu,
+.ul
 	li
 		&:hover
 			color: $blue
@@ -535,6 +649,7 @@
 	display: none
 	&.active
 		display: block
+.menu-arrow,
 .has-submenu
 	& > a
 		position: relative
@@ -549,6 +664,7 @@
 			border-right: 1px solid $black
 			transform: rotate(45deg) translate(-50%,-50%)
 			transform-origin: left center
+			+tr(transform 200ms ease-in-out)
 
 
 
@@ -586,14 +702,16 @@
 		z-index: 2
 		font-size: 0
 		background: $white
-		border: none
 		outline: none
+		border: none
 		top: 50%
 		// top: 150px
 		border-radius: 50%
 		cursor: pointer
 		box-shadow: $shadow
 		+translateY
+		&:hover, &:active, &:focus
+			outline: none
 		&.slick-prev
 			left: -15px
 			&:after
@@ -723,3 +841,4 @@
 // 		transition: 400ms ease-in-out
 // 		overflow: scroll
 // 		height: calc(100vh -60px)
+

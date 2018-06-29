@@ -35,9 +35,26 @@
 
 	+san($lg-blue,30px,30px)
 
-
-// @media only screen and (min-width: 768px) and (max-width: 992px)
++w(768)
+	.brand
+		&-wrap
+			padding: 0
 	
+	.count__close,
+	.bag__price-sum
+		margin: 20px 0
+	
+	.text
+		&-center
+			&-md
+				text-align: center
+				// display: inline-block
+				
+				
+	.form-wrap
+		width: 500px
+		.form__other
+			padding: 30px
 
 
 +mw(768)
@@ -51,7 +68,26 @@
 		&-main
 			.submenu
 				display: none !important
+		&-bottom
+			.menu-wrap
+				.submenu
+					padding-left: 20px
+
+
+	.bag
+		&__title
+			padding: 0 40px
 	
 	// .hidden-lg
 	// 	display: none !important
-
++mw(1300)
+	.catblock
+		position: absolute
+		height: calc(100% / 3 - 15px)
+		&:nth-child(1)
+			top: 0
+		&:nth-child(2)
+			top: 50%
+			+translateY
+		&:nth-child(3)
+			bottom: 0
