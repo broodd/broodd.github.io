@@ -5,7 +5,9 @@ hard конструктор
 
 
 
+subcat menu not have hover
 
+chenge checkbox in catalog
 
 
 

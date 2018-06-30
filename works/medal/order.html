@@ -268,11 +268,133 @@
 		</div>
 	</div>
 
-
-	<section class="section-order">
+	
+	<!-- <form action=""> -->
+	<section class="section section-order padding-50_80">
 		<div class="container">
-			<div class="row justify-content-center">
-				<h4 class="font-22 text-center margin-b_40">Корзина</h4>
+			<div class="row">
+				<div class="col-12">
+					<h4 class="font-22 text-center margin-b_40">Оформление заказа</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<h4 class="font text-center">Контактные данные</h4>
+					<small>Я постоянный покупатель</small>
+					<a href="#" class="font-12 under margin-l_15" data-open="#sign-in">Войти</a>
+					<div class="form form-border margin-t_20">
+						<div class="input__placeholder">
+							<span>Имя</span>
+							<input type="text">
+						</div>
+						<div class="input__placeholder">
+							<span>Фамилия</span>
+							<input type="text">
+						</div>
+						<div class="input__placeholder">
+							<span>E-mail</span>
+							<input type="text">
+						</div>
+						<div class="input__placeholder">
+							<span>Телефон</span>
+							<input type="text">
+						</div>
+					</div>
+					<h4 class="font text-center margin-t_50">Контактные данные</h4>
+					<div class="form form-border margin-t_20">
+						<div class="input__placeholder">
+							<span>Страна</span>
+							<input type="text">
+						</div>
+						<div class="input__placeholder">
+							<span>Регион / Область</span>
+							<input type="text">
+						</div>
+						<div class="input__placeholder">
+							<span>Город</span>
+							<input type="text">
+						</div>
+						<div class="input__placeholder">
+							<span>Почтовый индекс</span>
+							<input type="text">
+						</div>
+						<div class="input__placeholder">
+							<span>Адрес</span>
+							<input type="text">
+						</div>
+					</div>
+					<a href="#" class="font-12 under margin-t_20 d-block" data-open="#sign-up">Зарегистрироваться</a>
+					<h4 class="font text-center margin-t_50">Комментарий к заказу</h4>
+					<div class="form form-border margin-t_20">
+						<textarea name="" id="" cols="30" rows="3" placeholder="Написать комментарий"></textarea>
+					</div>					
+				</div>
+				<div class="col-1 line-vertical d-none d-sm-block"></div>
+				<div class="col-sm-7">
+					<h4 class="font margin-md-t_30">Способ доставки</h4>
+					<div class="checkbox checkbox-margin margin-t_20 margin-b_40">
+						<input type="checkbox" id="sam">
+						<div class="checkbox__aside">
+							<label for="sam">Самовывоз</label>
+							<p>Вы можете забрать заказ, предварительно созвонившись с менеджером, подъехав по адресу г.Киев, Куреневский переулок 17.</p>
+						</div>
+					</div>
+					<div class="checkbox checkbox-margin margin-b_40">
+						<input type="checkbox" id="kur">
+						<div class="checkbox__aside">
+							<label for="kur">Доставка курьером по Киеву</label>
+							<p>При сумме заказа до 450 грн. – стоимость доставки по городу Киеву составляет 55 грн.</p>
+						</div>
+					</div>
+					<div class="checkbox checkbox-margin margin-b_40">
+						<input type="checkbox" id="new">
+						<div class="checkbox__aside">
+							<label for="new">Доставка компанией Новая Почта</label>
+							<p>Новой Почтой до склада за счет получателя</p>
+							<div class="select select-big">
+								<select name="" id="" class="select">
+									<option value="some">some1</option>
+									<option value="some">some2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="checkbox checkbox-margin margin-b_40">
+						<input type="checkbox" id="ukr">
+						<div class="checkbox__aside">
+							<label for="ukr">Отправка компанией «Укрпошта»</label>
+
+							<div>- сроки доставки до 6 дней от даты отправки заказа</div>
+							<div>- стоимость пересылки составляет от 15 до 20 грн (в зависимости от пункта назначения) при сумме заказа до 450 грн.<br>и сумме заказа от 450 грн. – стоимость пересылки - бесплатно</div>
+							<div>- стоимость перевода наложенного платежа составляет 4% от суммы заказа (сбор УкрПочты) (процент перевозчика за доставку денег от покупателя продавцу покупатель оплачивает самостоятельно</div>
+						</div>
+					</div>					
+					<h4 class="font">Способ оплати</h4>
+					<div class="checkbox checkbox-margin margin-t_20">
+						<input type="checkbox" name="" id="cart">
+						<div class="checkbox__aside">
+							<label for="cart">Картой у нас в офисе</label>
+						</div>
+					</div>
+					<div class="checkbox checkbox-margin">
+						<input type="checkbox" name="" id="cash">
+						<div class="checkbox__aside">
+							<label for="cash">Наложенным платежом</label>
+						</div>
+					</div>
+					<div class="checkbox checkbox-margin">
+						<input type="checkbox" name="" id="online">
+						<div class="checkbox__aside">
+							<label for="online">Кредитная карта / Дебетовая карта (LiqPay)</label>
+						</div>
+					</div>
+					<div class="checkbox checkbox-margin">
+						<input type="checkbox" name="" id="office">
+						<div class="checkbox__aside">
+							<label for="office">Наличными курьеру или у нас в офисе</label>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -354,6 +476,7 @@
 		</div>
 		</form>
 	</section>
+	<!-- </form> -->
 
 	<section class="section section-favorite">
 		<div class="container-fluid">

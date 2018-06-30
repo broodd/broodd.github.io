@@ -20,7 +20,7 @@
 
 	<div class="d-none toggle" id="sign-in">
 		<div class="form-wrap border-radius shadow">
-			<div class="form__image">
+			<div class="form__image d-none d-md-block">
 				<img src="img/form_in.jpg" alt="">
 			</div>
 			<div class="form__aside">
@@ -31,8 +31,14 @@
 				<div class="form__other">
 					<form action="" class="form">
 						<div class="form-border">
-							<input type="text" placeholder="Имя">
-							<input type="text" placeholder="E-mail">
+							<div class="input__placeholder">
+								<span>E-mail</span>
+								<input type="text">
+							</div>
+							<div class="input__placeholder">
+								<span>Пароль</span>
+								<input type="text">
+							</div>
 						</div>
 						<div class="d-flex justify-content-between margin-t_20">
 							<div>
@@ -41,7 +47,7 @@
 							</div>
 							<a href="#" class="font-12 under">Забыли пароль?</a>
 						</div>
-						<input type="submit" value="Войти" class="margin_t_30">
+						<input type="submit" value="Войти" class="margin-t_30">
 						<div class="d-flex justify-content-between margin-t_20">
 							<a href="#" class="font-12">У Вас нет аккаунта?</a>
 							<a href="#" class="font-12 under hide-toggle" data-open="#sign-up">Зарегистрируйтесь</a>
@@ -54,7 +60,7 @@
 
 	<div class="d-none toggle" id="sign-up">
 		<div class="form-wrap border-radius shadow">
-			<div class="form__image">
+			<div class="form__image d-none d-md-block">
 				<img src="img/form_up.jpg" alt="">
 			</div>
 			<div class="form__aside">
@@ -65,13 +71,32 @@
 				<div class="form__other">
 					<form action="" class="form">
 						<div class="form-border">
-							<input type="text" placeholder="Имя">
-							<input type="text" placeholder="Компания">
-							<input type="text" placeholder="Телефон">
-							<input type="text" placeholder="E-mail">
-							<input type="text" placeholder="Пароль">
+							<div class="input__placeholder">
+								<span>Имя</span>
+								<input type="text">
+							</div>
+							<div class="input__placeholder">
+								<span>Компания</span>
+								<input type="text">
+							</div>
+							<div class="input__placeholder">
+								<span>Телефон</span>
+								<input type="text">
+							</div>
+							<div class="input__placeholder">
+								<span>E-mail</span>
+								<input type="text">
+							</div>
+							<div class="input__placeholder">
+								<span>Пароль</span>
+								<input type="text">
+							</div>
 						</div>
-						<input type="submit" value="Войти" class="margin_t_30">
+						<div class="d-flex justify-content-center margin-30_a margin-t_20">
+							<a href="#"><i class="icon icon-facebook"></i></a>
+							<a href="#"><i class="icon icon-google"></i></a>
+						</div>
+						<input type="submit" value="Регистрация" class="margin_t_30">
 						<div class="d-flex justify-content-between margin-t_20">
 							<a href="#" class="font-12">Уже есть акаунт?</a>
 							<a href="#" class="font-12 under hide-toggle" data-open="#sign-in">Войти</a>
@@ -83,19 +108,19 @@
 	</div>
 
 
-	<div class="header-top bg-dark">
+	<div class="header-top bg-dark" id="top">
 		<div class="container">
 			<div class="row justify-content-between">
-				<div class="col-12 col-md-auto left">
+				<div class="col-12 col-sm-auto left">
 					<ul class="ul d-flex">
 						<li><a href="about.html">О компании</a></li>
 						<li><a href="pay.html">Доставка и оплата</a></li>
 						<li><a href="contact.html">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="col-12 col-md-auto right d-flex">
+				<div class="col-12 col-sm-auto right d-flex justify-content-between">
 					<div class="tel">
-						<i class="icon icon-phone margin-0_5"></i>
+						<i class="icon icon-phone margin-r_5"></i>
 						<a href="tel:0503425486">050 342 54 86</a>
 					</div>
 					<div class="select">
@@ -113,17 +138,42 @@
 
 	<div class="navbar color-black">
 		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				<div class="col-12 col-lg-auto brand-wrap">
+			<div class="row justify-content-md-between align-items-center">
+				<div class="col-auto d-block d-md-none">
+					<div id="sandwich">
+						<div class="sw-topper"></div>
+						<div class="sw-bottom"></div>
+						<div class="sw-footer"></div>
+					</div>
+				</div>
+				<div class="col-auto brand-wrap">
 					<h1 class="brand"><a href="index.html">Медаль ТОП</a></h1>
 				</div>
-				<div class="col-12 col-lg-auto menu-wrap d-none d-md-block">
-					<nav class="nav-main">
+				<div class="col-12 col-lg-auto menu-wrap order-last order-xl-0">
+					<nav class="nav nav-main d-none d-md-block">
 						<ul class="ul menu d-flex flex-column flex-md-row">
 							<li><a href="constructor.html">Создать свой кубок</a></li>
-							<li class="has-submenu"><a href="catalog.html">Кубки</a></li>
-							<li class="has-submenu"><a href="catalog.html">Медали</a></li>
-							<li><a href="catalog.html">Статуэкти</a></li>
+							<li class="has-submenu">
+								<a href="catalog_subcat.html">Кубки</a>
+								<ul class="ul submenu">
+									<li><a href="catalog.html">Кубки элит</a></li>
+									<li><a href="catalog.html">Кубки МЯЧ</a></li>
+									<li><a href="catalog.html">Кубки престиж 3000</a></li>
+									<li><a href="catalog.html">Кубки стандарт 2000</a></li>
+									<li><a href="catalog.html">Кубки эконом 1000</a></li>
+								</ul>
+							</li>
+							<li><a href="catalog.html">Медали</a></li>
+							<li class="has-submenu">
+								<a href="catalog_subcat.html">Статуэкти</a>
+								<ul class="ul submenu">
+									<li><a href="catalog.html">Кубки элит</a></li>
+									<li><a href="catalog.html">Кубки МЯЧ</a></li>
+									<li><a href="catalog.html">Кубки престиж 3000</a></li>
+									<li><a href="catalog.html">Кубки стандарт 2000</a></li>
+									<li><a href="catalog.html">Кубки эконом 1000</a></li>
+								</ul>
+							</li>
 							<li><a href="catalog.html">Плакетки</a></li>
 							<li><a href="catalog.html">Ленты</a></li>
 							<li><a href="catalog.html">Жетоны</a></li>
@@ -131,46 +181,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="col-12 order-md-last">
-					<nav class="nav-bottom">
-						<div class="row flex-column flex-md-row">
-							<div class="col-3">
-								<ul class="ul menu">
-									<li class="has-submenu">
-										<a href="catalog.html">Кубки</a>
-										<ul class="ul submenu">
-											<li><a href="catalog.html">Кубки элит</a></li>
-											<li><a href="catalog.html">Кубки МЯЧ</a></li>
-											<li><a href="catalog.html">Кубки престиж 3000</a></li>
-											<li><a href="catalog.html">Кубки стандарт 2000</a></li>
-											<li><a href="catalog.html">Кубки эконом 1000</a></li>
-										</ul>
-									</li>
-									<li><a href="catalog.html">Медали</a></li>
-									<li><a href="catalog.html">Статуэкти</a></li>
-									<li><a href="catalog.html">Плакетки</a></li>
-								</ul>
-							</div>
-							<div class="col-3">
-								<ul class="ul">
-									<li><a href="catalog.html">Ленты</a></li>
-									<li><a href="catalog.html">Жетоны</a></li>
-									<li><a href="catalog.html">Грамоты</a></li>
-									<li><a href="catalog.html">Шильдики</a></li>
-								</ul>
-							</div>
-							<div class="col-3">
-								<ul class="ul">
-									<li><a href="catalog.html">Стекло</a></li>
-									<li><a href="catalog.html">Тарелки</a></li>
-									<li><a href="catalog.html">Накладки на плакетки</a></li>
-									<li><a href="catalog.html">Коробки под медаль</a></li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-				</div>
-				<div class="col-12 col-lg-auto icon-wrap">
+				<div class="col-auto icon-wrap">
 					<a href="#" class="ic">
 						<img src="img/icon_search.svg" alt="">
 					</a>
@@ -186,203 +197,216 @@
 						<span class="notify">2</span>
 					</a>
 				</div>
+				<nav class="col-12 nav nav-bottom d-none">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 menu-wrap">
+								<ul class="ul menu">
+									<li data-hover="#cups"><a href="catalog_subcat.html">Кубки</a></li>
+									<li><a href="catalog.html">Медали</a></li>
+									<li data-hover="#statues"><a href="catalog_subcat.html">Статуэкти</a></li>
+									<li><a href="catalog.html">Плакетки</a></li>
+								</ul>
+								<!-- sorry but maket and menu so so so bad for OpenCart, Wordpress, I don`t know how do this another -->
+								<ul class="ul submenu" id="cups">
+									<li><a href="catalog.html">Кубки элит</a></li>
+									<li><a href="catalog.html">Кубки МЯЧ</a></li>
+									<li><a href="catalog.html">Кубки престиж 3000</a></li>
+									<li><a href="catalog.html">Кубки эконом 1000</a></li>
+								</ul>
+								<ul class="ul submenu" id="statues">
+									<li><a href="catalog.html">Кубки элит</a></li>
+									<li><a href="catalog.html">Кубки престиж 3000</a></li>
+									<li><a href="catalog.html">Кубки стандарт 2000</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-4 menu-wrap">
+								<ul class="ul menu">
+									<li data-hover="#lents"><a href="catalog.html">Ленты</a></li>
+									<li><a href="catalog.html">Жетоны</a></li>
+									<li><a href="catalog.html">Грамоты</a></li>
+									<li><a href="catalog.html">Шильдики</a></li>
+								</ul>
+								<ul class="ul submenu" id="lents">
+									<li><a href="catalog.html">Кубки элит</a></li>
+									<li><a href="catalog.html">Кубки МЯЧ</a></li>
+									<li><a href="catalog.html">Кубки престиж 3000</a></li>
+									<li><a href="catalog.html">Кубки эконом 1000</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-4 menu-wrap">
+								<ul class="ul menu">
+									<li><a href="catalog.html">Стекло</a></li>
+									<li><a href="catalog.html">Тарелки</a></li>
+									<li data-hover="#box"><a href="catalog.html">Накладки на плакетки</a></li>
+									<li><a href="catalog.html">Коробки под медаль</a></li>
+								</ul>
+								<ul class="ul submenu" id="box">
+									<li><a href="catalog.html">Кубки элит</a></li>
+									<li><a href="catalog.html">Кубки МЯЧ</a></li>
+									<li><a href="catalog.html">Кубки престиж 3000</a></li>
+									<li><a href="catalog.html">Кубки эконом 1000</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bredcrumbs">
+					<a href="index.html"><span>Главная</span></a>
+					<span class="sep"> / </span>
+					<a href="catalog_subcat.html"><span>Медали</span></a>
+					<span class="sep"> / </span>
+					<span class="title">Название товара</span>
+				</div>
 			</div>
 		</div>
 	</div>
 
 
-	<section class="section section-main margin-30_a">
+	<section class="section section-product padding-50_80">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-9 col-md-7 col-sm-12">
-					<div class="slick-wrap slick__1 slick-arrow_blue">
-						<img src="img/main_slide_1.jpg" alt="">
-						<img src="img/main_slide_1.jpg" alt="">
-						<img src="img/main_slide_1.jpg" alt="">
+				<div class="col-12 col-sm-2 col-md-1">
+					<div class="slick-wrap slick__vertical">
+						<div class="slick__img">
+							<img src="img/prod_medal.png" alt="">
+						</div>
+						<div class="slick__img">
+							<img src="img/prod_medal.png" alt="">
+						</div>
+						<div class="slick__img">
+							<img src="img/prod_medal.png" alt="">
+						</div>
+						<div class="slick__img">
+							<img src="img/prod_medal.png" alt="">
+						</div>
 					</div>
 				</div>
-				<div class="col-xl-3 col-md-5 col-sm-12">
+				<div class="col-12 col-sm-4 order-first order-sm-0">
+					<div class="slick-wrap slick__for">
+						<div class="slick__img">
+							<img src="img/prod_medal.png" alt="">
+						</div>
+						<div class="slick__img">
+							<img src="img/prod_medal.png" alt="">
+						</div>
+						<div class="slick__img">
+							<img src="img/prod_medal.png" alt="">
+						</div>
+						<div class="slick__img">
+							<img src="img/prod_medal.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm col-xl-2 margin-md-t_30">
 					<div class="row">
-						<div class="col-12 catblock d-flex">
-						<img src="img/main_cat_1.png" alt="">
-						<div class="catblock__text">
-							<p class="font bold">Название категории</p>
-							<a href="#" class="under">К покупкам</a>
+						<div class="col-12">
+							<h3 class="font-22">Название товара</h3>
+							<p class="font-12 color-green margin-t_20">В наличии</p>
+							<p class="font-12 color-black margin-b_40">Код товара: 8732</p>
 						</div>
 					</div>
-					<div class="col-12 catblock d-flex">
-						<img src="img/main_cat_2.png" alt="">
-						<div class="catblock__text">
-							<p class="font bold">Название категории</p>
-							<a href="#" class="under">К покупкам</a>
+					<div class="row margin-b_40">
+						<div class="col-6">
+							<div class="font-22 color-blue">54 грн</div>
+						</div>
+						<div class="col-6">
+							<div class="count w-100">
+								<div class="count__minus">-</div>
+								<input type="text" class="count__input" value="1">
+								<div class="count__plus">+</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-12 catblock d-flex">
-						<img src="img/main_cat_3.png" alt="">
-						<div class="catblock__text">
-							<p class="font bold">Название категории</p>
-							<a href="#" class="under">К покупкам</a>
+					<div class="row">
+						<div class="col-12">
+							<!-- <input type="submit" class="btn btn-blue" value="В корзину"> -->
+							<a class="btn btn-blue w-100 text-center" href="favorite.html">В корзину</a>
+						</div>
+						<div class="col-12 margin-t_30">
+							<a name="favorite" class="sticker star" href="favorite.html" title="В закладки">
+								<i class="icon icon-star"></i>
+							</a>
+							<a href="favorite.html" class="font-14" >Добавить в избранное</a>
 						</div>
 					</div>
+				</div>
+				<div class="col-xl-5 margin-md-t_30">
+					<p class="font bold">Лента:</p>
+					<div class="slick-wrap slick__5 slick-arrow_small margin-t_30">
+						<div class="lenta">
+							<div class="lenta__image">
+								<img src="img/lenta_none.png" alt="">
+							</div>
+							<div class="lenta__text">
+								<p class="font-10 color-black">Без ленты</p>
+							</div>
+						</div>
+						<div class="lenta">
+							<div class="lenta__image">
+								<img src="img/lenta_green.png" alt="">
+							</div>
+							<div class="lenta__text">
+								<p class="font-10 color-black">10 мм сине-желтая №L15by</p>
+								<p class="font-10 bold color-blue">+7,50 грн</p>
+							</div>
+						</div>
+						<div class="lenta">
+							<div class="lenta__image">
+								<img src="img/lenta_blue.png" alt="">
+							</div>
+							<div class="lenta__text">
+								<p class="font-10 color-black">10 мм сине-желтая №L15by lorem awdawd  adwdawd</p>
+								<p class="font-10 bold color-blue">+7,50 грн</p>
+							</div>
+						</div>
+						<div class="lenta">
+							<div class="lenta__image">
+								<img src="img/lenta_yellow.png" alt="">
+							</div>
+							<div class="lenta__text">
+								<p class="font-10 color-black">10 мм сине-желтая №L15by</p>
+								<p class="font-10 bold color-blue">+7,50 грн</p>
+							</div>
+						</div>
+						<div class="lenta">
+							<div class="lenta__image">
+								<img src="img/lenta_green.png" alt="">
+							</div>
+							<div class="lenta__text">
+								<p class="font-10 color-black">10 мм сине-желтая №L15by awdawd</p>
+								<p class="font-10 bold color-blue">+7,50 грн</p>
+							</div>
+						</div>
+						<div class="lenta">
+							<div class="lenta__image">
+								<img src="img/lenta_blue.png" alt="">
+							</div>
+							<div class="lenta__text">
+								<p class="font-10 color-black">10 мм сине-желтая №L15by</p>
+								<p class="font-10 bold color-blue">+7,50 грн</p>
+							</div>
+						</div>
+					</div>
+					<div class="row margin-t_50">
+						<div class="col-12">
+							<p class="font">Если вы хотите добавить надпись:</p>
+							<textarea class="textarea bg-grey border-r_bottom margin-t_20" name="" id="" rows="3" placeholder="Оставьте комментарий"></textarea>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-
-	<section class="section section-cart">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 cart-wrap cart-left">
-					<div class="cart bg bg-purple">
-						<img src="img/main_cart_1.jpg" alt="">
-						<div class="cart__text">
-							<h3 class="font-18 letter"><a href="#">Название заголовка баннера</a></h3>
-							<p>Взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
-							<a href="#" class="btn btn-white">К покупкам</a>
-						</div>
-					</div>
-					<div class="cart">
-						<img src="img/main_cart_2.jpg" alt="">
-						<div class="cart__text">
-							<h3 class="font-18 letter"><a href="#">Название заголовка баннера</a></h3>
-							<p>Взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
-							<a href="#" class="btn btn-blue">К покупкам</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 cart-wrap cart-right">
-					<div class="cart">
-						<img src="img/main_cart_3.jpg" alt="">
-						<div class="cart__text">
-							<h3 class="font-18 letter"><a href="#">Название заголовка баннера</a></h3>
-							<p>Взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
-							<a href="#" class="btn btn-blue">К покупкам</a>
-						</div>
-					</div>
-					<div class="cart bg bg-lime">
-						<img src="img/main_cart_4.jpg" alt="">
-						<div class="cart__text">
-							<h3 class="font-18 letter"><a href="#">Название заголовка баннера</a></h3>
-							<p>Взятый с потолка псевдо-латинский набор слов, но это не совсем так.</p>
-							<a href="#" class="btn btn-white">К покупкам</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="section section-category padding-a_80">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h4 class="font-22 letter text-center margin-b_40">Категории товаров</h4>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block purple d-flex" href="#">
-						<img src="img/main_category_1.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Кубки</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block yellow d-flex" href="#">
-						<img src="img/main_category_2.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Медали</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block color-grey rotate d-flex" href="#">
-						<img src="img/main_category_3.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Статуэтки</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block orange color-grey rotate d-flex" href="#">
-						<img src="img/main_category_4.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Плакетки</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block lime d-flex" href="#">
-						<img src="img/main_category_5_t.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Ленты</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block color-grey rotate d-flex" href="#">
-						<img src="img/main_category_6.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Жетоны</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block lime colorgrey rotate d-flex" href="#">
-						<img src="img/main_category_7.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Грамоты</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block yellow d-flex" href="#">
-						<img src="img/main_category_8.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Шильдики</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block purple color-grey d-flex" href="#">
-						<img src="img/main_category_9.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Стекло</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block yellow rotate d-flex" href="#">
-						<img src="img/main_category_10_t.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Тарелки</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block color-grey rotate d-flex" href="#">
-						<img src="img/main_category_11.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter bold">Накладки<br>на плакетки</h4>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-12 margin-b_40">
-					<a class="category_block purple color-grey rotate d-flex" href="#">
-						<img src="img/main_category_12_t.png" alt="">
-						<div class="category_block__text">
-							<h4 class="font-22 letter">Коробки<br>под медаль</h4>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
+	
 
 	<section class="section section-catalog bg-grey padding-a_80">
 		<div class="container">
@@ -398,19 +422,19 @@
 						<div class="stickers">
 							<div class="left">
 								<div class="sticker yellow"><span>sale</span></div>
-								<div class="sticker blue"><span>new</span></div>
 							</div>
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
+							<del>79 грн</del>
 							<span>39 грн</span>
 						</div>
 						<a href="#" class="btn btn-blue">В корзину</a>
@@ -421,20 +445,20 @@
 						<img src="img/just_oskar.png" alt="">
 						<div class="stickers">
 							<div class="left">
-								<div class="sticker yellow"><span>sale</span></div>
 								<div class="sticker blue"><span>new</span></div>
 							</div>
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
+							<del>79 грн</del>
 							<span>39 грн</span>
 						</div>
 						<a href="#" class="btn btn-blue">В корзину</a>
@@ -449,13 +473,13 @@
 								<div class="sticker blue"><span>new</span></div>
 							</div>
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
@@ -473,13 +497,13 @@
 								<div class="sticker blue"><span>new</span></div>
 							</div>
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
@@ -497,13 +521,13 @@
 								<div class="sticker blue"><span>new</span></div>
 							</div>
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
@@ -524,13 +548,34 @@
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
+					</div>
+					<div class="product__price">
+						<div class="price">
+							<del>79 грн</del>
+							<span>39 грн</span>
+						</div>
+						<a href="#" class="btn btn-blue">В корзину</a>
+					</div>
+				</div>
+				<div class="product col-3">
+					<div class="product__image">
+						<img src="img/just_medal.png" alt="">
+						<div class="stickers">
+							<div class="right">
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
+							</div>
+						</div>
+						<div class="code"><span>Код товара: 8732</span></div>
+					</div>
+					<div class="prouct__text">
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
@@ -544,13 +589,13 @@
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
@@ -564,13 +609,13 @@
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
@@ -584,33 +629,13 @@
 						<img src="img/just_medal.png" alt="">
 						<div class="stickers">
 							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
+								<a class="sticker star" href="favorite.html" title="В закладки"><i class="icon icon-star"></i></a>
 							</div>
 						</div>
 						<div class="code"><span>Код товара: 8732</span></div>
 					</div>
 					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
-					</div>
-					<div class="product__price">
-						<div class="price">
-							<span>39 грн</span>
-						</div>
-						<a href="#" class="btn btn-blue">В корзину</a>
-					</div>
-				</div>
-				<div class="product col-3">
-					<div class="product__image">
-						<img src="img/just_medal.png" alt="">
-						<div class="stickers">
-							<div class="right">
-								<a class="sticker star" title="В закладки"><i class="icon icon-star"></i></a>
-							</div>
-						</div>
-						<div class="code"><span>Код товара: 8732</span></div>
-					</div>
-					<div class="prouct__text">
-						<p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p>
+						<a href="product.html"><p class="font">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</p></a>
 					</div>
 					<div class="product__price">
 						<div class="price">
@@ -682,9 +707,9 @@
 						</div>
 					</div>
 					<div class="d-flex">
-						<p class="margin-r_5">Мы в соц сетях:</p>
-						<i class="icon icon-facebook margin-0_5"></i>
-						<i class="icon icon-twitter margin-0_5"></i>
+						<span class="margin-r_5">Мы в соц сетях:</span>
+						<a href="#"><i class="icon icon-facebook margin-0_5"></i></a>
+						<a href="#"><i class="icon icon-twitter margin-0_5"></i></a>
 					</div>
 				</div>
 				<div class="col-xl-4 order-md-first col-lg-6 col-md-9 order-last col-12">
@@ -721,6 +746,8 @@
 						<input type="submit" class="submit" value="Отправить">
 					</form>
 				</div>
+
+				<a href="#top" class="scroll"></a>
 			</div>
 		</div>
 	</footer>

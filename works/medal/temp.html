@@ -15,6 +15,12 @@
 	<link rel="stylesheet" href="css/media.css" />
 	<!-- theme color for android 5.0 -->
 	<meta name="theme-color" content="#fff"/> 
+
+
+
+	<script src="libs/jquery-2.1.3.min.js"></script>
+	<script src="libs/slick.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<div class="window d-none"></div>
@@ -45,90 +51,29 @@
 		</div>
 	</div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-6">
-			<form action="" class="form form-border">
-				<input type="text" placeholder="Имя">
-				<input type="text" placeholder="E-mail">
-				<input type="text" placeholder="Телефон">
-				<textarea name="" cols="30" rows="10" placeholder="Сообщение"></textarea>
-				<input type="submit" value="Отправить">
-			</form>
-		</div>
-	</div>
-</div>
-
-
-<div class="container">
-	<div class="row">
-		<div class="col-6">
-			<div class="d-none toggle" id="sign-in">
-				<div class="form-wrap border-radius shadow">
-					<div class="form__image">
-						<img src="img/form_in.jpg" alt="">
-					</div>
-					<div class="form__aside">
-						<div class="form__title d-flex justify-content-between align-items-center">
-							<div class="font-18 letter bold">Вход</div>
-							<i class="icon icon-close"></i>
-						</div>
-						<div class="form__other">
-							<form action="" class="form">
-								<div class="form-border">
-									<input type="text" placeholder="Имя">
-									<input type="text" placeholder="E-mail">
-								</div>
-								<div class="d-flex justify-content-between margin-t_20">
-									<div>
-										<input type="checkbox" id="check">								
-										<label for="check" class="font-12">Запомнить меня</label>
-									</div>
-									<a href="#" class="font-12 under">Забыли пароль?</a>
-								</div>
-								<input type="submit" value="Войти" class="margin_t_30">
-								<div class="d-flex justify-content-between margin-t_20">
-									<a href="#" class="font-12">У Вас нет аккаунта?</a>
-									<a href="#" class="font-12 under hide-toggle" data-open="#sign-up">Зарегистрируйтесь</a>
-								</div>
-							</form>
-						</div>
-					</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-1">
+				<div class="slick-wrap slick__vertical">
+					<img src="img/prod_cup_small.png" alt="">
+					<img src="img/prod_cup_small.png" alt="">
+					<img src="img/prod_cup_small.png" alt="">
+					<img src="img/prod_cup_small.png" alt="">
 				</div>
 			</div>
-
-			<div class="d-none toggle" id="sign-up">
-				<div class="form-wrap border-radius shadow">
-					<div class="form__image">
-						<img src="img/form_up.jpg" alt="">
-					</div>
-					<div class="form__aside">
-						<div class="form__title d-flex justify-content-between align-items-center">
-							<div class="font-18 letter bold">Регистрация</div>
-							<i class="icon icon-close"></i>
-						</div>
-						<div class="form__other">
-							<form action="" class="form">
-								<div class="form-border">
-									<input type="text" placeholder="Имя">
-									<input type="text" placeholder="Компания">
-									<input type="text" placeholder="Телефон">
-									<input type="text" placeholder="E-mail">
-									<input type="text" placeholder="Пароль">
-								</div>
-								<input type="submit" value="Войти" class="margin_t_30">
-								<div class="d-flex justify-content-between margin-t_20">
-									<a href="#" class="font-12">Уже есть акаунт?</a>
-									<a href="#" class="font-12 under hide-toggle" data-open="#sign-in">Войти</a>
-								</div>
-							</form>
-						</div>
-					</div>
+			<div class="col-4">
+				<div class="slick-wrap slick__for">
+					<img src="img/prod_cup.png" alt="">
+					<img src="img/just_medal.png" alt="">
+					<img src="img/prod_cup.png" alt="">
+					<img src="img/just_oskar.png" alt="">
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+
+	<script>
+</script>
 
 	<footer class="footer bg-dark">
 		<div class="container">
@@ -204,9 +149,5 @@
 			</div>
 		</div>
 	</div>
-
-	<script src="libs/jquery-2.1.3.min.js"></script>
-	<script src="libs/slick.min.js"></script>
-	<script src="js/script.js"></script>
 </body>
 </html>

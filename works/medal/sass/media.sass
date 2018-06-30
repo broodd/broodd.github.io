@@ -49,18 +49,52 @@
 			&-md
 				text-align: center
 				// display: inline-block
-				
+
+	.margin
+		&-md-t
+			&_30
+				margin-top: 30px
+
+	.slick
+		&-arrow
+			&.slick-prev
+				left: 0
+			&.slick-next
+				right: 0
+			&_blue
+				.slick-arrow
+					&.slick-prev
+						left: 15px
+					&.slick-next
+						right: 15px
 				
 	.form-wrap
 		width: 500px
 		.form__other
 			padding: 30px
 
+	.map-wrap
+		padding: 0
+		margin-top: 50px
+
++w(575)
+	.header
+		&-top
+			.right
+				margin-top: 15px
+
 
 +mw(768)
 	.cart
 		&:last-of-type
 			margin-bottom: 0
+
+	.contact
+		&:nth-child(2n+1)
+			border-right: 1px solid $grey
+		&:nth-last-child(2),
+		&:last-child
+			border-bottom: none
 
 
 +mw(992)
