@@ -112,7 +112,7 @@
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-12 col-sm-auto left">
-					<ul class="ul d-flex">
+					<ul class="ul d-flex justify-content-between w-100p">
 						<li><a href="about.html">О компании</a></li>
 						<li><a href="pay.html">Доставка и оплата</a></li>
 						<li><a href="contact.html">Контакты</a></li>
@@ -126,7 +126,7 @@
 					<div class="select">
 						<select name="lang_choice" class="lang-choice">
 							<option value="uk" selected="selected">UA</option>
-							<option value="en">EN</option>
+							<option value="ru">RU</option>
 						</select>
 					</div>
 				</div>
@@ -138,8 +138,8 @@
 
 	<div class="navbar color-black">
 		<div class="container">
-			<div class="row justify-content-md-between align-items-center">
-				<div class="col-auto d-block d-md-none">
+			<div class="row justify-content-sm-between align-items-center">
+				<div class="col-auto d-block d-lg-none">
 					<div id="sandwich">
 						<div class="sw-topper"></div>
 						<div class="sw-bottom"></div>
@@ -149,9 +149,9 @@
 				<div class="col-auto brand-wrap">
 					<h1 class="brand"><a href="index.html">Медаль ТОП</a></h1>
 				</div>
-				<div class="col-12 col-lg-auto menu-wrap order-last order-xl-0">
-					<nav class="nav nav-main d-none d-md-block">
-						<ul class="ul menu d-flex flex-column flex-md-row">
+				<div class="col-12 col-xl-auto menu-wrap order-last order-xl-0 order-spec">
+					<nav class="nav nav-main d-none d-lg-block">
+						<ul class="ul menu d-flex flex-column flex-lg-row">
 							<li><a href="constructor.html">Создать свой кубок</a></li>
 							<li class="has-submenu">
 								<a href="catalog_subcat.html">Кубки</a>
@@ -163,9 +163,8 @@
 									<li><a href="catalog.html">Кубки эконом 1000</a></li>
 								</ul>
 							</li>
-							<li><a href="catalog.html">Медали</a></li>
 							<li class="has-submenu">
-								<a href="catalog_subcat.html">Статуэкти</a>
+								<a href="catalog.html">Медали</a>
 								<ul class="ul submenu">
 									<li><a href="catalog.html">Кубки элит</a></li>
 									<li><a href="catalog.html">Кубки МЯЧ</a></li>
@@ -174,10 +173,30 @@
 									<li><a href="catalog.html">Кубки эконом 1000</a></li>
 								</ul>
 							</li>
+							<li><a href="catalog_subcat.html">Статуэкти</a></li>
 							<li><a href="catalog.html">Плакетки</a></li>
 							<li><a href="catalog.html">Ленты</a></li>
 							<li><a href="catalog.html">Жетоны</a></li>
-							<li class="has-submenu"><a href="catalog_subcat.html">Больше</a></li>
+							<li class="has-submenu open-nav">
+								<a href="catalog_subcat.html">Больше</a>
+								<ul class="ul submenu">
+									<li><a href="catalog.html">Грамоты</a></li>
+									<li class="has-submenu">
+										<a href="catalog.html">Шильдики</a>
+										<ul class="ul submenu">
+											<li><a href="catalog.html">Кубки элит</a></li>
+											<li><a href="catalog.html">Кубки МЯЧ</a></li>
+											<li><a href="catalog.html">Кубки престиж 3000</a></li>
+											<li><a href="catalog.html">Кубки стандарт 2000</a></li>
+											<li><a href="catalog.html">Кубки эконом 1000</a></li>
+										</ul>
+									</li>
+									<li><a href="catalog.html">Стекло</a></li>
+									<li><a href="catalog.html">Тарелки</a></li>
+									<li><a href="catalog.html">Накладки на плакетки</a></li>
+									<li><a href="catalog.html">Коробки под медаль</a></li>
+								</ul>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -207,7 +226,11 @@
 									<li data-hover="#statues"><a href="catalog_subcat.html">Статуэкти</a></li>
 									<li><a href="catalog.html">Плакетки</a></li>
 								</ul>
-								<!-- sorry but maket and menu so so so bad for OpenCart, Wordpress, I don`t know how do this another -->
+
+								<!-- *******************************************
+									sorry but maket and menu so so so bad for OpenCart, Wordpress, I don`t know how do this another 
+								*******************************************
+								-->
 								<ul class="ul submenu" id="cups">
 									<li><a href="catalog.html">Кубки элит</a></li>
 									<li><a href="catalog.html">Кубки МЯЧ</a></li>
@@ -227,6 +250,7 @@
 									<li><a href="catalog.html">Грамоты</a></li>
 									<li><a href="catalog.html">Шильдики</a></li>
 								</ul>
+
 								<ul class="ul submenu" id="lents">
 									<li><a href="catalog.html">Кубки элит</a></li>
 									<li><a href="catalog.html">Кубки МЯЧ</a></li>
@@ -241,6 +265,7 @@
 									<li data-hover="#box"><a href="catalog.html">Накладки на плакетки</a></li>
 									<li><a href="catalog.html">Коробки под медаль</a></li>
 								</ul>
+
 								<ul class="ul submenu" id="box">
 									<li><a href="catalog.html">Кубки элит</a></li>
 									<li><a href="catalog.html">Кубки МЯЧ</a></li>
@@ -254,7 +279,6 @@
 			</div>
 		</div>
 	</div>
-
 	
 	<div class="container">
 		<div class="row">
@@ -277,16 +301,16 @@
 				<div class="col-12 col-sm-2 col-md-1">
 					<div class="slick-wrap slick__vertical">
 						<div class="slick__img">
-							<img src="img/prod_cup.png" alt="">
+							<img src="img/prod_cup_small.png" alt="">
 						</div>
 						<div class="slick__img">
-							<img src="img/prod_cup.png" alt="">
+							<img src="img/prod_cup_small.png" alt="">
 						</div>
 						<div class="slick__img">
-							<img src="img/prod_cup.png" alt="">
+							<img src="img/prod_cup_small.png" alt="">
 						</div>
 						<div class="slick__img">
-							<img src="img/prod_cup.png" alt="">
+							<img src="img/prod_cup_small.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -296,13 +320,13 @@
 							<img src="img/prod_cup.png" alt="">
 						</div>
 						<div class="slick__img">
-							<img src="img/just_medal.png" alt="">
+							<img src="img/prod_cup.png" alt="">
 						</div>
 						<div class="slick__img">
 							<img src="img/prod_cup.png" alt="">
 						</div>
 						<div class="slick__img">
-							<img src="img/just_oskar.png" alt="">
+							<img src="img/prod_cup.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -329,13 +353,13 @@
 					<div class="row">
 						<div class="col-6">
 							<!-- <input type="submit" class="btn btn-blue" value="В корзину"> -->
-							<a class="btn btn-blue w-100 text-center" href="favorite.html">В корзину</a>
+							<a class="btn btn-blue w-100 text-center" href="#">В корзину</a>
 						</div>
 						<div class="col-12 col-md-6 margin-md-t_30">
-							<a name="favorite" class="sticker star" href="favorite.html" title="В закладки">
+							<a name="favorite" class="sticker star margin-r_5" href="favorite.html" title="В закладки">
 								<i class="icon icon-star"></i>
 							</a>
-							<a href="favorite.html" class="font-14" >Добавить в избранное</a>
+							<a href="favorite.html" class="font-14 color-black">Добавить в избранное</a>
 						</div>
 					</div>
 					<div class="row margin-t_50">
@@ -345,7 +369,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-3 margin-md-t_30">
+				<div class="col-xl-3 margin-md-t_30 border-xl-l">
 					<p class="font bold">Характеристики:</p>
 					<div class="text margin-t_30">
 						<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." </p>
@@ -362,7 +386,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h4 class="font-22 letter text-center margin-b_40">Самые популярные товары</h4>
+					<h4 class="font-22 letter text-center margin-b_40">Вас может заинтересовать</h4>
 				</div>
 			</div>
 			<div class="slick-wrap slick__4 margin-row margin-b_90">
@@ -615,7 +639,7 @@
 		</div>
 	</section>
 
-	<section class="section section-favorite">
+	<section class="section section-favorite bold">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg col-sm-6 col-12 favorite color-blue d-flex justify-content-center align-items-center">
@@ -641,7 +665,7 @@
 	<footer class="footer bg-dark">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-3 order-lg-first col-lg-3 col-md-4 col-sm-6">
+				<div class="footer__item order-xl-first col-xl-3 col-lg-3 col-md-4 col-sm-6">
 					<div class="footer__title font-18 bold">Контакты</div>
 					<div class="footer__icon d-flex">
 						<i class="icon icon-phone"></i>
@@ -662,7 +686,7 @@
 						<a href="#"><i class="icon icon-twitter margin-0_5"></i></a>
 					</div>
 				</div>
-				<div class="col-xl-4 order-md-first col-lg-6 col-md-9 order-last col-12">
+				<div class="footer__item col-xl-4 order-md-first col-lg-6 col-md-9 order-last col-12">
 					<div class="footer__title font-18 bold">Каталог</div>
 					<div class="row">
 						<div class="col-12 col-sm">
@@ -681,14 +705,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-2 order-md-first col-lg-6 col-md-3 order-last col-12">
+				<div class="footer__item col-xl-2 order-md-first col-lg-6 col-md-3 order-last col-12">
 					<div class="footer__title font-18 bold">Информация</div>
 					<p><a href="#">Создать свой кубок</a></p>
 					<p><a href="#">О компании</a></p>
 					<p><a href="#">Доставка и оплата</a></p>
 					<p><a href="#">Контакты</a></p>
 				</div>
-				<div class="col-xl-3 col-lg-5 col-sm-6 offset-lg-0 offset-md-2">
+				<div class="footer__item col-xl-3 col-lg-5 col-sm-6 offset-lg-0 offset-md-2">
 					<div class="footer__title font-18 bold">Подписка</div>
 					<p>Узнавайте о наших лучших предложения и акциях</p>
 					<form action="" class="form form-footer">
@@ -706,7 +730,7 @@
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-auto">
-					<small>© 2018. Медаль Топ. Все права защищены</small>
+					<small>&copy; 2018. Медаль Топ. Все права защищены</small>
 				</div>
 				<div class="col-auto">
 					<small>Сайт разработан: In Create</small>

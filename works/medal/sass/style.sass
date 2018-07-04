@@ -26,6 +26,9 @@
 	font-size: 12px
 	.lang-choice
 		margin-left: 80px
+		option
+			background-color: $text
+			color: $white
 
 .header-top,
 .navbar
@@ -41,6 +44,7 @@
 	padding: 25px 0
 	+bs(0px 4px 15px rgba(0, 0, 0, 0.08))
 	font-family: $ff-bold
+	z-index: 4
 
 
 .nav
@@ -55,7 +59,7 @@
 		li
 			a
 				&:after
-					right: -15px
+					right: -10px
 	&-bottom
 		color: $black
 		position: absolute
@@ -79,10 +83,10 @@
 				border: none
 			li
 				margin: 0
-			.submenu
-				text-transform: none
-				&.active
-					display: block
+	.submenu
+		text-transform: none
+		&.active
+			display: block
 
 
 .open_nav
@@ -118,14 +122,25 @@
 	font-family: $ff-bold
 	margin-bottom: 0
 
+.image
+	&-wrap
+		position: relative
+		left: -25px
+		width: calc(100% + 50px)
+		&.l
+			&-10
+				left: -10px
+				width: 100%
 
 .select
 	position: relative
 	select
 		-moz-appearance: none
 		-webkit-appearance: none
+		appearance: none
 		outline: none !important
 		border: none !important
+		border-radius: 0
 		color: inherit
 		cursor: pointer
 		background-color: transparent
@@ -152,12 +167,30 @@
 		&:after
 			border-color: $text
 			right: 30px
+	&-none
+		color: $black
+		padding-right: 15px
+		// select
+		&:after
+			border-color: $black
 .lang-choice
 	padding-right: 10px
 	// background-image: url(../img/arrow.svg)
 	// background-repeat: no-repeat
 	// background-position: right center
 
+
+.view
+	width: 20px
+	height: 20px
+	&-wrap
+		margin-left: 20px
+		&:hover,
+		&.active
+			.view_content
+				fill: $blue
+	.view_content
+		fill: $text
 
 .cart
 	position: relative
@@ -213,8 +246,8 @@
 	background: $white-d
 	position: relative
 	height: 100%
-	align-items: end
-	justify-content: end
+	align-items: flex-end
+	justify-content: flex-end
 	&.purple
 		background: $lg-purple-category
 	&.lime
@@ -244,13 +277,13 @@
 
 	&:hover
 		box-shadow: $shadow-category
-		&.yellow,&.purple,&.orange,&.purple
+		&.yellow,&.purple,&.orange,&.purple,&.lime
 			.font-22
 				color: $white
 		img
-			margin-right: -5px
+			+translateX(5px)
+			// margin-right: -5px
 			// right: -5px
-			// +translateX(5px)
 
 
 	&__text
@@ -342,7 +375,8 @@
 	display: flex
 	justify-content: space-around
 	.left, .right
-		display: inline-block
+		display: flex
+		flex-direction: column
 		position: absolute
 		top: 25px
 	.left
@@ -378,6 +412,9 @@
 	border: 1px solid transparent
 	&.slick-current
 		border-color: $blue
+	&__image
+		display: flex
+		justify-content: center
 	&__text
 		padding-top: 15px
 		text-align: center
@@ -493,12 +530,12 @@
 		input, textarea
 			border: 1px solid #DEDEE2
 			padding: 15px 25px
-		& > input:first-of-type,
+		& > input:first-child,
 		& > textarea:first-child,
 		.input__placeholder:first-child input
 			border-top-left-radius: 10px
 			border-top-right-radius: 10px
-		& > input:last-of-type,
+		& > input:last-child,
 		& > textarea:last-child,
 		.input__placeholder:last-child input
 			border-bottom-left-radius: 10px
@@ -537,6 +574,7 @@
 				padding: 50px
 
 .textarea
+	display: block
 	padding: 15px 17px
 	color: #C2C3C8
 
@@ -546,17 +584,17 @@
 		span
 			position: absolute
 			left: 25px
-			top: 50%
-			+translateY
+			top: 5px
 			color: #C2C3C8
 			font-size: 12px
 			+tr(400ms ease-in-out)
+			+translateY(50%)
 		input
 			padding-bottom: 7px
 			border-radius: 0
 		&.active
 			span
-				top: 10px
+				+translateY(0)
 				font-size: 9px
 
 .checkbox
@@ -616,6 +654,7 @@
 .bredcrumbs
 	margin-top: 30px
 	color: $black
+	font-size: 12px
 
 .more
 	display: block
@@ -624,7 +663,6 @@
 
 .catalog-wrap
 	.catalog
-		padding-left: 30px
 		&__image
 			.font-22
 				+translate-center(absolute,50%,7.7%,0,-50%)
@@ -636,7 +674,7 @@
 		// padding-left: 30px
 		padding: 0
 		.block
-			padding: 0 15px 0 30px
+			padding: 0 15px
 			border-bottom: 1px solid #E0E0E4
 			&__title
 				padding: 20px 0
@@ -750,8 +788,10 @@
 
 .slick
 	&__vertical
-		.slick-current
+		.slick-current.slick__img
 			border: 1px solid $blue
+		.slick-slide
+			border: 1px solid transparent
 	&__for
 		.slick-track
 			display: flex
@@ -761,6 +801,7 @@
 		display: flex !important
 		justify-content: center
 		align-self: center
+		align-items: center
 	&-arrow
 		position: absolute
 		width: 50px
@@ -821,9 +862,33 @@
 				width: 30px
 				height: 30px
 
+		&_prop
+			.slick-arrow
+				&.slick-prev
+					left: -50px
+					// +translateX(-100%)
+				&.slick-next
+					right: -50px
+	&__4
+		.slick-arrow
+			top: 150px
+
 .icon
 	&-close
 		cursor: pointer
+
+.const
+	&-row
+		margin-top: 20px
+		margin-bottom: 60px
+	&__img
+		display: flex
+		justify-content: center
+	&__desc
+		min-width: 170px
+		display: inline-block
+
+
 		
 .contact
 	display: flex
@@ -905,6 +970,7 @@
 		-ms-touch-action: manipulation
 		touch-action: manipulation
 		+br(50%)
+		outline: none
 
 
 		&.is-dragging 
