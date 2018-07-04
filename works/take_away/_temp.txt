@@ -1,0 +1,6 @@
+delete and refresh
+	footer
+	header
+	btn
+	fs
+	social

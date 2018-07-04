@@ -4,6 +4,9 @@
 @function toem($curr:20, $fz:16, $type: em)
 	@return ($curr/$fz) + $type
 
+@function torem($curr:20, $fz:16)
+	@return ($curr/$fz) + rem
+
 //width
 =w($width)
 	// @media only screen and (max-width: $width+'px')
