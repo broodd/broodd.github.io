@@ -497,10 +497,12 @@ ul {
 .bg-l_grey {
   background-color: #ededed; }
 
-.color-grey {
+.c-grey {
   color: #5d5c5c; }
-.color-dark {
+.c-dark {
   color: #4c4c4c; }
+.c-star {
+  color: #ff943e; }
 
 .fs {
   font-size: 16px; }
@@ -553,10 +555,14 @@ ul {
     font-weight: 500; }
 
 .border {
-  border: 1px solid #cdcdcd; }
+  border: 1px solid #cdcdcd;
+  padding: 15px 30px; }
 
 .ul li {
   margin-right: 10px; }
+
+.star li {
+  margin-right: 7px; }
 
 .btn {
   text-align: center; }
