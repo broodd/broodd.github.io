@@ -1,6 +1,12 @@
 @import 'mixins'
 @import 'default'
 
+.hide
+	display: none
+	
+.video-wrap
+	+iframe
+
 .ul
 	li
 		margin-right: 10px
@@ -10,35 +16,177 @@
 		margin-right: 7px
 
 .btn
+	display: inline-block
 	text-align: center
+	color: $white
+	border-radius: 5px
+	padding: 11px 30px
 	&-green
 		background-image: $lg-green
-		color: $white
-		border-radius: 5px
-		padding: 15px 30px
 		line-height: 1
-	&-border
+		text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.35)
+	&-blue
+		background-color: $blue
+		color: $white
+		text-transform: uppercase
+	&-nav
+		background-color: $blue
+		font-size: 25px
+		border-radius: 0
+	&-search
+		border-radius: 0
+		font-weight: 500
+		// height: 100%
+	&-bag
+		border-radius: 0
+		background-color: #dfdede
+		color: #686767
+	&-youtube
+		background-color: $you
+		color: $white !important
+		.fa
+			margin-right: 10px
 
+.navbar
+	background-color: #f7f7f7
+	font-size: 18px
+	.item
+		padding: 0
+		&-search
+			font-size: 18px
+			padding: 5px 0
+			input
+				border: 1px solid #cdcdcd
+				background-color: $white
+				height: 100%
+				padding-left: 20px
+				font-style: italic
+				flex: 1
+				color: #b9b7b7
+				// font-style: 
+		&-bag
+			font-size: 18px
+			.btn
+				// height: 100%
+				span
+					margin-left: 10px
+
+.nav
+	&-bottom
+		font-size: 16px
+		.menu
+			position: absolute
+			display: none
+			width: 100%
+			z-index: 3
+			background-color: $white
+			color: #5d5d5d
+			line-height: 36px
+			& > li
+				position: relative
+				& > a
+					position: relative
+					display: block
+					padding-left: 15px
+					&:after
+						content: ''
+						position: absolute
+						width: 8px
+						height: 8px
+						border: 1px solid #bdbcbc
+						right: 10px
+						top: 50%
+						transform: translateY(-50%) rotate(45deg)
+						border-left: none
+						border-bottom: none
+				.sub-menu
+					position: absolute
+					display: none
+					left: 100%
+					z-index: 3
+					background-color: #F7F7F7
+					top: 0
+					width: 1003px
+				&:hover, &:active
+					& > .sub-menu
+						display: block
+		&:hover,&:active
+			.menu
+				display: block
+
+.notify
+	display: inline-block
+	position: relative
+	&__num
+		position: absolute
+		right: -15px
+		top: -10px
+		width: 23px
+		height: 23px
+		background-color: $blue
+		color: $white
+		border-radius: 50%
+		line-height: 22px
+		text-align: center
+
+
+	
 
 .tab
 	margin-bottom: 20px
+	border-bottom: 2px solid #e4e4e4
 	&link
-		font-size: 21px
+		font-size: toem(19)
 		padding: 7px 15px
-		margin-right: 15px
 		color: $tab-link
 		margin-top: 20px
+		background: none
 		&.active
 			background-color: $blue
 			color: $white
 
+.price
+	color: $dark
+	font-size: inherit
+	&__old
+		font-size: toem(20)
+	&__main
+		font-size: toem(37)
+		font-weight: bold
+		line-height: 1
+	&__val
+		font-size: toem(27)
+		line-height: 1
+
+
+.chara
+	// &__left
+	// 	flex-
+	&__right
+		padding-left: 60px
+
+
+.text_image
+	&__text
+		.title
+			font-size: toem(34)
+			text-transform: uppercase
+			margin-bottom: 40px
+		.content
+			font-size: toem(22)
+	&__image
+		&-margin
+			margin-top: -70px
+			margin-bottom: -60px
+
 .social
 	color: $white
-	li
+	a
 		width: 45px
 		height: 45px
 		border-radius: 50%
 		margin-right: 15px
+		display: flex
 		&.facebook
 			background-color: #3a5a98
 		&.instagram
@@ -53,17 +201,134 @@
 			background-color: #4a86c5
 
 
+.block
+	&__title
+		font-size: torem(32)
+		font-weight: 500
+		text-transform: uppercase
+		color: $tab-link
+		// margin-bottom: 30px
+
+
+.comment
+	.comment
+		padding-left: 40px
+		.comment-head
+			padding-top: 20px
+	&-wrap
+		padding-top: 20px
+	&-border
+		border-top: 1px solid #e6e6e6
+		margin-top: 20px
+	&__name
+		color: $grey
+		font-size: toem(22)
+		font-weight: 500
+	&__date
+	
+	&-head
+		.item
+			margin-right: 20px
+	&-body
+		color: $grey
+		margin: 20px 0
+	&-footer
+		color: #737373
+		.item
+			padding: 0 10px
+			border-left: 2px solid #c1c1c1
+			&:first-child
+				padding-left: 0
+				border-left: none
+	&-head, &-footer
+		display: flex
+		align-items: center
+
+
+
+
+.carousel-two
+	.group-cart
+		padding: 0
+
+
+.cart
+	padding: 5px
+	margin: 0 5px
+	box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.06)
+	border: 1px solid #efefef
+
+	&-small
+		.aside
+			// flex: 100%
+			hr
+				width: calc(100% - 30px)
+				margin-left: 0
+			.price
+				padding: 10px 0 20px
+				&__old
+					margin-right: 10px
+
 .footer
 	padding-top: 50px
 	padding-bottom: 60px
 
+
+
+
+
+
+
+
+
+
+.image
+	max-height: 100%
+	img
+		max-height: 100%
+
+
+
 .slick
+	&-list, &-track
+		height: 100%
 	.image
 		display: flex
 		justify-content: center
 		align-items: center
+	&-slider
+		.slick-arrow
+			top: 50%
+			transform: rotate(45deg) translate(-50%, -50%)
+			&.slick-prev
+				left: -20px
+				border-top: none
+				border-right: none
+			&.slick-next
+				right: -20px
+				border-bottom: none
+				border-left: none
 	&-vertical
 		padding: 40px 0
+		.slick-arrow
+			left: 50%
+			// +translateX
+			transform: rotate(45deg) translateX(-50%)
+			&.slick-prev
+				top: 10px
+				left: 50%
+				border-bottom: none
+				// border-right: none
+				border-top: 4px solid $l_grey
+			&.slick-next
+				right: auto
+				top: auto
+				bottom: 10px
+				// &:before
+				border-top: none
+				// border-left: none
+				border-bottom: 4px solid $l_grey
+	&__vertical
 		.image
 			padding: 5px
 			margin: 10px 0
@@ -77,25 +342,12 @@
 		width: 20px
 		height: 20px
 		background: none
-		left: 50%
-		+translateX
-		&:before
-			content: ''
-			position: absolute
-			top: 0
-			left: 0	
-			width: 100%
-			height: 100%
-			border: 4px solid $l_grey
-			z-index: 2
-			transform: rotate(45deg)
-		&.slick-prev
-			top: 10px
-			&:before
-				border-bottom: none
-				border-right: none
-		&.slick-next
-			bottom: 10px
-			&:before
-				border-top: none
-				border-left: none
+		border: 4px solid $l_grey
+		// &:before
+		// 	z-index: 2
+		// 	content: ''
+		// 	position: absolute
+		// 	top: 0
+		// 	left: 0	
+		// 	width: 100%
+		// 	height: 100%

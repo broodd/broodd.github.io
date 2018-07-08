@@ -3,7 +3,6 @@
 @import 'reset'
 
 
-+grid-preloader($red)
 // +font('Roboto', 'Roboto-Regular', $type:'ttf', $path:'/font/')
 
 // reset
@@ -41,6 +40,10 @@ img, svg, iframe
 .jac
 	justify-content: center
 	align-items: center
+.jbac
+	justify-content: space-between
+	align-items: center
+
 
 ul
 	padding-left: 0
@@ -53,28 +56,41 @@ ul
 		background-color: $grey
 	&-l_grey
 		background-color: $l_grey
+	&-r_grey
+		background-color: $r_grey
+	&-orange
+		background-color: $orange
+	&-l_white
+		background-color: $l_white
 
 .c
+	&-black
+		color: $black
 	&-grey
 		color: $grey
 	&-dark
 		color: $dark
+		&_d
+			color: $d_dark
 	&-star
 		color: $star
+	&-red
+		color: $red
 
 .fs
 	font-size: 16px
 	&-18
 		font-size: torem(18)
 	&-19
-		font-size: toram(19)
+		font-size: torem(19)
 	&-20
-		// font-size: torem(20)
-		font-size: 1.25rem
+		font-size: torem(20)
 	&-22
 		font-size: torem(22)
 	&-27
 		font-size: torem(27)
+	&-30
+		font-size: torem(30)
 	&-32
 		font-size: torem(32)
 	&-34
@@ -94,9 +110,13 @@ ul
 	text-transform: uppercase
 
 .m
+	&-0
+		margin: 0
 	&-t
 		&_20
 			margin-top: 20px
+		&_30
+			margin-top: 30px
 		&_40
 			margin-top: 40px
 		&_50
@@ -104,6 +124,10 @@ ul
 	&-b
 		&_10
 			margin-bottom: 10px
+		&_15
+			margin-bottom: 15зx
+		&_20
+			margin-bottom: 20px
 		&_30
 			margin-bottom: 30px
 		&_40
@@ -120,3 +144,27 @@ ul
 .border
 	border: 1px solid $border
 	padding: 15px 30px
+
+
+
+select
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	border: none
+	border-radius: 0
+	outline: none
+
+.fa
+	&-check
+		color: $green
+
+.h
+	&-50
+		height: 50%
+	&-100
+		height: 100%
+
+.w
+	&-100
+		width: 100%
