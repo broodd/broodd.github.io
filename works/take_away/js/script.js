@@ -83,24 +83,27 @@ $(document).ready(function(){
 	// 	height: $(this).parents('.nav-bottom').height()
 	// });
 
-	// $('.sub-menu').width( $(this).parents('navbar').width() - $(this).parents('.nav-bottom').width() );
-	// console.log( $('.sub-menu').parents('.nav-bottom').height());
-	// $('.sub-menu').height( $(this).parents('.nav-bottom').height() );
+	function changeView() {
+		$('.sub-menu').width( $('.navbar').width() - $('.nav-bottom').width() );
+		$('.sub-menu').height( $('.menu').height() );
+	}
 
-	// $('.sub-menu, .menu').addClass('hide');
-
+	$(window).resize(function(event) {
+		changeView();
+	});
+	changeView();
 
 
 
 	$('.tablink').on('click', function(event) {
 		event.preventDefault();
-		$(this).parents('.tab-wrap').find('.tablink').removeClass('active');
-		$(this).parents('.tab-wrap').find('.tabcontent').hide().removeClass('active');
+		var parent = $(this).parents('.tab-wrap'),
+				target = $(this).attr('data-open');
+		
+		parent.find('.tablink').removeClass('active');
+		parent.find('.tabcontent').hide().removeClass('active');
 
-		$(this).parents('.tab-wrap').addClass('soo').find('.tablink').addClass('sooawd');
-
-		var target = $(this).attr('data-open');
-		$(this).parents('.tab-wrap').children('.'+ target);
+		parent.children('.'+ target);
 		$('.tabcontent.'+ target).show().addClass('active');
 		$(this).addClass('active');
 	});
