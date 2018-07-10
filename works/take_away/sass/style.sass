@@ -1,11 +1,13 @@
 @import 'mixins'
 @import 'default'
-
-.hide
-	display: none
 	
 .video-wrap
 	+iframe
+
+.logo
+	img
+		height: 80px
+		max-height: 100%
 
 .ul
 	li
@@ -14,6 +16,26 @@
 .star
 	li
 		margin-right: 7px
+
+.select
+	&-arrow
+		position: relative
+		select
+			color: #999
+			padding-right: 10px
+			z-index: 2
+		option
+			color: $white
+			background-color: #999
+		&:after
+			content: ''
+			position: absolute
+			top: 50%
+			right: 2px
+			+translateY
+			+arr(10, 6, #999999, b)	
+			z-index: 0
+		
 
 .btn
 	display: inline-block
@@ -48,7 +70,6 @@
 			margin-right: 10px
 
 .navbar
-	background-color: #f7f7f7
 	font-size: 18px
 	.item
 		padding: 0
@@ -75,7 +96,24 @@
 
 
 
-.nav-bottom .menu > li > a,
+.arrow-right
+	position: absolute
+	right: 0
+	top: 50%
+	+translateY
+	width: 20px
+	height: 20px
+	&:before
+		content: ''
+		position: absolute
+		width: 8px
+		height: 8px
+		border: 1px solid #bdbcbc
+		right: 10px
+		top: 50%
+		transform: translateY(-50%) rotate(45deg)
+		border-left: none
+		border-bottom: none
 .has-arrow
 	position: relative
 	&:after
@@ -93,34 +131,28 @@
 	&-bottom
 		font-size: 16px
 		.menu
-			position: absolute
-			display: none
-			width: 100%
-			z-index: 3
-			background-color: $white
 			color: #5d5d5d
 			line-height: 36px
+			display: none
+			.sub-menu
+				padding-left: 15px
+				display: none
 			& > li
 				position: relative
+				padding-left: 15px
 				& > a
 					display: block
-					padding-left: 15px
+					position: relative
+					padding-right: 10px
 					&:after
 						right: 10px
-				.sub-menu
-					position: absolute
-					display: none
-					left: 100%
-					z-index: 3
-					background-color: #F7F7F7
-					top: 0
-					width: 1003px
-				&:hover, &:active
-					& > .sub-menu
-						display: block
-		&:hover,&:active
-			.menu
-				display: block
+	&__image
+		margin-right: 30px
+		padding: 15px
+		.cart
+			padding: 015px
+			background-color: $white
+			box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.06)
 
 .notify
 	display: inline-block
@@ -271,6 +303,10 @@
 		color: $tab-link
 		// margin-bottom: 30px
 
+	&quote
+		padding: 15px 30px
+		border-left: 3px solid #d7d7d7
+
 
 .comment
 	.comment
@@ -312,14 +348,22 @@
 .carousel-two
 	.group-cart
 		padding: 0
+		// .cart
 
 
+// .slick_type_1
+	// .row
+	// 	margin-left: -5px
+	// 	margin-right: -5px
 .cart
-	// padding: 5px
-	padding: 0 15px 15px 15px
-	margin: 0 5px
-	box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.06)
-	border: 1px solid #efefef
+	padding: 5px
+	// margin: 0 5px
+	// padding: 0 15px 15px 15px
+	.border-cart
+		padding: 0 15px 15px 15px
+		border: 1px solid #efefef
+		box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.06)
+
 
 	&-small
 		.aside
@@ -331,9 +375,19 @@
 				padding: 10px 0 20px
 				&__old
 					margin-right: 10px
+		.border-cart
+			padding: 5px
 .group-cart
+	&:first-child
+		padding-right: 5px
+	&:last-child
+		padding-left: 5px
 	.cart
-		padding: 5px
+		padding: 0
+		&:first-child
+			padding-bottom: 5px
+		&:last-child
+			padding-top: 5px
 
 .footer
 	padding-top: 50px
@@ -341,7 +395,20 @@
 
 
 
-
+.product
+	&-line
+		background-color: $white
+		// margin-top: 20px
+		padding: 20px 10px 0 15px
+		position: relative
+		height: 100%
+		.desc
+			padding-bottom: 10px
+		&:hover
+			box-shadow: 0 0 7px 1px rgba(0, 0, 0, .1)
+	&-list
+		line-height: 35px
+		// font-size: toem(18)
 
 
 
@@ -374,6 +441,8 @@
 				right: -20px
 				border-bottom: none
 				border-left: none
+	&-slide
+		outline: none
 	&-vertical
 		padding: 40px 0
 		.slick-arrow
@@ -409,6 +478,50 @@
 		height: 20px
 		background: none
 		border: 4px solid $l_grey
+		&:hover, &:active, &:focus
+			outline: none
+	&-dots
+		position: absolute
+		right: 0
+		bottom: 10px
+		left: 0
+		z-index: 15
+		display: flex
+		justify-content: center
+		align-items: center
+		padding-left: 0
+		margin-right: 15%
+		margin-left: 15%
+		list-style: none
+		li
+			position: relative
+			font-size: 0
+			background: none
+			border-radius: 50%
+			border: 5px solid $white
+			width: 10px
+			height: 10px
+			margin: 5px
+			background: white
+			button
+				border: none
+				background: none
+				&:hover, &:active, &:focus
+					outline: none
+			&.slick-active
+				background: none
+				border: 1px solid $white
+				width: 25px
+				height: 25px
+			&:after
+				content: ''
+				width: 5px
+				height: 5px
+				+translate-center
+				// margin-left: -1px
+				// margin-top: -1px
+				background-color: $white
+				border-radius: 50%
 		// &:before
 		// 	z-index: 2
 		// 	content: ''

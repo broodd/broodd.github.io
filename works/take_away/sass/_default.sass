@@ -44,6 +44,8 @@ img, svg, iframe
 	justify-content: space-between
 	align-items: center
 
+.por
+	position: relative
 
 ul
 	padding-left: 0
@@ -62,6 +64,8 @@ ul
 		background-color: $orange
 	&-l_white
 		background-color: $l_white
+	&-l_blue
+		background-color: $l_blue
 
 .c
 	&-black
@@ -74,10 +78,14 @@ ul
 		color: $dark
 		&_d
 			color: $d_dark
+	&-blue
+		color: $blue
 	&-star
 		color: $star
-	&-red
-		color: $red
+body
+	.c
+		&-red
+			color: $red
 
 .fs
 	font-size: 16px
@@ -114,6 +122,8 @@ ul
 .m
 	&-0
 		margin: 0
+		&_m5
+			margin: 0 -5px
 	&-t
 		&_20
 			margin-top: 20px
@@ -137,6 +147,20 @@ ul
 	&-l
 		&_30
 			margin-left: 30px
+
+.p
+	&-0
+		padding: 0
+		&_5
+			padding: 0 5px
+	// &-15
+	// 	padding: 15px
+	&-l
+		&_0
+			padding-left: 0
+	&-r
+		&_5
+			padding-right: 5px
 
 .bold
 	font-weight: bold
@@ -170,3 +194,5 @@ select
 .w
 	&-100
 		width: 100%
+
+
