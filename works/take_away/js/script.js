@@ -5,6 +5,7 @@ $(document).ready(function(){
 	// 	$(this).remove()
 	// });
 
+	var autoplay = 2000;
 	$('.slick__vertical').slick({
 		slidesToShow: 5,
 		asNavFor: '.slick-vertical_for',
@@ -31,7 +32,7 @@ $(document).ready(function(){
 		fade: true,
 		asNavFor: '.slick-vertical',
 		// adaptiveHeight: true,
-		swipe: false
+		swipe: false,
 	});
 
 
@@ -41,6 +42,8 @@ $(document).ready(function(){
 		arrows: true,
 		infinite: true,
 		swipeToSlide: true,
+		autoplay: true,
+		autoplaySpeed: autoplay,
 		responsive: [
 			{
 				breakpoint: 1300,
@@ -68,6 +71,8 @@ $(document).ready(function(){
 		arrows: true,
 		infinite: true,
 		swipeToSlide: true,
+		autoplay: true,
+		autoplaySpeed: autoplay,
 	});
 	$('.slick__1_dots').slick({
 		slidesToShow: 1,
@@ -75,6 +80,8 @@ $(document).ready(function(){
 		arrows: true,
 		infinite: true,
 		swipeToSlide: true,
+		autoplay: true,
+		autoplaySpeed: autoplay,
 	});
 	// $('.slick__1_1').slick({
 	// 	slidesToShow: 1,
