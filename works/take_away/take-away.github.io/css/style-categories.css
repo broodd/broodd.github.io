@@ -1,0 +1,343 @@
+.header{
+	height: 700px;
+}
+
+.title a{
+    color: #999;
+}
+.categories .container{
+	border: 1px solid #cdcdcd;
+	height: 100%;
+	background-color: #fff; 
+	padding: 20px 35px 30px 35px;
+	margin-top: 20px;
+}
+
+.dark-grey{
+	color: #4c4c4c;
+}
+i{
+	cursor: pointer;
+}
+
+h4{
+	font-size: 22px;
+	font-weight: 500;
+	color: #4c4c4c;
+	padding-bottom: 18px;
+}
+
+.del-all i, .del i{
+	color: #007bff;
+	cursor: pointer;
+	padding-bottom: 20px;
+}
+.del-all a:hover, .del a:hover {
+	text-decoration: none;
+}
+.del-all a, .del a{
+	padding-left: 0;
+}
+
+.added div i, .your-choice div i{
+	padding-right: 25px;
+}
+
+.added, .your-choice, .catalog-popular, .catalog, .producer, .all-catalog{
+	border: 1px solid #efeeee;
+	margin-bottom: 10px;
+	padding: 16px 25px 16px 20px;
+}
+.goods{
+	border-bottom: 1px solid #cdcdcd;
+	padding: 10px 0;
+}
+
+.goods i{
+	cursor: pointer;
+}
+.goods img{
+	padding-right: 15px;
+}
+.your-choice span{
+	color: #4c4c4c;
+	font-size: 18px;
+}
+
+.catalog-popular ul li,
+.catalog ul li,
+.producer ul li,
+.all-catalog ul li{
+	padding-bottom: 20px;
+}
+.catalog-popular ul li a:hover,
+.catalog ul li a:hover,
+.producer ul li a:hover,
+.all-catalog ul li a:hover{
+	text-decoration: none;
+}
+.categories p{
+	text-align: left;
+}
+
+.wraper{
+	border: 1px solid #efeeee;
+	padding: 15px 17px 25px 20px;
+	margin-bottom: 10px;
+}
+.categories .cards{
+	padding: 19px 17px 25px 20px;
+}
+.wraper div ul li{
+	padding: 6px 0;
+}
+.wraper ul{
+	padding-left: 18px;
+}
+.wraper div ul li a:hover{
+	text-decoration: none;
+}
+.wraper .title-1 h4{
+	padding-left: 18px;
+}
+.slider-categories{
+	position: relative;
+}
+
+.group-nomber{
+	position: absolute;
+	left: 40px;
+	bottom: 20px;
+}
+.group-nomber p{
+	text-align: left;
+	line-height: 1em;
+	color: #fff;
+	letter-spacing: 4px;
+}
+
+.carousel-indicators{
+	margin-bottom: 0;
+}
+
+.wraper img{
+	width: 120px;
+	height: 130px;
+}
+
+.cards-3{
+	height: 508px;
+	position: relative;
+}
+
+.all-prod{
+	position: absolute;
+	left: 40px;
+	bottom: 30px;
+}
+
+.cards-3 ul li{
+	padding: 5px 0;
+}
+.cards-3 ul li a:hover{
+	text-decoration: none;
+}
+
+.title{
+	margin-top: -500px;
+}
+.title h2{
+	padding-top: 15px;
+	font-size: 45px;
+}
+
+.fs-45{
+	font-size: 45px;
+}
+
+.filter-btn{
+	width: 100%;
+	height: 50px;
+	color: #fff;
+	font-size: 25px;
+	display: none;
+}
+.footer{
+	margin-top: 35px;
+}
+
+.categories .col-lg-4.col-md-4.col-12{
+	padding-right: 10px;
+}
+
+.categories .col-md-4.col-sm-4{
+	padding-right: 10px;
+}
+.categories .col-xl-4.col-md-6.col-6{
+	padding-right: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+   .fs-20{
+   	font-size: 16px;
+   }
+   .categories .container{
+	   width: 100%;
+   }
+   .title{
+	margin-top: -250px;
+	}
+
+	.categories .cards img{
+		height: 150px;
+	}
+
+	.categories .cards{
+		text-align: center;
+		height: auto;
+	}
+	.w-50{
+		width: 100%!important;
+	}
+
+	.hide{
+		display: none;
+	}
+
+	.wraper img{
+		height: 100px;
+		width: 90px;
+	}
+	.cards-3{
+		height: 400px;
+	}
+
+	body{
+		line-height: 1.3em;
+	}
+	.fs-60{
+		font-size: 35px;
+	}
+	.fs-45{
+		font-size: 35px;
+	}
+	.fs-40{
+		font-size: 20px;
+	}
+	.group-nomber{
+		left: 20px;
+	}
+	.wraper.d-flex.justify-content-around{
+		justify-content: space-between !important;
+	}
+	.your-choice div span{
+		padding-left: 0;
+	}
+}
+@media only screen and (max-width: 768px) {
+.categories .container{
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.categories .col-md-8{
+		padding-left: 0;
+	}
+
+	h4{
+		font-size: 18px;
+	}
+	.pr{
+		padding-right: 0 !important;
+	}
+	.col-md-8.pl-0{
+		padding-right: 0;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+
+
+	.col-lg-8.col-md-8.col-12{
+		padding: 0 !important;
+	}
+
+	h4{
+		font-size: 20px;
+	}
+	.wraper .d-flex{
+		flex-direction: column;
+	}
+
+	.wraper .pl-3{
+		padding: 0!important;
+	}
+	.cards-3 h4{
+		padding: 10px 0;
+		text-align: center;
+	}
+	.cards-3{
+		height: 420px;
+	}
+
+	.header{
+	height: auto;
+	}
+	.title{
+	margin-top: 20px;
+	}
+	.wraper ul{
+		padding: 0;
+	}
+	.all-prod{
+		position: absolute;
+		left: 130px;
+		bottom: 20px;
+	}
+	.filter-btn{
+		display: block;
+		margin-bottom: 20px;
+	}
+	.filter{
+		height: 0;
+		overflow: hidden;
+	}
+	.filter.show{
+		height: 100%;
+		overflow: auto;
+	}
+	
+
+}
+
+@media only screen and (max-width: 375px) {
+	.all-prod{
+		left: 90px;
+	}
+	.cards-3{
+		height: 450px;
+	}
+	.wraper.d-flex.justify-content-around{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.cards-3{
+		height: 490px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.all-prod{
+		left: 60px;
+	}
+	.cards-3 h4{
+		font-size: 18px;
+	}
+	.group-nomber{
+		bottom: 0;
+	}
+	
+}
+

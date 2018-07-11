@@ -67,9 +67,11 @@
 		font-size: toem(22)
 		cursor: pointer
 		&.open
-			margin-bottom: 15px
+			// margin-bottom: 15px
 			&:after
 				content: '\f106'
+		& + div
+			margin-top: 15px
 		&-arrow
 			&:after
 				content: '\f107'
@@ -86,11 +88,8 @@
 		padding: 0
 .wrap-selector__list
 	font-size: 18px
-	display: none
 	li
 		margin-bottom: 10px
-	&.open
-		display: block
 	.count
 		color: #c2c2c2
 .check-box
@@ -147,6 +146,10 @@
 .subcategories
 	.right
 		padding-right: 30px
+	.wrap-selector__list
+		display: none
+		&.open
+			display: block
 
 .choose
 	position: relative
