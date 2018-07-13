@@ -1446,19 +1446,25 @@ select {
 }
 .slick-slider .slick-arrow {
   top: 50%;
-  -webkit-transform: rotate(45deg) translate(-50%, -50%);
-      -ms-transform: rotate(45deg) translate(-50%, -50%);
-          transform: rotate(45deg) translate(-50%, -50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .slick-slider .slick-arrow.slick-prev {
-  left: -20px;
+  left: -35px;
+}
+.slick-slider .slick-arrow.slick-prev:before {
   border-top: none;
   border-right: none;
+  margin-left: 3px;
 }
 .slick-slider .slick-arrow.slick-next {
-  right: -20px;
+  right: -35px;
+}
+.slick-slider .slick-arrow.slick-next:before {
   border-bottom: none;
   border-left: none;
+  margin-right: 3px;
 }
 .slick-slide {
   outline: none;
@@ -1468,22 +1474,33 @@ select {
 }
 .slick-vertical .slick-arrow {
   left: 50%;
-  -webkit-transform: rotate(45deg) translateX(-50%);
-      -ms-transform: rotate(45deg) translateX(-50%);
-          transform: rotate(45deg) translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.slick-vertical .slick-arrow:hover, .slick-vertical .slick-arrow:active, .slick-vertical .slick-arrow:focus {
+  background: none;
 }
 .slick-vertical .slick-arrow.slick-prev {
-  top: 10px;
+  top: -15px;
   left: 50%;
+}
+.slick-vertical .slick-arrow.slick-prev:before {
   border-bottom: none;
   border-top: 4px solid #ededed;
+  margin-left: 0;
+  margin-top: 3px;
 }
 .slick-vertical .slick-arrow.slick-next {
   right: auto;
   top: auto;
-  bottom: 10px;
+  bottom: -15px;
+}
+.slick-vertical .slick-arrow.slick-next:before {
   border-top: none;
   border-bottom: 4px solid #ededed;
+  margin-right: 0;
+  margin-top: -3px;
 }
 .slick__vertical .image {
   padding: 5px;
@@ -1497,13 +1514,27 @@ select {
 .slick-arrow {
   font-size: 0;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   background: none;
-  border: 4px solid #ededed;
+  z-index: 2;
+  border-radius: 50%;
 }
 .slick-arrow:hover, .slick-arrow:active, .slick-arrow:focus {
   outline: none;
+  background-color: #2299d4;
+}
+.slick-arrow:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border: 4px solid #ededed;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
 }
 .slick-dots {
   position: absolute;

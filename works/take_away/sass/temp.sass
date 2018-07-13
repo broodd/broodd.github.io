@@ -2,7 +2,129 @@
 @import '_vars.sass'
 
 
-+mw(992)
-	.mega-left
-		max-width: 800px
 
+.slick
+	&-list, &-track
+		height: 100%
+	.image
+		display: flex
+		justify-content: center
+		align-items: center
+	&-slider
+		.slick-arrow
+			top: 50%
+			+translateY
+			&.slick-prev
+				left: -40px
+				&:before
+					border-top: none
+					border-right: none
+					margin-left: 3px
+			&.slick-next
+				right: -40px
+				&:before
+					border-bottom: none
+					border-left: none
+					margin-left: -3px
+	&-slide
+		outline: none
+	&-vertical
+		padding: 40px 0
+		.slick-arrow
+			left: 50%
+			+translateX
+			&:hover, &:active, &:focus
+				background: none
+				box-shadow: none
+			&.slick-prev
+				top: -15px
+				left: 50%
+				&:before
+					border-bottom: none
+					// border-right: none
+					border-top: 4px solid $l_grey
+					margin-left: 0
+					margin-top: 3px
+			&.slick-next
+				right: auto
+				top: auto
+				bottom: -15px
+				&:before
+					border-top: none
+					// border-left: none
+					border-bottom: 4px solid $l_grey
+					margin-right: 0
+					margin-top: -3px
+	&__vertical
+		.image
+			padding: 5px
+			margin: 10px 0
+			border: 1px solid transparent
+			cursor: pointer
+		.slick-current
+			border-color: $blue
+	&-arrow
+		font-size: 0
+		position: absolute
+		width: 50px
+		height: 50px
+		background: none
+		z-index: 2
+		+br(50%)
+		// +tr(400ms ease-in-out)
+		// border: 4px solid $l_grey
+		&:hover, &:active, &:focus
+			outline: none
+			background-color: #2299d4
+			box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.38)
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 20px
+			height: 20px
+			border: 4px solid $l_grey
+			transform: translate(-50%, -50%) rotate(45deg)
+	&-dots
+		position: absolute
+		right: 0
+		bottom: 10px
+		left: 0
+		z-index: 15
+		display: flex
+		justify-content: center
+		align-items: center
+		padding-left: 0
+		margin-right: 15%
+		margin-left: 15%
+		list-style: none
+		li
+			position: relative
+			font-size: 0
+			background: none
+			border-radius: 50%
+			border: 5px solid $white
+			width: 10px
+			height: 10px
+			margin: 5px
+			background: white
+			button
+				border: none
+				background: none
+				&:hover, &:active, &:focus
+					outline: none
+			&.slick-active
+				background: none
+				border: 1px solid $white
+				width: 25px
+				height: 25px
+			&:after
+				content: ''
+				width: 5px
+				height: 5px
+				+translate-center
+				// margin-left: -1px
+				// margin-top: -1px
+				background-color: $white
+				border-radius: 50%
