@@ -2085,7 +2085,9 @@ body .c-b_grey {
   background-color: #4a86c5;
 }
 
-
+.chara {
+	width: 100%;
+}
 .chara li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2106,6 +2108,18 @@ body .c-b_grey {
   -webkit-flex: 1 1 10%;
       -ms-flex: 1 1 10%;
           flex: 1 1 10%;
+}
+.chara-review .chara__left {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 200px;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+}
+.chara-review .chara__right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 
@@ -2241,4 +2255,11 @@ body .c-b_grey {
 .text_image__image-margin {
   margin-top: -70px;
   margin-bottom: -60px;
+}
+
+
+@media only screen and (min-width: 992px) {
+  .mega-left {
+    max-width: 800px;
+  }
 }
