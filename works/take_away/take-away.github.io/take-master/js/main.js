@@ -150,4 +150,13 @@ $(document).ready(function() {
     col_btn.toggleClass('d-none'),
     $('.colors').toggleClass('active');
   });
+
+  $('.toggle-review-btn').click(function(event) {
+    $('.toggle-review').toggleClass('d-none');
+    $('.toggle-review-close').toggleClass('d-none');
+  });
+  $('.toggle-review-close').click(function(event) {
+    $(this).toggleClass('d-none');
+    $('.toggle-review').toggleClass('d-none');
+  });
 });
