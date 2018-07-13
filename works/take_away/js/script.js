@@ -174,4 +174,11 @@ $(document).ready(function(){
     }
     $("#wrapper-section__slider").slider("values",1,value2);
   });
+
+
+  $('.colors__btn .change').click(function(event) {
+  	console.log('goo');
+  	$(this).toggleClass('d-none'),
+  	$('.colors').toggleClass('active');
+  });
 });

@@ -1189,6 +1189,26 @@ select {
   font-size: 14px;
 }
 
+.colors__btn {
+  border-bottom: 1px dashed;
+}
+.colors__row {
+  margin: 10px 0;
+  display: none;
+}
+.colors__row:first-of-type {
+  display: block;
+}
+.colors.active {
+  -webkit-box-align: end !important;
+  -webkit-align-items: flex-end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important;
+}
+.colors.active .colors__row {
+  display: block;
+}
+
 .tab {
   margin-bottom: 20px;
   border-bottom: 2px solid #e4e4e4;
@@ -1443,6 +1463,10 @@ select {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.slick .image img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .slick-slider .slick-arrow {
   top: 50%;

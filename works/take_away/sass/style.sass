@@ -348,6 +348,20 @@
 		display: none
 		margin-left: 5px
 		font-size: 14px
+
+.colors
+	&__btn
+		border-bottom: 1px dashed
+	&__row
+		margin: 10px 0
+		display: none
+		&:first-of-type
+			display: block
+	&.active
+		align-items: flex-end !important
+		.colors__row
+			display: block
+
 			
 	
 
@@ -577,6 +591,9 @@
 		display: flex
 		justify-content: center
 		align-items: center
+		img
+			max-width: 100%
+			max-height: 100%
 	&-slider
 		.slick-arrow
 			top: 50%

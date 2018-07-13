@@ -137,4 +137,17 @@ $(document).ready(function() {
     // adaptiveHeight: true,
     swipe: false,
   });
+
+
+  $('.colors__btn .cahnge').click(function(event) {
+    $(this).toggleClass('d-none'),
+    $('.colors').toggleClass('active');
+  });
+
+
+  var col_btn = $('.colors__btn .change');
+  col_btn.click(function(event) {
+    col_btn.toggleClass('d-none'),
+    $('.colors').toggleClass('active');
+  });
 });
