@@ -45,8 +45,8 @@ $(document).ready(function() {
   var registration = $( ".registration" );
   var login = $(".login");
     $( ".show-registration" ).on( "click", function( event ) {
-      registration.show();
-      login.hide();
+      registration.toggle();
+      login.toggle();
     });
 
     $( ".login-btn" ).on( "click", function( event ) {
@@ -138,6 +138,36 @@ $(document).ready(function() {
     swipe: false,
   });
 
+  // $('#pills-tab').slick({
+  //   // responsive: [
+  //   //   {
+  //   //     breakpoint: 425,
+  //   //     setting: {
+  //         slidesToShow: 1,
+  //         asNavFor: '#pills-tabContent',
+  //         dots: false,
+  //         arrows: true,
+  //         centerMode: false,
+  //         infinite: true,
+  //   //     }
+  //   //   }
+  //   // ]
+  // });
+
+  // $('#pills-tabContent').slick({
+  //   slidesToShow: 1,
+  //   asNavFor: '#pills-tab',
+  //   dots: true,
+  //   arrows: true,
+  //   centerMode: false,
+  //   focusOnSelect: false,
+  //   infinite: true,
+  //   // swipe: false,
+  //   adaptiveHeight: true
+  // });
+
+  $('.slick-brand-main .slick-arrow').wrapAll('<div class="container slick-arrow-cont"></div>')
+
 
   $('.colors__btn .cahnge').click(function(event) {
     $(this).toggleClass('d-none'),
@@ -159,4 +189,15 @@ $(document).ready(function() {
     $(this).toggleClass('d-none');
     $('.toggle-review').toggleClass('d-none');
   });
+
+  // var i = 0;
+  // // $('.tab-content .tab-content .slick__1').slick('slickSetOption');
+  // // $('.tab-content .tab-content .slick__1, .slick-tab .tab-content').slick('unslick');
+  // $('.tab-content .tab-content .slick__1').parents('.tab-content').hover(function() {
+  //   if(i == 0) {
+  //     // $('.slick-tab .tab-content .nav-pills').slick('slickNext');
+  //     $('.tab-content .tab-content .slick__1').slick('slickNext');
+  //   }
+  //   i++;
+  // });
 });

@@ -1,6 +1,58 @@
 @import '_mixins.sass'
 @import '_vars.sass'
 
-+w(425)
-	.menu-list.open
-		position: static
+
+
+.slick-brand-main
+	.slick-arrow-cont
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 100%
+		width: 100%
+
+
+.bro
+	min-height: 230px
+	color: #000
+	margin-bottom: 10px
+	&__img
+		position: absolute
+		top: 50%
+		right: 0
+		+translateY
+		max-width: 100%
+		img
+			max-width: 100%
+	&__title
+		font-size: 22px
+		position: relative
+		z-index: 2
+		line-height: 1.2
+	&-wrap
+		position: relative
+		width: 100%
+		height: 100%
+		padding: 0 15px
+		background-color: #efefef
+	&:nth-of-type(2n+1)
+		padding-right: 5px
+	&:nth-of-type(2n)
+		padding-left: 5px
+
+	&-black
+		.bro-wrap
+			background-color: #141615
+			color: #fff
+	&-big
+		min-height: 350px
+
+
++w(768)
+	.bro
+		&-big
+			.bro__img
+				position: static
+				width: 50%
+				+translate(0,0)
