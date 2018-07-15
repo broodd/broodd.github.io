@@ -1,3 +1,10 @@
+.chara-bag .chara__left {
+  color: #848383;
+}
+.chara-bag .chara__right {
+  color: #595959;
+}
+
 .slick-brand-main .slick-arrow-cont {
   position: absolute;
   top: 0;

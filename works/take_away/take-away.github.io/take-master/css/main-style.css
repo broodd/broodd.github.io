@@ -2200,7 +2200,19 @@ body .c-b_grey {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
-
+.chara-bag {
+	font-size: 20px;
+}
+.chara-bag li {
+	margin-bottom: 15px;
+}
+.chara-bag .chara__left {
+  color: #595959;
+  flex: 1 1 30%;
+}
+.chara-bag .chara__right {
+  color: #848383;
+}
 
 .bonus__image .image {
   padding: 20px 0;
@@ -2243,6 +2255,9 @@ body .c-b_grey {
 }
 .btn-youtube .fa {
   margin-right: 10px;
+}
+.w-auto {
+	width: auto;
 }
 
 .price {
