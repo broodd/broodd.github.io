@@ -211,14 +211,16 @@ $(document).ready(function() {
     else input.val(1);
   });
 
+
   // var i = 0;
   // // $('.tab-content .tab-content .slick__1').slick('slickSetOption');
   // // $('.tab-content .tab-content .slick__1, .slick-tab .tab-content').slick('unslick');
-  // $('.tab-content .tab-content .slick__1').parents('.tab-content').hover(function() {
-  //   if(i == 0) {
-  //     // $('.slick-tab .tab-content .nav-pills').slick('slickNext');
-  //     $('.tab-content .tab-content .slick__1').slick('slickNext');
-  //   }
-  //   i++;
-  // });
+  $('.tab-content .tab-content .slick__1').parent().parent().parent().parent().parent().parent().parent().children('.nav-pills').click(function() {
+    console.log('event');
+    // if(i == 0) {
+      // $('.slick-tab .tab-content .nav-pills').slick('slickNext');
+      $('.tab-content .tab-content .slick__1').slick('slickNext');
+    // }
+    // i++;
+  });
 });
