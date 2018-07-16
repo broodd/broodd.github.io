@@ -88,6 +88,8 @@ $(document).ready(function() {
           $("#wrapper-section__slider").slider("values",1,value2);
       });
  
+
+ 
   // var autoplay = 2000;
   $('.slick__1').slick({
     slidesToShow: 1,

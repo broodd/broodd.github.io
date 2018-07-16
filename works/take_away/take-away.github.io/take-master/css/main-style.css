@@ -2486,6 +2486,9 @@ body {
 	overflow-x: hidden;
 }
 
+.count {
+	margin-top: 2px;
+}
 .count input {
 	display: inline-block;
 	padding: 5px;
@@ -2496,6 +2499,9 @@ body {
 	width: 50px;
 	box-shadow: inset 1px 1px 2px 0px #868686;
 	border: 1px solid #eae9e9;
+}
+.count .count__minus {
+	font-size: 65px;	
 }
 .count .count__die {
 	cursor: pointer;
