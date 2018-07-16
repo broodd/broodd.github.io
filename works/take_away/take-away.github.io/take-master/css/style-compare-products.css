@@ -1,0 +1,51 @@
+.compare-products .container{
+	height: 100%;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+#compare-products-description, #compare-products-img{
+    border: 1px solid #ccc;
+	height: auto;
+    background-color: #fff; 
+    padding: 20px 35px 30px 35px;
+    margin-bottom: 20px;
+    border-right: none;
+    width: 150%;
+}
+
+
+.scroll-img{
+    display: inline-block;
+    margin-right: 10px;
+    width: 390px;
+    height: 500px;
+}
+
+.cards div img{
+    height: 240px;
+} 
+
+.compare-products-table{
+    height: 95%;
+}
+
+.compare-products-table__body{
+    border: 1px solid #efeeee;
+}
+.compare-products-table__body tr{
+    padding-top: 17px;
+    padding-left: 12px;
+}
+
+.compare-products-table__body tr td{
+    width: 390px;
+    color: #4c4c4c;
+}
+
+.compare-products-table__body tr td:first-child{
+    color: #999;;
+}
+.compare-products-table__body tr td span{
+    padding-bottom: 15px;
+}
