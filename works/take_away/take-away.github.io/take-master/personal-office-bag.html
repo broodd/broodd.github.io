@@ -2033,9 +2033,9 @@
 			<div class="d-flex align-items-center">
 				<a class="fs-20 pl-2" href="index.html" style="color: #999;">Личный кабинет</a>
 				<i class="fa fa-angle-double-right px-3 fs-20" aria-hidden="true"></i>
-				<span class="fs-20" style="color: #4c4c4c;">Личная информация</span>
+				<span class="fs-20" style="color: #4c4c4c;">Корзина</span>
 			</div>
-			<h2>Личная информация</h2>
+			<h2>Корзина</h2>
 		</div>
 	</section>
 		
@@ -2043,7 +2043,7 @@
 	<section id="personal-office" class="personal-office">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-auto pr-lg-0 mb-4 mb-xl-0">
+				<div class="col-md-auto col-xl-3 pr-lg-0 mb-4 mb-xl-0">
 					<ul class="personal-office-btn fs-22">
 						<li>
 							<button type="button" class="personal-office-btn_btn"><a href="personal-office.html">Личная информация</a></button>
@@ -2084,17 +2084,19 @@
 						</div>
 					</div>
 				</div>
-				<div class="col pl-lg-2">
+				<div class="col col-xl-5 pl-lg-2">
 					<div class="border h-100 px-2 py-1 fs-18">
 						<span class="fs-22 c-dark mb-2">Товары в корзине</span>
 						<div class="history-wrap d-flex justify-content-between">
 							<div class="history-img d-flex">
-								<i class="fa fa-times pr-3"></i>
+								<i class="fa fa-times pr-3 remove" data-remove=".history-wrap"></i>
 								<img src="img/small-phone.jpg" alt="" class="img-fluid pr-2" style="height: 90px;">
 								<span>Xiaomi Redmi 5 3/32GB Gold</span>
 							</div>
-							<div class="history-number mt-2">
-								<span>1</span>
+							<div class="count d-flex align-items-center">
+								<div class="count__die count__minus">-</div>
+								<input type="text" class="count__input" value="1">
+								<div class="count__die count__plus">+</div>
 							</div>
 							<div class="history-price" style="color: #4c4c4c;">
 								<p class="fs-22"><span class="bold fs-34">3 999</span> руб</p>
@@ -2102,12 +2104,14 @@
 						</div>
 						<div class="history-wrap d-flex justify-content-between">
 							<div class="history-img d-flex">
-								<i class="fa fa-times pr-3"></i>
+								<i class="fa fa-times pr-3 remove" data-remove=".history-wrap"></i>
 								<img src="img/small-phone1.jpg" alt="" class="img-fluid pr-2" style="height: 90px;">
 								<span>Samsung Galaxy S9</span>
 							</div>
-							<div class="history-number mt-2">
-								<span>1</span>
+							<div class="count d-flex align-items-center">
+								<div class="count__die count__minus">-</div>
+								<input type="text" class="count__input" value="1">
+								<div class="count__die count__plus">+</div>
 							</div>
 							<div class="history-price" style="color: #4c4c4c;">
 								<p class="fs-22 outlined" style="color: #4c4c4c;">29 999 руб</p>

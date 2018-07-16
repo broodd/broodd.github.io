@@ -190,6 +190,25 @@ $(document).ready(function() {
     $('.toggle-review').toggleClass('d-none');
   });
 
+  $('.remove').click(function(event) {
+    $(this).parents( $(this).attr('data-remove') ).remove();
+  });
+
+
+  $('.count__minus').click(function(event) {
+    var input = $(this).next();
+    if( parseInt(input.val()) > 1 )
+      input.val( parseInt(input.val()) - 1);
+    else input.val(1);
+  });
+
+  $('.count__plus').click(function(event) {
+    var input = $(this).prev();
+    if( parseInt(input.val()) > 0)
+      input.val( parseInt(input.val()) + 1);
+    else input.val(1);
+  });
+
   // var i = 0;
   // // $('.tab-content .tab-content .slick__1').slick('slickSetOption');
   // // $('.tab-content .tab-content .slick__1, .slick-tab .tab-content').slick('unslick');

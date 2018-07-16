@@ -1834,6 +1834,9 @@ display:none;
 .unlink:hover {
 	text-decoration: none;
 }
+.fa-times {
+	cursor: pointer;
+}
 
 .slick__vertical .image {
   padding: 5px;
@@ -2462,7 +2465,19 @@ body .c-b_grey {
   width: 100%;
 }
 
+.bag-form .row {
+	margin-bottom: 15px;
+}
 
+.bag-form [class*="col-"] {
+	padding: 0;
+}
+.bag-form input {
+	width: 100%;
+	border: 1px solid #ecebeb;
+	background-color: #ffffff;
+	border-radius: 0;
+}
 
 .desc .row {
 	margin-top: 10px;
@@ -2471,12 +2486,27 @@ body {
 	overflow-x: hidden;
 }
 
+.count input {
+	display: inline-block;
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+	min-width: 50px;
+	max-width: 100px;
+	width: 50px;
+	box-shadow: inset 1px 1px 2px 0px #868686;
+	border: 1px solid #eae9e9;
+}
+.count .count__die {
+	cursor: pointer;
+	padding: 5px;
+	font-size: 40px;
+	margin: 0 10px;
+}
+
 @media only screen and (min-width: 992px) {
   .mega-left {
     max-width: 800px;
-  }
-  body {
-  	line-height: 1.5 !important;
   }
 }
 
@@ -2499,6 +2529,9 @@ body {
 @media only screen and (max-width: 1024px) {
   .bro-big .bro__img {
     width: 35%;
+  }
+  body {
+  	line-height: 1.5 !important;
   }
 }
 
