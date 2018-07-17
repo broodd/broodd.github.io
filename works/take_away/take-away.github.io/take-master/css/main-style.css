@@ -2598,6 +2598,7 @@ body {
 	padding: 5px;
 	font-size: 40px;
 	margin: 0 10px;
+	line-height: 20px;
 }
 .count .count__minus {
 	font-size: 65px;	
