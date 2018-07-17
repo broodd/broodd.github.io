@@ -2596,13 +2596,14 @@ body {
 .count .count__die {
 	cursor: pointer;
 	padding: 5px;
-	font-size: 40px;
+	font-size: 30px;
 	margin: 0 10px;
 	line-height: 20px;
 }
 .count .count__minus {
-	font-size: 65px;	
+	font-size: 55px;	
 }
+
 @media only screen and (min-width: 992px) {
   .mega-left {
     max-width: 800px;
@@ -2625,6 +2626,13 @@ body {
 	}
 }
 
+@media only screen and (max-width: 1650px) {
+	.my .col-three {
+		flex: 100%;
+		max-width: 100%;
+		margin-top: 10px;
+	}
+}
 @media only screen and (max-width: 1024px) {
   .bro-big .bro__img {
     width: 35%;
@@ -2643,12 +2651,24 @@ body {
     transform: translate(0);
   }
 }
+@media only screen and (max-width: 580px) {
+	.chara-bag li,
+	.chara__left {
+		display: block;
+	}
+}
 @media only screen and (max-width: 425px) {
   .menu-list.open {
     position: static;
   }
   .menu-list.open:after {
   	display: none;
+  }
+  .my .history-img {
+  	width: 110px;
+  }
+  .my .count {
+  	margin: 20px 0;
   }
 }
 
