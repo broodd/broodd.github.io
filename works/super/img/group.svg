@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792.157 458.209">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        opacity: 0.99;
+      }
+
+      .cls-2 {
+        font-size: 50px;
+        font-family: YuGothic-Bold, Yu Gothic;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #dfdfdf;
+        font-size: 20px;
+        font-family: SegoeUI, Segoe UI;
+        letter-spacing: 0.023em;
+      }
+
+      .cls-5 {
+        opacity: 0.22;
+      }
+
+      .cls-6 {
+        opacity: 0.55;
+      }
+
+      .cls-7 {
+        opacity: 0.49;
+      }
+    </style>
+  </defs>
+  <g id="Group_67" data-name="Group 67" transform="translate(-277 -277.791)">
+    <g id="Group_65" data-name="Group 65" transform="translate(51.581 -205)">
+      <path id="Path_79" data-name="Path 79" class="cls-1" d="M1237.419,516.224h476.189l198.811,196.739V909h-675Z" transform="translate(-1012 32)"/>
+      <text id="Hi_I_m_Svyat._Nice_to_meet_you." data-name="Hi, I’m Svyat.
+Nice to meet you." class="cls-2" transform="translate(289.356 651)"><tspan x="0" y="49">Hi, I’m Svyat.</tspan><tspan x="0" y="99">Nice to meet </tspan></text>
+      <text id="Front-end_WordPress_Developer" data-name="Front-end / WordPress Developer" class="cls-3" transform="translate(292.356 800)"><tspan x="0" y="22">Front-end / WordPress Developer</tspan></text>
+      <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-4" width="314" height="3" transform="translate(292.419 938)"/>
+    </g>
+    <g id="Group_66" data-name="Group 66">
+      <path id="Path_81" data-name="Path 81" class="cls-4" d="M980.667,543.754Z" transform="translate(-30 -12)"/>
+      <path id="Path_83" data-name="Path 83" class="cls-1" d="M872.455,358.629l29.361-82.841L987.8,493.9l64.631-135.273h0" transform="translate(-281 67)"/>
+      <path id="Path_84" data-name="Path 84" class="cls-4" d="M621.108,438.685h0Z" transform="translate(-30 -11)"/>
+      <path id="Path_85" data-name="Path 85" class="cls-1" d="M819.291,353.788h86.967l-78.649,58.731Z" transform="translate(1816.523 635.532) rotate(166)"/>
+      <path id="Path_86" data-name="Path 86" class="cls-5" d="M819.291,353.788h50.38L824.11,397.835Z" transform="matrix(-0.799, -0.602, 0.602, -0.799, 1344.396, 1118.897)"/>
+      <path id="Path_87" data-name="Path 87" class="cls-6" d="M819.291,353.788h73.053l-66.065,49.659Z" transform="matrix(-0.719, -0.695, 0.695, -0.719, 1205.462, 1218.943)"/>
+      <path id="Path_88" data-name="Path 88" class="cls-1" d="M819.291,353.788H988.035l-152.6,133.627Z" transform="matrix(0.5, -0.866, 0.866, 0.5, 153.025, 1068.957)"/>
+      <path id="Path_90" data-name="Path 90" class="cls-7" d="M1012.974,292.567l44.94,29.863V292.567Z" transform="matrix(0.766, -0.643, 0.643, 0.766, -76.947, 803.485)"/>
+    </g>
+  </g>
+</svg>

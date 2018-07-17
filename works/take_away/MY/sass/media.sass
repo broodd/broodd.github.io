@@ -1,0 +1,103 @@
+@import 'mixins'
+@import 'vars'
+
+
+// col    <   576px
+// col-sm >=  576px
+// col-md >=  768px
+// col-lg >=  922px
+// col-xl >= 1140px
+
++w(1400)
+	html, body
+		font-size: 14px
+	.price
+		font-size: 11px
+
+	.cart
+		&-small
+			.price
+				// font-size: 10px
+				font-size: 0.7142em
+
++w(1250)
+	.footer
+		.product-list
+			margin-bottom: 30px
+	.price
+		&-small
+			font-size: 0.6em
+
++w(992)
+	.text-lg
+		&-center
+			text-align: center
+
+
+	.carousel-two
+		.group-cart
+			.cart
+				height: auto
+
+	.header
+		&-bottom
+			background-color: #F7F7F7
+
+	.btn
+		&-nav
+			background: none
+			width: 100%
+			padding: 0 0 5px
+			color: #999999
+			text-align: left
+			.fa
+				display: none
+
+	.nav
+		&-bottom
+			.menu
+				.sub-menu
+					// width: auto !important
+					// height: auto !important
+
++w(768)
+	html,body
+		font-size: 14px
+
+	.text-md
+		&-center
+			text-align: center
+			
+	.social
+		a
+			margin-right: 5px
+			width: 40px
+			height: 40px
+
++mw(992)
+
+	.navbar
+		background-color: #f7f7f7
+	.nav
+		&-bottom
+			font-size: 16px
+			.menu
+				position: absolute
+				width: 100%
+				z-index: 3
+				background-color: $white
+				& > li
+					&:hover, &:active, &.active
+						& > .sub-menu
+							display: block
+				.sub-menu
+					position: absolute
+					left: 100%
+					z-index: 3
+					background-color: #F7F7F7
+					top: 0
+				.title
+					font-size: 20px
+		&:hover,&:active
+			.menu
+				display: block
