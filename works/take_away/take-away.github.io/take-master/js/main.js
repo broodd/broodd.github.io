@@ -45,8 +45,8 @@ $(document).ready(function() {
   var registration = $( ".registration" );
   var login = $(".login");
     $( ".show-registration" ).on( "click", function( event ) {
-      registration.toggle();
-      login.toggle();
+      registration.show();
+      login.hide();
     });
 
     $( ".login-btn" ).on( "click", function( event ) {
@@ -88,8 +88,7 @@ $(document).ready(function() {
           $("#wrapper-section__slider").slider("values",1,value2);
       });
  
-
- 
+  
   // var autoplay = 2000;
   $('.slick__1').slick({
     slidesToShow: 1,

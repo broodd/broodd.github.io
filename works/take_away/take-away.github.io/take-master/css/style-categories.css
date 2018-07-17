@@ -1,18 +1,18 @@
 .header{
-	height: 700px;
+	height: 36.45vmax;
 }
 
 .title a{
     color: #999;
 }
 .categories .container{
-	border: 1px solid #cdcdcd;
+	border: 0.05vmax solid #cdcdcd;
 	height: 100%;
 	background-color: #fff; 
-	padding: 20px 35px 30px 35px;
-	margin-top: 20px;
+	padding: 1.04vmax 1.82vmax 1.56vmax 1.82vmax;
+	margin-top: 1.04vmax;
 }
-
+ 
 .dark-grey{
 	color: #4c4c4c;
 }
@@ -21,16 +21,16 @@ i{
 }
 
 h4{
-	font-size: 22px;
+	font-size: 1.25vmax;
 	font-weight: 500;
 	color: #4c4c4c;
-	padding-bottom: 18px;
+	padding-bottom: 0.93vmax;
 }
 
 .del-all i, .del i{
-	color: #007bff;
+	color: #2299d4;
 	cursor: pointer;
-	padding-bottom: 20px;
+	padding-bottom: 0.93vmax;
 }
 .del-all a:hover, .del a:hover {
 	text-decoration: none;
@@ -40,35 +40,44 @@ h4{
 }
 
 .added div i, .your-choice div i{
-	padding-right: 25px;
+	padding-right: 1.30vmax;
 }
 
 .added, .your-choice, .catalog-popular, .catalog, .producer, .all-catalog{
 	border: 1px solid #efeeee;
-	margin-bottom: 10px;
-	padding: 16px 25px 16px 20px;
+	margin-bottom: 0.62vmax;
+	padding: 0.83vmax 1.30vmax 0.83vmax 1.04vmax;
 }
 .goods{
-	border-bottom: 1px solid #cdcdcd;
-	padding: 10px 0;
+	border-bottom: 0.05vmax solid #cdcdcd;
+	padding: 0.52vmax 0;
 }
 
 .goods i{
 	cursor: pointer;
 }
 .goods img{
-	padding-right: 15px;
+	padding-right: 0.78vmax;
+	height: 4.61vmax;
 }
 .your-choice span{
 	color: #4c4c4c;
-	font-size: 18px;
+	font-size: 0.93vmax;
+}
+.categories .cards h3{
+	font-size: 22px;
+}
+
+.cards a img{
+	height: 12.54vmax;
+
 }
 
 .catalog-popular ul li,
 .catalog ul li,
 .producer ul li,
 .all-catalog ul li{
-	padding-bottom: 20px;
+	padding-bottom: 0.93vmax;
 }
 .catalog-popular ul li a:hover,
 .catalog ul li a:hover,
@@ -81,24 +90,24 @@ h4{
 }
 
 .wraper{
-	border: 1px solid #efeeee;
-	padding: 15px 17px 25px 20px;
+	border: 0.05vmax solid #efeeee;
+	padding: 0.78vmax 0.88vmax 1.30vmax 1.04vmax;
 	margin-bottom: 10px;
 }
 .categories .cards{
-	padding: 19px 17px 25px 20px;
+	padding: 0.98vmax 0.88vmax 1.30vmax 1.04vmax;
 }
 .wraper div ul li{
-	padding: 6px 0;
+	padding: 0.25vmax 0;
 }
 .wraper ul{
-	padding-left: 18px;
+	padding-left: 0.63vmax;
 }
 .wraper div ul li a:hover{
 	text-decoration: none;
 }
 .wraper .title-1 h4{
-	padding-left: 18px;
+	padding-left: 0.63vmax;
 }
 .slider-categories{
 	position: relative;
@@ -106,14 +115,14 @@ h4{
 
 .group-nomber{
 	position: absolute;
-	left: 40px;
-	bottom: 20px;
+	left: 2.08vmax;
+	bottom: 1.04vmax;
 }
 .group-nomber p{
 	text-align: left;
 	line-height: 1em;
 	color: #fff;
-	letter-spacing: 4px;
+	letter-spacing: 0.20vmax;
 }
 
 .carousel-indicators{
@@ -121,38 +130,42 @@ h4{
 }
 
 .wraper img{
-	width: 120px;
-	height: 130px;
+	width: 6.25vmax;
+	height: 6.77vmax;
 }
 
 .cards-3{
-	height: 508px;
+	height: 28.45vmax;
 	position: relative;
 }
 
 .all-prod{
 	position: absolute;
-	left: 40px;
-	bottom: 30px;
+	left: 2.08vmax;
+	bottom: 1.56vmax;
+}
+.all-prod a{
+	color: #2299d4;
 }
 
 .cards-3 ul li{
-	padding: 5px 0;
+	padding: 0.26vmax 0;
 }
 .cards-3 ul li a:hover{
 	text-decoration: none;
 }
 
 .title{
-	margin-top: -500px;
+	margin-top: -26vmax;
 }
 .title h2{
-	padding-top: 15px;
-	font-size: 45px;
+	padding-top: 0.78vmax;
+	font-size: 2.34vmax;
+	font-weight: 400;
 }
 
 .fs-45{
-	font-size: 45px;
+	font-size: 2.5vmax;
 }
 
 .filter-btn{
@@ -163,18 +176,36 @@ h4{
 	display: none;
 }
 .footer{
-	margin-top: 35px;
+	margin-top: 1.82vmax;
 }
 
 .categories .col-lg-4.col-md-4.col-12{
-	padding-right: 10px;
+	padding-right: 0.62vmax;
 }
 
 .categories .col-md-4.col-sm-4{
-	padding-right: 10px;
+	padding-right: 0.62vmax;
 }
 .categories .col-xl-4.col-md-6.col-6{
-	padding-right: 10px;
+	padding-right: 0.62vmax;
+}
+
+@media only screen and (max-width: 1550px){
+	.fs-20{
+		font-size: 14px;
+	}
+	.fs-18{
+		font-size: 14px !important;
+	}
+	.fs-22{
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 1550px){
+	.fs-18{
+		font-size: 12px !important;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -185,7 +216,7 @@ h4{
 	   width: 100%;
    }
    .title{
-	margin-top: -250px;
+	margin-top: -20.33vmax;
 	}
 
 	.categories .cards img{
@@ -233,6 +264,15 @@ h4{
 	.your-choice div span{
 		padding-left: 0;
 	}
+	h4{
+		font-size: 18px;
+	}
+
+	.categories .cards .cards__price{
+		flex-direction: column;
+		height: 90px;
+    align-items: center;
+	}
 }
 @media only screen and (max-width: 768px) {
 .categories .container{
@@ -252,6 +292,9 @@ h4{
 	}
 	.col-md-8.pl-0{
 		padding-right: 0;
+	}
+	.title{
+		margin-top: -120px;
 	}
 }
 

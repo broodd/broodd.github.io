@@ -15,13 +15,14 @@
 </head>
 
 <body>
+		
 	<header id="header" class="header">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-xl-5 col-10 pl-0 d-flex">
-					<div class="logo">
-						<a href="index.html"><img src="img/logo-2.png" class="img-fluid"></a>
-					</div>
+					<a href="index.html" class="logo">
+						<img src="img/logo-2.png" class="img-fluid">
+					</a>
 					<div class="phone fs-20 pl-5">+38
 						<select>
 							<option class="phone__option">
@@ -36,7 +37,7 @@
 						</select>
 					</div>
 				</div>
-				<div class="col-lg-12 col-md-12 col-xl-6 ml-auto col-12 p-0">
+				<div class="col-lg-12 col-md-12 col-xl-7 col-12 p-0">
 					<div class="pos-f-t">
 						<div class="collapse" id="navbarToggleExternalContent">
 							<div class="pb-2">
@@ -48,7 +49,7 @@
 										<a href="#" class="bold">Блог</a>
 									</li>
 									<li class="menu__item">
-										<a href="#">Доставка и оплата</a>
+										<a href="text-page.html">Доставка и оплата</a>
 									</li>
 									<li class="menu__item">
 										<a href="#">Гарантия</a>
@@ -86,7 +87,7 @@
 								<a href="#" class="bold">Блог</a>
 							</li>
 							<li class="menu__item">
-								<a href="#">Доставка и оплата</a>
+								<a href="text-page.html">Доставка и оплата</a>
 							</li>
 							<li class="menu__item">
 								<a href="#">Гарантия</a>
@@ -98,10 +99,10 @@
 								<a href="#">Контакты</a>
 							</li>
 							<li class="menu__item">
-								<a href="#">Уценка</a>
+								<a href="personal-office.html">Уценка</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" style="color: #2299d4">Акции</a>
+								<a href="compare-products.html" style="color: #2299d4">Акции</a>
 							</li>
 							<select class="language pl-2">
 								<option>ru</option>
@@ -111,7 +112,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="col-12 d-block d-sm-none">
+				<div class="col-12 search-hide">
 					<form class="search-button d-flex justify-content-end">
 						<div class="search">
 							<input type="text" row="50" placeholder="Я ищу">
@@ -120,19 +121,19 @@
 					</form>
 				</div>
 			</div>
-			<div class="row group-buttons">
-				<div class="col-lg-12 col-md-12 d-flex justify-content-between align-items-center p-0">
+			<div class="row">
+				<div class="group-buttons col-lg-12 col-md-12 d-flex justify-content-between align-items-center p-0">
 					<div class="dropdown button-menu" role="group">
 						<button type="button" class="btn blue button-menu__button d-flex align-items-center justify-content-around" data-toggle="dropdown"
 						 aria-haspopup="true" aria-expanded="false" data-flip="false">
 							<i class="fa fa-bars" aria-hidden="true"></i>
-							<span class="fs-22">Каталог товаров</span>
+							Каталог товаров
 						</button>
-						<div class="dropdown-menu fs-16" aria-labelledby="btnGroupDrop1">
+						<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="categories.html">Смартфоны и аксессуары</a>
-									<i class="fa fa-angle-right pr-2 fs-20" aria-hidden="true"></i>
+									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
 								<div class="px-0 py-3 menu-list">
 									<div class="row h-100">
@@ -270,7 +271,7 @@
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="#">Электроника</a>
-									<i class="fa fa-angle-right pr-2 fs-20" aria-hidden="true"></i>
+									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
 								<div class="px-0 py-3 menu-list">
 									<div class="row h-100">
@@ -383,10 +384,10 @@
 										</div>
 										<div class="col-md-4 d-flex align-items-center h-100">
 											<div class="cards border-shadow">
-												<div class="d-flex justify-content-center">
+												<a class="d-flex justify-content-center">
 													<img src="img/phone2.jpg" class="img-fluid">
-												</div>
-												<h3 class="fs-22">Apple iPhone 8 Plus </h3>
+												</a>
+												<h3>Apple iPhone 8 Plus </h3>
 												<div class="cards__reviews d-flex orange">
 													<i class="fa fa-star" aria-hidden="true"></i>
 													<i class="fa fa-star" aria-hidden="true"></i>
@@ -396,8 +397,7 @@
 													<a href="#" class="fs-16">6 отзывов</a>
 												</div>
 												<div class="cards__price d-flex justify-content-between">
-													<p>
-														<span>27 599</span>руб</p>
+													<p><span>27 599</span> руб</p>
 													<button type="submit" class="btn btn-green">купить</button>
 												</div>
 											</div>
@@ -408,7 +408,7 @@
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="#">Компьютеры и оргтехника</a>
-									<i class="fa fa-angle-right pr-2 fs-20" aria-hidden="true"></i>
+									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
 								<div class="px-0 py-3 menu-list">
 									<div class="row h-100">
@@ -528,7 +528,7 @@
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="#">Бытовая техника</a>
-									<i class="fa fa-angle-right pr-2 fs-20" aria-hidden="true"></i>
+									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
 								<div class="px-0 py-3 menu-list">
 									<div class="row h-100">
@@ -654,7 +654,7 @@
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="#">Мужская одежда</a>
-									<i class="fa fa-angle-right pr-2 fs-20" aria-hidden="true"></i>
+									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
 								<div class="px-0 py-3 menu-list">
 									<div class="row h-100">
@@ -783,7 +783,7 @@
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="#">Женская одежда</a>
-									<i class="fa fa-angle-right pr-2 fs-20" aria-hidden="true"></i>
+									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
 								<div class="px-0 py-3 menu-list">
 									<div class="row h-100">
@@ -921,7 +921,7 @@
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="#">Спорт и отдых</a>
-									<i class="fa fa-angle-right pr-2 fs-20" aria-hidden="true"></i>
+									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
 								<div class="px-0 py-3 menu-list">
 									<div class="row h-100">
@@ -1059,7 +1059,7 @@
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="#">Для дома и сада</a>
-									<i class="fa fa-angle-right pr-2 fs-20" aria-hidden="true"></i>
+									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
 								<div class="px-0 py-3 menu-list">
 									<div class="row h-100">
@@ -1185,7 +1185,7 @@
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="#">Красота и здоровье</a>
-									<i class="fa fa-angle-right pr-2 fs-20" aria-hidden="true"></i>
+									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
 								<div class="px-0 py-3 menu-list">
 									<div class="row h-100">
@@ -1308,7 +1308,7 @@
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="#">Детские товары</a>
-									<i class="fa fa-angle-right pr-2 fs-20" aria-hidden="true"></i>
+									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
 								<div class="px-0 py-3 menu-list">
 									<div class="row h-100">
@@ -1446,7 +1446,7 @@
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="#">Обувь и сумки</a>
-									<i class="fa fa-angle-right pr-2 fs-20" aria-hidden="true"></i>
+									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
 								<div class="px-0 py-3 menu-list">
 									<div class="row h-100">
@@ -1584,7 +1584,7 @@
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="#">Украшения и часы</a>
-									<i class="fa fa-angle-right pr-2 fs-20" aria-hidden="true"></i>
+									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
 								<div class="px-0 py-3 menu-list">
 									<div class="row h-100">
@@ -1704,7 +1704,7 @@
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="#">Автотовары</a>
-									<i class="fa fa-angle-right pr-2 fs-20" aria-hidden="true"></i>
+									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
 								<div class="px-0 py-3 menu-list">
 									<div class="row h-100">
@@ -1842,7 +1842,7 @@
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="#">Парики</a>
-									<i class="fa fa-angle-right pr-2 fs-20" aria-hidden="true"></i>
+									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
 								<div class="px-0 py-3 menu-list">
 									<div class="row h-100">
@@ -1974,14 +1974,85 @@
 						<input type="text" row="50" placeholder="Я ищу" class="search">
 						<button class="blue btn">Найти</button>
 					</form>
-					<div class="group-button d-flex justify-content-between">
+					<div class="group-button d-flex justify-content-between align-items-center">
 						<div class="dropdown w-50">
-							<button class="btn-gray" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-flip="false"
+							<button class="btn-gray d-flex align-items-center justify-content-around" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-flip="false"
 							 role="button" aria-pressed="true">
-								<img src="img/cart.png" class="img-fluid">
-								<span class="counter">0</span>
-								<span class="pl-3">Корзина</span>
+							 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 511.976 511.976" style="enable-background:new 0 0 511.976 511.976;" xml:space="preserve">
+						<g>
+							<g>
+								<path d="M208,399.988c-26.464,0-48,21.536-48,48s21.536,48,48,48s48-21.536,48-48S234.464,399.988,208,399.988z M208,463.988
+									c-8.832,0-16-7.168-16-16c0-8.832,7.168-16,16-16c8.832,0,16,7.168,16,16C224,456.82,216.832,463.988,208,463.988z"/>
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M400,399.988c-26.464,0-48,21.536-48,48s21.536,48,48,48s48-21.536,48-48S426.464,399.988,400,399.988z M400,463.988
+									c-8.832,0-16-7.168-16-16c0-8.832,7.168-16,16-16c8.832,0,16,7.168,16,16C416,456.82,408.832,463.988,400,463.988z"/>
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M508.256,85.748c-3.008-3.648-7.52-5.76-12.256-5.76H119.936l-13.92-52.128c-1.856-7.008-8.192-11.872-15.456-11.872H16
+									c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16h62.272l82.272,308.128c1.856,7.008,8.192,11.872,15.456,11.872h256
+									c8.832,0,16-7.168,16-16c0-8.832-7.168-16-16-16H188.288l-9.376-35.136l285.792-12.864c7.456-0.352,13.696-5.792,15.008-13.12
+									l32-176C512.576,94.196,511.296,89.396,508.256,85.748z M450.56,256.596l-280.128,12.608L128.48,111.988h348.352L450.56,256.596z"
+									/>
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M400,143.988c-8.832,0-16,7.168-16,16v64c0,8.832,7.168,16,16,16c8.832,0,16-7.168,16-16v-64
+									C416,151.156,408.832,143.988,400,143.988z"/>
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M304,143.988c-8.832,0-16,7.168-16,16v64c0,8.832,7.168,16,16,16c8.832,0,16-7.168,16-16v-64
+									C320,151.156,312.832,143.988,304,143.988z"/>
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M208,143.988c-8.832,0-16,7.168-16,16v64c0,8.832,7.168,16,16,16c8.832,0,16-7.168,16-16v-64
+									C224,151.156,216.832,143.988,208,143.988z"/>
+							</g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+							</svg>
+								<span>Корзина</span>
 							</button>
+							<div class="counter"><span>1</span></div>
 							<div class="dropdown-menu right">
 								<form class="px-4 py-3 ">
 									<h2 class="fs-22">В вашей корзине 1 товар</h2>
@@ -2005,10 +2076,50 @@
 							</div>
 						</div>
 						<div class="dropdown w-50">
-							<button class="btn-gray login-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-flip="false"
+							<button class="btn-gray login-btn d-flex align-items-center justify-content-around" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-flip="false"
 							 role="button" aria-pressed="true">
-								<img src="img/user.png" class="img-fluid">
-								<span class="pl-2">Вход в аккаунт</span>
+							 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+								<g>
+									<g>
+										<g>
+											<path d="M404,148C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.261,121.963     c-36.21,12.494-69.398,33.135-97.281,61.018C26.628,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216     C337.607,296,404,229.607,404,148z M148,148c0-59.552,48.449-108,108-108c59.551,0,108,48.448,108,108s-48.449,108-108,108     C196.449,256,148,207.552,148,148z"/>
+											<path d="M412,312c-31.55,0-61.22,15.072-79.972,40H208.716L158,402.716v19.721L208.868,472h123.16     c18.752,24.928,48.422,40,79.972,40c55.14,0,100-44.859,100-100S467.14,312,412,312z M412,472     c-21.335,0-41.246-11.502-51.961-30.018L354.262,432h-45.54l-28.947-27.5L253.65,432h-28.518l-20.183-19.665L225.284,392h128.979     l5.777-9.982C370.755,363.502,390.665,352,412,352c33.084,0,60,26.916,60,60S445.084,472,412,472z"/>
+											<circle cx="432" cy="412" r="20"/>
+										</g>
+									</g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								<g>
+								</g>
+								</svg>
+								<span>Вход в аккаунт</span>
 							</button>
 							<div class="dropdown-menu dropdown-menu-right">
 								<div class="login">
