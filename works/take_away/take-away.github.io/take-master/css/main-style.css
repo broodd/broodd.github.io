@@ -2603,6 +2603,12 @@ body {
 .count .count__minus {
 	font-size: 55px;	
 }
+.slick-arrow-cont .slick-slider .slick-arrow.slick-prev {
+	left: 0;
+}
+.slick-arrow-cont .slick-slider .slick-arrow.slick-prev {
+	right: 0;
+}
 
 @media only screen and (min-width: 992px) {
   .mega-left {
