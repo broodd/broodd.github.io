@@ -1935,13 +1935,7 @@ display:none;
 
 /* MARK */
 /*shit code, blayt it is shit site, naxer pizdos, korotche I ebav ego v rot, mne poxeh it is shit sithout me*/
-/* .col-lg-5.col-md-5.col-sm-5.col-12.d-flex.justify-content-between {
-	padding-left: 0;
-}*/
-.gruop-cards-2-img {
-	margin-left: 5px !important;
-	margin-right: 5px !important;
-}
+
 .gruop-cards-1 {
 	margin-left: 10px !important;
 	margin-right: 10px !important;
@@ -2747,6 +2741,13 @@ body {
 	}
 	.chara .chara__left {
 		display: block;
+	}
+	.gruop-cards-2-img {
+		margin-left: 10px !important;
+		margin-right: 10px !important;
+	}
+	.col-lg-5.col-md-5.col-sm-5.col-12.d-flex.justify-content-between {
+		padding-left: 0;
 	}
 }
 @media only screen and (max-width: 425px) {
