@@ -3,9 +3,9 @@
 .slick .image img { max-width: 100%; max-height: 100%; }
 .slick-slider .slick-arrow { top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 .slick-slider .slick-arrow.slick-prev { left: -35px; }
-.slick-slider .slick-arrow.slick-prev:before { border-top: none; border-right: none; margin-left: 3px; }
+.slick-slider .slick-arrow.slick-prev:before { border-top: none; border-right: none; -webkit-transform: translate(-35%, -50%) rotate(45deg); -ms-transform: translate(-35%, -50%) rotate(45deg); transform: translate(-35%, -50%) rotate(45deg); }
 .slick-slider .slick-arrow.slick-next { right: -35px; }
-.slick-slider .slick-arrow.slick-next:before { border-bottom: none; border-left: none; margin-right: 3px; }
+.slick-slider .slick-arrow.slick-next:before { border-bottom: none; border-left: none; -webkit-transform: translate(-65%, -50%) rotate(45deg); -ms-transform: translate(-65%, -50%) rotate(45deg); transform: translate(-65%, -50%) rotate(45deg); }
 .slick-slide { outline: none; }
 .slick-vertical { padding: 40px 0; }
 .slick-vertical .slick-arrow { left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
