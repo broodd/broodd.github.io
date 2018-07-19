@@ -2641,6 +2641,10 @@ body {
 	right: 0;
 }
 
+.slick__1_lg-dots .slick-arrow {
+	margin-top: -0.25rem;
+}
+
 @media only screen and (min-width: 992px) {
   .mega-left {
     max-width: 800px;
