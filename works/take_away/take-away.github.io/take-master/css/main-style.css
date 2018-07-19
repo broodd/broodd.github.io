@@ -1902,14 +1902,41 @@ display:none;
 .slick__vertical .image { padding: 5px; margin: 10px 0; border: 1px solid transparent; cursor: pointer; }
 .slick__vertical .slick-current { border-color: #2299d4; }
 .slick-arrow { font-size: 0; position: absolute; width: 50px; height: 50px; background: none; z-index: 2; border-radius: 50%; }
-.slick-arrow:hover, .slick-arrow:active, .slick-arrow:focus { outline: none; background-color: #2299d4; }
 .slick-arrow:before { content: ""; position: absolute; top: 50%; left: 50%; width: 20px; height: 20px; border: 4px solid #ededed; -webkit-transform: translate(-50%, -50%) rotate(45deg); -ms-transform: translate(-50%, -50%) rotate(45deg); transform: translate(-50%, -50%) rotate(45deg); }
+.slick:not(.slick-just-arrow) .slick-arrow:hover, .slick:not(.slick-just-arrow) .slick-arrow:active, .slick:not(.slick-just-arrow) .slick-arrow:focus { outline: none; background-color: #2299d4; }
 .slick-dots { position: absolute; right: 0; bottom: 10px; left: 0; z-index: 15; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding-left: 0; margin-right: 15%; margin-left: 15%; list-style: none; }
 .slick-dots li { position: relative; font-size: 0; background: none; border-radius: 50%; border: 5px solid #fff; width: 10px; height: 10px; margin: 5px; background: white; }
 .slick-dots li button { border: none; background: none; }
 .slick-dots li button:hover, .slick-dots li button:active, .slick-dots li button:focus { outline: none; }
 .slick-dots li.slick-active { background: none; border: 1px solid #fff; width: 25px; height: 25px; }
 .slick-dots li:after { content: ""; width: 5px; height: 5px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-color: #fff; border-radius: 50%; }
+
+.slick-just-arrow.slick-slider .slick-arrow.slick-prev{
+	left: 0;
+}
+.slick-just-arrow.slick-slider .slick-arrow.slick-next{
+	right: 0;
+}
+
+
+.slick__1_lg-dots .slick-dots {
+	position: static;
+	margin: 10px 0;
+}
+.slick__1_lg-dots .slick-dots li {
+	border-color: #737373;
+}
+.slick__1_lg-dots .slick-dots li::after {
+	background-color: #737373;
+}
+
+
+
+/*shit code, blayt it is shit site, naxer pizdos, korotche I ebav ego v rot, mne poxeh it is shit sithout me*/
+.col-lg-5.col-md-5.col-sm-5.col-12.d-flex.justify-content-between {
+	padding-left: 0;
+}
+
 
 
 /* Svyat Code */
@@ -2547,7 +2574,7 @@ body .c-b_grey {
 .bro-big {
   min-height: 350px;
 }
-
+]
 
 .slick-brand-main .slick-arrow-cont {
   position: absolute;
@@ -2621,6 +2648,12 @@ body {
   	margin-top: 1rem;
   	margin-bottom: 1rem;
   }
+  .slick__1_just.slick-slider .slick-arrow.slick-next{
+  	right: -35px;
+  }
+  .slick__1_just.slick-slider .slick-arrow.slick-prev{
+  	left: -35px;
+  }
 }
 
 @media only screen and (min-width: 576px) {
@@ -2630,6 +2663,11 @@ body {
 	.bro:nth-of-type(2n) {
 		padding-left: 5px;
 	}
+	.slick-norm-arrow.slick-slider .slick-arrow{
+		display: none;
+	}
+
+
 }
 
 @media only screen and (max-width: 1650px) {
@@ -2666,6 +2704,15 @@ body {
   }
   .text_image__text .title {
   	margin-bottom: 1rem;
+  }
+  
+  .gruop-cards-1,
+  .gruop-cards-2-img {
+  	margin-left: 5px !important;
+  	margin-right: 5px !important;
+  }
+  .container {
+  	width: calc(100% - 10px);
   }
 }
 @media only screen and (max-width: 580px) {

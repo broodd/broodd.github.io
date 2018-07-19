@@ -18,6 +18,16 @@
 		&__item
 			margin-bottom: 60px
 
+
+
++w(1999)
+	.section
+		&-main
+			.col-xl-3
+				.row
+					margin: 0
+					margin-top: 20px
+
 +w(1300)
 	.nav
 		line-height: 1.5
@@ -50,6 +60,7 @@
 
 
 	+san($lg-blue,30px,30px)
+
 
 +w(768)
 	.brand
@@ -141,6 +152,9 @@
 		&-right
 			padding: 0 60px
 
+	.catblock
+		width: calc(100% - 15px)
+
 
 +mw(992)
 	.nav
@@ -172,9 +186,6 @@
 			&-l
 				border-left: 1px solid $grey
 				padding-left: 25px
-
-
-+mw(1300)
 	.catblock
 		position: absolute
 		height: calc(100% / 3 - 15px)
@@ -185,6 +196,9 @@
 			+translateY
 		&:nth-child(3)
 			bottom: 0
+
+
+// +mw(1300)
 
 @media only screen and (max-width: 1300px) and (min-width: 992px) 
 	.order-spec
