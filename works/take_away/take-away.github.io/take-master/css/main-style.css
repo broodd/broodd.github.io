@@ -2210,7 +2210,7 @@ body .c-b_grey {
     user-select: none;
 }
 .check-box.norm .checkmark {
-	top: 0;
+	top: 3px;
 }
 .check-box input {
     position: absolute;
@@ -2712,6 +2712,11 @@ body {
   }
   .text_image__text .title {
   	margin-bottom: 1rem;
+  }
+
+  .shit-row {
+  	margin-left: 5px !important;
+  	margin-right: 5px !important;
   }
   
 
