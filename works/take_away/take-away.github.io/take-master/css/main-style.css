@@ -1919,6 +1919,12 @@ display:none;
 .slick-just-arrow.slick-slider .slick-arrow.slick-next{
 	right: 0;
 }
+.background .slick__1_dots_auto.slick-slider .slick-arrow.slick-next{
+	right: -35px;
+}
+.background .slick__1_dots_auto.slick-slider .slick-arrow.slick-prev{
+	left: 35px;
+}
 
 
 .slick__1_lg-dots .slick-dots {
