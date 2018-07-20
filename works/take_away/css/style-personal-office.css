@@ -1,0 +1,374 @@
+.personal-office .container{
+    border: 0.05vmax solid #ccc;
+	height: 100%;
+    background-color: #fff; 
+    padding: 1.04vmax 1.82vmax 1.56vmax 1.82vmax;
+    margin-bottom: 1.04vmax;
+}
+
+.title{
+    margin-top: 1.30vmax;
+    margin-bottom: 1.04vmax;
+}
+
+.title h2{
+    padding-top: 0.78vmax;
+    font-size: 2.8125rem;
+    font-weight: 400;
+}
+
+.card-personal-info{
+    padding: 1.82vmax 1.04vmax 1.04vmax 1.04vmax;
+    border: 0.05vmax solid #2299d4;
+}
+
+.personal-info{
+    border-bottom: 0.05vmax solid #e6e6e6;
+    margin-bottom: 1.04vmax;
+}
+
+.personal-info li{
+    font-size: 1.1875rem;
+    padding-bottom: 1.04vmax;
+}
+
+.personal-info li a{
+    color: #4c4c4c;
+    font-weight: 400;
+}
+.personal-info li a:hover{
+    text-decoration: none;
+}
+
+.personal-info a::after{
+    content: '\f105';
+	font-family: "FontAwesome";
+    position: absolute;
+    right:1.30vmax;
+    color: #999;
+    font-size: 1.30vmax;
+}
+
+.card-personal-info a{
+    color: #4c4c4c;
+    font-size: 1.1875rem;
+    font-weight: 700;
+}
+
+.personal-office-btn_btn{
+    width: 100%;
+    height: 100%;
+    color: #4c4c4c;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+}
+.personal-office-btn li{
+    border-bottom: 1px solid #e6e6e6;
+    width: 20.31vmax;
+    height: 3.02vmax;
+    background: #f6f6f6;
+}
+
+.personal-office-btn li:last-child{
+   border-bottom: none;
+}
+
+.personal-office-btn_btn a{
+    color: #686767;
+}
+.personal-office-btn_btn a:hover{
+   text-decoration: none;
+}
+.personal-office-btn_btn.active-btn{
+    background: #727272;
+    box-shadow: 0.10vmax 0.26vmax 0.52vmax rgba(0, 0, 0, .2);
+}
+.personal-office-btn_btn.active-btn a{
+    color: #fff;
+    font-weight: 500;
+}
+
+.personal-office-info{
+    border: 1px solid #e6e6e6;
+    padding: 0.93vmax 1.30vmax 1.04vmax 0.93vmax;
+    margin-left: 0.62vmax;
+    margin-bottom: 0.62vmax;
+}
+
+.personal-office-info__list ul li{
+    padding-top: 1.04vmax;
+    font-size: 1.25rem;
+}
+.personal-office-info__list ul li a{
+    color: #999;
+    padding-left: 0.78vmax;
+}
+.change-password-form input{
+    box-shadow: inset 0 0.10vmax 0.05vmax 0.05vmax rgba(0,0,0,0.06);
+
+}
+
+.personal-office-info__change-password a{
+    color: #2299d4 !important;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.save{
+    height: 2.86vmax;
+}
+.modal-dialog{
+    padding: 1.30vmax;
+}
+.modal-content{
+    padding: 0.78vmax 0.52vmax 1.04vmax 0.52vmax;
+}
+.personal-office-info__change-password a::after{
+    content: '\f105';
+    font-family: "FontAwesome";
+    padding-left: 0.26vmax;
+}
+.modal-header .close{
+    color: #999;
+    font-size: 2.08vmax;
+}
+.change-password{
+    border: 0.5px solid #2299d4;
+    max-width: 20.31vmax;
+}
+.change-password-form label{
+    margin-bottom: 0;
+    margin-top: 1.04vmax;
+    font-size: 1.25rem;
+}
+.change-password-form .form-control{
+    border-radius: 0;
+}
+
+.close-change-password-form{
+    cursor: pointer;
+}
+
+.modal-footer, .modal-header{
+    border: none;
+}
+
+/*style for personal-office-review*/
+.review-img{
+    width: 10.15vmax;
+    
+}
+.review-img img{
+    height: 4.68vmax;
+}
+
+.review-img span{
+    padding-left: 0.78vmax;
+    font-size: 1.25rem;
+}
+.review-description{
+    width: 24.47vmax;
+}
+.review-description p{
+    text-align: left;
+    padding-top: 1.25vmax;
+    color: #4c4c4c;
+}
+
+.review-description__check{
+    padding-left: 2.60vmax;
+    padding-right: 0.15vmax;
+    font-size: 1.25rem;
+    color: #21bb33;
+}
+
+.review-stars ul li{
+    padding-bottom: 0.52vmax;
+}
+.review-stars ul li:nth-child(5){
+    padding-bottom: 1.30vmax;
+    border-bottom: 0.05vmax solid #e6e6e6;
+}
+
+.review-stars li div i{
+    padding-left: 0.26vmax;
+}
+
+
+/*style personal-office-history*/
+
+.history-wrap{
+    border-bottom: 0.05vmax solid #e6e6e6;
+    padding: 0.78vmax 0;
+}
+.history-img{
+    width: 17.18vmax;
+}
+.history-date, .history-price{
+    width: 8.33vmax;
+}
+
+.history-number span{
+    border: 0.05vmax solid #e6e6e6;
+    text-align: center;
+    padding: 0.36vmax 0.78vmax;
+}
+@media only screen and (max-width: 1440px) {
+    .review-description__title.fs-18{
+        font-size: 15px !important;
+    }
+    .fs-34{
+        font-size: 28px;
+    }
+    .price{
+        width: 9.35vmax;
+    }
+    .history-img {
+        width: 14.18vmax;
+    }
+    .chara-bag {
+         font-size: 18px; 
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .personal-office-btn li{
+        width: 250px;
+        height: 50px;
+    }
+
+    .review-img{
+        width: 145px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .review-img img{
+        margin-bottom: 10px;
+    }
+    .review-img span{
+        padding-left: 7px;
+        font-size: 15px;
+    }
+
+    .review-description{
+        width: 250px;
+    }
+    .review-description .fs-18{
+        font-size: 15px !important;
+    }
+
+    .review-description span{
+        font-size: 15px !important;
+    }
+    .review-description__title{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-description__title i{
+        padding: 0;
+    }
+
+    .review-stars span{
+        font-size: 15px !important;
+    }
+
+    .review-stars li div i{
+        font-size: 13px !important;
+    }
+
+    .history-price{
+        width: 120px;
+    }
+
+    .history-price .fs-34{
+        font-size: 24px;
+    }
+    .history-date span, .history-img span{
+        padding-left: 0;
+        line-height: 1.3em;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .personal-office-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .review-img {
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+    }
+    .review-img img {
+        height: 80px;
+    }
+    .review-description{
+        width: auto;
+    }
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    .wrap-personal-office{
+        flex-direction: column;
+    }
+
+    .personal-office .container{
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+
+    .personal-office-info{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .personal-office-btn li{
+        width: 100%;
+    }
+
+    .personal-office-info{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-img{
+        flex-direction: row;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .review-description{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .history-wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .history-img{
+        width: 50%;
+        margin: 20px 0;
+        align-items: center;
+    }
+    .history-number{
+        margin-bottom: 20px;
+    }
+    .title h2{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .fs-20 {
+        font-size: 15px;
+    }
+    .title h2{
+        font-size: 28px;
+    }
+}
