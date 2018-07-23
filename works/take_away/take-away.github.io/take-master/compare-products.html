@@ -24,19 +24,7 @@
 					<a href="index.html" class="logo">
 						<img src="img/logo-2.png" class="img-fluid">
 					</a>
-					<div class="phone fs-20 pl-5">+38
-						<select>
-							<option class="phone__option">
-								050 000 00 00
-							</option>
-							<option class="phone__option">
-								050 000 00 01
-							</option>
-							<option class="phone__option">
-								050 000 00 02
-							</option>
-						</select>
-					</div>
+					<div class="phone fs-20 pl-5">+38 <span class="phone__option">050 000 00 00</span></div>
 				</div>
 				<div class="col-lg-12 col-md-12 col-xl-7 col-12 p-0">
 					<div class="pos-f-t">
@@ -105,11 +93,6 @@
 							<li class="menu__item">
 								<a href="compare-products.html" style="color: #2299d4">Акции</a>
 							</li>
-							<select class="language pl-2">
-								<option>ru</option>
-								<option>ua</option>
-								<option>en</option>
-							</select>
 						</ul>
 					</nav>
 				</div>
@@ -2072,7 +2055,7 @@
 										</div>
 									</div>
 									<div class="dropdown-divider"></div>
-									<button type="submit" class="btn-registration fs-18 py-2">Оформить заказ</button>
+									<button type="submit" class="btn-registration btn fs-18 py-2">Оформить заказ</button>
 								</form>
 							</div>
 						</div>
@@ -2124,21 +2107,21 @@
 							</button>
 							<div class="dropdown-menu dropdown-menu-right">
 								<div class="login">
-									<form class="px-4">
+									<form class="px-4 pb-3">
 										<h2 class="fs-22 py-3">Вход</h2>
-										<div class="form-group mb-1">
-											<label for="exampleDropdownFormEmail1">E-mail</label>
-											<input type="email" class="form-control" id="exampleDropdownFormEmail1">
+										<div class="form-group">
+											<label for="exitEmail">E-mail</label>
+											<input type="email" class="form-control" id="exitEmail">
 										</div>
-										<div class="form-group mb-1">
-											<label for="exampleDropdownFormPassword1">Пароль</label>
-											<input type="password" class="form-control" id="exampleDropdownFormPassword1">
+										<div class="form-group">
+											<label for="exitPassword">Пароль</label>
+											<input type="password" class="form-control" id="exitPassword">
 										</div>
 										<div class="d-flex justify-content-between py-3 group-a">
-											<a href="#">Забыли пароль?</a>
+											<a href="#" class="show-forgot-password">Забыли пароль?</a>
 											<a href="#" class="show-registration">Регистрация</a>
 										</div>
-										<button type="submit" class="btn-registration fs-18 py-2">Войти</button>
+										<button type="submit" class="btn-registration btn fs-18 py-2">Войти</button>
 									</form>
 									<div class="dropdown-divider"></div>
 									<p>Войти через</p>
@@ -2155,29 +2138,28 @@
 									</div>
 								</div>
 								<div class="registration">
-									<form class="px-4 py-3">
-										<h2 class="fs-22 pb-2">Регистрация</h2>
+									<form class="px-4 py-2">
 										<div class="form-group">
-											<label for="exampleDropdownFormEmail2">Телефон</label>
-											<input type="" class="form-control" id="exampleDropdownFormEmail2">
+											<label for="registrationPhone">Телефон</label>
+											<input type="" class="form-control" id="registrationPhone">
 										</div>
 										<div class="form-group">
-											<label for="exampleDropdownFormEmail2">E-mail</label>
-											<input type="email" class="form-control" id="exampleDropdownFormEmail2">
+											<label for="registrationEmail">E-mail</label>
+											<input type="email" class="form-control" id="registrationEmail">
 										</div>
 										<div class="form-group">
-											<label for="exampleDropdownFormPassword2">Пароль</label>
-											<input type="password" class="form-control" id="exampleDropdownFormPassword2">
+											<label for="regisrtationPassword">Пароль</label>
+											<input type="password" class="form-control" id="regisrtationPassword">
 										</div>
 										<div class="form-group">
-											<label for="exampleDropdownFormPassword2">Подтвердить пароль</label>
-											<input type="password" class="form-control" id="exampleDropdownFormPassword2">
+											<label for="regisrtationPasswordRepeat">Подтвердить пароль</label>
+											<input type="password" class="form-control" id="regisrtationPasswordRepeat">
 										</div>
-										<button type="submit" class="btn-registration fs-18 py-2">Регистрация</button>
+										<button type="submit" class="btn-registration btn fs-18 py-2">Регистрация</button>
 									</form>
 									<div class="dropdown-divider"></div>
 									<p>Регистрация через</p>
-									<div class="group-button__social d-flex justify-content-between px-4 py-3 fs-24">
+									<div class="group-button__social d-flex justify-content-between px-4 pb-3 pt-1 fs-24">
 										<button type="submit" class="btn btn-sm">
 											<i class="fa fa-vk" aria-hidden="true"></i>
 										</button>
@@ -2188,6 +2170,20 @@
 											<i class="fa fa-google-plus" aria-hidden="true"></i>
 										</button>
 									</div>
+								</div>
+								<div class="forgot-password">
+										<form class="px-4 py-3">
+												<div class="d-flex justify-content-between align-items-center">
+													<h2 class="fs-22 py-3">Восстановить пароль</h2>
+													<i class="fa fa-times close-forgot-password" aria-hidden="true"></i>
+												</div>
+												
+												<div class="form-group">
+													<label for="Email">E-mail</label>
+													<input type="email" class="form-control" id="Email">
+												</div>
+												<button type="submit" class="btn-registration btn fs-18 py-2">Отправить</button>
+											</form>
 								</div>
 							</div>
 						</div>
@@ -2208,7 +2204,32 @@
 				</div>
 				<div class="scroll-img">
 					<div class="cards">
-						<div class="d-flex justify-content-center">
+						<div class="d-flex justify-content-center close-cards-btn">
+							<img src="img/phone1.png" class="img-fluid">
+						</div>
+						<h3 class="fs-22">Apple iPhone 8 Plus </h3>
+						<div class="cards__reviews d-flex orange">
+							<div>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							<a href="#" class="fs-16">6 отзывов</a>
+						</div>
+						<div class="cards__price d-flex justify-content-between">
+							<div class="cards__price_sale">
+								<p>
+									<span>15 599</span>руб</p>
+							</div>
+							<button type="submit" class="btn btn-green">купить</button>
+						</div>
+					</div>
+				</div>
+				<div class="scroll-img">
+					<div class="cards">
+						<div class="d-flex justify-content-center close-cards-btn">
 							<img src="img/phone1.png" class="img-fluid">
 						</div>
 						<h3 class="fs-22">Apple iPhone 8 Plus </h3>
@@ -2234,7 +2255,7 @@
 				</div>
 				<div class="scroll-img">
 					<div class="cards">
-						<div class="d-flex justify-content-center">
+						<div class="d-flex justify-content-center close-cards-btn">
 							<img src="img/phone1.png" class="img-fluid">
 						</div>
 						<h3 class="fs-22">Apple iPhone 8 Plus </h3>
@@ -2260,7 +2281,7 @@
 				</div>
 				<div class="scroll-img">
 					<div class="cards">
-						<div class="d-flex justify-content-center">
+						<div class="d-flex justify-content-center close-cards-btn">
 							<img src="img/phone1.png" class="img-fluid">
 						</div>
 						<h3 class="fs-22">Apple iPhone 8 Plus </h3>
@@ -2286,7 +2307,8 @@
 				</div>
 				<div class="scroll-img">
 					<div class="cards">
-						<div class="d-flex justify-content-center">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						<div class="d-flex justify-content-center close-cards-btn">
 							<img src="img/phone1.png" class="img-fluid">
 						</div>
 						<h3 class="fs-22">Apple iPhone 8 Plus </h3>
@@ -2302,34 +2324,8 @@
 						</div>
 						<div class="cards__price d-flex justify-content-between">
 							<div class="cards__price_sale">
-								<span class="fs-18 outlined black">15 599 руб</span>
-								<p class="red">
-									<span>15 599</span>руб</p>
-							</div>
-							<button type="submit" class="btn btn-green">купить</button>
-						</div>
-					</div>
-				</div>
-				<div class="scroll-img">
-					<div class="cards">
-						<div class="d-flex justify-content-center">
-							<img src="img/phone1.png" class="img-fluid">
-						</div>
-						<h3 class="fs-22">Apple iPhone 8 Plus </h3>
-						<div class="cards__reviews d-flex orange">
-							<div>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-							</div>
-							<a href="#" class="fs-16">6 отзывов</a>
-						</div>
-						<div class="cards__price d-flex justify-content-between">
-							<div class="cards__price_sale">
-								<span class="fs-18 outlined black">15 599 руб</span>
-								<p class="red">
+								
+								<p>
 									<span>15 599</span>руб</p>
 							</div>
 							<button type="submit" class="btn btn-green">купить</button>
@@ -2349,7 +2345,7 @@
 					</li>
 				</ul>
 				<div class="tab-content" id="pills-tabContent">
-					<div class="tab-pane fade" id="pills-all-characteristics" role="tabpanel" aria-labelledby="pills-all-characteristics-tab">Все характеристики</div>
+					<div class="tab-pane fade" id="pills-all-characteristics" role="tabpanel" aria-labelledby="pills-all-characteristics-tab"></div>
 					<div class="tab-pane fade show active" id="pills-differences" role="tabpanel" aria-labelledby="pills-differences-tab">
 						<table class="compare-products-table">
 							<tbody class="compare-products-table__body">

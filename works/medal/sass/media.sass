@@ -138,7 +138,7 @@
 
 	
 	.header-top
-		.lang-choice
+		.lang
 			margin-left: 20px
 
 	.catblock
@@ -168,6 +168,15 @@
 
 	.catblock
 		width: calc(100% - 15px)
+
+	.block
+		&-filter
+			& > 
+				.block__title
+					display: none
+				.block__under
+					display: block !important
+			
 
 
 +mw(992)
@@ -225,17 +234,18 @@
 		font-size: 1em
 
 
-@media only screen and (max-width: 992px) and (min-width: 576px) 
+@media only screen and (max-width: 1200px) and (min-width: 576px) 
 	.catblock
 		width: calc(100% / 3 - 30px)
 		max-width: calc(100% / 3 - 5px)
 
-	
+@media only screen and (max-width: 992px) and (min-width: 400px) 
 	.brand-wrap
 		position: absolute
 		left: 50%
 		top: 30px
 		+translateX
+	
 
 @media only screen and (min-width: 380px) and (max-width: 575px) 
 	.footer

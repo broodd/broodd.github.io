@@ -19,6 +19,16 @@ $(document).ready(function() {
     $(this).next('div.filter').toggleClass('show');
   });
 
+  $('.hover-form').hover(function(){
+    $(this).toggleClass('show-form');
+    $(this).find('div.dropdown-menu').toggleClass('show-form');
+  });
+
+  $('.button-menu__button').click(function(){
+    $('.dropdown-menu-catalog').toggleClass('show');
+  });
+
+
   //search button
   $('.search-icon').click(function(){
     $(this).toggleClass('open-show');
@@ -51,6 +61,17 @@ $(document).ready(function() {
 
     $( ".login-btn" ).on( "click", function( event ) {
       registration.hide();
+      login.show();
+    });
+
+  var forgotPassword = $( ".forgot-password" );
+  var login = $(".login");
+    $( ".show-forgot-password" ).on( "click", function( event ) {
+      forgotPassword.show();
+      login.hide();
+    });
+    $(".close-forgot-password").click(function(){
+      forgotPassword.hide();
       login.show();
     });
 

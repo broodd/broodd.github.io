@@ -5,6 +5,14 @@ $(document).ready(function(){
 	//     $(this).remove()
 	// });
 
+	$('#lang ul li ul a').on('click', function(e) {
+		e.preventDefault();
+
+		$('#language input[name=\'code\']').attr('value', $(this).attr('href'));
+
+		$('#language').submit();
+	});
+
 
 	$('.slick__1').slick({
 		infinite: true,

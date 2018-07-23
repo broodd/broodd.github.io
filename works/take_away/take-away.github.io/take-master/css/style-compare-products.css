@@ -1,15 +1,15 @@
 .compare-products .container{
 	height: 100%;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    margin-bottom: 1.04vmax;
+    margin-top: 2.08vmax;
 }
 
 #compare-products-description, #compare-products-img{
-    border: 1px solid #ccc;
+    border: 0.05vmax solid #ccc;
 	height: auto;
     background-color: #fff; 
-    padding: 20px 35px 30px 35px;
-    margin-bottom: 20px;
+    padding: 1.04vmax 1.82vmax 1.56vmax 1.82vmax;
+    margin-bottom: 1.04vmax;
     border-right: none;
     width: 150%;
 }
@@ -17,13 +17,13 @@
 
 .scroll-img{
     display: inline-block;
-    margin-right: 10px;
-    width: 390px;
-    height: 500px;
+    margin-right: 0.62vmax;
+    width: 20.31vmax;
+    height: 26.04vmax;
 }
 
 .cards div img{
-    height: 240px;
+    height: 12.5vmax;
 } 
 
 .compare-products-table{
@@ -34,12 +34,12 @@
     border: 1px solid #efeeee;
 }
 .compare-products-table__body tr{
-    padding-top: 17px;
-    padding-left: 12px;
+    padding-top: 0.88vmax;
+    padding-left: 0.62vmax;
 }
 
 .compare-products-table__body tr td{
-    width: 390px;
+    width: 20.31vmax;
     color: #4c4c4c;
 }
 
@@ -47,5 +47,24 @@
     color: #999;;
 }
 .compare-products-table__body tr td span{
-    padding-bottom: 15px;
+    padding-bottom: 0.78vmax;
+}
+
+.close-cards-btn::after{
+    content: '\f00d';
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    font-size: 23px;
+    color: #ccc;
+}
+.compare-products-img h1{
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .compare-products-table__body .fs-20{
+        font-size: 16px;
+    }
 }

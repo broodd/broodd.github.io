@@ -112,22 +112,31 @@
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-12 col-sm-auto left">
-					<ul class="ul d-flex justify-content-between w-100p">
+					<ul class="ul d-flex w-100p">
 						<li><a href="about.html">О компании</a></li>
 						<li><a href="pay.html">Доставка и оплата</a></li>
 						<li><a href="contact.html">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="col-12 col-sm-auto right d-flex justify-content-between">
+				<div class="col-12 col-sm-auto right d-flex justify-content-between justifyc-content-sm-start">
 					<div class="tel">
 						<i class="icon icon-phone margin-r_5"></i>
 						<a href="tel:0503425486">050 342 54 86</a>
 					</div>
-					<div class="select">
-						<select name="lang_choice" class="lang-choice">
-							<option value="uk" selected="selected">UA</option>
-							<option value="ru">RU</option>
-						</select>
+					<div class="lang">
+						<form action="?" method="post" enctype="multipart/form-data" id="language">
+							<ul>
+								<li class="has-submenu">
+									<a href="#">ru</a>
+									<ul class="submenu d-none">
+										<li><a href="ru">ru</a></li>
+										<li><a href="uk">ua</a></li>
+									</ul>
+								</li>
+							</ul>
+							<input name="code" value="" type="hidden">
+							<!-- <input name="redirect" value="http://gosh.ua/index.php?route=account/login" type="hidden"> -->
+						</form>
 					</div>
 				</div>
 			</div>
@@ -138,7 +147,7 @@
 
 	<div class="navbar color-black">
 		<div class="container">
-			<div class="row justify-content-sm-between align-items-center">
+						<div class="row justify-content-between align-items-center">
 				<div class="col-auto d-block d-lg-none">
 					<div id="sandwich">
 						<div class="sw-topper"></div>
@@ -285,325 +294,333 @@
 			<div class="row">
 				<div class="col-md-3 sidebar color-black font-gothic">
 					<form action="">
-						<div class="block">
+						<div class="block block-filter">
 							<div class="block__title d-flex justify-content-between align-items-center">
-								<div class="font-22">Категории</div>
+								<div class="font-22">Фильтр</div>
 								<div class="plus"></div>
 							</div>
 							<div class="block__under">
-								<ul class="bold menu">
-									<li><a href="#">Кубки</a></li>
-									<li><a href="#">Медали</a></li>
-									<li><a href="#">Статуэтки</a></li>
-									<li><a href="#">Плакетки</a></li>
-									<li><a href="#">Ленты</a></li>
-									<li class="has-submenu">
-										<a href="#">Жетоны</a>
-										<ul class="submenu active">
-											<li><a href="#">Подкатегория 1</a></li>
+								<div class="block">
+									<div class="block__title d-flex justify-content-between align-items-center">
+										<div class="font-22">Категории</div>
+										<div class="plus"></div>
+									</div>
+									<div class="block__under">
+										<ul class="bold menu">
+											<li><a href="#">Кубки</a></li>
+											<li><a href="#">Медали</a></li>
+											<li><a href="#">Статуэтки</a></li>
+											<li><a href="#">Плакетки</a></li>
+											<li><a href="#">Ленты</a></li>
 											<li class="has-submenu">
-												<a href="#">Подкатегория 2</a>
-												<ul class="submenu">
+												<a href="#">Жетоны</a>
+												<ul class="submenu active">
 													<li><a href="#">Подкатегория 1</a></li>
-													<li><a href="#">Подкатегория 2</a></li>
+													<li class="has-submenu">
+														<a href="#">Подкатегория 2</a>
+														<ul class="submenu">
+															<li><a href="#">Подкатегория 1</a></li>
+															<li><a href="#">Подкатегория 2</a></li>
+															<li><a href="#">Подкатегория 3</a></li>
+															<li><a href="#">Подкатегория 4</a></li>
+														</ul>
+													</li>
 													<li><a href="#">Подкатегория 3</a></li>
 													<li><a href="#">Подкатегория 4</a></li>
 												</ul>
 											</li>
-											<li><a href="#">Подкатегория 3</a></li>
-											<li><a href="#">Подкатегория 4</a></li>
+											<li><a href="#">Грамоты</a></li>
+											<li><a href="#">Шильдики</a></li>
+											<li><a href="#">Стекло</a></li>
+											<li><a href="#">Тарелки</a></li>
+											<li><a href="#">Накладки на плакетки</a></li>
+											<li><a href="#">Коробки под медаль</a></li>
 										</ul>
-									</li>
-									<li><a href="#">Грамоты</a></li>
-									<li><a href="#">Шильдики</a></li>
-									<li><a href="#">Стекло</a></li>
-									<li><a href="#">Тарелки</a></li>
-									<li><a href="#">Накладки на плакетки</a></li>
-									<li><a href="#">Коробки под медаль</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="block active">
-							<div class="block__title d-flex justify-content-between align-items-center">
-								<div class="font-18">Цена</div>
-								<div class="plus"></div>
-							</div>
-							<div class="block__under active">
-								<div class="row justify-content-between align-items-center slider-wrap">
-									<div class="col-5">
-										<input type="number" id='sliderOutput1' value="50" class="slider-input">
-									</div>
-									<div class="col-5">
-										<input type="number" id='sliderOutput2' value="67050"  class="slider-input">
-									</div> 
-									<div class="col-2">
-										<span>грн</span>
 									</div>
 								</div>
-								<div>
-									<div class="slider" 
-									data-slider 
-									data-initial-start='50' 
-									data-initial-end='67050'
-									data-options="start: 1; end: 100000;">
-										<span class="slider-handle" data-slider-handle role="slider" tabindex="10" aria-controls='sliderOutput1'></span>
-										<span class="slider-fill" data-slider-fill></span>
-										<span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls='sliderOutput2'></span>
+								<div class="block active">
+									<div class="block__title d-flex justify-content-between align-items-center">
+										<div class="font-18">Цена</div>
+										<div class="plus"></div>
+									</div>
+									<div class="block__under active">
+										<div class="row justify-content-between align-items-center slider-wrap">
+											<div class="col-5">
+												<input type="number" id='sliderOutput1' value="50" class="slider-input">
+											</div>
+											<div class="col-5">
+												<input type="number" id='sliderOutput2' value="67050"  class="slider-input">
+											</div> 
+											<div class="col-2">
+												<span>грн</span>
+											</div>
+										</div>
+										<div>
+											<div class="slider" 
+											data-slider 
+											data-initial-start='50' 
+											data-initial-end='67050'
+											data-options="start: 1; end: 100000;">
+												<span class="slider-handle" data-slider-handle role="slider" tabindex="10" aria-controls='sliderOutput1'></span>
+												<span class="slider-fill" data-slider-fill></span>
+												<span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls='sliderOutput2'></span>
+											</div>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="block__title d-flex justify-content-between align-items-center">
-								<div class="font-18">Высота</div>
-								<div class="plus"></div>
-							</div>
-							<div class="block__under">
-								<div class="row justify-content-between">
-									<div class="col-md-auto col-xl-6">
-										<label>
-											<input type="checkbox" name="" id=""><span>10 -19 см</span>
-										</label>
-										<label>
-											<input type="checkbox" name="" id=""><span>20 29 см</span>
-										</label>
-										<label>
-											<input type="checkbox" name="" id=""><span>30 - 39 см</span>
-										</label>
+								<div class="block">
+									<div class="block__title d-flex justify-content-between align-items-center">
+										<div class="font-18">Высота</div>
+										<div class="plus"></div>
 									</div>
-									<div class="col-md-auto col-xl-6">
-										<label>
-											<input type="checkbox" name="" id=""><span>10 -19 см</span>
-										</label>
-										<label>
-											<input type="checkbox" name="" id=""><span>20 29 см</span>
-										</label>
-										<label>
-											<input type="checkbox" name="" id=""><span>30 - 39 см</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="block__title d-flex justify-content-between align-items-center">
-								<div class="font-18">Основной цвет</div>
-								<div class="plus"></div>
-							</div>
-							<div class="block__under">
-								<div class="row justify-content-between">
-									<div class="col-md-auto col-xl-6">
-										<label>
-											<input type="checkbox" name="" id=""><span>золото</span>
-										</label>
-										<label>
-											<input type="checkbox" name="" id=""><span>серебро</span>
-										</label>
-									</div>
-									<div class="col-md-auto col-xl-6">
-										<label>
-											<input type="checkbox" name="" id=""><span>бронза</span>
-										</label>
+									<div class="block__under">
+										<div class="row justify-content-between">
+											<div class="col-md-auto col-xl-6">
+												<label>
+													<input type="checkbox" name="" id=""><span>10 -19 см</span>
+												</label>
+												<label>
+													<input type="checkbox" name="" id=""><span>20 29 см</span>
+												</label>
+												<label>
+													<input type="checkbox" name="" id=""><span>30 - 39 см</span>
+												</label>
+											</div>
+											<div class="col-md-auto col-xl-6">
+												<label>
+													<input type="checkbox" name="" id=""><span>10 -19 см</span>
+												</label>
+												<label>
+													<input type="checkbox" name="" id=""><span>20 29 см</span>
+												</label>
+												<label>
+													<input type="checkbox" name="" id=""><span>30 - 39 см</span>
+												</label>
+											</div>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="block__title d-flex justify-content-between align-items-center">
-								<div class="font-18">Дополнительный цвет</div>
-								<div class="plus"></div>
-							</div>
-							<div class="block__under">
-								<div class="row justify-content-between">
-									<div class="col-md-auto col-xl-6">
-										<label><input type="checkbox" name="" id=""><span>бежевый</span>
-										</label>
-										<label><input type="checkbox" name="" id=""><span>белый</span>
-										</label>
-										<label><input type="checkbox" name="" id=""><span>голубой</span>
-										</label>
-										<label><input type="checkbox" name="" id=""><span>желтый</span>
-										</label>
-										<label><input type="checkbox" name="" id=""><span>зеленый</span>
-										</label>
-										<label><input type="checkbox" name="" id=""><span>золото</span>
-										</label>
-										<label><input type="checkbox" name="" id=""><span>коричневый</span>
-										</label>
-										<label><input type="checkbox" name="" id=""><span>красный</span>
-										</label>
+								<div class="block">
+									<div class="block__title d-flex justify-content-between align-items-center">
+										<div class="font-18">Основной цвет</div>
+										<div class="plus"></div>
 									</div>
-									<div class="col-md-auto col-xl-6">
-										<label><input type="checkbox" name="" id=""><span>бежевый</span>
-										</label>
-										<label><input type="checkbox" name="" id=""><span>белый</span>
-										</label>
-										<label><input type="checkbox" name="" id=""><span>голубой</span>
-										</label>
-										<label><input type="checkbox" name="" id=""><span>желтый</span>
-										</label>
-										<label><input type="checkbox" name="" id=""><span>зеленый</span>
-										</label>
-										<label><input type="checkbox" name="" id=""><span>золото</span>
-										</label>
-										<label><input type="checkbox" name="" id=""><span>коричневый</span>
-										</label>
-										<label><input type="checkbox" name="" id=""><span>красный</span>
-										</label>
+									<div class="block__under">
+										<div class="row justify-content-between">
+											<div class="col-md-auto col-xl-6">
+												<label>
+													<input type="checkbox" name="" id=""><span>золото</span>
+												</label>
+												<label>
+													<input type="checkbox" name="" id=""><span>серебро</span>
+												</label>
+											</div>
+											<div class="col-md-auto col-xl-6">
+												<label>
+													<input type="checkbox" name="" id=""><span>бронза</span>
+												</label>
+											</div>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="block__title d-flex justify-content-between align-items-center">
-								<div class="font-18">Место под жетон</div>
-								<div class="plus"></div>
-							</div>
-							<div class="block__under">
-								<label><input type="checkbox" name="" id=""><span>жетон не требуется</span>
-								</label>
-								<label><input type="checkbox" name="" id=""><span>диаметр 25 мм</span>
-								</label>
-								<label><input type="checkbox" name="" id=""><span>диаметр 39 мм</span>
-								</label>
-								<label><input type="checkbox" name="" id=""><span>диаметр 50 мм</span>
-								</label>
-							</div>
-						</div>
-						<div class="block">
-							<div class="block__title d-flex justify-content-between align-items-center">
-								<div class="font-18">Наличие ручек</div>
-								<div class="plus"></div>
-							</div>
-							<div class="block__under">
-								<div class="row justify-content-between">
-									<div class="col-md-auto col-xl-6">
-										<label><input type="checkbox" name="" id=""><span>есть</span>
-										</label>
+								<div class="block">
+									<div class="block__title d-flex justify-content-between align-items-center">
+										<div class="font-18">Дополнительный цвет</div>
+										<div class="plus"></div>
 									</div>
-									<div class="col-md-auto col-xl-6">
-										<label><input type="checkbox" name="" id=""><span>нет</span>
+									<div class="block__under">
+										<div class="row justify-content-between">
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>бежевый</span>
+												</label>
+												<label><input type="checkbox" name="" id=""><span>белый</span>
+												</label>
+												<label><input type="checkbox" name="" id=""><span>голубой</span>
+												</label>
+												<label><input type="checkbox" name="" id=""><span>желтый</span>
+												</label>
+												<label><input type="checkbox" name="" id=""><span>зеленый</span>
+												</label>
+												<label><input type="checkbox" name="" id=""><span>золото</span>
+												</label>
+												<label><input type="checkbox" name="" id=""><span>коричневый</span>
+												</label>
+												<label><input type="checkbox" name="" id=""><span>красный</span>
+												</label>
+											</div>
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>бежевый</span>
+												</label>
+												<label><input type="checkbox" name="" id=""><span>белый</span>
+												</label>
+												<label><input type="checkbox" name="" id=""><span>голубой</span>
+												</label>
+												<label><input type="checkbox" name="" id=""><span>желтый</span>
+												</label>
+												<label><input type="checkbox" name="" id=""><span>зеленый</span>
+												</label>
+												<label><input type="checkbox" name="" id=""><span>золото</span>
+												</label>
+												<label><input type="checkbox" name="" id=""><span>коричневый</span>
+												</label>
+												<label><input type="checkbox" name="" id=""><span>красный</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="block">
+									<div class="block__title d-flex justify-content-between align-items-center">
+										<div class="font-18">Место под жетон</div>
+										<div class="plus"></div>
+									</div>
+									<div class="block__under">
+										<label><input type="checkbox" name="" id=""><span>жетон не требуется</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>диаметр 25 мм</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>диаметр 39 мм</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>диаметр 50 мм</span>
 										</label>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="block__title d-flex justify-content-between align-items-center">
-								<div class="font-18">Наличие крышки</div>
-								<div class="plus"></div>
-							</div>
-							<div class="block__under">
-								<div class="row justify-content-between">
-									<div class="col-md-auto col-xl-6">
-										<label><input type="checkbox" name="" id=""><span>есть</span>
-										</label>
+								<div class="block">
+									<div class="block__title d-flex justify-content-between align-items-center">
+										<div class="font-18">Наличие ручек</div>
+										<div class="plus"></div>
 									</div>
-									<div class="col-md-auto col-xl-6">
-										<label><input type="checkbox" name="" id=""><span>нет</span>
-										</label>
+									<div class="block__under">
+										<div class="row justify-content-between">
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>есть</span>
+												</label>
+											</div>
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>нет</span>
+												</label>
+											</div>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="block__title d-flex justify-content-between align-items-center">
-								<div class="font-18">Материал крышки</div>
-								<div class="plus"></div>
-							</div>
-							<div class="block__under">
-								<div class="row justify-content-between">
-									<div class="col-md-auto col-xl-6">
-										<label><input type="checkbox" name="" id=""><span>металл</span>
-										</label>
+								<div class="block">
+									<div class="block__title d-flex justify-content-between align-items-center">
+										<div class="font-18">Наличие крышки</div>
+										<div class="plus"></div>
 									</div>
-									<div class="col-md-auto col-xl-6">
+									<div class="block__under">
+										<div class="row justify-content-between">
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>есть</span>
+												</label>
+											</div>
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>нет</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="block">
+									<div class="block__title d-flex justify-content-between align-items-center">
+										<div class="font-18">Материал крышки</div>
+										<div class="plus"></div>
+									</div>
+									<div class="block__under">
+										<div class="row justify-content-between">
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>металл</span>
+												</label>
+											</div>
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>пластик</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="block">
+									<div class="block__title d-flex justify-content-between align-items-center">
+										<div class="font-18">Материал чаши</div>
+										<div class="plus"></div>
+									</div>
+									<div class="block__under">
+										<div class="row justify-content-between">
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>металл</span>
+												</label>
+											</div>
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>стекло</span>
+												</label>
+											</div>
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>пластик</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="block">
+									<div class="block__title d-flex justify-content-between align-items-center">
+										<div class="font-18">Материал ножки</div>
+										<div class="plus"></div>
+									</div>
+									<div class="block__under">
+										<div class="row justify-content-between">
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>металл</span>
+												</label>
+											</div>
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>пластик</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="block">
+									<div class="block__title d-flex justify-content-between align-items-center">
+										<div class="font-18">Материал основания</div>
+										<div class="plus"></div>
+									</div>
+									<div class="block__under">
+										<label><input type="checkbox" name="" id=""><span>камень (мрамор)</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>дерево</span>
+										</label>
+										<label><input type="checkbox" name="" id=""><span>мателл</span>
+										</label>
 										<label><input type="checkbox" name="" id=""><span>пластик</span>
 										</label>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="block__title d-flex justify-content-between align-items-center">
-								<div class="font-18">Материал чаши</div>
-								<div class="plus"></div>
-							</div>
-							<div class="block__under">
-								<div class="row justify-content-between">
-									<div class="col-md-auto col-xl-6">
-										<label><input type="checkbox" name="" id=""><span>металл</span>
-										</label>
+								<div class="block">
+									<div class="block__title d-flex justify-content-between align-items-center">
+										<div class="font-18">Страна бренда</div>
+										<div class="plus"></div>
 									</div>
-									<div class="col-md-auto col-xl-6">
-										<label><input type="checkbox" name="" id=""><span>стекло</span>
-										</label>
-									</div>
-									<div class="col-md-auto col-xl-6">
-										<label><input type="checkbox" name="" id=""><span>пластик</span>
-										</label>
+									<div class="block__under">
+										<div class="row justify-content-between">
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>Италия</span></label>
+											</div>
+											<div class="col-md-auto col-xl-6">
+												<label><input type="checkbox" name="" id=""><span>Нидерланды</span></label>
+											</div>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="block__title d-flex justify-content-between align-items-center">
-								<div class="font-18">Материал ножки</div>
-								<div class="plus"></div>
-							</div>
-							<div class="block__under">
-								<div class="row justify-content-between">
-									<div class="col-md-auto col-xl-6">
-										<label><input type="checkbox" name="" id=""><span>металл</span>
-										</label>
-									</div>
-									<div class="col-md-auto col-xl-6">
-										<label><input type="checkbox" name="" id=""><span>пластик</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="block__title d-flex justify-content-between align-items-center">
-								<div class="font-18">Материал основания</div>
-								<div class="plus"></div>
-							</div>
-							<div class="block__under">
-								<label><input type="checkbox" name="" id=""><span>камень (мрамор)</span>
-								</label>
-								<label><input type="checkbox" name="" id=""><span>дерево</span>
-								</label>
-								<label><input type="checkbox" name="" id=""><span>мателл</span>
-								</label>
-								<label><input type="checkbox" name="" id=""><span>пластик</span>
-								</label>
-							</div>
-						</div>
-						<div class="block">
-							<div class="block__title d-flex justify-content-between align-items-center">
-								<div class="font-18">Страна бренда</div>
-								<div class="plus"></div>
-							</div>
-							<div class="block__under">
-								<div class="row justify-content-between">
-									<div class="col-md-auto col-xl-6">
-										<label><input type="checkbox" name="" id=""><span>Италия</span></label>
-									</div>
-									<div class="col-md-auto col-xl-6">
-										<label><input type="checkbox" name="" id=""><span>Нидерланды</span></label>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="block__title">
-								<div class="row justify-content-between align-items-center">
-									<div class="col-auto col-xl-6">
-										<input type="submit" class="btn btn-white btn-border" value="Сбросить">
-									</div>
-									<div class="col-auto col-xl-6">
-										<input type="submit" class="btn btn-blue" value="Применить">
+								<div class="block">
+									<div class="block__title">
+										<div class="row justify-content-between align-items-center">
+											<div class="col-auto col-xl-6">
+												<input type="submit" class="btn btn-white btn-border" value="Сбросить">
+											</div>
+											<div class="col-auto col-xl-6">
+												<input type="submit" class="btn btn-blue" value="Применить">
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>

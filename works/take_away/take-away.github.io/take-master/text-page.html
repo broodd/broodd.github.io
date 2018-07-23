@@ -23,19 +23,7 @@
 					<a href="index.html" class="logo">
 						<img src="img/logo-2.png" class="img-fluid">
 					</a>
-					<div class="phone fs-20 pl-5">+38
-						<select>
-							<option class="phone__option">
-								050 000 00 00
-							</option>
-							<option class="phone__option">
-								050 000 00 01
-							</option>
-							<option class="phone__option">
-								050 000 00 02
-							</option>
-						</select>
-					</div>
+					<div class="phone fs-20 pl-5">+38 <span class="phone__option">050 000 00 00</span></div>
 				</div>
 				<div class="col-lg-12 col-md-12 col-xl-7 col-12 p-0">
 					<div class="pos-f-t">
@@ -104,11 +92,6 @@
 							<li class="menu__item">
 								<a href="compare-products.html" style="color: #2299d4">Акции</a>
 							</li>
-							<select class="language pl-2">
-								<option>ru</option>
-								<option>ua</option>
-								<option>en</option>
-							</select>
 						</ul>
 					</nav>
 				</div>
@@ -2071,7 +2054,7 @@
 										</div>
 									</div>
 									<div class="dropdown-divider"></div>
-									<button type="submit" class="btn-registration fs-18 py-2">Оформить заказ</button>
+									<button type="submit" class="btn-registration btn fs-18 py-2">Оформить заказ</button>
 								</form>
 							</div>
 						</div>
@@ -2123,21 +2106,21 @@
 							</button>
 							<div class="dropdown-menu dropdown-menu-right">
 								<div class="login">
-									<form class="px-4">
+									<form class="px-4 pb-3">
 										<h2 class="fs-22 py-3">Вход</h2>
-										<div class="form-group mb-1">
-											<label for="exampleDropdownFormEmail1">E-mail</label>
-											<input type="email" class="form-control" id="exampleDropdownFormEmail1">
+										<div class="form-group">
+											<label for="exitEmail">E-mail</label>
+											<input type="email" class="form-control" id="exitEmail">
 										</div>
-										<div class="form-group mb-1">
-											<label for="exampleDropdownFormPassword1">Пароль</label>
-											<input type="password" class="form-control" id="exampleDropdownFormPassword1">
+										<div class="form-group">
+											<label for="exitPassword">Пароль</label>
+											<input type="password" class="form-control" id="exitPassword">
 										</div>
 										<div class="d-flex justify-content-between py-3 group-a">
-											<a href="#">Забыли пароль?</a>
+											<a href="#" class="show-forgot-password">Забыли пароль?</a>
 											<a href="#" class="show-registration">Регистрация</a>
 										</div>
-										<button type="submit" class="btn-registration fs-18 py-2">Войти</button>
+										<button type="submit" class="btn-registration btn fs-18 py-2">Войти</button>
 									</form>
 									<div class="dropdown-divider"></div>
 									<p>Войти через</p>
@@ -2154,29 +2137,28 @@
 									</div>
 								</div>
 								<div class="registration">
-									<form class="px-4 py-3">
-										<h2 class="fs-22 pb-2">Регистрация</h2>
+									<form class="px-4 py-2">
 										<div class="form-group">
-											<label for="exampleDropdownFormEmail2">Телефон</label>
-											<input type="" class="form-control" id="exampleDropdownFormEmail2">
+											<label for="registrationPhone">Телефон</label>
+											<input type="" class="form-control" id="registrationPhone">
 										</div>
 										<div class="form-group">
-											<label for="exampleDropdownFormEmail2">E-mail</label>
-											<input type="email" class="form-control" id="exampleDropdownFormEmail2">
+											<label for="registrationEmail">E-mail</label>
+											<input type="email" class="form-control" id="registrationEmail">
 										</div>
 										<div class="form-group">
-											<label for="exampleDropdownFormPassword2">Пароль</label>
-											<input type="password" class="form-control" id="exampleDropdownFormPassword2">
+											<label for="regisrtationPassword">Пароль</label>
+											<input type="password" class="form-control" id="regisrtationPassword">
 										</div>
 										<div class="form-group">
-											<label for="exampleDropdownFormPassword2">Подтвердить пароль</label>
-											<input type="password" class="form-control" id="exampleDropdownFormPassword2">
+											<label for="regisrtationPasswordRepeat">Подтвердить пароль</label>
+											<input type="password" class="form-control" id="regisrtationPasswordRepeat">
 										</div>
-										<button type="submit" class="btn-registration fs-18 py-2">Регистрация</button>
+										<button type="submit" class="btn-registration btn fs-18 py-2">Регистрация</button>
 									</form>
 									<div class="dropdown-divider"></div>
 									<p>Регистрация через</p>
-									<div class="group-button__social d-flex justify-content-between px-4 py-3 fs-24">
+									<div class="group-button__social d-flex justify-content-between px-4 pb-3 pt-1 fs-24">
 										<button type="submit" class="btn btn-sm">
 											<i class="fa fa-vk" aria-hidden="true"></i>
 										</button>
@@ -2188,117 +2170,21 @@
 										</button>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="background">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-10 col-lg-9 col-md-9 ml-auto col-12 pr-0">
-						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-							<ol class="carousel-indicators d-flex align-items-center">
-								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-							</ol>
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<div class="slider-group">
-										<div class="row justify-content-end">
-											<div class="slider-group__blok1">
-												<div>
-													<img src="img/slider-ml-white.png" class="img-fluid">
+								<div class="forgot-password">
+										<form class="px-4 py-3">
+												<div class="d-flex justify-content-between align-items-center">
+													<h2 class="fs-22 py-3">Восстановить пароль</h2>
+													<i class="fa fa-times close-forgot-password" aria-hidden="true"></i>
 												</div>
-												<h2>Xiaomi Redmi 5</h2>
-												<div class="py-3 d-flex align-items-center">
-													<span class="outlined">5200</span>
-													<span class="bold">4669</span>
+												
+												<div class="form-group">
+													<label for="Email">E-mail</label>
+													<input type="email" class="form-control" id="Email">
 												</div>
-											</div>
-											<div class="col-lg-9 col-md-7 col-7">
-												<div class="slider-group__blok2">
-													<img src="img/slider-img1.png" class="img-fluid">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="slider-group">
-										<div class="row justify-content-end">
-											<div class="slider-group__blok1">
-												<div>
-													<img src="img/slider-ml-white.png" class="img-fluid">
-												</div>
-												<h2>Xiaomi Redmi 5</h2>
-												<div class="py-3 d-flex align-items-center">
-													<span class="outlined">5200</span>
-													<span class="bold">4669</span>
-												</div>
-											</div>
-											<div class="col-lg-9 col-md-7 col-7">
-												<div class="slider-group__blok2">
-													<img src="img/slider-img1.png" class="img-fluid">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="slider-group">
-										<div class="row justify-content-end">
-											<div class="slider-group__blok1">
-												<div>
-													<img src="img/slider-ml-white.png" class="img-fluid">
-												</div>
-												<h2>Xiaomi Redmi 5</h2>
-												<div class="py-3 d-flex align-items-center">
-													<span class="outlined">5200</span>
-													<span class="bold">4669</span>
-												</div>
-											</div>
-											<div class="col-lg-9 col-md-7 col-7">
-												<div class="slider-group__blok2">
-													<img src="img/slider-img1.png" class="img-fluid">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="carousel-item">
-									<div class="slider-group">
-										<div class="row justify-content-end">
-											<div class="slider-group__blok1">
-												<div>
-													<img src="img/slider-ml-white.png" class="img-fluid">
-												</div>
-												<h2>Xiaomi Redmi 5</h2>
-												<div class="py-3 d-flex align-items-center">
-													<span class="outlined">5200</span>
-													<span class="bold">4669</span>
-												</div>
-											</div>
-											<div class="col-lg-9 col-md-7 col-7">
-												<div class="slider-group__blok2">
-													<img src="img/slider-img1.png" class="img-fluid">
-												</div>
-											</div>
-										</div>
-									</div>
+												<button type="submit" class="btn-registration btn fs-18 py-2">Отправить</button>
+											</form>
 								</div>
 							</div>
-							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="sr-only">Previous</span>
-							</a>
-							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="sr-only">Next</span>
-							</a>
 						</div>
 					</div>
 				</div>
@@ -2308,7 +2194,7 @@
     <section class="title">
         <div class="container pl-0">
             <div class="d-flex align-items-center">
-                <a class="fs-20 pl-2" href="index.html" style="color: #4c4c4c;">Главная</a>
+                <a class="fs-20" href="index.html" style="color: #4c4c4c;">Главная</a>
                 <i class="fa fa-angle-double-right px-3 fs-20" aria-hidden="true"></i>
                 <a class="fs-20" href="#" style="color: #2299d4;">Доставка и оплата</a>
             </div>

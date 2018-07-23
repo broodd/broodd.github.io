@@ -112,22 +112,31 @@
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-12 col-sm-auto left">
-					<ul class="ul d-flex justify-content-between w-100p">
+					<ul class="ul d-flex w-100p">
 						<li><a href="about.html">О компании</a></li>
 						<li><a href="pay.html">Доставка и оплата</a></li>
 						<li><a href="contact.html">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="col-12 col-sm-auto right d-flex justify-content-between">
+				<div class="col-12 col-sm-auto right d-flex justify-content-between justifyc-content-sm-start">
 					<div class="tel">
 						<i class="icon icon-phone margin-r_5"></i>
 						<a href="tel:0503425486">050 342 54 86</a>
 					</div>
-					<div class="select">
-						<select name="lang_choice" class="lang-choice">
-							<option value="uk" selected="selected">UA</option>
-							<option value="ru">RU</option>
-						</select>
+					<div class="lang">
+						<form action="?" method="post" enctype="multipart/form-data" id="language">
+							<ul>
+								<li class="has-submenu">
+									<a href="#">ru</a>
+									<ul class="submenu d-none">
+										<li><a href="ru">ru</a></li>
+										<li><a href="uk">ua</a></li>
+									</ul>
+								</li>
+							</ul>
+							<input name="code" value="" type="hidden">
+							<!-- <input name="redirect" value="http://gosh.ua/index.php?route=account/login" type="hidden"> -->
+						</form>
 					</div>
 				</div>
 			</div>
@@ -138,7 +147,7 @@
 
 	<div class="navbar color-black">
 		<div class="container">
-			<div class="row justify-content-sm-between align-items-center">
+						<div class="row justify-content-between align-items-center">
 				<div class="col-auto d-block d-lg-none">
 					<div id="sandwich">
 						<div class="sw-topper"></div>

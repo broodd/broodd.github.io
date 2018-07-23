@@ -2,7 +2,6 @@
 @import 'default'
 
 
-
 .overlay
 
 .window
@@ -24,11 +23,11 @@
 .header-top
 	padding: 15px 0
 	font-size: 12px
-	.lang-choice
+	.lang
 		margin-left: 80px
-		option
-			background-color: $text
-			color: $white
+		// option
+		// 	background-color: $text
+		// 	color: $white
 
 .header-top,
 .navbar
@@ -173,8 +172,8 @@
 		// select
 		&:after
 			border-color: $black
-.lang-choice
-	padding-right: 10px
+// .lang-choice
+// 	padding-right: 10px
 	// background-image: url(../img/arrow.svg)
 	// background-repeat: no-repeat
 	// background-position: right center
@@ -240,6 +239,7 @@
 			+translateX(0)
 	img
 		+translateX(-10%)
+		max-height: 100%
 
 
 .category_block
@@ -718,14 +718,24 @@
 					// 			border-color: $blue
 					// 			transform: rotate(-45deg) translateX(-50%)
 						// &.has-submenu.active
-
+			.btn
+				margin: 5px 0
+				
 			&.active
-				.plus:after
-					height: 0
-					width: 0
-					top: 50%
-				// .block__under
-				// 	display: block
+				& > .block__title >
+					.plus:after
+						height: 0
+						width: 0
+						top: 50%
+					// .block__under
+					// 	display: block
+
+			&-filter
+				padding: 0 !important
+				& > .block__title
+					padding: 20px 15px
+				& > .block__under
+					padding-bottom: 0
 
 .menu,
 .ul
@@ -1026,8 +1036,37 @@
 		.slick-slide 
 			img
 				width: 100%
+	&-bag
+		.font-22.margin-t_50
+			margin-top: 30px
+		.font-22.margin-b_40
+			margin-bottom: 20px
 
 		// .col-xl-3
 		// 	.row
 		// 		// margin: 0
 		// 		margin-top: 20px
+
+.lang
+	text-transform: uppercase
+	&, & .submenu
+		color: $white
+	.has-submenu
+		& > a
+			padding: 3px 10px 10px 10px
+			&:after
+				border-color: $white
+				top: 8px
+				right: -2px
+				width: 6px
+				height: 6px
+	.submenu
+		padding-left: 0
+		position: absolute
+		background: rgba(5, 5, 5, 0.5) none repeat scroll 0% 0%
+		padding: 3px 10px
+		box-shadow: rgb(0, 0, 0) 1px 1px 4px
+		z-index: 10
+		li
+			margin: 5px 0
+

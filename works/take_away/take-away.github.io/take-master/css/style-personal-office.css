@@ -1,35 +1,35 @@
 .personal-office .container{
-    border: 1px solid #ccc;
+    border: 0.05vmax solid #ccc;
 	height: 100%;
     background-color: #fff; 
-    padding: 20px 35px 30px 35px;
-    margin-bottom: 20px;
+    padding: 1.04vmax 1.82vmax 1.56vmax 1.82vmax;
+    margin-bottom: 1.04vmax;
 }
 
 .title{
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin-top: 1.30vmax;
+    margin-bottom: 1.04vmax;
 }
 
 .title h2{
-    padding-top: 15px;
+    padding-top: 0.78vmax;
     font-size: 2.8125rem;
     font-weight: 400;
 }
 
 .card-personal-info{
-    padding: 35px 20px 20px 20px;
-    border: 1px solid #2299d4;
+    padding: 1.82vmax 1.04vmax 1.04vmax 1.04vmax;
+    border: 0.05vmax solid #2299d4;
 }
 
 .personal-info{
-    border-bottom: 1px solid #e6e6e6;
-    margin-bottom: 20px;
+    border-bottom: 0.05vmax solid #e6e6e6;
+    margin-bottom: 1.04vmax;
 }
 
 .personal-info li{
     font-size: 1.1875rem;
-    padding-bottom: 20px;
+    padding-bottom: 1.04vmax;
 }
 
 .personal-info li a{
@@ -44,9 +44,9 @@
     content: '\f105';
 	font-family: "FontAwesome";
     position: absolute;
-    right: 25px;
+    right:1.30vmax;
     color: #999;
-    font-size: 25px
+    font-size: 1.30vmax;
 }
 
 .card-personal-info a{
@@ -65,8 +65,8 @@
 }
 .personal-office-btn li{
     border-bottom: 1px solid #e6e6e6;
-    width: 390px;
-    height: 58px;
+    width: 20.31vmax;
+    height: 3.02vmax;
     background: #f6f6f6;
 }
 
@@ -82,7 +82,7 @@
 }
 .personal-office-btn_btn.active-btn{
     background: #727272;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0.10vmax 0.26vmax 0.52vmax rgba(0, 0, 0, .2);
 }
 .personal-office-btn_btn.active-btn a{
     color: #fff;
@@ -91,21 +91,21 @@
 
 .personal-office-info{
     border: 1px solid #e6e6e6;
-    padding: 18px 25px 20px 18px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    padding: 0.93vmax 1.30vmax 1.04vmax 0.93vmax;
+    margin-left: 0.62vmax;
+    margin-bottom: 0.62vmax;
 }
 
 .personal-office-info__list ul li{
-    padding-top: 20px;
+    padding-top: 1.04vmax;
     font-size: 1.25rem;
 }
 .personal-office-info__list ul li a{
     color: #999;
-    padding-left: 15px;
+    padding-left: 0.78vmax;
 }
 .change-password-form input{
-    box-shadow: inset 0 2px 1px 1px rgba(0,0,0,0.06);
+    box-shadow: inset 0 0.10vmax 0.05vmax 0.05vmax rgba(0,0,0,0.06);
 
 }
 
@@ -115,30 +115,30 @@
     cursor: pointer;
 }
 .save{
-    height: 55px;
+    height: 2.86vmax;
 }
 .modal-dialog{
-    padding: 25px;
+    padding: 1.30vmax;
 }
 .modal-content{
-    padding: 15px 10px 20px 10px;
+    padding: 0.78vmax 0.52vmax 1.04vmax 0.52vmax;
 }
 .personal-office-info__change-password a::after{
     content: '\f105';
     font-family: "FontAwesome";
-    padding-left: 5px;
+    padding-left: 0.26vmax;
 }
 .modal-header .close{
     color: #999;
-    font-size: 40px;
+    font-size: 2.08vmax;
 }
 .change-password{
     border: 0.5px solid #2299d4;
-    max-width: 390px;
+    max-width: 20.31vmax;
 }
 .change-password-form label{
     margin-bottom: 0;
-    margin-top: 20px;
+    margin-top: 1.04vmax;
     font-size: 1.25rem;
 }
 .change-password-form .form-control{
@@ -155,65 +155,88 @@
 
 /*style for personal-office-review*/
 .review-img{
-    width: 195px;
-    height: 90px;
+    width: 10.15vmax;
+    
+}
+.review-img img{
+    height: 4.68vmax;
 }
 
 .review-img span{
-    padding-left: 15px;
+    padding-left: 0.78vmax;
     font-size: 1.25rem;
 }
 .review-description{
-    width: 470px;
+    width: 24.47vmax;
 }
 .review-description p{
     text-align: left;
-    padding-top: 24px;
+    padding-top: 1.25vmax;
     color: #4c4c4c;
 }
 
 .review-description__check{
-    padding-left: 50px;
-    padding-right: 3px;
+    padding-left: 2.60vmax;
+    padding-right: 0.15vmax;
     font-size: 1.25rem;
     color: #21bb33;
 }
 
 .review-stars ul li{
-    padding-bottom: 10px;
+    padding-bottom: 0.52vmax;
 }
 .review-stars ul li:nth-child(5){
-    padding-bottom: 25px;
-    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 1.30vmax;
+    border-bottom: 0.05vmax solid #e6e6e6;
 }
 
 .review-stars li div i{
-    padding-left: 5px;
+    padding-left: 0.26vmax;
 }
 
 
 /*style personal-office-history*/
 
 .history-wrap{
-    border-bottom: 1px solid #e6e6e6;
-    padding: 15px 0;
+    border-bottom: 0.05vmax solid #e6e6e6;
+    padding: 0.78vmax 0;
 }
 .history-img{
-    width: 330px;
+    width: 17.18vmax;
 }
 .history-date, .history-price{
-    width: 160px;
+    width: 8.33vmax;
 }
 
 .history-number span{
-    border: 1px solid #e6e6e6;
+    border: 0.05vmax solid #e6e6e6;
     text-align: center;
-    padding: 7px 15px;
+    padding: 0.36vmax 0.78vmax;
 }
+@media only screen and (max-width: 1440px) {
+    .review-description__title.fs-18{
+        font-size: 15px !important;
+    }
+    .fs-34{
+        font-size: 28px;
+    }
+    .price{
+        width: 9.35vmax;
+    }
+    .history-img {
+        width: 14.18vmax;
+    }
+    .chara-bag {
+         font-size: 18px; 
+    }
+}
+
+
 
 @media only screen and (max-width: 1024px) {
     .personal-office-btn li{
         width: 250px;
+        height: 50px;
     }
 
     .review-img{
@@ -255,12 +278,13 @@
     .review-stars li div i{
         font-size: 13px !important;
     }
-    .history-img{
-        width: 210px;
+
+    .history-price{
+        width: 120px;
     }
 
     .history-price .fs-34{
-        font-size: 26px;
+        font-size: 24px;
     }
     .history-date span, .history-img span{
         padding-left: 0;
@@ -268,6 +292,25 @@
     }
 
 }
+@media only screen and (max-width: 768px) {
+    .personal-office-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .review-img {
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+    }
+    .review-img img {
+        height: 80px;
+    }
+    .review-description{
+        width: auto;
+    }
+}
+
+
 
 @media only screen and (max-width: 425px) {
     .wrap-personal-office{
@@ -315,5 +358,17 @@
     }
     .history-number{
         margin-bottom: 20px;
+    }
+    .title h2{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .fs-20 {
+        font-size: 15px;
+    }
+    .title h2{
+        font-size: 28px;
     }
 }

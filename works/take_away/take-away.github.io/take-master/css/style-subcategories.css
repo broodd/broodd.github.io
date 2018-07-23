@@ -1,16 +1,16 @@
 .subcategories .container{
-    border: 1px solid #ccc;
+    border: 0.05vmax solid #ccc;
 	height: 100%;
     background-color: #fff; 
-    padding: 20px 35px 30px 35px;
-    margin-bottom: 20px;
+    padding: 1.04vmax 1.82vmax 1.56vmax 1.82vmax;
+	margin-top: 1.04vmax;
 }
 
 .wrapper-section{
-    border: 1px solid #efeeee;
-    padding: 20px;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    border: 0.05vmax solid #efeeee;
+    padding: 1.0vmax;
+    margin-bottom: 0.625vmax;
+    margin-right: 0.625vmax;
 }
 .wrapper-section i{
     color: #bebebe;
@@ -20,27 +20,27 @@
 }
 
 #number-1, #number-2{
-    width: 80px;
-    height: 38px;
-    margin: 1px;
-    border: 1px solid #bebebe;
+    width: 4.16vw;
+    height: 1.97vmax;
+    margin: 0.05vmax;
+    border: 0.05vmax solid #bebebe;
     text-align: center;
     color: #999;
 }
 .wrapper-section button{
-    width: 88px;
-    height: 38px;
+    width: 4.58vmax;
+    height: 1.97vmax;
     background-color: #2299d4;
     color: #fff;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 0.26vmax;
 }
 
 .dark-grey{
     color: #4c4c4c;
 }
 h4{
-	font-size: 22px;
+	font-size: 1.25vmax;
 	font-weight: 500;
     color: #4c4c4c;
 }
@@ -52,18 +52,18 @@ h4{
 .wrapper-section__title h4::after{
     content: '\f107';
     position: absolute;
-    right: 30px;
+    right: 1.56vmax;
     font-family: "FontAwesome";
 }
 
 .wrapper-section__title.open h4::after{
     content: '\f106';
     position: absolute;
-    right: 30px;
+    right: 1.56vmax;
     font-family: "FontAwesome";
 }
 .wrap-selector__list a{
-    padding: 0 10px;
+    padding: 0 0.52vmax;
     font-size: 18px;
     color: #2299d4;
 }
@@ -71,17 +71,17 @@ h4{
     text-decoration: none;
 }
 .wrap-selector__list span{
-    font-size: 18px;
+    font-size: 1.04vmax;
     color: #c2c2c2;
 }
 
 .wrap-selector__list input{
-    height: 21px;
-    width: 21px;
+    height: 1.09vmax;
+    width: 1.09vmax;
 }
 
 .wrap-selector__list li{
-   padding-top: 18px;
+   padding-top: 0.93vmax;
    width: 100%;
 }
 .wrap-selector__list{
@@ -93,14 +93,14 @@ h4{
     overflow: visible;
 }
 .subcategories .col-lg-4{
-    padding-left: 10px;
+    padding-left: 0.62vmax;
 }
 .subcategories .cards{
-    margin-bottom: 10px;
+    margin-bottom: 0.62vmax;
 }
 
 .subcategories .cards div img{
-    height: 250px;
+    height: 13.02vmax;
 }
 
 .menu-button button{
@@ -115,37 +115,37 @@ h4{
 }
 
 .menu-row{
-    margin-left: 15px;
-    margin-right: 8px;
-    font-size: 35px;
+    margin-left: 0.78vmax;
+    margin-right: 0.41vmax;
+    font-size: 1.82vmax;
     color: #686767;
 }
 .menu-column{
-    font-size: 35px;
+    font-size: 1.82vmax;
     color: #686767;
 }
 
 .border-bottom{
-    border-bottom: 1px solid #efeeee;
-    padding-bottom: 25px;
-    padding-top: 10px;
+    border-bottom: 0.05vmax solid #efeeee;
+    padding-bottom: 1.30vmax;
+    padding-top: 0.62vmax;
     margin-bottom: 4%;
 }
 
 .border-bottom select{
-    margin-left: 23px;
-    border: 1px solid #efeeee;
-    padding: 9px;
-    font-size: 18px;
+    margin-left: 1.19vmax;
+    border: 0.05vmax solid #efeeee;
+    padding: 0.52vmax;
+    font-size: 1.04vmax;
 }
 .title{
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin-top: 1.30vmax;
+    margin-bottom: 1.04vmax;
 }
 
 .title h2{
-    padding-top: 15px;
-    font-size: 45px;
+    padding-top: 0.78vmax;
+    font-size: 2.44vmax;
     font-weight: 400;
 }
 
@@ -204,7 +204,7 @@ h4{
 /*the end checked*/
 
 .btn-number{
-    margin: 50px 0;
+    margin: 2.06vmax 0;
     height: auto;
     display: flex;
     align-items: center;
@@ -212,50 +212,52 @@ h4{
 .btn-number::after{
     content: '\f105';
     font-family: "FontAwesome";
-    padding-left: 5px;
+    padding-left: 0.26vmax;
 }
 .btn-number::before{
     content: '\f104';
         font-family: "FontAwesome";
-        padding-right: 5px;
+        padding-right: 0.26vmax;
 }
 
 .btn-number a{
     color: #999;
-    font-size: 25px;
-    padding: 0 14px;
+    font-size: 1.30vmax;
+    padding: 0 0.72vmax;
 }
 
 .btn-number .active{
     background: #2299d4;
     color: #fff;
-    padding: 4px 10px;
+    padding: 0.20vmax 0.52vmax;
 }
 
 .footer{
-    margin-top: 35px;
+    margin-top: 1.82vmax;
 }
 
 .list-column, .list-row{
     width: 100%;
-    margin-left: 15px;
-    margin-right: 28px;
+    margin-left: 0.62vmax;
+    margin-right: 2.55vmax;
 
+}.wrapper-section div div img{
+    height: 4.16vmax;
 }
 /*style list-row*/
 .cadrs-row{
-    border: 1px solid #efeeee;
-    padding: 30px 0;
-    margin-bottom: 10px;
+    border: 0.05vmax solid #efeeee;
+    padding: 1.56vmax 0;
+    margin-bottom: 0.62vmax;
 }
 
-.cards-row__description_list ul li{
-    padding-top: 13px;
+.cards-row__description_list table tbody{
+    padding-top: 0.67vmax;
     font-size: 18px;
 }
 .cards-row__description h5{
-    font-size: 20px;
-    padding: 20px 0 5px;
+    font-size: 22px;
+    padding: 1.04vmax 0 0.26vmax;
     font-weight: 500;
 }
 .cards-row__description h3{
@@ -263,15 +265,15 @@ h4{
     font-weight: 400;
 }
 .stars{
-    padding-top: 18px;
+    padding-top: 0.93vmax;
 }
 .stars a{
     color: #999;
-    padding-left: 10px;
+    padding-left: 0.52vmax;
 }
 
 .cards-row__button button{
-    margin: 20px 0 30px;
+    margin: 1.04vmax 0 1.2vmax;
 }
 
 .cards-row__button p span{
@@ -281,13 +283,13 @@ h4{
     padding-right: 5px;
 }
 .cards-row__button p{
-    font-size: 22px;
+    font-size:22px;
     color: #4c4c4c;
 }
 
 .cards-row__check-box span{
     font-size: 18px;
-    padding-left: 14px;
+    padding-left: 0.72vmax;
 }
 .list-column{
     display: none;
@@ -305,6 +307,34 @@ h4{
     display: block;
 }
 /*the end list-row*/
+
+
+@media only screen and (max-width: 1440px) {
+    .fs-18{
+        font-size: 14px !important;
+    }
+    .wrap-selector__list a{
+        font-size: 15px;
+    }
+    .cards-row__description_list table tbody{
+        font-size: 15px;
+    }
+    .cards-row__description h5{
+        font-size: 18px;
+    }
+    .cards-row__description h3{
+        font-size: 23px;
+    }
+    .cards-row__button p span{
+        font-size: 30px;
+    }
+    .cards-row__button p{
+        font-size: 19px;
+    }
+    .fs-20{
+        font-size: 17px !important;
+    }
+}
 
 @media only screen and (max-width: 1024px) {
     .subcategories .container {
@@ -343,7 +373,7 @@ h4{
         width: 50px;
         height: 30px;
     }
-    .cards-row__description_list ul li{
+    .cards-row__description_list table tbody{
         font-size: 14px;
     }
     .cards-row__description h5{
@@ -369,22 +399,37 @@ h4{
     .btn-number .active{
         padding: 8px 10px;
     }
-
-    .cards-row__button p span{
-        font-size: 30px;
-    }
-    .cards-row__button p{
-        font-size: 18px;
-    }
-    .cards-row__button{
-        margin-right: 15px;
-    }
+   
     .cards-row__button button{
         width: 75%;
     }
     .list-row, .list-column{
         margin-left: 0;
         margin-right: 0;
+    }
+    .subcategories .col-lg-9.col-md-8.col-12{
+        padding: 0 !important;
+    }
+    .subcategories .col-lg-3.col-md-4.col-12{
+        padding: 0 !important;
+    }
+    .wrapper-section button{
+        display: none;
+    }
+    .cards-row__description_list table tbody{
+        font-size: 13px;
+    }
+    .cards-row__description h5{
+        font-size: 17px;
+    }
+    .cards-row__description h3{
+        font-size: 20px;
+    }
+    .cards-row__button p span{
+        font-size: 26px;
+    }
+    .cards-row__button p{
+        font-size: 17px;
     }
 }
 

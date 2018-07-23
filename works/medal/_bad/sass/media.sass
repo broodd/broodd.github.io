@@ -1,0 +1,203 @@
+@import 'mixins'
+@import 'vars'
+
+
+// col    <   576px
+// col-sm >=  576px
+// col-md >=  768px
+// col-lg >=  922px
+// col-xl >= 1200px
+
++w(1225)
+	.cart
+		&__text
+			width: 70%
+
++w(1200)
+	.footer
+		&__item
+			margin-bottom: 60px
+
++w(1300)
+	.nav
+		line-height: 1.5
+		&-main
+			margin-top: 20px
+
++w(992)
+	body
+		font-size: 14px
+
+
+	.cart
+		&__text
+			left: 5%
+			bottom: 5%
+			width: auto
+			padding-right: 10px
+			.font-18
+				margin-bottom: 5px
+
+	.icon-wrap
+		.ic
+			margin-left: 8px
+
+	.padding
+		&-a
+			&_80
+				padding-top: 40px
+				padding-bottom: 40px
+
+
+	+san($lg-blue,30px,30px)
+
++w(768)
+	.brand
+		&-wrap
+			padding: 0
+	
+	.count__close,
+	.bag__price-sum
+		margin: 20px 0
+	
+	.text
+		&-center
+			&-md
+				text-align: center
+				// display: inline-block
+
+	.margin
+		&-md-t
+			&_30
+				margin-top: 30px
+
+	.slick
+		&-arrow
+			&.slick-prev
+				left: 0
+			&.slick-next
+				right: 0
+			&_blue
+				.slick-arrow
+					&.slick-prev
+						left: 15px
+					&.slick-next
+						right: 15px
+			&_small,
+			&-md_small
+				.slick-arrow
+					&.slick-prev
+						left: -15px
+					&.slick-next
+						right: -15px
+			&-md_small
+				.slick-arrow
+					width: 30px
+					height: 30px
+				
+	.form-wrap
+		width: 500px
+		.form__other
+			padding: 30px
+
+	.map-wrap
+		padding: 0
+		margin-top: 50px
+
+	.const
+		&-right
+			margin-top: 40px
+
+
+	.footer
+		&__item
+			margin-bottom: 30px
+		&__title
+			margin-bottom: 20px
+		&__icon
+			margin-bottom: 10px
+	
+
++w(575)
+	.header
+		&-top
+			.right
+				margin-top: 15px
+
+	.margin
+		&-sm-t
+			&_30
+				margin-top: 30px
+
+
++mw(768)
+	.cart
+		&:last-of-type
+			margin-bottom: 0
+
+	.contact
+		&:nth-child(2n+1)
+			border-right: 1px solid $grey
+		&:nth-last-child(2),
+		&:last-child
+			border-bottom: none
+
+	.const
+		&-title
+			padding: 0 45px
+		&-left
+			padding-right: 40px
+		&-right
+			padding: 0 60px
+
+
++mw(992)
+	.nav
+		&-main
+			.submenu
+				display: none !important
+		&-bottom
+			.menu-wrap
+				.submenu
+					padding-left: 30px
+					font-size: 12px
+					left: 22px
+	.catalog-wrap
+		.catalog
+			padding-left: 30px
+		.sidebar
+			.block
+				padding: 0 15px 0 30px
+
+	.bag
+		&__title
+			padding: 0 40px
+	
+	// .hidden-lg
+	// 	display: none !important
++mw(1200)
+	.border
+		&-xl
+			&-l
+				border-left: 1px solid $grey
+				padding-left: 25px
+
+
++mw(1300)
+	.catblock
+		position: absolute
+		height: calc(100% / 3 - 15px)
+		&:nth-child(1)
+			top: 0
+		&:nth-child(2)
+			top: 50%
+			+translateY
+		&:nth-child(3)
+			bottom: 0
+
+@media only screen and (max-width: 1300px) and (min-width: 992px) 
+	.order-spec
+		// margin-top: 20px
+		-webkit-box-ordinal-group: 14
+		-ms-flex-order: 13
+		order: 13

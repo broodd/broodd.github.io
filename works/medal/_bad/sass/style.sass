@@ -1,0 +1,1020 @@
+@import 'mixins'
+@import 'default'
+
+
+
+.overlay
+
+.window
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	background-color: $white
+	+opacity(0.7)
+	z-index: 8
+
+.toggle
+	z-index: 10 !important
+	position: relative
+
+
+
+.header-top
+	padding: 15px 0
+	font-size: 12px
+	.lang-choice
+		margin-left: 80px
+		option
+			background-color: $text
+			color: $white
+
+.header-top,
+.navbar
+	.ul
+		li
+			margin-right: 30px
+			&:last-of-type
+				margin-right: 0
+
+
+.navbar
+	position: relative
+	padding: 25px 0
+	+bs(0px 4px 15px rgba(0, 0, 0, 0.08))
+	font-family: $ff-bold
+	z-index: 4
+
+
+.nav
+	text-transform: uppercase
+	.has-submenu,
+	.menu-arrow
+		& > a
+			&:after
+				border-width: 2px
+				margin-top: -2px
+	.menu
+		li
+			a
+				&:after
+					right: -10px
+	&-bottom
+		color: $black
+		position: absolute
+		top: 100%
+		left: 0
+		z-index: 3
+		background-color: rgb(255, 255, 255)
+		width: 100vw
+		box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 15px
+		padding: 30px 0px
+		line-height: toem(26)
+		&.active
+			display: block
+		.menu-wrap
+			display: flex
+			justify-content: start
+			align-items: start
+			// &:not(:last-child)
+			border-right: 1px solid #E0E0E4
+			&:last-child
+				border: none
+			li
+				margin: 0
+	.submenu
+		text-transform: none
+		&.active
+			display: block
+
+
+.open_nav
+	&:hover
+		.nav-bottom
+			display: block
+				
+
+.icon-wrap
+	.ic
+		position: relative
+		margin-left: 25px
+		&:first-of-type
+			margin-left: 0
+		.notify
+			position: absolute
+			display: block
+			width: 15px
+			height: 15px
+			background-color: $yellow
+			color: $black
+			font-size: 9px
+			font-family: $ff-bold
+			right: -2px
+			top: -4px
+			text-align: center
+			line-height: 15px
+			border-radius: 50%
+			
+.brand
+	+em(20)
+	color: $blue
+	font-family: $ff-bold
+	margin-bottom: 0
+
+.image
+	&-wrap
+		position: relative
+		left: -25px
+		width: calc(100% + 50px)
+		&.l
+			&-10
+				left: -10px
+				width: 100%
+
+.select
+	position: relative
+	select
+		-moz-appearance: none
+		-webkit-appearance: none
+		outline: none !important
+		border: none !important
+		color: inherit
+		cursor: pointer
+		background-color: transparent
+	&:after
+		content: ''
+		position: absolute
+		top: 50%
+		right: 0
+		border-top: none
+		border-left: none
+		width: 7px
+		height: 7px
+		border: 1px solid #FFFFFF
+		box-sizing: border-box
+		transform: rotate(45deg) translate(-50%,-50%)
+		border-top: none
+		border-left: none
+	&-big
+		select
+			border: 1px solid #DEDEE2 !important
+			width: 100%
+			padding: 15px 30px
+			border-radius: 10px
+		&:after
+			border-color: $text
+			right: 30px
+	&-none
+		color: $black
+		padding-right: 15px
+		// select
+		&:after
+			border-color: $black
+.lang-choice
+	padding-right: 10px
+	// background-image: url(../img/arrow.svg)
+	// background-repeat: no-repeat
+	// background-position: right center
+
+
+.view
+	width: 20px
+	height: 20px
+	&-wrap
+		margin-left: 20px
+		&:hover,
+		&.active
+			.view_content
+				fill: $blue
+	.view_content
+		fill: $text
+
+.cart
+	position: relative
+	color: $black
+	margin-bottom: 30px
+	img
+		width: 100%
+
+	&__text
+		position: absolute
+		left: 50px
+		bottom: 50px
+		width: 50%
+		z-index: 2
+		.font-18
+			margin-bottom: 1.25em
+
+	&.bg
+		color: $white
+		.font-18
+			color: $white
+			// margin-bottom: 20px
+		&:after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+		&-purple
+			&:after
+				background: $lg-purple
+		&-lime
+			&:after
+				background: $lg-lime
+					
+
+.catblock
+	// padding-bottom: 10px
+	// &-wrap
+	background-color: $white-d
+	// &:last-of-type
+	// 	padding-bottom: 0
+	&:nth-child(2n)
+		padding-right: 0
+		img
+			+translateX(0)
+	img
+		+translateX(-10%)
+
+
+.category_block
+	background: $white-d
+	position: relative
+	height: 100%
+	align-items: flex-end
+	justify-content: flex-end
+	&.purple
+		background: $lg-purple-category
+	&.lime
+		background: $lg-lime-category
+	&.yellow
+		background: $lg-yellow-category
+	&.orange
+		background: $lg-orange-category
+
+	&, &.color-white
+		.font-22
+			// color: $white
+			color: rgba(255, 255, 255, 0.6)
+			letter-spacing: 0.25em
+			+tr(400ms)
+	&.color-grey
+		.font-22
+			color: #DFDFDF
+			// color: rgba(255, 255, 255, 0.5)
+		&:hover
+			.font-22
+				color: #D5D5D5
+	&.rotate
+		.category_block__text
+			+rotate(-90)
+			transform-origin: 26% 66%
+
+	&:hover
+		box-shadow: $shadow-category
+		&.yellow,&.purple,&.orange,&.purple,&.lime
+			.font-22
+				color: $white
+		img
+			+translateX(5px)
+			// margin-right: -5px
+			// right: -5px
+
+
+	&__text
+		position: absolute
+		top: 50%
+		// left: 40px
+		left: 9%
+	&, & img
+		+tr(400ms)
+		position: relative
+		right: 0
+
+.col-12
+	&:nth-child(1)
+		.category_block
+			img
+				right: -27px
+	&:nth-child(3)
+		.category_block
+			img
+				height: calc(100% + 13px)
+	&:nth-child(5)
+		.category_block
+			img
+				top: -10px
+	&:nth-child(9)
+		.category_block
+			img
+				margin-top: -10px
+	&:nth-child(10)
+		.category_block
+			img
+				top: 10px
+	&:nth-child(12)
+		.category_block
+			img
+				top: -5px
+
+
+.product
+	&__image
+		background-color: $white
+		margin-bottom: 20px
+		display: flex
+		justify-content: center
+		align-items: center
+		min-height: 300px
+		position: relative
+		+tr(400ms ease-in-out)
+		.code
+			position: absolute
+			bottom: 20px
+			font-size: 12px
+			color: $copy
+			+opacity(0)
+			+tr(400ms ease-in-out)
+		&:hover
+			box-shadow: $shadow
+			.code
+				+opacity(1)
+
+	&__price
+		display: flex
+		justify-content: space-between
+		align-items: center
+		del
+			text-decoration: none
+			position: relative
+			color: $black
+			margin-right: 25px
+			&:after
+				content: ''
+				position: absolute
+				width: 106%
+				height: 1px
+				background-color: $black
+				left: -3%
+				top: 50%
+		span
+			color: $blue
+			font-size: 18px
+
+.stickers
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: space-around
+	.left, .right
+		display: flex
+		flex-direction: column
+		position: absolute
+		top: 25px
+	.left
+		left: 25px
+		font-size: 11px
+	.right
+		right: 25px
+.sticker
+	width: 35px
+	height: 35px
+	box-shadow: $shadow
+	+br(50%)
+	color: $white
+	// +tr(400ms ease-in-out)
+	// display: flex
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	margin-bottom: 10px
+	&.yellow
+		background: $lg-yellow
+	&.blue
+		background: $lg-blue-sticker
+	&.star
+		background: $white
+		color: $blue
+		&:hover
+			color: $white
+			background: $lg-star-sticker
+
+.lenta
+	padding: 5px
+	border: 1px solid transparent
+	&.slick-current
+		border-color: $blue
+	&__image
+		display: flex
+		justify-content: center
+	&__text
+		padding-top: 15px
+		text-align: center
+		p
+			margin-bottom: 10px
+			line-height: normal
+
+		
+
+.favorite
+	padding: 30px 0
+	background-color: $white-d
+	border: 1px solid #EDEDEE
+	border-right: 0
+	// &:last-of-type
+	// 	border-right: 1px solid #EDEDEE
+
+.footer
+	position: relative
+	color: $wh
+	padding: 70px 0 50px 0
+	margin-top: 30px
+	&__title
+		margin-bottom: 40px
+	&__icon
+		margin-bottom: 20px
+		.icon
+			flex-basis: 30px
+	+links(inherit, inherit, $blue, $blue)
+
+
+
+.copyright
+	border-top: 1px solid $blue
+	padding: 15px 0
+
+
+.btn
+	display: inline-block
+	cursor: pointer
+	padding: 0.625em 1.875em 0.625em
+	border-radius: 20px
+	border: none
+	outline: none
+	+tr(400ms ease-in-out)
+	font-size: toem(14)
+	&:hover
+		box-shadow: $shadow
+	&-blue
+		color: $white !important
+		background: $lg-blue
+		&:hover
+			background: $lg-blue-act
+	&-white
+		color: $blue !important
+		background: $white
+	&-border
+		border: 1px solid $blue
+	&-disable
+		background: $grey
+		color: $white !important
+		cursor: no-drop
+		// cursor: 
+		&:hover
+			background: $grey
+			box-shadow: none
+			color: $white
+
+
+
+.form
+	input,textarea
+		width: 100%
+		// +placeholder-color($copy)
+		color: $text
+		padding: 20px 25px
+		font-size: 12px
+		border: none
+		outline: none
+	input[type="submit"]
+		cursor: pointer
+		color: $white
+		background: $lg-blue
+		padding: 15px
+		font-size: 14px
+	input[type="checkbox"]
+		width: auto
+		// -moz-appearance: none
+		// -webkit-appearance: none
+		// -o-appearance: none
+		// padding: 0
+		// width: 14px
+		// height: 14px
+		// border: 1px solid #DEDEE2		
+	&-footer
+		height: 40px
+		margin-top: 30px
+		position: relative
+		input
+			height: 100%
+			border-radius: 20px
+			border: none
+			outline: none
+			padding: 12px 135px 12px 20px
+			// &[type="submit"]
+			&.submit
+				position: absolute
+				top: 0
+				right: 0
+				width: 125px
+				padding: 0
+	&-border
+		input, textarea
+			border: 1px solid #DEDEE2
+			padding: 15px 25px
+		& > input:first-child,
+		& > textarea:first-child,
+		.input__placeholder:first-child input
+			border-top-left-radius: 10px
+			border-top-right-radius: 10px
+		& > input:last-child,
+		& > textarea:last-child,
+		.input__placeholder:last-child input
+			border-bottom-left-radius: 10px
+			border-bottom-right-radius: 10px
+
+	&-wrap
+		display: flex
+		+translate-center(fixed)
+		z-index: 10
+		background-color: $white
+		width: 755px
+		max-width: 100%
+		max-height: 100%
+		overflow: hidden
+		&.border-radius
+			border-radius: 20px
+			overflow: hidden
+		.form
+			input[type="submit"]
+				border-radius: 20px
+				padding: 10px			
+			&__image
+				// border-top-left-radius: 20px
+				// border-bottom-left-radius: 20px
+				// overflow: hidden
+				flex-shrink: 0
+				img
+					height: 100%
+			&__aside
+				flex: 1
+			&__title
+				background-color: #F3F3F4
+				padding: 15px 15px 15px 50px
+				color: $black
+			&__other
+				padding: 50px
+
+.textarea
+	display: block
+	padding: 15px 17px
+	color: #C2C3C8
+
+.input
+	&__placeholder
+		position: relative
+		span
+			position: absolute
+			left: 25px
+			top: 5px
+			color: #C2C3C8
+			font-size: 12px
+			+tr(400ms ease-in-out)
+			+translateY(50%)
+		input
+			padding-bottom: 7px
+			border-radius: 0
+		&.active
+			span
+				+translateY(0)
+				font-size: 9px
+
+.checkbox
+	display: flex
+	align-items: baseline
+	&__aside
+		width: 100%
+	input
+		margin-right: 5px
+	&-margin
+		// margin-bottom: 40px
+		input
+			margin-right: 30px
+
+.count
+	position: relative
+	width: 120px
+	&__input
+		border-radius: 20px
+		border: 1px solid #E0E0E4
+		color: $black
+		padding: 7px 20px
+		text-align: center
+
+	&__minus,
+	&__plus
+		position: absolute
+		top: 50%
+		+translateY
+		padding: 10px
+		cursor: pointer
+		+selection
+			background: none
+	&__minus
+		left: 10px
+	&__plus
+		right: 10px
+
+	&__close
+		display: inline-block
+		width: 50px
+		height: 50px
+		line-height: 50px
+		text-align: center
+		border: 1px solid #E0E0E4
+		border-radius: 50%
+		cursor: pointer
+		color: $black
+
+
+
+		// flex: 20%
+		// max-width: 20%
+	
+
+
+.bredcrumbs
+	margin-top: 30px
+	color: $black
+	font-size: 12px
+
+.more
+	display: block
+	text-align: right
+	color: $blue !important
+
+.catalog-wrap
+	.catalog
+		&__image
+			.font-22
+				+translate-center(absolute,50%,7.7%,0,-50%)
+				color: $white
+		.product
+			margin-bottom: 40px
+	.sidebar
+		background-color: $bg-grey
+		// padding-left: 30px
+		padding: 0
+		.block
+			padding: 0 15px
+			border-bottom: 1px solid #E0E0E4
+			&__title
+				padding: 20px 0
+				cursor: pointer
+			&__under
+				display: none
+				padding-bottom: 15px
+				&.active
+					display: block
+				label
+					display: block
+					input[type="checkbox"]
+						margin-right: 5px
+				// .submenu
+				// 	font-family: $ff-1
+				// 	color: $black
+				// 	display: none
+				// 	&.active
+				// 		display: block
+				// .has-submenu
+				// 	& > a
+				// 		position: relative
+				// 		&:after
+				// 			content: ''
+				// 			position: absolute
+				// 			width: 5px
+				// 			height: 5px
+				// 			right: -30px
+				// 			top: 50%
+				// 			border-bottom: 1px solid $black
+				// 			border-right: 1px solid $black
+				// 			transform: rotate(45deg) translateX(-50%)
+				// 			transform-origin: left center
+				ul
+					line-height: toem(30)
+					// li
+					// 	&:hover
+					// 		color: $blue
+					// 		& > a:after
+					// 			border-color: $blue
+					// 			transform: rotate(-45deg) translateX(-50%)
+						// &.has-submenu.active
+
+			&.active
+				.plus:after
+					height: 0
+					width: 0
+					top: 50%
+				// .block__under
+				// 	display: block
+
+.menu,
+.ul
+	li
+		&:hover
+			color: $blue
+			& > a:after
+				border-color: $blue
+				transform: rotate(-45deg) translateX(-50%)
+
+.submenu
+	font-family: $ff-1
+	color: $black
+	display: none
+	&.active
+		display: block
+.menu-arrow,
+.has-submenu
+	& > a
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			width: 5px
+			height: 5px
+			right: -30px
+			top: 50%
+			border-bottom: 1px solid $black
+			border-right: 1px solid $black
+			transform: rotate(45deg) translate(-50%,-50%)
+			transform-origin: left center
+			+tr(transform 200ms ease-in-out)
+
+
+
+.plus
+	width: 15px
+	height: 15px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 0
+		+translateY
+		width: 100%
+		height: 2px
+		background-color: #C2C3C8
+	&:after
+		content: ''
+		position: absolute
+		height: 100%
+		width: 2px
+		left: 50%
+		top: 0
+		+translateX							
+		background-color: #C2C3C8
+		+tr(400ms ease-in-out)
+					
+
+
+.slick
+	&__vertical
+		.slick-current.slick__img
+			border: 1px solid $blue
+		.slick-slide
+			border: 1px solid transparent
+	&__for
+		.slick-track
+			display: flex
+			.slick-slide
+				float: none
+	&__img
+		display: flex !important
+		justify-content: center
+		align-self: center
+		align-items: center
+	&-arrow
+		position: absolute
+		width: 50px
+		height: 50px
+		z-index: 2
+		font-size: 0
+		background: $white
+		outline: none
+		border: none
+		top: 50%
+		// top: 150px
+		border-radius: 50%
+		cursor: pointer
+		box-shadow: $shadow
+		+translateY
+		&:hover, &:active, &:focus
+			outline: none
+		&.slick-prev
+			left: -15px
+			&:after
+				border-right: none
+				border-top: none
+				transform: translate(-25%,-50%) rotate(45deg)
+		&.slick-next
+			right: -15px
+			&:after
+				border-left: none
+				border-bottom: none
+				transform: translate(-75%,-50%) rotate(45deg)
+		&:after
+			content: ''
+			position: absolute
+			width: 10px
+			height: 10px
+			top: 50%
+			left: 50%
+			border: 2px solid $blue
+		&:hover
+			background: $lg-blue
+			&:after
+				border-color: $white	
+
+		&_blue
+			.slick-arrow
+				width: 30px
+				height: 30px
+				box-shadow: none
+				background: $lg-blue
+				&.slick-prev
+					left: 35px
+				&.slick-next
+					right: 35px
+				&:after
+					border-color: $white
+
+		&_small
+			.slick-arrow
+				width: 30px
+				height: 30px
+
+		&_prop
+			.slick-arrow
+				&.slick-prev
+					left: -50px
+					// +translateX(-100%)
+				&.slick-next
+					right: -50px
+	&__4
+		.slick-arrow
+			top: 150px
+
+.icon
+	&-close
+		cursor: pointer
+
+.const
+	&-row
+		margin-top: 20px
+		margin-bottom: 60px
+	&__img
+		display: flex
+		justify-content: center
+	&__desc
+		min-width: 170px
+		display: inline-block
+
+
+		
+.contact
+	display: flex
+	align-items: center
+	min-height: 80px
+	border-bottom: 1px solid $grey
+	&__image
+		flex-basis: 80px
+		text-align: center
+	&__aside
+		p
+			line-height: 1.7
+			margin-bottom: 0
+
+.map
+	width: 100%
+	height: 100%
+	min-height: 400px
+
+.slider 
+	// width: 100%
+	position: relative
+	height: 2px
+	margin-top: 1.25rem
+	margin-bottom: 2.25rem
+	background-color: #e6e6e6
+	cursor: pointer
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-ms-touch-action: none
+	touch-action: none
+
+	&-wrap
+		color: $text
+		font-size: 12px
+		padding: 0 10px
+		& > [class*="col-"]
+			padding: 0 5px
+
+	&-input
+		border-radius: 20px
+		padding: 7px 15px
+		background-color: $white
+		border: 1px solid #E0E0E4
+		outline: none
+		-webkit-appearance: textfield
+		-moz-appearance: textfield
+		appearance: textfield
+		color: inherit
+
+	&-fill 
+		position: absolute
+		top: 0
+		left: 0
+		display: inline-block
+		max-width: 100%
+		height: 100%
+		background-color: $blue
+		transition: all .2s ease-in-out
+
+		&.is-dragging 
+			transition: all 0s linear
+
+	&-handle 
+		top: 50%
+		left: 0
+		-webkit-transform: translateY(-50%)
+		transform: translateY(-50%)
+		position: absolute
+		z-index: 1
+		display: inline-block
+		width: 1.4rem
+		height: 1.4rem
+		background-color: $white
+		+bs($shadow)
+		+tr(all .2s ease-in-out)
+		-ms-touch-action: manipulation
+		touch-action: manipulation
+		+br(50%)
+		outline: none
+
+
+		&.is-dragging 
+			transition:  all 0s linear
+
+.scroll
+	position: absolute
+	width: 50px
+	height: 50px
+	bottom: 15px
+	right: 15px
+	z-index: 2
+	font-size: 0
+	background: $white
+	outline: none
+	border: none
+	// top: 150px
+	border-radius: 50%
+	cursor: pointer
+	box-shadow: $shadow
+	&:after
+		content: ''
+		position: absolute
+		width: 10px
+		height: 10px
+		top: 50%
+		left: 50%
+		border: 2px solid $blue
+		transform: translate(-50%,-25%) rotate(45deg)
+		border-bottom: none
+		border-right: none
+
+// active
+// 	body
+// 		overflow
+// 	sidebar
+// 		l0
+
+
+// 	sidebar
+// 		position: absolute
+// 		z-index: 3
+// 		left: -100%
+// 		top: 0
+// 		max-width: calc(100% - 10%)
+// 		transition: 400ms ease-in-out
+// 		overflow: scroll
+// 		height: calc(100vh -60px)
+

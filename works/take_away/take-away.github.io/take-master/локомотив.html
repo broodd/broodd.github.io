@@ -16,25 +16,16 @@
 
 <body>
 	
-	<header id="header" class="header">
+<header id="header" class="header">
 		<div class="container">
-			<div class="row">
+			<div class="row align-items-center">
 				<div class="col-lg-12 col-md-12 col-xl-5 col-10 pl-0 d-flex">
 					<a href="index.html" class="logo">
 						<img src="img/logo-2.png" class="img-fluid">
 					</a>
-					<div class="phone fs-20 pl-5">+38
-						<select>
-							<option class="phone__option">
-								050 000 00 00
-							</option>
-							<option class="phone__option">
-								050 000 00 01
-							</option>
-							<option class="phone__option">
-								050 000 00 02
-							</option>
-						</select>
+					<div class="phone fs-20 pl-5 d-flex flex-column">
+						<div>+38 <span class="phone__option">050 000 00 00</span></div>
+						<div>+38 <span class="phone__option">050 000 00 00</span></div>
 					</div>
 				</div>
 				<div class="col-lg-12 col-md-12 col-xl-7 col-12 p-0">
@@ -104,11 +95,6 @@
 							<li class="menu__item">
 								<a href="compare-products.html" style="color: #2299d4">Акции</a>
 							</li>
-							<select class="language pl-2">
-								<option>ru</option>
-								<option>ua</option>
-								<option>en</option>
-							</select>
 						</ul>
 					</nav>
 				</div>
@@ -123,21 +109,20 @@
 			</div>
 			<div class="row">
 				<div class="group-buttons col-lg-12 col-md-12 d-flex justify-content-between align-items-center p-0">
-					<div class="dropdown button-menu" role="group">
-						<button type="button" class="btn blue button-menu__button d-flex align-items-center justify-content-around" data-toggle="dropdown"
-						 aria-haspopup="true" aria-expanded="false" data-flip="false">
+					<div class="dropdown button-menu show" role="group">
+						<button type="button" class="btn blue button-menu__button d-flex align-items-center justify-content-around" >
 							<i class="fa fa-bars" aria-hidden="true"></i>
 							Каталог товаров
 						</button>
-						<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+						<div class="dropdown-menu  dropdown-menu-catalog show" aria-labelledby="btnGroupDrop1">
 							<div class="dropright-menu">
 								<div class="d-flex justify-content-between align-items-center dropright-menu__item">
 									<a class="dropdown-item" href="categories.html">Смартфоны и аксессуары</a>
 									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
-								<div class="px-0 py-3 menu-list">
+								<div class="px-0 menu-list">
 									<div class="row h-100">
-										<div class="col-md-8">
+										<div class="col-md-8 pt-2">
 											<div class="row">
 												<div class="col-4">
 													<ul class="menu-list__category">
@@ -244,25 +229,57 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 d-flex align-items-center h-100">
-											<div class="cards border-shadow">
-												<div class="d-flex justify-content-center">
-													<img src="img/phone2.jpg" class="img-fluid">
+										<div class="col-md-4 d-flex align-items-center h-100 pl-0">
+											<div class="gruop-cards-1 h-100">
+												<div class="cards-1 d-flex">
+													<a href="#" class="d-flex align-items-center justify-content-center">
+														<img src="img/phone2.jpg" class="img-fluid">
+													</a>
+													<div class="cards-1__gruop">
+														<h3>Apple iPhone 8 Plus</h3>
+														<div class="line"></div>
+														<div class="cards-1__reviews d-flex orange">
+															<div>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+															</div>
+															<a href="#">6 отзывов</a>
+														</div>
+														<div class="d-flex column">
+															<p class="outlined black">15 599 руб</p>
+															<p class="red">
+																<span class="red bold">10 599</span>руб</p>
+														</div>
+														<button type="submit" class="btn btn-green">купить</button>
+													</div>
 												</div>
-												<h3 class="fs-22">Apple iPhone 8 Plus </h3>
-												<div class="cards__reviews d-flex orange">
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<a href="#" class="fs-16">6 отзывов</a>
-												</div>
-												<div class="cards__price d-flex justify-content-between">
-													<p>
-														<span>27 599</span>руб</p>
-													<button type="submit" class="btn btn-green">купить</button>
-												</div>
+												<div class="cards-1 d-flex">
+														<a href="#" class="d-flex align-items-center justify-content-center">
+															<img src="img/phone3.jpg" class="img-fluid">
+														</a>
+														<div class="cards-1__gruop">
+															<h3>Apple iPhone 8 Plus</h3>
+															<div class="line"></div>
+															<div class="cards-1__reviews d-flex orange">
+																<div>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																</div>
+																<a href="#">6 отзывов</a>
+															</div>
+															<div class="d-flex column">
+																<p>
+																	<span class="bold">10 599</span>руб</p>
+															</div>
+															<button type="submit" class="btn btn-green">купить</button>
+														</div>
+													</div>
 											</div>
 										</div>
 									</div>
@@ -273,9 +290,9 @@
 									<a class="dropdown-item" href="#">Электроника</a>
 									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
-								<div class="px-0 py-3 menu-list">
+								<div class="px-0 menu-list">
 									<div class="row h-100">
-										<div class="col-md-8">
+										<div class="col-md-8 pt-2">
 											<div class="row">
 												<div class="col-4">
 													<ul class="menu-list__category">
@@ -382,24 +399,57 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 d-flex align-items-center h-100">
-											<div class="cards border-shadow">
-												<a class="d-flex justify-content-center">
-													<img src="img/phone2.jpg" class="img-fluid">
-												</a>
-												<h3>Apple iPhone 8 Plus </h3>
-												<div class="cards__reviews d-flex orange">
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<a href="#" class="fs-16">6 отзывов</a>
+										<div class="col-md-4 d-flex align-items-center h-100 pl-0">
+											<div class="gruop-cards-1 h-100">
+												<div class="cards-1 d-flex">
+													<a href="#" class="d-flex align-items-center justify-content-center">
+														<img src="img/phone2.jpg" class="img-fluid">
+													</a>
+													<div class="cards-1__gruop">
+														<h3>Apple iPhone 8 Plus</h3>
+														<div class="line"></div>
+														<div class="cards-1__reviews d-flex orange">
+															<div>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+															</div>
+															<a href="#">6 отзывов</a>
+														</div>
+														<div class="d-flex column">
+															<p class="outlined black">15 599 руб</p>
+															<p class="red">
+																<span class="red bold">10 599</span>руб</p>
+														</div>
+														<button type="submit" class="btn btn-green">купить</button>
+													</div>
 												</div>
-												<div class="cards__price d-flex justify-content-between">
-													<p><span>27 599</span> руб</p>
-													<button type="submit" class="btn btn-green">купить</button>
-												</div>
+												<div class="cards-1 d-flex">
+														<a href="#" class="d-flex align-items-center justify-content-center">
+															<img src="img/phone3.jpg" class="img-fluid">
+														</a>
+														<div class="cards-1__gruop">
+															<h3>Apple iPhone 8 Plus</h3>
+															<div class="line"></div>
+															<div class="cards-1__reviews d-flex orange">
+																<div>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																</div>
+																<a href="#">6 отзывов</a>
+															</div>
+															<div class="d-flex column">
+																<p>
+																	<span class="bold">10 599</span>руб</p>
+															</div>
+															<button type="submit" class="btn btn-green">купить</button>
+														</div>
+													</div>
 											</div>
 										</div>
 									</div>
@@ -410,9 +460,9 @@
 									<a class="dropdown-item" href="#">Компьютеры и оргтехника</a>
 									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
-								<div class="px-0 py-3 menu-list">
+								<div class="px-0 menu-list">
 									<div class="row h-100">
-										<div class="col-md-8">
+										<div class="col-md-8 pt-2">
 											<div class="row">
 												<div class="col-4">
 													<ul class="menu-list__category">
@@ -481,6 +531,15 @@
 														<li>
 															<a class="dropdown-item" href="#">Категория</a>
 														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
 													</ul>
 												</div>
 												<div class="col-4">
@@ -497,29 +556,70 @@
 														<li>
 															<a class="dropdown-item" href="#">Категория</a>
 														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
 													</ul>
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 d-flex align-items-center h-100">
-											<div class="cards border-shadow">
-												<div class="d-flex justify-content-center">
-													<img src="img/phone2.jpg" class="img-fluid">
+										<div class="col-md-4 d-flex align-items-center h-100 pl-0">
+											<div class="gruop-cards-1 h-100">
+												<div class="cards-1 d-flex">
+													<a href="#" class="d-flex align-items-center justify-content-center">
+														<img src="img/phone2.jpg" class="img-fluid">
+													</a>
+													<div class="cards-1__gruop">
+														<h3>Apple iPhone 8 Plus</h3>
+														<div class="line"></div>
+														<div class="cards-1__reviews d-flex orange">
+															<div>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+															</div>
+															<a href="#">6 отзывов</a>
+														</div>
+														<div class="d-flex column">
+															<p class="outlined black">15 599 руб</p>
+															<p class="red">
+																<span class="red bold">10 599</span>руб</p>
+														</div>
+														<button type="submit" class="btn btn-green">купить</button>
+													</div>
 												</div>
-												<h3 class="fs-22">Apple iPhone 8 Plus </h3>
-												<div class="cards__reviews d-flex orange">
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<a href="#" class="fs-16">6 отзывов</a>
-												</div>
-												<div class="cards__price d-flex justify-content-between">
-													<p>
-														<span>27 599</span>руб</p>
-													<button type="submit" class="btn btn-green">купить</button>
-												</div>
+												<div class="cards-1 d-flex">
+														<a href="#" class="d-flex align-items-center justify-content-center">
+															<img src="img/phone3.jpg" class="img-fluid">
+														</a>
+														<div class="cards-1__gruop">
+															<h3>Apple iPhone 8 Plus</h3>
+															<div class="line"></div>
+															<div class="cards-1__reviews d-flex orange">
+																<div>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																</div>
+																<a href="#">6 отзывов</a>
+															</div>
+															<div class="d-flex column">
+																<p>
+																	<span class="bold">10 599</span>руб</p>
+															</div>
+															<button type="submit" class="btn btn-green">купить</button>
+														</div>
+													</div>
 											</div>
 										</div>
 									</div>
@@ -530,9 +630,9 @@
 									<a class="dropdown-item" href="#">Бытовая техника</a>
 									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
-								<div class="px-0 py-3 menu-list">
+								<div class="px-0 menu-list">
 									<div class="row h-100">
-										<div class="col-md-8">
+										<div class="col-md-8 pt-2">
 											<div class="row">
 												<div class="col-4">
 													<ul class="menu-list__category">
@@ -552,6 +652,18 @@
 													<ul class="menu-list__category">
 														<li>
 															<h4 class="bold">Подроздел</h4>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
 														</li>
 														<li>
 															<a class="dropdown-item" href="#">Категория</a>
@@ -627,25 +739,57 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 d-flex align-items-center h-100">
-											<div class="cards border-shadow">
-												<div class="d-flex justify-content-center">
-													<img src="img/phone2.jpg" class="img-fluid">
+										<div class="col-md-4 d-flex align-items-center h-100 pl-0">
+											<div class="gruop-cards-1 h-100">
+												<div class="cards-1 d-flex">
+													<a href="#" class="d-flex align-items-center justify-content-center">
+														<img src="img/phone2.jpg" class="img-fluid">
+													</a>
+													<div class="cards-1__gruop">
+														<h3>Apple iPhone 8 Plus</h3>
+														<div class="line"></div>
+														<div class="cards-1__reviews d-flex orange">
+															<div>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+															</div>
+															<a href="#">6 отзывов</a>
+														</div>
+														<div class="d-flex column">
+															<p class="outlined black">15 599 руб</p>
+															<p class="red">
+																<span class="red bold">10 599</span>руб</p>
+														</div>
+														<button type="submit" class="btn btn-green">купить</button>
+													</div>
 												</div>
-												<h3 class="fs-22">Apple iPhone 8 Plus </h3>
-												<div class="cards__reviews d-flex orange">
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<a href="#" class="fs-16">6 отзывов</a>
-												</div>
-												<div class="cards__price d-flex justify-content-between">
-													<p>
-														<span>27 599</span>руб</p>
-													<button type="submit" class="btn btn-green">купить</button>
-												</div>
+												<div class="cards-1 d-flex">
+														<a href="#" class="d-flex align-items-center justify-content-center">
+															<img src="img/phone3.jpg" class="img-fluid">
+														</a>
+														<div class="cards-1__gruop">
+															<h3>Apple iPhone 8 Plus</h3>
+															<div class="line"></div>
+															<div class="cards-1__reviews d-flex orange">
+																<div>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																</div>
+																<a href="#">6 отзывов</a>
+															</div>
+															<div class="d-flex column">
+																<p>
+																	<span class="bold">10 599</span>руб</p>
+															</div>
+															<button type="submit" class="btn btn-green">купить</button>
+														</div>
+													</div>
 											</div>
 										</div>
 									</div>
@@ -656,9 +800,9 @@
 									<a class="dropdown-item" href="#">Мужская одежда</a>
 									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
-								<div class="px-0 py-3 menu-list">
+								<div class="px-0 menu-list">
 									<div class="row h-100">
-										<div class="col-md-8">
+										<div class="col-md-8 pt-2">
 											<div class="row">
 												<div class="col-4">
 													<ul class="menu-list__category">
@@ -678,6 +822,15 @@
 													<ul class="menu-list__category">
 														<li>
 															<h4 class="bold">Подроздел</h4>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
 														</li>
 														<li>
 															<a class="dropdown-item" href="#">Категория</a>
@@ -756,25 +909,57 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 d-flex align-items-center h-100">
-											<div class="cards border-shadow">
-												<div class="d-flex justify-content-center">
-													<img src="img/phone2.jpg" class="img-fluid">
+										<div class="col-md-4 d-flex align-items-center h-100 pl-0">
+											<div class="gruop-cards-1 h-100">
+												<div class="cards-1 d-flex">
+													<a href="#" class="d-flex align-items-center justify-content-center">
+														<img src="img/phone2.jpg" class="img-fluid">
+													</a>
+													<div class="cards-1__gruop">
+														<h3>Apple iPhone 8 Plus</h3>
+														<div class="line"></div>
+														<div class="cards-1__reviews d-flex orange">
+															<div>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+															</div>
+															<a href="#">6 отзывов</a>
+														</div>
+														<div class="d-flex column">
+															<p class="outlined black">15 599 руб</p>
+															<p class="red">
+																<span class="red bold">10 599</span>руб</p>
+														</div>
+														<button type="submit" class="btn btn-green">купить</button>
+													</div>
 												</div>
-												<h3 class="fs-22">Apple iPhone 8 Plus </h3>
-												<div class="cards__reviews d-flex orange">
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<a href="#" class="fs-16">6 отзывов</a>
-												</div>
-												<div class="cards__price d-flex justify-content-between">
-													<p>
-														<span>27 599</span>руб</p>
-													<button type="submit" class="btn btn-green">купить</button>
-												</div>
+												<div class="cards-1 d-flex">
+														<a href="#" class="d-flex align-items-center justify-content-center">
+															<img src="img/phone3.jpg" class="img-fluid">
+														</a>
+														<div class="cards-1__gruop">
+															<h3>Apple iPhone 8 Plus</h3>
+															<div class="line"></div>
+															<div class="cards-1__reviews d-flex orange">
+																<div>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																</div>
+																<a href="#">6 отзывов</a>
+															</div>
+															<div class="d-flex column">
+																<p>
+																	<span class="bold">10 599</span>руб</p>
+															</div>
+															<button type="submit" class="btn btn-green">купить</button>
+														</div>
+													</div>
 											</div>
 										</div>
 									</div>
@@ -785,9 +970,9 @@
 									<a class="dropdown-item" href="#">Женская одежда</a>
 									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
-								<div class="px-0 py-3 menu-list">
+								<div class="px-0 menu-list">
 									<div class="row h-100">
-										<div class="col-md-8">
+										<div class="col-md-8 pt-2">
 											<div class="row">
 												<div class="col-4">
 													<ul class="menu-list__category">
@@ -894,25 +1079,57 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 d-flex align-items-center h-100">
-											<div class="cards border-shadow">
-												<div class="d-flex justify-content-center">
-													<img src="img/phone2.jpg" class="img-fluid">
+										<div class="col-md-4 d-flex align-items-center h-100 pl-0">
+											<div class="gruop-cards-1 h-100">
+												<div class="cards-1 d-flex">
+													<a href="#" class="d-flex align-items-center justify-content-center">
+														<img src="img/phone2.jpg" class="img-fluid">
+													</a>
+													<div class="cards-1__gruop">
+														<h3>Apple iPhone 8 Plus</h3>
+														<div class="line"></div>
+														<div class="cards-1__reviews d-flex orange">
+															<div>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+															</div>
+															<a href="#">6 отзывов</a>
+														</div>
+														<div class="d-flex column">
+															<p class="outlined black">15 599 руб</p>
+															<p class="red">
+																<span class="red bold">10 599</span>руб</p>
+														</div>
+														<button type="submit" class="btn btn-green">купить</button>
+													</div>
 												</div>
-												<h3 class="fs-22">Apple iPhone 8 Plus </h3>
-												<div class="cards__reviews d-flex orange">
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<a href="#" class="fs-16">6 отзывов</a>
-												</div>
-												<div class="cards__price d-flex justify-content-between">
-													<p>
-														<span>27 599</span>руб</p>
-													<button type="submit" class="btn btn-green">купить</button>
-												</div>
+												<div class="cards-1 d-flex">
+														<a href="#" class="d-flex align-items-center justify-content-center">
+															<img src="img/phone3.jpg" class="img-fluid">
+														</a>
+														<div class="cards-1__gruop">
+															<h3>Apple iPhone 8 Plus</h3>
+															<div class="line"></div>
+															<div class="cards-1__reviews d-flex orange">
+																<div>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																</div>
+																<a href="#">6 отзывов</a>
+															</div>
+															<div class="d-flex column">
+																<p>
+																	<span class="bold">10 599</span>руб</p>
+															</div>
+															<button type="submit" class="btn btn-green">купить</button>
+														</div>
+													</div>
 											</div>
 										</div>
 									</div>
@@ -923,9 +1140,9 @@
 									<a class="dropdown-item" href="#">Спорт и отдых</a>
 									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
-								<div class="px-0 py-3 menu-list">
+								<div class="px-0 menu-list">
 									<div class="row h-100">
-										<div class="col-md-8">
+										<div class="col-md-8 pt-2">
 											<div class="row">
 												<div class="col-4">
 													<ul class="menu-list__category">
@@ -1032,25 +1249,57 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 d-flex align-items-center h-100">
-											<div class="cards border-shadow">
-												<div class="d-flex justify-content-center">
-													<img src="img/phone2.jpg" class="img-fluid">
+										<div class="col-md-4 d-flex align-items-center h-100 pl-0">
+											<div class="gruop-cards-1 h-100">
+												<div class="cards-1 d-flex">
+													<a href="#" class="d-flex align-items-center justify-content-center">
+														<img src="img/phone2.jpg" class="img-fluid">
+													</a>
+													<div class="cards-1__gruop">
+														<h3>Apple iPhone 8 Plus</h3>
+														<div class="line"></div>
+														<div class="cards-1__reviews d-flex orange">
+															<div>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+															</div>
+															<a href="#">6 отзывов</a>
+														</div>
+														<div class="d-flex column">
+															<p class="outlined black">15 599 руб</p>
+															<p class="red">
+																<span class="red bold">10 599</span>руб</p>
+														</div>
+														<button type="submit" class="btn btn-green">купить</button>
+													</div>
 												</div>
-												<h3 class="fs-22">Apple iPhone 8 Plus </h3>
-												<div class="cards__reviews d-flex orange">
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<a href="#" class="fs-16">6 отзывов</a>
-												</div>
-												<div class="cards__price d-flex justify-content-between">
-													<p>
-														<span>27 599</span>руб</p>
-													<button type="submit" class="btn btn-green">купить</button>
-												</div>
+												<div class="cards-1 d-flex">
+														<a href="#" class="d-flex align-items-center justify-content-center">
+															<img src="img/phone3.jpg" class="img-fluid">
+														</a>
+														<div class="cards-1__gruop">
+															<h3>Apple iPhone 8 Plus</h3>
+															<div class="line"></div>
+															<div class="cards-1__reviews d-flex orange">
+																<div>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																</div>
+																<a href="#">6 отзывов</a>
+															</div>
+															<div class="d-flex column">
+																<p>
+																	<span class="bold">10 599</span>руб</p>
+															</div>
+															<button type="submit" class="btn btn-green">купить</button>
+														</div>
+													</div>
 											</div>
 										</div>
 									</div>
@@ -1061,9 +1310,9 @@
 									<a class="dropdown-item" href="#">Для дома и сада</a>
 									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
-								<div class="px-0 py-3 menu-list">
+								<div class="px-0 menu-list">
 									<div class="row h-100">
-										<div class="col-md-8">
+										<div class="col-md-8 pt-2">
 											<div class="row">
 												<div class="col-4">
 													<ul class="menu-list__category">
@@ -1154,29 +1403,73 @@
 														<li>
 															<a class="dropdown-item" href="#">Категория</a>
 														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
 													</ul>
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 d-flex align-items-center h-100">
-											<div class="cards border-shadow">
-												<div class="d-flex justify-content-center">
-													<img src="img/phone2.jpg" class="img-fluid">
+										<div class="col-md-4 d-flex align-items-center h-100 pl-0">
+											<div class="gruop-cards-1 h-100">
+												<div class="cards-1 d-flex">
+													<a href="#" class="d-flex align-items-center justify-content-center">
+														<img src="img/phone2.jpg" class="img-fluid">
+													</a>
+													<div class="cards-1__gruop">
+														<h3>Apple iPhone 8 Plus</h3>
+														<div class="line"></div>
+														<div class="cards-1__reviews d-flex orange">
+															<div>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+															</div>
+															<a href="#">6 отзывов</a>
+														</div>
+														<div class="d-flex column">
+															<p class="outlined black">15 599 руб</p>
+															<p class="red">
+																<span class="red bold">10 599</span>руб</p>
+														</div>
+														<button type="submit" class="btn btn-green">купить</button>
+													</div>
 												</div>
-												<h3 class="fs-22">Apple iPhone 8 Plus </h3>
-												<div class="cards__reviews d-flex orange">
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<a href="#" class="fs-16">6 отзывов</a>
-												</div>
-												<div class="cards__price d-flex justify-content-between">
-													<p>
-														<span>27 599</span>руб</p>
-													<button type="submit" class="btn btn-green">купить</button>
-												</div>
+												<div class="cards-1 d-flex">
+														<a href="#" class="d-flex align-items-center justify-content-center">
+															<img src="img/phone3.jpg" class="img-fluid">
+														</a>
+														<div class="cards-1__gruop">
+															<h3>Apple iPhone 8 Plus</h3>
+															<div class="line"></div>
+															<div class="cards-1__reviews d-flex orange">
+																<div>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																</div>
+																<a href="#">6 отзывов</a>
+															</div>
+															<div class="d-flex column">
+																<p>
+																	<span class="bold">10 599</span>руб</p>
+															</div>
+															<button type="submit" class="btn btn-green">купить</button>
+														</div>
+													</div>
 											</div>
 										</div>
 									</div>
@@ -1187,9 +1480,9 @@
 									<a class="dropdown-item" href="#">Красота и здоровье</a>
 									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
-								<div class="px-0 py-3 menu-list">
+								<div class="px-0 menu-list">
 									<div class="row h-100">
-										<div class="col-md-8">
+										<div class="col-md-8 pt-2">
 											<div class="row">
 												<div class="col-4">
 													<ul class="menu-list__category">
@@ -1238,10 +1531,25 @@
 														<li>
 															<a class="dropdown-item" href="#">Категория</a>
 														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
 													</ul>
 													<ul class="menu-list__category">
 														<li>
 															<h4 class="bold">Подроздел</h4>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
 														</li>
 														<li>
 															<a class="dropdown-item" href="#">Категория</a>
@@ -1281,25 +1589,57 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 d-flex align-items-center h-100">
-											<div class="cards border-shadow">
-												<div class="d-flex justify-content-center">
-													<img src="img/phone2.jpg" class="img-fluid">
+										<div class="col-md-4 d-flex align-items-center h-100 pl-0">
+											<div class="gruop-cards-1 h-100">
+												<div class="cards-1 d-flex">
+													<a href="#" class="d-flex align-items-center justify-content-center">
+														<img src="img/phone2.jpg" class="img-fluid">
+													</a>
+													<div class="cards-1__gruop">
+														<h3>Apple iPhone 8 Plus</h3>
+														<div class="line"></div>
+														<div class="cards-1__reviews d-flex orange">
+															<div>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+															</div>
+															<a href="#">6 отзывов</a>
+														</div>
+														<div class="d-flex column">
+															<p class="outlined black">15 599 руб</p>
+															<p class="red">
+																<span class="red bold">10 599</span>руб</p>
+														</div>
+														<button type="submit" class="btn btn-green">купить</button>
+													</div>
 												</div>
-												<h3 class="fs-22">Apple iPhone 8 Plus </h3>
-												<div class="cards__reviews d-flex orange">
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<a href="#" class="fs-16">6 отзывов</a>
-												</div>
-												<div class="cards__price d-flex justify-content-between">
-													<p>
-														<span>27 599</span>руб</p>
-													<button type="submit" class="btn btn-green">купить</button>
-												</div>
+												<div class="cards-1 d-flex">
+														<a href="#" class="d-flex align-items-center justify-content-center">
+															<img src="img/phone3.jpg" class="img-fluid">
+														</a>
+														<div class="cards-1__gruop">
+															<h3>Apple iPhone 8 Plus</h3>
+															<div class="line"></div>
+															<div class="cards-1__reviews d-flex orange">
+																<div>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																</div>
+																<a href="#">6 отзывов</a>
+															</div>
+															<div class="d-flex column">
+																<p>
+																	<span class="bold">10 599</span>руб</p>
+															</div>
+															<button type="submit" class="btn btn-green">купить</button>
+														</div>
+													</div>
 											</div>
 										</div>
 									</div>
@@ -1310,9 +1650,9 @@
 									<a class="dropdown-item" href="#">Детские товары</a>
 									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
-								<div class="px-0 py-3 menu-list">
+								<div class="px-0 menu-list">
 									<div class="row h-100">
-										<div class="col-md-8">
+										<div class="col-md-8 pt-2">
 											<div class="row">
 												<div class="col-4">
 													<ul class="menu-list__category">
@@ -1419,25 +1759,57 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 d-flex align-items-center h-100">
-											<div class="cards border-shadow">
-												<div class="d-flex justify-content-center">
-													<img src="img/phone2.jpg" class="img-fluid">
+										<div class="col-md-4 d-flex align-items-center h-100 pl-0">
+											<div class="gruop-cards-1 h-100">
+												<div class="cards-1 d-flex">
+													<a href="#" class="d-flex align-items-center justify-content-center">
+														<img src="img/phone2.jpg" class="img-fluid">
+													</a>
+													<div class="cards-1__gruop">
+														<h3>Apple iPhone 8 Plus</h3>
+														<div class="line"></div>
+														<div class="cards-1__reviews d-flex orange">
+															<div>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+															</div>
+															<a href="#">6 отзывов</a>
+														</div>
+														<div class="d-flex column">
+															<p class="outlined black">15 599 руб</p>
+															<p class="red">
+																<span class="red bold">10 599</span>руб</p>
+														</div>
+														<button type="submit" class="btn btn-green">купить</button>
+													</div>
 												</div>
-												<h3 class="fs-22">Apple iPhone 8 Plus </h3>
-												<div class="cards__reviews d-flex orange">
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<a href="#" class="fs-16">6 отзывов</a>
-												</div>
-												<div class="cards__price d-flex justify-content-between">
-													<p>
-														<span>27 599</span>руб</p>
-													<button type="submit" class="btn btn-green">купить</button>
-												</div>
+												<div class="cards-1 d-flex">
+														<a href="#" class="d-flex align-items-center justify-content-center">
+															<img src="img/phone3.jpg" class="img-fluid">
+														</a>
+														<div class="cards-1__gruop">
+															<h3>Apple iPhone 8 Plus</h3>
+															<div class="line"></div>
+															<div class="cards-1__reviews d-flex orange">
+																<div>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																</div>
+																<a href="#">6 отзывов</a>
+															</div>
+															<div class="d-flex column">
+																<p>
+																	<span class="bold">10 599</span>руб</p>
+															</div>
+															<button type="submit" class="btn btn-green">купить</button>
+														</div>
+													</div>
 											</div>
 										</div>
 									</div>
@@ -1448,9 +1820,9 @@
 									<a class="dropdown-item" href="#">Обувь и сумки</a>
 									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
-								<div class="px-0 py-3 menu-list">
+								<div class="px-0 menu-list">
 									<div class="row h-100">
-										<div class="col-md-8">
+										<div class="col-md-8 pt-2">
 											<div class="row">
 												<div class="col-4">
 													<ul class="menu-list__category">
@@ -1557,25 +1929,57 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 d-flex align-items-center h-100">
-											<div class="cards border-shadow">
-												<div class="d-flex justify-content-center">
-													<img src="img/phone2.jpg" class="img-fluid">
+										<div class="col-md-4 d-flex align-items-center h-100 pl-0">
+											<div class="gruop-cards-1 h-100">
+												<div class="cards-1 d-flex">
+													<a href="#" class="d-flex align-items-center justify-content-center">
+														<img src="img/phone2.jpg" class="img-fluid">
+													</a>
+													<div class="cards-1__gruop">
+														<h3>Apple iPhone 8 Plus</h3>
+														<div class="line"></div>
+														<div class="cards-1__reviews d-flex orange">
+															<div>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+															</div>
+															<a href="#">6 отзывов</a>
+														</div>
+														<div class="d-flex column">
+															<p class="outlined black">15 599 руб</p>
+															<p class="red">
+																<span class="red bold">10 599</span>руб</p>
+														</div>
+														<button type="submit" class="btn btn-green">купить</button>
+													</div>
 												</div>
-												<h3 class="fs-22">Apple iPhone 8 Plus </h3>
-												<div class="cards__reviews d-flex orange">
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<a href="#" class="fs-16">6 отзывов</a>
-												</div>
-												<div class="cards__price d-flex justify-content-between">
-													<p>
-														<span>27 599</span>руб</p>
-													<button type="submit" class="btn btn-green">купить</button>
-												</div>
+												<div class="cards-1 d-flex">
+														<a href="#" class="d-flex align-items-center justify-content-center">
+															<img src="img/phone3.jpg" class="img-fluid">
+														</a>
+														<div class="cards-1__gruop">
+															<h3>Apple iPhone 8 Plus</h3>
+															<div class="line"></div>
+															<div class="cards-1__reviews d-flex orange">
+																<div>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																</div>
+																<a href="#">6 отзывов</a>
+															</div>
+															<div class="d-flex column">
+																<p>
+																	<span class="bold">10 599</span>руб</p>
+															</div>
+															<button type="submit" class="btn btn-green">купить</button>
+														</div>
+													</div>
 											</div>
 										</div>
 									</div>
@@ -1586,9 +1990,9 @@
 									<a class="dropdown-item" href="#">Украшения и часы</a>
 									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
-								<div class="px-0 py-3 menu-list">
+								<div class="px-0 menu-list">
 									<div class="row h-100">
-										<div class="col-md-8">
+										<div class="col-md-8 pt-2">
 											<div class="row">
 												<div class="col-4">
 													<ul class="menu-list__category">
@@ -1637,10 +2041,28 @@
 														<li>
 															<a class="dropdown-item" href="#">Категория</a>
 														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
 													</ul>
 													<ul class="menu-list__category">
 														<li>
 															<h4 class="bold">Подроздел</h4>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
 														</li>
 														<li>
 															<a class="dropdown-item" href="#">Категория</a>
@@ -1677,25 +2099,57 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 d-flex align-items-center h-100">
-											<div class="cards border-shadow">
-												<div class="d-flex justify-content-center">
-													<img src="img/phone2.jpg" class="img-fluid">
+										<div class="col-md-4 d-flex align-items-center h-100 pl-0">
+											<div class="gruop-cards-1 h-100">
+												<div class="cards-1 d-flex">
+													<a href="#" class="d-flex align-items-center justify-content-center">
+														<img src="img/phone2.jpg" class="img-fluid">
+													</a>
+													<div class="cards-1__gruop">
+														<h3>Apple iPhone 8 Plus</h3>
+														<div class="line"></div>
+														<div class="cards-1__reviews d-flex orange">
+															<div>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+															</div>
+															<a href="#">6 отзывов</a>
+														</div>
+														<div class="d-flex column">
+															<p class="outlined black">15 599 руб</p>
+															<p class="red">
+																<span class="red bold">10 599</span>руб</p>
+														</div>
+														<button type="submit" class="btn btn-green">купить</button>
+													</div>
 												</div>
-												<h3 class="fs-22">Apple iPhone 8 Plus </h3>
-												<div class="cards__reviews d-flex orange">
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<a href="#" class="fs-16">6 отзывов</a>
-												</div>
-												<div class="cards__price d-flex justify-content-between">
-													<p>
-														<span>27 599</span>руб</p>
-													<button type="submit" class="btn btn-green">купить</button>
-												</div>
+												<div class="cards-1 d-flex">
+														<a href="#" class="d-flex align-items-center justify-content-center">
+															<img src="img/phone3.jpg" class="img-fluid">
+														</a>
+														<div class="cards-1__gruop">
+															<h3>Apple iPhone 8 Plus</h3>
+															<div class="line"></div>
+															<div class="cards-1__reviews d-flex orange">
+																<div>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																</div>
+																<a href="#">6 отзывов</a>
+															</div>
+															<div class="d-flex column">
+																<p>
+																	<span class="bold">10 599</span>руб</p>
+															</div>
+															<button type="submit" class="btn btn-green">купить</button>
+														</div>
+													</div>
 											</div>
 										</div>
 									</div>
@@ -1706,9 +2160,9 @@
 									<a class="dropdown-item" href="#">Автотовары</a>
 									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
-								<div class="px-0 py-3 menu-list">
+								<div class="px-0 menu-list">
 									<div class="row h-100">
-										<div class="col-md-8">
+										<div class="col-md-8 pt-2">
 											<div class="row">
 												<div class="col-4">
 													<ul class="menu-list__category">
@@ -1815,25 +2269,57 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 d-flex align-items-center h-100">
-											<div class="cards border-shadow">
-												<div class="d-flex justify-content-center">
-													<img src="img/phone2.jpg" class="img-fluid">
+										<div class="col-md-4 d-flex align-items-center h-100 pl-0">
+											<div class="gruop-cards-1 h-100">
+												<div class="cards-1 d-flex">
+													<a href="#" class="d-flex align-items-center justify-content-center">
+														<img src="img/phone2.jpg" class="img-fluid">
+													</a>
+													<div class="cards-1__gruop">
+														<h3>Apple iPhone 8 Plus</h3>
+														<div class="line"></div>
+														<div class="cards-1__reviews d-flex orange">
+															<div>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+															</div>
+															<a href="#">6 отзывов</a>
+														</div>
+														<div class="d-flex column">
+															<p class="outlined black">15 599 руб</p>
+															<p class="red">
+																<span class="red bold">10 599</span>руб</p>
+														</div>
+														<button type="submit" class="btn btn-green">купить</button>
+													</div>
 												</div>
-												<h3 class="fs-22">Apple iPhone 8 Plus </h3>
-												<div class="cards__reviews d-flex orange">
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<a href="#" class="fs-16">6 отзывов</a>
-												</div>
-												<div class="cards__price d-flex justify-content-between">
-													<p>
-														<span>27 599</span>руб</p>
-													<button type="submit" class="btn btn-green">купить</button>
-												</div>
+												<div class="cards-1 d-flex">
+														<a href="#" class="d-flex align-items-center justify-content-center">
+															<img src="img/phone3.jpg" class="img-fluid">
+														</a>
+														<div class="cards-1__gruop">
+															<h3>Apple iPhone 8 Plus</h3>
+															<div class="line"></div>
+															<div class="cards-1__reviews d-flex orange">
+																<div>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																</div>
+																<a href="#">6 отзывов</a>
+															</div>
+															<div class="d-flex column">
+																<p>
+																	<span class="bold">10 599</span>руб</p>
+															</div>
+															<button type="submit" class="btn btn-green">купить</button>
+														</div>
+													</div>
 											</div>
 										</div>
 									</div>
@@ -1844,9 +2330,9 @@
 									<a class="dropdown-item" href="#">Парики</a>
 									<i class="fa fa-angle-right pr-2 fs-18" aria-hidden="true"></i>
 								</div>
-								<div class="px-0 py-3 menu-list">
+								<div class="px-0 menu-list">
 									<div class="row h-100">
-										<div class="col-md-8">
+										<div class="col-md-8 pt-2">
 											<div class="row">
 												<div class="col-4">
 													<ul class="menu-list__category">
@@ -1940,29 +2426,70 @@
 														<li>
 															<a class="dropdown-item" href="#">Категория</a>
 														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="#">Категория</a>
+														</li>
 													</ul>
 												</div>
 											</div>
 										</div>
-										<div class="col-md-4 d-flex align-items-center h-100">
-											<div class="cards border-shadow">
-												<div class="d-flex justify-content-center">
-													<img src="img/phone2.jpg" class="img-fluid">
+										<div class="col-md-4 d-flex align-items-center h-100 pl-0">
+											<div class="gruop-cards-1 h-100">
+												<div class="cards-1 d-flex">
+													<a href="#" class="d-flex align-items-center justify-content-center">
+														<img src="img/phone2.jpg" class="img-fluid">
+													</a>
+													<div class="cards-1__gruop">
+														<h3>Apple iPhone 8 Plus</h3>
+														<div class="line"></div>
+														<div class="cards-1__reviews d-flex orange">
+															<div>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+																<i class="fa fa-star" aria-hidden="true"></i>
+															</div>
+															<a href="#">6 отзывов</a>
+														</div>
+														<div class="d-flex column">
+															<p class="outlined black">15 599 руб</p>
+															<p class="red">
+																<span class="red bold">10 599</span>руб</p>
+														</div>
+														<button type="submit" class="btn btn-green">купить</button>
+													</div>
 												</div>
-												<h3 class="fs-22">Apple iPhone 8 Plus </h3>
-												<div class="cards__reviews d-flex orange">
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<i class="fa fa-star" aria-hidden="true"></i>
-													<a href="#" class="fs-16">6 отзывов</a>
-												</div>
-												<div class="cards__price d-flex justify-content-between">
-													<p>
-														<span>27 599</span>руб</p>
-													<button type="submit" class="btn btn-green">купить</button>
-												</div>
+												<div class="cards-1 d-flex">
+														<a href="#" class="d-flex align-items-center justify-content-center">
+															<img src="img/phone3.jpg" class="img-fluid">
+														</a>
+														<div class="cards-1__gruop">
+															<h3>Apple iPhone 8 Plus</h3>
+															<div class="line"></div>
+															<div class="cards-1__reviews d-flex orange">
+																<div>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																	<i class="fa fa-star" aria-hidden="true"></i>
+																</div>
+																<a href="#">6 отзывов</a>
+															</div>
+															<div class="d-flex column">
+																<p>
+																	<span class="bold">10 599</span>руб</p>
+															</div>
+															<button type="submit" class="btn btn-green">купить</button>
+														</div>
+													</div>
 											</div>
 										</div>
 									</div>
@@ -1975,9 +2502,8 @@
 						<button class="blue btn">Найти</button>
 					</form>
 					<div class="group-button d-flex justify-content-between align-items-center">
-						<div class="dropdown w-50">
-							<button class="btn-gray d-flex align-items-center justify-content-around" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-flip="false"
-							 role="button" aria-pressed="true">
+						<div class="dropdown hover-form w-50">
+							<button class="btn-gray d-flex align-items-center justify-content-around" type="button">
 							 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 viewBox="0 0 511.976 511.976" style="enable-background:new 0 0 511.976 511.976;" xml:space="preserve">
 						<g>
@@ -2051,8 +2577,9 @@
 						</g>
 							</svg>
 								<span>Корзина</span>
+								<div class="counter"><span>1</span></div>
 							</button>
-							<div class="counter"><span>1</span></div>
+							
 							<div class="dropdown-menu right">
 								<form class="px-4 py-3 ">
 									<h2 class="fs-22">В вашей корзине 1 товар</h2>
@@ -2071,13 +2598,12 @@
 										</div>
 									</div>
 									<div class="dropdown-divider"></div>
-									<button type="submit" class="btn-registration fs-18 py-2">Оформить заказ</button>
+									<button type="submit" class="btn-registration btn fs-18 py-2">Оформить заказ</button>
 								</form>
 							</div>
 						</div>
-						<div class="dropdown w-50">
-							<button class="btn-gray login-btn d-flex align-items-center justify-content-around" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-flip="false"
-							 role="button" aria-pressed="true">
+						<div class="dropdown hover-form w-50">
+							<button class="btn-gray login-btn d-flex align-items-center justify-content-around" type="button">
 							 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 								<g>
 									<g>
@@ -2123,25 +2649,25 @@
 							</button>
 							<div class="dropdown-menu dropdown-menu-right">
 								<div class="login">
-									<form class="px-4">
+									<form class="px-4 pb-3">
 										<h2 class="fs-22 py-3">Вход</h2>
-										<div class="form-group mb-1">
-											<label for="exampleDropdownFormEmail1">E-mail</label>
-											<input type="email" class="form-control" id="exampleDropdownFormEmail1">
+										<div class="form-group">
+											<label for="exitEmail">E-mail</label>
+											<input type="email" class="form-control" id="exitEmail">
 										</div>
-										<div class="form-group mb-1">
-											<label for="exampleDropdownFormPassword1">Пароль</label>
-											<input type="password" class="form-control" id="exampleDropdownFormPassword1">
+										<div class="form-group">
+											<label for="exitPassword">Пароль</label>
+											<input type="password" class="form-control" id="exitPassword">
 										</div>
 										<div class="d-flex justify-content-between py-3 group-a">
-											<a href="#">Забыли пароль?</a>
-											<a href="#" class="show-registration">Регистрация</a>
+											<a href="#" class="show-forgot-password dashed">Забыли пароль?</a>
+											<a href="#" class="show-registration dashed">Регистрация</a>
 										</div>
-										<button type="submit" class="btn-registration fs-18 py-2">Войти</button>
+										<button type="submit" class="btn-registration btn fs-18 py-2">Войти</button>
 									</form>
 									<div class="dropdown-divider"></div>
 									<p>Войти через</p>
-									<div class="group-button__social d-flex justify-content-between px-4 py-3 fs-24">
+									<div class="group-button__social d-flex justify-content-between px-4 pt-3 pb-4 fs-24">
 										<button type="submit" class="btn btn-sm">
 											<i class="fa fa-vk" aria-hidden="true"></i>
 										</button>
@@ -2154,29 +2680,28 @@
 									</div>
 								</div>
 								<div class="registration">
-									<form class="px-4 py-3">
-										<h2 class="fs-22 pb-2">Регистрация</h2>
+									<form class="px-4 py-2">
 										<div class="form-group">
-											<label for="exampleDropdownFormEmail2">Телефон</label>
-											<input type="" class="form-control" id="exampleDropdownFormEmail2">
+											<label for="registrationPhone">Телефон</label>
+											<input type="" class="form-control" id="registrationPhone">
 										</div>
 										<div class="form-group">
-											<label for="exampleDropdownFormEmail2">E-mail</label>
-											<input type="email" class="form-control" id="exampleDropdownFormEmail2">
+											<label for="registrationEmail">E-mail</label>
+											<input type="email" class="form-control" id="registrationEmail">
 										</div>
 										<div class="form-group">
-											<label for="exampleDropdownFormPassword2">Пароль</label>
-											<input type="password" class="form-control" id="exampleDropdownFormPassword2">
+											<label for="regisrtationPassword">Пароль</label>
+											<input type="password" class="form-control" id="regisrtationPassword">
 										</div>
 										<div class="form-group">
-											<label for="exampleDropdownFormPassword2">Подтвердить пароль</label>
-											<input type="password" class="form-control" id="exampleDropdownFormPassword2">
+											<label for="regisrtationPasswordRepeat">Подтвердить пароль</label>
+											<input type="password" class="form-control" id="regisrtationPasswordRepeat">
 										</div>
-										<button type="submit" class="btn-registration fs-18 py-2">Регистрация</button>
+										<button type="submit" class="btn-registration btn fs-18 py-2">Регистрация</button>
 									</form>
 									<div class="dropdown-divider"></div>
 									<p>Регистрация через</p>
-									<div class="group-button__social d-flex justify-content-between px-4 py-3 fs-24">
+									<div class="group-button__social d-flex justify-content-between px-4 pb-3 pt-1 fs-24">
 										<button type="submit" class="btn btn-sm">
 											<i class="fa fa-vk" aria-hidden="true"></i>
 										</button>
@@ -2188,6 +2713,20 @@
 										</button>
 									</div>
 								</div>
+								<div class="forgot-password">
+										<form class="px-4 pt-3 pb-4">
+												<div class="d-flex justify-content-between align-items-center">
+													<h2 class="fs-22 py-3">Восстановить пароль</h2>
+													<i class="fa fa-times close-forgot-password" aria-hidden="true"></i>
+												</div>
+												
+												<div class="form-group mt-1">
+													<label for="Email">E-mail</label>
+													<input type="email" class="form-control" id="Email">
+												</div>
+												<button type="submit" class="btn-registration btn fs-18 py-2 mt-4">Отправить</button>
+											</form>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -2195,6 +2734,7 @@
 			</div>
 		</div>
 	</header>
+
 
 
 
@@ -2435,14 +2975,14 @@
 						</div>
 						<div class="tab-pane fade" id="pills-chara" role="tabpanel" aria-labelledby="pills-chara-tab">
 							<div class="row desc text-left py-2 fs-20 align-items-start">
-								<div class="col-lg-6 p-lg-0">
+								<div class="col-lg-6 p-lg-0 product__chara">
 									<div class="border px-2 py-2 mb-2">
 										<p class="fs-22 c-dark mb-2 bold-5">Стандарт связи/интернет</p>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Стандарт связи</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>3G (WCDMA/UMTS)</p>
 												<p>2G (EDGE)</p>
 												<p>4G (LTE)</p>
@@ -2452,26 +2992,26 @@
 									<div class="border px-2 py-2 mb-2">
 										<p class="fs-22 c-dark mb-2 bold-5">Дисплей</p>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Диагональ экрана</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>5.5</p>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Разрешение дисплея</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>HD (1280x720)</p>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Тип матрицы</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>IPS</p>
 											</div>
 										</div>
@@ -2479,18 +3019,18 @@
 									<div class="border px-2 py-2 mb-2">
 										<p class="fs-22 c-dark mb-2 bold-5">СИМ-карты</p>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Количество СИМ-карт</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>2</p>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Размеры СИМ-карты</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>	
 													Micro-SIM 
 													Nano-SIM
@@ -2498,10 +3038,10 @@
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Поддержка 3G</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>	
 													Есть
 												</p>
@@ -2511,54 +3051,54 @@
 									<div class="border px-2 py-2 mb-2">
 										<p class="fs-22 c-dark mb-2 bold-5">Функции памяти</p>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Оперативная память</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>	
 													4 ГБ
 												</p>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Встроенная память</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>64 ГБ</p>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Формат поддерживаемых 
 													карт памяти
 												</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>	
 													microSD
 												</p>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Максимальный объем 
 													поддерживаемой карты 
 													памяти
 												</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>	
 													128 ГБ
 												</p>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Комбинированный слот
 												</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>	
 													Да
 												</p>
@@ -2568,10 +3108,10 @@
 									<div class="border px-2 py-2 mb-2">
 										<p class="fs-22 c-dark mb-2 bold-5">Операционная система</p>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Операционная система</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>	
 													Android
 												</p>
@@ -2581,46 +3121,46 @@
 									<div class="border px-2 py-2">
 										<p class="fs-22 c-dark mb-2 bold-5">Фронтальная камера</p>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Количество мегапикселей 
 													фронтальной камеры 
 												</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>	
 													5 Мп
 												</p>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Вспышка фронтальной 
 												камеры</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>	
 													Есть
 												</p>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Запись видео 
 													фронтальной камеры
 												</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>	
 													Full HD / 1920х1080 / стереозвук
 												</p>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-6 c-grey">
+											<div class="col-sm-6 c-grey">
 												<p>Дополнительно
 												</p>
 											</div>
-											<div class="col-6 text-center c-dark">
+											<div class="col-sm-6 text-center c-dark">
 												<p>	
 													Smart Beauty 3.0 / режим распознавания лиц / 
 													селфи-таймер
@@ -2637,7 +3177,7 @@
 											</div>
 											<div class="col-md-7">
 												<div>
-													<p class="fs-30 bold-5 c-dark">Xiaomi Redmi 5 3/32GB Gold</p>
+													<p class="fs-30 bold-5 c-dark product__name mt-3 mt-md-0">Xiaomi Redmi 5 3/32GB Gold</p>
 												</div>
 												<div>
 													<p class="c-dark mt-3 mb-4">
@@ -2645,7 +3185,7 @@
 														<span class="fs-37">руб.</span>
 													</p>
 												</div>
-												<div class="cards-1__reviews d-flex orange fs-30 my-2 mb-3">
+												<div class="d-flex orange fs-22 my-3 mb-4">
 													<div>
 														<i class="fa fa-star" aria-hidden="true"></i>
 														<i class="fa fa-star" aria-hidden="true"></i>
@@ -2653,10 +3193,10 @@
 														<i class="fa fa-star" aria-hidden="true"></i>
 														<i class="fa fa-star-o" aria-hidden="true"></i>
 													</div>
-													<a href="#">6 отзывов</a>
+													<a href="#" class="c-b_grey ulink ml-2">6 отзывов</a>
 												</div>
 												<div>
-													<button class="btn btn-green fs-27 upper">Купить</button>
+													<button class="btn btn-green fs-27 upper btn-norm btn-pad">Купить</button>
 												</div>
 											</div>
 										</div>
@@ -2679,8 +3219,8 @@
 							<div class="row text-left py-2 fs-20">
 								<div class="col-lg-6 pr-lg-0">
 									<div class="border h-100 py-3 px-md-3">
-										<div class="d-flex fs-20 mb-3">
-											<span class="c-grey">Оставить отзыв анонимно</span>
+										<div class="d-flex flex-wrap fs-20 mb-3">
+											<span class="ml-2 ml-lg-0 c-grey">Оставить отзыв анонимно</span>
 											<a href="#" class="ml-2 dashed unlink" data-toggle="modal" data-target="#form-in">Или войти под своим именем</a>
 										</div>
 										<div class="row">
@@ -2757,7 +3297,7 @@
 														</div>
 													</li>
 												</ul>
-												<ul class="chara chara-review my-3">
+												<ul class="chara chara-review my-3 chara-border">
 													<li>
 														<span class="chara__left">Средняя оценка</span>
 														<div class="chara__right orange">
@@ -2782,7 +3322,7 @@
 											</div>
 											<div class="col-md-7">
 												<div>
-													<p class="fs-30 bold-5 c-dark">Xiaomi Redmi 5 3/32GB Gold</p>
+													<p class="fs-30 bold-5 c-dark product__name mt-3 mt-md-0">Xiaomi Redmi 5 3/32GB Gold</p>
 												</div>
 												<div>
 													<p class="c-dark mt-3 mb-4">
@@ -2790,7 +3330,7 @@
 														<span class="fs-37">руб.</span>
 													</p>
 												</div>
-												<div class="cards-1__reviews d-flex orange fs-30 my-2 mb-3">
+												<div class="d-flex orange fs-22 my-3 mb-4">
 													<div>
 														<i class="fa fa-star" aria-hidden="true"></i>
 														<i class="fa fa-star" aria-hidden="true"></i>
@@ -2798,10 +3338,10 @@
 														<i class="fa fa-star" aria-hidden="true"></i>
 														<i class="fa fa-star-o" aria-hidden="true"></i>
 													</div>
-													<a href="#">6 отзывов</a>
+													<a href="#" class="c-b_grey ulink ml-2">6 отзывов</a>
 												</div>
 												<div>
-													<button class="btn btn-green fs-27 upper">Купить</button>
+													<button class="btn btn-green fs-27 upper btn-norm btn-pad">Купить</button>
 												</div>
 											</div>
 										</div>
@@ -3092,7 +3632,7 @@
 													</div>
 													<div class="col-md-7">
 														<div>
-															<p class="fs-30 bold-5 c-dark">Xiaomi Redmi 5 3/32GB Gold</p>
+															<p class="fs-30 bold-5 c-dark product__name mt-3 mt-md-0">Xiaomi Redmi 5 3/32GB Gold</p>
 														</div>
 														<div>
 															<p class="c-dark mt-3 mb-4">
@@ -3100,7 +3640,7 @@
 																<span class="fs-37">руб.</span>
 															</p>
 														</div>
-														<div class="cards-1__reviews d-flex orange fs-30 my-2 mb-3">
+														<div class="d-flex orange fs-22 my-3 mb-4">
 															<div>
 																<i class="fa fa-star" aria-hidden="true"></i>
 																<i class="fa fa-star" aria-hidden="true"></i>
@@ -3108,10 +3648,10 @@
 																<i class="fa fa-star" aria-hidden="true"></i>
 																<i class="fa fa-star-o" aria-hidden="true"></i>
 															</div>
-															<a href="#">6 отзывов</a>
+															<a href="#" class="c-b_grey ulink ml-2">6 отзывов</a>
 														</div>
 														<div>
-															<button class="btn btn-green fs-27 upper">Купить</button>
+															<button class="btn btn-green fs-27 upper btn-norm btn-pad">Купить</button>
 														</div>
 													</div>
 												</div>
@@ -3402,8 +3942,8 @@
 							</div>
 						</div>
 						<div class="col-xl-12 d-none toggle-review">
-							<div class="d-flex fs-20 mb-3">
-								<span class="c-grey">Оставить отзыв анонимно</span>
+							<div class="d-flex flex-wrap fs-20 mb-3">
+								<span class="ml-2 ml-lg-0 c-grey">Оставить отзыв анонимно</span>
 								<a href="#" class="ml-2 dashed unlink" data-toggle="modal" data-target="#form-in">Или войти под своим именем</a>
 							</div>
 							<div class="row">
@@ -4228,6 +4768,7 @@
 	</section>
 
 
+
 	<section id="watched-product" class="watched-product">
 		<div class="container">
 			<div class="row">
@@ -4235,7 +4776,7 @@
 					<h1>Товары, которые вы смотрели</h1>
 					<div class="slick slick__1_lg-dots">
 						<div>
-							<div class="row shit-row" style="margin: 0.15vmax 0;">
+							<div class="row" style="margin: 0.15vmax 0;">
 								<div class="col-6 col-md-3 d-flex p-0">
 									<div class="cards w-100">
 										<a href="#" class="d-flex justify-content-center">
@@ -4442,7 +4983,8 @@
 		</div>
 	</section>
 
-	<footer id="footer" class="footer pb-2 mt-4">
+
+	<footer id="footer" class="footer pb-2">
 		<div class="container my-3">
 			<div class="row">
 				<div class="col-lg-12">

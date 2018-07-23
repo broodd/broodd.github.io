@@ -1,0 +1,235 @@
+@import 'mixins'
+@import 'vars'
+@import 'reset'
+
+
++font('Roboto', 'Roboto-Regular', $type:'ttf', $path:'./font/')
++font('CenturyGothic', 'CenturyGothic', $type:'ttf', $path:'./font/')
++font('CenturyGothic-Bold', 'CenturyGothic-Bold', $type:'ttf', $path:'./font/')
+
+// reset
+html
+	font-family: sans-serif
+	line-height: 1.15
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+	-ms-overflow-style: scrollbar
+	-webkit-tap-highlight-color: transparent
+
+body
+	background-color: $wh
+	color: $text
+	font-family: $ff-ro
+	margin: 0
+	padding: 0
+	font-weight: 400
+	line-height: 1.2
+	color: $text
+	text-align: left
+	font-size: 100%
+	box-sizing: border-box
+	overflow-x: hidden
+
++links(inherit)
+	text-decoration: none
+	cursor: pointer
+	outline: none
+
++inputs()
+	width: 100%
+
+input[type="checkbox"]
+	width: auto
+
+img, svg, iframe
+	max-width: 100%
+	height: auto
+	// height: inherit
+
+
+.shadow
+	box-shadow: $shadow
+
+// .ul
+ul
+	list-style-type: none
+	padding-left: 0
+	margin-bottom: 0
+	.submenu
+		padding-left: 20px
+
+.under
+	text-decoration: underline
+
+.text
+	&-center
+		text-align: center
+	// &-right
+	// 	text-align: right
+
+
+.letter
+	letter-spacing: 0.05em
+	// &-25
+	// 	letter-spacing: 0.25em
+
+.border
+	&-bottom
+		border-bottom: 1px solid #E0E0E4
+		padding: 25px 0
+	
+	&-r
+		&_bottom
+			border-radius: 0px 0px 10px 10px
+
+
+.font
+	font-size: 16px
+	color: $black
+	&-10
+		font-size: 10px
+	&-12,
+	small
+		font-size: 12px
+	&-14
+		font-size: 14px
+	&-18
+		// font-size: 18px
+		font-size: 1.125em
+		// font-family: $ff-1
+		font-family: $ff-bold
+	&-22
+		+em(22)
+		font-family: $ff-bold
+		// font-family: $ff-1
+
+	&-bold
+		font-weight: bold
+
+	&-roboto
+		font-family: $ff-ro
+	&-gothic
+		font-family: $ff-1
+
+.bold
+	// font-weight: bold
+	font-family: $ff-bold
+
+
+.margin
+	&-row
+		margin-left: -15px
+		margin-right: -15px
+	&-0
+		margin: 0
+		&_5
+			margin: 0 5px
+		&_15
+			margin: 0 15px
+	&-30_a
+		margin-top: 30px
+		margin-bottom: 30px
+	&-r
+		&_5
+			margin-right: 5px
+
+	&-l
+		&_15
+			margin-left: 15px
+		&_45
+			margin-left: 45px
+
+	&-b
+		&_40
+			margin-bottom: 40px
+		&_90
+			margin-bottom: 90px
+	&-t
+		&_20
+			margin-top: 20px
+		&_30
+			margin-top: 30px
+		&_50
+			margin-top: 50px
+
+
+.padding
+	// &-0
+	// 	padding: 0
+	&-a
+		&_80
+			padding-top: 80px
+			padding-bottom: 80px
+		&_90
+			padding-top: 90px
+			padding-bottom: 90px
+	&-50_80
+		padding-top: 50px
+		padding-bottom: 80px
+
+
+.bg
+	&-dark
+		background-color: $dark
+		color: $white
+	&-grey
+		background-color: $bg-grey
+
+.color
+	&-blue
+		color: $blue
+	&-black
+		color: $black
+	&-green
+		color: $green
+
+
+
+.section
+	&-text
+		// p
+		// 	line-height: 24px
+		h1, h2, h3, h4, h5, h6 
+			margin-top: 2em
+			margin-bottom: 1.6em
+
+.section-text,
+.text
+	// p
+	line-height: 24px
+
+
+
+.w
+	&-100
+		width: 100% !important
+		display: block
+	&-100p
+		width: 100%
+
+
+.line
+	&-vertical
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			height: 100%
+			width: 1px
+			background-color: #E0E0E4
+			text-align: center
+			top: 0
+			left: 50%
+			margin-left: -1px
+
+.icon
+	display: inline-block
+	+tr(400ms ease-in-out)
+	&:hover
+		color: $blue
+		+rotate(360)
+	&-star
+		&:hover
+			color: $white
+			transform: none
+			+tr(none)
