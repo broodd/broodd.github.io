@@ -129,10 +129,7 @@ function overDefault() {
 	over.width(0).height(0);
 }
 
-// $('#windows').click(function(event){
-// 	over.hide();
-// });
-
+// first click and clicking=true, fixed first position
 $('#windows').mousedown(function(event){
 		clicking = true;
 		console.log('mousedown');
@@ -143,6 +140,7 @@ $('#windows').mousedown(function(event){
 		console.log("firstX: " + firstClientX + " firstY" + firstClientY);
 });
 
+// than if mousemove, set offset and width, height overlay
 $('#windows').mousemove(function(event){
 	if(clicking == false) return;
 
@@ -165,6 +163,7 @@ $('#windows').mousemove(function(event){
 });
 
 
+// click finish, than overDefault
 $(document).mouseup(function(){
 		clicking = false;
 
