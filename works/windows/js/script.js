@@ -131,28 +131,38 @@ $('#windows').click(function(event){
 });
 
 $('#windows').mousedown(function(event){
-    clicking = true;
-    console.log('mousedown');
+		clicking = true;
+		console.log('mousedown');
 
-    over.show();
-    firstClientX  = event.clientX;
-    firstClientY = event.clientY;
-    console.log("firstX: " + firstClientX + " firstY" + firstClientY);
+		over.show();
+		firstClientX  = event.clientX;
+		firstClientY = event.clientY;
+		console.log("firstX: " + firstClientX + " firstY" + firstClientY);
 });
 
 $(document).mouseup(function(){
-    clicking = false;
-    console.log('mouseup');
-    // console.log('click released, no more move event');
+		clicking = false;
+		console.log('mouseup');
+		// console.log('click released, no more move event');
 })
 
 $('#windows').mousemove(function(event){
-    if(clicking == false) return;
+	if(clicking == false) return;
 
-    over.offset({top: firstClientY, left: firstClientX});
-    over.width( firstClientX - event.clientX );
-    over.height( firstClientY - event.clientY );
-    console.log('x: ' + event.clientX);
+	over.offset({top: firstClientY, left: firstClientX});
 
-    // console.log('mouse moving');
+	if( firstClientX > event.clientX ) {
+		over.width( firstClientX - event.clientX );
+	} else {
+		over.width( event.clientX - firstClientX );
+	}
+
+	if( firstClientY > event.clientY ) {
+		over.height( firstClientY - event.clientY );
+	} else {
+		over.height( event.clientY - firstClientY );
+	}
+	console.log('x: ' + event.clientX);
+
+	// console.log('mouse moving');
 });
