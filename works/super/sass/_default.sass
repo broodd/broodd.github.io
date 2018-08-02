@@ -37,45 +37,15 @@ img, svg, iframe
 	height: auto
 	// height: inherit
 
+svg
+	max-height: 100%
+
+
 // main
-.dtc
-	display: table-cell
-.vam
-	vertical-align: middle
+.h-100
+	height: 100%
+	&vh
+		height: 100vh
 
-
-.float-right
-	float: right
-.float-left
-	float: left
-
-
-.position-absolute
-	position: absolute
-
-.right-0
-	right: 0
-.left-0
-	left: 0
-
-
-.clr
-	*
-		zoom: 1
-	&:after
-		content: " "
-		display: table
-		clear: both
-
-
-.w100p
-	width: 100%
-.w100p-img
-	img
-		width: 100%
-.w50p
-	width: 50%
-
-
-.video-wrapper
-	+iframe
+.c-white
+	color: $white

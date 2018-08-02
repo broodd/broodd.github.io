@@ -1,3 +1,10 @@
+
+@function toem($curr:20, $fz:16, $type: em)
+	@return ($curr/$fz) + $type
+
+@function torem($curr:20, $fz:16)
+	@return ($curr/$fz) + rem
+
 //width
 =w($width)
 	// @media only screen and (max-width: $width+'px')
@@ -104,8 +111,17 @@
 	-ms-transform: translateY($x)
 	transform: translateY($x)
 
-// =g($c1, $c2)
-// 	+background-image(linear-gradient($c1, $c2))
+=g-two($c1, $c2)
+	background: $c1
+	background: -moz-linear-gradient(top, $c1 0%, $c2 100%)
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, $c1), color-stop(100%, $c2))
+	background: -webkit-linear-gradient(top, $c1 0%, $c2 100%)
+	background: -o-linear-gradient(top, $c1 0%, $c2 100%)
+	background: -ms-linear-gradient(top, $c1 0%, $c2 100%)
+	background: linear-gradient(to bottom, $c1 0%, $c2 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$c1', endColorstr='$c2', GradientType=0 )
+	background: linear-gradient(to bottom, $c1 0%, $c1 0%, $c2 100%)
+
 // =gh($c1, $c2)
 // 	+background-image(linear-gradient(left,$c1, $c2))
 

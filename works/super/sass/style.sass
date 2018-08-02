@@ -1,34 +1,83 @@
-@import 'mixins'
-@import 'default'
+// @import 'D:\\_Lessons\\_Main\\main\\sass\\_default.sass'
+
+@import '_default.sass'
 
 
 
 .header
-	background-image: url(../img/bg.jpg)
-	+cover
-	min-height: 100vh
+	background-color: #252B37
+	background-image: url(../img/bg-1.jpg)
+	+cover(bottom)
+	// min-height: 100vh
+	height: 100vh
 
-img
-	width: 600px
-	height: 400px
+.slogo
+	img
+		width: 600px
+	// height: 400px
 
 .slogo
 	height: 400px
 
-svg
-	max-height: 100%
+.s
+	&-works
+		background-image: url(images/)
+		+g-two(#212530, #1A3C5E)
+		
 
 
-// .menu
-// 	list-style-type: none
-// 	display: flex
-// 	padding: 0
-// 	margin: 0
-// 	li
-// 		margin-left: 20px
-
-// .header
-// 	padding: 20px 0
 // 	box-shadow: 0 1px 1px rgba(6,8,8,.1)
-// 	&__brand
-// 		width: 90px
+
+
+iframe
+	width: 100%
+	height: 100vh
+
+
+.title
+	font-size: torem(40)
+	.fill
+		display: inline-block
+		padding: 0 0.3em
+		line-height: 0.99
+		background-color: $white
+		color: #000
+
+.work
+	&__image
+		position: relative
+		overflow: hidden
+		height: 100%
+		&.two-image
+			perspective: 200px
+			.img
+				position: absolute
+				left: 0
+				+tr(all 400ms ease)
+				&-1
+					top: -100%
+					transform-origin: bottom
+					transform: rotateX(90deg)
+				&-2
+					top: 0
+					transform-origin: top
+			&:hover, &.active
+				.img
+					&-1
+						top: 0
+						transform: rotateX(0deg)
+					&-2
+						top: 100%
+						transform: rotateX(-50deg)
+
+		&.scroll-image
+			.image-wrap
+				height: 100%
+				left: 0
+				position: absolute
+				top: 0
+				+tr(12s linear)
+			&:hover, &.active
+				.image-wrap
+					left: -500%
+
