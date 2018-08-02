@@ -125,26 +125,23 @@ var clicking = false,
 		firstClientX,
 		firstClientY;
 
+function overDefault() {
+	over.width(0).height(0);
+}
 
-$('#windows').click(function(event){
-	over.hide();
-});
+// $('#windows').click(function(event){
+// 	over.hide();
+// });
 
 $('#windows').mousedown(function(event){
 		clicking = true;
 		console.log('mousedown');
 
-		over.show();
+		// over.show();
 		firstClientX  = event.clientX;
 		firstClientY = event.clientY;
 		console.log("firstX: " + firstClientX + " firstY" + firstClientY);
 });
-
-$(document).mouseup(function(){
-		clicking = false;
-		console.log('mouseup');
-		// console.log('click released, no more move event');
-})
 
 $('#windows').mousemove(function(event){
 	if(clicking == false) return;
@@ -166,3 +163,12 @@ $('#windows').mousemove(function(event){
 
 	// console.log('mouse moving');
 });
+
+
+$(document).mouseup(function(){
+		clicking = false;
+
+		overDefault();
+		console.log('mouseup');
+		// console.log('click released, no more move event');
+})
