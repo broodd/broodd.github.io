@@ -1,0 +1,18 @@
+@import 'mixins'
+
+
+// Code for pagination
+.pagination
+	.page-item
+		.page-link
+			border: none
+			color: #000
+		&.disabled
+			.page-link
+				color: #aaa
+		&.active
+			.page-link
+				background: none
+				border-bottom: 1px solid #000
+				border-top: 1px solid #000
+				color: #000
