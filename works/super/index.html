@@ -1,503 +1,113 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<title>---</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+ 		<link rel="shortcut icon" href="img/portfolio2.svg" type="image/png">
+		
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/media.css">
+		<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
-	<link rel="stylesheet" href="libs/bootstrap-grid.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/media.css" />
-	<!-- theme color for android 5.0 -->
-	<meta name="theme-color" content="#212530"/> 
-</head>
-<body>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+		<script src="js/script.js"></script>
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<div id="trian"></div>
+		<div id="trian2"></div>
+		<div id="trian3"></div>
+		<div id="header" ></div>
 
-
-
-	<header class="header">
-		<div class="container">
-			<div class="row align-items-center h-100vh">
-				<div class="col offset-xl-1">
-					<div class="slogo js-tilt">
-						<!-- svg aside -->
-						<svg id="slogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 675 392.776">
-							<defs>
-								<style>
-									#slogo .cls-1 {
-										fill: url(#linear-gradient);
-									}
-
-									#slogo .cls-2 {
-										fill: #fff;
-										font-size: 50px;
-										font-family: YuGothic-Bold, Yu Gothic;
-										font-weight: 700;
-										opacity: 0.85;
-									}
-
-									#slogo .cls-3 {
-										fill: #dfdfdf;
-										font-size: 20px;
-										font-family: SegoeUI, Segoe UI;
-										letter-spacing: 0.023em;
-									}
-
-									#slogo .cls-4 {
-										fill: url(#linear-gradient-2);
-									}
-								</style>
-								<linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-									<stop offset="0" stop-color="#647283"/>
-									<stop offset="1" stop-color="#5c6271"/>
-								</linearGradient>
-								<linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-									<stop offset="0" stop-color="#fff"/>
-									<stop offset="1" stop-color="gray"/>
-								</linearGradient>
-							</defs>
-							<g id="slogo-side" transform="translate(1380 -354.224)">
-								<path id="Path_142" data-name="Path 142" class="cls-1" d="M1237.419,516.224h476.189l198.811,196.739V909h-675Z" transform="translate(-2617.419 -162)"/>
-								<text id="Hi_I_m_Svyat._Nice_to_meet_you." data-name="Hi, I’m Svyat.
-								Nice to meet you." class="cls-2" transform="translate(-1316.063 457)"><tspan x="0" y="49">Hi, I’m Svyat.</tspan><tspan x="0" y="99">Nice to meet </tspan></text>
-								<text id="Front-end_WordPress_Developer" data-name="Front-end / WordPress Developer" class="cls-3" transform="translate(-1313.063 606)"><tspan x="0" y="22">Front-end / WordPress Developer</tspan></text>
-								<rect id="Rectangle_4" data-name="Rectangle 4" class="cls-4" width="314" height="3" transform="translate(-1313 744)"/>
-							</g>
-						</svg>
-
-						<!-- svg tria-1 -->
-						<svg id="slogo-tria-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 179.98 218.114">
-							<defs>
-								<style>
-									#slogo-tria-1 #tria-1-1 {
-										fill: url(#gra-1-tria-1);
-									}
-								</style>
-								<linearGradient id="gra-1-tria-1" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-									<stop offset="0" stop-color="#9ea5ae"/>
-									<stop offset="1" stop-color="#606e7e"/>
-								</linearGradient>
-							</defs>
-							<path id="tria-1-1" class="cls-1" d="M872.455,358.629l29.361-82.841L987.8,493.9l64.631-135.273h0" transform="translate(-872.455 -275.788)"/>
-						</svg>
-
-						<!-- svg tria-2 -->
-						<svg id="slogo-tria-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 231.77 212.951">
-							<defs>
-								<style>
-									#slogo-tria-2 #tria-1-2 {
-										fill: url(#gra-1-tria-2);
-									}
-
-									#slogo-tria-2 #tria-2-2 {
-										fill: url(#gra-2-tria-2);
-									}
-								</style>
-								<linearGradient id="gra-1-tria-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-									<stop offset="0" stop-color="#7c8695"/>
-									<stop offset="1" stop-color="#657383"/>
-								</linearGradient>
-								<linearGradient id="gra-2-tria-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-									<stop offset="0" stop-color="#7d8897"/>
-									<stop offset="1" stop-color="#515b68"/>
-								</linearGradient>
-							</defs>
-							<g transform="translate(819.613 -401.187)">
-								<path id="tria-1-2" data-name="Path 85" d="M819.291,353.788h86.967l-78.649,58.731Z" transform="translate(159.523 646.532) rotate(166)"/>
-								<path id="tria-2-2" data-name="Path 88" d="M819.291,353.788H988.035l-152.6,133.627Z" transform="matrix(0.5, -0.866, 0.866, 0.5, -1503.975, 1079.957)"/>
-							</g>
-						</svg>
-
-						<!-- svg tria-3 -->
-						<svg id="slogo-tria-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 131.39 121.563">
-							<defs>
-								<style>
-									#slogo-tria-3 #tria-1-3 {
-										fill: url(#gra-1-tria-3);
-									}
-
-									#slogo-tria-3 #tria-2-3 {
-										fill: url(#gra-2-tria-3);
-									}
-
-									#slogo-tria-3 #tria-3-3 {
-										fill: url(#gra-3-tria-3);
-									}
-								</style>
-								<linearGradient id="gra-1-tria-3" x1="0.5" x2="0.001" y2="0.653" gradientUnits="objectBoundingBox">
-									<stop offset="0" stop-color="#596b7c"/>
-									<stop offset="1" stop-color="#748595"/>
-								</linearGradient>
-								<linearGradient id="gra-2-tria-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-									<stop offset="0" stop-color="#596b7c"/>
-									<stop offset="1" stop-color="#637587"/>
-								</linearGradient>
-								<linearGradient id="gra-3-tria-3" x1="0.917" y1="0.721" x2="0.41" y2="0.045" gradientUnits="objectBoundingBox">
-									<stop offset="0" stop-color="#616c7c"/>
-									<stop offset="0" stop-color="#6b7787"/>
-									<stop offset="1" stop-color="#637587"/>
-								</linearGradient>
-							</defs>
-							<g transform="translate(846.674 -288.791)">
-								<path id="tria-1-3" data-name="Path 187" class="cls-1" d="M819.291,353.788h50.38L824.11,397.835Z" transform="matrix(-0.799, -0.602, 0.602, -0.799, -311.604, 1129.897)"/>
-								<path id="tria-2-3" data-name="Path 188" class="cls-2" d="M819.291,353.788h73.053l-66.065,49.659Z" transform="matrix(-0.719, -0.695, 0.695, -0.719, -450.538, 1229.943)"/>
-								<path id="tria-2-3" data-name="Path 189" class="cls-3" d="M1012.974,292.567l44.94,29.863V292.567Z" transform="matrix(0.766, -0.643, 0.643, 0.766, -1732.947, 814.485)"/>
-							</g>
-						</svg>
-					</div>
-				</div>
-			</div>
+		<div id="head-img">
+			<div  class="up "></div>
 		</div>
-	</header>
 
-	<section class="s s-works">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col">
-					<h3 class="title c-white">Recent <span class="fill">Work</span></h3>
-				</div>
+		<section id="roof">
+			<img src="img/hello.png" id="hello">
+			<div class="content">
+				<h1>I'm Svyat,</h1><p>UI / Web Designer & Frontend Developer</p>
 			</div>
+		</section>
+		
+		<section id="about">
+			<div class="content">
+				<h1>about me..</h1>
+                <p>Hello i am Svyat. A 17 year old designer from Ukrainе. I am developing a modern sites. Currently <br>i am working as a freelancer</p>
+			</div>
+
 			<div class="row">
-				<div class="col-sm-6 col-md-4 work">
-					<a href="https://broodd.github.io/works/medal/index.html">
-						<div class="work__image">
-							<img src="img/w_medal.png" alt="">
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-6 col-md-4 work">
-					<a href="https://broodd.github.io/works/medal/index.html">
-						<div class="work__image two-image">
-							<img class="img img-1" src="img/meat/right.png" alt="">
-							<img class="img img-2" src="img/meat/left.png" alt="">
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-6 col-md-4 work">
-					<a href="https://broodd.github.io/works/medal/index.html">
-						<div class="work__image js-hover-parallax">
-							<img class="item" src="img/w_cidade.png" alt="">
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-6 col-md-4 work">
-					<a href="https://broodd.github.io/works/medal/index.html">
-						<div class="work__image">
-							<img src="img/w_clean.png" alt="">
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-6 col-md-4 work">
-					<a href="https://broodd.github.io/works/medal/index.html">
-						<div class="work__image scroll-image">
-							<div class="image-wrap d-flex h-100">
-								<img src="img/hotel/big-room.jpg" alt="">
-								<img src="img/hotel/woman.jpg" alt="">
-								<img src="img/hotel/table.jpg" alt="">
-								<img src="img/hotel/green-2.jpg" alt="">
-								<img src="img/hotel/home.jpg" alt="">
-								<img src="img/hotel/yard.jpg" alt="">
+			    <div class="row_cell">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    <hr>
+			        <p>Profesional</p>
+			    </div>
+			    <div class="row_cell">
+                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                    <hr>
+			        <p>Fast</p>
+			    </div>
+			    <div class="row_cell">
+                     <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                     <hr>
+			        <p>Inovative</p>
+			    </div>
+			</div>
+		</section>
+		
+		<section id="skills">
+		<div id="center">
+			<div>
+				<li>
+					<h2>SKILLS</h2>
+					<!-- HTML5 -->
+				    <p style="width:85%" data-value="85">HTML5</p>
+						<progress max="100" value="85" class="html5">
+							<!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+							<div class="progress-bar">
+								<span style="width: 85%">85%</span>
 							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-6 col-md-4 work">
-					<a href="https://broodd.github.io/works/medal/index.html">
-						<div class="work__image">
-							<img src="img/w_inva.png" alt="">
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-6 col-md-4 work">
-					<a href="https://broodd.github.io/works/medal/index.html">
-						<div class="work__image">
-							<img src="img/w_word.png" alt="">
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-6 col-md-4 work">
-					<a href="https://broodd.github.io/works/medal/index.html">
-						<div class="work__image">
-							<img src="img/w_viza.png" alt="">
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-6 col-md-4 work">
-					<a href="https://broodd.github.io/works/medal/index.html">
-						<div class="work__image">
-							<img src="img/w_solar.png" alt="">
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="s s-skills">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h3 class="title c-white">Skills & <span class="fill">Experience</span></h3>
-				</div>
-			</div>
-			<div class="row">
-				<!-- <img src="img/tags.svg" alt=""> -->
-				<div id="skills">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1379.097 570.065">
-						<defs>
-							<style>
-								#skills .cls-1 {
-									fill: #fff;
-								}
-
-								#skills .cls-2 {
-									font-size: 79px;
-								}
-
-								#skills .cls-2, #skills .cls-3, #skills .cls-4, #skills .cls-5, #skills .cls-6, #skills .cls-7 {
-									font-family: 'SegoeUI, Segoe UI', 'Open Sans', Arial;
-								}
-
-								#skills .cls-3 {
-									font-size: 88px;
-								}
-
-								#skills .cls-4 {
-									font-size: 65px;
-								}
-
-								#skills .cls-5 {
-									font-size: 51px;
-								}
-
-								#skills .cls-6 {
-									font-size: 78px;
-								}
-
-								#skills .cls-7 {
-									font-size: 64px;
-								}
-
-								#skills .cls-8 {
-									filter: url(#Path_176-6);
-								}
-
-								#skills .cls-9 {
-									filter: url(#Path_176-5);
-								}
-
-								#skills .cls-10 {
-									filter: url(#Path_171);
-								}
-
-								#skills .cls-11 {
-									filter: url(#Path_176-4);
-								}
-
-								#skills .cls-12 {
-									filter: url(#Path_176-3);
-								}
-
-								#skills .cls-13 {
-									filter: url(#Path_176-2);
-								}
-
-								#skills .cls-14 {
-									filter: url(#Path_172-2);
-								}
-
-								#skills .cls-15 {
-									filter: url(#Path_172);
-								}
-
-								#skills .cls-16 {
-									filter: url(#Path_176);
-								}
-							</style>
-							<filter id="Path_176" x="71.448" y="403.258" width="539.488" height="166.807" filterUnits="userSpaceOnUse">
-								<feOffset dy="3" input="SourceAlpha"/>
-								<feGaussianBlur stdDeviation="3" result="blur"/>
-								<feFlood flood-opacity="0.161"/>
-								<feComposite operator="in" in2="blur"/>
-								<feComposite in="SourceGraphic"/>
-							</filter>
-							<filter id="Path_172" x="0" y="108.496" width="610.385" height="371.681" filterUnits="userSpaceOnUse">
-								<feOffset dy="3" input="SourceAlpha"/>
-								<feGaussianBlur stdDeviation="3" result="blur-2"/>
-								<feFlood flood-opacity="0.161"/>
-								<feComposite operator="in" in2="blur-2"/>
-								<feComposite in="SourceGraphic"/>
-							</filter>
-							<filter id="Path_172-2" x="570.55" y="295.237" width="613.285" height="254.197" filterUnits="userSpaceOnUse">
-								<feOffset dy="3" input="SourceAlpha"/>
-								<feGaussianBlur stdDeviation="3" result="blur-3"/>
-								<feFlood flood-opacity="0.161"/>
-								<feComposite operator="in" in2="blur-3"/>
-								<feComposite in="SourceGraphic"/>
-							</filter>
-							<filter id="Path_176-2" x="375.007" y="284.854" width="212.95" height="191.724" filterUnits="userSpaceOnUse">
-								<feOffset dy="3" input="SourceAlpha"/>
-								<feGaussianBlur stdDeviation="3" result="blur-4"/>
-								<feFlood flood-opacity="0.161"/>
-								<feComposite operator="in" in2="blur-4"/>
-								<feComposite in="SourceGraphic"/>
-							</filter>
-							<filter id="Path_176-3" x="879.897" y="162.979" width="499.2" height="356.72" filterUnits="userSpaceOnUse">
-								<feOffset dy="3" input="SourceAlpha"/>
-								<feGaussianBlur stdDeviation="3" result="blur-5"/>
-								<feFlood flood-opacity="0.161"/>
-								<feComposite operator="in" in2="blur-5"/>
-								<feComposite in="SourceGraphic"/>
-							</filter>
-							<filter id="Path_176-4" x="615.441" y="100.274" width="358.599" height="224.994" filterUnits="userSpaceOnUse">
-								<feOffset dy="3" input="SourceAlpha"/>
-								<feGaussianBlur stdDeviation="3" result="blur-6"/>
-								<feFlood flood-opacity="0.161"/>
-								<feComposite operator="in" in2="blur-6"/>
-								<feComposite in="SourceGraphic"/>
-							</filter>
-							<filter id="Path_171" x="314.96" y="0" width="520.304" height="193.872" filterUnits="userSpaceOnUse">
-								<feOffset dy="3" input="SourceAlpha"/>
-								<feGaussianBlur stdDeviation="3" result="blur-7"/>
-								<feFlood flood-opacity="0.161"/>
-								<feComposite operator="in" in2="blur-7"/>
-								<feComposite in="SourceGraphic"/>
-							</filter>
-							<filter id="Path_176-5" x="992.261" y="72.653" width="341.605" height="202.16" filterUnits="userSpaceOnUse">
-								<feOffset dy="3" input="SourceAlpha"/>
-								<feGaussianBlur stdDeviation="3" result="blur-8"/>
-								<feFlood flood-opacity="0.161"/>
-								<feComposite operator="in" in2="blur-8"/>
-								<feComposite in="SourceGraphic"/>
-							</filter>
-							<filter id="Path_176-6" x="35.103" y="37.126" width="357.486" height="215.346" filterUnits="userSpaceOnUse">
-								<feOffset dy="3" input="SourceAlpha"/>
-								<feGaussianBlur stdDeviation="3" result="blur-9"/>
-								<feFlood flood-opacity="0.161"/>
-								<feComposite operator="in" in2="blur-9"/>
-								<feComposite in="SourceGraphic"/>
-							</filter>
-						</defs>
-						<g id="tags" transform="translate(-138.475 -2831.287)">
-							<g class="tag" data-name="Group 119" transform="translate(-976.832 104.405) rotate(-2)">
-								<g class="cls-16" transform="matrix(1, 0.03, -0.03, 1, 1019.46, 2764.14)">
-									<path id="Path_176-7" data-name="Path 176" class="cls-1" d="M5.947,0H523.183V130.835H5.947Z" transform="translate(74.5 427.52) rotate(-2)"/>
-								</g>
-								<text id="_Bootstrap" data-name="#Bootstrap" class="cls-2" transform="translate(1156.289 3283.673)"><tspan x="0" y="0">#Bootstrap</tspan></text>
-							</g>
-							<g class="tag" data-name="Group 114" transform="matrix(0.998, 0.07, -0.07, 0.998, 142.389, -735.414)">
-								<g class="cls-15" transform="matrix(1, -0.07, 0.07, 1, 244.9, 3558.29)">
-									<path id="Path_172-3" data-name="Path 172" class="cls-1" d="M0,0,579.363,17.982h0l-.286,129.4H0Z" transform="matrix(0.93, -0.37, 0.37, 0.93, 9, 331.53)"/>
-								</g>
-								<text id="_HTML_CSS" data-name="#HTML/ CSS" class="cls-3" transform="translate(324.243 3882.721) rotate(-26)"><tspan x="0" y="95">#HTML/ CSS</tspan></text>
-							</g>
-							<g class="tag" data-name="Group 116" transform="matrix(0.819, 0.574, -0.574, 0.819, 2744.457, -211.53)">
-								<g class="cls-14" transform="matrix(0.82, -0.57, 0.57, 0.82, -389.41, 3987.26)">
-									<path id="Path_172-4" data-name="Path 172" class="cls-1" d="M0,0,579.363,17.982h0l-.286,129.4H0Z" transform="matrix(0.99, 0.16, -0.16, 0.99, 602.61, 301.24)"/>
-								</g>
-								<text id="_JavaScipt_Jquery" data-name="#JavaScipt/ Jquery" class="cls-4" transform="translate(343.658 3968.025) rotate(-26)"><tspan x="0" y="0">#JavaScipt/ Jquery</tspan></text>
-							</g>
-							<g class="tag" data-name="Group 117" transform="translate(-2225.395 1276.356) rotate(-36)">
-								<g class="cls-13" transform="matrix(0.81, 0.59, -0.59, 0.81, 998.45, 2647.41)">
-									<path id="Path_176-8" data-name="Path 176" class="cls-1" d="M0,0H174l2.927,42.144L174,84H0L-3.015,43.11Z" transform="translate(386.45 394.85) rotate(-36)"/>
-								</g>
-								<text id="_Sass" data-name="#Sass" class="cls-5" transform="translate(1103 3252)"><tspan x="0" y="0">#Sass</tspan></text>
-							</g>
-							<g class="tag" data-name="Group 120" transform="matrix(0.883, 0.469, -0.469, 0.883, 1631.512, -328.595)">
-								<g class="cls-12" transform="matrix(0.88, -0.47, 0.47, 0.88, 165.2, 3490.95)">
-									<path id="Path_176-9" data-name="Path 176" class="cls-1" d="M4.615,0,480.041,9.737l-35.021,121.1H4.615Z" transform="matrix(0.88, 0.47, -0.47, 0.88, 946.25, 166.81)"/>
-								</g>
-								<text id="_c_Java" data-name="#C++/Java" class="cls-2" transform="translate(1130.968 3283.673)"><tspan x="0" y="0">#C++/Java</tspan></text>
-							</g>
-							<g class="tag" data-name="Group 118" transform="translate(-1182.805 273.274) rotate(-17)">
-								<g class="cls-11" transform="matrix(0.96, 0.29, -0.29, 0.96, 515.66, 2832.54)">
-									<path id="Path_176-10" data-name="Path 176" class="cls-1" d="M2.094,25.528,281.986,12.182l13.3,118.653H2.065L-24.6,84.513Z" transform="translate(644.41 180.96) rotate(-17)"/>
-								</g>
-								<text id="_PHP" data-name="#PHP" class="cls-6" transform="translate(1122.199 3297.856)"><tspan x="0" y="0">#PHP</tspan></text>
-							</g>
-							<g class="tag" data-name="Group 115" transform="translate(-1402.949 232.858) rotate(-31)">
-								<g class="cls-10" transform="matrix(0.86, 0.52, -0.52, 0.86, -17.03, 3021.18)">
-									<path id="Path_171-2" data-name="Path 171" class="cls-1" d="M0,0,490.681,15.041,470.551,66.387l21.367,58.751H0Z" transform="translate(323.96 57.42) rotate(-6)"/>
-								</g>
-								<text id="_WordPress" data-name="#WordPress" class="cls-7" transform="matrix(0.906, 0.423, -0.423, 0.906, 265.957, 3351.961)"><tspan x="0" y="0">#WordPress</tspan></text>
-							</g>
-							<g class="tag" data-name="Group 134" transform="translate(845.516 -454.667) rotate(13)">
-								<g class="cls-9" transform="matrix(0.97, -0.22, 0.22, 0.97, 50.26, 3360.78)">
-									<path id="Path_176-11" data-name="Path 176" class="cls-1" d="M2.094,25.528,281.986,12.182l13.3,118.653H2.065L-9.442,103.822,13.793,48.344Z" transform="translate(1039.89 68.91) rotate(13)"/>
-								</g>
-								<text id="_SQL" data-name="#SQL" class="cls-6" transform="translate(1122.199 3297.856)"><tspan x="0" y="0">#SQL</tspan></text>
-							</g>
-							<g class="tag" data-name="Group 135" transform="matrix(0.966, 0.259, -0.259, 0.966, 24.43, -495.476)">
-								<g class="cls-8" transform="matrix(0.97, -0.26, 0.26, 0.97, 971.19, 3183.89)">
-									<path id="Path_176-12" data-name="Path 176" class="cls-1" d="M2.094,25.528,281.986,12.182l13.3,118.653H2.065L-24.386,99.021l.522-46.6Z" transform="matrix(0.97, 0.26, -0.26, 0.97, 101.52, 37.67)"/>
-								</g>
-								<text id="_Vue" data-name="#Vue" class="cls-6" transform="translate(1122.199 3297.856)"><tspan x="0" y="0">#Vue</tspan></text>
-							</g>
-						</g>
-					</svg>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<section class="s s-contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-lg-5">
-					<form id="form" action="https://tour-expert.if.ua/wp-admin/telegram.php" method="POST">
-						<div class="form">
-							<h3 class="title c-black">Contact</h3>
-
-							<input id="name" name="name" type="text" placeholder="Name">
-							<textarea id="text" name="text" rows="5" placeholder="Text"></textarea>
-
-							<div id="form-messages"></div>
-
-							<div class="d-flex justify-content-between align-items-center">
-								<ul class="ul social d-flex">
-									<li><a href="#" class="telegram"><img src="img/telegram.svg" alt="Telegram"></a></li>
-									<li><a href="#" class="github"><img src="img/git.svg" alt="GitHub"></a></li>
-									<li><a href="#" class="vk"><img src="img/vk.svg" alt="Vk"></a></li>
-								</ul>
-
-								<button class="btn"><span>Send</span></button>
+						</progress>
+	
+				<!-- CSS3 -->
+				    <p style="width:65%" data-value="65">CSS3</p>
+						<progress max="100" value="65" class="css3">
+							<!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+							<div class="progress-bar">
+								<span style="width: 65%">65%</span>
 							</div>
-						</div>
-					</form>
-				</div>
-				<div class="col-md-6 col-lg-5 offset-lg-1 order-first order-md-0">
-					<h3 class="title c-white m-t_5p">Say <span class="fill">anything</span></h3>
-					<div class="tags">
-						<div class="tag">#Hey</div>
-						<div class="tag">#What’s up?</div>
-						<div class="tag">#How do you do?</div>
-						<div class="tag">#Wow!!</div>
-						<div class="tag">#Cool;)</div>
-						<div class="tag">#Howdy!</div>
-					</div>
-				</div>
+						</progress>
+	
+				<!-- jQuery -->
+				    <p style="width:50%" data-value="50">JS/jQuery</p>
+						<progress max="100" value="50" class="jquery">
+							<!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+							<div class="progress-bar">
+								<span style="width: 50%">50%</span>
+							</div>
+						</progress>
+				</li>	
 			</div>
 		</div>
-	</section>
+		</section>	
 
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<span>&copy; 2018 Svyat | Portfolio</span>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<script src="libs/jquery-2.1.3.min.js"></script>
-	<script src="libs/tilt.jquery.min.js"></script>
-	<script src="libs/granim.min.js"></script>
-	<script src="js/script.js"></script>
-</body>
+		<section id="talk">	
+			<h2>Contact me</h2>
+			<p><a href="mailto:brood_D@outlook.com">brood_D@outlook.com</a></p>
+			<footer>
+				<ul>
+					<li><a href="https://www.facebook.com/svyat.kruchetskiy" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li id="sky"><a href=""><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+					<li><a href="https://plus.google.com/107428571094180862545" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					<li><a href="https://vk.com/id182538680" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.instagram.com/fredy_boy_/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				</ul>
+			</footer>
+		</section>
+	</body>
 </html>
