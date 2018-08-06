@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 131.39 121.563">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.001" y2="0.653" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#596b7c"/>
+      <stop offset="1" stop-color="#748595"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#596b7c"/>
+      <stop offset="1" stop-color="#637587"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.917" y1="0.721" x2="0.41" y2="0.045" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#616c7c"/>
+      <stop offset="0" stop-color="#6b7787"/>
+      <stop offset="1" stop-color="#637587"/>
+    </linearGradient>
+  </defs>
+  <g id="slogo-tria-3" transform="translate(846.674 -288.791)">
+    <path id="Path_187" data-name="Path 187" class="cls-1" d="M819.291,353.788h50.38L824.11,397.835Z" transform="matrix(-0.799, -0.602, 0.602, -0.799, -311.604, 1129.897)"/>
+    <path id="Path_188" data-name="Path 188" class="cls-2" d="M819.291,353.788h73.053l-66.065,49.659Z" transform="matrix(-0.719, -0.695, 0.695, -0.719, -450.538, 1229.943)"/>
+    <path id="Path_189" data-name="Path 189" class="cls-3" d="M1012.974,292.567l44.94,29.863V292.567Z" transform="matrix(0.766, -0.643, 0.643, 0.766, -1732.947, 814.485)"/>
+  </g>
+</svg>

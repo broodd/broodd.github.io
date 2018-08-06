@@ -1,32 +1,30 @@
 @import '_mixins.sass'
 @import 'vars'
 
-+mw(768) 
-	.fw-container 
-		width: 750px
+// col    <   576px
+// col-sm >=  576px
+// col-md >=  768px
+// col-lg >=  922px
+// col-xl >= 1140px
 
-+mw(992) 
-	#sandwich
-		display: none
++w(576)
+	html,
+	body
+		font-size: 11px
+	.work
+		&__image
+			&.scroll-image
+				.image-wrap
+					img:not(:first-child)
+						display: none
 
-	.fw-container 
-		width: 970px
-
-+mw(1200) 
-	.fw-container 
-		width: 1170px
-
-	.mega-container
-		.sh-column-wrapper
-			width: 555px
-		&.mega-left
-			.sh-column-wrapper
-				float: right
-		&.mega-right
-			.sh-column-wrapper
-				float: left
-
-+mw(1550)
-	.fw-container-midd
-		width: 1520px
-
++mw(577)
+	.work
+		&__image
+			&.scroll-image
+				.image-wrap
+					position: absolute
+					+tr(12s linear)
+				&:hover, &.active
+					.image-wrap
+						left: -500%

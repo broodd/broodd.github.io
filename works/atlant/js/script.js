@@ -49,7 +49,7 @@ window.onload = function () {
 	parallaxBox.onmousemove = function ( event ) {
 		event = event || window.event;
 		var x = event.clientX - parallaxBox.offsetLeft,
-		y = event.clientY - parallaxBox.offsetTop;
+		    y = event.clientY - parallaxBox.offsetTop;
 		
 		mouseParallax ( 'l1', c1left, c1top, x, y, 50 );
 		mouseParallax ( 'l2', c2left, c2top, x, y, 15 );

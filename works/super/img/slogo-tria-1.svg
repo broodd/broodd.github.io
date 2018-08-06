@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 179.98 218.114">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9ea5ae"/>
+      <stop offset="1" stop-color="#606e7e"/>
+    </linearGradient>
+  </defs>
+  <path id="slogo-tria-1" class="cls-1" d="M872.455,358.629l29.361-82.841L987.8,493.9l64.631-135.273h0" transform="translate(-872.455 -275.788)"/>
+</svg>

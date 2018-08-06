@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 675 392.776">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 50px;
+        font-family: YuGothic-Bold, Yu Gothic;
+        font-weight: 700;
+        opacity: 0.85;
+      }
+
+      .cls-3 {
+        fill: #dfdfdf;
+        font-size: 20px;
+        font-family: SegoeUI, Segoe UI;
+        letter-spacing: 0.023em;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#647283"/>
+      <stop offset="1" stop-color="#5c6271"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="gray"/>
+    </linearGradient>
+  </defs>
+  <g id="slogo-side" transform="translate(1380 -354.224)">
+    <path id="Path_142" data-name="Path 142" class="cls-1" d="M1237.419,516.224h476.189l198.811,196.739V909h-675Z" transform="translate(-2617.419 -162)"/>
+    <text id="Hi_I_m_Svyat._Nice_to_meet_you." data-name="Hi, I’m Svyat.
+Nice to meet you." class="cls-2" transform="translate(-1316.063 457)"><tspan x="0" y="49">Hi, I’m Svyat.</tspan><tspan x="0" y="99">Nice to meet </tspan></text>
+    <text id="Front-end_WordPress_Developer" data-name="Front-end / WordPress Developer" class="cls-3" transform="translate(-1313.063 606)"><tspan x="0" y="22">Front-end / WordPress Developer</tspan></text>
+    <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-4" width="314" height="3" transform="translate(-1313 744)"/>
+  </g>
+</svg>

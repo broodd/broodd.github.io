@@ -16,7 +16,7 @@ html
 	-webkit-tap-highlight-color: transparent
 
 body
-	background-color: $wh
+	background-color: $body
 	color: $text
 	font-family: $ff-1
 	margin: 0
@@ -26,6 +26,7 @@ body
 	color: $text
 	text-align: left
 	font-size: 100%
+	overflow-x: hidden
 
 +links(inherit)
 	text-decoration: none
@@ -40,6 +41,13 @@ img, svg, iframe
 svg
 	max-height: 100%
 
+button
+	border: none
+	background: none
+	cursor: pointer
+	&:hover, &:focus, &:active
+		outline: none
+
 
 // main
 .h-100
@@ -47,5 +55,20 @@ svg
 	&vh
 		height: 100vh
 
-.c-white
-	color: $white
+.c
+	&-white
+		color: $white
+	&-black
+		color: $black
+
+.m
+	&-0
+		margin: 0
+	&-t
+		&_5p
+			margin-top: 5%
+
+.ul
+	list-style-type: none
+	padding-left: 0
+	margin: 0

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 231.77 212.951">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7c8695"/>
+      <stop offset="1" stop-color="#657383"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7d8897"/>
+      <stop offset="1" stop-color="#515b68"/>
+    </linearGradient>
+  </defs>
+  <g id="slogo-tria-2" transform="translate(819.613 -401.187)">
+    <path id="Path_85" data-name="Path 85" class="cls-1" d="M819.291,353.788h86.967l-78.649,58.731Z" transform="translate(159.523 646.532) rotate(166)"/>
+    <path id="Path_88" data-name="Path 88" class="cls-2" d="M819.291,353.788H988.035l-152.6,133.627Z" transform="matrix(0.5, -0.866, 0.866, 0.5, -1503.975, 1079.957)"/>
+  </g>
+</svg>
