@@ -321,7 +321,7 @@
 					<img :src="product.img" alt="">
 				</div>
 				<div class="col-8 col-lg-3 bag__title">
-					<div class="font bold">{{ product.name }} {{ i }}</div>
+					<div class="font bold">{{ product.name }}</div>
 				</div>
 				<div class="col-6 col-sm-3 col-lg-2">
 					<div class="font-22 bag__price text-center">{{ product.price }} грн</div>
@@ -331,7 +331,7 @@
 						<div class="count__minus"
 								 v-if="product.count > 0" 
 								 @click="product.count--">-</div>
-						<input type="text" class="count__input" v-model="product.count">
+						<input type="text" class="count__input" v-model.number="product.count">
 						<div class="count__plus"
 								 v-if="product.count < 5" 
 								 @click="product.count++">+</div>
