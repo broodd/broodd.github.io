@@ -1,6 +1,5 @@
 <?php
-// 491084251:AAFan_3EM6-q7dg5dRUFqZ1p1OK6_fsrino
-/* https://api.telegram.org/bot474321784:AAHxaRU7p-ku34ifWmeHLitVkj80vGohs9I/getUpdates,
+/* https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXXXXX/getUpdates,
 где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
 
 $name = $_POST['name'];
@@ -12,6 +11,8 @@ $arr = array(
 	'Текст: ' => $text
 );
 
+
+// parse message to one variable
 foreach($arr as $key => $value) {
 	$txt .= "<b>".$key."</b> ".$value."%0A";
 };

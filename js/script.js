@@ -58,6 +58,10 @@ $(document).ready(function(){
 					formMessages.text('Oops! An error occured and your message could not be sent.');
 				}
 			}).done(function(data) {
+				console.log(typeOf(data));
+				console.log(data);
+				data = JSON.parse(data);
+				console.log(data);
 				if ( !data.success) {
 					formMessages.addClass('error');
 
