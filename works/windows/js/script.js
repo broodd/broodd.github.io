@@ -155,12 +155,12 @@ $('#windows').mousemove(function(event){
 		over.width( event.clientX - firstClientX );
 	}
 
-	// click and move from right to left
+	// click and move from top to bottom
 	if( firstClientY > event.clientY ) {
 		over.height( firstClientY - event.clientY );
 		over.offset({top: event.clientY, left: firstClientX});
 		if( firstClientX > event.clientX ) {
-		over.offset({top: event.clientY, left: event.clientX});
+			over.offset({top: event.clientY, left: event.clientX});
 		}
 	} else {
 		over.height( event.clientY - firstClientY );
