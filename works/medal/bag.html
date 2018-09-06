@@ -301,7 +301,8 @@
 		</div>
 	</div>
 
-	<section class="section section-bag padding-50_80">
+
+	<section class="section section-bag padding-50_80" id="bag">
 		<form action="">
 		<div class="container container-small">
 			<div class="row">
@@ -309,57 +310,67 @@
 					<h4 class="font-22 text-center margin-b_40">Корзина</h4>
 				</div>
 			</div>
-			<div class="row border-bottom">
+			<div class="row border-bottom" v-if="products.length > 0">
 				<div class="col-11 offset-xl-1">
 					<span class="font-18 letter bold color-black">Товаров: </span>
-					<span class="color-blue bold">2</span>
-					<input type="hidden" name="" value="2">
+					<span class="color-blue bold">{{ products.length }}</span>
 				</div>
 			</div>
-			<div class="row align-items-center count__row border-bottom">
+			<div class="row border-bottom" v-else>
+				<div class="col-11 offset-xl-1">
+					<span class="font-18 letter bold color-black">Корзина пуста</span>
+				</div>
+			</div>
+			<div class="row align-items-center count__row border-bottom" v-for="(product, i) in products">
 				<div class="col-4 col-lg-1 offset-xl-1 bag__image d-flex justify-content-center align-items-center">
-					<img src="img/bag_product.png" alt="">
+					<img :src="product.img" alt="">
 				</div>
 				<div class="col-8 col-lg-3 bag__title">
-					<div class="font bold">Алюминиевая накладка 8-ми угольная Жгутик 433 зол. д.140</div>
+					<div class="font bold">{{ product.name }}</div>
 				</div>
 				<div class="col-6 col-sm-3 col-lg-2">
-					<div class="font-22 bag__price text-center">54 грн</div>
+					<div class="font-22 bag__price text-center">{{ product.price }} грн</div>
 				</div>
 				<div class="col-6 col-sm-4 col-lg-2">
 					<div class="count">
-						<div class="count__minus">-</div>
-						<input type="text" class="count__input" value="1">
-						<div class="count__plus">+</div>
+						<div class="count__minus"
+								 v-if="product.count > 1" 
+								 @click="product.count--">-</div>
+						<input type="text" class="count__input" v-model.number="product.count">
+						<div class="count__plus"
+								 v-if="product.count < 5" 
+								 @click="product.count++">+</div>
 					</div>
 				</div>
 				<div class="col-12 col-sm-3 col-lg-2">
-					<div class="font-22 color-blue bag__price bag__price-sum  text-center-md" data-option="count-sum">54 грн</div>
+					<div class="font-22 color-blue bag__price bag__price-sum  text-center-md" data-option="count-sum">{{ product.price * product.count }} грн</div>
 				</div>
 				<div class="col-12 col-sm-auto col-lg-1 text-center-md">
 					<div class="count__close">
-						<i class="icon icon-close"></i>
+						<i class="icon icon-close" @click="deleteProduct(i)"></i>
 					</div>
 				</div>
 			</div>
-			<div class="row justify-content-center justify-content-md-end align-items-center count__row margin-30_a">
-				<div class="col-auto col-sm-2">
-					<span>Итого:</span>
+			<div v-if="products.length > 0">
+				<div class="row justify-content-center justify-content-md-end align-items-center count__row margin-30_a">
+					<div class="col-auto col-sm-2">
+						<span>Итого:</span>
+					</div>
+					<div class="col-auto col-sm-2">
+						<div class="font-22 color-blue bag__price bag__price-total">{{ sum }} грн</div>
+					</div>
+					<div class="d-none d-md-block col-sm-1 col-lg-2 col-xl-1"></div>
 				</div>
-				<div class="col-auto col-sm-2">
-					<div class="font-22 color-blue bag__price bag__price-total">54 грн</div>
+				<div class="row justify-content-center justify-content-md-end align-items-center margin-30_a">
+					<div class="col-sm-4 col-md-auto">
+						<input type="submit" class="btn btn-white btn-border margin-t_20" value="Продолжить покупки">
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<!-- <input type="submit" class="btn btn-blue margin-t_20" value="Оформить заказ"> -->
+						<a href="order.html" class="btn btn-blue margin-t_20 w-100 text-center">Оформить заказ</a>
+					</div>
+					<div class="d-none d-md-block col-sm-2 col-lg-3 col-xl-2"></div>
 				</div>
-				<div class="d-none d-md-block col-sm-1 col-lg-2 col-xl-1"></div>
-			</div>
-			<div class="row justify-content-center justify-content-md-end align-items-center margin-30_a">
-				<div class="col-sm-4 col-md-auto">
-					<input type="submit" class="btn btn-white btn-border margin-t_20" value="Продолжить покупки">
-				</div>
-				<div class="col-sm-4 col-md-3">
-					<!-- <input type="submit" class="btn btn-blue margin-t_20" value="Оформить заказ"> -->
-					<a href="order.html" class="btn btn-blue margin-t_20 w-100 text-center">Оформить заказ</a>
-				</div>
-				<div class="d-none d-md-block col-sm-2 col-lg-3 col-xl-2"></div>
 			</div>
 		</div>
 		</form>
@@ -467,6 +478,8 @@
 
 	<script src="libs/jquery-2.1.3.min.js"></script>
 	<script src="libs/slick.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/vue.js"></script>
 </body>
 </html>
