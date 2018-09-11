@@ -321,7 +321,7 @@
           <span class="font-18 letter bold color-black">Корзина пуста</span>
         </div>
       </div>
-      <div class="row align-items-center count__row border-bottom" v-for="(product, i) in products">
+      <div class="row align-items-center count__row border-bottom" v-for="(product, i) in products" :key="i">
         <div class="col-4 col-lg-1 offset-xl-1 bag__image d-flex justify-content-center align-items-center">
           <img :src="product.img" alt="">
         </div>

@@ -291,23 +291,23 @@ $(document).ready(function(){
 
 
 	// for change count in input
-	$('.count__minus').click(function(event) {
-		var input = $(this).next();
-		if( parseInt(input.val()) > 1 )
-			input.val( parseInt(input.val()) - 1);
-		else input.val(1);
-	});
+	// $('.count__minus').click(function(event) {
+	// 	var input = $(this).next();
+	// 	if( parseInt(input.val()) > 1 )
+	// 		input.val( parseInt(input.val()) - 1);
+	// 	else input.val(1);
+	// });
 
-	$('.count__plus').click(function(event) {
-		var input = $(this).prev();
-		if( parseInt(input.val()) > 0)
-			input.val( parseInt(input.val()) + 1);
-		else input.val(1);
-	});
+	// $('.count__plus').click(function(event) {
+	// 	var input = $(this).prev();
+	// 	if( parseInt(input.val()) > 0)
+	// 		input.val( parseInt(input.val()) + 1);
+	// 	else input.val(1);
+	// });
 
-	$('.count__close').click(function(event) {
-		$(this).parents('.count__row').remove();
-	});
+	// $('.count__close').click(function(event) {
+	// 	$(this).parents('.count__row').remove();
+	// });
 
 	// $('.count__input').change(function(event) {
 	// 	$(this).parents('.count__row').children('[data-option="count-sum"]').
