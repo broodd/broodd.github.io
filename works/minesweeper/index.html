@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Сапер</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div id="wrap" class="container">
+    <div
+      v-for="(row, i) in cells"
+      class="row"
+    >
+      <div
+        v-for="(cell, j) in row"
+        class="cell"
+        :class="{ open: cell.isOpen, lock: cell.isLock }"
+        @click.left="open(i,j)"
+        @click.right.prevent="lock(i,j)"
+      >
+        <span v-if="cell.isOpen">
+          {{ cell.mineAround == 0 ? '' : cell.mineAround }}
+        </span>
+
+      </div>
+    </div>
+
+  </div>
+  
+  <script src="js/vue.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

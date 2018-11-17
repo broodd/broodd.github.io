@@ -1,0 +1,48 @@
+.cell {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background-color: grey;
+  border: 1px solid black;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  transition: opacity 400ms ease;
+}
+.cell:hover {
+  opacity: 0.4;
+}
+
+.mine {
+  background-color: tomato;
+}
+
+.open {
+  background-color: navy;
+  color: #fff;
+}
+
+.lock {
+  background-color: #b3b3b3;
+}
+.lock::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  background-color: #FFC628;
+  border-radius: 50%;
+}
