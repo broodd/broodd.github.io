@@ -10,24 +10,46 @@
 <body>
   
   <div id="wrap" class="container">
-    <div
-      v-for="(row, i) in cells"
-      class="row"
-    >
-      <div
-        v-for="(cell, j) in row"
-        class="cell"
-        :class="{ open: cell.isOpen, lock: cell.isLock }"
-        @click.left="open(i,j)"
-        @click.right.prevent="lock(i,j)"
-      >
-        <span v-if="cell.isOpen">
-          {{ cell.mineAround == 0 ? '' : cell.mineAround }}
-        </span>
+    <label class="form-group">
+      Number of rows
+      <input class="form-control" v-model="width">
+    </label>
+    <label class="form-group">
+      Number of cols
+      <input class="form-control" v-model="height">
+    </label>
+    <label class="form-group">
+      Number of miners
+      <input class="form-control" v-model="mineCount">
+    </label>
+    <label class="form-group">
+      <input
+        class="form-control" 
+        type="submit" 
+        value="Done"
+        @click="fill"
+        >
+    </label>
 
+    <div class="col-12">
+      <div
+        v-for="(row, i) in cells"
+        class="row"
+      >
+        <div
+          v-for="(cell, j) in row"
+          class="cell"
+          :class="{ open: cell.isOpen, lock: cell.isLock }"
+          @click.left="open(i,j)"
+          @click.right.prevent="lock(i,j)"
+        >
+          <span v-if="cell.isOpen">
+            {{ cell.mineAround == 0 ? '' : cell.mineAround }}
+          </span>
+
+        </div>
       </div>
     </div>
-
   </div>
   
   <script src="js/vue.js"></script>

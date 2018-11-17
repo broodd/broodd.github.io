@@ -24,6 +24,7 @@ new Vue({
     fill () {
       this.cells = [];
       this.openCount = 0;
+
       for (let i = 0; i < this.width; i++) {
         let temp = [];
         for (let j = 0; j < this.height; j++) {
@@ -32,6 +33,8 @@ new Vue({
         this.cells.push(temp)
       }
 
+      if( parseInt(this.mineCount) >= parseInt(this.width * this.height) )
+        this.mineCount = parseInt(this.width * this.height) - 1;
       for(let i = 0; i < this.mineCount;) {
         let x = this.rand(0, this.width - 1);
         let y = this.rand(0, this.height - 1);
@@ -41,7 +44,6 @@ new Vue({
           this.$set(this.cells[x][y], 'isMine', true);
           i++;
         }
-
       }
 
       this.mineAround();
@@ -90,7 +92,7 @@ new Vue({
               this.open(i, j);
         }
 
-        if( this.openCount + this.mineCount == this.width * this.height) {
+        if( this.openCount + parseInt(this.mineCount) == parseInt(this.width * this.height)) {
           alert('You win!!');
           this.fill();
         }
@@ -104,8 +106,8 @@ new Vue({
 
   },
 
-  created () {
-    this.fill();
-    // this.mineAround();
-  }
+  // created () {
+  //   this.fill();
+  //   // this.mineAround();
+  // }
 })
