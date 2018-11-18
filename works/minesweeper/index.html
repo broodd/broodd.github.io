@@ -10,26 +10,36 @@
 <body>
   
   <div id="wrap" class="container">
-    <label class="form-group">
-      Number of rows
-      <input class="form-control" v-model="width">
-    </label>
-    <label class="form-group">
-      Number of cols
-      <input class="form-control" v-model="height">
-    </label>
-    <label class="form-group">
-      Number of miners
-      <input class="form-control" v-model="mineCount">
-    </label>
-    <label class="form-group">
-      <input
-        class="form-control" 
-        type="submit" 
-        value="Done"
-        @click="fill"
-        >
-    </label>
+    <div class="row">
+      <div class="col-sm-12">
+        <label class="form-group">
+          Number of rows
+          <input class="form-control" v-model="width">
+        </label>
+        <label class="form-group">
+          Number of cols
+          <input class="form-control" v-model="height">
+        </label>
+        <label class="form-group">
+          Number of miners
+          <input class="form-control" v-model="mineCount">
+        </label>
+        <label class="form-group">
+          <input
+          class="form-control btn-primary" 
+          type="submit" 
+          value="Start"
+          @click="fill"
+          >
+        </label>
+
+        <h3
+          v-show="stage"
+          class="alert"
+          :class="{ 'alert-success': stage == 'win', 'alert-danger': stage == 'lose' }"
+        >{{ stage.toUpperCase() }}</h3>
+      </div>
+    </div>
 
     <div class="col-12">
       <div
@@ -39,14 +49,13 @@
         <div
           v-for="(cell, j) in row"
           class="cell"
-          :class="{ open: cell.isOpen, lock: cell.isLock }"
+          :class="{ open: cell.isOpen, lock: cell.isLock, mine: cell.isMine && stage}"
           @click.left="open(i,j)"
           @click.right.prevent="lock(i,j)"
         >
           <span v-if="cell.isOpen">
             {{ cell.mineAround == 0 ? '' : cell.mineAround }}
           </span>
-
         </div>
       </div>
     </div>
