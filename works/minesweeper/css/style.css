@@ -1,3 +1,13 @@
+.row:nth-child(2n+1) .cell:nth-child(2n),
+.row:nth-child(2n) .cell:nth-child(2n+1) {
+/*.row:nth-child(2n) .cell:nth-child(2n), {*/
+  background-color: #6b6b6b;
+}
+.row:nth-child(2n) .cell:nth-child(2n),
+.row:nth-child(2n+1) .cell:nth-child(2n+1) {
+  background-color: #5d5d5d;
+}
+
 .cell {
   position: relative;
   height: 40px;
@@ -20,20 +30,21 @@
   transition: opacity 400ms ease;
 }
 .cell:hover {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .mine {
-  background-color: tomato;
+  background-color: tomato !important;
 }
 
 .open {
-  background-color: #3e94e7;
+  background-color: #3e94e7 !important;
   color: #fff;
+  opacity: 1 !important;
 }
 
 .lock {
-  background-color: #b3b3b3;
+  background-color: #b3b3b3 !important;
 }
 .lock::after {
   content: '';
@@ -44,5 +55,12 @@
   width: 15px;
   height: 15px;
   background-color: #FFC628;
+
   border-radius: 50%;
+
+  /*background-image: url(../'flag.svg');
+  background-color: white;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;*/
 }

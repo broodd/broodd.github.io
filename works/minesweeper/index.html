@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Сапер</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -49,7 +51,7 @@
         <div
           v-for="(cell, j) in row"
           class="cell"
-          :class="{ open: cell.isOpen, lock: cell.isLock, mine: cell.isMine && stage}"
+          :class="{ open: cell.isOpen, lock: cell.isLock, mine: cell.isMine && stage }"
           @click.left="open(i,j)"
           @click.right.prevent="lock(i,j)"
         >

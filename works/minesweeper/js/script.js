@@ -1,9 +1,9 @@
 class Cell {
   constructor() {
     this.isMine     = false,
-    this.mineAround = 0,
     this.isOpen     = false,
     this.isLock     = false
+    this.mineAround = 0
   }
 }
 
@@ -12,17 +12,13 @@ new Vue({
   data: {
     width: 6,
     height: 6,
-    mineCount: 5,
+    mineCount: 6,
     cells: [],
+
+    lockCount: 0,
     openCount: 0,
 
     stage: ''
-  },
-
-  computed: {
-    showStage () {
-      return true //'alert-success': stage == 'win', 'alert-danger': stage == 'lose'
-    }
   },
 
   methods: {
@@ -30,25 +26,37 @@ new Vue({
       return Math.floor(min + Math.random() * (max + 1 - min));
     },
 
+    // main function for generate fields |> set mines |> contMineAroud
     fill () {
       this.cells = [];
       this.openCount = 0;
+      this.lockCount = 0;
       this.stage = '';
 
+      // if inputs vals !good then set normal
+      if( this.width < 6 || !parseInt(this.width) ) this.width = 6;
+      if( this.height < 6 || !parseInt(this.height) ) this.height = 6;
+      if( this.width > 30 ) this.width = 30;
+      if( this.height > 30 ) this.height = 30;
+
+      if( this.mineCount >= (this.width * this.height) )
+        this.mineCount = parseInt(this.width * this.height) - 2;
+      if( this.mineCount < 6 || !parseInt(this.mineCount) )
+        this.mineCount = 6;
+
+      // generate fields grid
       for (let i = 0; i < this.width; i++) {
         let temp = [];
         for (let j = 0; j < this.height; j++) {
           temp.push(new Cell())
         }
-        this.cells.push(temp)
+        this.cells.push(temp);
       }
 
-      if( parseInt(this.mineCount) >= parseInt(this.width * this.height) )
-        this.mineCount = parseInt(this.width * this.height) - 1;
+      // sets mines
       for(let i = 0; i < this.mineCount;) {
         let x = this.rand(0, this.width - 1);
         let y = this.rand(0, this.height - 1);
-
 
         if( !(this.cells[x][y].isMine) ) {
           this.$set(this.cells[x][y], 'isMine', true);
@@ -86,13 +94,16 @@ new Vue({
 
     open (x, y) {
       if( (this.cells[x][y].isLock || this.cells[x][y].isOpen || this.stage) ) return;
+
       if( this.cells[x][y].isMine ) {
-        this.stage = 'lose';
-        //alert('Game over');
-        //this.fill();
+        // dont lose on start (first click)
+        if(this.openCount == 0)
+          this.fill(),
+          this.open(x,y);
+        else
+          this.stage = 'lose';
       } else {
         this.$set(this.cells[x][y], 'isOpen', true);
-        this.$set(this.cells[x][y], 'isLock', false);
         this.openCount++;
 
         if(this.cells[x][y].mineAround == 0) {
@@ -102,23 +113,19 @@ new Vue({
               this.open(i, j);
         }
 
-        if( this.openCount + parseInt(this.mineCount) == parseInt(this.width * this.height)) {
+        if( this.openCount + parseInt(this.mineCount) == parseInt(this.width * this.height))
           this.stage = 'win';
-          //alert('You win!!');
-          //this.fill();
-        }
       }
     },
 
     lock (x, y) {
-      if(!this.cells[x][y].isOpen)
-        this.$set(this.cells[x][y], 'isLock', !this.cells[x][y].isLock);
+      if( !(this.cells[x][y].isOpen || this.stage) )
+        this.lockCount++, this.$set(this.cells[x][y], 'isLock', !this.cells[x][y].isLock);
     }
 
   },
 
-  // created () {
-  //   this.fill();
-  //   // this.mineAround();
-  // }
+  created () {
+    this.fill();
+  }
 })
