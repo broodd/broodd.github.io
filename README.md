@@ -9,7 +9,6 @@
 
 - :trophy: **medal sport shop** => [demo](https://broodd.github.io/works/medal/index.html)
 
-- :handbag: **landing page for cidade shoping de porto** => [demo](https://broodd.github.io/works/medal/index.html)
+- 🛍 **landing page for cidade shoping de porto** => [demo](https://broodd.github.io/works/medal/index.html)
 
-cidade
-eco
+- 🌲 **big site for tea company (WordPress)** => [demo](https://ecoproduct.if.ua/uk)
