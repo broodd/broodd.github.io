@@ -1,0 +1,98 @@
+@import 'mixins'
+@import 'vars'
+@import 'reset'
+
+
++font('Open', 'OpenSans-Regular', $type:'ttf', $path:'font/')
++font('OpenSemi', 'OpenSans-SemiBold', $type:'ttf', $path:'font/')
++font('RobotoSlab', 'RobotoSlab-Regular', $type:'ttf', $path:'font/')
+
+// reset
+html
+  font-family: sans-serif
+  line-height: 1.15
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  -ms-overflow-style: scrollbar
+  -webkit-tap-highlight-color: transparent
+  margin-top: 0 !important
+
+body
+  background-color: $wh
+  color: $text
+  font-family: $font
+  margin: 0
+  padding: 0
+  font-weight: 400
+  line-height: 1.5
+  color: $text
+  text-align: left
+  font-size: 16px
+  overflow-x: hidden
+  position: relative
+
++links(inherit)
+  text-decoration: none
+
++inputs()
+
+img, svg, iframe
+  max-width: 100%
+  height: auto
+  // height: inherit
+
+
+// stuff style
+.upper
+  text-transform: uppercase
+
+.round
+  +br(4px)
+
+.border
+  border: 1px solid #e3dce7
+  height: 100%
+
+
+// text
+.text
+  &-center
+    text-align: center
+    
+
+// font size
+.font
+  // &-12
+  //   font-size: torem(12)
+  &-18
+    font-size: torem(18)
+
+// colors
+.c
+  &-white
+    color: $white
+  &-black
+    color: $black
+
+.bg
+  &-cream
+    background-color: $bg-cream
+  
+
+// margin
+.m
+  &t
+    &-20
+      margin-top: torem(20)
+    &-40
+      margin-top: torem(40)
+  &y
+    &-50
+      margin-top: torem(50)
+      margin-bottom: torem(50)
+
+// padding
+.p
+  &-10
+    margin: 10px
+

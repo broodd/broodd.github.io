@@ -1,0 +1,97 @@
+@import 'default'
+
+.header
+  font-size: torem(14)
+  padding: 20px 0
+  background-color: $header
+
+.footer
+  padding: 40px 0 15px 0
+  color: $white
+  background-color: $footer
+
+.menu
+  display: flex
+  justify-content: space-around
+  list-style-type: none
+  padding: 0
+  margin: 0
+
+  font-family: $semi
+
+.section
+  padding-bottom: torem(80) torem(80)
+
+.box
+  padding-left: 50px
+  padding-right: 50px
+
+.head
+  position: relative
+  font-size: torem(32)
+  text-transform: uppercase
+  font-weight: 700
+  padding-bottom: torem(30)
+  margin-bottom: torem(30)
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 80px
+    height: 3px
+    background-color: $pink-hr
+
+.form  
+  label
+    display: block
+    color: $black
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 10px
+    line-height: 1
+  textarea
+    min-height: 150px
+  input, textarea
+    +br(4px)
+    width: 100%
+    padding: 10px 15px
+    margin-bottom: 20px
+    outline: none
+    border: 1px solid #cdcdcd
+  input[type="submit"]
+    margin-bottom: 0
+
+body
+  .btn
+    display: inline-block
+    font-weight: 700
+    color: $white
+    +br(torem(30))
+    padding: torem(15) torem(40)
+    text-transform: uppercase
+    border: none
+    cursor: pointer
+    &.pink
+      background-color: $btn-pink
+    &.blue
+      background-color: #3167b0
+      +br(torem(4))
+      display: flex
+      align-items: center
+      span
+        margin-left: torem(15)
+
+
+.copy
+  color: $hr
+  font-size: torem(12)
+
+.social
+  display: flex
+  list-style-type: none
+  padding: 0
+  margin: 0
+  li
+    margin-left: torem(12)
