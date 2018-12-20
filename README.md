@@ -1,4 +1,4 @@
-## const Svyat => web dev
+## var Svyat = Web.dev()
 
 ### See [portfolio site](https://broodd.github.io) for more info :shipit:
 
