@@ -38,6 +38,7 @@ body
 
 img, svg, iframe
   max-width: 100%
+  max-height: 100%
   height: auto
   // height: inherit
 
@@ -49,35 +50,70 @@ img, svg, iframe
 .round
   +br(4px)
 
-.border
-  border: 1px solid #e3dce7
-  height: 100%
-
+.h
+  &-100v
+    height: 100vh
+  &-100
+    height: 100%
 
 // text
 .text
   &-center
     text-align: center
     
+  &-margin
+    p
+      margin-bottom: torem(50)
 
 // font size
 .font
   // &-12
   //   font-size: torem(12)
+  &-14
+    font-size: torem(14)
   &-18
     font-size: torem(18)
+  &-24
+    font-size: torem(24)
+  &-42
+    font-size: torem(42)
+    line-height: 1
+  &-slab
+    font-family: $slab
 
 // colors
 .c
   &-white
     color: $white
+  &-grey
+    color: #333333
   &-black
     color: $black
+  &-pink
+    color: #ed4f67
+  &-teal
+    color: #046985
 
 .bg
   &-cream
     background-color: $bg-cream
-  
+    color: #353836
+  &-dark
+    background-color: $footer
+    color: $wh
+  &-white
+    background-color: #fff
+    color: #353836
+
+  &-response
+    // background-image: url('../img/script.png')
+    background-repeat: no-repeat
+    background-position: right top
+    &.bl
+      background-position: left bottom
+    &.con
+      background-size: contain
+
 
 // margin
 .m
@@ -86,6 +122,9 @@ img, svg, iframe
       margin-top: torem(20)
     &-40
       margin-top: torem(40)
+  &b
+    &-15
+      margin-bottom: torem(15)
   &y
     &-50
       margin-top: torem(50)
@@ -95,4 +134,21 @@ img, svg, iframe
 .p
   &-10
     margin: 10px
+  &t
+    &-30
+      padding-top: torem(30)
+  &b
+    &-20
+      padding-bottom: torem(20)
+  &l
+    &-10
+      padding-left: 10px
+  &r
+    &-10
+      padding-r: 10px
+
+.pos
+  &-rela
+    position: relative
+    
 

@@ -24,45 +24,44 @@ $(document).ready(function(){
 		var form = $('#form'),
 				formMessages = $('#form-messages');
 
-		form.submit(function(event) {
-			event.preventDefault();
+    form.on('submit', function(event) {
+      event.preventDefault();
 
-			// Serialize the form data.
-			var formData = $(form).serialize();
+      // Serialize the form data.
+      var formData = $(form).serialize();
 
-			$.ajax({
-				type: 'POST',
-				url: form.attr('action'),
-				data: formData,
-				dataType: 'json',
-				// beforeSend: function() {
-				// 	formMessages.text('Loading')
-				// }
-			}).fail(function(data) {
-				if ( !data.success) {
-					formMessages.removeClass('success');
-					formMessages.addClass('error');
-					formMessages.text('Oops! An error occured and your message could not be sent.');
-				}
-			}).done(function(data) {
-				data = JSON.parse(data);
-				if ( !data.success) {
-					formMessages.addClass('error');
+      $.ajax({
+        type: 'POST',
+        url: form.attr('action'),
+        data: formData,
+        dataType: 'json',
+        // beforeSend: function() {
+        //  formMessages.text('Loading')
+        // }
+      }).fail(function(data) {
+        if ( !data.success) {
+          formMessages.removeClass('success');
+          formMessages.addClass('error');
+          formMessages.text('Oops! An error occured and your message could not be sent.');
+        }
+      }).done(function(data) {
 
-					if (data.errors.text)
-						formMessages.text(data.errors.text);
-					if (data.errors.name)
-						formMessages.text(data.errors.name);
-				} else {
-					formMessages.removeClass('error');
-					formMessages.addClass('success');
+        if ( !d.success) {
+          formMessages.addClass('error');
 
-					formMessages.text(data.message);
-				}
-			});
-		}());
-	});
+          if (d.errors.text)
+            formMessages.text(d.errors.text);
+          if (d.errors.name)
+            formMessages.text(d.errors.name);
+        } else {
+          formMessages.removeClass('error');
+          formMessages.addClass('success');
 
+          formMessages.text(d.message);
+        }
+      });
+    });
+	}());
 });
 
 

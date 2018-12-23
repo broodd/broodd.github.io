@@ -1,14 +1,23 @@
 @import 'default'
 
+body
+  padding-top: 80px
+
 .header
   font-size: torem(14)
-  padding: 20px 0
+  // padding: 20px 0
+  padding: 15px 0 20px 0
   background-color: $header
+  position: fixed
+  height: 80px
+  width: 100%
+  top: 0
+  left: 0
+  z-index: 10
+
 
 .footer
   padding: 40px 0 15px 0
-  color: $white
-  background-color: $footer
 
 .menu
   display: flex
@@ -19,8 +28,13 @@
 
   font-family: $semi
 
-.section
-  padding-bottom: torem(80) torem(80)
+.s
+  padding: torem(80) 0
+  &-bg
+    +cover(bottom, center)
+  &1
+    height: calc(100vh - 80px)
+    background-image: url('../img/bg_1.png')
 
 .box
   padding-left: 50px
@@ -28,11 +42,12 @@
 
 .head
   position: relative
+  padding-bottom: torem(30)
+  margin-bottom: torem(30)
   font-size: torem(32)
   text-transform: uppercase
   font-weight: 700
-  padding-bottom: torem(30)
-  margin-bottom: torem(30)
+  line-height: 1.1
   &:after
     content: ''
     position: absolute
@@ -41,6 +56,9 @@
     width: 80px
     height: 3px
     background-color: $pink-hr
+  &.reset
+    text-transform: none
+    font-weight: 400
 
 .form  
   label
@@ -69,7 +87,7 @@ body
     font-weight: 700
     color: $white
     +br(torem(30))
-    padding: torem(15) torem(40)
+    padding: torem(10) torem(30)
     text-transform: uppercase
     border: none
     cursor: pointer
@@ -82,7 +100,113 @@ body
       align-items: center
       span
         margin-left: torem(15)
+    &.outline
+      background-color: transparent
+      border: 1px solid $btn-pink
+      color: $btn-pink
 
+
+.acc
+  position: relative
+  padding: torem(30) torem(20)
+  background-color: #2d2d2d
+  font-size: torem(18)
+  font-weight: 700
+  text-transform: uppercase
+  +br(4px)
+  margin-bottom: 10px
+  cursor: pointer
+  &:after
+    content: ''
+    position: absolute
+    right: torem(20)
+    top: 50%
+    transform: translateY(-50%) rotate(45deg)
+    width: 18px
+    height: 18px
+    border: 3px solid $pink
+    border-left: none
+    border-top: none
+    transform-origin: center
+    +tr(400ms ease)
+    margin-top: -2px
+  &__text
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+    &.active
+      max-height: 100%
+  &__pad
+    padding: torem(30) torem(40)
+
+  &
+    &.active
+      &:after
+        transform: translateY(-50%) rotate(225deg)
+      & + .acc__text
+        max-height: 100%
+    & + .acc__text
+      max-height: 0
+
+.testimonial
+  color: #939194
+  padding: torem(20)
+  background-color: #f3f0f5
+  +br(4px)
+  margin-bottom: torem(20)
+  // &:not(:last-child)
+  &:last-child
+    margin-bottom: 0
+  &__img
+    img
+      width: 30px
+      height: 30px
+  &__body
+    margin-top: 10px
+    padding-left: 65px
+
+  &__date
+    padding: 0
+    .date
+      font-size: 10px
+      display: inline-block
+      padding: torem(1) torem(7)
+      border: 1px solid #939194
+      +br(20px)
+
+.list
+  margin: 0
+  padding-left: 25px
+  li
+    line-height: 1.5
+    list-style: none
+    position: relative
+    margin-bottom: 15px
+    font-size: 16px
+    &:before
+      content: ''
+      position: absolute
+      left: -25px
+      top: 6px
+      // +translateY
+      width: 10px
+      height: 10px
+      background-color: $pink
+      +br(50%)
+
+
+
+.price
+  del
+    font-size: torem(32)
+    text-transform: uppercase
+    color: #8c8b8d
+    position: relative
+    top: torem(-5)
+    margin: 0 torem(4)
+  span
+    font-size: torem(48)
+    text-transform: uppercase
 
 .copy
   color: $hr
@@ -95,3 +219,7 @@ body
   margin: 0
   li
     margin-left: torem(12)
+
+.faceblock
+  border: 1px solid #e3dce7
+  height: 100%

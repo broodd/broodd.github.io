@@ -6,3 +6,135 @@
 // col-md >=  768px
 // col-lg >=  922px
 // col-xl >= 1140px
+
++w(992)
+  .bg-response.lg
+    background-image: none !important
++w(1260)
+  .bg-response.xl
+    background-image: none !important
+    
+
+
++w(992)
+  .faceblock
+    border: none
+    margin: torem(40) 0
+
+  body
+    padding-top: 60px
+
+
+  .logo-wrap
+    border-bottom: 1px solid black
+    padding-bottom: 10px
+
+  .header
+    height: 60px
+    padding: 0
+    z-index: 10
+    .container
+      max-width: 100%
+      width: 100%
+    .nav
+      position: absolute
+      width: 100%
+      left: 0
+      top: 0
+      background: #eee
+      z-index: 2
+
+      height: 0
+      overflow: hidden
+      +tr(400ms ease-in-out)
+      .menu
+        flex-direction: column
+        height: 100%
+        justify-content: start
+        li
+          +tr(300ms ease-in-out)
+          position: relative
+          a
+            display: block
+            padding: 15px
+            &:hover
+              color: $white
+              &:after
+                width: 100%
+              &:before
+                width: 20%
+            &:before
+              content: ''
+              position: absolute
+              width: 0
+              height: 100%
+              background: #afafaf
+              right: 0
+              top: 0
+              transition: width 300ms ease-in-out
+              z-index: -1
+            &:after
+              content: ''
+              position: absolute
+              width: 0
+              height: 100%
+              background: #262626
+              left: 0
+              top: 0
+              transition: width 300ms ease-in-out
+              z-index: -2
+  #sandwich
+    width: 30px
+    height: 40px
+    cursor: pointer
+    position: relative
+    div
+      background-color: #636363
+    .sw-topper
+      position: absolute
+      top: 10px
+      width: 100%
+      height: 3px
+      transition: transform 0.5s, top 0.2s
+    .sw-bottom
+      position: absolute
+      top: 50%
+      +translateY(-75%)
+      width: 100%
+      height: 3px
+      transition: transform 0.5s, top 0.2s
+      transition-delay: 0.2s, 0s
+    .sw-footer
+      position: absolute
+      bottom: 10px
+      width: 100%
+      height: 3px
+      +tr(all 0.5s ease)
+      transition-delay: 0.1s
+
+  .menu-active
+    overflow-y: scroll
+    height: 100vh
+    .header
+      .nav
+        height: calc(100vh - 70px)
+    #sandwich
+      .sw-topper
+        transform: rotate(-45deg) translateX(-1%)
+        top: 50%
+      .sw-bottom
+        opacity: 0
+      .sw-footer
+        transform: rotate(45deg) translateX(3%)
+        top: 50%
+
++w(576)
+  .box
+    // padding-left: torem(20)
+    // padding-right: torem(20)
+    padding-left: 0
+    padding-right: 0
+
+  .testimonial
+    &__body
+      padding-left: 0
