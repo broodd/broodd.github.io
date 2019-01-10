@@ -16,7 +16,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 $mail->setFrom('obris2@mail.ua'); // от кого будет уходить письмо?
-$mail->addAddress('pidgurdkiy2000@gmail.com');     // Кому будет уходить письмо 
+$mail->addAddress('education@fameuz.com');     // Кому будет уходить письмо 
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с fameuz сайта';
@@ -55,8 +55,9 @@ if ( !empty($errors) ) {
   if(!$mail->send()) {
     $data['success'] = false;
   } else {
+    $mail->addAddress('leadway.yusavun@gmail.com'); 
+    $mail->send();
     $data['success'] = true;
-    $data['message'] = 'Thank You! Your message has been sent.';
   }
 }
 

@@ -24,7 +24,7 @@
     padding-top: 24px
 
   .btn.extra
-    padding: 10px 40px
+    padding: 8px 42px
 
   .acc__text.lg
     max-height: 100%
@@ -83,6 +83,8 @@
 
 
 +w(992)
+  .mb-lg-15
+    margin-bottom: 15px
   .faceblock
     border: none
     margin: torem(40) 0
@@ -211,7 +213,7 @@
         transform: rotate(45deg) translateX(3%)
         top: 50%
 
-  .sandwich.change-active
+  .sandwich.active
     .sw-topper
       transform: rotate(-45deg) translateX(-1%)
       top: 50%
@@ -230,9 +232,23 @@
 
 +w(768)
 
+
+  .acc
+    font-size: 12px
+
   .p-small
     padding-left: 0
     padding-right: 0
+
+
+  .acc-change
+    .change__text
+      display: block
+      margin-bottom: 10px
+    .acc
+      background-color: #fff
+      color: #252525
+
 
   body .change
     position: absolute
@@ -260,10 +276,11 @@
       padding: 0
       +tr(400ms ease)
       height: 100%
+      left: -280px  
 
   .change-active
     .change-wrap
-      left: -280px  
+      left: 0  
 
   #change__btn
     position: absolute
@@ -320,6 +337,7 @@
       &-b
         padding-bottom: 0
 
+
 +w(480)
   .s1
     .font
@@ -329,3 +347,34 @@
       &-42
         font-size: torem(38)
         line-height: 1
+
+
+// course btn        
++w(768)
+  .acc-change
+    .change__text
+      display: block
+      margin-bottom: 10px
+    .acc
+      background-color: #fff
+      color: #252525
+      width: 100%
+      color: #fff
+      line-height: 1.2
+      padding: 0.625rem 0.9375rem
+      background: none
+      text-decoration: none
+      -webkit-transition: 400ms ease
+      transition: 400ms ease
+      // text-align: center
+      span
+        color: #aeaeae
+        margin-right: 0.625rem
+        width: 15px
+      &.active
+        background-color: rgba(225,255,255,0.1)
+        color: #ed4f67
+        span
+          color: #ed4f67
+      &:after
+        display: none

@@ -1,0 +1,208 @@
+@import 'mixins'
+@import 'vars'
+@import 'reset'
+
+
++font('Open', 'OpenSans-Regular', $type:'ttf', $path:'font/')
++font('OpenSemi', 'OpenSans-SemiBold', $type:'ttf', $path:'font/')
++font('RobotoSlab', 'RobotoSlab-Regular', $type:'ttf', $path:'font/')
++font('Extra', 'OpenSans-ExtraBold', $type:'ttf', $path:'font/')
+
+// reset
+html
+  font-family: sans-serif
+  line-height: 1.15
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  -ms-overflow-style: scrollbar
+  -webkit-tap-highlight-color: transparent
+  margin-top: 0 !important
+
+body
+  background-color: $wh
+  color: $text
+  font-family: $font
+  margin: 0
+  padding: 0
+  font-weight: 400
+  line-height: 1.5
+  color: $text
+  text-align: left
+  font-size: 16px
+  overflow-x: hidden
+  position: relative
+
++links(inherit)
+  text-decoration: none
+
++inputs()
+
+img, svg, iframe
+  max-width: 100%
+  max-height: 100%
+  height: auto
+  // height: inherit
+
+
+// stuff style
+.upper
+  text-transform: uppercase
+
+.round
+  +br(4px)
+
+.h
+  &-100v
+    height: 100vh
+  &-100
+    height: 100%
+
+// text
+.text
+  &-center
+    text-align: center
+    
+  &-margin
+    line-height: 2.2
+    p
+      margin-bottom: torem(50)
+
+// font size
+body
+  .font
+    // &-12
+    //   font-size: torem(12)
+    &-14
+      font-size: torem(14)
+    &-18
+      font-size: torem(18)
+    &-24
+      font-size: torem(24)
+    &-32
+      font-size: torem(32)
+    &-42
+      font-size: torem(42)
+      line-height: 1
+      font-weight: 700
+    &-slab
+      font-family: $slab
+
+.header
+  b.font-18
+    letter-spacing: 0.72px
+    font-family: $semi
+
+// colors
+body
+  .c
+    &-dark
+      color: #222
+    &-white
+      color: $white
+      .head
+        color: $wh
+    &-grey
+      color: #939294
+    &-sub
+      color: #909090
+    &-black
+      color: $black
+    &-pink
+      color: #ed4f67
+    &-teal
+      color: #046985
+    &-hr
+      border-color: $hr
+a.c-pink
+  text-decoration: underline
+  display: inline-block
+  
+
+
+.bg
+  &-cream
+    background-color: $bg-cream
+    color: #353836
+  &-dark
+    background-color: $footer
+    color: $wh
+    .head
+      color: $wh
+  &-white
+    background-color: #fff
+    color: #353836
+    .head
+      color: #252525
+  &-response
+    // background-image: url('../img/script.png')
+    background-repeat: no-repeat
+    background-position: right top
+    &.bl
+      background-position: left bottom
+    &.con
+      background-size: contain
+    &.tc
+      background-size: 100%
+      background-position: top center
+
+
+// margin
+.m
+  &t
+    &-20
+      margin-top: torem(20)
+    // &-30
+    //   margin-top: torem(30)
+    &-40
+      margin-top: torem(40)
+  &b
+    &-10
+      margin-bottom: torem(10)
+    &-15
+      margin-bottom: torem(15)
+  &y
+    &-50
+      margin-top: torem(50)
+      margin-bottom: torem(50)
+
+// padding
+.p
+  &-0
+    padding: 0
+  &-10
+    margin: 10px
+  &t
+    &-10
+      padding-top: torem(10)
+    &-30
+      padding-top: torem(30)
+  &l
+    &-10
+      padding-left: 10px
+  &r
+    &-10
+      padding-right: 10px
+  &x
+    &-20
+      padding-left: 20px
+      padding-right: 20px
+  &y
+    &-20
+      padding-top: torem(20)
+      padding-bottom: torem(20)
+    &-50
+      padding-top: torem(50)
+      padding-bottom: torem(50)
+    &-170
+      padding-top: torem(170)
+      padding-bottom: torem(170)
+  &b
+    &-20
+      padding-bottom: torem(20)
+
+
+.pos
+  &-rela
+    position: relative
+    
+

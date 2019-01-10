@@ -1,0 +1,382 @@
+@import 'default'
+
+// delete this after
+.cbalink
+  display: none
+
+
+body
+  padding-top: 80px
+
+.header
+  font-size: torem(14)
+  // padding: 20px 0
+  padding: 15px 0 20px 0
+  background-color: #fff
+  position: fixed
+  height: 80px
+  width: 100%
+  top: 0
+  left: 0
+  z-index: 10
+  .container, .row
+    height: 100%
+
+.logo
+  background-image: url('../img/logo.gif')
+  width: 100%
+  height: 100%
+  background-size: 126%
+  background-position: center 44%
+  background-repeat: no-repeat
+  &-wrap
+    height: 100%
+
+.footer
+  padding: 40px 0 15px 0
+
+.menu
+  display: flex
+  justify-content: space-around
+  list-style-type: none
+  padding: 0
+  margin: 0
+  font-family: $semi
+  color: #252525
+
+
+.s
+  padding: torem(80) 0
+  &-bg
+    +cover(bottom, center)
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+  &1
+    height: calc(100vh - 80px)
+    background-image: url('../img/bg_1.png')
+    max-height: 640px
+
+.box
+  padding-left: 50px
+  padding-right: 50px
+
+.head
+  position: relative
+  padding-bottom: torem(30)
+  margin-bottom: torem(30)
+  font-size: torem(32)
+  text-transform: uppercase
+  font-family: $semi
+  font-weight: 700
+  line-height: 1.1
+  color: #252525
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 80px
+    height: 3px
+    background-color: $pink-hr
+  &.reset
+    text-transform: none
+    font-weight: 400
+
+.form  
+  label
+    display: block
+    color: $black
+    font-size: 14px
+    font-weight: 700
+    font-family: $semi
+    text-transform: uppercase
+    margin-bottom: 10px
+    line-height: 1
+  textarea
+    min-height: 150px
+  input, textarea
+    +br(4px)
+    width: 100%
+    padding: 10px 15px
+    margin-bottom: 20px
+    outline: none
+    border: 1px solid #cdcdcd
+    margin-bottom: 0
+  input[type="submit"]
+    margin-bottom: 0
+  .error
+    margin-bottom: torem(20)
+    font-size: 14px
+    color: tomato
+
+body
+  .btn
+    display: inline-block
+    font-family: $semi
+    font-weight: 700
+    color: $white
+    +br(torem(30))
+    padding: torem(10) torem(30)
+    text-transform: uppercase
+    border: none
+    cursor: pointer
+    &.pink
+      background-color: $btn-pink
+      transition: 400ms ease-in-out
+      &:hover
+        background-color: #ff304f
+        +bs(0 10px 30px rgba(255, 48, 79, 0.8))
+        color: white
+    &.blue
+      background-color: #3167b0
+      +br(torem(4))
+      display: flex
+      align-items: center
+      span
+        margin-left: torem(15)
+    &.outline
+      background-color: transparent
+      border: 1px solid $btn-pink
+      color: $btn-pink
+    &.transparent
+      background-color: rgba(225, 255, 255, 0.1)
+      +tr(400ms ease-in-out)
+      border: 1px solid transparent
+      &:hover
+        background-color: transparent
+        border: 1px solid $btn-pink
+        color: $btn-pink
+        +bs(inset 0 0 9px rgba(255,48,79,0.8))
+    &.extra
+      font-family: $extra
+
+.trian
+  +arr(20, 24, $pink, r)
+
+
+.acc
+  position: relative
+  padding: torem(30) torem(20)
+  background-color: #2d2d2d
+  font-size: torem(18)
+  font-weight: 700
+  font-family: $semi
+  text-transform: uppercase
+  +br(4px)
+  margin-bottom: 10px
+  cursor: pointer
+  &:after
+    content: ''
+    position: absolute
+    right: torem(20)
+    top: 50%
+    transform: translateY(-50%) rotate(45deg)
+    width: 18px
+    height: 18px
+    border: 3px solid $pink
+    border-left: none
+    border-top: none
+    transform-origin: center
+    +tr(400ms ease)
+    margin-top: -2px
+  &__text
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+    &.active
+      max-height: 100%
+  &__pad
+    padding: torem(30) torem(40)
+
+  &
+    &.active
+      &:after
+        transform: translateY(-50%) rotate(225deg)
+      & + .acc__text
+        max-height: 100%
+    & + .acc__text
+      max-height: 0
+
+
+.work
+  margin-bottom: torem(20)
+  text-align: center
+
+.testimonial
+  color: #939194
+  padding: torem(20)
+  background-color: #f3f0f5
+  +br(4px)
+  margin-bottom: torem(20)
+  // &:not(:last-child)
+  // &:last-child
+  //   margin-bottom: 0
+  &__img
+    img
+      width: 30px
+      height: 30px
+  &__body
+    margin-top: 10px
+    padding-left: 65px
+
+  &__date
+    padding: 0
+    .date
+      font-size: 10px
+      display: inline-block
+      padding: torem(1) torem(7)
+      border: 1px solid #939194
+      +br(20px)
+
+
+.priceblock
+  padding: 15px 15px 15px 40px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  +br(4)
+  background-color: #ffffff
+  color: #000
+  &.light
+    background-color: #ffe8ec
+  &-wrap
+    padding-right: 0
+    padding-left: 5px
+    &:last-child
+      padding-right: 15px
+
+.change
+  color: $pink
+  margin: 0
+  padding: 0
+  li
+    list-style-type: none
+    font-size: torem(14)
+    &.active
+      .btn
+        color: $pink
+        background-color: rgba(225, 255, 255, 0.1)
+        span
+          color: $pink
+    .btn
+      display: flex
+      color: $white
+      line-height: 1.2
+      padding: torem(10) torem(15)
+      text-decoration: none
+      +tr(400ms ease)
+      span
+        color: #aeaeae
+        margin-right: torem(10)
+        width: 15px
+  &__text
+    // display: none
+    padding-top: torem(50)
+    padding-bottom: torem(25)
+    background-color: $white
+    color: $black
+    // &.active
+    //   display: block
+    .quote
+      margin-left: -25px
+      margin-right: -25px
+      margin-top: 25px
+      padding: torem(25) 25px 5px
+
+#change-wrap
+  .p-small
+    perspective: 1000px
+  .change
+    &__text
+      height: 0
+      overflow: hidden
+      padding-top: 0
+      padding-bottom: 0
+      transition: opacity, height, transform 400ms ease-in-out
+      opacity: 0
+      transform: rotateX(90deg)
+      transform-origin: bottom
+      &.active
+        // padding: torem(50) 50px 50px torem(25)
+        padding-top: torem(50)
+        padding-bottom: torem(25)
+        // padding-left: 50px
+        // padding-right: 50px
+        display: block
+        height: auto
+        opacity: 1
+        transform: rotateX(0deg)
+
+.list
+  margin: 0
+  padding-left: 25px
+  li
+    line-height: 1.5
+    list-style: none
+    position: relative
+    margin-bottom: 15px
+    font-size: 16px
+    &:before
+      content: ''
+      position: absolute
+      left: -25px
+      top: 6px
+      // +translateY
+      width: 10px
+      height: 10px
+      background-color: $pink
+      +br(50%)
+
+
+
+.price
+  font-size: torem(32)
+  del
+    font-size: 0.75em
+    text-transform: uppercase
+    color: #8c8b8d
+    margin: 0 torem(4)
+  span
+    font-size: 1em
+    text-transform: uppercase
+
+.copy
+  color: $hr
+  font-size: torem(12)
+
+.social
+  display: flex
+  list-style-type: none
+  padding: 0
+  margin: 0
+  li
+    margin-left: torem(12)
+    +tr(400ms ease-in-out)
+    &:hover
+      transform: scale(1.2) rotate(360deg)
+
+
+.faceblock
+  border: 1px solid #e3dce7
+  height: 100%
+
+
+.link
+  position: relative
+  display: inline-block
+  &:after
+    content: ''
+    position: absolute
+    width: 0
+    height: 2px
+    bottom: 0px
+    left: 0
+    background-color: $white
+    +tr(400ms ease)
+  &:hover:after
+    width: 100%
+  &.c-grey
+    &:after
+      background-color: #939294
+      opacity: 0.5

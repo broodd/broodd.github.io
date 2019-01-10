@@ -1,35 +1,19 @@
-// Dont want use jQuery, love hardcore. But need use slick, popup :(
-// But now look like some sh*t
+// Dont want use jQuery, love hardcore. But need use popup
+// But now look like some bad
 
 $(document).ready( function () {
-  // if want on slider => also uncomment .testimonial in media.sass
-  // $('.testimonial-wrap').slick({
-  //   slidesToShow: 1,
-  //   swipeToSlide: true,
-  //   infinite: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 9999,
-  //       settings: "unslick",
-  //     },
-  //     {
-  //       breakpoint: 922,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         swipeToSlide: true,
-  //         infinite: true,
-  //       }
-  //     }
-  //   ]
-  // });
+  $('#over').remove();
 
-  $(".header .menu a").on("click", function(event) {
+  $(".header a").on("click", function(event) {
     event.preventDefault();
 
-    var documentWidth = Math.max(document.body.scrollWidth, document.body.offsetWidth, document.documentElement.clientWidth, document.documentElement.scrollWidth, document.documentElement.offsetWidth);
+    var el = $( $(this).attr('href') );
 
-    var id = $(this).attr('href'),
-        top = $(id).offset().top - 70;
+    // if( !el.offset() ) return;
+
+    var top = $(el).offset().top - 70;
+
+    var documentWidth = Math.max(document.body.scrollWidth, document.body.offsetWidth, document.documentElement.clientWidth, document.documentElement.scrollWidth, document.documentElement.offsetWidth);
 
     if(documentWidth < 992) top += 10;
 
@@ -139,25 +123,30 @@ $(document).ready( function () {
   // change effect
   // -----------------------------------------------------
   var change_list = document.getElementById("change_list"),
+      wrap        = document.getElementById('change-wrap'),
       def         = change_list.getElementsByClassName('active')[0] || change_list.firstElementChild,
-      change_text = document.getElementsByClassName('change__text'),
+      change_text = wrap.querySelectorAll('.change__text'),
       btn         = document.getElementById('change__btn'),
       nodes       = Array.prototype.slice.call( change_list.children );
+
+  window.n = change_text
 
   function change (el) {
     if( el.tagName != 'LI') return;
 
-    for (var i = 0; i < change_text.length; i++) {
-      change_text[i].classList.remove('active');
-      nodes[i].classList.remove('active');
-    }
 
     try {
+
+      for (var i = 0; i < change_text.length; i++) {
+        change_text[i].classList.remove('active');
+        nodes[i].classList.remove('active');
+      }
+
       change_text[ nodes.indexOf(el) ].classList.add('active');
 
       el.classList.add('active');
-      document.body.classList.add('change-active');
-      btn.classList.toggle('change-active');
+      document.body.classList.toggle('change-active');
+      btn.classList.toggle('active');
     } catch (e) {
       // console.log('Bad index or el is undefined');
     }
@@ -166,7 +155,7 @@ $(document).ready( function () {
 
   btn.addEventListener('click', function () {
     document.body.classList.toggle('change-active');
-    btn.classList.toggle('change-active');
+    btn.classList.toggle('active');
   });
 
   change_list.addEventListener('click', function (e) {
