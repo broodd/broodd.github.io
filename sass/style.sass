@@ -87,13 +87,19 @@ iframe
             transform: rotateX(-50deg)
 
     &.scroll-image
-      .image-wrap
-        height: 100%
-        left: 0
-        top: 0
-      &:hover, &.active
-        .image-wrap
-          left: -500%
+      // .image-wrap
+      //   height: 100%
+      //   left: 0
+      //   top: 0
+      // &:hover, &.active
+      //   .image-wrap
+      //     left: -500%
+
+      background-image: url('../img.min/w_hotel.jpg')
+      +cover
+      +tr(12s linear)
+      &:hover
+        background-position-x: 100%
 
       &:before
         content: ''
@@ -166,7 +172,7 @@ iframe
 
 @for $i from 1 through 9
   #skills .tag:nth-child(#{$i})
-    transition-delay: $i*1.1 * 100 + ms
+    transition-delay: $i * 1.8 * 100 + ms
 
 
 .form
@@ -203,6 +209,9 @@ iframe
       &.github
         +g-two(#F08F35, #DC3545)
 
+      img
+        width: 100%
+  
       &, img
         +tr(400ms)
           
