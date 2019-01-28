@@ -2,7 +2,8 @@ $(document).ready(function(){
 	// // preloader
 
 	$('.js-tilt').tilt({
-		maxTilt: 8,
+		maxTilt: 10,
+    reset: false
 	});
 
 	// skills active when scroll to him

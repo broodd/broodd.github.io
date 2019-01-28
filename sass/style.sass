@@ -55,6 +55,9 @@ iframe
     background-color: $white
     color: #000
 
+.shadow
+  +bs(4px 2px 15px rgba(0, 0, 0, 0.52))
+
 .work
   padding: 0
   &__image
@@ -63,6 +66,14 @@ iframe
     height: 100%
     img
       width: 100%
+    .center
+      +translate-center
+    .js-tilt
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
     &.two-image
       perspective: 200px
       .img
