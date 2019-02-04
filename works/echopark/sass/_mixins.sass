@@ -1,0 +1,304 @@
+// 
+// $class-slug: for !default
+
+// @for $i from 1 through 4
+//   .# {$class-slug}-# {$i}
+//     width: 60px + $i
+// 
+
+
+@function tovh($curr, $h: 1080, $type: vh)
+  @return ($curr*100/$h) + $type
+
+@function toem($curr:20, $fz:16, $type: em)
+  @return ($curr/$fz) + $type
+
+@function torem($curr:20, $fz:16)
+  @return ($curr/$fz) + rem
+
+
+//width
+=w($width)
+  // @media only screen and (max-width: $width+'px')
+  @media only screen and (max-width: $width+'px')
+    @content
+=mw($width)
+  // @media only screen and (min-width: $width+'px')
+  @media only screen and (min-width: $width+'px')
+    @content
+
+// height
+=h($height)
+  @media only screen and (max-height: $height+'px')
+    @content
+=mh($height)
+  @media only screen and (min-height: $height+'px')
+    @content
+
+=poss($position:absolute, $top:0, $left:0, $width:0, $height:0)
+  position: $position
+  top: $top
+  left: $left
+  width: $width
+  height: $height
+
+=clr
+  clear: both
+  &:after,
+  &:before
+    content: " "
+    display: table
+    clear: both
+  // *zoom: 1
+
+=iframe
+  position: relative
+  padding-bottom: 56.25%
+  // padding-top: 25px
+  height: 0
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+// cut text
+=cut-text
+  overflow: hidden
+  -ms-text-overflow: ellipsis
+  text-overflow: ellipsis
+  white-space: nowrap
+
+// psevdo and default value
+=before($bg: null, $width:0, $height:0, $top:0, $left:0, $position:absolute)
+  position: relative
+  &::before
+    content: ''
+    +poss($position, $top, $left, $width, $height)
+    @if $bg != null
+      background: $bg
+    @content
+=after($bg: null, $width:0, $height:0, $top:0, $left:0, $position:absolute)
+  position: relative
+  &::after
+    content: ''
+    +poss($position, $top, $left, $width, $height)
+    @if $bg != null
+      background: $bg
+    @content
+
+=cover($x: null, $y: null, $cover:cover, $repeat:no-repeat)
+  background-repeat: $repeat
+  -webkit-background-size: $cover
+  -moz-background-size: $cover
+  -o-background-size: $cover
+  background-size: $cover
+  @if $x != null && $y != null
+    background-position: $x $y
+
+=bg-size($w:100%, $h:100%)
+  -moz-background-size: $w $h
+  -webkit-background-size: $w $h
+  background-color: $w $h
+
+=translate-center($pos:absolute, $top:50%, $left:50%, $x:-50%, $y:-50%)
+  position: $pos
+  top: $top
+  left: $left
+  +translate($x, $y)
+
+=translate($x:-50%, $y: -50%)
+  -webkit-transform: translate($x,$y)
+  -ms-transform: translate($x,$y)
+  transform: translate($x,$y)
+
+=translateX($x:-50%)
+  -webkit-transform: translateX($x)
+  -ms-transform: translateX($x)
+  transform: translateX($x)
+
+=translateY($x:-50%)
+  -webkit-transform: translateY($x)
+  -ms-transform: translateY($x)
+  transform: translateY($x)
+
+// =g($c1, $c2)
+//   +background-image(linear-gradient($c1, $c2))
+// =gh($c1, $c2)
+//   +background-image(linear-gradient(left,$c1, $c2))
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // text-align-last: justify
+
+=font($alias, $name, $type:'ttf', $path:'../font')
+  @font-face
+    font-family: $alias
+    @if $type == 'eot'
+      src: url($path + $name + '.' + $type)
+      src: url($path + $name + '.eot?#iefix') format('embedded-opentype')
+    @if $type == 'woff2'
+      src: url($path + $name + '.' + $type) format('woff2')
+    @if $type == 'woff'
+      src: url($path + $name + '.' + $type) format("woff")
+    @if $type == 'ttf'
+      src: url($path + $name + '.' + $type) format("truetype")
+    @if $type == 'otf'
+      src: url($path + $name + '.' + $type) format("opentype")
+
+=font-all($alias, $name, $path:'../fonts')
+  @font-face
+    font-family: $alias
+    src: url($path + $name + ".eot")
+    src: url($path + $name + ".eot?#iefix") format("embedded-opentype"), url($path + $name + ".woff2") format("woff2"), url($path + $name + ".woff") format("woff"), url($path + $name + ".ttf") format("truetype")
+
+=tr($what)
+  -moz-transition: $what
+  -o-transition: $what
+  -webkit-transition: $what
+  -ms-transition: $what
+  transition: $what
+
+=center
+  text-align: center
+
+=v-center
+  display: table
+  .v-center__in
+    display: table-cell
+    vertical-align: middle
+    @content
+
+=placeholder-color($color)
+  &:-moz-placeholder,
+  &::-moz-placeholder
+    color: $color
+    opacity: 1
+  &::-webkit-input-placeholder
+    color: $color
+
+=placeholder
+  &:-ms-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &::-webkit-input-placeholder
+    @content
+  &::placeholder
+    @content
+
+=unselectable
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+=selection
+  & ::selection
+    @content
+  & ::-moz-selection
+    @content
+
+//triangle
+=arr($width, $height, $bg, $direction)
+  width: 0px
+  height: 0px
+  border-style: solid
+  @if $direction == t
+    border-width: 0 $width / 2 + px $height + px $width / 2 + px
+    border-color: transparent transparent $bg transparent
+  @if $direction == r
+    border-width: $height / 2 + px 0 $height / 2 + px $width + px
+    border-color: transparent transparent transparent $bg
+  @if $direction == b
+    border-width: $height + px $width / 2 + px 0 $width / 2 + px
+    border-color: $bg transparent transparent transparent
+  @if $direction == l
+    border-width: $height / 2 + px $width + px $height / 2 + px 0
+    border-color: transparent $bg transparent transparent
+  @if $direction == tl
+    border-width: $height + px $width + px 0 0
+    border-color: $bg transparent transparent transparent
+  @if $direction == tr
+    border-width: 0 $width + px $height + px 0
+    border-color: transparent $bg transparent transparent
+  @if $direction == br
+    border-width: 0 0 $height + px $width + px
+    border-color: transparent transparent $bg transparent
+  @if $direction == bl
+    border-width: $height + px 0 0 $width + px
+    border-color: transparent transparent transparent $bg
+// example
+// +arr(500,50, #000, l)
+// +arr(500,50, #000, bl)
+
+=rotate($var)
+  -ms-transform: rotate($var+deg)
+  -webkit-transform: rotate($var+deg)
+  transform: rotate($var+deg)
+
+=blur($var)
+  -webkit-filter: blur($var)
+  filter: blur($var)
+  
+=scale($var)
+  -ms-transform: scale($var)
+  -webkit-transform: scale($var)
+  transform: scale($var)
+
+// counter list
+=counter($var:li)
+  counter-reset: $var
+  > li, > dt
+    &:before
+      content: counter($var)
+      counter-increment: $var
+
+
+=br($radius) 
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius 
+  -ms-border-radius: $radius
+  border-radius: $radius
+  
+=bs($bshadow)
+  -webkit-box-shadow: $bshadow
+  -moz-box-shadow: $bshadow
+  -ms-box-shadow: $bshadow
+  -o-box-shadow: $bshadow
+  box-shadow: $bshadow
+
+=ts($string) 
+  -webkit-text-shadow: $string
+  -moz-text-shadow: $string
+  -ms-text-shadow: $string
+  -o-text-shadow: $string
+  text-shadow: $string
+
+=links($link, $visit:$link, $hover:$link, $active:$link)
+  a
+    color: $link
+    &:visited
+      color: $visit
+    &:hover
+      color: $hover
+    &:active
+      color: $active
+    @content
+
+=inputs()
+  input
+    outline: none
+    &:hover, &:focus, &:active
+      outline: none
+
+=opacity($trans)
+  -moz-opacity: $trans
+  -khtml-opacity: $trans
+  opacity: $trans
+  filter: alpha(opactiy=($trans * 100))
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#$trans * 100)"

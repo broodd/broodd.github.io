@@ -1,0 +1,189 @@
+@import 'default'
+
+.cbalink
+  display: none
+
+.form-active
+  overflow: hidden
+  .form
+    display: block
+  .main:before
+    z-index: 2
+
+
+.main
+  // height: 100vh
+  min-height: 100vh
+  // padding: torem(70)
+  padding: 6vh
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #76A2B4
+    background-image: url('../img/bg.jpg')
+    +cover(center)
+.logo
+  img
+    height: tovh(85)
+  &_main
+    img
+      height: tovh(165)
+      margin-bottom: tovh(90)
+.phone
+  margin-top: tovh(30)
+  margin-bottom: tovh(25)
+  p:last-child
+    letter-spacing: 1px
+  &_img
+    img
+      height: tovh(75)
+
+// .pad
+
+.med
+  font-weight: 500
+  
+.fz
+  &-41
+    // font-size: torem(41)
+    // font-size: 3.7vh
+    font-size: tovh(41)
+  &-37
+    font-size: tovh(37)
+  &-24
+    font-size: tovh(24)
+
+.btn
+  display: inline-block
+  font-size: torem(18)
+  +br(20px)
+  text-transform: uppercase
+  font-weight: 700
+  padding: 1em 2.2em
+  transition: border-color 400ms ease-in-out
+  border: 1px solid transparent
+  +bs(none)
+  cursor: pointer
+  &.white
+    color: #000
+    background-color: $wh
+    &:hover
+      border-color: #000
+  &.black
+    background-color: #231f20
+    color: $wh
+    +br(50px)
+  &.mar
+    margin: tovh(60) 0
+
+.check
+  padding-left: 22px
+  position: relative
+  // color: #66727f
+  text-align: left
+  margin-top: tovh(40)
+  font-size: 11px
+  // margin-bottom: tovh(25)
+  input
+    display: none
+    &:checked + .check__mark
+      &:before
+        display: block
+  &__mark
+    position: absolute
+    top: 0
+    left: 0
+    height: 16px
+    width: 16px
+    background-color: #76808c
+    // background-color: #eee
+    border-radius: 2px
+    &:before
+      content: ''
+      position: absolute
+      display: none
+      left: 6px
+      top: 3px
+      width: 5px
+      height: 8px
+      border: solid #bfc3c9
+      border-width: 0 2px 2px 0
+      -webkit-transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
+      transform: rotate(45deg)
+
+.form
+  display: none
+  width: 100%
+  max-width: 400px
+  // position: fixed
+  // top: 50%
+  // left: 50%
+  // margin-top: tovh(-70)
+  +translate-center(fixed)
+  background-color: $wh
+  +br(20px)
+  padding: torem(50) torem(30) torem(35)
+  // padding: tovh(50) torem(30) tovh(35)
+  color: #66727f
+  z-index: 3
+  &.thank
+    padding: torem(50)
+    .form__head
+      font-size: torem(25)
+      margin: 0
+  &__head
+    font-weight: 700
+    font-size: torem(15)
+    margin-bottom: tovh(45)
+
+  .close
+    position: absolute
+    top: tovh(30)
+    right: tovh(30)
+    color: #000
+    cursor: pointer
+    padding: 10px
+    i
+      margin: -10px
+  label
+    display: block
+    
+  input
+    // color: #66727f
+    +placeholder-color(#66727f)
+    background: none
+    border: none
+    border-bottom: 1px solid #929ea8
+    width: 100%
+    font-size: torem(15)
+    font-weight: 500
+    line-height: 20.64px
+    padding: torem(13) 0
+    transition: border-color, color 400ms ease
+    &:focus
+      border-color: #000
+      color: #000
+
+  .error
+    text-align: left
+    font-size: 10px
+    color: tomato
+    line-height: 1
+    margin-bottom: 20px
+    margin-top: tovh(10)
+    margin-bottom: tovh(10)
+
+#over
+  // display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(97, 149, 171, 0.84)
+  // z-index: 2
