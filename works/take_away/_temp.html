@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<style>
+body {padding:0; margin:0;}
+.map { }
+#map-canvas {
+height: 100%;
+margin: 0px;
+padding: 0px
+}
+#map-canvas{
+  height:600px;
+  width:100%;
+}
+.city {
+font-size:20px;
+font-weight:600;
+color:#444444;
+font-family: "Open Sans", Arial, Tahoma, sans-serif;
+min-width:200px;
+
+}
+.plan {
+font-size:15px;
+font-weight:400;
+color: #444444;
+font-family: "Roboto", Arial, Tahoma, sans-serif;
+
+}
+.num1 {
+font-weight:800;
+font-size:20px;
+background: #F3DF47;
+}
+.num2 {
+font-weight:800;
+font-size:20px;
+background: #dddddd;
+}
+</style>
+<div id="map-canvas" class="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFiLGzijljjjgmnWiDdOb_UzOWO4Zgfek"></script>
+<script>
+  void function () {
+    var map;
+    var myLatLng = {
+      lat: 48.63954345,
+      lng: 31.13149141
+    };
+     map = new google.maps.Map(document.getElementById('map-canvas'), {
+      center: myLatLng,
+      zoom: 6,
+      disableDefaultUI: true
+    });
+    var service = new google.maps.DirectionsService();
+    var direction = new google.maps.DirectionsRenderer({map: map});
+    // var baloon = new google.maps.InfoWindow();
+
+    var info = new Object();
+    var latlng = [
+      {"city":"<span class='city'>м. Київ</span><br/><span class='plan'><b class='num1'> 16 </b>  аудитів продажу<br/><b class='num2'> 4 </b>  реорганізації</span>","lng":"30.5234","lat":"50.4501"},
+      {"city":"<span class='city'>м. Хмельницький</span><br/><span class='plan'><b class='num1'> 16 </b>  аудитів продажу<br/><b class='num2'> 4 </b>  реорганізації</span>","lng":"26.9871589","lat":"49.4229844"},
+      {"city":"<span class='city'>м. Рівне</span><br/><span class='plan'><b class='num1'> 16 </b>  аудитів продажу<br/><b class='num2'> 4 </b>  реорганізації</span>","lng":"26.2509092","lat":"50.619763"},
+      {"city":"<span class='city'>м. Луцьк</span><br/><span class='plan'><b class='num1'> 16 </b>  аудитів продажу<br/><b class='num2'> 4 </b>  реорганізації</span>","lng":"25.3239226","lat":"50.746855"},
+      {"city":"<span class='city'>м. Дніпропетровськ</span><br/><span class='plan'><b class='num1'> 5 </b>  аудитів продажу<br/><b class='num2'> 1 </b>  реорганізація</span>","lng":"35.046183","lat":"48.464717"},
+      {"city":"<span class='city'>м. Запоріжжя</span><br/><span class='plan'><b class='num1'> 1 </b>  аудит продажу<br/><b class='num2'> - </b>  реорганізацій</span>","lng":"35.139567","lat":"47.8388"},
+      {"city":"<span class='city'>м. Вінниця</span><br/><span class='plan'><b class='num1'> 2 </b>  аудити продажу<br/><b class='num2'> 1 </b>  реорганізація</span>","lng":"28.468217","lat":"49.233083"},
+      {"city":"<span class='city'>м. Житомир</span><br/><span class='plan'><b class='num1'> 1 </b>  аудит продажу<br/><b class='num2'> - </b>  реорганізацій</span>","lng":"28.658667","lat":"50.25465"},
+      {"city":"<span class='city'>м. Тернопіль</span><br/><span class='plan'><b class='num1'> 1 </b>  аудит продажу<br/><b class='num2'> 1 </b>  реорганізація</span>","lng":"25.594767","lat":"49.553517"},
+      {"city":"<span class='city'>м. Івано-Франківськ</span><br/><span class='plan'><b class='num1'> 6 </b>  аудитів продажу<br/><b class='num2'> 1 </b>  реорганізація</span>","lng":"24.711117","lat":"48.922633"},
+      {"city":"<span class='city'>м. Львів</span><br/><span class='plan'><b class='num1'> 6 </b>  аудитів продажу<br/><b class='num2'> - </b>  реорганізацій</span>","lng":"24.029717","lat":"49.839683"},
+      {"city":"<span class='city'>м. Закарпаття</span><br/><span class='plan'><b class='num1'> 1 </b>  аудит продажу<br/><b class='num2'> 1 </b>  реорганізація</span>","lng":"22.287883","lat":"48.6208"},
+      {"city":"<span class='city'>м. Харків</span><br/><span class='plan'><b class='num1'> 3 </b>  аудити продажу<br/><b class='num2'> - </b>  реорганізація</span>","lng":"36.230383","lat":"49.9935"},
+      {"city":"<span class='city'>м. Одеса</span><br/><span class='plan'><b class='num1'> 1 </b>  аудит продажу<br/><b class='num2'> - </b>  реорганізація</span>","lng":"30.7233095","lat":"46.482526"},
+    ];
+    
+    var markers = new Array();
+    var infoPrev = '';
+    
+    for(i = 0; i < latlng.length; i++){
+      info[i] = new google.maps.InfoWindow({content: '<div>'+latlng[i]['city']+' </div>'});
+
+      lat = latlng[i]['lat'];
+      lng = latlng[i]['lng'];
+      myLatlng = new google.maps.LatLng(lat, lng);
+      markers[i] = new google.maps.Marker({position: myLatlng, map: map});
+
+      google.maps.event.addListener(markers[i], 'click', makeMapListener(info[i], map, markers[i]));
+    }
+
+    // var marker = new google.maps.Marker({
+    //   position: myLatLng,
+    //   map: map,
+    // });
+
+    // maybe its open modal window
+    function makeMapListener(windows, map, markers) {
+      return function() { if(infoPrev != '') infoPrev.close(); windows.open(map, markers); infoPrev = windows;};
+    }
+  }();
+</script>
+</body>
+</html>
