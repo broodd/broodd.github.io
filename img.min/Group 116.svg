@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 401.802 220.702">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 65px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-3 {
+        filter: url(#Path_172);
+      }
+    </style>
+    <filter id="Path_172" x="0" y="0" width="401.802" height="220.702" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_116" data-name="Group 116" transform="matrix(0.819, 0.574, -0.574, 0.819, 2035.433, -3338.054)">
+    <g class="cls-3" transform="matrix(0.82, -0.57, 0.57, 0.82, 247.3, 3901.85)">
+      <path id="Path_172-2" data-name="Path 172" class="cls-1" d="M0,0,365.243,17.982h0l-.18,129.4H0Z" transform="matrix(0.99, 0.16, -0.16, 0.99, 32.06, 6)"/>
+    </g>
+    <text id="_Firebase" data-name="#Firebase" class="cls-2" transform="translate(343.658 3968.025) rotate(-26)"><tspan x="0" y="0">#Firebase</tspan></text>
+  </g>
+</svg>
