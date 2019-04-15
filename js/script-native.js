@@ -129,7 +129,8 @@ $(document).ready(function () {
       e.stopPropagation(); // location.href = $(this).attr('href');
       // maybe more crossbrowser
 
-      $(location).attr('href', $(this).attr('href'));
+      location.href = $(this).attr('href');
+      return false;
     });
   } // skills active when scroll to him
 
