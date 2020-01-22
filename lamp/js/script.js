@@ -26,28 +26,32 @@ $(document).ready(function () {
       //  formMessages.text('Loading')
       // }
     }).fail(function(data) {
-      if ( !data.success) {
-        formMessages.removeClass('success');
-        formMessages.addClass('error');
-        formMessages.text('Попробуйте ще раз');
-      }
+			formMessages.text('Благодарим за заявку, мы вам перезвоним')
+			
+      // if ( !data.success) {
+      //   formMessages.removeClass('success');
+      //   formMessages.addClass('error');
+      //   formMessages.text('Попробуйте ще раз');
+      // }
     }).done(function(data) {
 
-      if ( !d.success) {
-        formMessages.addClass('error');
+			formMessages.text('Благодарим за заявку, мы вам перезвоним')
 
-        if (d.errors.phone)
-          formMessages.text(d.errors.phone);
-        if (d.errors.name)
-          formMessages.text(d.errors.name);
-        if (d.errors.city)
-          formMessages.text(d.errors.city);
-      } else {
-        formMessages.removeClass('error');
-        formMessages.addClass('success');
+      // if ( !d.success) {
+      //   formMessages.addClass('error');
 
-        formMessages.text(d.message);
-      }
+      //   if (d.errors.phone)
+      //     formMessages.text(d.errors.phone);
+      //   if (d.errors.name)
+      //     formMessages.text(d.errors.name);
+      //   if (d.errors.city)
+      //     formMessages.text(d.errors.city);
+      // } else {
+      //   formMessages.removeClass('error');
+      //   formMessages.addClass('success');
+
+      //   formMessages.text(d.message);
+      // }
     });
   })
 
