@@ -8,7 +8,7 @@ $(document).ready(function () {
   })
 
 
-  var form = $('#form');
+  var form = $('#form-data');
 
   form.on('submit', function (event) {
     event.preventDefault();
@@ -40,6 +40,8 @@ $(document).ready(function () {
           formMessages.text(d.errors.phone);
         if (d.errors.name)
           formMessages.text(d.errors.name);
+        if (d.errors.city)
+          formMessages.text(d.errors.city);
       } else {
         formMessages.removeClass('error');
         formMessages.addClass('success');
