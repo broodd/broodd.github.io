@@ -1,0 +1,370 @@
+// @import './assets/css/bootstrap.css'
+
+@import 'mixins'
+@import 'vars'
+@import 'reset'
+
+@font-face
+  font-family: 'segoeui'
+  src: url('../fonts/segoeui.ttf')
+
+// @font-face
+//   font-family: 'BNPPSans'
+//   src: url('fonts/BNPPSans.eot')
+//   font-weight: normal
+//   font-style: normal
+
+// +font('segoeui', 'segoeui', $type:'ttf', $path:'./fonts/')
+
+
+// @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900')
+// +font('Lato-Bold', '_lato-bold', $type:'ttf', $path:'./font/')
+// +font('Lato-Black', '_lato-black', $type:'ttf', $path:'./font/')
+// +font('RobotoCondensed', 'RobotoCondensed-Bold', $type:'ttf', $path:'./font/')
+
+// reset
+html
+  font-family: sans-serif
+  line-height: 1.15
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  -ms-overflow-style: scrollbar
+  -webkit-tap-highlight-color: transparent
+  // margin-top: 0 !important
+  overflow-x: hidden
+
+body
+  background-color: #0D0934
+  font-family: $font
+  margin: 0
+  padding: 0
+  font-weight: 400
+  line-height: 1.4
+  color: $text
+  text-align: left
+  font-size: 18px
+  overflow-x: hidden
+  position: relative
+
+
++links(inherit)
+  text-decoration: none
+  cursor: pointer
+
+.underline
+  text-decoration: underline
+  
+
++inputs()
+
+img, svg, iframe
+  max-width: 100%
+  height: auto
+  border: none
+  display: inline-block
+  // height: inherit
+
+
+ul
+  padding-left: 0
+  margin: 0
+  list-style: none
+
+
+.container
+  &-md
+    &-fluid
+      +w(768)
+        max-width: none
+
+
+.h
+  &-100
+    height: 100%
+
+// text
+.text
+  &-center
+    text-align: center
+  &-left
+    text-align: left
+  &-right
+    text-align: right
+  &-upper
+    text-transform: uppercase
+
+// font size
+.fz
+  &-30
+    font-size: torem(30)
+  &-26
+    font-size: torem(26)
+    +w(992)
+      font-size: torem(22)
+    +w(768)
+      font-size: torem(18)
+  &-22
+    font-size: torem(22)
+  &-20
+    font-size: torem(20)
+  &-18
+    font-size: torem(18)
+
+// custom font
+.fw
+  &-300
+    font-weight: 300
+
+// colors
+.c
+  &-blue
+    color: $blue
+    
+// // background
+// .bg
+//   &__black--purple
+//     background-image: $gra_black-purple_d
+  
+  
+// margin
+.m
+  &-0
+    margin: 0
+  &l
+    &-30
+      margin-left: torem(30)
+  &b
+    &-20
+      margin-bottom: torem(20)
+    &-30
+      margin-bottom: torem(30)
+    &-40
+      margin-bottom: torem(40)
+    &-50
+      margin-bottom: torem(50)
+    &-60
+      margin-bottom: torem(60)
+      +w(768)
+        margin-bottom: torem(40)
+    &-80
+      margin-bottom: torem(80)
+      +w(768)
+        margin-bottom: torem(20)
+    &-100
+      margin-bottom: torem(100)
+  &-sm
+    +w(576)
+      &-t
+        &-20
+          margin-top: torem(20)
+
+  &-msm
+    +mw(576)
+      &-l
+        &-30
+          margin-left: torem(30)
+
+
+.z
+  &-4
+    z-index: 4
+  &-3
+    z-index: 3
+  &-2
+    z-index: 2
+
+// positions
+// .pos
+//   &-relative
+//     position: relative
+    
+  
+
+// padding
+.p
+  
+.w
+  &-100
+    width: 100%
+
+// slick style
+// .slick
+//   &-track,
+//   &-list
+//     display: -o-flex !important
+//     display: flex !important
+//     align-items: stretch
+//   &-slide
+//     float: none !important
+//     &, a
+//       outline: none !important
+//   &-arrow
+//     position: absolute
+//     top: 50%
+//     transform: translateY(-50%) rotate(45deg)
+//     font-size: 0
+//     border: none
+//     width: 20px
+//     height: 20px
+//     transform-origin: left
+//     background: none
+//     outline: none
+//     z-index: 2
+//     &.slick-prev
+//       left: torem(15)
+//       border: 2px solid $blue
+//       border-top: none
+//       border-right: none
+//     &.slick-next
+//       right: torem(15)
+//       border: 2px solid $blue
+//       border-bottom: none
+//       border-left: none
+//   // &-dots
+//   //   display: -o-flex
+//   //   display: flex
+//   //   justify-content: center
+//   //   li
+//   //     &.slick-active
+//   //       button
+//   //         background-color: $white
+//   //     button
+//   //       font-size: 0
+//   //       background: none
+//   //       border: 1px solid $white
+//   //       width: 10px
+//   //       height: 10px
+//   //       padding: 0
+//   //       margin: 0 5px
+//   //       outline: none
+//   //       border-radius: 50%
+
+
+  /* Slider */
+
+.slick-slider 
+  position: relative
+  display: block
+  box-sizing: border-box
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  -ms-touch-action: pan-y
+  touch-action: pan-y
+  -webkit-tap-highlight-color: transparent
+
+.slick-list 
+  position: relative
+  overflow: hidden
+  display: block
+  margin: 0
+  padding: 0
+
+  &:focus 
+    outline: none
+  
+
+  &.dragging 
+    cursor: pointer
+    cursor: hand
+    
+
+.slick-slider .slick-track,
+.slick-slider .slick-list 
+  -webkit-transform: translate3d(0, 0, 0)
+  -moz-transform: translate3d(0, 0, 0)
+  -ms-transform: translate3d(0, 0, 0)
+  -o-transform: translate3d(0, 0, 0)
+  transform: translate3d(0, 0, 0)
+
+
+.slick-track 
+  position: relative
+  left: 0
+  top: 0
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+  &:before,
+  &:after 
+    content: ""
+    display: table
+  
+
+  &:after 
+    clear: both
+  
+
+  .slick-loading & 
+    visibility: hidden
+    
+
+.slick-slide 
+  float: left
+  height: 100%
+  min-height: 1px
+  outline: none
+  [dir="rtl"] & 
+    float: right
+  
+  img 
+    display: block
+  
+  &.slick-loading img 
+    display: none
+  
+
+  display: none
+
+  &.dragging img 
+    pointer-events: none
+  
+
+  .slick-initialized & 
+    display: block
+  
+
+  .slick-loading & 
+    visibility: hidden
+  
+.slick
+  &-arrow
+    position: absolute
+    top: 0
+    height: 100%
+    width: 10%
+    max-width: 100px
+    font-size: 0
+    border: none
+    transition: opacity 400ms ease
+    z-index: 2
+
+    &.slick-disabled
+      opacity: 0
+
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      background-position: center
+      background-repeat: no-repeat
+      
+
+  &-prev
+    left: 0
+    background: $gar_black-transparent
+    &:before
+      background-image: url('../img/arrow_prev.svg')
+  &-next
+    right: 0
+    background: $gar_transparent-black
+    &:before
+      background-image: url('../img/arrow_next.svg')
+

@@ -1,0 +1,217 @@
+// @import 'fontello.css'
+// @import 'animate.css'
+// @import 'mixins'
+@import 'default'
+// @import '../css/fontello.css'
+
+body
+  +w(992)
+    font-size: 15px
+
+#particles-js
+  position: fixed
+  width: 100vw
+  height: 100vh
+  z-index: -1
+
+.title
+  &--main
+    margin-top: torem(30)
+    margin-bottom: torem(10)
+  &--under
+    margin-bottom: torem(30)
+
+.main
+  background: -webkit-linear-gradient(#d100cb, #d09c26)
+  background-clip: border-box
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+.link
+  color: #FF512F
+  border-bottom: 2px dashed #FF512F
+  font-weight: 700
+  font-size: torem(20)
+
+.section
+  margin-bottom: torem(60)
+  margin-top: torem(30)
+  &--main
+    // background-image: url('../img/space_1.jpg')
+  &--form
+    margin-bottom: torem(100)
+
+// #canvas-image-blending
+//   width: 500px
+//   height: 500px
+
+.btn
+  display: inline-block
+  
+  // display: -webkit-flex
+  // display: -moz-flex
+  // display: -ms-flex
+  // display: -o-flex
+  // display: flex
+  // align-items: center
+  text-transform: uppercase
+  margin-bottom: 0
+  line-height: 1
+  text-align: center
+  
+  font-size: torem(18)
+  padding: toem(15) torem(20)
+  +br(toem(30))
+  // background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)
+  background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%)
+  border: 2px solid transparent
+  +tr(400ms ease)
+
+  background-size: 200% auto
+  color: #fefefe
+  // box-shadow: 0 0 20px #eee
+
+  // background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%)
+
+  &:hover,
+  &:active
+    background-position: right center
+    border: 2px solid $wh
+    
+
+.gallery
+  .respo
+    padding-bottom: 100%
+    margin-bottom: torem(30)
+    +iframe
+      background-position: center
+      +cover
+      // +br(50%)
+      +br(10px)
+      border: 2px solid $wh
+      box-shadow: 5px 5px 13px rgba(0, 0, 0, .7)
+
+
+.step
+  margin-bottom: torem(30)
+  &__number
+    font-size: torem(50)
+    font-weight: 700
+    font-family: Arial, arial, sans-serif
+  &__title
+    font-size: torem(18)
+
+
+.price
+  font-size: torem(25)
+  text-align: center
+  margin-bottom: torem(20)
+  del
+    font-size: torem(18)
+    // color: tomato
+  span
+    font-weight: 700
+    font-size: torem(30)
+    margin-left: toem(10)
+    color: #FF512F
+    position: relative
+  .badget    
+    position: absolute
+    font-size: toem(14, 30)
+    width: 40px
+    height: 40px
+    background: $success
+    +br(50%)
+    color: $wh
+    top: -20px
+    right: -30px
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+
+.form
+  border: 1px solid $wh
+  background-color: rgba(66,66,66,0.47)
+  +br(10px)
+  padding: torem(15) torem(20)
+
+
+  input
+    display: block
+    width: 100%
+    color: $wh
+    +placeholder-color($wh)
+    +br(10px)
+    border: none
+    padding: torem(10) torem(15)
+    background: rgba(48, 48, 48, 0.81)
+    margin-bottom: torem(15)
+
+    &:last-child
+      margin-bottom: 0
+
+  .btn
+    font-size: torem(14)
+    width: 100%
+
+
+.countdown
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  justify-content: space-between
+  li
+    font-size: torem(14)
+    list-style-type: none
+    padding: toem(10, 18)
+    text-transform: uppercase
+    text-align: center
+    
+  li span
+    background: rgba(48, 48, 48, 0.81)
+    +br(50%)
+    display: block
+    font-size: torem(30)
+    +w(380)
+      font-size: 20px
+    width: toem(70, 30)
+    height: toem(70, 30)
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: toem(5)
+
+
+.slider
+  position: relative
+  padding: 0 15px
+
+.t
+  text-align: center
+  &_image
+    // img
+    border-radius: 50%
+    width: 100px
+    height: 100px
+    margin: 0 auto
+    +cover
+  &_text
+  &_name
+    font-weight: 700
+    font-size: torem(18)
+    color: #FF512F
+    margin-top: torem(10)
+    margin-bottom: torem(10)
+    padding: toem(5)
+    background-color: rgba(0, 0, 0, .3)
+    display: inline-block
+    line-height: 1
+    
