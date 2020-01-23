@@ -26,16 +26,18 @@ $(document).ready(function () {
       //  formMessages.text('Loading')
       // }
     }).fail(function(data) {
-			formMessages.text('Благодарим за заявку, мы вам перезвоним')
+      formMessages.text('Спасибо за заявку, в ближайшее время мы свяжемся с вами')
+        formMessages.addClass('success');
 			
       // if ( !data.success) {
       //   formMessages.removeClass('success');
-      //   formMessages.addClass('error');
+        // formMessages.addClass('error');
       //   formMessages.text('Попробуйте ще раз');
       // }
     }).done(function(data) {
 
-			formMessages.text('Благодарим за заявку, мы вам перезвоним')
+      formMessages.text('Спасибо за заявку, в ближайшее время мы свяжемся с вами');
+      formMessages.addClass('success');
 
       // if ( !d.success) {
       //   formMessages.addClass('error');
