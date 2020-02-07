@@ -77,7 +77,7 @@ $(document).ready(function () {
 		// tomorrow.setDate(tomorrow.getHours() + 1);
 
 		// let countDown = new Date(new Date().getTime() + 24 * 60 * 60 * 1000).getTime(),
-    let countDown = new Date('Feb 03, 2020 00:00:00').getTime();
+    let countDown = new Date('Feb 11, 2020 00:00:00').getTime();
 		function timer() {
 
 			let now = new Date().getTime(),
