@@ -1,3 +1,4 @@
+@import 'vars' 
 
 hr 
   box-sizing: content-box
@@ -7,27 +8,33 @@ hr
 
 h1, h2, h3, h4, h5, h6 
   margin-top: 0
-  margin-bottom: 0.5rem
+  // margin-bottom: 0.5rem
+  // font-family: $font-bold
+
+h1, h2, h3,
+h4, h5, h6
+  font-weight: 700
+  // font-weight: 700
 
 
-p 
+p
   margin-top: 0
   margin-bottom: 1rem
 
 
-abbr[title],
-abbr[data-original-title] 
-  text-decoration: underline
-  -webkit-text-decoration: underline dotted
-  text-decoration: underline dotted
-  cursor: help
-  border-bottom: 0
+// abbr[title],
+// abbr[data-original-title] 
+//   text-decoration: underline
+//   -webkit-text-decoration: underline dotted
+//   text-decoration: underline dotted
+//   cursor: help
+//   border-bottom: 0
 
 
-address 
-  margin-bottom: 1rem
-  font-style: normal
-  line-height: inherit
+// address 
+//   margin-bottom: 1rem
+//   font-style: normal
+//   line-height: inherit
 
 
 ol,
@@ -57,13 +64,14 @@ blockquote
   margin: 0 0 1rem
 
 
-dfn 
-  font-style: italic
+// dfn 
+//   font-style: italic
 
 
 b,
 strong 
   font-weight: bolder
+  // font-family: $font-b
 
 
 small 
@@ -131,9 +139,9 @@ figure
   margin: 0 0 1rem
 
 
-img 
-  vertical-align: middle
-  border-style: none
+// img 
+//   vertical-align: middle
+//   border-style: none
 
 
 svg:not(:root) 
@@ -190,12 +198,12 @@ button,
 select 
   text-transform: none
 
-
 button,
 html [type="button"],
 [type="reset"],
 [type="submit"] 
   -webkit-appearance: button
+  cursor: pointer
 
 
 button::-moz-focus-inner,
@@ -276,8 +284,7 @@ summary
   cursor: pointer
 
 
-template 
-  display: none
+
 
 
 [hidden] 
@@ -287,10 +294,11 @@ template
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 
   margin-bottom: 0.5rem
-  font-family: inherit
-  font-weight: 500
+  // font-family: inherit
+  // font-weight: 500
   line-height: 1.2
   color: inherit
+
 
 h1, .h1 
   font-size: 2.5em
@@ -322,40 +330,13 @@ h6, .h6
   // font-size: 100%
 
 
-.lead 
-  font-size: 1.25rem
-  font-weight: 300
-
-
-.display-1 
-  font-size: 6rem
-  font-weight: 300
-  line-height: 1.2
-
-
-.display-2 
-  font-size: 5.5rem
-  font-weight: 300
-  line-height: 1.2
-
-
-.display-3 
-  font-size: 4.5rem
-  font-weight: 300
-  line-height: 1.2
-
-
-.display-4 
-  font-size: 3.5rem
-  font-weight: 300
-  line-height: 1.2
-
-
 hr 
+  height: 1px
+  width: 100%
+  background-color: #E5E5E5
   margin-top: 1rem
   margin-bottom: 1rem
-  border: 0
-  border-top: 1px solid rgba(0, 0, 0, 0.1)
+  border: none
 
 
 small,
@@ -373,25 +354,7 @@ mark,
 .list-unstyled 
   padding-left: 0
   list-style: none
-
-
-.list-inline 
-  padding-left: 0
-  list-style: none
-
-
-.list-inline-item 
-  display: inline-block
-
-
-.list-inline-item:not(:last-child) 
-  margin-right: 0.5rem
-
-
-.initialism 
-  font-size: 90%
-  text-transform: uppercase
-
+  margin: 0
 
 .blockquote 
   margin-bottom: 1rem
@@ -408,33 +371,18 @@ mark,
   content: "\2014 \00A0"
 
 
-.img-fluid 
-  max-width: 100%
-  height: auto
+// .img-fluid 
+//   max-width: 100%
+//   height: auto
 
 
-.img-thumbnail 
-  padding: 0.25rem
-  background-color: #fff
-  border: 1px solid #dee2e6
-  border-radius: 0.25rem
-  max-width: 100%
-  height: auto
-
-
-.figure 
-  display: inline-block
-
-
-.figure-img 
-  margin-bottom: 0.5rem
-  line-height: 1
-
-
-.figure-caption 
-  font-size: 90%
-  color: #6c757d
-
+// .img-thumbnail 
+//   padding: 0.25rem
+//   background-color: #fff
+//   border: 1px solid #dee2e6
+//   border-radius: 0.25rem
+//   max-width: 100%
+//   height: auto
 
 code,
 kbd,

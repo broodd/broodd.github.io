@@ -1,438 +1,520 @@
-// @import 'D:\\_Lessons\\_Main\\main\\sass\\_default.sass'
+// @import 'fontello.css'
+// @import 'animate.css'
+// @import 'mixins'
+@import 'default'
+@import '../css/fontello.css'
 
-@import '_default.sass'
-
+html
+  &.over
+    overflow: hidden
 body
-  margin: 0
-  padding: 0
-  width: 100%
-  height: 100vh
-
-.loader
-  height: 10px
-  background-color: #212936
-  position: absolute
-  // +translate-center
-  &-wrap
-    display: none
+  +w(992)
+    font-size: 15px
+  &.over
     height: 100vh
-    width: 100%
+    overflow: hidden
 
 
 .header
-  background-color: #252B37
-  background-image: url(../img.min/bg-1.jpg)
-  +cover(bottom)
-  // min-height: 100vh
-  height: 100vh
-
-
-.s
-  &-works
-    // +g-two(#212530, #1A3C5E)
-    +g-two(#212530, #1E88E5)
-    padding-bottom: 50px
-    +bs(0 0 75px #222934)
-  &-skills
-    padding: 50px 0
-  &-contact
-    +g-two(#2ACEE1, #6F42C1)
-    padding: torem(100) 0
-    +bs(0 0 80px rgba(0,0,0, .3))
-
-
-iframe
+  position: fixed
+  left: 0
+  top: 0
   width: 100%
-  height: 100vh
+  padding: torem(30) 0
+  background-color: $white
+  text-transform: capitalize
+  color: $text
+  font-size: torem(16)
+  z-index: 15
+  +tr(400ms ease)
+  & > .container
+    +w(768)
+      max-width: 100%
+  &__logo,
+  &__hamburger,
+    z-index: 12
+  &__row
+    position: relative
+  &__hamburger
+    +mw(769)
+      display: none
+      
+  &__logo
 
+  &__menu
+    align-self: stretch
+    display: flex
+    +w(1400)
+      font-size: 85%
+    // +w(1300)
+    //   font-size: 70%
+    // +w(992)
+    //   font-size: 65%
+    +w(768)
+      display: flex
+      flex: 1 1 100%
+      position: absolute
+      width: 100%
+      height: 100vh
+      left: 0px
+      z-index: 10
+      background: $white
+      top: 0px
+      display: none
+      font-size: torem(18)
+    ul
+      li
+        padding: 0
+        +tr(400ms ease)
+        +mw(768)
+          height: 100%
+        a
+          position: relative
+          z-index: 2
+          height: 100%
+          display: flex
+          padding: 0 toem(25)
+          align-items: center
+          +w(992)
+            padding: 0 toem(15)
+          +w(768)
+            padding: torem(20) toem(30)
+
+
+        &:hover
+          background-color: $green
+          color: $white
+
+        &:before
+          display: none
+
+        // &:after
+        //   content: ''
+        //   position: absolute
+        //   left: 100%
+        //   top: 50%
+        //   transform: translate(-75%, -50%) rotate(-10deg)
+        //   width: toem(17)
+        //   height: toem(26)
+        //   border: 1px solid $white
+        //   z-index: 1
+        //   opacity: 0
+
+      +w(768)
+        height: 100%
+        display: flex
+        justify-content: center
+        flex-direction: column
+        li
+          margin: torem(10) 0
+
+
+.logo
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  align-items: center
+  // justify-content: center
+  &__symbol 
+    width: torem(45)
+    height: torem(45)
+    line-height: torem(45)
+    background-color: $green
+    border-radius: 100px
+    text-align: center
+    color: #fff
+    font-size: torem(28)
+    font-weight: 800
+
+    margin-right: toem(5)
+  &__name
+    span
+      font-weight: 800
+
+
+.vidbg
+  +iframe
+
+.list
+  &--flex
+    li:not(:last-child)
+      margin-right: torem(15)
 
 .title
-  font-size: torem(40)
-  .fill
-    display: inline-block
-    padding: 0 0.3em
-    line-height: 0.99
-    background-color: $white
-    color: #000
-
-.shadow
-  +bs(4px 2px 15px rgba(0, 0, 0, 0.52))
-
-.work
-  padding: 0
-  &__image
-    position: relative
-    overflow: hidden
-    height: 100%
-    img
-      width: 100%
-    .center
-      +translate-center
-    .js-tilt
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-    &.two-image
-      perspective: 200px
-      .img
-        position: absolute
-        left: 0
-        +tr(all 400ms ease)
-        &-1
-          position: relative
-          top: -100%
-          transform-origin: bottom
-          transform: rotateX(90deg)
-        &-2
-          top: 0
-          transform-origin: top
-      &:hover, &.active
-        .img
-          &-1
-            top: 0
-            transform: rotateX(0deg)
-          &-2
-            top: 100%
-            transform: rotateX(-50deg)
-
-    &.scroll-image
-      // .image-wrap
-      //   height: 100%
-      //   left: 0
-      //   top: 0
-      // &:hover, &.active
-      //   .image-wrap
-      //     left: -500%
-
-      background-image: url('../img.min/w_hotel.jpg')
-      +cover
-      +tr(12s linear)
-      &:hover
-        background-position-x: 100%
-
-      &:before
-        content: ''
-        position: absolute
-        left: 0
-        top: 0
-        width: 100%
-        height: 100%
-        background-image: url(../img.min/hotel/logo.svg)
-        z-index: 2
-        background-size: 50%
-        background-repeat: no-repeat
-        background-position: center
-        background-color: rgba(57, 75, 91, 0.67)
-
-
-    // &.js-hover-parallax
-    //   .hover-parallax
-    //     position: absolute
-    //     left: 0
-    //     text-outline: 0
-    //     transform: scale(1.2)
-
-
-
-.slogo
-  width: 100%
-  max-width: calc(550px + 20px)
-  padding-right: 20px
+  font-weight: 600
   position: relative
-  display: inline-block
-  transform-style: preserve-3d
-  will-change: transform
-  transform: perspective(300px) rotateX(0deg) rotateY(0deg)
-  
-  #slogo-tria
-    &-1
+  &--block
+    display: inline-block
+    font-size: torem(25)
+    padding-bottom: torem(5)
+    margin-bottom: torem(30)
+    &:before
+      content: ''
+      display: block
       position: absolute
-      top: 15%
-      width: 15%
-      right: 38%
-      -ms-transform: translateZ(100px)
-      transform: translateZ(100px)
-      -moz-transform: translateZ(100px)
-    &-2
+      width: 100%
+      background-color: #f5f5f5
+      height: 2px
+      bottom: 0
+    &:after
+      content: ''
+      display: block
       position: absolute
-      right: 5%
-      top: 30%
-      width: 23%
-      -ms-transform: translateZ(100px)
-      transform: translateZ(100px)
-      -moz-transform: translateZ(100px)
-    &-3
-      position: absolute
-      right: 20%
-      top: 10%
-      width: 10%
-      transform: translateZ(100px)
-
-#skills
-  width: 100%
-  max-width: 800px
-  .tag
-    +tr(400ms cubic-bezier(0,1.37,0,1.36) )
-    opacity: 0
-  &.active
-    .tag
-      opacity: 1
-
-
-@for $i from 1 through 9
-  #skills .tag:nth-child(#{$i})
-    transition-delay: $i * 1.8 * 100 + ms
-
-
-.form
-  background-color: $white
-  padding: 5% 1.5rem 8%
-  input, textarea
-    width: 100%
-    padding: 5px 10px
-    margin-bottom: 20px
-    color: $black
-    border: 2px solid $black
-    +placeholder-color($black)
-
-
-.social
-  li
-    a
-      width: 35px
-      height: 35px
-      display: flex
-      align-items: center
-      justify-content: center
-      padding: 10px
-      +br(50%)
-      color: $white
-      +bs(3px 3px 6px rgba(0, 0, 0, 0.47))
-      background: rgba(0,123,255,1)
-      background: -moz-linear-gradient(45deg, rgba(0,123,255,1) 0%, rgba(103,16,242,1) 100%)
-      background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,123,255,1)), color-stop(100%, rgba(103,16,242,1)))
-      background: -webkit-linear-gradient(45deg, rgba(0,123,255,1) 0%, rgba(103,16,242,1) 100%)
-      background: -o-linear-gradient(45deg, rgba(0,123,255,1) 0%, rgba(103,16,242,1) 100%)
-      background: -ms-linear-gradient(45deg, rgba(0,123,255,1) 0%, rgba(103,16,242,1) 100%)
-      background: linear-gradient(45deg, rgba(0,123,255,1) 0%, rgba(103,16,242,1) 100%)
-      &.github
-        +g-two(#F08F35, #DC3545)
-
-      img
-        width: 100%
-  
-      &, img
-        +tr(400ms)
-          
-      &:hover
-        +bs(1px 1px 10px rgba(0, 0, 0, 0.47))
-        img
-          +rotate(360)
-    &:not(:last-child)
-      a
-        margin-right: 10px
+      width: 30px
+      background-color: $green
+      height: 2px
+      bottom: 0
+  &--big
+    font-size: torem(44)
+    margin-bottom: 0
 
 
 .btn
+  font-size: torem(14)
+  display: inline-block
   position: relative
-  padding: toem(8) toem(30)
-  margin-right: 5px
-  margin-bottom: 5px
-  font-size: torem(20)
-  color: $white
-  +tr(margin 400ms)
-  span
+  padding: .8em 2.1em
+  margin-bottom: .75em
+  margin-right: .25em
+  line-height: 1.2
+  border: 0
+  outline: 0
+  border: 2px solid $green
+  color: #222
+  text-shadow: none
+  background-color: #fff
+  border-radius: 30px
+  transition: all 0.3s ease-in-out
+  box-shadow: 0 10px 10px -8px rgba(0,0,0,.22)
+  &:hover
+    background-color: $green
+    color: $white
+  &:active
+    background-color: $blue
+    border-color: $blue
+    color: $white
+
+// icons
+// -----------------------------------------------------
+.ic
+  position: relative
+  font-size: torem(33)
+  color: $green
+  margin-bottom: 6px
+  // width: 33px
+  // height: 33px
+  &--flat
+    color: #888
+    background-color: #fafafa
+    +br(5px)
+    +tr(400ms ease-in-out)
+    cursor: pointer
+    
+    &:hover
+      background-color: $green
+      color: $white
+
+  &_text
+    display: flex
+    align-items: center
+    font-size: torem(16)
+    .ic
+      font-size: torem(20)
+      display: inline-block
+      margin-right: torem(5)
+    a
+      color: $blue
+
+
+
+// info section
+// -----------------------------------------------------
+.info
+  &__left
+    padding-left: 0
+    align-self: stretch
+    +w(992)
+      padding-right: 0
+    .vidbg
+      height: 100%
+      overflow: hidden
+      video
+        position: absolute
+        top: 50%
+        left: 50%
+        +translate
+        width: auto
+  &__right
     position: relative
-    z-index: 2
-  &:before
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    border: 2px solid #000
-    z-index: 2
+    z-index: 1
+    padding: 0
+    +mw(992)
+      margin-left: torem(-70)
+      padding: torem(50) torem(70) torem(50) 0
+    &--wrap
+      padding: 70px 15%
+      background-color: $white
+      box-shadow: 0 0 25px 0 rgba(0,0,0,.11)
+
+
+// skills section
+// -----------------------------------------------------
+.slider
+  &--skills
+    .slider
+      &__slide
+        filter: grayscale(100%)
+        +tr(all .25s ease-in-out)
+        opacity: .7
+        display: flex
+        align-items: center
+        justify-content: center
+        &:hover
+          filter: none
+          opacity: 1
+        img
+          max-height: 100px
+          pointer-events: none
+          -webkit-touch-callout: none
+          -webkit-user-select: none
+          -moz-user-select: none
+          -ms-user-select: none
+          user-select: none
+
+    .slick-dots
+      margin-top: torem(30)
+
+// facts section
+// -----------------------------------------------------
+.fact
+  position: relative
+  text-align: center
+  margin-bottom: torem(15)
+  background: $white
+  border: 2px solid #e5e5e5
+  border-radius: 10px
+  box-shadow: none
+  overflow: hidden
+  transition: all 0.2s ease-in-out
+  padding: torem(25) torem(10) torem(15)
+  +w(576)
+    padding-left: 0
+    padding-right: 0
+  &:hover
+    box-shadow: 0 12px 17px rgba(0,0,0,.12)
+    +translateY(-5px)
+  &__title
+    font-weight: 600
+    font-size: torem(16)
+  &__value
+    color: #d5d5d5
+    font-size: torem(40)
+    margin: torem(15) 0 torem(10)
+
+
+// heading section
+// -----------------------------------------------------
+.heading
+  background-color: #fcfcfc
+  border: 2px solid #eee
+  border-left: none
+  border-right: none
+  margin-top: 1px
+  &__left
+    padding: torem(65) 15px
+    +w(430)
+      padding: torem(40) 15px
+  &__right
+    +mw(768)
+      padding-top: torem(30)
+      align-self: flex-start
+
+
+// resume, timeline
+// -----------------------------------------------------
+.timeline
+  position: relative
+  padding: torem(25) 0 torem(20)
+  &:first-child
+    padding-top: torem(3)
+  &:before,
   &:after
     content: ''
     position: absolute
-    left: 5px
-    top: 5px
+    display: block
+    background-color: #f5f6f9
+  &:before
+    height: 100%
+    width: 1px
+    left: 15px
+    top: 0
+  &:after
+    width: calc(100% - 15px)
+    height: 1px
+    bottom: 0
+    left: 15px
+
+  &__period
+    display: inline-block
+    position: relative
+    padding: torem(3) torem(10)
+    font-size: torem(12)
+    border: 2px solid $green
+    border-radius: 30px
+    font-weight: 500
+    color: #666
+    background-color: #fff
+    margin-right: torem(10)
+  &__company
+    display: inline-block
+    font-size: torem(12)
+    color: #666
+    opacity: .7
+  &__padd
+    padding-top: torem(10)
+    padding-left: torem(40)
+  &__title
+    font-size: 16px
+    margin: 10px 0 7px
+  &__text
+    color: #666
+    font-size: torem(13)
+
+
+    ul
+      padding-left: torem(20)
+      margin: 0
+      li
+        margin-bottom: torem(10)
+        list-style: disc
+
+
+
+// portfolio
+// -----------------------------------------------------
+.portfolio
+  position: relative
+  display: block
+  padding-bottom: 56.25%
+  margin-bottom: torem(30)
+  &--wrap
+    position: absolute
     width: 100%
     height: 100%
-    +g-two(rgba(23, 162, 184, 0.85), #17A2B8)
-    z-index: 1
-    +tr(400ms)
-  
-  &:hover, &:focus, &:active
-    margin-right: 0
-    &:after
-      top: 0
-      left: 0
-
-.tags
-  margin-top: torem(60)
-  .tag
-    display: inline-block
-    padding: 7px 10px
-    margin-right: 11px
-    margin-bottom: 15px
-    background-color: $white
-    color: $black
-    font-weight: 600
-    font-size: torem(20)
-    cursor: pointer
-    animation-duration: 1s
-    animation-fill-mode: both
+    transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275)
+    background: url(https://lmpixels.com/wp/leven-wp/full-width/wp-content/uploads/sites/3/2019/12/12.jpg)
+    background-size: 100%
+    background-position: center
+    padding: torem(20) torem(25)
+    +br(8px)
     &:hover
-      animation-name: rubberBand
+      background-size: 120%
+  &__name
+    padding: toem(5) toem(10)
+    display: inline-block
+    background-color: rgba(255, 255, 255, .8)
+    color: $black
+    font-size: torem(14)
+    +br(5px)
+  &__star
+    background-color: #fff
+    border-radius: 50%
+    .ic
+      color: $yellow
+      font-size: torem(27)
 
 
-.success
-  color: $green
-  margin-bottom: 15px
-.error
-  color: $danger
-  margin-bottom: 15px
-
-.footer
-  padding: 20px 0
-
-
-
-
-
-
-@keyframes rubberBand 
-  from 
-    transform: scale3d(1, 1, 1)
-  30% 
-    transform: scale3d(1.25, 0.75, 1)
-  40% 
-    transform: scale3d(0.75, 1.25, 1)
-  50% 
-    transform: scale3d(1.15, 0.85, 1)
-  65% 
-    transform: scale3d(0.95, 1.05, 1)
-  75% 
-    transform: scale3d(1.05, 0.95, 1)
-  to 
-    transform: scale3d(1, 1, 1)
-
-.cbalink
+// modal
+// -----------------------------------------------------
+.modal
   display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 20
+  background-color: $pre-white
+  // left: -100%
+  // +tr(400ms ease-in-out)
+  display: none
+  overflow-y: auto
+
+  &.open
+    // display: block
+    // left: 0
+  &__title
+    color: $black
+    font-size: torem(34)
+
+  &__content,
+  &__sidebar
+    margin-bottom: torem(30)
+    background-color: #fefefe
+    border: 2px solid #eee
+    padding: 20px
+    +br(10px)
+
+    hr
+      width: calc(100% + 40px)
+      margin-left: -20px
+
+  &__sub
+    font-weight: 600
 
 
+.chips
+  .chip
+    display: inline-block
+    padding: torem(5) torem(8)
+    font-size: torem(14)
+    background-color: $green
+    border-radius: 5px
+    color: $white
+    margin-bottom: torem(10)
 
-.fancybox-slide 
-  padding: 24px
-
-@media (min-width: 600px) 
-  /* Change color for backdrop */
-  .fancybox-custom-layout 
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
-    .fancybox-bg 
-      background: #fcfaf9
+.form
+  &__control
+    position: relative
   
+  input,
+  textarea
+    display: block
+    width: 100%
+    font-size: torem(16)
+    padding: torem(10) torem(15)
+    border: 1px solid #bfbfbf
+    color: #bfbfbf
+    +placeholder-color(#bfbfbf)
+    +tr(border 400ms ease-in-out)
+    border-radius: 5px
+    margin-bottom: torem(20)
+    &:focus
+      border-color: $black
+  .error
+    display: none
+    position: absolute
+    top: 100%
+    padding: 0 toem(5)
+    font-size: torem(14)
+    margin: 0 0 0 10px
+    color: #fff
+    background: $red
+    z-index: 1
+    &:before
+      content: " "
+      position: absolute
+      left: 5px
+      bottom: 100%
+      width: 0
+      height: 0
+      border-bottom: 10px solid $red
+      border-right: 10px solid transparent
 
-    &.fancybox-is-open 
-      .fancybox-bg 
-        opacity: 1
-  
 
-    /* Move caption area to the right side */
-    .fancybox-caption 
-      background: #f1ecec
-      bottom: 0
-      color: #6c6f73
-      left: auto
-      padding: 30px 20px
-      right: 0
-      top: 0
-      width: 256px
-      text-align: left
-
-      small
-        display: block
-        font-size: torem(12)
-        color: #000
-  
-      h3 
-        color: #444
-        font-size: 21px
-        line-height: 1.3
-        margin-bottom: 5px
-
-      h5
-        margin-bottom: torem(20)
-        font-size: torem(15)
-  
-      a 
-        color: #000
-        font-size: torem(18)
-        letter-spacing: 1px
-
-      ul
-        padding-left: 20px
-        margin-top: torem(20)
-        li
-          margin-bottom: 5px
-  
-
-        /* Remove gradient from caption*/
-      &::before 
-        display: none
-  
-      &__body
-        max-height: none
-
-    /* Adjust content area position */
-    .fancybox-stage 
-      right: 256px
-  
-
-      /* Align buttons at the right side  */
-    .fancybox-toolbar 
-      background: transparent
-      bottom: 0
-      left: auto
-      right: 0
-      top: 0
-  
-
-    /* Remove background from all buttons */
-    .fancybox-button 
-      background: transparent
-  
-
-      /* Navigation arrows */
-    .fancybox-navigation 
-      .fancybox-button 
-        div 
-          padding: 6px
-          background: #fcfaf9
-          border-radius: 50%
-          transition: opacity .2s
-          box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12)
-          opacity: .7
-  
-
-      .fancybox-button:not([disabled]):hover 
-        div 
-          opacity: 1
-  
-
-      .fancybox-button[disabled] 
-        color: #999
-  
-
-      .fancybox-button:not([disabled]) 
-        color: #333
-  
-
-      /* Reposition right arrow */
-      .fancybox-button--arrow_right 
-        right: 253px
-
+.copyright
+  padding: torem(30) 0
+  background-color: #fcfcfc
+  border-top: 2px solid #eeeeee

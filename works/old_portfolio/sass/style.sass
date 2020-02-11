@@ -1,0 +1,438 @@
+// @import 'D:\\_Lessons\\_Main\\main\\sass\\_default.sass'
+
+@import '_default.sass'
+
+body
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100vh
+
+.loader
+  height: 10px
+  background-color: #212936
+  position: absolute
+  // +translate-center
+  &-wrap
+    display: none
+    height: 100vh
+    width: 100%
+
+
+.header
+  background-color: #252B37
+  background-image: url(../img.min/bg-1.jpg)
+  +cover(bottom)
+  // min-height: 100vh
+  height: 100vh
+
+
+.s
+  &-works
+    // +g-two(#212530, #1A3C5E)
+    +g-two(#212530, #1E88E5)
+    padding-bottom: 50px
+    +bs(0 0 75px #222934)
+  &-skills
+    padding: 50px 0
+  &-contact
+    +g-two(#2ACEE1, #6F42C1)
+    padding: torem(100) 0
+    +bs(0 0 80px rgba(0,0,0, .3))
+
+
+iframe
+  width: 100%
+  height: 100vh
+
+
+.title
+  font-size: torem(40)
+  .fill
+    display: inline-block
+    padding: 0 0.3em
+    line-height: 0.99
+    background-color: $white
+    color: #000
+
+.shadow
+  +bs(4px 2px 15px rgba(0, 0, 0, 0.52))
+
+.work
+  padding: 0
+  &__image
+    position: relative
+    overflow: hidden
+    height: 100%
+    img
+      width: 100%
+    .center
+      +translate-center
+    .js-tilt
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+    &.two-image
+      perspective: 200px
+      .img
+        position: absolute
+        left: 0
+        +tr(all 400ms ease)
+        &-1
+          position: relative
+          top: -100%
+          transform-origin: bottom
+          transform: rotateX(90deg)
+        &-2
+          top: 0
+          transform-origin: top
+      &:hover, &.active
+        .img
+          &-1
+            top: 0
+            transform: rotateX(0deg)
+          &-2
+            top: 100%
+            transform: rotateX(-50deg)
+
+    &.scroll-image
+      // .image-wrap
+      //   height: 100%
+      //   left: 0
+      //   top: 0
+      // &:hover, &.active
+      //   .image-wrap
+      //     left: -500%
+
+      background-image: url('../img.min/w_hotel.jpg')
+      +cover
+      +tr(12s linear)
+      &:hover
+        background-position-x: 100%
+
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background-image: url(../img.min/hotel/logo.svg)
+        z-index: 2
+        background-size: 50%
+        background-repeat: no-repeat
+        background-position: center
+        background-color: rgba(57, 75, 91, 0.67)
+
+
+    // &.js-hover-parallax
+    //   .hover-parallax
+    //     position: absolute
+    //     left: 0
+    //     text-outline: 0
+    //     transform: scale(1.2)
+
+
+
+.slogo
+  width: 100%
+  max-width: calc(550px + 20px)
+  padding-right: 20px
+  position: relative
+  display: inline-block
+  transform-style: preserve-3d
+  will-change: transform
+  transform: perspective(300px) rotateX(0deg) rotateY(0deg)
+  
+  #slogo-tria
+    &-1
+      position: absolute
+      top: 15%
+      width: 15%
+      right: 38%
+      -ms-transform: translateZ(100px)
+      transform: translateZ(100px)
+      -moz-transform: translateZ(100px)
+    &-2
+      position: absolute
+      right: 5%
+      top: 30%
+      width: 23%
+      -ms-transform: translateZ(100px)
+      transform: translateZ(100px)
+      -moz-transform: translateZ(100px)
+    &-3
+      position: absolute
+      right: 20%
+      top: 10%
+      width: 10%
+      transform: translateZ(100px)
+
+#skills
+  width: 100%
+  max-width: 800px
+  .tag
+    +tr(400ms cubic-bezier(0,1.37,0,1.36) )
+    opacity: 0
+  &.active
+    .tag
+      opacity: 1
+
+
+@for $i from 1 through 9
+  #skills .tag:nth-child(#{$i})
+    transition-delay: $i * 1.8 * 100 + ms
+
+
+.form
+  background-color: $white
+  padding: 5% 1.5rem 8%
+  input, textarea
+    width: 100%
+    padding: 5px 10px
+    margin-bottom: 20px
+    color: $black
+    border: 2px solid $black
+    +placeholder-color($black)
+
+
+.social
+  li
+    a
+      width: 35px
+      height: 35px
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 10px
+      +br(50%)
+      color: $white
+      +bs(3px 3px 6px rgba(0, 0, 0, 0.47))
+      background: rgba(0,123,255,1)
+      background: -moz-linear-gradient(45deg, rgba(0,123,255,1) 0%, rgba(103,16,242,1) 100%)
+      background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,123,255,1)), color-stop(100%, rgba(103,16,242,1)))
+      background: -webkit-linear-gradient(45deg, rgba(0,123,255,1) 0%, rgba(103,16,242,1) 100%)
+      background: -o-linear-gradient(45deg, rgba(0,123,255,1) 0%, rgba(103,16,242,1) 100%)
+      background: -ms-linear-gradient(45deg, rgba(0,123,255,1) 0%, rgba(103,16,242,1) 100%)
+      background: linear-gradient(45deg, rgba(0,123,255,1) 0%, rgba(103,16,242,1) 100%)
+      &.github
+        +g-two(#F08F35, #DC3545)
+
+      img
+        width: 100%
+  
+      &, img
+        +tr(400ms)
+          
+      &:hover
+        +bs(1px 1px 10px rgba(0, 0, 0, 0.47))
+        img
+          +rotate(360)
+    &:not(:last-child)
+      a
+        margin-right: 10px
+
+
+.btn
+  position: relative
+  padding: toem(8) toem(30)
+  margin-right: 5px
+  margin-bottom: 5px
+  font-size: torem(20)
+  color: $white
+  +tr(margin 400ms)
+  span
+    position: relative
+    z-index: 2
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: 2px solid #000
+    z-index: 2
+  &:after
+    content: ''
+    position: absolute
+    left: 5px
+    top: 5px
+    width: 100%
+    height: 100%
+    +g-two(rgba(23, 162, 184, 0.85), #17A2B8)
+    z-index: 1
+    +tr(400ms)
+  
+  &:hover, &:focus, &:active
+    margin-right: 0
+    &:after
+      top: 0
+      left: 0
+
+.tags
+  margin-top: torem(60)
+  .tag
+    display: inline-block
+    padding: 7px 10px
+    margin-right: 11px
+    margin-bottom: 15px
+    background-color: $white
+    color: $black
+    font-weight: 600
+    font-size: torem(20)
+    cursor: pointer
+    animation-duration: 1s
+    animation-fill-mode: both
+    &:hover
+      animation-name: rubberBand
+
+
+.success
+  color: $green
+  margin-bottom: 15px
+.error
+  color: $danger
+  margin-bottom: 15px
+
+.footer
+  padding: 20px 0
+
+
+
+
+
+
+@keyframes rubberBand 
+  from 
+    transform: scale3d(1, 1, 1)
+  30% 
+    transform: scale3d(1.25, 0.75, 1)
+  40% 
+    transform: scale3d(0.75, 1.25, 1)
+  50% 
+    transform: scale3d(1.15, 0.85, 1)
+  65% 
+    transform: scale3d(0.95, 1.05, 1)
+  75% 
+    transform: scale3d(1.05, 0.95, 1)
+  to 
+    transform: scale3d(1, 1, 1)
+
+.cbalink
+  display: none
+
+
+
+.fancybox-slide 
+  padding: 24px
+
+@media (min-width: 600px) 
+  /* Change color for backdrop */
+  .fancybox-custom-layout 
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+    .fancybox-bg 
+      background: #fcfaf9
+  
+
+    &.fancybox-is-open 
+      .fancybox-bg 
+        opacity: 1
+  
+
+    /* Move caption area to the right side */
+    .fancybox-caption 
+      background: #f1ecec
+      bottom: 0
+      color: #6c6f73
+      left: auto
+      padding: 30px 20px
+      right: 0
+      top: 0
+      width: 256px
+      text-align: left
+
+      small
+        display: block
+        font-size: torem(12)
+        color: #000
+  
+      h3 
+        color: #444
+        font-size: 21px
+        line-height: 1.3
+        margin-bottom: 5px
+
+      h5
+        margin-bottom: torem(20)
+        font-size: torem(15)
+  
+      a 
+        color: #000
+        font-size: torem(18)
+        letter-spacing: 1px
+
+      ul
+        padding-left: 20px
+        margin-top: torem(20)
+        li
+          margin-bottom: 5px
+  
+
+        /* Remove gradient from caption*/
+      &::before 
+        display: none
+  
+      &__body
+        max-height: none
+
+    /* Adjust content area position */
+    .fancybox-stage 
+      right: 256px
+  
+
+      /* Align buttons at the right side  */
+    .fancybox-toolbar 
+      background: transparent
+      bottom: 0
+      left: auto
+      right: 0
+      top: 0
+  
+
+    /* Remove background from all buttons */
+    .fancybox-button 
+      background: transparent
+  
+
+      /* Navigation arrows */
+    .fancybox-navigation 
+      .fancybox-button 
+        div 
+          padding: 6px
+          background: #fcfaf9
+          border-radius: 50%
+          transition: opacity .2s
+          box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12)
+          opacity: .7
+  
+
+      .fancybox-button:not([disabled]):hover 
+        div 
+          opacity: 1
+  
+
+      .fancybox-button[disabled] 
+        color: #999
+  
+
+      .fancybox-button:not([disabled]) 
+        color: #333
+  
+
+      /* Reposition right arrow */
+      .fancybox-button--arrow_right 
+        right: 253px
+

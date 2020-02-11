@@ -1,0 +1,30 @@
+@import '_mixins.sass'
+@import 'vars'
+
+// col    <   576px
+// col-sm >=  576px
+// col-md >=  768px
+// col-lg >=  922px
+// col-xl >= 1140px
+
++w(576)
+	html,
+	body
+		font-size: 11px
+	// .work
+	// 	&__image
+	// 		&.scroll-image
+	// 			.image-wrap
+	// 				img:not(:first-child)
+	// 					display: none
+
++mw(577)
+	// .work
+	// 	&__image
+	// 		&.scroll-image
+	// 			.image-wrap
+	// 				position: absolute
+	// 				+tr(12s linear)
+	// 			&:hover, &.active
+	// 				.image-wrap
+	// 					left: -500%
