@@ -35,13 +35,15 @@ $(document).ready(function () {
   // menu
   // -----------------------------------------------------
   var body = $('body'),
+      html = $('html'),
       hamburger = $('.hamburger'),
       menu = $('.header__menu'),
       header = $('.header'),
       header__row = $('.header__row')
 
   hamburger.click(function () {
-    body.toggleClass('over');
+    html.toggleClass('over');
+    // body.toggleClass('over');
     menu.slideToggle();
     hamburger.toggleClass('active');
   });
@@ -57,8 +59,9 @@ $(document).ready(function () {
       scrollTop: scrollTo
     }, 700);
     
-    if (body.hasClass('over')) {
-      body.removeClass('over');
+    if (html.hasClass('over')) {
+      html.removeClass('over');
+      // body.removeClass('over');
       menu.slideUp();
       hamburger.removeClass('active');
     }
@@ -94,7 +97,7 @@ $(document).ready(function () {
     if (!modal.length) return;
 
     modal.fadeIn().addClass('open')
-    $('html').addClass('over');
+    html.addClass('over');
   }
   $('.portfolio').on('click', function () {
     openModal($(this).attr('href'))
@@ -105,7 +108,7 @@ $(document).ready(function () {
   }
 
   $('.modal .close').on('click', function () {
-    $('html').removeClass('over');
+    html.removeClass('over');
     $('.modal.open').fadeOut().removeClass('open')
   });
 
