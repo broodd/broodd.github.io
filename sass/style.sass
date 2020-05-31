@@ -26,6 +26,7 @@ body
   color: $text
   font-size: torem(16)
   z-index: 15
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.27)
   +tr(400ms ease)
   & > .container
     +w(768)
@@ -136,6 +137,21 @@ body
 
 .vidbg
   +iframe
+
+.iframe
+  &-wrap
+    position: relative
+    display: inline-block
+  &--franko
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    border-radius: 30px
+    width: 100%
+    height: 100%
+    max-width: calc(100% - 50px)
+    max-height: calc(100% - 60px)
 
 .list
   &--flex
