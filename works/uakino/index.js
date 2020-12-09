@@ -6,57 +6,56 @@ const search_btn_clear = document.getElementById('search_btn_clear')
 const search_results = document.getElementById('search_results')
 
 const apiClient = axios.create({
-	baseURL: 'https://uakino-player.herokuapp.com'
+  baseURL: 'https://uakino-player.herokuapp.com'
 })
 
 search_btn_find.addEventListener('click', function () {
-	apiClient
-		.get('films/search', {
-			params: {
-				query: search_input.value
-			}
-		})
-		.then(res => {
-			const films = res.data.films
+  apiClient
+    .get('films/search', {
+      params: {
+        query: search_input.value
+      }
+    })
+    .then(res => {
+      const films = res.data
 
-			let filmsTemplate = `<div>`
-			films.forEach(function (film) {
-				filmsTemplate += `
-          <div><img src="${film.poster}" alt=""><h4 data-url="${film.url}">${
-					film.title
-					}</h4><hr></div>
+      let filmsTemplate = `<div>`
+      films.forEach(function (film) {
+        filmsTemplate += `
+          <div><img src="${film.poster}" alt=""><h4 data-url="${film.url}">${film.title
+          }</h4><hr></div>
         `
-			})
+      })
 
-			filmsTemplate += `</div>`
+      filmsTemplate += `</div>`
 
-			search_results.innerHTML = filmsTemplate
+      search_results.innerHTML = filmsTemplate
 
-			const h4 = document.querySelectorAll("#search_results h4")
-			h4.map = [].map
-			h4.map(el => el.addEventListener('click', function () {
-				const url = el.getAttribute('data-url') || el.dataset.url
+      const h4 = document.querySelectorAll("#search_results h4")
+      h4.map = [].map
+      h4.map(el => el.addEventListener('click', function () {
+        const url = el.getAttribute('data-url') || el.dataset.url
 
-				apiClient
-					.get('films/video', {
-						params: {
-							url: url
-						}
-					}).then((res) => {
-						console.log('--- res.data', res.data.urlVideo);
+        apiClient
+          .get('films/video', {
+            params: {
+              url: url
+            }
+          }).then((res) => {
+            console.log('--- res.data', res.data.urlVideo);
 
-						var player = videojs('my-video');
+            var player = videojs('my-video');
 
-						player.pause();
-						player.src(res.data.urlVideo);
-						// set src track corresponding to new movie //
-						player.load();
-						player.play();
+            player.pause();
+            player.src(res.data.urlVideo);
+            // set src track corresponding to new movie //
+            player.load();
+            player.play();
 
-						search_results.innerHTML = ''
-					})
-			}))
-		})
+            search_results.innerHTML = ''
+          })
+      }))
+    })
 
 })
 
