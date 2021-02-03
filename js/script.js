@@ -110,6 +110,8 @@ $(document).ready(function () {
   $('.modal .close').on('click', function () {
     html.removeClass('over');
     $('.modal.open').fadeOut().removeClass('open')
+
+    history.pushState('', document.title, window.location.href.split('#')[0]);
   });
 
 

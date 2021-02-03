@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?944707');
-  src: url('../font/fontello.eot?944707#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?944707') format('woff2'),
-       url('../font/fontello.woff?944707') format('woff'),
-       url('../font/fontello.ttf?944707') format('truetype'),
-       url('../font/fontello.svg?944707#fontello') format('svg');
+  src: url('../font/fontello.eot?28978212');
+  src: url('../font/fontello.eot?28978212#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?28978212') format('woff2'),
+       url('../font/fontello.woff?28978212') format('woff'),
+       url('../font/fontello.ttf?28978212') format('truetype'),
+       url('../font/fontello.svg?28978212#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?944707#fontello') format('svg');
+    src: url('../font/fontello.svg?28978212#fontello') format('svg');
   }
 }
 */
@@ -24,7 +24,7 @@
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: none;
+  speak: never;
  
   display: inline-block;
   text-decoration: inherit;
@@ -56,13 +56,13 @@
 }
  
 .ic-clock:before { content: '\e800'; } /* '' */
-.ic-star:before { content: '\e801'; } /* '' */
-.ic-heart:before { content: '\e802'; } /* '' */
-.ic-cup:before { content: '\e803'; } /* '' */
-.ic-pencil:before { content: '\e804'; } /* '' */
+.ic-plane:before { content: '\e801'; } /* '' */
+.ic-star:before { content: '\e802'; } /* '' */
+.ic-heart:before { content: '\e803'; } /* '' */
+.ic-cup:before { content: '\e804'; } /* '' */
 .ic-cancel:before { content: '\e805'; } /* '' */
 .ic-link:before { content: '\e806'; } /* '' */
-.ic-brush:before { content: '\e807'; } /* '' */
-.ic-star-fill:before { content: '\e809'; } /* '' */
-.ic-direction:before { content: '\f124'; } /* '' */
-.ic-github:before { content: '\f300'; } /* '' */
+.ic-star-fill:before { content: '\e807'; } /* '' */
+.ic-github:before { content: '\f09b'; } /* '' */
+.ic-telegram:before { content: '\f2c6'; } /* '' */
+.ic-linkedin:before { content: '\f318'; } /* '' */
