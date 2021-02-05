@@ -4,3 +4,5 @@
 *.pdf
 *.fig
 works/movingislands.com/index.html
+
+!SviatoslavResume.pdf
