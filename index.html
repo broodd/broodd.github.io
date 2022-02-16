@@ -1,1095 +1,1284 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#011C3A" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="theme-color" content="#011C3A" />
+    <title>Portfolio | Sviat</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./lamp/img/instagram.svg"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.svg" />
+    <link rel="icon" href="./img/favicon.svg" />
 
-  <title>Portfolio | Svyat</title>
-  <!-- <link rel="shortcut icon" type="image/x-icon" href="./lamp/img/instagram.svg"> -->
-  <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.svg" />
-  <link rel="icon" href="./img/favicon.svg" />
-
-  <link rel="stylesheet" href="./css/bootstrap-grid.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
-  <!-- <link
+    <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,600,800&display=swap"
       rel="stylesheet"
     /> -->
-</head>
+  </head>
 
-<body>
-  <div id="over" style="
-      overflow: hidden;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 25;
-      background-color: #F7F3F1;"></div>
+  <body>
+    <div
+      id="over"
+      style="
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 25;
+        background-color: #f7f3f1;
+      "
+    ></div>
 
-  <section class="section section--header header">
-    <div class="container">
-      <div class="row align-items-center justify-content-between header__row">
-        <div class="col-auto header__logo">
-          <a href="./index.html" class="logo">
-            <div class="logo__symbol">S</div>
-            <div class="logo__name">Sviat <span>.dev</span></div>
-          </a>
-        </div>
-        <div class="col-auto header__hamburger">
-          <div class="hamburger hamburger--spin js-hamburger">
-            <div class="hamburger-box">
-              <div class="hamburger-inner"></div>
+    <section class="section section--header header">
+      <div class="container">
+        <div class="row align-items-center justify-content-between header__row">
+          <div class="col-auto header__logo">
+            <a href="./index.html" class="logo">
+              <div class="logo__symbol">S</div>
+              <div class="logo__name">Sviat <span>.dev</span></div>
+            </a>
+          </div>
+          <div class="col-auto header__hamburger">
+            <div class="hamburger hamburger--spin js-hamburger">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-auto header__menu">
-          <ul class="menu d-flex justify-between align-items-center">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <div class="col-12 col-md-auto header__menu">
+            <ul class="menu d-flex justify-between align-items-center">
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section section--info info" id="about">
-    <div class="container-fluid max">
-      <div class="row align-items-center">
-        <div class="col-sm-12 col-lg-6 col-lg-6 info__left">
-          <div class="vidbg"
-            style='background-image: url("https://lmpixels.com/wp/leven-wp/wp-content/uploads/2019/11/fallback.jpg");'>
-            <<!-- video autoplay="" loop="" playsinline="" muted="">
+    <section class="section section--info info" id="about">
+      <div class="container-fluid max">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-lg-6 col-lg-6 info__left">
+            <div
+              class="vidbg"
+              style="
+                background-image: url('https://lmpixels.com/wp/leven-wp/wp-content/uploads/2019/11/fallback.jpg');
+              "
+            >
+              <<!-- video autoplay="" loop="" playsinline="" muted="">
               <source src="https://lmpixels.com/wp/leven-wp/wp-content/uploads/2019/11/mp4_video.mp4"
                 type="video/mp4" />
               <source src="https://lmpixels.com/wp/leven-wp/wp-content/uploads/2019/11/webm_video.webm"
                 type="video/webm" />
               </video> -->
               <div class="vidbg-overlay"></div>
+            </div>
           </div>
-        </div>
 
-        <div class="col-sm-12 col-lg-6 col-lg-6 info__right">
-          <div class="info__right--wrap">
-            <!-- <span class="c--grey fz-14">JS developer</span> -->
-            <h2 class="title fz-48 mb-20">Sviat</h2>
-            <p class="fz-14 c--grey-pre">
-              Hi there, I Full Stack Developer which started work in developing since 2017.
-            </p>
-            <p class="fz-14 c--grey-pre">
-              Always was interesting into update my level so sometimes created hobby projects for learn new stack
-              technologies,
-              improve in code writing and architecture in general.
-            </p>
-            <p class="fz-14 c--grey-pre">
-              Interested in professional growth and the study of new technologies with cool team & get fun with it.
-            </p>
-            <div class="d-flex">
-              <a href="./SviatoslavResume.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+          <div class="col-sm-12 col-lg-6 col-lg-6 info__right">
+            <div class="info__right--wrap">
+              <!-- <span class="c--grey fz-14">JS developer</span> -->
+              <h2 class="title fz-48 mb-20">Sviat</h2>
+              <p class="fz-14 c--grey-pre">
+                Hi, I'm developer who started interesting in developing in 2017,
+                <br />
+                firstly as Web developer, since 2019 as Back-end Node.js
+                developer.
+              </p>
+              <p class="fz-14 c--grey-pre">
+                Interested in professional growth and the study of new
+                technologies <br />
+                with cool team.
+              </p>
+              <div class="d-flex">
+                <a
+                  href="./SviatoslavResume.pdf"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Download CV</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section section--heading heading" id="resume">
-    <div class="container">
-      <div class="row align-items-center justify-content-between ">
-        <div class="col-sm-auto heading__left">
-          <h1 class="title title--big">Resume</h1>
-        </div>
-        <div class="col-auto heading__right">
-          <p class="c--grey fz-14">
-            <span id="experience-years">3</span> Years of Experience
-          </p>
+    <section class="section section--heading heading" id="resume">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-sm-auto heading__left">
+            <h1 class="title title--big">Resume</h1>
+          </div>
+          <div class="col-auto heading__right">
+            <p class="c--grey fz-14">
+              <span id="experience-years">3</span> years in development
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section section--experience experience m-sec">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="title title--block">Education</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="timeline">
-                <div class="d-flex align-items-center">
-                  <span class="timeline__period">2019 - Infinity</span>
-                  <span class="timeline__company">Self-education</span>
-                </div>
-                <div class="timeline__padd">
-                  <h4 class="timeline__title title">Software Engineering</h4>
-                  <p class="timeline__text">Couple projects, courses, videos, documentations.</p>
-                </div>
-              </div>
-              <div class="timeline">
-                <div class="d-flex align-items-center">
-                  <span class="timeline__period">2019 - 2022</span>
-                  <span class="timeline__company">National Technical University of Oil and Gas</span>
-                </div>
-                <div class="timeline__padd">
-                  <h4 class="timeline__title title">Software Engineering</h4>
-                  <p class="timeline__text">
-                    Bachelor of Science in Software Development
-                    <br />Ivano-Frankivsk National Technical University of Oil
-                    and Gas.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline">
-                <div class="d-flex align-items-center">
-                  <span class="timeline__period">2015 - 2019</span>
-                  <span class="timeline__company">College of Electronic Devices</span>
-                </div>
-                <div class="timeline__padd">
-                  <h4 class="timeline__title title">Software Engineering</h4>
-                  <p class="timeline__text">
-                    College of Electronic Devices <br />Ivano-Frankivsk
-                    National Technical University of Oil and Gas.
-                  </p>
-                </div>
+    <section class="section section--experience experience m-sec">
+      <div class="container">
+        <div class="row justify-content-lg-between">
+          <div class="col-sm-12 col-md-10 col-lg-7 col-xl-6">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title title--block">Experience</h2>
               </div>
             </div>
-          </div>
-        </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="timeline">
+                  <div class="d-flex align-items-center">
+                    <span class="timeline__period">03/2021 - Present</span>
+                    <span class="timeline__company"
+                      ><a href="https://eindesein.com/"
+                        ><u>Ein-des-ein</u></a
+                      ></span
+                    >
+                  </div>
+                  <div class="timeline__padd">
+                    <h4 class="timeline__title title">
+                      Back-end Node.js developer
+                    </h4>
+                    <div class="timeline__text">
+                      <!-- <div class="row">
+                        <div class="col-12 col-md-10 col-lg-12 col-xl-10"> -->
+                      <p>
+                        Had a good experience working on a couple of interesting
+                        projects, and so in a result was created
+                        <a href="https://github.com/broodd/nest-template"
+                          ><strong><u>boilerplate</u></strong></a
+                        >
+                        with auth, users, files, chats, notifications modules.
+                      </p>
 
-        <div class="col-sm-12 col-md-6">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="title title--block">Experience</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="timeline">
-                <div class="d-flex align-items-center">
-                  <span class="timeline__period">08/2020 - 01/2021</span>
-                  <span class="timeline__company">itis.team</span>
+                      <p><strong>Projects:</strong></p>
+
+                      <ul>
+                        <li>
+                          <strong>Social network and analytics platform</strong>
+                        </li>
+                      </ul>
+                      <p>
+                        The project has a functional of social network: feed,
+                        chat, friends and feedbacks. But the main idea is to
+                        analyze statistics of users' social networks, then other
+                        users (company role) can compare these statistics to
+                        promote their products by influencer.
+                      </p>
+                      <p>
+                        So, from an interesting experience, I worked and
+                        researched with Facebook and Instagram API, to implement
+                        auth flow, and collect insights data for graphics.
+                      </p>
+
+                      <ul>
+                        <li>
+                          <strong
+                            >Social network with streaming functionality for
+                            artists</strong
+                          >
+                        </li>
+                      </ul>
+                      <p>
+                        The project has a huge social network functional with
+                        many users roles and admin panel. The base idea is,
+                        artists, set their workdays schedule to make online
+                        public or private events with some price.
+                      </p>
+                      <p>
+                        My non-standard and interesting experience was with
+                        difficult SQL queries to business logic for workdays in
+                        the calendar with repeat slots, FFmpeg lib for crop,
+                        create short videos. Also personal, group chats by
+                        socket.io, notification module by email, and push
+                        notification, which triggered with different events and
+                        time.
+                      </p>
+
+                      <ul>
+                        <li>
+                          <strong>Document sign platform</strong>
+                        </li>
+                      </ul>
+                      <p>
+                        It’s similar to e-sign platforms, where users can upload
+                        documents and select signers. Also, there are chat,
+                        mail, push notifications
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="timeline__padd">
-                  <h4 class="timeline__title title">Back-end Node.js developer</h4>
-                  <div class="timeline__text">
-                    <ul>
-                      <li>Worked with cool team for develop social-event app.</li>
-                      <li>Worked with a team of 10 people, developers, QA, PM and kanban masters.</li>
-                      <li>Organization of process was based on kanban.</li>
-                      <li>Built CI/CD pipelines using GitLab, Docker and custom scripts - helping deploy.</li>
-                      <li>Develop REST API Nest.js server.</li>
-                      <li>Used external services like Firebase and others for implement user authorization, push
-                        notifications & email notifications.</li>
-                      <li>System and database architecture development.</li>
-                    </ul>
+                <div class="timeline">
+                  <div class="d-flex align-items-center">
+                    <span class="timeline__period">08/2020 - 01/2021</span>
+                    <span class="timeline__company">ITTEAM</span>
+                  </div>
+                  <div class="timeline__padd">
+                    <h4 class="timeline__title title">
+                      Back-end Node.js developer
+                    </h4>
+                    <div class="timeline__text">
+                      <ul>
+                        <li>
+                          Worked with cool team for develop social-event app.
+                        </li>
+                        <li>
+                          Worked with a team of 10 people, developers, QA, PM
+                          and kanban masters.
+                        </li>
+                        <li>Organization of process was based on kanban.</li>
+                        <li>
+                          Built CI/CD pipelines using GitLab, Docker and custom
+                          scripts - helping deploy.
+                        </li>
+                        <li>Develop REST API Nest.js server.</li>
+                        <li>
+                          Used external services like Firebase and others for
+                          implement user authorization, push notifications &
+                          email notifications.
+                        </li>
+                        <li>System and database architecture development.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline">
+                  <div class="d-flex align-items-center">
+                    <span class="timeline__period">05/2019 - 02/2020</span>
+                    <span class="timeline__company"
+                      ><a href="https://spdevglobal.com/"
+                        ><u>SPDeveloper</u></a
+                      ></span
+                    >
+                  </div>
+                  <div class="timeline__padd">
+                    <h4 class="timeline__title title">Full stack developer</h4>
+                    <div class="timeline__text">
+                      <ul>
+                        <li>
+                          Implement REST API server with microservices and
+                          payment of site services using Node.js.
+                        </li>
+                        <li>
+                          Designed and constructed web user interfaces and
+                          visual elements using Vue.js.
+                        </li>
+                        <li>
+                          Developed full functionality dynamic and interactive
+                          websites using & frameworks.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline">
+                  <div class="d-flex align-items-center">
+                    <span class="timeline__period">08/2017 - 04/2019</span>
+                    <span class="timeline__company"
+                      ><a href="https://flyfox.in.ua/"><u>FlyFox</u></a></span
+                    >
+                  </div>
+                  <div class="timeline__padd">
+                    <h4 class="timeline__title title">Front-end Developer</h4>
+                    <div class="timeline__text">
+                      <ul>
+                        <li>
+                          Developed full functionality dynamic and interactive
+                          websites using WordPress & frameworks.
+                        </li>
+                        <li>
+                          Fixed bugs from existing websites and performance
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="timeline">
-                <div class="d-flex align-items-center">
-                  <span class="timeline__period">05/2019 - 02/2020</span>
-                  <span class="timeline__company">SPDeveloper</span>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title title--block">Education</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="timeline">
+                  <div class="d-flex align-items-center">
+                    <span class="timeline__period">2022 - 2023</span>
+                    <span class="timeline__company"
+                      >National Technical University of Oil and Gas</span
+                    >
+                  </div>
+                  <div class="timeline__padd">
+                    <h4 class="timeline__title title">Software Engineering</h4>
+                    <p class="timeline__text">
+                      Master of Science in Software Development
+                      <br />Ivano-Frankivsk National Technical University of Oil
+                      and Gas.
+                    </p>
+                  </div>
                 </div>
-                <div class="timeline__padd">
-                  <h4 class="timeline__title title">JS and WordPress developer</h4>
-                  <div class="timeline__text">
-                    <ul>
-                      <li>
-                        Implement REST API server with microservices and payment of site services using Node.js.
-                      </li>
-                      <li>
-                        Designed and constructed web user interfaces and visual elements using Vue.js.
-                      </li>
-                      <li>
-                        Developed full functionality dynamic and interactive websites using WordPress & frameworks.
-                      </li>
-                    </ul>
+                <div class="timeline">
+                  <div class="d-flex align-items-center">
+                    <span class="timeline__period">2019 - 2022</span>
+                    <span class="timeline__company"
+                      >National Technical University of Oil and Gas</span
+                    >
+                  </div>
+                  <div class="timeline__padd">
+                    <h4 class="timeline__title title">Software Engineering</h4>
+                    <p class="timeline__text">
+                      Bachelor of Science in Software Development
+                      <br />Ivano-Frankivsk National Technical University of Oil
+                      and Gas.
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline">
+                  <div class="d-flex align-items-center">
+                    <span class="timeline__period">2015 - 2019</span>
+                    <span class="timeline__company"
+                      >College of Electronic Devices</span
+                    >
+                  </div>
+                  <div class="timeline__padd">
+                    <h4 class="timeline__title title">Software Engineering</h4>
+                    <p class="timeline__text">
+                      College of Electronic Devices <br />Ivano-Frankivsk
+                      National Technical University of Oil and Gas.
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="timeline">
-                <div class="d-flex align-items-center">
-                  <span class="timeline__period">08/2017 - 04/2019</span>
-                  <span class="timeline__company">FlyFox</span>
-                </div>
-                <div class="timeline__padd">
-                  <h4 class="timeline__title title">
-                    Front-end / Wordpress Developer
-                  </h4>
-                  <div class="timeline__text">
-                    <ul>
-                      <li>
-                        Developed full functionality dynamic and interactive websites using WordPress & frameworks.
-                      </li>
-                      <li>
-                        Fixed bugs from existing websites and performance
-                      </li>
-                    </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--skills skills m-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="title title--block">Skills</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="slider slider--skills">
+              <div class="slider__slide">
+                <img src="./img/node.png" alt="Node.js" />
+              </div>
+              <div class="slider__slide">
+                <img src="./img/nest.png" alt="Nest.js" />
+              </div>
+              <div class="slider__slide">
+                <img src="./img/ts.png" alt="TS" />
+              </div>
+              <div class="slider__slide">
+                <img src="./img/typeorm.png" alt="TypeORM" />
+              </div>
+              <div class="slider__slide">
+                <img src="./img/postgres.png" alt="PostgreSQL" />
+              </div>
+              <div class="slider__slide">
+                <img src="./img/firebase.svg" alt="Firebase" />
+              </div>
+              <div class="slider__slide">
+                <img src="./img/react.png" alt="React.js" />
+              </div>
+              <div class="slider__slide">
+                <img src="./img/vue.png" alt="Vue.js" />
+              </div>
+              <div class="slider__slide">
+                <img src="./img/ionic.png" alt="Ionic" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--heading heading" id="portfolio">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-sm-auto heading__left">
+            <h1 class="title title--big">Portfolio</h1>
+            <span>Hobby projects</span>
+          </div>
+          <div class="col-auto heading__right">
+            <p class="c--grey fz-14">40+ projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--portfolio m-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <a class="portfolio" href="#modal-nest-starter">
+              <div
+                class="portfolio--wrap"
+                style="background-image: url(./img/portfolio/nest-starter.jpg)"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="portfolio__name title">
+                    Nest.js starter template
+                  </div>
+                  <div class="portfolio__star">
+                    <i class="ic ic-star-fill"></i>
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--skills skills m-sec">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="title title--block">Skills</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="slider slider--skills">
-            <div class="slider__slide">
-              <img src="./img/node.png" alt="Node.js" />
-            </div>
-            <div class="slider__slide">
-              <img src="./img/nest.png" alt="Nest.js" />
-            </div>
-            <div class="slider__slide">
-              <img src="./img/react.png" alt="Vue.js" />
-            </div>
-            <div class="slider__slide">
-              <img src="./img/vue.png" alt="Vue.js" />
-            </div>
-            <div class="slider__slide">
-              <img src="./img/ts.png" alt="TS" />
-            </div>
-            <div class="slider__slide">
-              <img src="./img/ionic.png" alt="TS" />
-            </div>
-            <div class="slider__slide">
-              <img src="./img/sequelize.png" alt="MongoDB" />
-            </div>
-            <div class="slider__slide">
-              <img src="./img/mongo.png" alt="MongoDB" />
-            </div>
-            <div class="slider__slide">
-              <img src="./img/firebase.svg" alt="FIrebase" />
-            </div>
-            <div class="slider__slide">
-              <img src="./img/mysql.svg" alt="MySQL" />
-            </div>
-            <div class="slider__slide">
-              <img src="./img/nativescript.png" alt="NativeScript" />
-            </div>
-            <div class="slider__slide">
-              <img src="./img/Figma.svg" alt="Figma" />
-            </div>
-            <div class="slider__slide">
-              <img src="./img/liqpay.png" alt="Liqpay" />
-            </div>
-            <div class="slider__slide">
-              <img src="./img/wordpress.png" alt="Wordpress" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--heading heading" id="portfolio">
-    <div class="container">
-      <div class="row align-items-center justify-content-between ">
-        <div class="col-sm-auto heading__left">
-          <h1 class="title title--big">Portfolio</h1>
-          <span>Hobby projects</span>
-        </div>
-        <div class="col-auto heading__right">
-          <p class="c--grey fz-14">40+ projects</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--portfolio m-sec">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <a class="portfolio" href="#modal-nest-starter">
-            <div class="portfolio--wrap" style="background-image: url(./img/portfolio/nest-starter.jpg)">
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="portfolio__name title">Nest.js starter template</div>
-                <div class="portfolio__star">
-                  <i class="ic ic-star-fill"></i>
+          <div class="col-12 col-md-4">
+            <a class="portfolio" href="#modal-franko-shop">
+              <div
+                class="portfolio--wrap"
+                style="background-image: url(./img/portfolio/franko-shop.jpg)"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="portfolio__name title">Franko shop</div>
+                  <div class="portfolio__star">
+                    <i class="ic ic-star-fill"></i>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6">
-          <a class="portfolio" href="#modal-franko-shop">
-            <div class="portfolio--wrap" style="background-image: url(./img/portfolio/franko-shop.jpg)">
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="portfolio__name title">Franko shop</div>
-                <div class="portfolio__star">
-                  <i class="ic ic-star-fill"></i>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="portfolio" href="#modal-chillax">
+              <div
+                class="portfolio--wrap"
+                style="background-image: url(./img/portfolio/chillax.jpg)"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="portfolio__name title">Chillax</div>
+                  <div class="portfolio__star">
+                    <i class="ic ic-star-fill"></i>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6">
-          <a class="portfolio" href="#modal-chillax">
-            <div class="portfolio--wrap" style="background-image: url(./img/portfolio/chillax.jpg)">
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="portfolio__name title">Chillax</div>
-                <div class="portfolio__star">
-                  <i class="ic ic-star-fill"></i>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="portfolio" href="#modal-cube">
+              <div
+                class="portfolio--wrap"
+                style="background-image: url(./img/portfolio/cube.jpg)"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="portfolio__name title">Cube</div>
+                  <div class="portfolio__star">
+                    <i class="ic ic-star-fill"></i>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6">
-          <a class="portfolio" href="#modal-cube">
-            <div class="portfolio--wrap" style="background-image: url(./img/portfolio/cube.jpg)">
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="portfolio__name title">Cube</div>
-                <div class="portfolio__star">
-                  <i class="ic ic-star-fill"></i>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="portfolio" href="#modal-100gram">
+              <div
+                class="portfolio--wrap"
+                style="background-image: url(./img/portfolio/100gram.jpg)"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="portfolio__name title">Pro100 Gram</div>
+                  <div class="portfolio__star">
+                    <i class="ic ic-star-fill"></i>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6">
-          <a class="portfolio" href="#modal-100gram">
-            <div class="portfolio--wrap" style="background-image: url(./img/portfolio/100gram.jpg)">
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="portfolio__name title">Pro100 Gram</div>
-                <div class="portfolio__star">
-                  <i class="ic ic-star-fill"></i>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="portfolio" href="#modal-eventme">
+              <div
+                class="portfolio--wrap"
+                style="background-image: url(./img/portfolio/eventme.jpg)"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="portfolio__name title">EventMe</div>
                 </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6">
-          <a class="portfolio" href="#modal-eventme">
-            <div class="portfolio--wrap" style="background-image: url(./img/portfolio/eventme.jpg)">
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="portfolio__name title">EventMe</div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="portfolio" href="#modal-gameshop">
+              <div
+                class="portfolio--wrap"
+                style="background-image: url(./img/portfolio/gameshop.jpg)"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="portfolio__name title">GameShop</div>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6">
-          <a class="portfolio" href="#modal-gameshop">
-            <div class="portfolio--wrap" style="background-image: url(./img/portfolio/gameshop.jpg)">
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="portfolio__name title">GameShop</div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a class="portfolio" href="#modal-minesweeper">
+              <div
+                class="portfolio--wrap"
+                style="background-image: url(./img/portfolio/minesweeper.jpg)"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="portfolio__name title">Minesweeper</div>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6">
-          <a class="portfolio" href="#modal-minesweeper">
-            <div class="portfolio--wrap" style="background-image: url(./img/portfolio/minesweeper.jpg)">
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="portfolio__name title">Minesweeper</div>
+            </a>
+          </div>
+          <!-- <div class="col-12 col-md-6">
+            <a class="portfolio" href="#modal-wordpress">
+              <div
+                class="portfolio--wrap"
+                style="background-image: url(./img/portfolio/wordpress.jpg)"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="portfolio__name title">WordPress</div>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6">
-          <a class="portfolio" href="#modal-wordpress">
-            <div class="portfolio--wrap" style="background-image: url(./img/portfolio/wordpress.jpg)">
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="portfolio__name title">WordPress</div>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div> -->
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section section--facts facts m-sec">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="title title--block">Fun</h2>
+    <section class="section section--facts facts m-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="title title--block">Fun</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-3">
+            <div class="fact">
+              <div class="fact__icon">
+                <i class="ic ic-cup"></i>
+              </div>
+              <h4 class="fact__title">Coffee Consumed</h4>
+              <div class="fact__value">2,146</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="fact">
+              <div class="fact__icon">
+                <i class="ic ic-clock"></i>
+              </div>
+              <h4 class="fact__title">Working Hours</h4>
+              <div class="fact__value">6 580</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="fact">
+              <div class="fact__icon">
+                <i class="ic ic-heart"></i>
+              </div>
+              <h4 class="fact__title">Hobby projects</h4>
+              <div class="fact__value">11+</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="fact">
+              <div class="fact__icon">
+                <i class="ic ic-star"></i>
+              </div>
+              <h4 class="fact__title">Awards Won</h4>
+              <div class="fact__value">11</div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-6 col-md-3">
-          <div class="fact">
-            <div class="fact__icon">
-              <i class="ic ic-cup"></i>
-            </div>
-            <h4 class="fact__title">Coffee Consumed</h4>
-            <div class="fact__value">2,146</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="fact">
-            <div class="fact__icon">
-              <i class="ic ic-clock"></i>
-            </div>
-            <h4 class="fact__title">Working Hours</h4>
-            <div class="fact__value">6 580</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="fact">
-            <div class="fact__icon">
-              <i class="ic ic-heart"></i>
-            </div>
-            <h4 class="fact__title">Hobby projects</h4>
-            <div class="fact__value">7+</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="fact">
-            <div class="fact__icon">
-              <i class="ic ic-star"></i>
-            </div>
-            <h4 class="fact__title">Awards Won</h4>
-            <div class="fact__value">11</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section section--heading heading" id="contact">
-    <div class="container">
-      <div class="row align-items-center justify-content-between ">
-        <div class="col-sm-auto heading__left">
-          <h1 class="title title--big">Contact</h1>
-          <span>Say anything :)</span>
-        </div>
-        <!-- <div class="col-auto heading__right">
+    <section class="section section--heading heading" id="contact">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-sm-auto heading__left">
+            <h1 class="title title--big">Contact</h1>
+            <span>Say anything :)</span>
+          </div>
+          <!-- <div class="col-auto heading__right">
             <p class="c--grey fz-14">Say anything :)</p>
           </div> -->
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--contact m-sec">
-    <div class="container">
-      <div class="row align-items-center justify-content-center justify-content-md-between">
-        <div class="col-md-6 col-lg-4">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="title title--block">How Can I Help You?</h2>
-            </div>
-            <div class="col-12">
-              <form class="form"
-                action="https:///ecoproduct.if.ua/wp-content/languages/portfolio/telegram-portfolio.php" method="POST">
-                <div class="form__control">
-                  <input id="name" name="name" type="text" placeholder="Name" class="required" />
-                  <div class="error">Name is required.</div>
-                </div>
-                <div class="form__control">
-                  <textarea id="text" name="text" rows="5" placeholder="Message" class="required"></textarea>
-                  <div class="error">Please, leave me a message.</div>
-                </div>
-                <button type="submit" class="btn">Send message</button>
-              </form>
-              <div id="form-message" class="fz-18 c--green mt-20 mb-20"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-3 col-md-2">
-          <!-- <img src="./img/kitty.svg" alt="" /> -->
-        </div>
-        <div class="col-6 col-sm-3 col-lg-4">
-          <img src="./img/avataaars_circle.svg" alt="" />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section section--copyright copyright">
-    <div class="container">
-      <div class="row justify-content-between align-items-center">
-        <div class="col-auto">
-          <ul class="fz-14 c--grey d-flex list list--flex">
-            <li><a href="https://github.com/broodd"><i class="ic ic-flat ic-github"></i></a></li>
-            <li><a href="https://t.me/svia_tt"><i class="ic ic-flat ic-plane"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/svyatddev"><i class="ic ic-flat ic-linkedin"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-auto">
-          <div class="fz-14 c--grey">© 2019 All rights reserved.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--modal modal" id="modal-nest-starter">
-    <div class="heading">
+    <section class="section section--contact m-sec">
       <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col heading__left">
-            <h4 class="title title--big modal__title">Nest.js starter template</h4>
-            <span>2021</span>
-          </div>
-          <div class="col-auto heading__right">
-            <i class="ic ic-cancel ic--flat close"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-20">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="modal__content">
-            <h3>Features</h3>
-            <hr />
-
-            <div class="timeline__text">
-              <ul>
-                <li>Simple & great structure</li>
-                <li>Multi-language database design</li>
-                <li>Auto deploy via GitHub actions</li>
-                <li>Chat (simple socket.io example)</li>
-                <li>Logger (visual page with logs data)</li>
-                <li>Firebase Authentication</li>
-                <li>Swagger Api Documentation</li>
-                <li>Sequelize ORM</li>
-                <li>Docker</li>
-                <li>Cache</li>
-              </ul>
-            </div>
-            <hr />
-
-            <h3>Demo</h3>
-            <hr />
-
-            <div class="ic_text">
-              <i class="ic ic-link"></i>
-              <a href="http://www.broodd.tech/api" target="_blank">Swagger API</a>
-            </div>
-            <div class="ic_text">
-              <i class="ic ic-link"></i>
-              <a href="http://www.broodd.tech/chat" target="_blank">Chat page</a>
-            </div>
-            <div class="ic_text">
-              <i class="ic ic-link"></i>
-              <a href="http://www.broodd.tech/logs" target="_blank">Logger page</a>
-            </div>
-
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="modal__sidebar">
-            <p class="fz-18 modal__sub">Description</p>
-
-            <div class="ic_text">
-              <i class="ic ic-github"></i>
-              <a href="https://github.com/broodd/nest-js-starter" target="_blank">Source code</a>
-            </div>
-
-            <hr />
-
-            <p class="fz-18 modal__sub">Technology</p>
-
-            <div class="chips">
-              <span class="chip">Nest.js</span>
-              <span class="chip">Sequelize</span>
-              <span class="chip">Socket.io</span>
-              <span class="chip">Firebase</span>
-              <span class="chip">Multer</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--modal modal" id="modal-franko-shop">
-    <div class="heading">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col heading__left">
-            <h4 class="title title--big modal__title">Franko shop</h4>
-            <span>2020</span>
-          </div>
-          <div class="col-auto heading__right">
-            <i class="ic ic-cancel ic--flat close"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-20">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="modal__content">
-            <h3>Mobile app of clothes shop </h3>
-            <h5>powered by Reanct & Ionic, Node.js</h5>
-            <hr />
-
-            <br>
-
-            <div class="row align-items-center">
+        <div
+          class="row align-items-center justify-content-center justify-content-md-between"
+        >
+          <div class="col-md-6 col-lg-4">
+            <div class="row">
               <div class="col-12">
-                <h5>Spending time for this project</h5>
+                <h2 class="title title--block">How Can I Help You?</h2>
               </div>
-              <div class="col-md d-flex align-items-center">
-                <span class="mr-10">Client side:</span> <img
-                  src="https://wakatime.com/badge/github/BroodD/Franko.style.svg" alt="">
-              </div>
-              <div class="col-md d-flex align-items-center">
-                <span class="mr-10">Server side:</span> <img
-                  src="https://wakatime.com/badge/github/BroodD/Franko.style-server.svg" alt="">
+              <div class="col-12">
+                <form
+                  class="form"
+                  action="https:///ecoproduct.if.ua/wp-content/languages/portfolio/telegram-portfolio.php"
+                  method="POST"
+                >
+                  <div class="form__control">
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      placeholder="Name"
+                      class="required"
+                    />
+                    <div class="error">Name is required.</div>
+                  </div>
+                  <div class="form__control">
+                    <textarea
+                      id="text"
+                      name="text"
+                      rows="5"
+                      placeholder="Message"
+                      class="required"
+                    ></textarea>
+                    <div class="error">Please, leave me a message.</div>
+                  </div>
+                  <button type="submit" class="btn">Send message</button>
+                </form>
+                <div id="form-message" class="fz-18 c--green mt-20 mb-20"></div>
               </div>
             </div>
-            <hr />
-
-
-            <br>
-            <h5>Home and product page</h5>
-            <hr />
-            <img src="./img/portfolio/franko-shop/home-product.jpg" alt="">
-            <hr />
-
-            <br>
-            <h5>Cart, modal change count of products</h5>
-            <hr />
-            <img src="./img/portfolio/franko-shop/cart.jpg" alt="">
-            <hr />
-
-            <br>
-            <h5>Auth page</h5>
-            <hr />
-            <img src="./img/portfolio/franko-shop/auth.jpg" alt="">
-            <hr />
-
-            <br>
-            <h5>Loved porducts and more info page</h5>
-            <hr />
-            <img src="./img/portfolio/franko-shop/loved-more.jpg" alt="">
-            <hr />
-
-            <br>
-            <h5>Categories and their subcategories</h5>
-            <hr />
-            <img src="./img/portfolio/franko-shop/categories.jpg" alt="">
-            <hr />
-
-
+          </div>
+          <div class="col-6 col-sm-3 col-md-2">
+            <!-- <img src="./img/kitty.svg" alt="" /> -->
+          </div>
+          <div class="col-6 col-sm-3 col-lg-4">
+            <img src="./img/avataaars_circle.svg" alt="" />
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="modal__sidebar">
-            <p class="fz-18 modal__sub">Description</p>
+      </div>
+    </section>
 
-            <div class="ic_text">
-              <i class="ic ic-link"></i>
-              <a href="https://franko-style-shop.now.sh" target="_blank">Link (design mobile only)</a>
+    <section class="section section--copyright copyright">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <ul class="fz-14 c--grey d-flex list list--flex">
+              <li>
+                <a href="https://github.com/broodd"
+                  ><i class="ic ic-flat ic-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://t.me/babun_sloyok"
+                  ><i class="ic ic-flat ic-plane"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/svyatddev"
+                  ><i class="ic ic-flat ic-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-auto">
+            <div class="fz-14 c--grey">© 2019 All rights reserved.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--modal modal" id="modal-nest-starter">
+      <div class="heading">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col heading__left">
+              <h4 class="title title--big modal__title">
+                Nest.js starter template
+              </h4>
+              <span>2021</span>
             </div>
-
-            <hr />
-
-            <p class="fz-18 modal__sub">Technology</p>
-
-            <div class="chips">
-              <span class="chip">React</span>
-              <span class="chip">Ionic</span>
-              <span class="chip">Typescript</span>
-              <span class="chip">Sequelize</span>
-              <span class="chip">Node.js</span>
-              <span class="chip">I18n</span>
+            <div class="col-auto heading__right">
+              <i class="ic ic-cancel ic--flat close"></i>
             </div>
           </div>
-          <div class="modal__sidebar">
-            <h2>Live</h2>
-            <p>But for better experience use native app</p>
-            <hr />
-            <div class="col-12">
+        </div>
+      </div>
+      <div class="container mt-20">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="modal__content">
+              <h3>Features</h3>
+              <hr />
+
+              <div class="timeline__text">
+                <ul>
+                  <li>Simple & great structure</li>
+                  <li>Multi-language database design</li>
+                  <li>Auto deploy via GitHub actions</li>
+                  <li>Chat (simple socket.io example)</li>
+                  <li>Logger (visual page with logs data)</li>
+                  <li>Firebase Authentication</li>
+                  <li>Swagger Api Documentation</li>
+                  <li>Sequelize ORM</li>
+                  <li>Docker</li>
+                  <li>Cache</li>
+                </ul>
+              </div>
+              <hr />
+
+              <h3>Demo</h3>
+              <hr />
+
+              <div class="ic_text">
+                <i class="ic ic-link"></i>
+                <a href="http://www.broodd.tech/api" target="_blank"
+                  >Swagger API</a
+                >
+              </div>
+              <div class="ic_text">
+                <i class="ic ic-link"></i>
+                <a href="http://www.broodd.tech/chat" target="_blank"
+                  >Chat page</a
+                >
+              </div>
+              <div class="ic_text">
+                <i class="ic ic-link"></i>
+                <a href="http://www.broodd.tech/logs" target="_blank"
+                  >Logger page</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="modal__sidebar">
+              <p class="fz-18 modal__sub">Description</p>
+
+              <div class="ic_text">
+                <i class="ic ic-github"></i>
+                <a
+                  href="https://github.com/broodd/nest-js-starter"
+                  target="_blank"
+                  >Source code</a
+                >
+              </div>
+
+              <hr />
+
+              <p class="fz-18 modal__sub">Technology</p>
+
+              <div class="chips">
+                <span class="chip">Nest.js</span>
+                <span class="chip">Sequelize</span>
+                <span class="chip">Socket.io</span>
+                <span class="chip">Firebase</span>
+                <span class="chip">Multer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--modal modal" id="modal-franko-shop">
+      <div class="heading">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col heading__left">
+              <h4 class="title title--big modal__title">Franko shop</h4>
+              <span>2020</span>
+            </div>
+            <div class="col-auto heading__right">
+              <i class="ic ic-cancel ic--flat close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-20">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="modal__content">
+              <h3>Mobile app of clothes shop</h3>
+              <h5>powered by Reanct & Ionic, Node.js</h5>
+              <hr />
+
+              <br />
+
               <div class="row align-items-center">
-                <div class="col-2">
-                  <img src="./img/android.png" alt="">
+                <div class="col-12">
+                  <h5>Spending time for this project</h5>
                 </div>
-                <div class="col ic_text">
-                  <a href="./works/franko-shop/franko-shop.apk">Apk file</a>
+                <div class="col-md d-flex align-items-center">
+                  <span class="mr-10">Client side:</span>
+                  <img
+                    src="https://wakatime.com/badge/github/BroodD/Franko.style.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md d-flex align-items-center">
+                  <span class="mr-10">Server side:</span>
+                  <img
+                    src="https://wakatime.com/badge/github/BroodD/Franko.style-server.svg"
+                    alt=""
+                  />
                 </div>
               </div>
-            </div>
-            <hr />
-            <div class="iframe-wrap">
-              <img src="./img/google-pixel2-xl.png" alt="">
-              <iframe src="https://franko-style-shop.now.sh" frameborder="0" class="iframe iframe--franko"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+              <hr />
 
-  <section class="section section--modal modal" id="modal-chillax">
-    <div class="heading">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col heading__left">
-            <h4 class="title title--big modal__title">Chillax</h4>
-            <span>2019</span>
-          </div>
-          <div class="col-auto heading__right">
-            <i class="ic ic-cancel ic--flat close"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-20">
-      <div class="row">
-        <div class="col-md-8 order-last order-md-first">
-          <div class="modal__content">
-            <h5>Relax mobile application powered by NativeScript</h5>
-            <hr />
-            <img src="./img/portfolio/chillax-main.jpg" alt="" />
-            <hr />
-            <img src="./img/portfolio/chillax-create.jpg" alt="" />
-            <hr />
-            <img src="./img/portfolio/chillax-view.jpg" alt="" />
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="modal__sidebar">
-            <p class="fz-18 modal__sub">Description</p>
+              <br />
+              <h5>Home and product page</h5>
+              <hr />
+              <img src="./img/portfolio/franko-shop/home-product.jpg" alt="" />
+              <hr />
 
-            <div class="ic_text">
-              <i class="ic ic-github"></i>
-              <a href="https://github.com/BroodD/chillax">Github code</a>
-            </div>
+              <br />
+              <h5>Cart, modal change count of products</h5>
+              <hr />
+              <img src="./img/portfolio/franko-shop/cart.jpg" alt="" />
+              <hr />
 
-            <hr />
+              <br />
+              <h5>Auth page</h5>
+              <hr />
+              <img src="./img/portfolio/franko-shop/auth.jpg" alt="" />
+              <hr />
 
-            <p class="fz-18 modal__sub">Technology</p>
+              <br />
+              <h5>Loved porducts and more info page</h5>
+              <hr />
+              <img src="./img/portfolio/franko-shop/loved-more.jpg" alt="" />
+              <hr />
 
-            <div class="chips">
-              <span class="chip">NativeScript</span>
-              <span class="chip">Vue.js</span>
-              <span class="chip">Axios</span>
-              <span class="chip">MediaFilePicker</span>
-              <span class="chip">Audio player</span>
+              <br />
+              <h5>Categories and their subcategories</h5>
+              <hr />
+              <img src="./img/portfolio/franko-shop/categories.jpg" alt="" />
+              <hr />
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
+          <div class="col-lg-4">
+            <div class="modal__sidebar">
+              <p class="fz-18 modal__sub">Description</p>
 
-  <section class="section section--modal modal" id="modal-100gram">
-    <div class="heading">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col heading__left">
-            <h4 class="title title--big modal__title">Pro100Gram</h4>
-          </div>
-          <div class="col-auto heading__right">
-            <i class="ic ic-cancel ic--flat close"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-20">
-      <div class="row">
-        <div class="col-md-8 order-last order-md-first">
-          <div class="modal__content">
-            <h5>
-              Pro100gram - service for create cads with order food & polls
-            </h5>
-            <hr />
-            <img src="./img/portfolio/pro100gram.png" alt="" />
-            <hr />
-            <h6>Create order card</h6>
-            <img src="./img/portfolio/pro100gram-create.png" alt="" />
-            <hr />
-            <h6>Your vote is important</h6>
-            <img src="./img/portfolio/pro100gram-poll.png" alt="" />
-            <hr />
-            <h6>Ease to make order</h6>
-            <img src="./img/portfolio/pro100gram-menu.png" alt="" />
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="modal__sidebar">
-            <p class="fz-18 modal__sub">Description</p>
+              <div class="ic_text">
+                <i class="ic ic-link"></i>
+                <a href="https://franko-style-shop.now.sh" target="_blank"
+                  >Link (design mobile only)</a
+                >
+              </div>
 
-            <div class="ic_text">
-              <i class="ic ic-link"></i>
-              <a href="http://100gram.now.sh/">100gram.now.sh</a>
+              <hr />
+
+              <p class="fz-18 modal__sub">Technology</p>
+
+              <div class="chips">
+                <span class="chip">React</span>
+                <span class="chip">Ionic</span>
+                <span class="chip">Typescript</span>
+                <span class="chip">Sequelize</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">I18n</span>
+              </div>
             </div>
-
-            <div class="ic_text">
-              <i class="ic ic-github"></i>
-              <a href="https://github.com/BroodD/pro100gram">Github code</a>
-            </div>
-
-            <hr />
-
-            <p class="fz-18 modal__sub">Technology</p>
-
-            <div class="chips">
-              <span class="chip">Node.js</span>
-              <span class="chip">Express.js</span>
-              <span class="chip">Vue.js</span>
-              <span class="chip">Vuetify</span>
-              <span class="chip">Socket.io</span>
-              <span class="chip">Slack API</span>
-              <span class="chip">MongoDB</span>
-              <span class="chip">Multer</span>
+            <div class="modal__sidebar">
+              <h2>Live</h2>
+              <p>But for better experience use native app</p>
+              <hr />
+              <div class="col-12">
+                <div class="row align-items-center">
+                  <div class="col-2">
+                    <img src="./img/android.png" alt="" />
+                  </div>
+                  <div class="col ic_text">
+                    <a href="./works/franko-shop/franko-shop.apk">Apk file</a>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="iframe-wrap">
+                <img src="./img/google-pixel2-xl.png" alt="" />
+                <iframe
+                  src="https://franko-style-shop.now.sh"
+                  frameborder="0"
+                  class="iframe iframe--franko"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section section--modal modal" id="modal-cube">
-    <div class="heading">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col heading__left">
-            <h4 class="title title--big modal__title">Cube</h4>
-            <span>2019</span>
-          </div>
-          <div class="col-auto heading__right">
-            <i class="ic ic-cancel ic--flat close"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-20">
-      <div class="row">
-        <div class="col-md-8 order-last order-md-first">
-          <div class="modal__content">
-            <h5>Cube - schedule bot of lessons in University IFTUNG</h5>
-            <hr />
-            <img src="./img/portfolio/cube.gif" alt="" />
-            <hr />
-            <h5>Introduction</h5>
-            <p>
-              Hi, let's follow me to strange world 🌌
-            </p>
-            <p>
-              Cube - your indispensable helper in a world of schedule of
-              lessons in University IFTUNG
-            </p>
-            <hr />
-            <h5>How to start</h5>
-            <p>
-              To start using Cube, simply add his in Telegram and press
-              /start! It's easy, you'll see yourself!
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="modal__sidebar">
-            <p class="fz-18 modal__sub">Description</p>
-
-            <div class="ic_text">
-              <i class="ic ic-link"></i>
-              <a href="https://t.me/CubeEscapeBot">Telegram link</a>
+    <section class="section section--modal modal" id="modal-chillax">
+      <div class="heading">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col heading__left">
+              <h4 class="title title--big modal__title">Chillax</h4>
+              <span>2019</span>
             </div>
-
-            <div class="ic_text">
-              <i class="ic ic-github"></i>
-              <a href="https://github.com/BroodD/cube-schedule-bot">GitHub</a>
-            </div>
-
-            <hr />
-
-            <p class="fz-18 modal__sub">Technology</p>
-
-            <div class="chips">
-              <span class="chip">Telegraf.js</span>
-              <span class="chip">Node.js</span>
-              <span class="chip">Typescript</span>
-              <span class="chip">i18n</span>
-              <span class="chip">Multi language</span>
-              <span class="chip">MongoDB</span>
+            <div class="col-auto heading__right">
+              <i class="ic ic-cancel ic--flat close"></i>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section section--modal modal" id="modal-eventme">
-    <div class="heading">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col heading__left">
-            <h4 class="title title--big modal__title">EventMe</h4>
-          </div>
-          <div class="col-auto heading__right">
-            <i class="ic ic-cancel ic--flat close"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-20">
-      <div class="row">
-        <div class="col-md-8 order-last order-md-first">
-          <div class="modal__content">
-            <h5>EventMe - events around You</h5>
-            <hr />
-            <img src="./img/portfolio/eventme-auth.png" alt="" />
-            <hr />
-            <img src="./img/portfolio/eventme-main.jpg" alt="" />
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="modal__sidebar">
-            <p class="fz-18 modal__sub">Description</p>
-
-            <div class="ic_text">
-              <i class="ic ic-github"></i>
-              <a href="https://github.com/BroodD/EventMe">GitHub</a>
+      <div class="container mt-20">
+        <div class="row">
+          <div class="col-md-8 order-last order-md-first">
+            <div class="modal__content">
+              <h5>Relax mobile application powered by NativeScript</h5>
+              <hr />
+              <img src="./img/portfolio/chillax-main.jpg" alt="" />
+              <hr />
+              <img src="./img/portfolio/chillax-create.jpg" alt="" />
+              <hr />
+              <img src="./img/portfolio/chillax-view.jpg" alt="" />
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="modal__sidebar">
+              <p class="fz-18 modal__sub">Description</p>
 
-            <hr />
+              <div class="ic_text">
+                <i class="ic ic-github"></i>
+                <a href="https://github.com/BroodD/chillax">Github code</a>
+              </div>
 
-            <p class="fz-18 modal__sub">Technology</p>
+              <hr />
 
-            <div class="chips">
-              <span class="chip">Node.js</span>
-              <span class="chip">Vue.js</span>
-              <span class="chip">Vuetify</span>
-              <span class="chip">Axios</span>
-              <span class="chip">MongoDB</span>
-              <span class="chip">Firebase</span>
+              <p class="fz-18 modal__sub">Technology</p>
+
+              <div class="chips">
+                <span class="chip">NativeScript</span>
+                <span class="chip">Vue.js</span>
+                <span class="chip">Axios</span>
+                <span class="chip">MediaFilePicker</span>
+                <span class="chip">Audio player</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section section--modal modal" id="modal-gameshop">
-    <div class="heading">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col heading__left">
-            <h4 class="title title--big modal__title">Game Shop</h4>
-          </div>
-          <div class="col-auto heading__right">
-            <i class="ic ic-cancel ic--flat close"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-20">
-      <div class="row">
-        <div class="col-md-8 order-last order-md-first">
-          <div class="modal__content">
-            <h5>Game shop - list of games</h5>
-            <hr />
-            <img src="./img/portfolio/gameshop-main.jpg" alt="" />
-            <hr />
-            <img src="./img/portfolio/gameshop-pay.jpg" alt="" />
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="modal__sidebar">
-            <p class="fz-18 modal__sub">Description</p>
-
-            <div class="ic_text">
-              <i class="ic ic-link"></i>
-              <a href="http://broodd.zzz.com.ua/works/game-shop/">Site link</a>
+    <section class="section section--modal modal" id="modal-100gram">
+      <div class="heading">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col heading__left">
+              <h4 class="title title--big modal__title">Pro100Gram</h4>
             </div>
-
-            <div class="ic_text">
-              <i class="ic ic-github"></i>
-              <a href="https://github.com/BroodD/game-shop">GitHub</a>
-            </div>
-
-            <hr />
-
-            <p class="fz-18 modal__sub">Technology</p>
-
-            <div class="chips">
-              <span class="chip">PHP</span>
-              <span class="chip">MySQL</span>
-              <span class="chip">HTML/CSS (SASS)</span>
-              <span class="chip">Granim.js</span>
-              <span class="chip">Creative</span>
+            <div class="col-auto heading__right">
+              <i class="ic ic-cancel ic--flat close"></i>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section section--modal modal" id="modal-minesweeper">
-    <div class="heading">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col heading__left">
-            <h4 class="title title--big modal__title">Minesweeper</h4>
-          </div>
-          <div class="col-auto heading__right">
-            <i class="ic ic-cancel ic--flat close"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-20">
-      <div class="row">
-        <div class="col-md-8 order-last order-md-first">
-          <div class="modal__content">
-            <h5>Minesweeper - game of all time</h5>
-            <hr />
-            <p>It`s android application powered by NativeScript</p>
-            <hr />
-            <img src="./img/portfolio/minesweeper-main.jpg" alt="" />
-            <hr />
-            <img src="./img/portfolio/minesweeper-lose4.jpg" alt="" />
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="modal__sidebar">
-            <p class="fz-18 modal__sub">Description</p>
-
-            <div class="ic_text">
-              <i class="ic ic-link"></i>
-              <a href="https://broodd.github.io/works/minesweeper">Play online OR download app</a>
+      <div class="container mt-20">
+        <div class="row">
+          <div class="col-md-8 order-last order-md-first">
+            <div class="modal__content">
+              <h5>
+                Pro100gram - service for create cads with order food & polls
+              </h5>
+              <hr />
+              <img src="./img/portfolio/pro100gram.png" alt="" />
+              <hr />
+              <h6>Create order card</h6>
+              <img src="./img/portfolio/pro100gram-create.png" alt="" />
+              <hr />
+              <h6>Your vote is important</h6>
+              <img src="./img/portfolio/pro100gram-poll.png" alt="" />
+              <hr />
+              <h6>Ease to make order</h6>
+              <img src="./img/portfolio/pro100gram-menu.png" alt="" />
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="modal__sidebar">
+              <p class="fz-18 modal__sub">Description</p>
 
-            <div class="ic_text">
-              <i class="ic ic-github"></i>
-              <a href="https://github.com/BroodD/minesweeper">GitHub</a>
-            </div>
+              <div class="ic_text">
+                <i class="ic ic-link"></i>
+                <a href="http://100gram.now.sh/">100gram.now.sh</a>
+              </div>
 
-            <hr />
+              <div class="ic_text">
+                <i class="ic ic-github"></i>
+                <a href="https://github.com/BroodD/pro100gram">Github code</a>
+              </div>
 
-            <p class="fz-18 modal__sub">Technology</p>
+              <hr />
 
-            <div class="chips">
-              <span class="chip">Vue.js</span>
-              <span class="chip">NativeScript</span>
-              <span class="chip">SASS</span>
+              <p class="fz-18 modal__sub">Technology</p>
+
+              <div class="chips">
+                <span class="chip">Node.js</span>
+                <span class="chip">Express.js</span>
+                <span class="chip">Vue.js</span>
+                <span class="chip">Vuetify</span>
+                <span class="chip">Socket.io</span>
+                <span class="chip">Slack API</span>
+                <span class="chip">MongoDB</span>
+                <span class="chip">Multer</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="./js/jquery-3.3.1.min.js" defer></script>
-  <script src="./js/slick.min.js" defer></script>
-  <script src="./js/script.min.js" defer></script>
-</body>
+    <section class="section section--modal modal" id="modal-cube">
+      <div class="heading">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col heading__left">
+              <h4 class="title title--big modal__title">Cube</h4>
+              <span>2019</span>
+            </div>
+            <div class="col-auto heading__right">
+              <i class="ic ic-cancel ic--flat close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-20">
+        <div class="row">
+          <div class="col-md-8 order-last order-md-first">
+            <div class="modal__content">
+              <h5>Cube - schedule bot of lessons in University IFTUNG</h5>
+              <hr />
+              <img src="./img/portfolio/cube.gif" alt="" />
+              <hr />
+              <h5>Introduction</h5>
+              <p>Hi, let's follow me to strange world 🌌</p>
+              <p>
+                Cube - your indispensable helper in a world of schedule of
+                lessons in University IFTUNG
+              </p>
+              <hr />
+              <h5>How to start</h5>
+              <p>
+                To start using Cube, simply add his in Telegram and press
+                /start! It's easy, you'll see yourself!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="modal__sidebar">
+              <p class="fz-18 modal__sub">Description</p>
 
+              <div class="ic_text">
+                <i class="ic ic-link"></i>
+                <a href="https://t.me/CubeEscapeBot">Telegram link</a>
+              </div>
+
+              <div class="ic_text">
+                <i class="ic ic-github"></i>
+                <a href="https://github.com/BroodD/cube-schedule-bot">GitHub</a>
+              </div>
+
+              <hr />
+
+              <p class="fz-18 modal__sub">Technology</p>
+
+              <div class="chips">
+                <span class="chip">Telegraf.js</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">Typescript</span>
+                <span class="chip">i18n</span>
+                <span class="chip">Multi language</span>
+                <span class="chip">MongoDB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--modal modal" id="modal-eventme">
+      <div class="heading">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col heading__left">
+              <h4 class="title title--big modal__title">EventMe</h4>
+            </div>
+            <div class="col-auto heading__right">
+              <i class="ic ic-cancel ic--flat close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-20">
+        <div class="row">
+          <div class="col-md-8 order-last order-md-first">
+            <div class="modal__content">
+              <h5>EventMe - events around You</h5>
+              <hr />
+              <img src="./img/portfolio/eventme-auth.png" alt="" />
+              <hr />
+              <img src="./img/portfolio/eventme-main.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="modal__sidebar">
+              <p class="fz-18 modal__sub">Description</p>
+
+              <div class="ic_text">
+                <i class="ic ic-github"></i>
+                <a href="https://github.com/BroodD/EventMe">GitHub</a>
+              </div>
+
+              <hr />
+
+              <p class="fz-18 modal__sub">Technology</p>
+
+              <div class="chips">
+                <span class="chip">Node.js</span>
+                <span class="chip">Vue.js</span>
+                <span class="chip">Vuetify</span>
+                <span class="chip">Axios</span>
+                <span class="chip">MongoDB</span>
+                <span class="chip">Firebase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--modal modal" id="modal-gameshop">
+      <div class="heading">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col heading__left">
+              <h4 class="title title--big modal__title">Game Shop</h4>
+            </div>
+            <div class="col-auto heading__right">
+              <i class="ic ic-cancel ic--flat close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-20">
+        <div class="row">
+          <div class="col-md-8 order-last order-md-first">
+            <div class="modal__content">
+              <h5>Game shop - list of games</h5>
+              <hr />
+              <img src="./img/portfolio/gameshop-main.jpg" alt="" />
+              <hr />
+              <img src="./img/portfolio/gameshop-pay.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="modal__sidebar">
+              <p class="fz-18 modal__sub">Description</p>
+
+              <div class="ic_text">
+                <i class="ic ic-link"></i>
+                <a href="http://broodd.zzz.com.ua/works/game-shop/"
+                  >Site link</a
+                >
+              </div>
+
+              <div class="ic_text">
+                <i class="ic ic-github"></i>
+                <a href="https://github.com/BroodD/game-shop">GitHub</a>
+              </div>
+
+              <hr />
+
+              <p class="fz-18 modal__sub">Technology</p>
+
+              <div class="chips">
+                <span class="chip">PHP</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">HTML/CSS (SASS)</span>
+                <span class="chip">Granim.js</span>
+                <span class="chip">Creative</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--modal modal" id="modal-minesweeper">
+      <div class="heading">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col heading__left">
+              <h4 class="title title--big modal__title">Minesweeper</h4>
+            </div>
+            <div class="col-auto heading__right">
+              <i class="ic ic-cancel ic--flat close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-20">
+        <div class="row">
+          <div class="col-md-8 order-last order-md-first">
+            <div class="modal__content">
+              <h5>Minesweeper - game of all time</h5>
+              <hr />
+              <p>It`s android application powered by NativeScript</p>
+              <hr />
+              <img src="./img/portfolio/minesweeper-main.jpg" alt="" />
+              <hr />
+              <img src="./img/portfolio/minesweeper-lose4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="modal__sidebar">
+              <p class="fz-18 modal__sub">Description</p>
+
+              <div class="ic_text">
+                <i class="ic ic-link"></i>
+                <a href="https://broodd.github.io/works/minesweeper"
+                  >Play online OR download app</a
+                >
+              </div>
+
+              <div class="ic_text">
+                <i class="ic ic-github"></i>
+                <a href="https://github.com/BroodD/minesweeper">GitHub</a>
+              </div>
+
+              <hr />
+
+              <p class="fz-18 modal__sub">Technology</p>
+
+              <div class="chips">
+                <span class="chip">Vue.js</span>
+                <span class="chip">NativeScript</span>
+                <span class="chip">SASS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/jquery-3.3.1.min.js" defer></script>
+    <script src="./js/slick.min.js" defer></script>
+    <script src="./js/script.min.js" defer></script>
+  </body>
 </html>
