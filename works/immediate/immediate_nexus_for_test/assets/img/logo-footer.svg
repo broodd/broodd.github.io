@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.2" width="64.82mm" height="12.7mm" viewBox="0 0 6482 1270" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:presentation="http://sun.com/xmlns/staroffice/presentation" xmlns:smil="http://www.w3.org/2001/SMIL20/" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xml:space="preserve">
+ <defs class="ClipPathGroup">
+  <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
+   <rect x="0" y="0" width="6482" height="1270"/>
+  </clipPath>
+  <clipPath id="presentation_clip_path_shrink" clipPathUnits="userSpaceOnUse">
+   <rect x="6" y="1" width="6470" height="1268"/>
+  </clipPath>
+ </defs>
+ <defs>
+  <font id="EmbeddedFont_1" horiz-adv-x="2048">
+   <font-face font-family="Segoe UI Black embedded" units-per-em="2048" font-weight="normal" font-style="normal" ascent="2191" descent="582"/>
+   <missing-glyph horiz-adv-x="2048" d="M 0,0 L 2047,0 2047,2047 0,2047 0,0 Z"/>
+   <glyph unicode="X" horiz-adv-x="1451" d="M 930,0 L 752,393 C 741,418 733,442 730,466 726,489 723,509 721,524 L 717,524 C 713,508 708,487 703,461 698,435 690,410 680,385 L 514,0 0,0 430,715 39,1434 561,1434 700,1055 C 713,1020 724,973 735,915 L 739,915 C 750,980 762,1028 776,1057 L 938,1434 1419,1434 1016,723 1438,0 930,0 Z"/>
+   <glyph unicode="U" horiz-adv-x="1282" d="M 1391,655 C 1391,425 1339,254 1234,143 1129,31 967,-25 748,-25 544,-25 389,31 284,143 178,254 125,422 125,647 L 125,1434 559,1434 559,631 C 559,539 576,468 611,419 645,369 694,344 758,344 823,344 872,367 906,414 939,461 956,530 956,621 L 956,1434 1391,1434 1391,655 Z"/>
+   <glyph unicode="S" horiz-adv-x="1070" d="M 1137,434 C 1137,339 1112,256 1061,185 1010,114 938,62 846,27 754,-8 643,-25 514,-25 364,-25 227,0 102,51 L 102,444 C 162,400 228,365 301,338 374,311 441,297 504,297 551,297 588,306 614,323 640,340 653,364 653,397 653,420 647,441 634,459 621,476 601,493 575,508 548,523 499,544 428,571 197,660 82,803 82,1001 82,1140 135,1251 240,1334 345,1417 487,1458 664,1458 714,1458 760,1456 802,1452 844,1448 882,1443 917,1437 951,1431 999,1420 1061,1403 L 1061,1038 C 940,1104 822,1137 705,1137 657,1137 618,1128 589,1110 560,1092 545,1067 545,1036 545,1006 557,981 581,962 604,942 654,916 729,885 878,825 983,759 1045,688 1106,617 1137,532 1137,434 Z"/>
+   <glyph unicode="N" horiz-adv-x="1398" d="M 1143,0 L 637,692 C 597,747 564,796 539,840 L 535,840 C 539,769 541,690 541,602 L 541,0 141,0 141,1434 549,1434 1034,776 C 1040,767 1047,757 1056,745 1065,733 1073,721 1082,708 1091,695 1099,683 1107,671 1114,659 1120,648 1124,639 L 1128,639 C 1124,668 1122,719 1122,791 L 1122,1434 1522,1434 1522,0 1143,0 Z"/>
+   <glyph unicode="E" horiz-adv-x="943" d="M 141,0 L 141,1434 1034,1434 1034,1096 573,1096 573,887 1006,887 1006,549 573,549 573,338 1067,338 1067,0 141,0 Z"/>
+  </font>
+ </defs>
+ <defs class="TextShapeIndex">
+  <g ooo:slide="id1" ooo:id-list="id3 id4 id5"/>
+ </defs>
+ <defs class="EmbeddedBulletChars">
+  <g id="bullet-char-template-57356" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 580,1141 L 1163,571 580,0 -4,571 580,1141 Z"/>
+  </g>
+  <g id="bullet-char-template-57354" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 8,1128 L 1137,1128 1137,0 8,0 8,1128 Z"/>
+  </g>
+  <g id="bullet-char-template-10146" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 174,0 L 602,739 174,1481 1456,739 174,0 Z M 1358,739 L 309,1346 659,739 1358,739 Z"/>
+  </g>
+  <g id="bullet-char-template-10132" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 2015,739 L 1276,0 717,0 1260,543 174,543 174,936 1260,936 717,1481 1274,1481 2015,739 Z"/>
+  </g>
+  <g id="bullet-char-template-10007" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 0,-2 C -7,14 -16,27 -25,37 L 356,567 C 262,823 215,952 215,954 215,979 228,992 255,992 264,992 276,990 289,987 310,991 331,999 354,1012 L 381,999 492,748 772,1049 836,1024 860,1049 C 881,1039 901,1025 922,1006 886,937 835,863 770,784 769,783 710,716 594,584 L 774,223 C 774,196 753,168 711,139 L 727,119 C 717,90 699,76 672,76 641,76 570,178 457,381 L 164,-76 C 142,-110 111,-127 72,-127 30,-127 9,-110 8,-76 1,-67 -2,-52 -2,-32 -2,-23 -1,-13 0,-2 Z"/>
+  </g>
+  <g id="bullet-char-template-10004" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 285,-33 C 182,-33 111,30 74,156 52,228 41,333 41,471 41,549 55,616 82,672 116,743 169,778 240,778 293,778 328,747 346,684 L 369,508 C 377,444 397,411 428,410 L 1163,1116 C 1174,1127 1196,1133 1229,1133 1271,1133 1292,1118 1292,1087 L 1292,965 C 1292,929 1282,901 1262,881 L 442,47 C 390,-6 338,-33 285,-33 Z"/>
+  </g>
+  <g id="bullet-char-template-9679" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 813,0 C 632,0 489,54 383,161 276,268 223,411 223,592 223,773 276,916 383,1023 489,1130 632,1184 813,1184 992,1184 1136,1130 1245,1023 1353,916 1407,772 1407,592 1407,412 1353,268 1245,161 1136,54 992,0 813,0 Z"/>
+  </g>
+  <g id="bullet-char-template-8226" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 346,457 C 273,457 209,483 155,535 101,586 74,649 74,723 74,796 101,859 155,911 209,963 273,989 346,989 419,989 480,963 531,910 582,859 608,796 608,723 608,648 583,586 532,535 482,483 420,457 346,457 Z"/>
+  </g>
+  <g id="bullet-char-template-8211" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M -4,459 L 1135,459 1135,606 -4,606 -4,459 Z"/>
+  </g>
+  <g id="bullet-char-template-61548" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 173,740 C 173,903 231,1043 346,1159 462,1274 601,1332 765,1332 928,1332 1067,1274 1183,1159 1299,1043 1357,903 1357,740 1357,577 1299,437 1183,322 1067,206 928,148 765,148 601,148 462,206 346,322 231,437 173,577 173,740 Z"/>
+  </g>
+ </defs>
+ <g>
+  <g id="id2" class="Master_Slide">
+   <g id="bg-id2" class="Background"/>
+   <g id="bo-id2" class="BackgroundObjects"/>
+  </g>
+ </g>
+ <g class="SlideGroup">
+  <g>
+   <g id="container-id1">
+    <g id="id1" class="Slide" clip-path="url(#presentation_clip_path)">
+     <g class="Page">
+      <g class="Group">
+       <g class="com.sun.star.drawing.ClosedBezierShape">
+        <g id="id3">
+         <rect class="BoundingBox" stroke="none" fill="none" x="820" y="393" width="3232" height="447"/>
+         <path fill="rgb(66,221,255)" stroke="none" d="M 821,838 L 821,394 935,394 935,838 821,838 Z M 1345,394 L 1458,394 1458,838 1345,838 1345,598 1237,777 1226,777 1118,599 1118,838 1005,838 1005,394 1118,394 1231,583 1345,394 Z M 1869,394 L 1982,394 1982,838 1869,838 1869,598 1761,777 1749,777 1642,599 1642,838 1528,838 1528,394 1642,394 1755,583 1869,394 Z M 2166,731 L 2338,731 2338,838 2052,838 2052,394 2335,394 2335,500 2166,500 2166,561 2319,561 2319,666 2166,666 2166,731 Z M 2392,394 L 2573,394 C 2634,394 2685,415 2727,458 2768,500 2789,553 2789,615 2789,678 2768,731 2727,774 2686,816 2634,838 2573,838 L 2392,838 2392,394 Z M 2509,728 L 2573,728 C 2604,728 2629,718 2649,697 2668,677 2678,649 2678,615 2678,581 2668,554 2649,535 2629,515 2604,504 2573,504 L 2509,504 2509,728 Z M 2842,838 L 2842,394 2955,394 2955,838 2842,838 Z M 3418,838 L 3295,838 3276,773 3129,773 3110,838 2987,838 3134,394 3271,394 3418,838 Z M 3203,526 L 3158,676 3247,676 3203,526 Z M 3723,394 L 3723,504 3613,504 3613,838 3500,838 3500,504 3390,504 3390,394 3723,394 Z M 3878,666 L 3878,731 4050,731 4050,838 3764,838 3764,394 4047,394 4047,500 3878,500 3878,561 4031,561 4031,666 3878,666 Z"/>
+        </g>
+       </g>
+       <g class="com.sun.star.drawing.CustomShape">
+        <g id="id4">
+         <rect class="BoundingBox" stroke="none" fill="none" x="158" y="340" width="584" height="577"/>
+         <g>
+          <defs>
+           <linearGradient id="gradient1" x1="252" y1="287" x2="646" y2="969" gradientUnits="userSpaceOnUse">
+            <stop offset="0" style="stop-color:rgb(70,93,255)"/>
+            <stop offset="1" style="stop-color:rgb(66,221,255)"/>
+           </linearGradient>
+          </defs>
+          <path style="fill:url(#gradient1)" d="M 740,628 L 739,647 738,666 734,684 730,702 725,720 718,738 710,755 701,772 691,788 680,803 668,817 655,831 641,844 626,856 611,867 595,877 578,885 561,893 543,900 525,905 506,909 487,913 469,914 450,915 430,914 412,913 393,909 374,905 356,900 338,893 321,885 304,877 288,867 273,856 258,844 244,831 231,817 219,803 208,788 198,772 189,755 181,738 174,720 169,702 165,684 161,666 160,647 159,628 160,609 161,590 165,572 169,554 174,536 181,518 189,501 198,485 208,468 219,453 231,439 244,425 258,412 273,400 288,389 304,379 321,371 338,363 356,356 374,351 393,347 412,343 430,342 449,341 469,342 487,343 506,347 525,351 543,356 561,363 578,371 595,379 611,389 626,400 641,412 655,425 668,439 680,453 691,468 701,484 710,501 718,518 725,536 730,554 734,572 738,590 739,609 740,628 740,628 Z"/>
+         </g>
+         <path fill="none" stroke="rgb(52,101,164)" d="M 740,628 C 740,678 727,728 701,772 676,815 639,851 595,877 551,902 500,915 450,915 399,915 348,902 304,877 260,851 223,815 198,772 172,728 159,678 159,628 159,578 172,528 198,485 223,441 260,405 304,379 348,354 399,341 449,341 500,341 551,354 595,379 639,405 676,441 701,484 727,528 740,578 740,628 L 740,628 Z"/>
+        </g>
+       </g>
+       <g class="com.sun.star.drawing.Shape3DSceneObject">
+        <g>
+         <rect class="BoundingBox" stroke="none" fill="none" x="266" y="458" width="430" height="379"/>
+         <image x="266" y="458" width="429" height="378" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+        </g>
+       </g>
+       <g class="TextShape">
+        <g id="id5">
+         <rect class="BoundingBox" stroke="none" fill="none" x="3889" y="35" width="3337" height="1107"/>
+         <text class="SVGTextShape"><tspan class="TextParagraph"><tspan class="TextPosition" x="4139" y="837"><tspan font-family="Segoe UI Black" font-size="635px" font-weight="400" fill="rgb(70,93,255)" stroke="none" style="white-space: pre">NEXUS</tspan></tspan></tspan></text>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

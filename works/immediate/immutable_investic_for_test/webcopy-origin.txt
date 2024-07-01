@@ -1,0 +1,376 @@
+Uri: https://immutableinvestic.com/
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\index.htm
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/about-us
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\about-us.html
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/cs/
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\cs\index.htm
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/cs/about-us
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\cs\about-us.html
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/css/cms-navigation-base.css
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\cms-navigation-base.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/cms-navigation-base.css?ver=1.5.5
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\cms-navigation-base-1.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/cms-navigation.css
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\cms-navigation.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/cms-navigation.css?ver=1.5.5
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\cms-navigation-1.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/intlTelInput.css
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\intlTelInput.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/main.min.css
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\main.min.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/main.min.css?ver=3.4.0
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\main.min-1.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/offside.min.css
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\offside.min.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/offside.min.css?ver=2.4.0
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\offside.min-1.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/popup_checkbox.css
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\popup_checkbox.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/rank-math-snippet(1).css
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\rank-math-snippet(1).css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/rank-math-snippet.css
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\rank-math-snippet.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/style(1).min.css
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\style(1).min.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/style(2).min.css
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\style(2).min.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/style.min.css
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\style.min.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/style.min.css?ver=1
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\style.min-3.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/style.min.css?ver=1.1.0
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\style.min-2.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/style.min.css?ver=6.5
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\style.min-1.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/styles.css
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\styles.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/styles.css?ver=4.6.9
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\styles-1.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/widget.css
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\widget.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/css/widget.css?ver=2.0.8
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\css\widget-1.css
+Content Type: text/css
+
+Uri: https://immutableinvestic.com/da/
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\da\index.htm
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/da/about-us
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\da\about-us.html
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/de/
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\de\index.htm
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/de/about-us
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\de\about-us.html
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/es/
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\es\index.htm
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/es/about-us
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\es\about-us.html
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/fi/
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\fi\index.htm
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/fi/about-us
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\fi\about-us.html
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/fr/
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\fr\index.htm
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/fr/about-us
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\fr\about-us.html
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/images/001.jpeg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\001.jpeg
+Content Type: image/jpeg
+
+Uri: https://immutableinvestic.com/images/002-e1706377687363.png
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\002-e1706377687363.png
+Content Type: image/png
+
+Uri: https://immutableinvestic.com/images/003-e1706463396825.png
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\003-e1706463396825.png
+Content Type: image/png
+
+Uri: https://immutableinvestic.com/images/004.png
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\004.png
+Content Type: image/png
+
+Uri: https://immutableinvestic.com/images/006-e1706296623664.png
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\006-e1706296623664.png
+Content Type: image/png
+
+Uri: https://immutableinvestic.com/images/006.jpeg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\006.jpeg
+Content Type: image/jpeg
+
+Uri: https://immutableinvestic.com/images/007.jpeg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\007.jpeg
+Content Type: image/jpeg
+
+Uri: https://immutableinvestic.com/images/008-e1706299209634.png
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\008-e1706299209634.png
+Content Type: image/png
+
+Uri: https://immutableinvestic.com/images/cs.svg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\cs.svg
+Content Type: image/svg+xml
+
+Uri: https://immutableinvestic.com/images/da.svg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\da.svg
+Content Type: image/svg+xml
+
+Uri: https://immutableinvestic.com/images/de.svg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\de.svg
+Content Type: image/svg+xml
+
+Uri: https://immutableinvestic.com/images/en.svg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\en.svg
+Content Type: image/svg+xml
+
+Uri: https://immutableinvestic.com/images/es.svg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\es.svg
+Content Type: image/svg+xml
+
+Uri: https://immutableinvestic.com/images/Favicon-150x150.png
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\Favicon-150x150.png
+Content Type: image/png
+
+Uri: https://immutableinvestic.com/images/Favicon.png
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\Favicon.png
+Content Type: image/png
+
+Uri: https://immutableinvestic.com/images/fi.svg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\fi.svg
+Content Type: image/svg+xml
+
+Uri: https://immutableinvestic.com/images/flags%402x.png
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\flags@2x.png
+Content Type: image/png
+
+Uri: https://immutableinvestic.com/images/flags.png
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\flags.png
+Content Type: image/png
+
+Uri: https://immutableinvestic.com/images/fr.svg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\fr.svg
+Content Type: image/svg+xml
+
+Uri: https://immutableinvestic.com/images/it.svg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\it.svg
+Content Type: image/svg+xml
+
+Uri: https://immutableinvestic.com/images/Logo-dark.png
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\Logo-dark.png
+Content Type: image/png
+
+Uri: https://immutableinvestic.com/images/Logo.png
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\Logo.png
+Content Type: image/png
+
+Uri: https://immutableinvestic.com/images/no.svg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\no.svg
+Content Type: image/svg+xml
+
+Uri: https://immutableinvestic.com/images/pl.svg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\pl.svg
+Content Type: image/svg+xml
+
+Uri: https://immutableinvestic.com/images/pt-br.svg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\pt-br.svg
+Content Type: image/svg+xml
+
+Uri: https://immutableinvestic.com/images/Rating-stars.png
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\Rating-stars.png
+Content Type: image/png
+
+Uri: https://immutableinvestic.com/images/ro.svg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\ro.svg
+Content Type: image/svg+xml
+
+Uri: https://immutableinvestic.com/images/SSL-Secure-Connection-300x134.png
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\SSL-Secure-Connection-300x134.png
+Content Type: image/png
+
+Uri: https://immutableinvestic.com/images/sv.svg
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\images\sv.svg
+Content Type: image/svg+xml
+
+Uri: https://immutableinvestic.com/it/
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\it\index.htm
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/it/about-us
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\it\about-us.html
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/js/intlTelInput.js
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\js\intlTelInput.js
+Content Type: text/javascript
+
+Uri: https://immutableinvestic.com/js/intlTelInput.min.js?ver=2.0.8
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\js\intlTelInput.min.js
+Content Type: text/javascript
+
+Uri: https://immutableinvestic.com/js/jquery-3.5.1.min.js
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\js\jquery-3.5.1.min.js
+Content Type: text/javascript
+
+Uri: https://immutableinvestic.com/js/language-cookie.js
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\js\language-cookie.js
+Content Type: text/javascript
+
+Uri: https://immutableinvestic.com/js/language-cookie.js?ver=4.6.9
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\js\language-cookie-1.js
+Content Type: text/javascript
+
+Uri: https://immutableinvestic.com/js/menu.min.js
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\js\menu.min.js
+Content Type: text/javascript
+
+Uri: https://immutableinvestic.com/js/menu.min.js?ver=3.4.0
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\js\menu.min-1.js
+Content Type: text/javascript
+
+Uri: https://immutableinvestic.com/js/phone.js
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\js\phone.js
+Content Type: text/javascript
+
+Uri: https://immutableinvestic.com/js/RMFA-JS.min.js
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\js\RMFA-JS.min.js
+Content Type: text/javascript
+
+Uri: https://immutableinvestic.com/js/RMFA-JS.min.js?ver=1.1.0
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\js\RMFA-JS.min-1.js
+Content Type: text/javascript
+
+Uri: https://immutableinvestic.com/js/smooth-scroll.min.js
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\js\smooth-scroll.min.js
+Content Type: text/javascript
+
+Uri: https://immutableinvestic.com/js/smooth-scroll.min.js?ver=2.4.0
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\js\smooth-scroll.min-1.js
+Content Type: text/javascript
+
+Uri: https://immutableinvestic.com/js/utils.min.js?ver=2.0.8
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\js\utils.min.js
+Content Type: text/javascript
+
+Uri: https://immutableinvestic.com/js/valid.js
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\js\valid.js
+Content Type: text/javascript
+
+Uri: https://immutableinvestic.com/no/
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\no\index.htm
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/no/about-us
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\no\about-us.html
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/pl/
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\pl\index.htm
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/pl/about-us
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\pl\about-us.html
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/privacy.html
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\privacy.html
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/pt-br/
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\pt-br\index.htm
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/pt-br/about-us
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\pt-br\about-us.html
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/ro/
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\ro\index.htm
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/ro/about-us
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\ro\about-us.html
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/sv/
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\sv\index.htm
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/sv/about-us
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\sv\about-us.html
+Content Type: text/html
+
+Uri: https://immutableinvestic.com/terms.html
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\terms.html
+Content Type: text/html
+
+Uri: https://www.googletagmanager.com/gtag/js?id=G-XHJNJCLBDN
+File Name: C:\Downloaded Web Sites\immutableinvestic.com\gtag\js
+Content Type: application/javascript
+

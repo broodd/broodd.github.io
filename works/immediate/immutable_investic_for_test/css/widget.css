@@ -1,0 +1,490 @@
+.form-widget .form-header {
+  text-align: center;
+  padding: 30px 20px 40px;
+}
+
+.form-widget .form-header h3 {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.form-widget form {
+  position: relative;
+}
+
+.form-widget form .iti__selected-dial-code {
+  font-size: 11px;
+}
+
+.form-widget form .form-group {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.form-widget form .form-group input,
+.form-widget form .form-group textarea {
+  color: black;
+  width: 100%;
+  background: white;
+  background-color: #ffffff;
+  padding: 14px 16px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 12px -3px rgb(0 0 0 / 25%);
+  border: 1px solid #818a91;
+  font-family: var(--e-global-typography-text-font-family), Sans-serif;
+  font-weight: var(--e-global-typography-text-font-weight);
+  transition: all 0.2s linear;
+  box-sizing: border-box;
+}
+
+.form-widget form .form-group textarea {
+  resize: vertical;
+  overflow: auto;
+}
+
+.form-widget form .form-group input:focus ~ label,
+.form-widget form .form-group textarea:focus ~ label {
+  opacity: 1;
+  top: -8px;
+  left: 10px;
+  transition: top 0.5s;
+  z-index: 3;
+}
+
+.form-widget form .form-group label {
+  color: black;
+  background-color: white;
+  position: absolute;
+  left: 10px;
+  font-size: 10px;
+  top: 17px;
+  padding: 2px;
+  z-index: -3;
+  opacity: 0;
+}
+
+.form-widget form .form-group.success:after {
+  content: ' ';
+  background: url(/wp-content/plugins/fxbot-registration-form/assets/images/check.png)
+    center center/22px no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 22px;
+  width: 22px;
+  padding-right: 40px;
+  z-index: 2;
+}
+
+@media all and (-ms-high-contrast: none) {
+  .form-widget form .form-group.success:after {
+    background: url(/wp-content/plugins/fxbot-registration-form/assets/images/check.png)
+      center center/50px no-repeat;
+  }
+  .form-widget form .form-group.success:after *::-ms-backdrop {
+    background: url(/wp-content/plugins/fxbot-registration-form/assets/images/check.png)
+      center center/50px no-repeat;
+  }
+}
+
+.form-widget form .form-group.success input,
+.form-widget form .form-group.success textarea {
+  border-color: green;
+  outline-color: green;
+}
+
+.form-widget form .form-group .error-message {
+  display: none;
+  color: red;
+  position: relative;
+  font-weight: bold;
+  bottom: -5px;
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.form-widget form .form-group.error .error-message {
+  display: block;
+}
+
+.form-widget form .form-group.error input,
+.form-widget form .form-group.error textarea {
+  border-color: red !important;
+  outline-color: red !important;
+}
+
+.form-widget form .form-group.error input .form-group__emailValid-info,
+.form-widget form .form-group.error textarea .form-group__emailValid-info {
+  margin-top: 15px;
+}
+
+.form-widget form .form-group.info:after {
+  background: url(/wp-content/plugins/fxbot-registration-form/assets/images/check-info.png)
+    center center/22px no-repeat;
+  top: 10px;
+  bottom: inherit;
+}
+
+.form-widget form .form-group.info input,
+.form-widget form .form-group.info textarea {
+  border-color: #ef6c00 !important;
+  outline: #ef6c00 !important;
+}
+
+.form-widget form .form-group__emailValid-info {
+  display: none;
+  font-size: 11px;
+  margin: 3px 0 0;
+}
+
+.form-widget form .form-group__emailValid-info .form-group__emailValid-message {
+  color: #ef6c00;
+}
+
+.form-widget form .form-group__emailValid-info .form-group__emailValid-btn {
+  color: #ef6c00;
+  cursor: pointer;
+  text-decoration: underline;
+  margin: 0 5px;
+}
+
+.form-widget form .form-group__emailValid-info .form-group__emailValid-info {
+  margin-top: 15px;
+}
+
+.form-widget form .form-group.info input,
+.form-widget form .form-group.info textarea {
+  border-color: #ef6c00;
+  outline: #ef6c00;
+}
+
+.form-widget form .form-group__emailValid-info {
+  display: none;
+  font-size: 11px;
+  margin: 3px 0 0;
+}
+
+.form-widget form .form-group .iti {
+  color: #000;
+  width: 100%;
+}
+
+.form-widget form button {
+  font-family: 'Roboto', Sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #240dc8;
+  text-shadow: 0px 0px 5px rgb(0 0 0 / 52%);
+  fill: #ffffff;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  white-space: inherit;
+}
+
+.form-widget form button:disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
+.form-widget form button:hover,
+.form-widget form button:focus {
+  background-color: #054ce7;
+  color: #ffffff;
+  outline: none;
+}
+
+.form-widget form .wrapper__rar-no,
+.form-widget form .wrapper__error {
+  z-index: 3;
+  transform: scale(1, 1);
+  background-color: #fff;
+  opacity: 0.85;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  font-size: 35px;
+  line-height: 40px;
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form-widget form .wrapper__rar-no {
+  background-color: white;
+  opacity: 1;
+}
+
+.form-widget form .wrapper__rar-no .success {
+  padding: 20px 40px;
+}
+
+.form-widget form .wrapper__rar-no .success p {
+  line-height: 1.4;
+  font-size: 15px;
+  text-align: center;
+  color: black;
+}
+
+.form-widget form .wrapper__rar-no .success p.reg_title {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.form-widget form .wrapper__rar-no .success img {
+  margin: 10px 0 15px;
+  max-width: 100px;
+  width: 100%;
+}
+
+.form-widget form .wrapper__error {
+  color: red;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form-widget.form-widget_white form .form-group input,
+.form-widget.form-widget_white form .form-group textarea {
+  border: none !important;
+}
+
+.form-widget.form-widget_white form button {
+  background-color: var(--e-global-color-secondary);
+  text-shadow: none;
+}
+
+.form-widget.form-widget_white form button:hover {
+  background-color: #054ce7;
+}
+
+.form-widget .reCAPTCHAContent {
+  color: #4b4f58;
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+}
+
+.form-widget.form-widget_white .iti__flag-container {
+  padding: 0;
+}
+
+@keyframes bottom-top {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes change {
+  100%,
+  100% {
+    transform: translate(0, 0);
+  }
+  84%,
+  85.8% {
+    transform: translate(0, -14.2%);
+  }
+  70%,
+  71.6% {
+    transform: translate(0, -28.4%);
+  }
+  55%,
+  57.3% {
+    transform: translate(0, -42.6%);
+  }
+  42%,
+  43.2% {
+    transform: translate(0, -56.8%);
+  }
+  28%,
+  29% {
+    transform: translate(0, -71%);
+  }
+  14%,
+  15% {
+    transform: translate(0, -85.2%);
+  }
+  0%,
+  0.6% {
+    transform: translate(0, -99.4%);
+  }
+}
+
+@-webkit-keyframes change {
+  100%,
+  100% {
+    transform: translate(0, 0);
+  }
+  84%,
+  85.8% {
+    transform: translate(0, -14.2%);
+  }
+  70%,
+  71.6% {
+    transform: translate(0, -28.4%);
+  }
+  55%,
+  57.3% {
+    transform: translate(0, -42.6%);
+  }
+  42%,
+  43.2% {
+    transform: translate(0, -56.8%);
+  }
+  28%,
+  29% {
+    transform: translate(0, -71%);
+  }
+  14%,
+  15% {
+    transform: translate(0, -85.2%);
+  }
+  0%,
+  0.6% {
+    transform: translate(0, -99.4%);
+  }
+}
+
+/* form preloader - Begin */
+
+.submit-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 10000;
+  padding: 10px;
+  text-align: center;
+}
+
+.submit-overlay .lds-spinner {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.submit-overlay .lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 0.8s linear infinite;
+}
+
+.submit-overlay .lds-spinner div:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #fff;
+}
+
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -0.7s;
+}
+
+.lds-spinner div:nth-child(2) {
+  transform: rotate(45deg);
+  animation-delay: -0.6s;
+}
+
+.lds-spinner div:nth-child(3) {
+  transform: rotate(90deg);
+  animation-delay: -0.5s;
+}
+
+.lds-spinner div:nth-child(4) {
+  transform: rotate(135deg);
+  animation-delay: -0.4s;
+}
+
+.lds-spinner div:nth-child(5) {
+  transform: rotate(180deg);
+  animation-delay: -0.3s;
+}
+
+.lds-spinner div:nth-child(6) {
+  transform: rotate(225deg);
+  animation-delay: -0.2s;
+}
+
+.lds-spinner div:nth-child(7) {
+  transform: rotate(270deg);
+  animation-delay: -0.1s;
+}
+
+.lds-spinner div:nth-child(8) {
+  transform: rotate(315deg);
+  animation-delay: 0s;
+}
+
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* form preloader - END */
+
+.form-widget.continue-registration .btn-back {
+  display: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  background-image: url(/wp-content/plugins/fxbot-registration-form/assets/images/btn-back-black.png);
+  background-size: 32px 32px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.form-widget.continue-registration .btn-back.btn-back-white {
+  background-image: url(/wp-content/plugins/fxbot-registration-form/assets/images/btn-back-white.png);
+}
+
+.form-widget.continue-registration .resubmit {
+  margin-bottom: 20px;
+}
+
+.form-widget.continue-registration .resubmit-text {
+  cursor: pointer;
+  color: #240dc8;
+}

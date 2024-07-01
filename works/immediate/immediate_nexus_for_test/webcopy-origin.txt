@@ -1,0 +1,288 @@
+Uri: https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\npm\intl-tel-input@18.2.1\build\css\intlTelInput.css
+Content Type: text/css
+
+Uri: https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/img/flags.png?1
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\npm\intl-tel-input@18.2.1\build\img\flags.png
+Content Type: image/png
+
+Uri: https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/img/flags@2x.png?1
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\npm\intl-tel-input@18.2.1\build\img\flags@2x.png
+Content Type: image/png
+
+Uri: https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\npm\intl-tel-input@18.2.1\build\js\intlTelInput.min.js
+Content Type: application/javascript
+
+Uri: https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7V1s.ttf
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\s\poppins\v21\pxiByp8kv8JHgFVrLCz7V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLEj6V1s.ttf
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\s\poppins\v21\pxiByp8kv8JHgFVrLEj6V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLGT9V1s.ttf
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\s\poppins\v21\pxiByp8kv8JHgFVrLGT9V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrFJA.ttf
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\s\poppins\v21\pxiEyp8kv8JHgFVrFJA.ttf
+Content Type: font/ttf
+
+Uri: https://immediate-nexus.com/
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\index-1.htm
+Content Type: text/html
+
+Uri: https://immediate-nexus.com/?utm_medium=company_profile&utm_source=trustpilot&utm_campaign=logo_click
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\index.htm
+Content Type: text/html
+
+Uri: https://immediate-nexus.com/about/
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\about\index.htm
+Content Type: text/html
+
+Uri: https://immediate-nexus.com/assets/css/styles.min.css
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\css\styles.min.css
+Content Type: text/css
+
+Uri: https://immediate-nexus.com/assets/img/arrow.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\arrow.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/bg.webp
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\bg.webp
+Content Type: image/webp
+
+Uri: https://immediate-nexus.com/assets/img/direction-down.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\direction-down.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/favicon-32x32.png
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\favicon-32x32.png
+Content Type: image/png
+
+Uri: https://immediate-nexus.com/assets/img/form/check-icon.png
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\form\check-icon.png
+Content Type: image/png
+
+Uri: https://immediate-nexus.com/assets/img/icon-1.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-1.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-10.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-10.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-11.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-11.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-12.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-12.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-13.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-13.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-14.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-14.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-15.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-15.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-16.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-16.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-17.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-17.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-18.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-18.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-2.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-2.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-3.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-3.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-4.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-4.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-5.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-5.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-6.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-6.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-7.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-7.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-8.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-8.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-9.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-9.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-close.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-close.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-ok.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-ok.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/icon-open.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\icon-open.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/img-1.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\img-1.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/img-2.webp
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\img-2.webp
+Content Type: image/webp
+
+Uri: https://immediate-nexus.com/assets/img/img-3.webp
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\img-3.webp
+Content Type: image/webp
+
+Uri: https://immediate-nexus.com/assets/img/img-4.webp
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\img-4.webp
+Content Type: image/webp
+
+Uri: https://immediate-nexus.com/assets/img/img-5.webp
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\img-5.webp
+Content Type: image/webp
+
+Uri: https://immediate-nexus.com/assets/img/img-6.webp
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\img-6.webp
+Content Type: image/webp
+
+Uri: https://immediate-nexus.com/assets/img/img-7.webp
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\img-7.webp
+Content Type: image/webp
+
+Uri: https://immediate-nexus.com/assets/img/img-8.webp
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\img-8.webp
+Content Type: image/webp
+
+Uri: https://immediate-nexus.com/assets/img/img-9.webp
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\img-9.webp
+Content Type: image/webp
+
+Uri: https://immediate-nexus.com/assets/img/loader.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\loader.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/logo-footer.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\logo-footer.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/logo-header.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\logo-header.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/pic-mob.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\pic-mob.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/img/pic.svg
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\img\pic.svg
+Content Type: image/svg+xml
+
+Uri: https://immediate-nexus.com/assets/js/main.js
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\assets\js\main.js
+Content Type: application/javascript
+
+Uri: https://immediate-nexus.com/cdn-cgi/images/browser-bar.png?1376755637
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\cdn-cgi\images\browser-bar.png
+Content Type: image/png
+
+Uri: https://immediate-nexus.com/cdn-cgi/images/cf-icon-browser.png
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\cdn-cgi\images\cf-icon-browser.png
+Content Type: image/png
+
+Uri: https://immediate-nexus.com/cdn-cgi/images/cf-icon-cloud.png
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\cdn-cgi\images\cf-icon-cloud.png
+Content Type: image/png
+
+Uri: https://immediate-nexus.com/cdn-cgi/images/cf-icon-error.png
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\cdn-cgi\images\cf-icon-error.png
+Content Type: image/png
+
+Uri: https://immediate-nexus.com/cdn-cgi/images/cf-icon-horizontal-arrow.png
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\cdn-cgi\images\cf-icon-horizontal-arrow.png
+Content Type: image/png
+
+Uri: https://immediate-nexus.com/cdn-cgi/images/cf-icon-ok.png
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\cdn-cgi\images\cf-icon-ok.png
+Content Type: image/png
+
+Uri: https://immediate-nexus.com/cdn-cgi/images/cf-icon-server.png
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\cdn-cgi\images\cf-icon-server.png
+Content Type: image/png
+
+Uri: https://immediate-nexus.com/cdn-cgi/images/cf-no-screenshot-error.png
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\cdn-cgi\images\cf-no-screenshot-error.png
+Content Type: image/png
+
+Uri: https://immediate-nexus.com/cdn-cgi/images/cf-no-screenshot-warn.png
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\cdn-cgi\images\cf-no-screenshot-warn.png
+Content Type: image/png
+
+Uri: https://immediate-nexus.com/cdn-cgi/images/icon-exclamation.png?1376755637
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\cdn-cgi\images\icon-exclamation.png
+Content Type: image/png
+
+Uri: https://immediate-nexus.com/cdn-cgi/l/email-protection
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\cdn-cgi\l\email-protection.html
+Content Type: text/html
+
+Uri: https://immediate-nexus.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min.js
+Content Type: application/javascript
+
+Uri: https://immediate-nexus.com/cdn-cgi/styles/cf.errors.css
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\cdn-cgi\styles\cf.errors.css
+Content Type: text/css
+
+Uri: https://immediate-nexus.com/contact/
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\contact\index.htm
+Content Type: text/html
+
+Uri: https://immediate-nexus.com/login/
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\login\index.htm
+Content Type: text/html
+
+Uri: https://immediate-nexus.com/privacy-policy/
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\privacy-policy\index.htm
+Content Type: text/html
+
+Uri: https://immediate-nexus.com/terms/
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\terms\index.htm
+Content Type: text/html
+
+Uri: https://www.googletagmanager.com/gtag/js?id=G-2LCS7MYS95
+File Name: C:\Downloaded Web Sites\immediate-nexus.com\gtag\js
+Content Type: application/javascript
+

@@ -1,0 +1,134 @@
+.popup_section {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #3b3762eb;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+  }
+  .popup_section .main-form-wraper{
+  position: relative;
+  }
+  .popup_section .close {
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  .close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+  }
+  .popup_section .privacy-checkbox{
+  margin-top: 10px;
+  }
+  .popup_section .privacy-checkbox p{
+  margin-bottom: 0;
+  }
+  .popup_section .intl-tel-input.allow-dropdown input{
+  padding-left: 90px !important;
+  }
+  .justify-pop-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .intl-tel-input .country-list .country-name{
+    color: grey;
+  }
+  .intl-tel-input.separate-dial-code .selected-dial-code{
+    color: #9d9d9d;
+  }
+  .flag-container .selected-flag{
+    height: 100%;
+  }
+  label.error{
+    color: red !important;
+      font-size: 13px;
+  }
+  .checkbox-svg{
+    display: flex !important;
+  }
+  .checked-svg{
+    position: relative !important;
+  }
+  .checkbox-svg {
+      margin: 0 0 20px;
+      display: flex;
+      align-items: flex-start;
+      column-gap: 12px;
+  }
+  
+  .checkbox-svg a {
+      /*color:#fff*/
+  }
+  
+  .checkbox-svg label.checked-svg {
+      cursor: pointer;
+      position: relative;
+      margin: 0;
+      width: 25px;
+      height: 25px;
+      -webkit-tap-highlight-color: transparent;
+      transform: translate3d(0, 0, 0);
+      min-height: auto;
+      padding-left: initial
+  }
+  
+  .checked-svg svg {
+      background-color: #FFFCF3;
+      border: 2px solid #000000;
+      border-radius: 2px;
+      position: relative;
+      z-index: 1;
+      fill: none;
+      transform: translate3d(0, 0, 0);
+      transition: transform .2s ease, stroke-linecap .2s ease, stroke-linejoin .2s ease
+  }
+  
+  .checked-svg svg path {
+      stroke-dasharray: 60;
+      stroke-dashoffset: 0
+  }
+  
+  .checked-svg svg polyline {
+      stroke-dasharray: 22;
+      stroke-dashoffset: 66
+  }
+  
+  .checked-svg:hover:before {
+      opacity: 1
+  }
+  
+  .checked-svg:hover svg {
+      stroke: #000000
+  }
+  
+  input[id*="cbx"]:checked+.checked-svg svg {
+      stroke: #000000
+  }
+  
+  input[id*="cbx"]:checked+.checked-svg svg path {
+      stroke-dashoffset: 60;
+      transition: all .3s linear
+  }
+  
+  input[id*="cbx"]:checked+.checked-svg svg polyline {
+      stroke-dashoffset: 42;
+      transition: all .2s linear;
+      transition-delay: .15s
+  }
+  
+  .popup_section .checkbox-svg {
+    align-items: flex-end;
+  }

@@ -1,0 +1,748 @@
+﻿<!doctype html>
+<html lang="en-US">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
+            <style>
+                .wpaicg_toc h2{
+                    margin-bottom: 20px;
+                }
+                .wpaicg_toc{
+                    list-style: none;
+                    margin: 0 0 30px 0!important;
+                    padding: 0!important;
+                }
+                .wpaicg_toc li{}
+                .wpaicg_toc li ul{
+                    list-style: decimal;
+                }
+                .wpaicg_toc a{}
+                .wpaicg_chat_widget{
+                    position: fixed;
+                }
+                .wpaicg_widget_left{
+                    bottom: 15px;
+                    left: 15px;
+                }
+                .wpaicg_widget_right{
+                    bottom: 15px;
+                    right: 15px;
+                }
+                .wpaicg_widget_right .wpaicg_chat_widget_content{
+                    right: 0;
+                }
+                .wpaicg_widget_left .wpaicg_chat_widget_content{
+                    left: 0;
+                }
+                .wpaicg_chat_widget_content .wpaicg-chatbox{
+                    height: 100%;
+                    background-color: #222222;
+                    border-radius: 5px;
+                }
+                .wpaicg_widget_open .wpaicg_chat_widget_content{
+                    height: 400px;
+                }
+                .wpaicg_chat_widget_content{
+                    position: absolute;
+                    bottom: calc(100% + 15px);
+                    width: 350px;
+                    overflow: hidden;
+                }
+                .wpaicg_widget_open .wpaicg_chat_widget_content{
+                    overflow: unset;
+                }
+                .wpaicg_widget_open .wpaicg_chat_widget_content .wpaicg-chatbox{
+                    top: 0;
+                }
+                .wpaicg_chat_widget_content .wpaicg-chatbox{
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 350px;
+                    height: 400px;
+                    transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+                }
+                .wpaicg_chat_widget_content .wpaicg-chatbox-content{
+                }
+                .wpaicg_chat_widget_content .wpaicg-chatbox-content ul{
+                    box-sizing: border-box;
+                    background: #222222;
+                }
+                .wpaicg_chat_widget_content .wpaicg-chatbox-content ul li{
+                    color: #90EE90;
+                    font-size: 13px;
+                }
+                .wpaicg_chat_widget_content .wpaicg-bot-thinking{
+                    color: #90EE90;
+                }
+                .wpaicg_chat_widget_content .wpaicg-chatbox-type{
+                                        border-top: 0;
+                    background: rgb(0 0 0 / 19%);
+                }
+                .wpaicg_chat_widget_content .wpaicg-chat-message{
+                    color: #90EE90;
+                }
+                .wpaicg_chat_widget_content input.wpaicg-chatbox-typing{
+                    background-color: #fff;
+                    border-color: #ccc;
+                }
+                .wpaicg_chat_widget_content .wpaicg-chatbox-send{
+                    color: #fff;
+                }
+                .wpaicg-chatbox-footer{
+                    height: 18px;
+                    font-size: 11px;
+                    padding: 0 5px;
+                    color: #fff;
+                    background: rgb(0 0 0 / 19%);
+                    margin-top:2px;
+                    margin-bottom: 2px;
+                }
+                .wpaicg_chat_widget_content input.wpaicg-chatbox-typing:focus{
+                    outline: none;
+                }
+                .wpaicg_chat_widget .wpaicg_toggle{
+                    cursor: pointer;
+                }
+                .wpaicg_chat_widget .wpaicg_toggle img{
+                    width: 75px;
+                    height: 75px;
+                }
+                .wpaicg-chat-shortcode-type,.wpaicg-chatbox-type{
+                    position: relative;
+                }
+                .wpaicg-mic-icon{
+                    display: flex;
+                    cursor: pointer;
+                    position: absolute;
+                    right: 47px;
+                }
+                .wpaicg-mic-icon svg{
+                    width: 16px;
+                    height: 16px;
+                    fill: currentColor;
+                }
+                .wpaicg-chat-message code{
+                    padding: 3px 5px 2px;
+                    background: rgb(0 0 0 / 20%);
+                    font-size: 13px;
+                    font-family: Consolas,Monaco,monospace;
+                    direction: ltr;
+                    unicode-bidi: embed;
+                    display: block;
+                    margin: 5px 0px;
+                    border-radius: 4px;
+                    white-space: pre-wrap;
+                }
+                input.wpaicg-chat-shortcode-typing,input.wpaicg-chatbox-typing{
+                    height: 30px;
+                }
+                .wpaicg_chat_widget_content .wpaicg-chatbox-content,.wpaicg-chat-shortcode-content{
+                    overflow: hidden;
+                }
+            </style>
+            <script>
+                var wpaicg_ajax_url = 'https://immediatefortune.com/wp-admin/admin-ajax.php';
+                var wpaicgUserLoggedIn = false;
+            </script>
+            <link href="../../wp-content/plugins/gpt3-ai-content-generator/public/css/wpaicg-rtl.css" type="text/css" rel="stylesheet">
+            
+	<!-- This site is optimized with the Yoast SEO Premium plugin v20.1 (Yoast SEO v20.6) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>trendy Archives - Immediate Fortune ™</title>
+	<link rel="canonical" href="index.htm">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="trendy Archives">
+	<meta property="og:url" content="https://immediatefortune.com/tag/trendy/">
+	<meta property="og:site_name" content="Immediate Fortune ™">
+	<meta name="twitter:card" content="summary_large_image">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://immediatefortune.com/tag/trendy/","url":"https://immediatefortune.com/tag/trendy/","name":"trendy Archives - Immediate Fortune ™","isPartOf":{"@id":"https://immediatefortune.com/#website"},"primaryImageOfPage":{"@id":"https://immediatefortune.com/tag/trendy/#primaryimage"},"image":{"@id":"https://immediatefortune.com/tag/trendy/#primaryimage"},"thumbnailUrl":"https://immediatefortune.com/wp-content/uploads/2020/05/jason-blackeye-XYrjl3j7smo-unsplash.jpg","breadcrumb":{"@id":"https://immediatefortune.com/tag/trendy/#breadcrumb"},"inLanguage":"en-US"},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://immediatefortune.com/tag/trendy/#primaryimage","url":"https://immediatefortune.com/wp-content/uploads/2020/05/jason-blackeye-XYrjl3j7smo-unsplash.jpg","contentUrl":"https://immediatefortune.com/wp-content/uploads/2020/05/jason-blackeye-XYrjl3j7smo-unsplash.jpg","width":800,"height":533},{"@type":"BreadcrumbList","@id":"https://immediatefortune.com/tag/trendy/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://immediatefortune.com/"},{"@type":"ListItem","position":2,"name":"trendy"}]},{"@type":"WebSite","@id":"https://immediatefortune.com/#website","url":"https://immediatefortune.com/","name":"Immediate Fortune","description":"","publisher":{"@id":"https://immediatefortune.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://immediatefortune.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://immediatefortune.com/#organization","name":"Immediate Fortune","url":"https://immediatefortune.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://immediatefortune.com/#/schema/logo/image/","url":"https://immediatefortune.com/wp-content/uploads/2023/05/immediatefortune-e1683832429336.png","contentUrl":"https://immediatefortune.com/wp-content/uploads/2023/05/immediatefortune-e1683832429336.png","width":253,"height":297,"caption":"Immediate Fortune"},"image":{"@id":"https://immediatefortune.com/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com'>
+<link rel="alternate" type="application/rss+xml" title="Immediate Fortune ™ &raquo; Feed" href="../../feed/index.htm">
+<link rel="alternate" type="application/rss+xml" title="Immediate Fortune ™ &raquo; Comments Feed" href="https://immediatefortune.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Immediate Fortune ™ &raquo; trendy Tag Feed" href="feed/index.htm">
+<link rel='stylesheet' id='blocksy-dynamic-global-css' href='../../wp-content/uploads/blocksy/css/global.css?ver=74955' media='all'>
+<link rel='stylesheet' id='wp-block-library-css' href='../../wp-includes/css/dist/block-library/style.min.css?ver=6.5.4' media='all'>
+<link rel='stylesheet' id='fontawesome-free-css' href='../../wp-content/plugins/getwid/vendors/fontawesome-free/css/all.min.css?ver=5.5.0' media='all'>
+<link rel='stylesheet' id='slick-css' href='../../wp-content/plugins/getwid/vendors/slick/slick/slick.min.css?ver=1.9.0' media='all'>
+<link rel='stylesheet' id='slick-theme-css' href='../../wp-content/plugins/getwid/vendors/slick/slick/slick-theme.min.css?ver=1.9.0' media='all'>
+<link rel='stylesheet' id='fancybox-css' href='../../wp-content/plugins/getwid/vendors/fancybox/jquery.fancybox.min.css?ver=3.5.7' media='all'>
+<link rel='stylesheet' id='getwid-blocks-css' href='../../wp-content/plugins/getwid/assets/css/blocks.style.css?ver=1.8.5' media='all'>
+<style id='getwid-blocks-inline-css'>
+.wp-block-getwid-section .wp-block-getwid-section__wrapper .wp-block-getwid-section__inner-wrapper{max-width: 1400px;}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--palette-color-1: var(--paletteColor1, #0b6dff);--wp--preset--color--palette-color-2: var(--paletteColor2, #1559ed);--wp--preset--color--palette-color-3: var(--paletteColor3, #3A4F66);--wp--preset--color--palette-color-4: var(--paletteColor4, #192a3d);--wp--preset--color--palette-color-5: var(--paletteColor5, #e1e8ed);--wp--preset--color--palette-color-6: var(--paletteColor6, #f2f5f7);--wp--preset--color--palette-color-7: var(--paletteColor7, #FAFBFC);--wp--preset--color--palette-color-8: var(--paletteColor8, #ffffff);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--juicy-peach: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);--wp--preset--gradient--young-passion: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);--wp--preset--gradient--true-sunset: linear-gradient(to right, #fa709a 0%, #fee140 100%);--wp--preset--gradient--morpheus-den: linear-gradient(to top, #30cfd0 0%, #330867 100%);--wp--preset--gradient--plum-plate: linear-gradient(135deg, #667eea 0%, #764ba2 100%);--wp--preset--gradient--aqua-splash: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);--wp--preset--gradient--love-kiss: linear-gradient(to top, #ff0844 0%, #ffb199 100%);--wp--preset--gradient--new-retrowave: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);--wp--preset--gradient--plum-bath: linear-gradient(to top, #cc208e 0%, #6713d2 100%);--wp--preset--gradient--high-flight: linear-gradient(to right, #0acffe 0%, #495aff 100%);--wp--preset--gradient--teen-party: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);--wp--preset--gradient--fabled-sunset: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);--wp--preset--gradient--arielle-smile: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);--wp--preset--gradient--itmeo-branding: linear-gradient(180deg, #2af598 0%, #009efd 100%);--wp--preset--gradient--deep-blue: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);--wp--preset--gradient--strong-bliss: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);--wp--preset--gradient--sweet-period: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);--wp--preset--gradient--purple-division: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);--wp--preset--gradient--cold-evening: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);--wp--preset--gradient--mountain-rock: linear-gradient(to right, #868f96 0%, #596164 100%);--wp--preset--gradient--desert-hump: linear-gradient(to top, #c79081 0%, #dfa579 100%);--wp--preset--gradient--ethernal-constance: linear-gradient(to top, #09203f 0%, #537895 100%);--wp--preset--gradient--happy-memories: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);--wp--preset--gradient--grown-early: linear-gradient(to top, #0ba360 0%, #3cba92 100%);--wp--preset--gradient--morning-salad: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);--wp--preset--gradient--night-call: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);--wp--preset--gradient--mind-crawl: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);--wp--preset--gradient--angel-care: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);--wp--preset--gradient--juicy-cake: linear-gradient(to top, #e14fad 0%, #f9d423 100%);--wp--preset--gradient--rich-metal: linear-gradient(to right, #d7d2cc 0%, #304352 100%);--wp--preset--gradient--mole-hall: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);--wp--preset--gradient--cloudy-knoxville: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);--wp--preset--gradient--soft-grass: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);--wp--preset--gradient--saint-petersburg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);--wp--preset--gradient--everlasting-sky: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);--wp--preset--gradient--kind-steel: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);--wp--preset--gradient--over-sun: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);--wp--preset--gradient--premium-white: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);--wp--preset--gradient--clean-mirror: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);--wp--preset--gradient--wild-apple: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);--wp--preset--gradient--snow-again: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);--wp--preset--gradient--confident-cloud: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);--wp--preset--gradient--glass-water: linear-gradient(to top, #dfe9f3 0%, white 100%);--wp--preset--gradient--perfect-white: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0;--wp--style--global--content-size: var(--block-max-width);--wp--style--global--wide-size: var(--block-wide-max-width); }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: var(--content-spacing); margin-block-end: 0; }:where(.wp-site-blocks) > :first-child:first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child:last-child { margin-block-end: 0; }body { --wp--style--block-gap: var(--content-spacing); }:where(body .is-layout-flow)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-flow)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-flow)  > *{margin-block-start: var(--content-spacing);margin-block-end: 0;}:where(body .is-layout-constrained)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-constrained)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-constrained)  > *{margin-block-start: var(--content-spacing);margin-block-end: 0;}:where(body .is-layout-flex) {gap: var(--content-spacing);}:where(body .is-layout-grid) {gap: var(--content-spacing);}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-color{color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-color{color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-color{color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-color{color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-color{color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-color{color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-color{color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-color{color: var(--wp--preset--color--palette-color-8) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-background-color{background-color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-background-color{background-color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-background-color{background-color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-background-color{background-color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-background-color{background-color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-background-color{background-color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-background-color{background-color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-background-color{background-color: var(--wp--preset--color--palette-color-8) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-palette-color-1-border-color{border-color: var(--wp--preset--color--palette-color-1) !important;}.has-palette-color-2-border-color{border-color: var(--wp--preset--color--palette-color-2) !important;}.has-palette-color-3-border-color{border-color: var(--wp--preset--color--palette-color-3) !important;}.has-palette-color-4-border-color{border-color: var(--wp--preset--color--palette-color-4) !important;}.has-palette-color-5-border-color{border-color: var(--wp--preset--color--palette-color-5) !important;}.has-palette-color-6-border-color{border-color: var(--wp--preset--color--palette-color-6) !important;}.has-palette-color-7-border-color{border-color: var(--wp--preset--color--palette-color-7) !important;}.has-palette-color-8-border-color{border-color: var(--wp--preset--color--palette-color-8) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-juicy-peach-gradient-background{background: var(--wp--preset--gradient--juicy-peach) !important;}.has-young-passion-gradient-background{background: var(--wp--preset--gradient--young-passion) !important;}.has-true-sunset-gradient-background{background: var(--wp--preset--gradient--true-sunset) !important;}.has-morpheus-den-gradient-background{background: var(--wp--preset--gradient--morpheus-den) !important;}.has-plum-plate-gradient-background{background: var(--wp--preset--gradient--plum-plate) !important;}.has-aqua-splash-gradient-background{background: var(--wp--preset--gradient--aqua-splash) !important;}.has-love-kiss-gradient-background{background: var(--wp--preset--gradient--love-kiss) !important;}.has-new-retrowave-gradient-background{background: var(--wp--preset--gradient--new-retrowave) !important;}.has-plum-bath-gradient-background{background: var(--wp--preset--gradient--plum-bath) !important;}.has-high-flight-gradient-background{background: var(--wp--preset--gradient--high-flight) !important;}.has-teen-party-gradient-background{background: var(--wp--preset--gradient--teen-party) !important;}.has-fabled-sunset-gradient-background{background: var(--wp--preset--gradient--fabled-sunset) !important;}.has-arielle-smile-gradient-background{background: var(--wp--preset--gradient--arielle-smile) !important;}.has-itmeo-branding-gradient-background{background: var(--wp--preset--gradient--itmeo-branding) !important;}.has-deep-blue-gradient-background{background: var(--wp--preset--gradient--deep-blue) !important;}.has-strong-bliss-gradient-background{background: var(--wp--preset--gradient--strong-bliss) !important;}.has-sweet-period-gradient-background{background: var(--wp--preset--gradient--sweet-period) !important;}.has-purple-division-gradient-background{background: var(--wp--preset--gradient--purple-division) !important;}.has-cold-evening-gradient-background{background: var(--wp--preset--gradient--cold-evening) !important;}.has-mountain-rock-gradient-background{background: var(--wp--preset--gradient--mountain-rock) !important;}.has-desert-hump-gradient-background{background: var(--wp--preset--gradient--desert-hump) !important;}.has-ethernal-constance-gradient-background{background: var(--wp--preset--gradient--ethernal-constance) !important;}.has-happy-memories-gradient-background{background: var(--wp--preset--gradient--happy-memories) !important;}.has-grown-early-gradient-background{background: var(--wp--preset--gradient--grown-early) !important;}.has-morning-salad-gradient-background{background: var(--wp--preset--gradient--morning-salad) !important;}.has-night-call-gradient-background{background: var(--wp--preset--gradient--night-call) !important;}.has-mind-crawl-gradient-background{background: var(--wp--preset--gradient--mind-crawl) !important;}.has-angel-care-gradient-background{background: var(--wp--preset--gradient--angel-care) !important;}.has-juicy-cake-gradient-background{background: var(--wp--preset--gradient--juicy-cake) !important;}.has-rich-metal-gradient-background{background: var(--wp--preset--gradient--rich-metal) !important;}.has-mole-hall-gradient-background{background: var(--wp--preset--gradient--mole-hall) !important;}.has-cloudy-knoxville-gradient-background{background: var(--wp--preset--gradient--cloudy-knoxville) !important;}.has-soft-grass-gradient-background{background: var(--wp--preset--gradient--soft-grass) !important;}.has-saint-petersburg-gradient-background{background: var(--wp--preset--gradient--saint-petersburg) !important;}.has-everlasting-sky-gradient-background{background: var(--wp--preset--gradient--everlasting-sky) !important;}.has-kind-steel-gradient-background{background: var(--wp--preset--gradient--kind-steel) !important;}.has-over-sun-gradient-background{background: var(--wp--preset--gradient--over-sun) !important;}.has-premium-white-gradient-background{background: var(--wp--preset--gradient--premium-white) !important;}.has-clean-mirror-gradient-background{background: var(--wp--preset--gradient--clean-mirror) !important;}.has-wild-apple-gradient-background{background: var(--wp--preset--gradient--wild-apple) !important;}.has-snow-again-gradient-background{background: var(--wp--preset--gradient--snow-again) !important;}.has-confident-cloud-gradient-background{background: var(--wp--preset--gradient--confident-cloud) !important;}.has-glass-water-gradient-background{background: var(--wp--preset--gradient--glass-water) !important;}.has-perfect-white-gradient-background{background: var(--wp--preset--gradient--perfect-white) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wp-ai-content-generator-css' href='../../wp-content/plugins/gpt3-ai-content-generator/public/css/wp-ai-content-generator-public.css?ver=1.6.81' media='all'>
+<link rel='stylesheet' id='parent-style-css' href='../../wp-content/themes/blocksy/style.css?ver=6.5.4' media='all'>
+<link rel='stylesheet' id='ct-main-styles-css' href='../../wp-content/themes/blocksy/static/bundle/main.min.css?ver=1.8.84' media='all'>
+<link rel='stylesheet' id='blocksy-ext-widgets-styles-css' href='../../wp-content/plugins/blocksy-companion/framework/extensions/widgets/static/bundle/main.min.css?ver=1.8.84' media='all'>
+<link rel='stylesheet' id='ct-page-title-styles-css' href='../../wp-content/themes/blocksy/static/bundle/page-title.min.css?ver=1.8.84' media='all'>
+<link rel='stylesheet' id='ct-back-to-top-styles-css' href='../../wp-content/themes/blocksy/static/bundle/back-to-top.min.css?ver=1.8.84' media='all'>
+<link rel='stylesheet' id='ct-getwid-styles-css' href='../../wp-content/themes/blocksy/static/bundle/getwid.min.css?ver=1.8.84' media='all'>
+<link rel='stylesheet' id='ct-stackable-styles-css' href='../../wp-content/themes/blocksy/static/bundle/stackable.min.css?ver=1.8.84' media='all'>
+<script src="../../wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="../../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="../../wp-content/plugins/gpt3-ai-content-generator/public/js/wp-ai-content-generator-public.js?ver=1.6.81" id="wp-ai-content-generator-js"></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+
+<!-- Google Analytics snippet added by Site Kit -->
+<script src="../../gtag/js?id=GT-P8Z9RPJ" id="google_gtagjs-js" async=""></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["immediatefortune.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-P8Z9RPJ");
+</script>
+
+<!-- End Google tag (gtag.js) snippet added by Site Kit -->
+<link rel="https://api.w.org/" href="../../wp-json/index.htm"><link rel="alternate" type="application/json" href="../../wp-json/wp/v2/tags/18"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://immediatefortune.com/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.5.4">
+<meta name="generator" content="Site Kit by Google 1.128.0"><noscript><link rel='stylesheet' href='../../wp-content/themes/blocksy/static/bundle/no-scripts.min.css' type='text/css'></noscript>
+
+<!-- Google Tag Manager snippet added by Site Kit -->
+<script>
+			( function( w, d, s, l, i ) {
+				w[l] = w[l] || [];
+				w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+				var f = d.getElementsByTagName( s )[0],
+					j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore( j, f );
+			} )( window, document, 'script', 'dataLayer', 'GTM-M4R2P8Z' );
+			
+</script>
+
+<!-- End Google Tag Manager snippet added by Site Kit -->
+<link rel="icon" href="../../wp-content/uploads/2023/04/cropped-immediate-connect-1-32x32.png" sizes="32x32">
+<link rel="icon" href="../../wp-content/uploads/2023/04/cropped-immediate-connect-1-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../../wp-content/uploads/2023/04/cropped-immediate-connect-1-180x180.png">
+<meta name="msapplication-TileImage" content="https://immediatefortune.com/wp-content/uploads/2023/04/cropped-immediate-connect-1-270x270.png">
+		<style id="wp-custom-css">
+			.faq-image img{
+	width: 100%;
+	max-width: 450px;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.hero-right{
+	position: relative;
+	min-height: 450px;
+}
+@media (max-width: 500px){
+	.hero-right{
+	min-height: 550px;
+}
+}
+.hero-form{
+	position: absolute;
+	display: grid;
+	place-content: center;
+	width: 100%;
+  height: 100%;
+}
+.hero-form.form-contact-page{
+	position:relative;
+	height: auto;
+}
+
+.hero-form.form-contact-page .gform_wrapper {
+	max-width: 100%;
+/* 	    min-width: 700px; */
+/*     margin-left: -400px !important; */
+}
+.hero-form .gform_wrapper, .gform_confirmation_message {
+	background: linear-gradient(112.92deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 252, 252, 0.1) 100%);
+	-webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+	max-width: 450px;
+  padding: 40px !important;	
+	
+}
+
+.hero-form .gform_wrapper input {
+	font-size: 16px !important;
+}
+
+.hero-left{
+	position: relative;
+}
+.hero-left .coin_1{
+	position: absolute;
+    left: -80px;
+    top: 40%;
+	z-index: -1;
+}
+.hero-left .coin_2{
+	position: absolute;
+  right: 0;
+  bottom: -50px;
+	transform: scale(1.5);
+}
+@media (max-width:767.98px){
+	.hero-left .coin_1{
+    left: 0px;
+		top: 10%;
+}
+}
+@media (max-width:767.98px){
+body .fix-mob-wrap{
+	flex-wrap: wrap-reverse !important;
+}
+}
+
+.home .wp-block-getwid-content-timeline-item__card {
+	background: transparent;
+}
+@media (min-width:991px){
+	.home .wp-block-getwid-content-timeline-item {
+		margin-top: -300px;
+	}
+}
+
+
+
+.hero-form .gform_title, .hero-form label, .hero-form legend,  .hero-form input {
+	color: #fff;
+}
+
+.hero-right .wp-image-373 {
+	  left: 60%;
+    position: relative;
+}
+
+.hero-form::before {
+    content: '';
+    background-image: url('../../wp-content/uploads/2023/04/banner-shape-7.png');
+	  background-repeat: no-repeat;
+    width: 197px;
+    height: 197px;
+    position: absolute;
+    z-index: -1;
+    top: -130px;
+    left: 0;
+    -webkit-animation: movebounce 5s linear infinite;
+    animation: movebounce 5s linear infinite;
+}
+
+.hero-form::after {
+    content: '';
+    background-image: url('../../wp-content/uploads/2023/04/banner-shape-6.png');
+	  background-repeat: no-repeat;
+    width: 145px;
+    height: 145px;
+    position: absolute;
+    z-index: -1;
+    bottom: -80px;
+    right: 50px;
+    -webkit-animation: movebounce 5s linear infinite;
+    animation: movebounce 5s linear infinite;
+	  animation-delay: 2.5s;
+}
+.hero-form.form-contact-page::before, .hero-form.form-contact-page::after{
+	filter: blur(2px);	
+}
+@keyframes movebounce {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes movebounce2 {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.iti__selected-dial-code {
+    color: white;
+}
+
+/*  timeline decor*/
+
+.add-item-decoration .wp-block-getwid-content-timeline-item .wp-block-getwid-content-timeline-item__card:before{
+	content: '';
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #0b6dff;
+    border-radius: 7px;
+    transform: rotate(6deg);
+    z-index: -1;
+}
+
+/*  */
+.img-wrapper img{
+	max-width: 550px;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	border-radius: 7px
+}
+@media (max-width: 1024px){
+	.img-wrapper img{
+		max-width: 100%;
+	}
+}
+.image-deccor{
+	position: relative;
+}
+.image-deccor:before{
+	content: '';
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #0b6dff;
+    border-radius: 7px;
+    transform: rotate(6deg);
+    z-index: -1;
+}
+
+/*Thank you message*/
+.gform_confirmation_message {
+  backdrop-filter: blur(50px);
+}
+.gform_confirmation_message h2 {
+	color: #fff;
+}
+.gform_confirmation_message p {
+	font-size: 20px;
+}		</style>
+			</head>
+
+
+<body class="archive tag tag-trendy tag-18 wp-custom-logo wp-embed-responsive stk--is-blocksy-theme ct-loading" data-link="type-2" data-prefix="categories" data-header="type-1" data-footer="type-1">
+
+<a class="skip-link show-on-focus" href="#main">
+	Skip to content</a>
+
+		<!-- Google Tag Manager (noscript) snippet added by Site Kit -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4R2P8Z" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) snippet added by Site Kit -->
+		<div class="ct-drawer-canvas"><div id="offcanvas" class="ct-panel ct-header" data-behaviour="modal">
+		<div class="ct-panel-actions">
+			<button class="ct-toggle-close" data-type="type-1" aria-label="Close drawer">
+				<svg class="ct-icon" width="12" height="12" viewbox="0 0 15 15"><path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"></path></svg>
+			</button>
+		</div>
+		<div class="ct-panel-content" data-device="desktop"></div><div class="ct-panel-content" data-device="mobile">
+<nav class="mobile-menu" data-id="mobile-menu" data-interaction="click" data-toggle-type="type-1" aria-label="Off Canvas Menu">
+	<ul id="menu-english-menu-1" role="menubar"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2231" role="none"><a href="../../index.htm" class="ct-menu-link" role="menuitem">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2232" role="none"><a href="../../contact/index.htm" class="ct-menu-link" role="menuitem">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2233" role="none"><a href="../../about-us/index.htm" class="ct-menu-link" role="menuitem">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-2234" role="none"><a rel="privacy-policy" href="../../privacy-policy/index.htm" class="ct-menu-link" role="menuitem">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2235" role="none"><a href="../../terms/index.htm" class="ct-menu-link" role="menuitem">Terms</a></li>
+</ul></nav>
+
+
+<div class="ct-header-socials " data-id="socials">
+
+	
+		<div class="ct-social-box" data-icon-size="custom" data-color="custom" data-icons-type="simple">
+			
+			
+							
+				<a href="https://www.facebook.com/immediateconnectai/" data-network="facebook" aria-label="Facebook" target="_blank" rel="noopener">
+					<span class="ct-icon-container">
+				<svg width="20px" height="20px" viewbox="0 0 20 20" aria-hidden="true">
+					<path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Facebook</span>				</a>
+							
+				<a href="https://www.instagram.com/immediateconnect/" data-network="instagram" aria-label="Instagram" target="_blank" rel="noopener">
+					<span class="ct-icon-container">
+				<svg width="20" height="20" viewbox="0 0 20 20" aria-hidden="true">
+					<circle cx="10" cy="10" r="3.3"></circle>
+					<path d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Instagram</span>				</a>
+							
+				<a href="https://twitter.com/ImmediatConnect" data-network="twitter" aria-label="Twitter" target="_blank" rel="noopener">
+					<span class="ct-icon-container">
+				<svg width="20px" height="20px" viewbox="0 0 20 20" aria-hidden="true">
+					<path d="M20,3.8c-0.7,0.3-1.5,0.5-2.4,0.6c0.8-0.5,1.5-1.3,1.8-2.3c-0.8,0.5-1.7,0.8-2.6,1c-0.7-0.8-1.8-1.3-3-1.3c-2.3,0-4.1,1.8-4.1,4.1c0,0.3,0,0.6,0.1,0.9C6.4,6.7,3.4,5.1,1.4,2.6C1,3.2,0.8,3.9,0.8,4.7c0,1.4,0.7,2.7,1.8,3.4C2,8.1,1.4,7.9,0.8,7.6c0,0,0,0,0,0.1c0,2,1.4,3.6,3.3,4c-0.3,0.1-0.7,0.1-1.1,0.1c-0.3,0-0.5,0-0.8-0.1c0.5,1.6,2,2.8,3.8,2.8c-1.4,1.1-3.2,1.8-5.1,1.8c-0.3,0-0.7,0-1-0.1c1.8,1.2,4,1.8,6.3,1.8c7.5,0,11.7-6.3,11.7-11.7c0-0.2,0-0.4,0-0.5C18.8,5.3,19.4,4.6,20,3.8z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Twitter</span>				</a>
+			
+			
+					</div>
+
+	
+</div>
+</div></div>
+	<a href="#main-container" class="ct-back-to-top ct-hidden-sm" data-shape="circle" data-alignment="right" title="Go to top" aria-label="Go to top">
+
+		<svg class="ct-icon" width="15" height="15" viewbox="0 0 20 20"><path d="M10,0L9.4,0.6L0.8,9.1l1.2,1.2l7.1-7.1V20h1.7V3.3l7.1,7.1l1.2-1.2l-8.5-8.5L10,0z"></path></svg>	</a>
+
+	</div>
+<div id="main-container">
+	<header id="header" class="ct-header" data-id="type-1" itemscope="" itemtype="https://schema.org/WPHeader"><div data-device="desktop"><div data-row="middle" data-column-set="2"><div class="ct-container"><div data-column="start" data-placements="1"><div data-items="primary">
+<div class="site-branding" data-id="logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
+
+			<a href="../../index.htm" class="site-logo-container" rel="home"><img width="253" height="297" src="../../wp-content/uploads/2023/05/immediatefortune-e1683832429336.png" class="default-logo" alt="Immediate Fortune ™"></a>	
+	</div>
+
+
+<nav id="header-menu-1" class="header-menu-1" data-id="menu" data-interaction="hover" data-menu="type-1" data-dropdown="type-1:simple" data-responsive="no" itemscope="" itemtype="https://schema.org/SiteNavigationElement" aria-label="Header Menu">
+
+	<ul id="menu-english-menu" class="menu" role="menubar"><li id="menu-item-2231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2231" role="none"><a href="../../index.htm" class="ct-menu-link" role="menuitem">Home</a></li>
+<li id="menu-item-2232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2232" role="none"><a href="../../contact/index.htm" class="ct-menu-link" role="menuitem">Contact</a></li>
+<li id="menu-item-2233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2233" role="none"><a href="../../about-us/index.htm" class="ct-menu-link" role="menuitem">About Us</a></li>
+<li id="menu-item-2234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-2234" role="none"><a rel="privacy-policy" href="../../privacy-policy/index.htm" class="ct-menu-link" role="menuitem">Privacy Policy</a></li>
+<li id="menu-item-2235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2235" role="none"><a href="../../terms/index.htm" class="ct-menu-link" role="menuitem">Terms</a></li>
+</ul></nav>
+
+</div></div><div data-column="end" data-placements="1"><div data-items="primary">
+<div class="ct-header-socials " data-id="socials">
+
+	
+		<div class="ct-social-box" data-icon-size="custom" data-color="custom" data-icons-type="simple">
+			
+			
+							
+				<a href="https://www.facebook.com/immediateconnectai/" data-network="facebook" aria-label="Facebook" target="_blank" rel="noopener">
+					<span class="ct-icon-container">
+				<svg width="20px" height="20px" viewbox="0 0 20 20" aria-hidden="true">
+					<path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Facebook</span>				</a>
+							
+				<a href="https://www.instagram.com/immediateconnect/" data-network="instagram" aria-label="Instagram" target="_blank" rel="noopener">
+					<span class="ct-icon-container">
+				<svg width="20" height="20" viewbox="0 0 20 20" aria-hidden="true">
+					<circle cx="10" cy="10" r="3.3"></circle>
+					<path d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Instagram</span>				</a>
+							
+				<a href="https://twitter.com/ImmediatConnect" data-network="twitter" aria-label="Twitter" target="_blank" rel="noopener">
+					<span class="ct-icon-container">
+				<svg width="20px" height="20px" viewbox="0 0 20 20" aria-hidden="true">
+					<path d="M20,3.8c-0.7,0.3-1.5,0.5-2.4,0.6c0.8-0.5,1.5-1.3,1.8-2.3c-0.8,0.5-1.7,0.8-2.6,1c-0.7-0.8-1.8-1.3-3-1.3c-2.3,0-4.1,1.8-4.1,4.1c0,0.3,0,0.6,0.1,0.9C6.4,6.7,3.4,5.1,1.4,2.6C1,3.2,0.8,3.9,0.8,4.7c0,1.4,0.7,2.7,1.8,3.4C2,8.1,1.4,7.9,0.8,7.6c0,0,0,0,0,0.1c0,2,1.4,3.6,3.3,4c-0.3,0.1-0.7,0.1-1.1,0.1c-0.3,0-0.5,0-0.8-0.1c0.5,1.6,2,2.8,3.8,2.8c-1.4,1.1-3.2,1.8-5.1,1.8c-0.3,0-0.7,0-1-0.1c1.8,1.2,4,1.8,6.3,1.8c7.5,0,11.7-6.3,11.7-11.7c0-0.2,0-0.4,0-0.5C18.8,5.3,19.4,4.6,20,3.8z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Twitter</span>				</a>
+			
+			
+					</div>
+
+	
+</div>
+
+<nav id="header-menu-2" class="header-menu-2" data-id="menu-secondary" data-interaction="hover" data-menu="type-1" data-dropdown="type-1:simple" data-responsive="no" itemscope="" itemtype="https://schema.org/SiteNavigationElement" aria-label="Header Menu">
+
+	<ul id="menu-languages" class="menu" role="menubar"><li id="menu-item-2229" class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom current-menu-parent menu-item-has-children menu-item-2229 animated-submenu" role="none"><a href="#pll_switcher" class="ct-menu-link" role="menuitem"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="English" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">English</span><span class="ct-toggle-dropdown-desktop"><svg class="ct-icon" width="8" height="8" viewbox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"></path></svg></span></a><button class="ct-toggle-dropdown-desktop-ghost" aria-label="Expand dropdown menu" aria-haspopup="true" aria-expanded="false" role="menuitem"></button>
+<ul class="sub-menu" role="menu">
+	<li id="menu-item-2229-pt" class="lang-item lang-item-23 lang-item-pt no-translation lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-pt" role="none"><a href="../../pt/index.htm" class="ct-menu-link" role="menuitem" hreflang="pt-BR" lang="pt-BR"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAn1BMVEUAYQAAWwAAUgAARwAAOgAALgAAIwB/voB4uni242pttG1kr2Rdq11RpFEAGAD9/Uv8/VT690U/mz83lTguki4ADQCp2lJ3d+Q+dfpkaun47zii1B9IoEhgslHOy6fZ5virw/Iubfhsc6v29iMfih+Wy3Nbg+lzm/m61vd+oNr08hZ2uDcAAQCPlLSuraIzmA8yjzKw3z8nXvcTgxM1pTDYD/UeAAAAfUlEQVR4AUWIA3oFMBCE/4mT2nbvf6biQ91n27tjAaDNi7gaFuLAIexiUDc6QKUfhKaVva5Dh/Xu3rwrqYPTzfeYVNvrRvUiUUbvO5hIVR0f8f7TYCo797+6POgOqtm9n8nGQ1qP/395v7cHw4FsQohnXhE3DOSQSETOmN8EHiUfBxs2q7sAAAAASUVORK5CYII=" alt="Português" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Português</span></a></li>
+	<li id="menu-item-2229-da" class="lang-item lang-item-26 lang-item-da no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-da" role="none"><a href="../../da/index.htm" class="ct-menu-link" role="menuitem" hreflang="da" lang="da"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAPFBMVEXuAAD9/f347OzjAADVAAD3enr3dnX5+Pj0Zmb0XV3zU1PwRkbvOzvrLy/qIiL19fXnEhLJAADl5eXp0NBOrJwwAAAAWklEQVR4AQXBQU7EMAAAMU+arqpFPfD/VyJOKNoUO1DbAT3TSet8hqS/ydRaV0kfA6EkDIU7yegu8MIFxwAvXMAc56G1vnoGPmMiMPj1NrXDbuctHWR//7iBf5T6EpaFWVlxAAAAAElFTkSuQmCC" alt="Dansk" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Dansk</span></a></li>
+	<li id="menu-item-2229-en" class="lang-item lang-item-30 lang-item-en current-lang menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-en" role="none"><a href="index.htm" class="ct-menu-link" role="menuitem" hreflang="en-US" lang="en-US"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="English" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">English</span></a></li>
+	<li id="menu-item-2229-de" class="lang-item lang-item-54 lang-item-de no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-de" role="none"><a href="../../de/index.htm" class="ct-menu-link" role="menuitem" hreflang="de-DE" lang="de-DE"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABLElEQVR4AY2QgUZEQRSGz9ydmzbYkBWABBJYABHEFhJ6m0WP0DMEQNIr9AKrN8ne2Tt3Zs7MOdOZmRBEv+v34Tvub9R6fdNlAzU+snSME/wdjbjbbJ6EiEg6BA8102QbjKNpoMzw8v6qD/sOALbbT2MC1NgaAWOKOgxf5czY+4dbAX2G/THzcozLrvPV85IQyqVz0rvg2p9Pei4HjzSsiFbV4JgyhhxCjpGdZ0RhdikLB9/b8Qig7MkpSovR7Cp59q6CazaNFiTt4J82o6uvdMVwTsztKTXZod4jgOJJuqNAjFyGrBR8gM6XwKfIC4KanBSTZ0rClKh08D9DFh3egW7ebH7NcRDQWrz9rM2Ne+mDOXB2mZJ8agL19nwxR2iZXGm1gDbQKhDjd4yHb2oW/KR8xHicAAAAAElFTkSuQmCC" alt="Deutsch" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Deutsch</span></a></li>
+	<li id="menu-item-2229-es" class="lang-item lang-item-59 lang-item-es no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-es" role="none"><a href="../../es/index.htm" class="ct-menu-link" role="menuitem" hreflang="es-ES" lang="es-ES"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAflBMVEX/AAD9AAD3AADxAADrAAD/eXn9bGz8YWH8WVn6UVH5SEj5Pz/3NDT0Kir9/QD+/nL+/lT18lDt4Uf6+j/39zD39yf19R3n5wDxflXsZ1Pt4Y3x8zr0wbLs1NXz8xPj4wD37t3jmkvsUU/Bz6nrykm3vJ72IiL0FBTyDAvhAABEt4UZAAAAX0lEQVR4AQXBQUrFQBBAwXqTDkYE94Jb73+qfwVRcYxVQRBRToiUfoaVpGTrtdS9SO0Z9FR9lVy/g5c99+dKl30N5uxPuviexXEc9/msC7TOkd4kHu/Dlh4itCJ8AP4B0w4Qwmm7CFQAAAAASUVORK5CYII=" alt="Español" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Español</span></a></li>
+	<li id="menu-item-2229-fr" class="lang-item lang-item-64 lang-item-fr no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-fr" role="none"><a href="../../fr/index.htm" class="ct-menu-link" role="menuitem" hreflang="fr-FR" lang="fr-FR"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAbFBMVEVzldTg4ODS0tLxDwDtAwDjAADD0uz39/fy8vL3k4nzgna4yOixwuXu7u7s6+zn5+fyd2rvcGPtZljYAABrjNCpvOHrWkxegsqfs93NAADpUUFRd8THAABBa7wnVbERRKa8vLyxsLCoqKigoKClCvcsAAAAXklEQVR4AS3JxUEAQQAEwZo13Mk/R9w5/7UERJCIGIgj5qfRJZEpPyNfCgJTjMR1eRRnJiExFJz5Mf1PokWr/UztIjRGQ3V486u0HO55m634U6dMcf0RNPfkVCTvKjO16xHA8miowAAAAABJRU5ErkJggg==" alt="Français" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Français</span></a></li>
+	<li id="menu-item-2229-hu" class="lang-item lang-item-69 lang-item-hu no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-hu" role="none"><a href="../../hu/index.htm" class="ct-menu-link" role="menuitem" hreflang="hu-HU" lang="hu-HU"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAAm0lEQVR4AWM4x4AFHUZF2xAILP2yogINPcvIgKCnUVEQ9MjPD4hWwjUgS0DQPXsHCLqppQVBQDZCA0HVCA1/McAvJPAVFTx79oyBsGpMDQilmKoxNTA4MiStT3aY5wBBJtNMgEh7grZKr4pst6x4u7hAswAQcddyAwUZGBmgGgiqRtcARAFLAuAIrh9uBMQUqAYGTRgSgSFGnAgA0U0GZhH1QEwAAAAASUVORK5CYII=" alt="Magyar" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Magyar</span></a></li>
+	<li id="menu-item-2229-it" class="lang-item lang-item-74 lang-item-it no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-it" role="none"><a href="../../it/index.htm" class="ct-menu-link" role="menuitem" hreflang="it-IT" lang="it-IT"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAUVBMVEUAiQAAgADk5OTe3t7vAAB3yXf9/f36+vr5Vlb3RkZjwWNYvVj4+Pj1MzP1KChQuFD1GxviAABHtUf19fXzDw4/sT8AcAA2qzYAWgDLy8vDw8ObXclsAAAAVElEQVR4AQXBSwoCQRQEsNT70CC69P5XdCUMA2ISSAiBWAQScg8bN7GJWxFDrCivwhCLMipGx3LKUOi2HAZluy2HgXprxQGfGL6G63B5MJ5FCD/4A3DaCLvbBle5AAAAAElFTkSuQmCC" alt="Italiano" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Italiano</span></a></li>
+	<li id="menu-item-2229-nl" class="lang-item lang-item-79 lang-item-nl no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-nl" role="none"><a href="../../nl/index.htm" class="ct-menu-link" role="menuitem" hreflang="nl-NL" lang="nl-NL"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAY1BMVEX/AAD8AADzAADqAAD/fYz+dYT6aHr7XG36VGb6R1f4L0H/ECz+mKXw8fH9/f36+vr19vbW1tbS0tIAG493n89cjcZNgsA/eLkzcbUpaLAcYKwAAFEAA4ANU6UAADsAAHgAAGcSgiW+AAAAS0lEQVR4AQXBiQ3CQBAAMc/dConQf688SoIdBIIyQiR9R0tCuM2rNxHpMqsDIWiBEE4NgnBiHhVJcs48P0uSjXsPl4hLmH2EHzb4A7DPDGppZMSwAAAAAElFTkSuQmCC" alt="Nederlands" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Nederlands</span></a></li>
+	<li id="menu-item-2229-nb" class="lang-item lang-item-84 lang-item-nb no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-nb" role="none"><a href="../../nb/index.htm" class="ct-menu-link" role="menuitem" hreflang="nb-NO" lang="nb-NO"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAS1BMVEXiAAD+/v4EVNHaAQHPAADyeniUuevvamjuXlzqS0jBAAB6puXoPz3lMjDjJyX6+vr19fXm5uZuneJild5QiNkADK/fExG0AADu7u75QkE3AAAAX0lEQVR4AQXBWQoCMRAFwHrpjhsI3v+OfgtmnFgVJHsXBDEdc/UgRJo65mpKZBkAJaIkeDQE0unpSgj26L3u/Ahw9ujvhTPbDZ/HoES44R2p6Xr0Vwlxb4fXr5bTE/wBnWoXiyWjuXcAAAAASUVORK5CYII=" alt="Norsk Bokmål" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Norsk Bokmål</span></a></li>
+	<li id="menu-item-2229-pl" class="lang-item lang-item-89 lang-item-pl no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-pl" role="none"><a href="../../pl/index.htm" class="ct-menu-link" role="menuitem" hreflang="pl-PL" lang="pl-PL"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAPFBMVEX/8fH67Ozz5ubt4OD+/v77+/v39/fo2Nj5AAD+jo79bW36X1/4T0/5QUHhAAD3MzP0Kir2ICDzERHtAACO5h0ZAAAAQUlEQVR4AQXBsRHDMAwAMTzNwvuvm5MVIECIZIEQZ4EQ7AAIGBABegsR+Z7VxChx7hCjhIwYJcTydcgQ1gv8Lhd/58kJTU6WtnIAAAAASUVORK5CYII=" alt="Polski" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Polski</span></a></li>
+	<li id="menu-item-2229-ro" class="lang-item lang-item-94 lang-item-ro no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-ro" role="none"><a href="../../ro/index.htm" class="ct-menu-link" role="menuitem" hreflang="ro-RO" lang="ro-RO"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAbFBMVEUAJsgAFMT13wDyAgLqAAB4muX8/G3581z5Vlb3RkZagt78/Ef5+T/08Tn1NTX1KSlQe9709Ez5+TX36S71GxvkAABHdNv4+CvzDw8AA7lqjuFBcNn29h/05Rg6adnfAAAAAK3nvQDrwgDkqgALguDCAAAAX0lEQVR4ARXHtWEDQBAEwNmn4BMz9V+eIzsTS8c7EWqR2mQgkJDTYHIZ5cRRg7XJWjG9tLIypqmVV7k0aN8f1vTw3OXaNft5mwyyG7NTxi/5+WPFSdYpPA+fSG60/4074PMLPA8bHzoAAAAASUVORK5CYII=" alt="Română" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Română</span></a></li>
+	<li id="menu-item-2229-sk" class="lang-item lang-item-99 lang-item-sk no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-sk" role="none"><a href="../../sk/index.htm" class="ct-menu-link" role="menuitem" hreflang="sk-SK" lang="sk-SK"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABJElEQVR4AW3PA2zccRQH8F8u9haO0S2Yg612XJtB7aC2bdttnLRBGda2bdtnfXvWy+f4fyTc11e1mHf3Ii9XN3B/di7yVsBXDA6HK8USBkMYNBrt8uBIXEBraqMVV8JDTgkop4pCVGDkttred/caGcv18uAeHnCyMphOzgW1h5BaciQSnbML+IdQegj5OJNee/UQEMadm8XGqEFBQuKyTdAWmHuvAZqCW+gWIc2yAvkJwWErStmaDssKBctDe5kRI8iDw64RPEOBfDbgHxSQAUKO4vJx6PboFvLwjp+Lek4w99cMpr+ZwMRXPfxTQAh5pVCwDMPYGHc/dHTh/enHDxqVCs/v30khDf8fSguwtwjDzAxQDy///4sgFWQFIjeEKDlURwBP5kav+V3UtwAAAABJRU5ErkJggg==" alt="Slovenčina" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Slovenčina</span></a></li>
+	<li id="menu-item-2229-sv" class="lang-item lang-item-104 lang-item-sv no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-sv" role="none"><a href="../../sv/index.htm" class="ct-menu-link" role="menuitem" hreflang="sv-SE" lang="sv-SE"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEUAP4H9wAAAKnQAHmsAEF8AB1QAAEd7sct5r8r+5HX943BopcNcnr9Qlrf93VFBjbI2hq0rfqgAADf72UcieqT51jn40i72ziL0yxTmiwD00DQUcKEMaJsAABztngB+lbt6AAAAVklEQVR4AUXHBWEDQABD0fcPhgrmX+KYuW04QXRgzpUi8ZzzbfA5JB9zCDZpTlYNtgtJrQHb+Pv/6/SxqrczvU7nct8I8ve5XnrveXvzJqaW3HDHNfgCGFkLqHdB0OIAAAAASUVORK5CYII=" alt="Svenska" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Svenska</span></a></li>
+	<li id="menu-item-2229-tr" class="lang-item lang-item-109 lang-item-tr no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-tr" role="none"><a href="../../tr/index.htm" class="ct-menu-link" role="menuitem" hreflang="tr-TR" lang="tr-TR"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAARVBMVEX+AAD3AADwAAD+fHz9cHH7ZGT9WVn6UFDpAAD9oKD5Q0P5OTn2MzP1Kir7ubr65ub1Gxv69PTzDw/kAAD319ffAAD4iooXHQ3FAAAAYklEQVR4AT3HhW0EQRQD0Oc/KG3/dQYEYTg2O+4IQbTHydWt0fw2Sfz8Fuw51+U3On7a6/pc/as1UZLDyuq13lWOwpdPn3+v7XJiDD3DR1N87Qr5WXX9zyQ9opEIOwkmDgr/ZXASmpFRqe0AAAAASUVORK5CYII=" alt="Türkçe" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Türkçe</span></a></li>
+	<li id="menu-item-2229-ja" class="lang-item lang-item-115 lang-item-ja no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-ja" role="none"><a href="../../ja/index.htm" class="ct-menu-link" role="menuitem" hreflang="ja" lang="ja"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAPFBMVEX09PTy8fHy6+vm5+b+/v77+/v29vbf39/5vLz5fHz6qqr6UFD7QUH5NDT3lZXa2tr419f3JibT09P2WloskN4YAAAAVUlEQVR4AQXBQU7FMBBAMb90hCoW3P+csCAKfIodIBIyQJAGmPQTDHgrzca94K/keT/nWOgjmdm4VvIpwy1GXOsZ9ndYYL/Wee3IRI/fr4PQCuPmAv/RTRUh24Q4UgAAAABJRU5ErkJggg==" alt="日本語" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">日本語</span></a></li>
+	<li id="menu-item-2229-ca" class="lang-item lang-item-126 lang-item-ca no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-ca" role="none"><a href="../../ca/index.htm" class="ct-menu-link" role="menuitem" hreflang="en-CA" lang="en-CA"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAh1BMVEXpTFTwNj7rHiTz8/Pv7u7XAgLuKTP4o6f0l5n9/f327e36+vv39/fnaGvtbnPIAAD1jpPwgIPoe4H19fXhPUDwdXfy0NHtY2XoXmLowcLsvr/fREu+AADwiIzy8vLeLzT1mp/qWFjcJSrgUVeyAADs4+PYGx7kBgjprazr6+umAADPz8/ExMQoJmQzAAAAiElEQVR4ASWJRULDUBCGv5l4gm9wVtj9jwNt37LuEveM/Cq0K/TTs7hDMBT9u4EkqNunq2u1AZtrpJ35/Wtpq9M6jev4XGevUQqiH/uyfLDj4JjGH6UtyoyA9Wpmbp+wAf3ybZEg/v1V84WVoFyngbd7KcvWGxtXwVoBxvDPyzlFHAjfAAEqoAEThSiV/9sl/gAAAABJRU5ErkJggg==" alt="Canada" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Canada</span></a></li>
+	<li id="menu-item-2229-gb" class="lang-item lang-item-131 lang-item-gb no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-gb" role="none"><a href="../../gb/index.htm" class="ct-menu-link" role="menuitem" hreflang="en-GB" lang="en-GB"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg==" alt="United Kingdom" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">United Kingdom</span></a></li>
+	<li id="menu-item-2229-au" class="lang-item lang-item-136 lang-item-au no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-au" role="none"><a href="../../au/index.htm" class="ct-menu-link" role="menuitem" hreflang="en-AU" lang="en-AU"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAtFBMVEXAdIWHf6gAKI+NIUCRHz51OWgACXMAAF1HYqIAAE4AAEAAADRJS43kxszj4+veqbDt2d2ntNJyh7pnfbTHz+FbcqvOBwfhjZDlfn/lbm7dZGZQaKexutUwT5hTb6yPMVPkur/xp6W0gpmeqco8WZ1tg7YAACl7irrozdLKiZagutylkK26w9mQnMEAAB1qQnVZereLdp5Ka62biapBXZ8pSZN3jr42VJqVpccZO4gAAA8AAAIF8g6vAAAAmUlEQVR4AR1HU4IFQQysdAbJrO3v5f0Ps3q27c6gXATK4HkXEYpJx5nhOYtMh2AZJJTBQLtocKRES6eq5sVLJLggi5/4PrRjDZFALxfn6/2Jk/BERKZy0ejc/1z0wePn6u6oM70bv6yOH/n2wIFiNpt8ja+a92Dn1aGHw/ap+GYYg6P76dtku1lY+Xb9m5w5UgLhSYBjwByQApiiN1ociSrgAAAAAElFTkSuQmCC" alt="Australia" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Australia</span></a></li>
+	<li id="menu-item-2229-ru" class="lang-item lang-item-182 lang-item-ru no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-2229-ru" role="none"><a href="../../ru/index.htm" class="ct-menu-link" role="menuitem" hreflang="ru-RU" lang="ru-RU"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAdVBMVEX19f/u7vjm5/H+/v75+fng4Ove3ulFRfyysv6cnP6QkPmIiPh/f/YAAOYAAP1ycv5QUP06OvkxMfcoKPcgIPYUFPS0AADdaYzTRG/RPGnOM2LKLFzIIVPCEUZ7AAD0AQH7YGH3ODj0JyfzERDgAAD4TU3pAABIfLuPAAAAT0lEQVR4AQXBAQqDMAAAsZytyHzA/v9LYRS7JIAQMkBb0ATsgLoKInnHvIrHrdRaBzxupTDxuFUifUsp4R3zU4iwzmOyT1ibBtP2u3C+wB+SHBB5JNY7DAAAAABJRU5ErkJggg==" alt="Русский" width="16" height="11" style="width: 16px; height: 11px;"><span style="margin-left:0.3em;">Русский</span></a></li>
+</ul>
+</li>
+</ul></nav>
+
+
+<div class="ct-header-cta" data-id="button">
+	<a href="../../index.htm#gform_1" class="ct-button" data-size="medium" aria-label="Learn More">
+		Learn More	</a>
+</div>
+</div></div></div></div></div><div data-device="mobile"><div data-row="middle" data-column-set="2"><div class="ct-container"><div data-column="start" data-placements="1"><div data-items="primary">
+<div class="site-branding" data-id="logo">
+
+			<a href="../../index.htm" class="site-logo-container" rel="home"><img width="253" height="297" src="../../wp-content/uploads/2023/05/immediatefortune-e1683832429336.png" class="default-logo" alt="Immediate Fortune ™"></a>	
+	</div>
+
+</div></div><div data-column="end" data-placements="1"><div data-items="primary">
+<button data-toggle-panel="#offcanvas" class="ct-header-trigger ct-toggle " data-design="simple" data-label="right" aria-label="Open off canvas" data-id="trigger">
+
+	<span class="ct-label ct-hidden-sm ct-hidden-md ct-hidden-lg">Menu</span>
+
+	<svg class="ct-icon" width="18" height="14" viewbox="0 0 18 14" aria-hidden="true" data-type="type-1">
+
+		<rect y="0.00" width="18" height="1.7" rx="1"></rect>
+		<rect y="6.15" width="18" height="1.7" rx="1"></rect>
+		<rect y="12.3" width="18" height="1.7" rx="1"></rect>
+	</svg>
+</button>
+</div></div></div></div></div></header>
+	<main id="main" class="site-main hfeed" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+
+		
+<div class="ct-container" data-vertical-spacing="top:bottom">
+	<section>
+		
+<div class="hero-section" data-type="type-1">
+			<header class="entry-header">
+			<h1 class="page-title" title="Tag trendy" itemprop="headline"><span class="ct-title-label">Tag</span> trendy</h1>		</header>
+	</div>
+<div class="entries" data-archive="default" data-layout="grid" data-cards="boxed"><article id="post-265" class="entry-card post-265 post type-post status-publish format-standard has-post-thumbnail hentry category-travel tag-colors tag-trendy tag-vibe"><ul class="entry-meta" data-type="simple:slash"><li class="meta-categories" data-type="simple"><a href="../../category/travel/index.htm" rel="tag" class="ct-term-5">Travel</a></li></ul>
+	<h2 class="entry-title">
+		<a href="../../amet-commodo-nulla-facilisi-nullam-vehicula/index.htm" rel="bookmark">
+			Amet commodo nulla facilisi nullam vehicula		</a>
+	</h2>
+
+	<a class="ct-image-container boundless-image" href="../../amet-commodo-nulla-facilisi-nullam-vehicula/index.htm" aria-label="Amet commodo nulla facilisi nullam vehicula" tabindex="-1"><img width="768" height="512" src="../../wp-content/uploads/2020/05/jason-blackeye-XYrjl3j7smo-unsplash-768x512.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="" decoding="async" srcset="../../wp-content/uploads/2020/05/jason-blackeye-XYrjl3j7smo-unsplash-768x512.jpg 768w, ../../wp-content/uploads/2020/05/jason-blackeye-XYrjl3j7smo-unsplash-300x200.jpg 300w, ../../wp-content/uploads/2020/05/jason-blackeye-XYrjl3j7smo-unsplash.jpg 800w" sizes="(max-width: 768px) 100vw, 768px" itemprop="image" style="aspect-ratio: 4/3;"></a><div class="entry-excerpt"><p>Nulla pharetra diam sit amet nisl. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam. Quis commodo odio aenean sed adipiscing diam donec. Proin fermentum leo vel orci porta non. Massa id neque aliquam vestibulum morbi. Id ornare arcu…</p>
+</div><div class="ct-ghost"></div><ul class="entry-meta" data-type="simple:slash"><li class="meta-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><a class="ct-meta-element-author" href="../../author/robertbot985/index.htm" title="Posts by robertbot985" rel="author" itemprop="url"><span itemprop="name">robertbot985</span></a></li><li class="meta-date" itemprop="datePublished"><time class="ct-meta-element-date" datetime="2020-05-15T14:02:35+00:00">May 15, 2020</time></li></ul></article></div>	</section>
+
+	</div>
+
+	</main>
+
+	<footer id="footer" class="ct-footer" data-id="type-1" itemscope="" itemtype="https://schema.org/WPFooter"><div data-row="top"><div class="ct-container"><div data-column="widget-area-1"><div class="ct-widget widget_block widget_media_image" id="block-17">
+<figure class="wp-block-image size-full is-resized"><img loading="lazy" decoding="async" src="../../wp-content/uploads/2023/05/immediatefortune-e1683832429336.png" alt="" class="wp-image-1620" width="61" height="72"></figure>
+</div></div><div data-column="socials">
+<div class="ct-footer-socials" data-id="socials">
+
+	
+		<div class="ct-social-box" data-icon-size="custom" data-color="custom" data-icons-type="simple">
+			
+			
+							
+				<a href="https://www.facebook.com/immediateconnectai/" data-network="facebook" aria-label="Facebook" target="_blank" rel="noopener">
+					<span class="ct-icon-container">
+				<svg width="20px" height="20px" viewbox="0 0 20 20" aria-hidden="true">
+					<path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Facebook</span>				</a>
+							
+				<a href="https://www.instagram.com/immediateconnect/" data-network="instagram" aria-label="Instagram" target="_blank" rel="noopener">
+					<span class="ct-icon-container">
+				<svg width="20" height="20" viewbox="0 0 20 20" aria-hidden="true">
+					<circle cx="10" cy="10" r="3.3"></circle>
+					<path d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Instagram</span>				</a>
+							
+				<a href="https://twitter.com/ImmediatConnect" data-network="twitter" aria-label="Twitter" target="_blank" rel="noopener">
+					<span class="ct-icon-container">
+				<svg width="20px" height="20px" viewbox="0 0 20 20" aria-hidden="true">
+					<path d="M20,3.8c-0.7,0.3-1.5,0.5-2.4,0.6c0.8-0.5,1.5-1.3,1.8-2.3c-0.8,0.5-1.7,0.8-2.6,1c-0.7-0.8-1.8-1.3-3-1.3c-2.3,0-4.1,1.8-4.1,4.1c0,0.3,0,0.6,0.1,0.9C6.4,6.7,3.4,5.1,1.4,2.6C1,3.2,0.8,3.9,0.8,4.7c0,1.4,0.7,2.7,1.8,3.4C2,8.1,1.4,7.9,0.8,7.6c0,0,0,0,0,0.1c0,2,1.4,3.6,3.3,4c-0.3,0.1-0.7,0.1-1.1,0.1c-0.3,0-0.5,0-0.8-0.1c0.5,1.6,2,2.8,3.8,2.8c-1.4,1.1-3.2,1.8-5.1,1.8c-0.3,0-0.7,0-1-0.1c1.8,1.2,4,1.8,6.3,1.8c7.5,0,11.7-6.3,11.7-11.7c0-0.2,0-0.4,0-0.5C18.8,5.3,19.4,4.6,20,3.8z"></path>
+				</svg>
+			</span><span class="ct-label" hidden="">Twitter</span>				</a>
+			
+			
+					</div>
+
+	</div>
+
+</div><div data-column="menu">
+<nav id="footer-menu" class="footer-menu-inline " data-id="menu" itemscope="" itemtype="https://schema.org/SiteNavigationElement" aria-label="Footer Menu">
+
+	<ul id="menu-english-menu-2" class="menu" role="menubar"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2231" role="none"><a href="../../index.htm" class="ct-menu-link" role="menuitem">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2232" role="none"><a href="../../contact/index.htm" class="ct-menu-link" role="menuitem">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2233" role="none"><a href="../../about-us/index.htm" class="ct-menu-link" role="menuitem">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-2234" role="none"><a rel="privacy-policy" href="../../privacy-policy/index.htm" class="ct-menu-link" role="menuitem">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2235" role="none"><a href="../../terms/index.htm" class="ct-menu-link" role="menuitem">Terms</a></li>
+</ul></nav>
+</div></div></div><div data-row="bottom"><div class="ct-container" data-columns-divider="md:sm"><div data-column="copyright">
+<div class="ct-footer-copyright" data-id="copyright">
+
+	<p class="has-small-font-size" style="padding-bottom: 25px;"><strong>Important Risk Note: </strong>Trading can generate notable benefits; however, it also involves a risk of partial/full funds loss and should be considered by initial investors. Around 70 percent of the investors will lose money. <br><strong>#Immediate Fortune</strong> and any other commercial names used on the site are for commercial purposes only, and do not refer to any specific company nor specific services providers. The video is for commercial presentation and illustration purposes only, and all participants are actors. Carefully read the Terms &amp; Conditions and Disclaimer page of the third-party investor platform before investing. Users must be cognizant of their individual capital gain tax liability in their country of residence. It is against the law to solicit United States persons to buy and sell commodity options, even if they are called ‘prediction' contracts unless they are listed for trading and traded on a CFTC-registered exchange or unless legally exempt. The Financial Conduct Authority (‘FCA’) has issued a policy statement PS20/10, which prohibits the sale, promotion, and distribution of CFD on Crypto assets. It is prohibiting the dissemination of marketing materials relating to distribution of CFDs and other financial products based on Cryptocurrencies and which are addressed to UK residents By leaving your personal details herein you consent and allow us to share your personal information with third parties providing trading services as provided in the Privacy Policy and Terms &amp; Conditions. There are several trading options that the trader/user can use – by trading software, using human brokers, or by making own trades and it's the trader’s sole responsibility to choose and decide what is the right way for him/her to trade.</p><p style="     padding-top: 25px;     border-top: 1px solid rgba(255, 255, 255, 0.1); ">Copyright © 2024 Immediate Fortune. All Rights Reserved.</p></div>
+</div></div></div></footer></div>
+
+            <script>
+                var wpaicgUserLoggedIn = false;
+            </script>
+            <script>requestAnimationFrame(() => document.body.classList.add( "stk--anim-init" ))</script>    <script>
+        jQuery(document).ready(function($) {
+            console.log('ready');
+            let form = document.querySelector('form#gform_1');
+            form.addEventListener('submit', function(e) {
+                let formData = new FormData(form);
+                let first_name = formData.get('input_4');
+                let last_name = formData.get('input_6');
+
+                let email = formData.get('input_7');
+
+                let phone = formData.get('input_1_8');
+
+                let data = {
+                    first_name,
+                    last_name,
+                    email,
+                    phone,
+                };
+                gtag('event', 'gform_submit', {
+                    'event_category': 'Form',
+                    'event_label': JSON.stringify(data)
+                });
+            });
+        });
+    </script>
+<script id="getwid-blocks-frontend-js-js-extra">
+var Getwid = {"settings":[],"ajax_url":"https:\/\/immediatefortune.com\/wp-admin\/admin-ajax.php","isRTL":"","nonces":{"recaptcha_v2_contact_form":"5b98c76dac"}};
+</script>
+<script src="../../wp-content/plugins/getwid/assets/js/frontend.blocks.js?ver=1.8.5" id="getwid-blocks-frontend-js-js"></script>
+<script src="../../wp-content/plugins/gpt3-ai-content-generator/public/js/wpaicg-form-shortcode.js" id="wpaicg-gpt-form-js"></script>
+<script id="wpaicg-init-js-extra">
+var wpaicgParams = {"ajax_url":"https:\/\/immediatefortune.com\/wp-admin\/admin-ajax.php","search_nonce":"f19ac7328f","logged_in":"0","languages":{"source":"Sources","no_result":"No result found","wrong":"Something went wrong","prompt_strength":"Please enter a valid prompt strength value between 0 and 1.","num_inference_steps":"Please enter a valid number of inference steps value between 1 and 500.","guidance_scale":"Please enter a valid guidance scale value between 1 and 20.","error_image":"Please select least one image for generate","save_image_success":"Save images to media successfully","select_all":"Select All","unselect":"Unselect","select_save_error":"Please select least one image to save","alternative":"Alternative Text","title":"Title","caption":"Caption","description":"Description","edit_image":"Edit Image","save":"Save"}};
+</script>
+<script src="../../wp-content/plugins/gpt3-ai-content-generator/public/js/wpaicg-init.js" id="wpaicg-init-js"></script>
+<script src="../../wp-content/plugins/gpt3-ai-content-generator/public/js/wpaicg-chat.js" id="wpaicg-chat-script-js"></script>
+<script src="../../wp-content/themes/blocksy-child/app.js?ver=11.0.0" id="script-js"></script>
+<script id="ct-scripts-js-extra">
+var ct_localizations = {"ajax_url":"https:\/\/immediatefortune.com\/wp-admin\/admin-ajax.php","nonce":"6b19a720ca","public_url":"https:\/\/immediatefortune.com\/wp-content\/themes\/blocksy\/static\/bundle\/","rest_url":"https:\/\/immediatefortune.com\/wp-json\/","search_url":"https:\/\/immediatefortune.com\/search\/QUERY_STRING\/","show_more_text":"Show more","more_text":"More","search_live_results":"Search results","search_live_no_result":"No results","search_live_one_result":"You got %s result. Please press Tab to select it.","search_live_many_results":"You got %s results. Please press Tab to select one.","expand_submenu":"Expand dropdown menu","collapse_submenu":"Collapse dropdown menu","dynamic_js_chunks":[{"id":"blocksy_dark_mode","selector":"[data-id=\"dark-mode-switcher\"]","url":"https:\/\/immediatefortune.com\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/dark-mode.js","trigger":"click"},{"id":"blocksy_sticky_header","selector":"header [data-sticky]","url":"https:\/\/immediatefortune.com\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/sticky.js"}],"dynamic_styles":{"lazy_load":"https:\/\/immediatefortune.com\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-styles.min.css","search_lazy":"https:\/\/immediatefortune.com\/wp-content\/themes\/blocksy\/static\/bundle\/non-critical-search-styles.min.css"},"dynamic_styles_selectors":[{"selector":"#account-modal","url":"https:\/\/immediatefortune.com\/wp-content\/plugins\/blocksy-companion\/static\/bundle\/account-lazy.min.css"}],"lang":"en"};
+</script>
+<script src="../../wp-content/themes/blocksy/static/bundle/main.js?ver=1.8.84" id="ct-scripts-js"></script>
+<script type='text/javascript'>
+(function() {
+				var expirationDate = new Date();
+				expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
+				document.cookie = "pll_language=en; expires=" + expirationDate.toUTCString() + "; path=/; secure; SameSite=Lax";
+			}());
+</script>
+
+</body>
+</html>
+<!--
+Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com
+
+Retrieved 3510 objects (758 KB) from Redis using PhpRedis (v6.0.2).
+-->
