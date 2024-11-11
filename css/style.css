@@ -577,7 +577,6 @@ body.over {
   width: 100%;
   padding: 1.875rem 0;
   background-color: #fff;
-  text-transform: capitalize;
   color: #333;
   font-size: 1rem;
   z-index: 15;
@@ -608,6 +607,7 @@ body.over {
 .header__menu {
   align-self: stretch;
   display: flex;
+  text-transform: capitalize;
 }
 @media only screen and (max-width: 1400px) {
   .header__menu {
