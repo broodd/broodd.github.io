@@ -705,6 +705,9 @@ body.over {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: top center;
 }
 .vidbg iframe,
 .vidbg .img,
